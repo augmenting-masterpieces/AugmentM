@@ -31,9 +31,10 @@ module.exports = (grunt) ->
 
       json:
         expand: true
+        flatten: true
         cwd: "src"
-        src: "**/*.json"
-        dest: "dev/"
+        src: "api/**/*.json"
+        dest: "dev/api"
 
       fonts:
         expand: true
@@ -46,6 +47,24 @@ module.exports = (grunt) ->
         flatten: true
         src: "src/images/**/*"
         dest: "dev/images"
+
+    yaml:
+      posts:
+        files: [
+          expand: true
+          cwd: "src/yaml/"
+          src: ["**/*.yaml"]
+          dest: "src/yaml/tmp/"
+        ]
+
+    concat:
+      json:
+        src: ['src/yaml/tmp/**/*.json']
+        dest: 'src/api/posts.json'
+        options:
+          banner: '{"posts": ['
+          footer: "]}"
+          separator: ','
 
     bowercopy:
       ember:
@@ -112,6 +131,10 @@ module.exports = (grunt) ->
           "copy:images"
           "copy:fonts"
         ]
+      
+      yaml:
+        files: ["src/**/*.yaml"]
+        tasks: ["yaml", "concat", "copy:json"]
 
       options:
         livereload: true
@@ -127,6 +150,8 @@ module.exports = (grunt) ->
   grunt.registerTask "buildDev", [
     "clean:dev"
     "bowercopy"
+    "yaml"
+    "concat"
     "sass"
     "jshint"
     "copy"
@@ -144,7 +169,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-bowercopy"
   grunt.loadNpmTasks "grunt-sass"
+  grunt.loadNpmTasks "grunt-yaml"
   grunt.loadNpmTasks "grunt-contrib-watch"
+  grunt.loadNpmTasks "grunt-contrib-concat"
   grunt.loadNpmTasks "grunt-contrib-clean"
   grunt.loadNpmTasks "grunt-contrib-jshint"
   grunt.loadNpmTasks "grunt-express-server"
