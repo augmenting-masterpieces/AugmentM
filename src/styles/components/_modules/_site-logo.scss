@@ -1,0 +1,35 @@
+#logo {
+  max-height: 97vh;
+  display: none;
+}
+
+@media all and (orientation: portrait){
+  #logo {
+    max-height: 30vh;
+  }
+}
+
+@media all and (min-device-width: 1200px) {
+  #logo {
+    display: block;
+
+    #logo-text {
+      display: none;
+      background-color: $colorYellow;
+    }
+
+    #logo-blank {
+      background-color: $colorBlue;
+    }
+
+    &:hover {
+      #logo-text{
+        display: block;
+      }
+
+      #logo-blank{
+        display: none;
+      }
+    }
+  }
+}

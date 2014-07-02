@@ -1,0 +1,149 @@
+/**
+*
+* Editorial Header
+*
+**/
+
+.styleguide__feature-spotlight .featured-spotlight {
+  line-height: 0;
+  margin-bottom: 30px;
+
+  section {
+    border-bottom: 0;
+  }
+}
+
+.featured-spotlight {
+  margin-top: 20px;
+  
+  position: relative;
+  clear: both;
+
+  .image {
+    clear: both;
+    position: relative;
+    margin: 0 0 0 0;
+
+    h1 {
+      user-select: none;
+      padding: 10px 20px;
+      color: $colorYellow; 
+      background-color: $colorGrayDark;
+
+      &:hover {
+        color: $colorGrayDark;
+        background-color: $colorYellow; 
+      }
+    }
+
+    @include media-query(medium){
+      h1 {
+        font-family: NittyBold;
+        padding: 15px 40px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        color: $colorGrayDark;
+        background-color: $colorYellow; 
+
+        &:hover {
+          color: $colorYellow;
+          background-color: $colorGrayDark; 
+        }
+      }
+    }
+
+    img {
+      width: 100vw;
+      height: 100%;
+    }
+  }
+
+  .preview {
+    display: none;
+    clear: both;
+    background-color: $colorGrayLight;
+    margin-bottom: 20px;
+    padding: 40px;
+
+    h2+p, h3+p, p:first-of-type, ul {
+      padding-top: 0;
+    }
+
+    .intro {
+    }
+
+    .meta {
+      margin-top: 30px;
+      padding: 30px;
+      background-color: $colorYellow;
+      color: $colorGrayDark;
+      width: 100%;
+    }
+  }
+
+  &.expanded {
+    .preview {
+      display: block;
+    }
+  }
+}
+
+article {
+  padding: 1.5em 25px 1.5em 25px;
+  column-gap: 50px;
+  column-count: 1;
+
+  blockquote {
+    font-size: 1em;
+    border-left: 5px solid $colorYellow;
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+
+  p {
+    widows: 2;
+
+  }
+
+  h1, h2, h3 {
+    color: $colorBlue;
+  }
+
+  h2, h3 {
+    padding-bottom: 0.5em;
+  }
+
+  h2 {
+    font-size: 26px;
+    padding-top: 0;
+  }
+
+  h3 {
+    font-size: 20px;
+    padding-bottom: 0.5em;
+  }
+
+  a {
+    display: inline-block;
+    padding: 0.1em 0.3em;
+    background-color: $colorYellow;
+    color: #222222;
+    font-family: NittyBold;
+
+    &:hover {
+      background-color: #222222;
+      color: $colorYellow;
+      text-decoration: none;
+    }
+  }
+
+  @include media-query(medium){
+    column-count: 2;
+  }
+
+  @include media-query(huge){
+    column-count: 3;
+  }
+}

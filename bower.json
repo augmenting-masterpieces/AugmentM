@@ -1,0 +1,20 @@
+{
+  "name": "cth-platform",
+  "version": "0.0.1",
+  "authors": [
+    "Jan Hein Hoogstad <yeehaa123@mac.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ember": "~1.5.1",
+    "marked": "~0.3.2"
+  }
+}

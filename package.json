@@ -1,0 +1,27 @@
+{
+  "name": "cth-platform",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "yeehaa",
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-config": "^0.10.0",
+    "load-grunt-tasks": "^0.6.0",
+    "grunt-contrib-copy": "^0.5.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-clean": "^0.5.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-bowercopy": "^1.1.0",
+    "grunt-express-server": "^0.4.17",
+    "grunt-sass": "^0.14.0",
+    "grunt-gh-pages": "^0.9.1"
+  },
+  "dependencies": {
+    "express": "^4.4.5"
+  }
+}
