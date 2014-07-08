@@ -5,7 +5,64 @@
     return new Ember.Handlebars.SafeString(marked(markdown));
   });
 
-  var App = Ember.Application.create();
+  var App = Ember.Application.create({
+    LOG_TRANSITIONS: true
+  });
+
+  App.Router.map(function() {
+    this.resource('posts', function(){
+      this.resource('post', {path: '/:post_id'});
+    });
+  });
+
+
+  App.IndexRoute = Ember.Route.extend({
+    beforeModel: function() {
+      this.transitionTo('posts');
+    }
+  });
+
+
+  App.Post = Ember.Object.extend({
+  });
+
+  App.Post.reopenClass({
+    findAll: function () {
+      return Ember.$.getJSON('api/posts.json').then(function(response){
+        return response.posts.map(function(post){
+          post.id = post.title.dasherize();
+          post.postContent = post.content;
+          return post;
+        });
+      });
+    },
+    find: function(){
+      return this.findAll().then(function(posts){
+        return posts[0];
+      });
+    }
+  });
+
+  App.PostsRoute = Ember.Route.extend({
+    model: function(params) {
+      return App.Post.findAll();
+    }
+  });
+
+  App.PostRoute = Ember.Route.extend({
+    model: function(params){
+      return App.Post.find().then(function(post){
+        return post;
+      });
+    },
+
+    setupController: function(controller, model){
+      model.isChosen = true;
+      controller.set('model', model);
+      var post = controller.get('model');
+      console.log(post.isChosen);
+    }
+  });
 
   App.ApplicationController = Ember.Controller.extend({
     actions: {
@@ -16,30 +73,14 @@
     isOpen: false
   });
 
-  App.Router.map(function() {
-    this.resource('posts', {path: '/'});
+  App.PostController = Ember.ObjectController.extend({
+    isExpanded: true
   });
 
-  App.PostsRoute = Ember.Route.extend({
-    model: function () {
-      return Ember.$.getJSON('api/posts.json').then(function(response){
-        response.posts.forEach(function(post){
-          console.log(post.posted);
-        });
-        return response.posts;
-      });
-    }
-  });
-
-  App.PostSnippetComponent = Ember.Component.extend({
+  App.PostView = Ember.View.extend({
+    tagName: 'section',
     classNames: ['featured-spotlight'],
-    classNameBindings: ['isExpanded:expanded'],
-    actions: {
-      toggleExpanded: function(){
-        this.toggleProperty('isExpanded');
-      }
-    },
-    isExpanded: false
+    classNameBindings: ['controller.isExpanded:expanded']
   });
 })();
 

@@ -26,7 +26,7 @@
 
     <!-- build:css styles/components/main.min.css -->
     <link rel="stylesheet" href="styles/h5bp.css">
-    <link rel="stylesheet" href="styles/components/components.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
   </head>
@@ -46,8 +46,6 @@
       <nav {{bind-attr class=":navdrawer-container :promote-layer isOpen:open"}}>
         <h4>Navigation</h4>
         <ul>
-          <li><a href="#hello">Hello</a></li>
-          <li><a href="#get-started">Get Started</a></li>
           <li><a href="styleguide/index.html">Style Guide</a></li>
         </ul>
       </nav>
@@ -57,30 +55,38 @@
       </main>
     </script>
 
-    <script type="text/x-handlebars" data-template-name="components/post-snippet">
-      <div {{action "toggleExpanded" on="click"}} class="image">
-        <img {{bind-attr src=post.topImage.url}}/>
-        <h1 class="medium">{{post.title}}</h1>
-      </div>
+    <script type="text/x-handlebars" data-template-name="index">
+    </script>
+    <script type="text/x-handlebars" data-template-name="site-nav">
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="posts">
+      {{#each}}
+        {{render 'post' this}}
+      {{/each}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="post">
+      {{#link-to 'post' this tagName='div' class="image"}}
+        <img {{bind-attr src=topImage.url}}/>
+        <h1 class="medium">{{title}}</h1>
+      {{/link-to}}
+      {{post-article post=this}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="components/post-article">
       <article class="preview g-medium--full g-wide--full"}}>
-        {{convert-markdown post.content}}
+        {{convert-markdown post.postContent}}
         <div class="meta">
           <ul class="list-links list-links--secondary">
-            {{#each post.authors}}
-            <li>{{this}}</li>
+            {{#each authors}}
+              <li>{{this}}</li>
             {{/each}}
           </ul>
         </div>
-
-      </section>
+      </article>
     </script>
 
-
-    <script type="text/x-handlebars" data-template-name="posts">
-        {{#each}}
-          {{post-snippet post=this}}
-        {{/each}}
-    </script>
     <script type="text/x-handlebars" data-template-name="site-logo">
        <section id="logo">
           <svg id="logo-blank" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 424 244" enable-background="new 0 0 424 244" xml:space="preserve">
@@ -115,6 +121,7 @@
 
 
     <script src="vendor/jquery.js"></script>
+    <script src="vendor/lodash.js"></script>
     <script src="vendor/handlebars.js"></script>
     <script src="vendor/ember.js"></script>
     <script src="vendor/marked.js"></script>

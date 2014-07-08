@@ -17,12 +17,6 @@ module.exports = (grunt) ->
         src: "**/*.html"
         dest: "dev/"
 
-      css:
-        expand: true
-        cwd: "src"
-        src: "**/*.css"
-        dest: "dev/"
-
       js:
         expand: true
         cwd: "src"
@@ -40,7 +34,7 @@ module.exports = (grunt) ->
         expand: true
         flatten: true
         src: "src/styles/fonts/**/*"
-        dest: "dev/styles/fonts"
+        dest: "dev/fonts"
 
       images:
         expand: true
@@ -57,6 +51,13 @@ module.exports = (grunt) ->
           dest: "src/yaml/tmp/"
         ]
 
+    autoprefixer:
+      dev:
+        expand: true
+        flatten: true
+        src: 'src/**/*.css'
+        dest: 'dev/styles'
+
     concat:
       json:
         src: ['src/yaml/tmp/**/*.json']
@@ -70,6 +71,10 @@ module.exports = (grunt) ->
       ember:
         src: "ember/ember.js"
         dest: "dev/vendor/ember.js"
+
+      lodash:
+        src: "lodash/dist/lodash.js"
+        dest: "dev/vendor/lodash.js"
 
       jquery:
         src: "jquery/dist/jquery.js"
@@ -99,27 +104,25 @@ module.exports = (grunt) ->
       components:
         src: 'src/styles/components/components.scss'
         dest: 'src/styles/components.css'
-      
 
     watch:
       html:
         files: ["src/**/*.html"]
         tasks: [
-          "copy:html"
+          "newer:copy:html"
         ]
 
       css:
         files: ["src/**/*.scss"]
         tasks: [
-          "sass"
-          "copy:css"
+          "newer:sass"
         ]
 
       scripts:
         files: ["src/scripts/**/*.js"]
         tasks: [
-          "jshint",
-          "copy:js"
+          "newer:jshint",
+          "newer:copy:js"
         ]
 
       assets:
@@ -134,7 +137,7 @@ module.exports = (grunt) ->
       
       yaml:
         files: ["src/**/*.yaml"]
-        tasks: ["yaml", "concat", "copy:json"]
+        tasks: ["newer:yaml", "concat", "copy:json"]
 
       options:
         livereload: true
@@ -152,6 +155,7 @@ module.exports = (grunt) ->
     "bowercopy"
     "yaml"
     "concat"
+    "autoprefixer"
     "sass"
     "jshint"
     "copy"
@@ -169,7 +173,9 @@ module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib-copy"
   grunt.loadNpmTasks "grunt-bowercopy"
   grunt.loadNpmTasks "grunt-sass"
+  grunt.loadNpmTasks "grunt-newer"
   grunt.loadNpmTasks "grunt-yaml"
+  grunt.loadNpmTasks "grunt-autoprefixer"
   grunt.loadNpmTasks "grunt-contrib-watch"
   grunt.loadNpmTasks "grunt-contrib-concat"
   grunt.loadNpmTasks "grunt-contrib-clean"
