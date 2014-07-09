@@ -10,9 +10,8 @@
   });
 
   App.Router.map(function() {
-    this.resource('posts', function(){
-      this.resource('post', {path: '/:post_id'});
-    });
+    this.resource('posts');
+    this.resource('post', {path: '/posts/:post_id'});
   });
 
 
@@ -36,8 +35,9 @@
         });
       });
     },
-    find: function(){
+    find: function(params){
       return this.findAll().then(function(posts){
+        posts[0].isChosen = true;
         return posts[0];
       });
     }
@@ -51,16 +51,14 @@
 
   App.PostRoute = Ember.Route.extend({
     model: function(params){
-      return App.Post.find().then(function(post){
-        return post;
-      });
-    },
-
-    setupController: function(controller, model){
-      model.isChosen = true;
-      controller.set('model', model);
-      var post = controller.get('model');
-      console.log(post.isChosen);
+      return App.Post.findAll().then(function(posts){
+        return _.map(posts, function(post){
+          if(params.post_id === post.id){
+            post.isExpanded = true;
+          }
+          return post;
+        });
+      })
     }
   });
 
@@ -73,11 +71,7 @@
     isOpen: false
   });
 
-  App.PostController = Ember.ObjectController.extend({
-    isExpanded: true
-  });
-
-  App.PostView = Ember.View.extend({
+  App.PostItemView = Ember.View.extend({
     tagName: 'section',
     classNames: ['featured-spotlight'],
     classNameBindings: ['controller.isExpanded:expanded']

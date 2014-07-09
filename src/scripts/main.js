@@ -36,8 +36,10 @@
         });
       });
     },
-    find: function(){
+    find: function(params){
       return this.findAll().then(function(posts){
+        console.log(params);
+        posts[0].isChosen = true;
         return posts[0];
       });
     }
@@ -46,21 +48,6 @@
   App.PostsRoute = Ember.Route.extend({
     model: function(params) {
       return App.Post.findAll();
-    }
-  });
-
-  App.PostRoute = Ember.Route.extend({
-    model: function(params){
-      return App.Post.find().then(function(post){
-        return post;
-      });
-    },
-
-    setupController: function(controller, model){
-      model.isChosen = true;
-      controller.set('model', model);
-      var post = controller.get('model');
-      console.log(post.isChosen);
     }
   });
 
@@ -73,14 +60,10 @@
     isOpen: false
   });
 
-  App.PostController = Ember.ObjectController.extend({
-    isExpanded: true
-  });
-
   App.PostView = Ember.View.extend({
     tagName: 'section',
     classNames: ['featured-spotlight'],
-    classNameBindings: ['controller.isExpanded:expanded']
+    classNameBindings: ['isExpanded:expanded']
   });
 })();
 

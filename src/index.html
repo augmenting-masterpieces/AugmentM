@@ -62,12 +62,18 @@
 
     <script type="text/x-handlebars" data-template-name="posts">
       {{#each}}
-        {{render 'post' this}}
+        {{render 'post-item' this}}
       {{/each}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="post">
-      {{#link-to 'post' this tagName='div' class="image"}}
+      {{#each}}
+        {{render 'post-item' this}}
+      {{/each}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="post-item">
+      {{#link-to 'post' this.id tagName='div' class="image"}}
         <img {{bind-attr src=topImage.url}}/>
         <h1 class="medium">{{title}}</h1>
       {{/link-to}}
