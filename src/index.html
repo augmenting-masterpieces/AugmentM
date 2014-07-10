@@ -55,11 +55,6 @@
       </main>
     </script>
 
-    <script type="text/x-handlebars" data-template-name="index">
-    </script>
-    <script type="text/x-handlebars" data-template-name="site-nav">
-    </script>
-
     <script type="text/x-handlebars" data-template-name="posts">
       {{#each}}
         {{render 'post-item' this}}
@@ -73,10 +68,17 @@
     </script>
 
     <script type="text/x-handlebars" data-template-name="post-item">
-      {{#link-to 'post' this.id tagName='div' class="image"}}
+      {{#if isActive}}
+        <div {{action "toggleArticle" on="click"}} class="image">
         <img {{bind-attr src=topImage.url}}/>
         <h1 class="medium">{{title}}</h1>
-      {{/link-to}}
+        </div>
+      {{else}}
+        {{#link-to 'post' this.id tagName='div' class="image"}}
+        <img {{bind-attr src=topImage.url}}/>
+        <h1 class="medium">{{title}}</h1>
+        {{/link-to}}
+      {{/if}}
       {{post-article post=this}}
     </script>
 
