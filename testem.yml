@@ -1,0 +1,12 @@
+framework: jasmine
+before_tests: coffee -c spec/*.coffee
+src_files:
+- bower_components/angular/angular.js
+- bower_components/angular-mocks/angular-mocks.js
+- dev/scripts/**/*.js
+- spec/**/*.coffee
+serve_files:
+- bower_components/angular/angular.js
+- bower_components/angular-mocks/angular-mocks.js
+- dev/scripts/**/*.js
+- spec/**/*.js

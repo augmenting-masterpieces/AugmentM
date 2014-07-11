@@ -1520,7 +1520,7 @@ div.highlight > pre > code .il, code .highlight .il {
           background-color: #404040; } }
     .featured-spotlight .image img {
       width: 100vw;
-      height: 100%; }
+      height: auto; }
   .featured-spotlight .preview {
     display: none;
     clear: both;

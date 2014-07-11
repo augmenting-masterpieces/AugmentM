@@ -51,7 +51,7 @@
           }
           return post;
         });
-      })
+      });
     },
     actions: {
       willTransition: function(transition){

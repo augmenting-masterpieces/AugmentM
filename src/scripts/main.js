@@ -6,13 +6,11 @@
   });
 
   var App = Ember.Application.create({
-    LOG_TRANSITIONS: true
   });
 
   App.Router.map(function() {
-    this.resource('posts', function(){
-      this.resource('post', {path: '/:post_id'});
-    });
+    this.resource('posts');
+    this.resource('post', {path: '/posts/:post_id'});
   });
 
 
@@ -36,13 +34,6 @@
         });
       });
     },
-    find: function(params){
-      return this.findAll().then(function(posts){
-        console.log(params);
-        posts[0].isChosen = true;
-        return posts[0];
-      });
-    }
   });
 
   App.PostsRoute = Ember.Route.extend({
@@ -51,20 +42,78 @@
     }
   });
 
+  App.PostRoute = Ember.Route.extend({
+    model: function(params){
+      return App.Post.findAll().then(function(posts){
+        return _.map(posts, function(post){
+          if(params.post_id === post.id){
+            post.isSelected = true;
+          }
+          return post;
+        });
+      });
+    },
+    actions: {
+      willTransition: function(transition){
+        console.log(Ember.$(window).scrollTop());
+      }
+    }
+  });
+
   App.ApplicationController = Ember.Controller.extend({
     actions: {
       toggleOpen: function(){
         this.toggleProperty('isOpen');
-      },
+      }
     },
     isOpen: false
   });
 
+  App.PostController = Ember.ArrayController.extend({
+    actions: {
+      viewUpdated: function(message){
+      } 
+    },
+    activeObject: function(){
+      this.toggleProperty('isTriggered');
+    }.observes('model')
+  });
+
   App.PostView = Ember.View.extend({
+    scrollTo: function(){
+      Ember.run.next(this, function(){
+        if(this.$('.expanded')){
+          $('html, body').animate({
+            scrollTop: this.$('.expanded').offset().top
+          }, 500);
+        }
+      });
+    }.observes('controller.isTriggered'),
+  });
+
+  App.PostItemController = Ember.ObjectController.extend({
+    actions: {
+      toggleArticle: function(){
+        this.toggleProperty('isOpen');
+      },
+    },
+    isActive: function(){
+      if(this.get('isSelected')){
+        this.set('isOpen', true);
+        return true;
+      }
+      return false;
+    }.property('isSelected'),
+    isOpen: false
+  });
+
+
+  App.PostItemView = Ember.View.extend({
     tagName: 'section',
     classNames: ['featured-spotlight'],
-    classNameBindings: ['isExpanded:expanded']
+    classNameBindings: ['controller.isOpen:expanded', 'controller.id'],
   });
+
 })();
 
 // function legacyStuff(){
