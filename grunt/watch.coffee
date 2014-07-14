@@ -8,7 +8,7 @@ module.exports =
   css:
     files: ["src/**/*.scss"]
     tasks: [
-      "newer:css"
+      "css"
     ]
 
   scripts:

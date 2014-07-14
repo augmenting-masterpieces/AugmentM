@@ -1570,7 +1570,7 @@ div.highlight > pre > code .il, code .highlight .il {
   .featured-spotlight.expanded .preview {
     display: block; }
 
-article {
+.post, .students, .partners, .staff, .goals {
   padding: 1.5em 25px 1.5em 25px;
   -webkit-column-gap: 50px;
      -moz-column-gap: 50px;
@@ -1578,43 +1578,55 @@ article {
   -webkit-column-count: 1;
      -moz-column-count: 1;
           column-count: 1; }
-  article blockquote {
+  .post blockquote, .students blockquote, .partners blockquote, .staff blockquote, .goals blockquote {
     font-size: 1em;
     border-left: 5px solid #E5CF39;
     margin-top: 1em;
     margin-bottom: 1em; }
-  article p {
+  .post p, .students p, .partners p, .staff p, .goals p {
     widows: 2; }
-  article h1, article h2, article h3 {
+  .post h1, .post h2, .post h3, .students h1, .students h2, .students h3, .partners h1, .partners h2, .partners h3, .staff h1, .staff h2, .staff h3, .goals h1, .goals h2, .goals h3 {
     color: #75C7B3; }
-  article h2, article h3 {
+  .post h2, .post h3, .students h2, .students h3, .partners h2, .partners h3, .staff h2, .staff h3, .goals h2, .goals h3 {
     padding-bottom: 0.5em; }
-  article h2 {
+  .post h2, .students h2, .partners h2, .staff h2, .goals h2 {
     font-size: 26px;
     padding-top: 0; }
-  article h3 {
+  .post h3, .students h3, .partners h3, .staff h3, .goals h3 {
     font-size: 20px;
     padding-bottom: 0.5em; }
-  article a {
+  .post a, .students a, .partners a, .staff a, .goals a {
     display: inline-block;
     padding: 0.1em 0.3em;
     background-color: #E5CF39;
     color: #222222;
     font-family: NittyBold; }
-    article a:hover {
+    .post a:hover, .students a:hover, .partners a:hover, .staff a:hover, .goals a:hover {
       background-color: #222222;
       color: #E5CF39;
       text-decoration: none; }
   @media only screen and (min-width: 620px) {
-    article {
+    .post, .students, .partners, .staff, .goals {
       -webkit-column-count: 2;
          -moz-column-count: 2;
               column-count: 2; } }
   @media only screen and (min-width: 1600px) {
-    article {
+    .post, .students, .partners, .staff, .goals {
       -webkit-column-count: 3;
          -moz-column-count: 3;
               column-count: 3; } }
+
+.students {
+  -webkit-column-count: 1;
+     -moz-column-count: 1;
+          column-count: 1; }
+  .students h1 {
+    text-align: center; }
+  .students .profile {
+    margin: 1em;
+    border: 0.5em solid #eeeeee;
+    background-color: #404040;
+    height: 400px; }
 
 /**
 *

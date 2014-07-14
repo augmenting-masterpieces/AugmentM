@@ -90,7 +90,7 @@
   }
 }
 
-article {
+.post, .students, .partners, .staff, .goals {
   padding: 1.5em 25px 1.5em 25px;
   column-gap: 50px;
   column-count: 1;
@@ -147,3 +147,18 @@ article {
     column-count: 3;
   }
 }
+
+.students {
+  column-count: 1;
+  h1 {
+    text-align: center;
+  }
+
+  .profile {
+    margin: 1em;
+    border: 0.5em solid $colorGrayLight;
+    background-color: $colorGrayDark;
+    height: 400px;
+  }
+}
+

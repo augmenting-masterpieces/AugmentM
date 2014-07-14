@@ -8,6 +8,7 @@ module.exports =
       "bower_components/angular-mocks/angular-mocks.js"
       "dev/scripts/app.js"
       "dev/scripts/post/postCtrl.js"
+      "dev/scripts/post/postDataService.js"
       "spec/**/*.coffee"
     ]
 

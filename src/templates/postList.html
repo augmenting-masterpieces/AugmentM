@@ -1,0 +1,14 @@
+<section class="featured-spotlight" ng-repeat="post in postList.posts">
+  <div class="image">
+    <img ng-src="{{post.topImage.url}}">
+    <h1 class="medium">{{post.title}}</h1>
+  </div>
+  <article class="post g-medium--full g-wide--full"}}>
+    {{post.postContent}}
+    <div class="meta">
+      <ul class="list-links list-links--secondary">
+        <li ng-repeat="author in authors">{{author}}</li>
+      </ul>
+    </div>
+  </article>
+</section>
