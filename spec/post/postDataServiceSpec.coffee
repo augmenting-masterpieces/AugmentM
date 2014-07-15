@@ -1,10 +1,18 @@
 describe 'postDataService', ->
-  postDataService = {}
+  service = {}
+  $httpBackend = {}
 
   beforeEach(module('cth'))
 
   beforeEach inject ($injector) ->
-    postDataService = $injector.get('postDataService')
+    service = $injector.get('postDataService')
+    $httpBackend = $injector.get('$httpBackend') 
 
-  it 'returns 3 posts', ->
-    expect(postDataService.getPosts().length).toBe(3)
+   afterEach ->
+     $httpBackend.verifyNoOutstandingExpectation()
+     $httpBackend.verifyNoOutstandingRequest()
+
+  it "makes an ajax call to '/api/posts.json'", ->
+    $httpBackend.expectGET('api/posts.json').respond({})
+    service.getPosts().then()
+    $httpBackend.flush()

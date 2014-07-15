@@ -7,10 +7,10 @@
 
     var vm = this;
 
-    vm.posts = postDataService.getPosts();
+    var postPromise = postDataService.getPosts();
 
-    $http.get('api/posts.json').success(function(response){
-      vm.posts = response.posts;
+    postPromise.then(function(data){
+      vm.posts = data;
     });
     
     return vm;

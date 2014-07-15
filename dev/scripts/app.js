@@ -6,7 +6,7 @@
   app.config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
       .state('home', {
-        url: '/home',
+        url: '',
         templateUrl: 'templates/postList.html',
         controller: 'PostCtrl as postList'
       })

@@ -7,7 +7,6 @@ module.exports =
 
   deploy: [
     "buildDev"
-    "testem:ci"
     "gh-pages"
   ]
 
