@@ -9,9 +9,10 @@ module.exports =
       "bower_components/firebase/firebase.js"
       "bower_components/angularfire/angularfire.js"
       "bower_components/angular-mocks/angular-mocks.js"
+      "bower_components/lodash/dist/lodash.js"
       "dev/scripts/app.js"
+      "dev/scripts/post/Post.js"
       "dev/scripts/post/postCtrl.js"
-      "dev/scripts/post/postDataService.js"
       "spec/**/*.coffee"
     ]
 

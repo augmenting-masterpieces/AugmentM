@@ -3,11 +3,11 @@
     <img ng-src="{{post.topImage.url}}">
     <h1 class="medium">{{post.title}}</h1>
   </div>
-  <article class="post g-medium--full g-wide--full"}}>
+  <article ng-show="post.selected" class="expanded post g-medium--full g-wide--full"}}>
     {{post.postContent}}
     <div class="meta">
       <ul class="list-links list-links--secondary">
-        <li ng-repeat="author in authors">{{author}}</li>
+        <li ng-repeat="author in post.authors">{{author}}</li>
       </ul>
     </div>
   </article>

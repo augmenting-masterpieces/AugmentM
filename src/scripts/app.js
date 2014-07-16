@@ -10,6 +10,9 @@
         templateUrl: 'templates/postList.html',
         controller: 'PostCtrl as postList'
       })
+      .state('home.id', {
+        url: '/:post_id',
+      })
       .state('about', {
         url: '/pilot',
         templateUrl: 'templates/pilot.html',
@@ -25,5 +28,4 @@
     var students = $firebase(ref);
     return students;
   }
-
 })();
