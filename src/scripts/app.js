@@ -3,15 +3,16 @@
 
   var app = angular.module('cth', ['firebase', 'ui.router']);
 
+
   app.config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.when('','/index');
+
     $stateProvider
       .state('home', {
-        url: '',
+        url: '/:post_id',
         templateUrl: 'templates/postList.html',
         controller: 'PostCtrl as postList'
-      })
-      .state('home.id', {
-        url: '/:post_id',
       })
       .state('about', {
         url: '/pilot',

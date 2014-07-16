@@ -6,16 +6,11 @@
   function PostCtrl(Post, $http, $stateParams, $rootScope){
 
     var vm = this;
+    console.log($stateParams);
 
     Post.getAll().then(function(posts){
       var postsWithId = createPostIds(posts);
-      vm.posts = selectPost(postsWithId);
-    });
-
-    $rootScope.$on('$stateChangeStart', function(event, toState, toParams){
-      var params = toParams.post_id || "no params";
-      var selectedPost = selectPost(vm.posts, params);
-      vm.posts = selectedPost; 
+      vm.posts = selectPost(postsWithId, $stateParams.post_id);
     });
 
     function selectPost(posts, params){
