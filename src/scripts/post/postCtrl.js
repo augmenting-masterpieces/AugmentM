@@ -1,12 +1,11 @@
 (function(){
   'use strict';
 
-  angular.module('cth').controller('PostCtrl', ['Post', '$http', '$stateParams', '$rootScope', PostCtrl]);
+  angular.module('cth').controller('PostCtrl', ['Post', '$http', '$stateParams', PostCtrl]);
 
-  function PostCtrl(Post, $http, $stateParams, $rootScope){
+  function PostCtrl(Post, $http, $stateParams){
 
     var vm = this;
-    console.log($stateParams);
 
     Post.getAll().then(function(posts){
       var postsWithId = createPostIds(posts);
