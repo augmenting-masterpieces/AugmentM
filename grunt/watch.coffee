@@ -17,6 +17,12 @@ module.exports =
       "scripts"
     ]
 
+  vendor:
+    files: ["src/vendor/*.js"]
+    tasks: [
+      "vendor"
+    ]
+
   assets:
     files: [
       "src/images/**/*"

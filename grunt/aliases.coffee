@@ -13,6 +13,7 @@ module.exports =
   buildDev: [
     "clean:dev"
     "bowercopy"
+    "vendor"
     "config"
     "html"
     "css"
@@ -28,7 +29,7 @@ module.exports =
 
   dataModels: [
     "yaml"
-    "concat"
+    "concat:json"
     "copy:json"
   ]
 
@@ -40,6 +41,10 @@ module.exports =
   scripts: [
     "jshint",
     "copy:js"
+  ]
+
+  vendor: [
+    "newer:concat:vendor"
   ]
 
   html: [
