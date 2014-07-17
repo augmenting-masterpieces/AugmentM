@@ -7,6 +7,10 @@ module.exports =
     src: "angular-ui-router/release/angular-ui-router.js"
     dest: "dev/vendor/angular-ui-router.js"
 
+  angularSanitize:
+    src: "angular-sanitize/angular-sanitize.js"
+    dest: "dev/vendor/angular-sanitize.js"
+
   angularfire:
     src: "angularfire/angularfire.js"
     dest: "dev/vendor/angularfire.js"
@@ -31,7 +35,7 @@ module.exports =
     src: "handlebars/handlebars.js"
     dest: "dev/vendor/handlebars.js"
 
-  marked:
-    src: "marked/lib/marked.js"
-    dest: "dev/vendor/marked.js"
+  showdown:
+    src: "showdown/src/showdown.js"
+    dest: "dev/vendor/showdown.js"
 

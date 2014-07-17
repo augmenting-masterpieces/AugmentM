@@ -60,8 +60,8 @@
     }
   }
 
-  .preview {
-    display: none;
+  .expanded {
+    display: block;
     clear: both;
     background-color: $colorGrayLight;
     margin-bottom: 20px;
@@ -83,11 +83,6 @@
     }
   }
 
-  &.expanded {
-    .preview {
-      display: block;
-    }
-  }
 }
 
 .post, .students, .partners, .staff, .goals {
