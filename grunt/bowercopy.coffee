@@ -31,6 +31,10 @@ module.exports =
     src: "jquery/dist/jquery.js"
     dest: "dev/vendor/jquery.js"
 
+  scrollIntoView:
+    src: "jQuery.scrollIntoView/jquery.scrollIntoView.js"
+    dest: "dev/vendor/scroll-into-view.js"
+
   handlebars:
     src: "handlebars/handlebars.js"
     dest: "dev/vendor/handlebars.js"

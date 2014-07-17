@@ -37,33 +37,3 @@ describe 'PostCtrl', ->
       it 'contains objects with an id property that is the dasherized version of title', ->
         expect(@posts[0].id).toBe("hello-world")
         expect(@posts[1].id).toBe("goodbye-day")
-
-    describe 'object selection', ->
-
-      describe 'without route params', ->
-        beforeEach ->
-          @$rootScope.$apply()
-          posts = @PostCtrl.posts
-          @selectedPosts = selectPosts(posts)
-
-        it 'has no post objects that are selected', ->
-          expect(@selectedPosts.length).toBe(0)
-
-    describe 'with route params', ->
-      beforeEach ->
-        inject ($injector) ->
-          $stateParams = $injector.get('$stateParams')
-          $stateParams.post_id = "hello-world"
-          @$rootScope.$apply()
-          posts = @PostCtrl.posts
-          @selectedPosts = selectPosts(posts)
-
-      it 'has only one post objects that is selected', ->
-        expect(@selectedPosts.length).toBe(1)
-
-      it 'has the right post object selected', ->
-        expect(@selectedPosts[0].title).toBe("Hello World")
-
-selectPosts = (posts) ->
-  _.filter posts, (post) ->
-    post.selected == true

@@ -1,10 +1,12 @@
 (function(){
   'use strict';
 
-  var app = angular.module('cth', ['ngSanitize', 'firebase', 'ui.router']);
+  var app = angular.module('cth', ['ngSanitize', 'ngAnimate', 'firebase', 'ui.router']);
 
 
   app.config(function($stateProvider, $urlRouterProvider) {
+
+    $urlRouterProvider.when('', '/posts/index');
 
     $stateProvider
       .state('posts', {
@@ -14,10 +16,7 @@
         controller: 'PostCtrl as postList'
       })
       .state('posts.post', {
-        url: '/:post_id',
-        onEnter: function(){
-          console.log(this);
-        }
+        url: '/:post_id'
       })
       .state('about', {
         url: '/pilot',
@@ -48,18 +47,21 @@
     return {
       restrict: 'EA',
       replace: false,
-      scope: {
-        selected: '@'
-      },
-      link: function(scope, iElement){
-        if(scope.selected === "true"){
-          setTimeout(function(){
-            var pos = iElement[0].getBoundingClientRect().top;
-            window.scroll(0, pos);
-          }, 100);
+      link: function(scope, element, attrs){
+        scope.$watch(scrollToPost);
+
+        function scrollToPost(){
+          var isActive = element.hasClass('active');
+          if(isActive){
+            setTimeout(function(){
+              // var pos = element[0].getBoundingClientRect().top;
+              // element[0].scrollIntoView();
+              $(element[0]).scrollIntoView();
+            }, 300);
+
+          }
         }
       }
     };
   });
-
 })();

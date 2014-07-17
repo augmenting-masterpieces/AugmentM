@@ -20,3 +20,11 @@ body {
           box-sizing: border-box;
   overflow: hidden;
   min-height: 100%; }
+
+.cssFade {
+  -webkit-transition: 1s linear all;
+          transition: 1s linear all;
+  opacity: 1; }
+
+.cssFade.ng-hide {
+  opacity: 0; }
