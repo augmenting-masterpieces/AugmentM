@@ -1554,7 +1554,7 @@ div.highlight > pre > code .il, code .highlight .il {
       width: 100vw;
       height: auto; }
   .featured-spotlight .expanded {
-    display: block;
+    display: none;
     clear: both;
     background-color: #eeeeee;
     margin-bottom: 20px;
@@ -1567,6 +1567,8 @@ div.highlight > pre > code .il, code .highlight .il {
       background-color: #E5CF39;
       color: #404040;
       width: 100%; }
+  .featured-spotlight.active .expanded {
+    display: block; }
 
 .post, .students, .partners, .staff, .goals {
   padding: 1.5em 25px 1.5em 25px;

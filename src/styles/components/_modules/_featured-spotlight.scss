@@ -61,7 +61,7 @@
   }
 
   .expanded {
-    display: block;
+    display: none;
     clear: both;
     background-color: $colorGrayLight;
     margin-bottom: 20px;
@@ -80,6 +80,12 @@
       background-color: $colorYellow;
       color: $colorGrayDark;
       width: 100%;
+    }
+  }
+
+  &.active {
+    .expanded {
+      display: block;
     }
   }
 
