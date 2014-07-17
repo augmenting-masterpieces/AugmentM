@@ -11,6 +11,10 @@ module.exports =
     src: "angular-sanitize/angular-sanitize.js"
     dest: "dev/vendor/angular-sanitize.js"
 
+  angularAnimate:
+    src: "angular-animate/angular-animate.js"
+    dest: "dev/vendor/angular-animate.js"
+
   angularfire:
     src: "angularfire/angularfire.js"
     dest: "dev/vendor/angularfire.js"

@@ -16,7 +16,7 @@ describe 'PostCtrl', ->
         title: "Goodbye Day"
       ]
 
-      spyOn(Post, 'getAll').andReturn(deferred.promise)
+      spyOn(Post, 'getAll').and.returnValue(deferred.promise)
       @scope = @$rootScope.$new()
       @PostCtrl = $controller('PostCtrl', {$scope: @scope})
 

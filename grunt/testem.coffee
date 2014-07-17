@@ -19,6 +19,8 @@ module.exports =
     ]
 
     options:
+      framework: 'jasmine2'
       parallel: 8
       launch_in_ci: ['PhantomJS']
-      launch_in_dev: ['PhanntomJS']
+      launch_in_dev: ['PhantomJS']
+
