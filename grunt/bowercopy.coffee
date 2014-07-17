@@ -1,49 +1,41 @@
 module.exports =
   angular:
     src: "angular/angular.js"
-    dest: "dev/vendor/angular.js"
+    dest: "src/vendor/angular.js"
 
   angularUiRouter:
     src: "angular-ui-router/release/angular-ui-router.js"
-    dest: "dev/vendor/angular-ui-router.js"
+    dest: "src/vendor/angular-ui-router.js"
 
   angularSanitize:
     src: "angular-sanitize/angular-sanitize.js"
-    dest: "dev/vendor/angular-sanitize.js"
+    dest: "src/vendor/angular-sanitize.js"
 
   angularAnimate:
     src: "angular-animate/angular-animate.js"
-    dest: "dev/vendor/angular-animate.js"
+    dest: "src/vendor/angular-animate.js"
 
   angularfire:
     src: "angularfire/angularfire.js"
-    dest: "dev/vendor/angularfire.js"
+    dest: "src/vendor/angularfire.js"
 
   firebase:
     src: "firebase/firebase.js"
-    dest: "dev/vendor/firebase.js"
-
-  ember:
-    src: "ember/ember.js"
-    dest: "dev/vendor/ember.js"
+    dest: "src/vendor/firebase.js"
 
   lodash:
     src: "lodash/dist/lodash.js"
-    dest: "dev/vendor/lodash.js"
+    dest: "src/vendor/lodash.js"
 
   jquery:
     src: "jquery/dist/jquery.js"
-    dest: "dev/vendor/jquery.js"
+    dest: "src/vendor/jquery.js"
 
   scrollIntoView:
     src: "jQuery.scrollIntoView/jquery.scrollIntoView.js"
-    dest: "dev/vendor/scroll-into-view.js"
-
-  handlebars:
-    src: "handlebars/handlebars.js"
-    dest: "dev/vendor/handlebars.js"
+    dest: "src/vendor/scroll-into-view.js"
 
   showdown:
     src: "showdown/src/showdown.js"
-    dest: "dev/vendor/showdown.js"
+    dest: "src/vendor/showdown.js"
 

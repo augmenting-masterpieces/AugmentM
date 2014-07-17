@@ -3,6 +3,8 @@
 
   var app = angular.module('cth', ['ngSanitize', 'ngAnimate', 'firebase', 'ui.router']);
 
+  app.constant('Showdown', Showdown);
+  app.constant('$', jQuery);
 
   app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -34,34 +36,4 @@
     var students = $firebase(ref);
     return students;
   }
-
-  app.filter('markdown', function ($sce) {
-    var converter = new Showdown.converter();
-    return function (value) {
-      var html = converter.makeHtml(value || '');
-      return $sce.trustAsHtml(html);
-    };
-  });
-
-  app.directive('myScroll', function(){
-    return {
-      restrict: 'EA',
-      replace: false,
-      link: function(scope, element, attrs){
-        scope.$watch(scrollToPost);
-
-        function scrollToPost(){
-          var isActive = element.hasClass('active');
-          if(isActive){
-            setTimeout(function(){
-              // var pos = element[0].getBoundingClientRect().top;
-              // element[0].scrollIntoView();
-              $(element[0]).scrollIntoView();
-            }, 300);
-
-          }
-        }
-      }
-    };
-  });
 })();

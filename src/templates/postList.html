@@ -1,4 +1,4 @@
-<section class="featured-spotlight" my-scroll ui-sref-active="active" class="active" selected="{{post.selected}}" id="{{post.id}}" ng-repeat="post in postList.posts">
+<section class="featured-spotlight" scroll-into-view ui-sref-active="active" class="active" selected="{{post.selected}}" id="{{post.id}}" ng-repeat="post in postList.posts">
   <div class="image">
     <a href ui-sref="posts.post({post_id: post.id})">
     <img ng-src="{{post.topImage.url}}">
