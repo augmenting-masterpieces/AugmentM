@@ -1,11 +1,12 @@
 <section class="featured-spotlight" scroll-into-view ui-sref-active="active" class="active" selected="{{post.selected}}" id="{{post.id}}" ng-repeat="post in postList.posts">
   <div class="image">
     <a href ui-sref="posts.post({post_id: post.id})">
+
     <img ng-src="{{post.topImage.url}}">
     <h1 class="medium">{{post.title}}</h1>
   </a>
   </div>
-  <article ng-show="post.selected" class="post g-medium--full g-wide--full cssFade"}}>
+  <article ng-show="post.selected" class="post g-medium--full g-wide--full cssSlideUp"}}>
     <div ng-bind-html="post.content | markdown"></div>
     <div class="meta">
       <ul class="list-links list-links--secondary">

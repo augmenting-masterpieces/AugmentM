@@ -12,6 +12,10 @@
       vm.posts = postsWithId;
     });
 
+    vm.togglePost = function(post){
+      console.log(post);
+    };
+
     $scope.$on('itemSelected', function(){
       deSelectPost();
       selectPost();

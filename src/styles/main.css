@@ -26,3 +26,11 @@ body {
 
 .cssFade.ng-hide {
   opacity: 0; }
+
+.cssSlideUp {
+  transition: 0.5s linear all;
+  max-height: 3000px; }
+
+.cssSlideUp.ng-hide {
+  transition: 0.5s linear all;
+  max-height: 0; }

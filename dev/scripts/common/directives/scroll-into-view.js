@@ -25,7 +25,7 @@
           isActive = element.hasClass('active');
           if(isActive && done){
             $rootScope.$broadcast('itemSelected');
-            scrollToPost();
+            $timeout(scrollToPost, 250);
           }
         }
 
@@ -34,9 +34,8 @@
 
           if(isActive && done){
             done = false;
-            console.log(top);
             $('body').animate({scrollTop: top}, {
-              duration: 500,
+              duration: 750,
               complete: function(){
                 done = true;
               }
