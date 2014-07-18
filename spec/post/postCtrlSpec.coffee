@@ -6,8 +6,12 @@ describe 'PostCtrl', ->
     inject ($injector) ->
       Post = $injector.get 'Post'
       $q = $injector.get '$q'
+      $httpBackend = $injector.get '$httpBackend'
+
       $controller = $injector.get '$controller'
       @$rootScope = $injector.get '$rootScope'
+
+      $httpBackend.expectGET().respond()
 
       deferred = $q.defer()
       deferred.resolve [
@@ -24,7 +28,7 @@ describe 'PostCtrl', ->
 
     describe 'object retrieval', ->
       beforeEach ->
-        inject ($injector) ->
+        inject () ->
           @$rootScope.$apply()
           @posts = @PostCtrl.posts
 
