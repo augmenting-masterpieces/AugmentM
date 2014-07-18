@@ -1,11 +1,16 @@
-<section class="featured-spotlight" scroll-into-view ui-sref-active="active" class="active" selected="{{post.selected}}" id="{{post.id}}" ng-repeat="post in postList.posts">
+<section class="featured-spotlight" scroll-into-view ui-sref-active="active" class="active" ng-class="{selected: post.selected, expanded:post.expanded}" selected="{{post.selected}}" id="{{post.id}}" ng-repeat="post in postList.posts | orderBy:'-posted'">
   <div class="image">
-    <a href ui-sref="posts.post({post_id: post.id})">
-    <img ng-src="{{post.topImage.url}}">
-    <h1 class="medium">{{post.title}}</h1>
-  </a>
+    <a ng-show="!post.selected" href ui-sref="posts.post({post_id: post.id})">
+      <img ng-src="{{post.headerImage.url}}">
+      <h1 class="medium">{{post.title}}</h1>
+    </a>
+    <a ng-show="post.selected" ng-click="toggleExpanded(post)">
+      <ng-include ng-show="post.expanded" src="'templates/logo.html'"></ng-include>
+      <img ng-src="{{post.headerImage.url}}">
+      <h1 ng-hide="post.expanded" class="medium">{{post.title}}</h1>
+    </a>
   </div>
-  <article ng-show="post.selected" class="post g-medium--full g-wide--full cssSlideUp"}}>
+  <article ng-show="post.expanded" class="post g-medium--full g-wide--full cssSlideUp"}}>
     <div ng-bind-html="post.content | markdown"></div>
     <div class="meta">
       <ul class="list-links list-links--secondary">

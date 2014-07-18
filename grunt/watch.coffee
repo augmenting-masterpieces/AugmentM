@@ -29,12 +29,12 @@ module.exports =
       "src/fonts/**/*"
     ]
     tasks: [
-      "newer:assets"
+      "assets"
     ]
   
   yaml:
     files: ["src/**/*.yaml"]
-    tasks: ["newer:dataModels"]
+    tasks: ["dataModels"]
 
   options:
     livereload: true

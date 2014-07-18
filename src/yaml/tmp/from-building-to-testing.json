@@ -1,15 +1,18 @@
 {
   "title": "From Building to Testing",
-  "posted": "2016-03-06T20:23:12.000Z",
+  "posted": "2014-06-27T20:23:12.000Z",
   "authors": [
     "Charlotte van Oostrum",
     "Marijn Koolen"
   ],
-  "order": 3,
-  "topImage": {
-    "url": "./images/ashley.jpg"
-  },
-  "bottomImage": "url ./images/nigel.jpg",
+  "images": [
+    {
+      "url": "./images/ashley.jpg"
+    },
+    {
+      "url": "./images/nigel.jpg"
+    }
+  ],
   "tags": [
     "frontpage"
   ],

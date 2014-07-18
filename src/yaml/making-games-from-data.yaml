@@ -1,13 +1,11 @@
 title: Making Games from Data
-posted: 2014-17-6 20:23:12 
+posted: 2014-6-17 20:23:12 
 authors:
 - Charlotte van Oostrum
 - Sabrina Sauer
-order: 9
-topImage: 
-  url: ./images/federico.jpg
-bottomImage: 
-  url: ./images/presentation.jpg
+images:
+- url: ./images/federico.jpg
+- url: ./images/presentation.jpg
 tags: 
 - frontpage
 content: |

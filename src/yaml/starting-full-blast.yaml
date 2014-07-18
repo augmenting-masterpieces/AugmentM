@@ -1,12 +1,11 @@
 title: Starting Full Blast
 authors:
 - Charlotte van Oostrum
-posted: 2014-10-6 20:23:12 
+posted: 2014-06-12 20:23:12 
 order: 12
-topImage: 
-  url:  ./images/students-window.jpg
-bottomImage: 
-  url: ./images/launch-event.jpg
+images:
+- url:  ./images/students-window.jpg
+- url: ./images/launch-event.jpg
 tags: 
 - frontpage
 content: |

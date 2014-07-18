@@ -1,16 +1,17 @@
 {
   "title": "Blurred Lines",
-  "posted": "2015-12-06T21:57:27.000Z",
+  "posted": "2014-06-24T21:57:27.000Z",
   "authors": [
     "Charlotte van Oostrum"
   ],
-  "order": 6,
-  "topImage": {
-    "url": "./images/blurred-lines.jpg"
-  },
-  "bottomImage": {
-    "url": "./images/blurred-lines.jpg"
-  },
+  "images": [
+    {
+      "url": "./images/blurred-lines.jpg"
+    },
+    {
+      "url": "./images/blurred-lines.jpg"
+    }
+  ],
   "tags": [
     "frontpage"
   ],

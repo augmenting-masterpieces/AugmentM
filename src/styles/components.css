@@ -735,7 +735,7 @@ button.menu img {
 main {
   margin: 0 auto;
   /* Height of the header */
-  padding: 60px 0px 16px 0px;
+  padding: 0px 0px 16px 0px;
   min-height: 100%; }
 
 /** Larger Screens - desktops and tablets **/
@@ -1485,12 +1485,13 @@ div.highlight > pre > code .il, code .highlight .il {
 **/
 .styleguide__feature-spotlight .featured-spotlight {
   line-height: 0;
-  margin-bottom: 30px; }
+  margin-bottom: 20px; }
   .styleguide__feature-spotlight .featured-spotlight section {
     border-bottom: 0; }
 
 .featured-spotlight {
-  margin-top: 20px;
+  user-select: none;
+  margin-bottom: 0px;
   position: relative;
   clear: both; }
   .featured-spotlight .image {
@@ -1518,14 +1519,24 @@ div.highlight > pre > code .il, code .highlight .il {
         .featured-spotlight .image h1:hover {
           color: #E5CF39;
           background-color: #404040; } }
-    .featured-spotlight .image img {
+    .featured-spotlight .image svg {
+      display: none;
+      opacity: 1;
+      position: absolute;
+      fill: #E5CF39;
+      top: 0;
+      left: 0;
       width: 100vw;
-      height: auto; }
+      height: 100%;
+      z-index: 9999; }
+  .featured-spotlight:hover svg, .featured-spotlight.expanded svg {
+    display: block; }
+  .featured-spotlight:hover img, .featured-spotlight.expanded img {
+    width: 100vw;
+    height: auto; }
   .featured-spotlight .post {
     display: block;
     clear: both;
-    background-color: #eeeeee;
-    margin-bottom: 20px;
     padding: 40px; }
     .featured-spotlight .post h2 + p, .featured-spotlight .post h3 + p, .featured-spotlight .post p:first-of-type, .featured-spotlight .post ul {
       padding-top: 0; }

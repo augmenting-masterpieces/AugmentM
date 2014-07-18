@@ -1,13 +1,11 @@
 title: From Building to Testing
-posted: 2014-27-6 20:23:12 
+posted: 2014-06-27 20:23:12 
 authors:
 - Charlotte van Oostrum
 - Marijn Koolen
-order: 3
-topImage: 
-  url: ./images/ashley.jpg
-bottomImage: 
-  url ./images/nigel.jpg
+images:
+- url: ./images/ashley.jpg
+- url: ./images/nigel.jpg
 tags: 
 - frontpage
 content: |

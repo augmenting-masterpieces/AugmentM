@@ -8,20 +8,21 @@
     var vm = this;
 
     Post.getAll().then(function(posts){
-      var postsWithId = createPostIds(posts);
+      var postsWithImageProps = createImageProps(posts);
+      var postsWithId = createPostIds(postsWithImageProps);
       vm.posts = postsWithId;
     });
 
-    vm.togglePost = function(post){
-      console.log(post);
-    };
-
     $scope.$on('itemSelected', function(){
-      deSelectPost();
+      deSelectPosts();
       selectPost();
     });
 
-    function deSelectPost(){
+    $scope.toggleExpanded = function(post){
+      post.expanded = !post.expanded;
+    };
+
+    function deSelectPosts(){
       _.each(vm.posts, function(post){
         post.selected = false;
       });
@@ -31,7 +32,10 @@
       var postId = $state.params.post_id;
       _.each(vm.posts, function(post){
         if(postId === post.id){
+          console.log("selected: " + post.selected);
+          console.log("expanded:" + post.expanded);
           post.selected = true;
+          post.expanded = true;
         }
       });
     }
@@ -39,6 +43,13 @@
     function createPostIds(posts){
       return posts.map(function(post){
         post.id = dasherize(post.title);
+        return post;
+      }); 
+    }
+
+    function createImageProps(posts){
+      return posts.map(function(post){
+        post.headerImage = post.images[0];
         return post;
       }); 
     }

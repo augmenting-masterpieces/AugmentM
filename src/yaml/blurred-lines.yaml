@@ -1,12 +1,10 @@
 title: Blurred Lines
-posted: 2014-24-06 21:57:27 
+posted: 2014-06-24 21:57:27 
 authors:
 - Charlotte van Oostrum
-order: 6
-topImage:
-  url: ./images/blurred-lines.jpg
-bottomImage: 
-  url: ./images/blurred-lines.jpg
+images:
+- url: ./images/blurred-lines.jpg
+- url: ./images/blurred-lines.jpg
 tags:
 - frontpage
 content: |
