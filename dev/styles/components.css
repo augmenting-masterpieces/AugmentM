@@ -1553,22 +1553,20 @@ div.highlight > pre > code .il, code .highlight .il {
     .featured-spotlight .image img {
       width: 100vw;
       height: auto; }
-  .featured-spotlight .expanded {
-    display: none;
+  .featured-spotlight .post {
+    display: block;
     clear: both;
     background-color: #eeeeee;
     margin-bottom: 20px;
     padding: 40px; }
-    .featured-spotlight .expanded h2 + p, .featured-spotlight .expanded h3 + p, .featured-spotlight .expanded p:first-of-type, .featured-spotlight .expanded ul {
+    .featured-spotlight .post h2 + p, .featured-spotlight .post h3 + p, .featured-spotlight .post p:first-of-type, .featured-spotlight .post ul {
       padding-top: 0; }
-    .featured-spotlight .expanded .meta {
+    .featured-spotlight .post .meta {
       margin-top: 30px;
       padding: 30px;
       background-color: #E5CF39;
       color: #404040;
       width: 100%; }
-  .featured-spotlight.active .expanded {
-    display: block; }
 
 .post, .students, .partners, .staff, .goals {
   padding: 1.5em 25px 1.5em 25px;
