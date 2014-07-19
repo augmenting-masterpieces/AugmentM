@@ -577,11 +577,10 @@ pre {
     .post header h1 {
       font-family: NittyBold;
       position: absolute;
-      top: 75%;
+      bottom: 20px;
       width: 100%;
-      text-align: center;
+      text-align: left;
       padding: 15px 40px;
-      text-align: center;
       color: white;
       background-color: black;
       opacity: 0.2; }

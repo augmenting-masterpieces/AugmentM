@@ -19,24 +19,20 @@
         function selectItem(){
           isActive = element.hasClass('active');
           if(isActive && done){
-            $rootScope.$broadcast('itemSelected');
             scrollToPost();
+            $rootScope.$broadcast('itemSelected');
           }
         }
 
         function scrollToPost(){
-          isActive = element.hasClass('active');
+          done = false;
           var top = $(element[0]).position().top;
-
-          if(isActive && done){
-            done = false;
-            $('body').animate({scrollTop: top}, {
-              duration: 750,
-              complete: function(){
-                done = true;
-              }
-            });
-          }
+          $('body').animate({scrollTop: top}, {
+            duration: 750,
+            complete: function(){
+              done = true;
+            }
+          });
         }
       }
     }; 

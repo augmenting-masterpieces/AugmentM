@@ -11,13 +11,13 @@
            href ui-sref="posts.post({post_id: post.id})">
           <img ng-src="{{post.headerImage.url}}"/>
           <div class="selector"></div>
-          <h1 class="large">{{post.title}}</h1>
+          <h1 class="medium">{{post.title | underscorize}}</h1>
         </a>
         <a ng-show="post.selected" 
            ng-click="toggleExpanded(post)">
           <img ng-src="{{post.headerImage.url}}"/>
           <div class="selector"></div>
-          <h1 class="large">{{post.title}}</h1>
+          <h1 class="medium">{{post.title| underscorize}}</h1>
         </a>
       </div>
     </header>

@@ -1,11 +1,13 @@
 (function(){
   'use strict';
 
-  angular.module('cth').controller('PostCtrl', ['Post', '$scope', '$timeout', '$state', PostCtrl]);
+  angular.module('cth').controller('PostCtrl', ['Post', '$scope', '$state', PostCtrl]);
 
-  function PostCtrl(Post, $scope, $timeout, $state){
+  function PostCtrl(Post, $scope, $state){
 
     var vm = this;
+    var oldSelectedPost;
+    var selectedPost;
 
     Post.getAll().then(function(posts){
       var postsWithImageProps = createImageProps(posts);
@@ -14,29 +16,34 @@
     });
 
     $scope.$on('itemSelected', function(){
-      deSelectPosts();
-      selectPost();
+      checkIfSelected();
     });
 
     $scope.toggleExpanded = function(post){
-      console.log(post.expanded);
       post.expanded = !post.expanded;
     };
 
-    function deSelectPosts(){
-      _.each(vm.posts, function(post){
-        post.selected = false;
-      });
-    }
-
-    function selectPost(){
+    function checkIfSelected(){
       var postId = $state.params.post_id;
       _.each(vm.posts, function(post){
         if(postId === post.id){
-          post.selected = true;
-          post.expanded = true;
+          selectedPost = post;
+          selectPost();
+        } else {
+          deselectPost(post);
         }
       });
+    }
+    function deselectPost(post){
+      post.selected = false;
+    }
+
+    function selectPost(){
+      if(oldSelectedPost !== selectedPost){
+        selectedPost.selected = true;
+        selectedPost.expanded = true;
+      }
+      oldSelectedPost = selectedPost;
     }
 
     function createPostIds(posts){
