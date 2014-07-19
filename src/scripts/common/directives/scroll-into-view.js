@@ -11,7 +11,6 @@
         var isActive;
         var done = true;
 
-
         $timeout(function(){
           selectItem();
           scope.$watch(selectItem);

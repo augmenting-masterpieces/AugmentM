@@ -1,107 +1,92 @@
-/**
-*
-* Editorial Header
-*
-**/
-
-.styleguide__feature-spotlight .featured-spotlight {
-  line-height: 0;
-  margin-bottom: 20px;
-
-  section {
-    border-bottom: 0;
-  }
-}
-
-.featured-spotlight {
+.post {
   user-select: none;
   margin-bottom: 0px;
   position: relative;
   clear: both;
 
-  .image {
+  header {
     clear: both;
     position: relative;
+    width: 100vw;
+    height: auto;
     margin: 0 0 0 0;
 
     h1 {
-      user-select: none;
-      padding: 10px 20px;
-      color: $colorYellow; 
-      background-color: $colorGrayDark;
-
-      &:hover {
-        color: $colorGrayDark;
-        background-color: $colorYellow; 
-      }
-    }
-
-    @include media-query(medium){
-      h1 {
-        font-family: NittyBold;
-        padding: 15px 40px;
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        margin: 0;
-        color: $colorGrayDark;
-        background-color: $colorYellow; 
-
-        &:hover {
-          color: $colorYellow;
-          background-color: $colorGrayDark; 
-        }
-      }
-    }
-    svg {
-      display: none;
-      opacity: 1;
+      font-family: NittyBold;
       position: absolute;
-      fill: $colorYellow;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100%;
-      z-index: 9999;
+      top: 75%;
+      width: 100%;
+      text-align: center;
+      padding: 15px 40px;
+      text-align: center;
+      color: white;
+      background-color: black;
+      opacity: 0.2;
     }
-  }
 
-  &:hover, &.expanded {
-    svg {
-      display: block;
-    }
     img {
       width: 100vw;
       height: auto;
-    }
-  }
-
-  .post {
-    display: block;
-    clear: both;
-    padding: 40px;
-
-    h2+p, h3+p, p:first-of-type, ul {
-      padding-top: 0;
+      display: block;
     }
 
-    .intro {
-    }
-
-    .meta {
-      margin-top: 30px;
-      padding: 30px;
+    .selector {
+      display: block;
+      opacity: 0;
+      width: 100vw;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
       background-color: $colorYellow;
-      color: $colorGrayDark;
-      width: 100%;
+    }
+
+    &:hover {
+      h1 {
+        color: white; 
+        opacity: 0.9;
+      }
     }
   }
+
+  &.selected {
+    header {
+      &:hover { 
+        .selector {
+          opacity: 0;
+        }
+      }
+    }
+  }
+
+  &.expanded {
+    section {
+      display: block;
+    }
+  }
+
 }
 
-.post, .students, .partners, .staff, .goals {
+.meta {
+  margin-top: 30px;
+  padding: 30px;
+  background-color: $colorYellow;
+  color: $colorGrayDark;
+  width: 100%;
+}
+
+.text-content, .students, .partners, .staff, .goals {
   padding: 1.5em 25px 1.5em 25px;
   column-gap: 50px;
   column-count: 1;
+
+  display: none; 
+  clear: both;
+  padding: 40px;
+
+  h2+p, h3+p, p:first-of-type, ul {
+    padding-top: 0;
+  }
 
   blockquote {
     font-size: 1em;

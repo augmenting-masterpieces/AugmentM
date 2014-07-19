@@ -19,6 +19,7 @@
     });
 
     $scope.toggleExpanded = function(post){
+      console.log(post.expanded);
       post.expanded = !post.expanded;
     };
 
@@ -32,8 +33,6 @@
       var postId = $state.params.post_id;
       _.each(vm.posts, function(post){
         if(postId === post.id){
-          console.log("selected: " + post.selected);
-          console.log("expanded:" + post.expanded);
           post.selected = true;
           post.expanded = true;
         }
