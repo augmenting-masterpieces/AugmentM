@@ -9,6 +9,11 @@ module.exports =
       "dev/scripts/app.js"
       "dev/scripts/post/Post.js"
       "dev/scripts/post/postCtrl.js"
+      "dev/scripts/post/postItemCtrl.js"
+      "dev/scripts/post/postItem.js"
+      "dev/scripts/templates.js"
+      "dev/scripts/common/filters/markdown.js"
+      "dev/scripts/common/filters/underscorize.js"
       "spec/**/*.coffee"
     ]
 

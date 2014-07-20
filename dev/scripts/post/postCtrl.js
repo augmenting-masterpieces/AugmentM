@@ -12,8 +12,6 @@
     Post.getAll().then(function(posts){
 
       var processedPosts = posts.map(function(post){
-        post.headerImage = post.images[0];
-        post.id  = dasherize(post.title);
         post.selected = false;
         return post;
       });
@@ -31,7 +29,7 @@
     function checkIfSelected(){
       var postId = $state.params.post_id;
       _.each(vm.posts, function(post){
-        if(postId === post.id){
+        if(postId === dasherize(post.title)){
           selectedPost = post;
           selectPost();
         } else {
@@ -39,6 +37,7 @@
         }
       });
     }
+
     function deselectPost(post){
       post.selected = false;
     }
@@ -55,7 +54,6 @@
       return str.replace(/\s+/g, '-').toLowerCase(); 
     }
 
-    vm.checkIfSelected = checkIfSelected;
     return vm;
   }
 })();

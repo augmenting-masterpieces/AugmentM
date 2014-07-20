@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  var app = angular.module('cth', ['ngSanitize', 'ngAnimate', 'firebase', 'ui.router']);
+  var app = angular.module('cth', ['ngSanitize', 'templates-cth', 'ngAnimate', 'firebase', 'ui.router']);
 
   app.constant('Showdown', Showdown);
   app.constant('$', jQuery);
@@ -14,7 +14,7 @@
       .state('posts', {
         url: '/posts',
         abstract: true,
-        templateUrl: 'templates/postList.html',
+        templateUrl: 'post/postList.html',
         controller: 'PostCtrl as postList'
       })
       .state('posts.post', {

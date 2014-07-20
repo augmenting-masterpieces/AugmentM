@@ -16,6 +16,7 @@ module.exports =
     "vendor"
     "config"
     "html"
+    "html2js"
     "css"
     "scripts"
     "dataModels"

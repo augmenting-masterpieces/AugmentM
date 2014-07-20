@@ -1,8 +1,14 @@
 module.exports =
   html:
-    files: ["src/**/*.html"]
+    files: ["src/**/*.html", "!src/scripts/**/*.html"]
     tasks: [
       "newer:copy:html"
+    ]
+
+  templates:
+    files: ["src/scripts/**/*.html"]
+    tasks: [
+      "html2js"
     ]
 
   css:

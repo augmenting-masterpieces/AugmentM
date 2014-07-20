@@ -8,7 +8,7 @@ module.exports =
   html:
     expand: true
     cwd: "src"
-    src: "**/*.html"
+    src: ["**/*.html", "!scripts/**/*"]
     dest: "dev/"
 
   js:
