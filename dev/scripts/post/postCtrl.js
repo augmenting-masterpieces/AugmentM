@@ -1,9 +1,9 @@
 (function(){
   'use strict';
 
-  angular.module('cth').controller('PostCtrl', ['Post', '$scope', '$state', PostCtrl]);
+  angular.module('cth').controller('PostCtrl', ['Post', '$scope', '$state', '$rootScope', '_', PostCtrl]);
 
-  function PostCtrl(Post, $scope, $state){
+  function PostCtrl(Post, $scope, $state, $rootScope, _){
 
     var vm = this;
     var oldSelectedPost;
@@ -17,6 +17,7 @@
       });
       vm.posts = processedPosts;
     });
+
 
     $scope.$on('itemSelected', function(){
       checkIfSelected();

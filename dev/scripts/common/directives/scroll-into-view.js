@@ -1,14 +1,16 @@
 (function(){
   'use strict';
 
-  angular.module('cth').directive('scrollIntoView', ['$', '$timeout', '$rootScope', scrollIntoView]);
+  angular.module('cth').directive('scrollIntoView', ['$', '$timeout', '$stateParams', '$rootScope', scrollIntoView]);
 
-  function scrollIntoView($, $timeout, $rootScope){
+
+  function scrollIntoView($, $timeout, $stateParams, $rootScope){
     return {
-      restrict: 'EA',
+      restrict: 'A',
       replace: false,
       link: function(scope, element, attrs){
         var isActive;
+        var isTriggered;
         var done = true;
 
         $timeout(function(){
@@ -17,15 +19,20 @@
         }, 500);
 
         function selectItem(){
-          isActive = element.hasClass('active');
-          if(isActive && done){
-            scrollToPost();
+          if(isScrollable()){
+            done = false;
             $rootScope.$broadcast('itemSelected');
+            scrollToPost();
           }
+        }
+        
+        function isScrollable() {
+          isActive = element.hasClass('active');
+          isTriggered = element.hasClass('triggered') && !$stateParams.post_id;
+          return (isActive || isTriggered) && done;
         }
 
         function scrollToPost(){
-          done = false;
           var top = $(element[0]).position().top;
           $('body').animate({scrollTop: top}, {
             duration: 750,

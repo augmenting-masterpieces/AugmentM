@@ -5,6 +5,7 @@
 
   app.constant('Showdown', Showdown);
   app.constant('$', jQuery);
+  app.constant('_', _);
 
   app.config(function($stateProvider, $urlRouterProvider) {
 
@@ -13,9 +14,11 @@
     $stateProvider
       .state('posts', {
         url: '/posts',
-        abstract: true,
         templateUrl: 'post/postList.html',
-        controller: 'PostCtrl as postList'
+        controller: 'PostCtrl as postList',
+      })
+      .state('posts.index', {
+        url: ''
       })
       .state('posts.post', {
         url: '/:post_id'

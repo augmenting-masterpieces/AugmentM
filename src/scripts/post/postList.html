@@ -1,5 +1,7 @@
-<section class="posts">
-  <post-item ng-repeat="post in postList.posts"
+<section scroll-into-view 
+         ui-sref-active="active" class="triggered"
+         class="posts">
+  <post-item ng-repeat="post in postList.posts | orderBy: '-posted'"
              scroll-into-view 
              post="post">
   </post-item>
