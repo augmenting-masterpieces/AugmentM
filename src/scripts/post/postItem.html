@@ -30,9 +30,14 @@
 
 
   <section class="meta col-md-2 col-md-offset-1">
-    <ul class="list-links list-links--secondary">
-      <li ng-repeat="author in post.authors">{{author}}</li>
-    </ul>
+    <table class="table">
+      <thead>
+        <th>Meta</th>
+      </thead>
+      <tr ng-repeat="author in post.authors">
+        <td>{{author}}</td>
+      </tr>
+    </table>
   </section>
 
 </article>

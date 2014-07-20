@@ -2,5 +2,8 @@
   .logo {
     width: 100vw;
     background-color: $colorBlue;
+    &:hover {
+      background-color: $colorYellow;
+    }
   }
 }

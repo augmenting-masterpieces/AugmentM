@@ -27,9 +27,9 @@ $font-family-monospace: NittyNormal, Menlo, Monaco, Consolas, "Courier New", mon
 $font-family-base: $font-family-monospace !default;
 
 @import "./src/styles/components/_normalize";
+@import "./bootstrap/bootstrap";
 @import "./src/styles/components/_modules/_featured-spotlight";
 @import "./src/styles/components/_modules/_site-logo";
-@import "./bootstrap/bootstrap";
 
 // html,
 .container-fluid {

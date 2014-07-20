@@ -13,11 +13,16 @@
 
     h1 {
       font-family: NittyBold;
+      font-size: 20px;
+      @media(min-width: $screen-lg-min) {
+        font-size: 24px;
+      }
       position: absolute;
+      left: 0px;
       bottom: 20px;
       width: 100%;
       text-align: left;
-      padding: 15px 40px;
+      padding: 10px 40px;
       color: white;
       background-color: black;
       opacity: 0.2;
@@ -68,35 +73,22 @@
 
 .meta {
   display: none;
-  padding: 30px;
-  background-color: $colorYellow;
-  color: $colorGrayDark;
+  font-family: NittyBold;
+  margin-top: 100px;
+  padding: 50px;
+  background-color: black;
+  text-align: center;
+
+  th, td {
+    color: white;
+  }
 }
 
 .text-content, .students, .partners, .staff, .goals {
-  padding: 1.5em 25px 1.5em 25px;
-  column-gap: 50px;
-  column-count: 1;
-
   display: none; 
-  clear: both;
-  padding: 40px;
+  margin-top: 20px;
+  margin-bottom: 40px;
 
-  h2+p, h3+p, p:first-of-type, ul {
-    padding-top: 0;
-  }
-
-  blockquote {
-    font-size: 1em;
-    border-left: 5px solid $colorYellow;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-
-  p {
-    widows: 2;
-
-  }
 
   h1, h2, h3 {
     font-family: NittyBold;
@@ -104,13 +96,13 @@
 
   a {
     display: inline-block;
-    padding: 0.1em 0.3em;
-    background-color: $colorYellow;
-    color: #222222;
+    padding: 0.1em 0.4em;
+    background-color: black; 
+    color: white;
 
     &:hover {
-      background-color: #222222;
-      color: $colorYellow;
+      background-color: $colorYellow;
+      color: black;
       text-decoration: none;
     }
   }
