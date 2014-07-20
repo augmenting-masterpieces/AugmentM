@@ -10,7 +10,7 @@
         <img ng-src="{{post.headerImage.url}}"/>
         <div class="selector"></div>
 
-        <h1 class="medium">{{post.title | underscorize}}</h1>
+        <h1>{{post.title | underscorize}}</h1>
 
       </a>
       <a ng-show="post.selected" 
@@ -24,15 +24,15 @@
     </div>
   </header>
 
-  <section class="text-content g-medium--full g-wide--full cssSlideUp"}}>
-
+  <section class="text-content col-md-8 col-md-offset-1 csSlideUp">
     <div ng-bind-html="post.content | markdown"></div>
+  </section>
 
-    <section class="meta">
-      <ul class="list-links list-links--secondary">
-        <li ng-repeat="author in post.authors">{{author}}</li>
-      </ul>
-    </section>
+
+  <section class="meta col-md-2 col-md-offset-1">
+    <ul class="list-links list-links--secondary">
+      <li ng-repeat="author in post.authors">{{author}}</li>
+    </ul>
   </section>
 
 </article>

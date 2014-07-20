@@ -5,39 +5,64 @@
  * Web Starter Kit team.
  *
  */
+@font-face {
+  font-family: NittyNormal;
+  src: url('../fonts/NN.woff') format('woff');
+}
 
-html,
-body {
+@font-face {
+  font-family: NittyBold;
+  src: url('../fonts/NB.woff') format('woff');
+}
+
+$colorYellow: #E5CF39 !default;
+$colorGrayDark: #404040 !default;
+$colorBlue: #75C7B3 !default;
+$colorGrayLight: #eeeeee !default;
+
+$navbar-height: 50px;
+$brand-primary: $colorBlue !default;
+
+$font-family-monospace: NittyNormal, Menlo, Monaco, Consolas, "Courier New", monospace !default;
+$font-family-base: $font-family-monospace !default;
+
+@import "./src/styles/components/_normalize";
+@import "./src/styles/components/_modules/_featured-spotlight";
+@import "./src/styles/components/_modules/_site-logo";
+@import "./bootstrap/bootstrap";
+
+// html,
+.container-fluid {
   width: 100%;
   height: 100%;
   margin: 0;
   margin-bottom: 4000px;
   padding: 0;
 }
-
-body {
-  position: relative;
-  font-weight: 300;
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  overflow: hidden;
-  min-height: 100%;
-}
-
-.cssFade {
-  transition: 0.3s linear all;
-  opacity: 1;
-}
-
-.cssFade.ng-hide {
-  opacity: 0;
-}
-.cssSlideUp {
-  transition: 0.5s linear all;
-  max-height: 3000px;
-}
-
-.cssSlideUp.ng-hide {
-  transition: 0.5s linear all;
-  max-height:0;
-}
+// 
+// body {
+//   position: relative;
+//   font-weight: 300;
+//   background-color: #FFFFFF;
+//   box-sizing: border-box;
+//   overflow: hidden;
+//   min-height: 100%;
+// }
+// 
+// .cssFade {
+//   transition: 0.3s linear all;
+//   opacity: 1;
+// }
+// 
+// .cssFade.ng-hide {
+//   opacity: 0;
+// }
+// .cssSlideUp {
+//   transition: 0.5s linear all;
+//   max-height: 3000px;
+// }
+// 
+// .cssSlideUp.ng-hide {
+//   transition: 0.5s linear all;
+//   max-height:0;
+// }

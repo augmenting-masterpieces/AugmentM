@@ -3,6 +3,10 @@ module.exports =
     src: "angular/angular.js"
     dest: "src/vendor/angular.js"
 
+  bootstrap: 
+    src: "bootstrap-sass-official/assets/stylesheets"
+    dest: "src/styles/bootstrap"
+
   angularUiRouter:
     src: "angular-ui-router/release/angular-ui-router.js"
     dest: "src/vendor/angular-ui-router.js"

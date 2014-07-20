@@ -27,7 +27,7 @@ module.exports =
   fonts:
     expand: true
     flatten: true
-    src: "src/styles/fonts/**/*"
+    src: "**/*.{eot,woff,ttf}"
     dest: "dev/fonts"
 
   images:

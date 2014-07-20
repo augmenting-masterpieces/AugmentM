@@ -67,11 +67,10 @@
 }
 
 .meta {
-  margin-top: 30px;
+  display: none;
   padding: 30px;
   background-color: $colorYellow;
   color: $colorGrayDark;
-  width: 100%;
 }
 
 .text-content, .students, .partners, .staff, .goals {
@@ -100,21 +99,7 @@
   }
 
   h1, h2, h3 {
-    color: $colorBlue;
-  }
-
-  h2, h3 {
-    padding-bottom: 0.5em;
-  }
-
-  h2 {
-    font-size: 26px;
-    padding-top: 0;
-  }
-
-  h3 {
-    font-size: 20px;
-    padding-bottom: 0.5em;
+    font-family: NittyBold;
   }
 
   a {
@@ -122,7 +107,6 @@
     padding: 0.1em 0.3em;
     background-color: $colorYellow;
     color: #222222;
-    font-family: NittyBold;
 
     &:hover {
       background-color: #222222;
@@ -131,13 +115,6 @@
     }
   }
 
-  @include media-query(medium){
-    column-count: 2;
-  }
-
-  @include media-query(huge){
-    column-count: 3;
-  }
 }
 
 .students {

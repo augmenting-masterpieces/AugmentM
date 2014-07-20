@@ -120,7 +120,7 @@ angular.module("post/postItem.html", []).run(["$templateCache", function($templa
     "        <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
     "        <div class=\"selector\"></div>\n" +
     "\n" +
-    "        <h1 class=\"medium\">{{post.title | underscorize}}</h1>\n" +
+    "        <h1>{{post.title | underscorize}}</h1>\n" +
     "\n" +
     "      </a>\n" +
     "      <a ng-show=\"post.selected\" \n" +
@@ -134,15 +134,15 @@ angular.module("post/postItem.html", []).run(["$templateCache", function($templa
     "    </div>\n" +
     "  </header>\n" +
     "\n" +
-    "  <section class=\"text-content g-medium--full g-wide--full cssSlideUp\"}}>\n" +
-    "\n" +
+    "  <section class=\"text-content col-md-8 col-md-offset-1 csSlideUp\">\n" +
     "    <div ng-bind-html=\"post.content | markdown\"></div>\n" +
+    "  </section>\n" +
     "\n" +
-    "    <section class=\"meta\">\n" +
-    "      <ul class=\"list-links list-links--secondary\">\n" +
-    "        <li ng-repeat=\"author in post.authors\">{{author}}</li>\n" +
-    "      </ul>\n" +
-    "    </section>\n" +
+    "\n" +
+    "  <section class=\"meta col-md-2 col-md-offset-1\">\n" +
+    "    <ul class=\"list-links list-links--secondary\">\n" +
+    "      <li ng-repeat=\"author in post.authors\">{{author}}</li>\n" +
+    "    </ul>\n" +
     "  </section>\n" +
     "\n" +
     "</article>\n" +
