@@ -10,9 +10,14 @@
     var selectedPost;
 
     Post.getAll().then(function(posts){
-      var postsWithImageProps = createImageProps(posts);
-      var postsWithId = createPostIds(postsWithImageProps);
-      vm.posts = postsWithId;
+
+      var processedPosts = posts.map(function(post){
+        post.headerImage = post.images[0];
+        post.id  = dasherize(post.title);
+        post.selected = false;
+        return post;
+      });
+      vm.posts = processedPosts;
     });
 
     $scope.$on('itemSelected', function(){
@@ -46,24 +51,11 @@
       oldSelectedPost = selectedPost;
     }
 
-    function createPostIds(posts){
-      return posts.map(function(post){
-        post.id = dasherize(post.title);
-        return post;
-      }); 
-    }
-
-    function createImageProps(posts){
-      return posts.map(function(post){
-        post.headerImage = post.images[0];
-        return post;
-      }); 
-    }
-
     function dasherize(str){
       return str.replace(/\s+/g, '-').toLowerCase(); 
     }
 
+    vm.checkIfSelected = checkIfSelected;
     return vm;
   }
 })();
