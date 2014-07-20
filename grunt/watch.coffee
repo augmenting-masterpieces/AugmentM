@@ -22,6 +22,8 @@ module.exports =
     tasks: [
       "scripts"
     ]
+    options:
+      message: "hinting succesful"
 
   vendor:
     files: ["src/vendor/*.js"]

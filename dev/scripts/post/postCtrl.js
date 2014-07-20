@@ -23,9 +23,13 @@
       checkIfSelected();
     });
 
-    $scope.toggleExpanded = function(post){
-      post.expanded = !post.expanded;
-    };
+    $scope.$on('noItemSelected', function(){
+      _.each(vm.posts, function(post){
+        oldSelectedPost = undefined;
+        post.selected = false;
+        post.expanded = false;
+      });
+    });
 
     function checkIfSelected(){
       var postId = $state.params.post_id;
@@ -38,6 +42,10 @@
         }
       });
     }
+
+    $scope.toggleExpanded = function(post){
+      post.expanded = !post.expanded;
+    };
 
     function deselectPost(post){
       post.selected = false;

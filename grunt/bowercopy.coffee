@@ -31,6 +31,10 @@ module.exports =
     src: "jquery/dist/jquery.js"
     dest: "src/vendor/jquery.js"
 
+  viewportUnitsBuggyfill:
+    src: "viewport-units-buggyfill/viewport-units-buggyfill.js"
+    dest: "src/vendor/viewport-units-buggyfill.js"
+
   scrollIntoView:
     src: "jQuery.scrollIntoView/jquery.scrollIntoView.js"
     dest: "src/vendor/scroll-into-view.js"

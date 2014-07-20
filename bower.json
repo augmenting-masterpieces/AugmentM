@@ -21,7 +21,8 @@
     "angularfire": "~0.7.1",
     "showdown": "~0.3.1",
     "angular-sanitize": "~1.2.20",
-    "jQuery.scrollIntoView": "https://github.com/Arwid/jQuery.scrollIntoView.git"
+    "jQuery.scrollIntoView": "https://github.com/Arwid/jQuery.scrollIntoView.git",
+    "viewport-units-buggyfill": "~0.3.1"
   },
   "devDependencies": {
     "angular-mocks": "~1.2.20"

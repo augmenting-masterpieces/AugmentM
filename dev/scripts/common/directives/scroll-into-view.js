@@ -16,12 +16,16 @@
         $timeout(function(){
           selectItem();
           scope.$watch(selectItem);
-        }, 500);
+        }, 1000);
 
         function selectItem(){
           if(isScrollable()){
             done = false;
-            $rootScope.$broadcast('itemSelected');
+            if(isTriggered){
+              $rootScope.$broadcast('noItemSelected');
+            } else {
+              $rootScope.$broadcast('itemSelected');
+            }
             scrollToPost();
           }
         }

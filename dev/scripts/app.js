@@ -9,16 +9,12 @@
 
   app.config(function($stateProvider, $urlRouterProvider) {
 
-    $urlRouterProvider.when('', '/posts/index');
 
     $stateProvider
       .state('posts', {
         url: '/posts',
         templateUrl: 'post/postList.html',
         controller: 'PostCtrl as postList',
-      })
-      .state('posts.index', {
-        url: ''
       })
       .state('posts.post', {
         url: '/:post_id'
@@ -29,8 +25,9 @@
         controller: 'PilotCtrl as pilot'
 
       });
-  });
 
+    $urlRouterProvider.when('', '/posts');
+  });
 
   app.factory('studentsData', ['$firebase', studentsData]);
 
@@ -39,4 +36,5 @@
     var students = $firebase(ref);
     return students;
   }
+
 })();

@@ -12,6 +12,7 @@ module.exports =
       'src/vendor/jquery.js'
       'src/vendor/lodash.js'
       'src/vendor/firebase.js'
+      'src/vendor/viewport-units-buggyfill.js'
       'src/vendor/showdown.js'
       'src/vendor/scroll-into-view.js'
       'src/vendor/angular.js'
