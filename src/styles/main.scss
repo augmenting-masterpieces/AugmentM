@@ -15,6 +15,8 @@
   src: url('../fonts/NB.woff') format('woff');
 }
 
+$line-height-base: 1.6 !default; // 20/14
+
 $colorYellow: #E5CF39 !default;
 $colorGrayDark: #404040 !default;
 $colorBlue: #75C7B3 !default;
@@ -34,11 +36,10 @@ $font-family-base: $font-family-monospace !default;
 // html,
 .container-fluid {
   width: 100%;
-  height: 100%;
   margin: 0;
-  margin-bottom: 4000px;
   padding: 0;
 }
+
 // 
 // body {
 //   position: relative;

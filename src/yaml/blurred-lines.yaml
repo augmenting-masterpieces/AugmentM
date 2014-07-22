@@ -8,13 +8,13 @@ images:
 tags:
 - frontpage
 content: |
-  ## Blurred Lines: Literary Perspectives on Programming Languages
+  # Blurred Lines: Literary Perspectives on Programming Languages
 
   I remember the day when I drew that first line on the screen of my computer using a command something like < line (x,y) >. I clicked "run" and indeed a line appeared. I had interacted with a machine that I'd formerly though of as both an enabled typewriter and a black box at the same time. I learned that my computer and I were capable of much more than text processing. 
 
   When I clicked run that day, something clicked within me too: I realised that programming and markup languages are just another type of language, only slightly different from those I'd been using my entire life. Treating programming languages as languages made them accessible to me. Yet, computer languages seemed much more able to eliminate ambiguity and appeared to be always performative.
 
-  ### The Story World of Programming Languages
+  ## The Story World of Programming Languages
   Performatives, and its counterpart constatives, is a distinction made by John Austin in his 1962 work *How to Do Things with Words*. Constatives, Austin argues, are locutions (utterances) that say something about a state of affairs and can be either true or false. Performatives are locutions that accomplish something. 
 
   Literature (neglected by Austin) can be considered a prime example of performative language: it brings into being a new reality–characters, places, actions. Programming languages do the same. Javascript creates a space (a world) where *var a = 5* changes the meaning of *a* from nothing or something else to *5* and Ruby allows for a space in which objects are made of text. These variables and objects (actors) play a role in the further development (actions) of the program (the story). 
@@ -23,7 +23,7 @@ content: |
 
   A closer look turns out that not every locution in programming languages is a performative. Booleans–formulas that are return either a true or false–are a great example of a constative (a locution that says something about a state of affairs and can be either true or false). The story world of programming languages turns out to be as much a linguistic treasure as literature and human language are.
 
-  ### The Humanness of Speech
+  ## The Humanness of Speech
 
   In literary criticism, ever since William Epson published his *Seven Types of Ambiguity* in 1930, ambiguity is considered a poetic device. If used properly, ambiguity adds to the complexity of the text as well as the experience of the reader. Poetry and literature turn ambiguity into a sign of quality rather than an flaw, as it was and is still often regarded in human communication.
 
