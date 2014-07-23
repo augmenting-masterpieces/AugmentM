@@ -22,7 +22,15 @@ $colorGrayDark: #404040 !default;
 $colorBlue: #75C7B3 !default;
 $colorGrayLight: #eeeeee !default;
 
-$navbar-height: 50px;
+$navbar-inverse-color: white;
+$navbar-inverse-bg: black;
+
+$navbar-inverse-link-color: white;
+$navbar-inverse-link-active-color: black;
+$navbar-inverse-link-active-bg: $colorYellow;
+
+
+$grid-float-breakpoint: 0 !default;
 $brand-primary: $colorBlue !default;
 
 $font-family-monospace: NittyNormal, Menlo, Monaco, Consolas, "Courier New", monospace !default;
@@ -33,11 +41,17 @@ $font-family-base: $font-family-monospace !default;
 @import "./src/styles/components/_modules/_featured-spotlight";
 @import "./src/styles/components/_modules/_site-logo";
 
+
 // html,
 .container-fluid {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+.navbar {
+  font-family: NittyBold;
+  opacity: 0.9;
 }
 
 // 

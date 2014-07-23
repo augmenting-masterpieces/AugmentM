@@ -156,7 +156,19 @@ angular.module("post/postItem.html", []).run(["$templateCache", function($templa
 
 angular.module("post/postList.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("post/postList.html",
-    "<button ng-click=\"postList.setFilter(tag.filter)\" ng-repeat=\"tag in postList.tags\">{{tag.name}}</button>\n" +
+    "<div class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"navbar-header navbar-left\">\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li ng-click=\"postList.setFilter(tag.filter)\" \n" +
+    "            ng-repeat=\"tag in postList.tags\" \n" +
+    "            ng-class=\"{active: tag.active}\">\n" +
+    "            <a>{{tag.name}}</a>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</div>\n" +
     "<section scroll-into-view \n" +
     "         ui-sref-active=\"active\" class=\"triggered\"\n" +
     "         class=\"posts\">\n" +

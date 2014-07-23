@@ -1,4 +1,19 @@
 {"posts": [{
+  "title": "About",
+  "posted": "2013-06-24T21:57:27.000Z",
+  "authors": [
+    "Sabrina Sauer"
+  ],
+  "images": [
+    {
+      "url": "./images/coding.jpg"
+    }
+  ],
+  "tags": [
+    "about"
+  ],
+  "content": "# About Coding the Humanities\n\nCoding the Humanities is an initiative that allows researchers to develop digital tools to perform research. The initiative is based in Amsterdam, and was founded by Jan Hein Hoogstad and Marijn Koolen in April 2013. A few months ago Sabrina Sauer joined the core team. Jan Hein, Marijn, and Sabrina are all assistant professor at the University of Amsterdam. \n\nAt present, the Coding the Humanities curriculum involves a Ma course in the Cultural Analysis program as well as a Ba course set up as part of a newly developed Digital Humanities minor (a joint effort of the University of Amsterdam and the Vrije Universiteit). The overarching goal of empowering researchers to develop and use their own tools has also taken the form of a “crash course” for university employees.\n\n At present, Coding the Humanities involves a number of public organizations and private companies. This involvement is not merely geared at sharing and circulation of knowledge, but moreover provides all parties added value; private and public partners are given fast access to research – to test and discover new ideas and products – while researchers retain access to current business and policy concerns. Agility and societal relevance – in the shape of social innovation - are key to Coding the Humanities.\n"
+},{
   "title": "Blurred Lines",
   "posted": "2014-06-24T21:57:27.000Z",
   "authors": [

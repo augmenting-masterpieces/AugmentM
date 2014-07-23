@@ -113,9 +113,15 @@ describe 'PostCtrl', ->
       expect(@PostCtrl.postFilter).toBe('')
 
     it 'should show subset after selection', ->
-      @PostCtrl.setFilter('posts')
-      expect(@PostCtrl.postFilter).toBe('posts')
+      @PostCtrl.setFilter('about')
+      expect(@PostCtrl.postFilter).toBe('about')
 
     it 'transitions to the posts state after selection', ->
       @PostCtrl.setFilter('posts')
       expect(@$state.go).toHaveBeenCalledWith('posts')
+
+    it 'has set the active property on the corresponding tag', ->
+      @PostCtrl.setFilter('about')
+      tag = _.find @PostCtrl.tags, (tag) ->
+        tag.filter == 'about'
+      expect(tag.active).toBe(true)

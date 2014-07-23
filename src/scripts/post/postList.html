@@ -1,4 +1,16 @@
-<button ng-click="postList.setFilter(tag.filter)" ng-repeat="tag in postList.tags">{{tag.name}}</button>
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <div class="navbar-header navbar-left">
+      <ul class="nav navbar-nav">
+        <li ng-click="postList.setFilter(tag.filter)" 
+            ng-repeat="tag in postList.tags" 
+            ng-class="{active: tag.active}">
+            <a>{{tag.name}}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 <section scroll-into-view 
          ui-sref-active="active" class="triggered"
          class="posts">

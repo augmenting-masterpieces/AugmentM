@@ -13,24 +13,29 @@
     vm.postFilter = '';
 
     vm.tags = [{
-      name: 'about',
+      name: 'About',
       filter: 'about'
     }, {
-      name: 'posts', 
-      filter: 'post'
+      name: 'Posts', 
+      filter: 'post',
+      active: true
     }, {
-      name: 'pilot',
-      filter: 'pilot'
-    }, {
-      name: 'articles',
+      name: 'Articles',
       filter: 'article'
     }, {
-      name: 'all',
-      filter: 'all'
+      name: 'All',
+      filter: ''
     }];
 
     vm.setFilter = function(filter){
       vm.postFilter = filter;
+      _.each(vm.tags, function(tag){
+        tag.active = false;
+        if(tag.filter === filter){
+          tag.active = true;
+        }
+        return tag;
+      });
       $state.go('posts');
 
     };
