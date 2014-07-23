@@ -9,6 +9,32 @@
     var oldSelectedPost;
     var selectedPost;
 
+    vm.postOrder = '-posted';
+    vm.postFilter = '';
+
+    vm.tags = [{
+      name: 'about',
+      filter: 'about'
+    }, {
+      name: 'posts', 
+      filter: 'post'
+    }, {
+      name: 'pilot',
+      filter: 'pilot'
+    }, {
+      name: 'articles',
+      filter: 'article'
+    }, {
+      name: 'all',
+      filter: 'all'
+    }];
+
+    vm.setFilter = function(filter){
+      vm.postFilter = filter;
+      $state.go('posts');
+
+    };
+
     Post.getAll().then(function(posts){
 
       var processedPosts = posts.map(function(post){

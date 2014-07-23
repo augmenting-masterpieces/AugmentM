@@ -1,7 +1,8 @@
+<button ng-click="postList.setFilter(tag.filter)" ng-repeat="tag in postList.tags">{{tag.name}}</button>
 <section scroll-into-view 
          ui-sref-active="active" class="triggered"
          class="posts">
-  <post-item ng-repeat="post in postList.posts | orderBy: '-posted'"
+         <post-item ng-repeat="post in postList.posts | filter:{ tags: postList.postFilter }| orderBy:postList.postOrder"
              scroll-into-view 
              post="post">
   </post-item>

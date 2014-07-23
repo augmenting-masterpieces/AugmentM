@@ -6,7 +6,7 @@ images:
 - url: ./images/blurred-lines.jpg
 - url: ./images/blurred-lines.jpg
 tags:
-- frontpage
+- article
 content: |
   # Blurred Lines: Literary Perspectives on Programming Languages
 
