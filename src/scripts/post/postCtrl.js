@@ -1,6 +1,5 @@
 (function(){
   'use strict';
-
   angular.module('cth').controller('PostCtrl', ['Post', '$scope', '$state', '$rootScope', '_', PostCtrl]);
 
   function PostCtrl(Post, $scope, $state, $rootScope, _){
@@ -8,37 +7,6 @@
     var vm = this;
     var oldSelectedPost;
     var selectedPost;
-
-    vm.postOrder = '-posted';
-    vm.postFilter = '';
-
-    vm.tags = [{
-      name: 'About',
-      filter: 'about'
-    }, {
-      name: 'Posts', 
-      filter: 'post',
-      active: true
-    }, {
-      name: 'Articles',
-      filter: 'article'
-    }, {
-      name: 'All',
-      filter: ''
-    }];
-
-    vm.setFilter = function(filter){
-      vm.postFilter = filter;
-      _.each(vm.tags, function(tag){
-        tag.active = false;
-        if(tag.filter === filter){
-          tag.active = true;
-        }
-        return tag;
-      });
-      $state.go('posts');
-
-    };
 
     Post.getAll().then(function(posts){
 

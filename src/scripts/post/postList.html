@@ -1,21 +1,31 @@
-<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <div class="container-fluid">
-    <div class="navbar-header navbar-left">
-      <ul class="nav navbar-nav">
-        <li ng-click="postList.setFilter(tag.filter)" 
-            ng-repeat="tag in postList.tags" 
-            ng-class="{active: tag.active}">
-            <a>{{tag.name}}</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-<section scroll-into-view 
-         ui-sref-active="active" class="triggered"
-         class="posts">
-         <post-item ng-repeat="post in postList.posts | filter:{ tags: postList.postFilter }| orderBy:postList.postOrder"
-             scroll-into-view 
-             post="post">
-  </post-item>
+<nav ng-class="{open:app.navbarOpen}" class="navdrawer"}}>
+  <div ng-click="app.toggleNavDrawer()" class="toggleNavDrawer logo" ng-include="'common/templates/logo-blank.html'"></div>
+  <ul class="list-group">
+    <li ng-click="app.setFilter(tag.filter)" 
+        ng-repeat="tag in app.tags" 
+        ng-class="{active: tag.active}"
+        class="list-group-item">{{tag.name}}</li>
+  </ul>
+</nav>
+
+
+<section class="content" ng-class="{open:app.navbarOpen}" >
+
+
+  <header class="site-header">
+    <a href ui-sref="posts"> 
+      <div class="logo" ng-include="'common/templates/logo.html'"></div>
+    </a>
+  </header>
+
+
+
+  <section scroll-into-view 
+           ui-sref-active="active" class="triggered"
+           class="posts">
+           <post-item ng-repeat="post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder"
+               scroll-into-view 
+               post="post">
+    </post-item>
+  </section>
 </section>

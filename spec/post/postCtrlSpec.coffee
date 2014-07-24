@@ -95,33 +95,3 @@ describe 'PostCtrl', ->
         it 'leaves the other post expanded', ->
           expect(@expandedPosts.length).toBe(2)
 
-  describe 'ordering posts', ->
-    beforeEach ->
-      @posts = @PostCtrl.posts
-
-    it 'should order them by posted date in descending order', ->
-      expect(@PostCtrl.postOrder).toBe('-posted')
-
-  describe 'filtering posts', ->
-    beforeEach ->
-      inject ($injector) ->
-        @$state = $injector.get '$state'
-        @posts = @PostCtrl.posts
-        spyOn(@$state, 'go')
-      
-    it 'should show all posts as default', ->
-      expect(@PostCtrl.postFilter).toBe('')
-
-    it 'should show subset after selection', ->
-      @PostCtrl.setFilter('about')
-      expect(@PostCtrl.postFilter).toBe('about')
-
-    it 'transitions to the posts state after selection', ->
-      @PostCtrl.setFilter('posts')
-      expect(@$state.go).toHaveBeenCalledWith('posts')
-
-    it 'has set the active property on the corresponding tag', ->
-      @PostCtrl.setFilter('about')
-      tag = _.find @PostCtrl.tags, (tag) ->
-        tag.filter == 'about'
-      expect(tag.active).toBe(true)

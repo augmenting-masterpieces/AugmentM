@@ -1,4 +1,16 @@
-angular.module('templates-cth', ['common/templates/logo.html', 'common/templates/pilot.html', 'post/postItem.html', 'post/postList.html']);
+angular.module('templates-cth', ['common/templates/logo-blank.html', 'common/templates/logo.html', 'common/templates/pilot.html', 'post/postItem.html', 'post/postList.html']);
+
+angular.module("common/templates/logo-blank.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("common/templates/logo-blank.html",
+    "<svg id=\"logo-blank\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" version=\"1.1\" x=\"0px\" y=\"0px\" viewBox=\"0 0 424 244\" enable-background=\"new 0 0 424 244\" xml:space=\"preserve\">\n" +
+    "  <g></g>\n" +
+    "  <rect x=\"18\" y=\"18\" width=\"282\" height=\"65\" class=\"style0\"/>\n" +
+    "  <rect x=\"18\" y=\"90\" width=\"174\" height=\"65\" class=\"style0\"/>\n" +
+    "  <rect x=\"18\" y=\"162\" width=\"388\" height=\"65\" class=\"style0\"/>\n" +
+    "  </g>\n" +
+    "</svg>\n" +
+    "");
+}]);
 
 angular.module("common/templates/logo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("common/templates/logo.html",
@@ -156,26 +168,36 @@ angular.module("post/postItem.html", []).run(["$templateCache", function($templa
 
 angular.module("post/postList.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("post/postList.html",
-    "<div class=\"navbar navbar-inverse navbar-fixed-top\" role=\"navigation\">\n" +
-    "  <div class=\"container-fluid\">\n" +
-    "    <div class=\"navbar-header navbar-left\">\n" +
-    "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li ng-click=\"postList.setFilter(tag.filter)\" \n" +
-    "            ng-repeat=\"tag in postList.tags\" \n" +
-    "            ng-class=\"{active: tag.active}\">\n" +
-    "            <a>{{tag.name}}</a>\n" +
-    "        </li>\n" +
-    "      </ul>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "</div>\n" +
-    "<section scroll-into-view \n" +
-    "         ui-sref-active=\"active\" class=\"triggered\"\n" +
-    "         class=\"posts\">\n" +
-    "         <post-item ng-repeat=\"post in postList.posts | filter:{ tags: postList.postFilter }| orderBy:postList.postOrder\"\n" +
-    "             scroll-into-view \n" +
-    "             post=\"post\">\n" +
-    "  </post-item>\n" +
+    "<nav ng-class=\"{open:app.navbarOpen}\" class=\"navdrawer\"}}>\n" +
+    "  <div ng-click=\"app.toggleNavDrawer()\" class=\"toggleNavDrawer logo\" ng-include=\"'common/templates/logo-blank.html'\"></div>\n" +
+    "  <ul class=\"list-group\">\n" +
+    "    <li ng-click=\"app.setFilter(tag.filter)\" \n" +
+    "        ng-repeat=\"tag in app.tags\" \n" +
+    "        ng-class=\"{active: tag.active}\"\n" +
+    "        class=\"list-group-item\">{{tag.name}}</li>\n" +
+    "  </ul>\n" +
+    "</nav>\n" +
+    "\n" +
+    "\n" +
+    "<section class=\"content\" ng-class=\"{open:app.navbarOpen}\" >\n" +
+    "\n" +
+    "\n" +
+    "  <header class=\"site-header\">\n" +
+    "    <a href ui-sref=\"posts\"> \n" +
+    "      <div class=\"logo\" ng-include=\"'common/templates/logo.html'\"></div>\n" +
+    "    </a>\n" +
+    "  </header>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
+    "  <section scroll-into-view \n" +
+    "           ui-sref-active=\"active\" class=\"triggered\"\n" +
+    "           class=\"posts\">\n" +
+    "           <post-item ng-repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\"\n" +
+    "               scroll-into-view \n" +
+    "               post=\"post\">\n" +
+    "    </post-item>\n" +
+    "  </section>\n" +
     "</section>\n" +
     "");
 }]);

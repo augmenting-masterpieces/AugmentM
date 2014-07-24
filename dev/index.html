@@ -23,19 +23,9 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
-    <!-- build:css styles/components/main.min.css -->
-    <link rel="stylesheet" href="styles/h5bp.css">
-    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/main.css">
-    <!-- endbuild -->
   </head>
   <body class="container-fluid" ng-cloak ng-app="cth">
-
-    <header class="site-header">
-      <a href ui-sref="posts"> 
-        <div class="logo" ng-include="'common/templates/logo.html'"></div>
-      </a>
-    </header>
 
     <!-- <header class="app&#45;bar promote&#45;layer"> -->
     <!--   <button class="menu"> -->
@@ -45,14 +35,7 @@
     <!--   </section> -->
     <!-- </header> -->
 
-    <!-- <nav class="navdrawer&#45;container promote&#45;layer"> -->
-    <!--   <h4>Navigation</h4> -->
-    <!--   <ul> -->
-    <!--     <li><a href="styleguide/index.html">Style Guide</a></li> -->
-    <!--   </ul> -->
-    <!-- </nav> -->
-    <!-- Fixed navbar -->
-    <main>
+    <main ng-controller="AppCtrl as app">
 
       <div ui-view autoscroll="false"></div>
     </main>
@@ -64,7 +47,7 @@
 
     <script>window.viewportUnitsBuggyfill.init();</script>
 
-    <script src="scripts/post/postCtrl.js"></script>
+    <script src="scripts/appCtrl.js"></script>
     <script src="scripts/post/postCtrl.js"></script>
     <script src="scripts/pilot/pilotCtrl.js"></script>
     <script src="scripts/post/postItemCtrl.js"></script>
