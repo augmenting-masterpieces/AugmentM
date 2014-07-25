@@ -2,11 +2,11 @@ box: wercker/nodejs
 # Build definition
 build:
   steps:
-  - npm install
-  - grunt:
-    tasks: ci
+    - npm-install
+    - grunt:
+        tasks: ci
 
-  - script:
+  script:
     name: echo nodejs information
     code: |
       echo "node version $(node -v) running"
