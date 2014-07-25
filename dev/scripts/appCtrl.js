@@ -34,7 +34,6 @@
         return tag;
       });
       $state.go('posts');
-      vm.toggleNavDrawer();
 
     };
     vm.toggleNavDrawer = function(){

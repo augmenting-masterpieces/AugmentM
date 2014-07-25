@@ -23,20 +23,21 @@
     <link rel="canonical" href="http://www.example.com/">
     -->
 
+    <!-- build:css styles/components/main.min.css -->
+    <link rel="stylesheet" href="styles/h5bp.css">
+    <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
   </head>
-  <body class="container-fluid" ng-cloak ng-app="cth">
+  <body class="container-fluid" ng-cloak ng-controller="AppCtrl as app" ng-app="cth">
 
-    <!-- <header class="app&#45;bar promote&#45;layer"> -->
-    <!--   <button class="menu"> -->
-    <!--     <img src="images/hamburger.svg" alt="Menu"> -->
-    <!--   </button> -->
-    <!--   <section class="app&#45;bar&#45;actions"> -->
-    <!--   </section> -->
-    <!-- </header> -->
+    <header class="site-header">
+      <a href ui-sref="posts"> 
+        <div class="logo" ng-include="'common/templates/logo.html'"></div>
+      </a>
+    </header>
 
-    <main ng-controller="AppCtrl as app">
-
+    <main>
       <div ui-view autoscroll="false"></div>
     </main>
 

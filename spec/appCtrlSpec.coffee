@@ -43,8 +43,3 @@ describe 'AppCtrl', ->
       tag = _.find @AppCtrl.tags, (tag) ->
         tag.filter == 'about'
       expect(tag.active).toBe(true)
-
-    it 'toggles navbar state after selecting filter', ->
-      expect(@AppCtrl.navbarOpen).toBe(false)
-      @AppCtrl.setFilter('about')
-      expect(@AppCtrl.navbarOpen).toBe(true)

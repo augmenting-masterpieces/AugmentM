@@ -45,18 +45,13 @@
         this.AppCtrl.setFilter('posts');
         return expect(this.$state.go).toHaveBeenCalledWith('posts');
       });
-      it('has set the active property on the corresponding tag', function() {
+      return it('has set the active property on the corresponding tag', function() {
         var tag;
         this.AppCtrl.setFilter('about');
         tag = _.find(this.AppCtrl.tags, function(tag) {
           return tag.filter === 'about';
         });
         return expect(tag.active).toBe(true);
-      });
-      return it('toggles navbar state after selecting filter', function() {
-        expect(this.AppCtrl.navbarOpen).toBe(false);
-        this.AppCtrl.setFilter('about');
-        return expect(this.AppCtrl.navbarOpen).toBe(true);
       });
     });
   });

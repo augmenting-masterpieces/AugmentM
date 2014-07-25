@@ -20,6 +20,7 @@ $line-height-base: 1.6 !default; // 20/14
 $colorYellow: #E5CF39 !default;
 $colorGrayDark: #404040 !default;
 $colorBlue: #75C7B3 !default;
+$colorRed: #E34D2F !default;
 $colorGrayLight: #eeeeee !default;
 
 $list-group-bg: black;
@@ -29,14 +30,15 @@ $list-group-active-color: black !default;
 
 $list-group-border-radius: 0;
 
-$navbar-inverse-color: white;
+$navbar-inverse-color: black;
+$navbar-height: 100px;
 $navbar-inverse-bg: black;
 $navbar-inverse-link-color: white;
-$navbar-inverse-link-active-color: black;
+$navbar-inverse-link-active-color: $colorGrayDark;
 $navbar-inverse-link-active-bg: $colorYellow;
 
+$grid-float-breakpoint: 0;
 
-$grid-float-breakpoint: 0 !default;
 $brand-primary: $colorBlue !default;
 
 $font-family-monospace: NittyNormal, Menlo, Monaco, Consolas, "Courier New", monospace !default;
@@ -49,6 +51,7 @@ $font-family-base: $font-family-monospace !default;
 
 
 // html,
+
 .container-fluid {
   width: 100%;
   margin: 0;
@@ -63,58 +66,21 @@ $font-family-base: $font-family-monospace !default;
   }
 }
 
-.navdrawer {
+.navbar {
   font-family: NittyBold;
-  z-index: 1;
-  position: fixed;
-  top: 0;
-  left: -250px;
-  bottom: 0;
-  width: 250px;
-  height: 100%;
-  background-color: black; 
-  color: white;
-  overflow-y: auto;
-
-
-  .list-group, .list-group-item {
-    border: none;
-  } 
-
-  .toggleNavDrawer {
-    position: fixed;
-    display: block;
-    left: 0;
-    top: 0px;
-    width: 60px;
-    height: 41px;
-    padding: 8px;
-    background-color: black;
-    border: 0px solid #666;
-    color: white;
-    text-decoration:none; 
-    z-index: 2;
-    opacity: 0.2;
-
-    svg {
-      fill: white; 
-    }
-
-    &:hover {
-      opacity: 1;
-    }
+  opacity: 1;
+  margin: 0;
+  border: none;
+  ul {
+    width: 100%;
   }
 
-  &.open {
-    left: 0px;
-
-    .toggleNavDrawer {
-      left: 250px;
-    }
+  li {
+    width: 25%;
+    text-align: center;
+    overflow: hidden;
   }
 }
-
-
 // 
 // body {
 //   position: relative;

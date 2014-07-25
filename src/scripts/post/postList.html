@@ -1,31 +1,20 @@
-<nav ng-class="{open:app.navbarOpen}" class="navdrawer"}}>
-  <div ng-click="app.toggleNavDrawer()" class="toggleNavDrawer logo" ng-include="'common/templates/logo-blank.html'"></div>
-  <ul class="list-group">
-    <li ng-click="app.setFilter(tag.filter)" 
-        ng-repeat="tag in app.tags" 
-        ng-class="{active: tag.active}"
-        class="list-group-item">{{tag.name}}</li>
-  </ul>
-</nav>
+<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+  <div class="container-fluid">
+      <ul class="nav navbar-nav">
+        <li ng-click="app.setFilter(tag.filter)" 
+            ng-repeat="tag in app.tags" 
+            ng-class="{active: tag.active}">
+            <a>{{tag.name}}</a>
+        </li>
+      </ul>
+  </div>
+</div>
 
-
-<section class="content" ng-class="{open:app.navbarOpen}" >
-
-
-  <header class="site-header">
-    <a href ui-sref="posts"> 
-      <div class="logo" ng-include="'common/templates/logo.html'"></div>
-    </a>
-  </header>
-
-
-
-  <section scroll-into-view 
-           ui-sref-active="active" class="triggered"
-           class="posts">
-           <post-item ng-repeat="post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder"
-               scroll-into-view 
-               post="post">
-    </post-item>
-  </section>
+<section scroll-into-view 
+         ui-sref-active="active" class="triggered"
+         class="posts">
+  <post-item ng-repeat="post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder"
+       scroll-into-view 
+             post="post">
+  </post-item>
 </section>

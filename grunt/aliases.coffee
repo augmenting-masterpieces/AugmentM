@@ -22,6 +22,11 @@ module.exports =
     "dataModels"
     "assets"
   ]
+  
+  ci: [
+    "buildDev"
+    "testem::ci"
+  ]
 
   css: [
     "sass"

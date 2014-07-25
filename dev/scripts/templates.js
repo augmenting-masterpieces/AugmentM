@@ -168,36 +168,25 @@ angular.module("post/postItem.html", []).run(["$templateCache", function($templa
 
 angular.module("post/postList.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("post/postList.html",
-    "<nav ng-class=\"{open:app.navbarOpen}\" class=\"navdrawer\"}}>\n" +
-    "  <div ng-click=\"app.toggleNavDrawer()\" class=\"toggleNavDrawer logo\" ng-include=\"'common/templates/logo-blank.html'\"></div>\n" +
-    "  <ul class=\"list-group\">\n" +
-    "    <li ng-click=\"app.setFilter(tag.filter)\" \n" +
-    "        ng-repeat=\"tag in app.tags\" \n" +
-    "        ng-class=\"{active: tag.active}\"\n" +
-    "        class=\"list-group-item\">{{tag.name}}</li>\n" +
-    "  </ul>\n" +
-    "</nav>\n" +
+    "<div class=\"navbar navbar-inverse navbar-static-top\" role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li ng-click=\"app.setFilter(tag.filter)\" \n" +
+    "            ng-repeat=\"tag in app.tags\" \n" +
+    "            ng-class=\"{active: tag.active}\">\n" +
+    "            <a>{{tag.name}}</a>\n" +
+    "        </li>\n" +
+    "      </ul>\n" +
+    "  </div>\n" +
+    "</div>\n" +
     "\n" +
-    "\n" +
-    "<section class=\"content\" ng-class=\"{open:app.navbarOpen}\" >\n" +
-    "\n" +
-    "\n" +
-    "  <header class=\"site-header\">\n" +
-    "    <a href ui-sref=\"posts\"> \n" +
-    "      <div class=\"logo\" ng-include=\"'common/templates/logo.html'\"></div>\n" +
-    "    </a>\n" +
-    "  </header>\n" +
-    "\n" +
-    "\n" +
-    "\n" +
-    "  <section scroll-into-view \n" +
-    "           ui-sref-active=\"active\" class=\"triggered\"\n" +
-    "           class=\"posts\">\n" +
-    "           <post-item ng-repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\"\n" +
-    "               scroll-into-view \n" +
-    "               post=\"post\">\n" +
-    "    </post-item>\n" +
-    "  </section>\n" +
+    "<section scroll-into-view \n" +
+    "         ui-sref-active=\"active\" class=\"triggered\"\n" +
+    "         class=\"posts\">\n" +
+    "  <post-item ng-repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\"\n" +
+    "       scroll-into-view \n" +
+    "             post=\"post\">\n" +
+    "  </post-item>\n" +
     "</section>\n" +
     "");
 }]);
