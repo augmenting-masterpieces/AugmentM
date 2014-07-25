@@ -1,14 +1,3 @@
-<div class="navbar navbar-inverse navbar-static-top" role="navigation">
-  <div class="container-fluid">
-      <ul class="nav navbar-nav">
-        <li ng-click="app.setFilter(tag.filter)" 
-            ng-repeat="tag in app.tags" 
-            ng-class="{active: tag.active}">
-            <a>{{tag.name}}</a>
-        </li>
-      </ul>
-  </div>
-</div>
 
 <section scroll-into-view 
          ui-sref-active="active" class="triggered"

@@ -1,7 +1,12 @@
 var express = require('express');
 var app = express();
+var PORT = process.env.PORT || 3333;
 
 app.use(express.static(__dirname + '/dev'));
 
-app.listen(3333)
-console.log("server is listening on port 3333")
+app.all('/*', function(req, res) {
+  res.sendfile(__dirname + '/dev/index.html');
+});
+
+app.listen(PORT)
+console.log("server is listening on port " + PORT)

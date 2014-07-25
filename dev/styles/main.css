@@ -5020,6 +5020,18 @@ section.meta {
   width: 100vw;
   height: 100vh;
   background-color: #75C7B3; }
+.site-header .navbar {
+  bottom: 0;
+  font-family: NittyBold;
+  opacity: 1;
+  margin: 0;
+  border: none; }
+  .site-header .navbar ul {
+    width: 100%; }
+  .site-header .navbar li {
+    width: 25%;
+    text-align: center;
+    overflow: hidden; }
 
 .container-fluid {
   width: 100%;
@@ -5031,15 +5043,3 @@ section.meta {
   position: relative; }
   .content.open {
     left: 250px; }
-
-.navbar {
-  font-family: NittyBold;
-  opacity: 1;
-  margin: 0;
-  border: none; }
-  .navbar ul {
-    width: 100%; }
-  .navbar li {
-    width: 25%;
-    text-align: center;
-    overflow: hidden; }

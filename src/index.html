@@ -22,6 +22,7 @@
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+    <base href="/"></base>
 
     <!-- build:css styles/components/main.min.css -->
     <link rel="stylesheet" href="styles/h5bp.css">
@@ -35,6 +36,17 @@
       <a href ui-sref="posts"> 
         <div class="logo" ng-include="'common/templates/logo.html'"></div>
       </a>
+      <div class="navbar navbar-inverse navbar-static-top" role="navigation">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li ng-click="app.setFilter(tag.filter)" 
+                  ng-repeat="tag in app.tags" 
+                  ng-class="{active: tag.active}">
+                  <a>{{tag.name}}</a>
+              </li>
+            </ul>
+        </div>
+      </div>
     </header>
 
     <main>
