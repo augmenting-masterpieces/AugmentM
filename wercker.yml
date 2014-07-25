@@ -11,4 +11,29 @@ build:
     code: |
       echo "node version $(node -v) running"
       echo "npm version $(npm -v) running"
-  
+
+deploy:
+  steps:
+    - add-to-known_hosts:
+        hostname: beta.codingthehumanities.com 
+    - mktemp:
+        envvar: PRIVATEKEY_PATH
+    - create-file:
+        name: write key
+        filename: $PRIVATEKEY_PATH
+        content: $WERCKER_PRIVATE
+        overwrite: true
+    - script:
+        name: transfer application
+        code: |
+          pwd
+          ls -la
+          scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no server.js dev package.json root@codingthehumanities.com:/var/local/www
+    - script:
+        name: npm install
+        code: ssh -i $PRIVATEKEY_PATH -l root beta.codingthehumanities.com "cd /var/local/www/ &&  npm install --production"
+    - script:
+        name: start application
+        code: |
+          ssh -i $PRIVATEKEY_PATH -l root beta.codingthehumanities.com "if [[ \"\$(status node-app)\" = *start/running* ]]; then stop node-app -n ; fi"
+          ssh -i $PRIVATEKEY_PATH -l root beta.codingthehumanities.com start node-app
