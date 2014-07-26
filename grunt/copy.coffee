@@ -5,6 +5,12 @@ module.exports =
     src: "CNAME"
     dest: "dev/"
 
+  css:
+   expand: true
+   cwd: "src"
+   src: "styles/**/*.{css,scss}"
+   dest: "dev/"
+
   html:
     expand: true
     cwd: "src"

@@ -5,8 +5,14 @@ module.exports =
     "watch"
   ]
 
-  deploy: [
+  staging: [
     "buildDev"
+    "aws_s3:dev"
+  ]
+
+  beta: [
+    "buildDist"
+    "aws_s3:beta"
   ]
 
   buildDev: [
@@ -21,6 +27,11 @@ module.exports =
     "dataModels"
     "assets"
   ]
+
+  buildDist: [
+    "buildDev"
+    "autoprefixer"
+  ]
   
   ci: [
     "buildDev"
@@ -28,8 +39,8 @@ module.exports =
   ]
 
   css: [
+    "copy:css"
     "sass"
-    "autoprefixer"
   ]
 
   dataModels: [

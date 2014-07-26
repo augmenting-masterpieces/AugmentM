@@ -2,5 +2,5 @@ module.exports =
   dev:
     expand: true
     flatten: true
-    src: 'src/styles/**.css'
+    src: 'dev/styles/**.css'
     dest: 'dev/styles'

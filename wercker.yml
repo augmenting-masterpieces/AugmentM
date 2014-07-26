@@ -28,7 +28,7 @@ deploy:
         code: |
           pwd
           ls -la
-          scp -i $PRIVATEKEY_PATH -o StrictHostKeyChecking=no -o UserKnownHostsFile=no server.js dev package.json root@codingthehumanities.com:/var/local/www
+          scp -i $PRIVATEKEY_PATH server.js dev package.json root@codingthehumanities.com:/var/local/www
     - script:
         name: npm install
         code: ssh -i $PRIVATEKEY_PATH -l root beta.codingthehumanities.com "cd /var/local/www/ &&  npm install --production"

@@ -1,4 +1,6 @@
 module.exports =
+  options:
+    sourceMap: true
   main:
     src: 'src/styles/main.scss'
-    dest: 'src/styles/main.css'
+    dest: 'dev/styles/main.css'
