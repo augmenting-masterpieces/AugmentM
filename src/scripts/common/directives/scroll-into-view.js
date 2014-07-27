@@ -12,10 +12,15 @@
         var isActive;
         var isTriggered;
         var done = true;
+        
+        $timeout(function(){
+          fadeOutHeader();
+        }, 1000);
+
 
         $timeout(function(){
           scope.$watch(selectItem);
-        }, 2000);
+        }, 3000);
 
         function selectItem(){
           if(isScrollable()){
@@ -33,6 +38,10 @@
           isActive = element.hasClass('active');
           isTriggered = element.hasClass('triggered') && !$stateParams.post_id;
           return (isActive || isTriggered) && done;
+        }
+
+        function fadeOutHeader(){
+          $('.site-header .logo').slideUp(1000);
         }
 
         function scrollToPost(){

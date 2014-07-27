@@ -9,7 +9,6 @@
     var selectedPost;
 
     Post.getAll().then(function(posts){
-
       var processedPosts = posts.map(function(post){
         post.selected = false;
         return post;
@@ -41,10 +40,6 @@
         }
       });
     }
-
-    $scope.toggleExpanded = function(post){
-      post.expanded = !post.expanded;
-    };
 
     function deselectPost(post){
       post.selected = false;

@@ -1,9 +1,11 @@
 module.exports = (grunt) ->
+  aws = { }
 
   try
     aws = grunt.file.readJSON('./config/aws.json')
   catch error
     aws = {}
+    console.log(aws)
 
   options:
     accessKeyId: aws.AWSAccessKeyId

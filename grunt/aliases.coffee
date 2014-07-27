@@ -8,7 +8,7 @@ module.exports =
 
   staging: [
     "buildDev"
-    "aws_s3:dev"
+    "aws_s3:staging"
   ]
 
   beta: [
