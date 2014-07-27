@@ -4,13 +4,14 @@ FROM    ubuntu:14.04
 
 RUN     apt-get update
 RUN     apt-get upgrade -y
-RUN     apt-get install -y python-software-properties python g++ make software-properties-common git nasm
+RUN     apt-get install -y python-software-properties python g++ make software-properties-common git
 RUN     add-apt-repository ppa:chris-lea/node.js
 RUN     apt-get update 
 RUN     apt-get install -y nodejs
 
 ADD     . /src
 
+RUN     npm install phantomjs -g
 RUN     npm install grunt-cli -g
 
 EXPOSE  8080
