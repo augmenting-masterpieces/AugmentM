@@ -4,7 +4,7 @@ build:
   steps:
     - script:
         names: install optipng
-        code: sudo apt-get install optipng
+        code: sudo apt-get remove optipng
     - npm-install
     - grunt:
         tasks: ci
