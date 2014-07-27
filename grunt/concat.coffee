@@ -8,6 +8,11 @@ module.exports =
       separator: ','
 
   vendor:
+    options:
+      sourceMap: true
+      sourceMapName: 'dev/vendor.js.map'
+      sourceMapStyle: 'embed'
+
     src: [
       'src/vendor/jquery.js'
       'src/vendor/lodash.js'
@@ -16,9 +21,29 @@ module.exports =
       'src/vendor/showdown.js'
       'src/vendor/scroll-into-view.js'
       'src/vendor/angular.js'
+      'src/vendor/angular-ui-router.js'
       'src/vendor/angular-sanitize.js'
       'src/vendor/angular-animate.js'
-      'src/vendor/angular-ui-router.js'
       'src/vendor/angularfire.js'
     ]
-    dest: 'dev/vendor/vendor.js'
+    dest: 'dev/vendor.js'
+
+  app:
+    options:
+      sourceMap: true
+      sourceMapName: 'dev/app.js.map'
+      sourceMapStyle: 'embed'
+
+    src: [
+      'src/scripts/app.js'
+      'src/scripts/appCtrl.js'
+      'src/scripts/post/Post.js'
+      'src/scripts/post/postCtrl.js'
+      'src/scripts/post/postItemCtrl.js'
+      'src/scripts/post/postItem.js'
+      'src/scripts/common/directives/scroll-into-view.js'
+      'src/scripts/common/filters/markdown.js'
+      'src/scripts/common/filters/underscorize.js'
+      'src/scripts/templates.js'
+    ]
+    dest: 'dev/app.js'

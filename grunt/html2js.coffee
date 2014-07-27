@@ -3,4 +3,4 @@ module.exports =
     base: 'src/scripts'
   cth:
     src: 'src/scripts/**/*.html'
-    dest: 'dev/scripts/templates.js'
+    dest: 'src/scripts/templates.js'

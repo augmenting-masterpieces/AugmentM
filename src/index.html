@@ -25,9 +25,7 @@
     <base href="/"></base>
 
     <!-- build:css styles/components/main.min.css -->
-    <link rel="stylesheet" href="styles/h5bp.css">
-    <link rel="stylesheet" href="styles/components.css">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="main.css">
     <!-- endbuild -->
   </head>
   <body class="container-fluid" ng-cloak ng-controller="AppCtrl as app" ng-app="cth">
@@ -53,23 +51,13 @@
       <div ui-view autoscroll="false"></div>
     </main>
 
-    <script src="vendor/vendor.js"></script>
+    <script src="vendor.js"></script>
+    <script src="app.js"></script>
 
     <!-- build:js scripts/main.min.js -->
-    <script src="scripts/app.js"></script>
 
     <script>window.viewportUnitsBuggyfill.init();</script>
 
-    <script src="scripts/appCtrl.js"></script>
-    <script src="scripts/post/postCtrl.js"></script>
-    <script src="scripts/pilot/pilotCtrl.js"></script>
-    <script src="scripts/post/postItemCtrl.js"></script>
-    <script src="scripts/post/Post.js"></script>
-    <script src="scripts/post/postItem.js"></script>
-    <script src="scripts/common/directives/scroll-into-view.js"></script>
-    <script src="scripts/common/filters/markdown.js"></script>
-    <script src="scripts/common/filters/underscorize.js"></script>
-    <script src="scripts/templates.js"></script>
     <!-- endbuild -->
 
 

@@ -11,8 +11,11 @@ module.exports =
   ]
 
   beta: [
+    "buildDev"
     "buildDist"
-    "aws_s3:beta"
+
+    # "aws_s3:beta"
+
   ]
 
   buildDev: [
@@ -26,11 +29,13 @@ module.exports =
     "scripts"
     "dataModels"
     "assets"
+    "autoprefixer"
   ]
 
   buildDist: [
-    "buildDev"
-    "autoprefixer"
+    "copy:dist"
+    "uglify"
+    "cssmin"
   ]
   
   ci: [
@@ -39,7 +44,6 @@ module.exports =
   ]
 
   css: [
-    "copy:css"
     "sass"
   ]
 
@@ -55,8 +59,8 @@ module.exports =
   ]
 
   scripts: [
-    "jshint",
-    "copy:js"
+    "jshint"
+    "concat:app"
   ]
 
   vendor: [

@@ -127,23 +127,22 @@ angular.module("post/postItem.html", []).run(["$templateCache", function($templa
     "\n" +
     "\n" +
     "  <header>\n" +
-    "      <a ng-show=\"!post.selected\" \n" +
-    "         href ui-sref=\"posts.post({post_id: post.id})\">\n" +
-    "        <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
-    "        <div class=\"selector\"></div>\n" +
+    "    <a ng-show=\"!post.selected\" \n" +
+    "       href ui-sref=\"posts.post({post_id: post.id})\">\n" +
+    "      <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
+    "      <div class=\"selector\"></div>\n" +
     "\n" +
-    "        <h1>{{post.title | underscorize}}</h1>\n" +
+    "      <h1>{{post.title | underscorize}}</h1>\n" +
     "\n" +
-    "      </a>\n" +
-    "      <a ng-show=\"post.selected\" \n" +
-    "         ng-click=\"toggleExpanded()\">\n" +
-    "        <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
-    "        <div class=\"selector\"></div>\n" +
+    "    </a>\n" +
+    "    <a ng-show=\"post.selected\" \n" +
+    "       ng-click=\"toggleExpanded()\">\n" +
+    "      <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
+    "      <div class=\"selector\"></div>\n" +
     "\n" +
-    "        <h1>{{post.title | underscorize}}</h1>\n" +
+    "      <h1>{{post.title | underscorize}}</h1>\n" +
     "\n" +
-    "      </a>\n" +
-    "    </div>\n" +
+    "    </a>\n" +
     "  </header>\n" +
     "\n" +
     "  <section class=\"text-content col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-2 csSlideUp\">\n" +

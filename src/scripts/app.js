@@ -7,7 +7,9 @@
   app.constant('$', jQuery);
   app.constant('_', _);
 
-  app.config(function($stateProvider, $locationProvider, $urlRouterProvider) {
+  app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', routes]); 
+    
+  function routes($stateProvider, $locationProvider, $urlRouterProvider) {
 
     $locationProvider.html5Mode(true);
 
@@ -19,7 +21,7 @@
         controller: 'PostCtrl as postList',
       })
       .state('posts.post', {
-        url: '/:post_id'
+        url: '/:post_id',
       })
       .state('about', {
         url: '/pilot',
@@ -29,7 +31,7 @@
       });
 
     $urlRouterProvider.when('', '/posts');
-  });
+  }
 
   app.factory('studentsData', ['$firebase', studentsData]);
 

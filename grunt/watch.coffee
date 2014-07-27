@@ -44,5 +44,9 @@ module.exports =
     files: ["src/**/*.yaml"]
     tasks: ["dataModels"]
 
+  dist:
+    files: ["dev/**/*"]
+    tasks: ["buildDist"]
+
   options:
     livereload: true

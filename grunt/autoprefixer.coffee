@@ -1,6 +1,8 @@
 module.exports =
   dev:
+    options:
+      map: true
     expand: true
     flatten: true
-    src: 'dev/styles/**.css'
+    src: 'dev/**.css'
     dest: 'dev/styles'

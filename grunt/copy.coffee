@@ -7,7 +7,7 @@ module.exports =
 
   css:
    expand: true
-   cwd: "src"
+   cwd: "dev"
    src: "styles/**/*.{css,scss}"
    dest: "dev/"
 
@@ -41,3 +41,10 @@ module.exports =
     flatten: true
     src: "src/images/**/*"
     dest: "dev/images"
+
+  dist:
+    expand: true
+    cwd: "dev"
+    src: ["index.html", "images/**/*", "fonts/**/*", "api/**/*"]
+    dest: "dist"
+

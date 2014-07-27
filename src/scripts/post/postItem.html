@@ -5,23 +5,22 @@
 
 
   <header>
-      <a ng-show="!post.selected" 
-         href ui-sref="posts.post({post_id: post.id})">
-        <img ng-src="{{post.headerImage.url}}"/>
-        <div class="selector"></div>
+    <a ng-show="!post.selected" 
+       href ui-sref="posts.post({post_id: post.id})">
+      <img ng-src="{{post.headerImage.url}}"/>
+      <div class="selector"></div>
 
-        <h1>{{post.title | underscorize}}</h1>
+      <h1>{{post.title | underscorize}}</h1>
 
-      </a>
-      <a ng-show="post.selected" 
-         ng-click="toggleExpanded()">
-        <img ng-src="{{post.headerImage.url}}"/>
-        <div class="selector"></div>
+    </a>
+    <a ng-show="post.selected" 
+       ng-click="toggleExpanded()">
+      <img ng-src="{{post.headerImage.url}}"/>
+      <div class="selector"></div>
 
-        <h1>{{post.title | underscorize}}</h1>
+      <h1>{{post.title | underscorize}}</h1>
 
-      </a>
-    </div>
+    </a>
   </header>
 
   <section class="text-content col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-2 csSlideUp">
