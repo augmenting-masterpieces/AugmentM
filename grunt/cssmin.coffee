@@ -3,6 +3,6 @@ module.exports =
     files: [
       expand: true
       cwd: 'dev'
-      src: '**/*.css'
+      src: 'main.css'
       dest: 'dist/'
     ]

@@ -36,12 +36,6 @@ module.exports =
     src: "**/*.{eot,woff,ttf}"
     dest: "dev/fonts"
 
-  images:
-    expand: true
-    flatten: true
-    src: "src/images/**/*"
-    dest: "dev/images"
-
   dist:
     expand: true
     cwd: "dev"

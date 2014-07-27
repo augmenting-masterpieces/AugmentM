@@ -13,9 +13,13 @@ module.exports =
   beta: [
     "buildDev"
     "buildDist"
+    "aws_s3:beta"
+  ]
 
-    # "aws_s3:beta"
-
+  production: [
+    "buildDev"
+    "buildDist"
+    "aws_s3:production"
   ]
 
   buildDev: [
@@ -33,6 +37,7 @@ module.exports =
   ]
 
   buildDist: [
+    "clean:dist"
     "copy:dist"
     "uglify"
     "cssmin"
@@ -40,7 +45,7 @@ module.exports =
   
   ci: [
     "buildDev"
-    "testem::ci"
+    "testem:ci"
   ]
 
   css: [
@@ -54,7 +59,7 @@ module.exports =
   ]
 
   assets: [
-    "copy:images"
+    "newer:imagemin"
     "copy:fonts"
   ]
 

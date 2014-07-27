@@ -5,7 +5,8 @@ module.exports = (grunt) ->
     region: 'us-east-1'
     uploadConcurrency: 5
     downloadConcurrency: 5
-  dev:
+
+  staging:
     options:
       bucket: 'cth-dev.cc'
     files: [
@@ -14,12 +15,24 @@ module.exports = (grunt) ->
       src: '**/*'
       dest: ''
     ]
+
   beta:
     options:
       bucket: 'beta.codingthehumanities.com'
     files: [
       expand: true
-      cwd: 'dev'
+      cwd: 'dist'
       src: '**/*'
       dest: ''
     ]
+
+  production:
+    options:
+      bucket: 'codingthehumanities.com'
+    files: [
+      expand: true
+      cwd: 'dist'
+      src: '**/*'
+      dest: ''
+    ]
+
