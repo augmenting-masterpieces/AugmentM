@@ -2,6 +2,9 @@ box: wercker/nodejs
 # Build definition
 build:
   steps:
+    - script:
+        names: install optipng
+        code: sudo apt-get install optipng
     - npm-install
     - grunt:
         tasks: ci
