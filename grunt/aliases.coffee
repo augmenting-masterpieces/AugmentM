@@ -28,20 +28,6 @@ module.exports =
 
   ci: [
     "build"
-    "clean:dev"
-    "bowercopy"
-    "vendor2"
-    "config"
-    "html"
-    "html2js"
-    "css"
-    "scripts2"
-    "dataModels"
-    "assets"
-    "autoprefixer"
-    "testem:ci:dev"
-    "buildDist"
-    
   ]
 
   buildDev: [
