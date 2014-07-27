@@ -33,7 +33,15 @@
     "grunt-uncss": "~0.3.5",
     "grunt-contrib-uglify": "~0.5.1",
     "grunt-contrib-cssmin": "~0.10.0",
-    "grunt-contrib-imagemin": "~0.7.1"
+    "grunt-contrib-imagemin": "~0.7.1",
+    "time-grunt": "~0.4.0",
+    "escape-string-regexp": "~1.0.1",
+    "ansi-styles": "~1.1.0",
+    "ansi-regex": "~0.2.1",
+    "has-ansi": "~0.1.0",
+    "supports-color": "~0.2.0",
+    "chalk": "~0.5.1",
+    "sourcemap": "~0.1.0"
   },
   "dependencies": {
     "express": "^4.4.5",

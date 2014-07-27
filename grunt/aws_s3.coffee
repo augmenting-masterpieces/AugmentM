@@ -1,7 +1,13 @@
 module.exports = (grunt) ->
+
+  try
+    aws = grunt.file.readJSON('./config/aws.json')
+  catch error
+    aws = {}
+
   options:
-    accessKeyId: grunt.file.readJSON('./config/aws.json').AWSAccessKeyId
-    secretAccessKey: grunt.file.readJSON('./config/aws.json').AWSSecretKey
+    accessKeyId: aws.AWSAccessKeyId
+    secretAccessKey: aws.AWSSecretKey
     region: 'us-east-1'
     uploadConcurrency: 5
     downloadConcurrency: 5

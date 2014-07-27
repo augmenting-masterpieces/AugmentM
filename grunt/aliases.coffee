@@ -1,6 +1,7 @@
 module.exports =
   default: [
     "buildDev"
+    "buildDist"
     "express"
     "watch"
   ]
@@ -11,15 +12,36 @@ module.exports =
   ]
 
   beta: [
-    "buildDev"
-    "buildDist"
+    "build"
     "aws_s3:beta"
   ]
 
   production: [
+    "build"
+    "aws_s3:production"
+  ]
+
+  build: [
     "buildDev"
     "buildDist"
-    "aws_s3:production"
+  ]
+
+  ci: [
+    "build"
+    "clean:dev"
+    "bowercopy"
+    "vendor2"
+    "config"
+    "html"
+    "html2js"
+    "css"
+    "scripts2"
+    "dataModels"
+    "assets"
+    "autoprefixer"
+    "testem:ci:dev"
+    "buildDist"
+    
   ]
 
   buildDev: [
@@ -34,6 +56,7 @@ module.exports =
     "dataModels"
     "assets"
     "autoprefixer"
+    "testem:ci:dev"
   ]
 
   buildDist: [
@@ -41,13 +64,9 @@ module.exports =
     "copy:dist"
     "uglify"
     "cssmin"
+    "testem:ci:dist"
   ]
   
-  ci: [
-    "buildDev"
-    "testem:ci"
-  ]
-
   css: [
     "sass"
   ]
@@ -69,7 +88,7 @@ module.exports =
   ]
 
   vendor: [
-    "newer:concat:vendor"
+    "concat:vendor"
   ]
 
   html: [
