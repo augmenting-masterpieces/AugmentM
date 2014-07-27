@@ -3,7 +3,7 @@ module.exports =
     src: "angular/angular.js"
     dest: "src/vendor/angular.js"
 
-  bootstrap: 
+  bootstrap:
     src: "bootstrap-sass-official/assets/stylesheets"
     dest: "src/styles/bootstrap"
 
