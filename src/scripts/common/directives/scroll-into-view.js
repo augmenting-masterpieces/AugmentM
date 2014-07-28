@@ -41,11 +41,11 @@
         }
 
         function fadeOutHeader(){
-          $('.site-header .logo').slideUp(1000);
+          $('body').addClass("done");
         }
 
         function scrollToPost(){
-          var top = $(element[0]).position().top;
+          var top = $(element[0]).position().top - $('.logo').height();
           $('body').animate({scrollTop: top}, {
             duration: 750,
             complete: function(){

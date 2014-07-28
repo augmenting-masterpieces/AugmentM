@@ -1,5 +1,13 @@
-.site-header {
+body {
+  top: 0;
+  transition: top 1s ease;
+}
 
+body.done {
+  top: -100vh;
+}
+
+.site-header {
   .logo {
     width: 100vw;
     height: 100vh;
