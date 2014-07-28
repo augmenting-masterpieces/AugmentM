@@ -1,13 +1,13 @@
 module.exports =
   default: [
     "buildDev"
-    "buildDist"
     "express"
     "watch"
   ]
 
   staging: [
     "buildDev"
+    "testem:ci:dev"
     "aws_s3:staging"
   ]
 
@@ -42,7 +42,6 @@ module.exports =
     "dataModels"
     "assets"
     "autoprefixer"
-    "testem:ci:dev"
   ]
 
   buildDist: [

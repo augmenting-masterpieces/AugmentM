@@ -52,7 +52,7 @@ describe 'PostCtrl', ->
       it 'is an Array', ->
         expect(Array.isArray(@posts)).toBeTruthy()
 
-  describe 'selecting and expanding posts', ->
+  xdescribe 'selecting and expanding posts', ->
     beforeEach ->
       inject ($injector) ->
         @$state = $injector.get '$state'

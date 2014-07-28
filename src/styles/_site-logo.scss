@@ -1,10 +1,10 @@
 body {
-  top: 0;
+  top: -100vh;
   transition: top 1s ease;
 }
 
-body.done {
-  top: -100vh;
+body.header-on-screen {
+  top: 0;
 }
 
 .site-header {

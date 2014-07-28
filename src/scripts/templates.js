@@ -120,58 +120,62 @@ angular.module("common/templates/pilot.html", []).run(["$templateCache", functio
 
 angular.module("post/postItem.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("post/postItem.html",
-    "<article class=\"post\" \n" +
-    "         id=\"{{post.id}}\" \n" +
-    "         ui-sref-active=\"active\" class=\"active\" \n" +
-    "         ng-class=\"{selected: post.selected, expanded:post.expanded}\">\n" +
+    "<div class=\"post\"\n" +
+    "     id=\"{{post.id}}\" \n" +
+    "     ui-sref-active=\"active\" class=\"active\" \n" +
+    "     ng-class=\"{selected: post.selected, expanded:post.expanded}\">\n" +
     "\n" +
     "\n" +
-    "  <header>\n" +
-    "    <a ng-show=\"!post.selected\" \n" +
-    "       href ui-sref=\"posts.post({post_id: post.id})\">\n" +
-    "      <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
-    "      <div class=\"selector\"></div>\n" +
+    "    <header>\n" +
+    "      <a ng-show=\"!post.selected\" \n" +
+    "         class=\"state-link\"\n" +
+    "         href ui-sref=\"posts.post({post_id: post.id})\">\n" +
     "\n" +
-    "      <h1>{{post.title | underscorize}}</h1>\n" +
+    "        <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
     "\n" +
-    "    </a>\n" +
-    "    <a ng-show=\"post.selected\" \n" +
-    "       ng-click=\"toggleExpanded()\">\n" +
-    "      <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
-    "      <div class=\"selector\"></div>\n" +
+    "        <h1>{{post.title | underscorize}}</h1>\n" +
     "\n" +
-    "      <h1>{{post.title | underscorize}}</h1>\n" +
+    "      </a>\n" +
+    "      <a ng-show=\"post.selected\" \n" +
+    "         class=\"expansion-link\"\n" +
+    "         ng-click=\"toggleExpanded()\">\n" +
+    "        <img ng-src=\"{{post.headerImage.url}}\"/>\n" +
     "\n" +
-    "    </a>\n" +
-    "  </header>\n" +
+    "        <h1>{{post.title | underscorize}}</h1>\n" +
     "\n" +
-    "  <section class=\"text-content col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-2 csSlideUp\">\n" +
-    "    <div ng-bind-html=\"post.content | markdown\"></div>\n" +
-    "  </section>\n" +
+    "      </a>\n" +
+    "    </header>\n" +
+    "\n" +
+    "    <section class=\"text-content col-xs-10 col-xs-offset-1 col-md-8 col-md-offset-1 col-lg-6 col-lg-offset-2 csSlideUp\">\n" +
+    "      <div ng-bind-html=\"post.content | markdown\"></div>\n" +
+    "    </section>\n" +
     "\n" +
     "\n" +
-    "  <section class=\"meta col-xs-12 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2\">\n" +
-    "    <table class=\"table\">\n" +
-    "      <thead>\n" +
-    "        <th>Meta</th>\n" +
-    "      </thead>\n" +
-    "      <tr ng-repeat=\"author in post.authors\">\n" +
-    "        <td>{{author}}</td>\n" +
-    "      </tr>\n" +
-    "    </table>\n" +
-    "  </section>\n" +
+    "    <section class=\"meta col-xs-12 col-md-2 col-md-offset-1 col-lg-2 col-lg-offset-2\">\n" +
+    "      <table class=\"table\">\n" +
+    "        <thead>\n" +
+    "          <th>Meta</th>\n" +
+    "        </thead>\n" +
+    "        <tr ng-repeat=\"author in post.authors\">\n" +
+    "          <td>{{author}}</td>\n" +
+    "        </tr>\n" +
+    "      </table>\n" +
+    "    </section>\n" +
     "\n" +
-    "</article>\n" +
+    "  </article>\n" +
+    "</div>\n" +
     "");
 }]);
 
 angular.module("post/postList.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("post/postList.html",
-    "<section scroll-into-view \n" +
-    "         ui-sref-active=\"active\" class=\"triggered\"\n" +
+    "<section ui-sref-active=\"active\" \n" +
+    "         class=\"triggered\"\n" +
     "         class=\"posts\">\n" +
-    "  <post-item ng-repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\"\n" +
-    "       scroll-into-view \n" +
+    "  <!-- <post&#45;item ng&#45;repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\" -->\n" +
+    "\n" +
+    "  <post-item ng-repeat=\"post in postList.posts | orderBy:app.postOrder\" \n" +
+    "             selected=\"{{post.selected}}\"\n" +
     "             post=\"post\">\n" +
     "  </post-item>\n" +
     "</section>\n" +

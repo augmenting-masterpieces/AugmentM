@@ -1,34 +1,33 @@
 dasherize = (str)->
   str.replace(/\s+/g, '-').toLowerCase()
 
-describe 'PostCtrl', ->
+describe 'PostItemCtrl', ->
 
   beforeEach(module('cth'))
 
-  post =
+  Post = ()->
     title: "Hello World"
     images: [
       url: "#/images/test0.jpg"
     ]
 
-  postId = dasherize(post.title)
-
   beforeEach ->
     inject ($injector) ->
-      Post = $injector.get 'Post'
-
-      $controller = $injector.get '$controller'
+      @$controller = $injector.get '$controller'
       $rootScope = $injector.get '$rootScope'
+      @stringManipulators = $injector.get 'stringManipulators'
 
       @scope = $rootScope.$new()
-      @scope.post = post
-      PostItemCtrl = $controller('PostItemCtrl', {$scope: @scope})
-      @post = PostItemCtrl.post
+      @scope.post = new Post()
+      @PostItemCtrl = @$controller('PostItemCtrl', {$scope: @scope})
+      @post = @PostItemCtrl.post
 
   describe 'post property', ->
-    
-   it 'has the correct id', ->
-    expect(@post.id).toBe(postId)
+    beforeEach ->
+      inject ($injector) ->
+
+    it 'has the correct id', ->
+      expect(@post.id).not.toBe(undefined)
 
    it 'has the correct headerImage property', ->
      expect(@post.headerImage.url).toBe("#/images/test0.jpg")
@@ -36,6 +35,14 @@ describe 'PostCtrl', ->
   describe 'expanded function', ->
     it "toggles state", ->
       @scope.toggleExpanded()
-      expect(post.expanded).toBe(true)
+      expect(@PostItemCtrl.post.expanded).toBe(true)
       @scope.toggleExpanded()
-      expect(post.expanded).toBe(false)
+      expect(@PostItemCtrl.post.expanded).toBe(false)
+
+  # describe 'scrolling', ->
+  #   beforeEach ->
+  #     spyOn(@PostItemCtrl)
+  #     expect(@PostItemCtrl).toHaveBeenCalled()
+
+  #   it 'should scroll to top if selected', ->
+

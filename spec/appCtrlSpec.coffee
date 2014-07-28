@@ -9,14 +9,6 @@ describe 'AppCtrl', ->
       @scope = @$rootScope.$new()
       @AppCtrl = $controller('AppCtrl', {$scope: @scope})
 
-  describe 'navbar', ->
-    it 'is closed by default', ->
-      expect(@AppCtrl.navbarOpen).toBe(false)
-
-    it 'can toggle state', ->
-      @AppCtrl.toggleNavDrawer()
-      expect(@AppCtrl.navbarOpen).toBe(true)
-
   describe 'setting post order', ->
     it 'should order them by posted date in descending order', ->
       expect(@AppCtrl.postOrder).toBe('-posted')

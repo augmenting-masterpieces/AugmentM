@@ -1,10 +1,15 @@
 (function(){
   'use strict';
-  angular.module('cth').controller('AppCtrl', ['$state', AppCtrl]);
+  angular.module('cth').controller('AppCtrl', ['$state', '$timeout', AppCtrl]);
 
-  function AppCtrl($state){
+  function AppCtrl($state, $timeout){
     var vm = this;
-    vm.navbarOpen = false;
+    vm.showHeader = true;
+
+    $timeout(function(){
+      vm.showHeader = false;
+    }, 2000);
+    
     
     vm.postOrder = '-posted';
     vm.postFilter = '';
@@ -36,9 +41,7 @@
       $state.go('posts');
 
     };
-    vm.toggleNavDrawer = function(){
-      vm.navbarOpen = !vm.navbarOpen;
-    };
+
     return vm;
   }
 })();
