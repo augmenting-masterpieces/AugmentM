@@ -172,9 +172,8 @@ angular.module("post/postList.html", []).run(["$templateCache", function($templa
     "<section ui-sref-active=\"active\" \n" +
     "         class=\"triggered\"\n" +
     "         class=\"posts\">\n" +
-    "  <!-- <post&#45;item ng&#45;repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\" -->\n" +
     "\n" +
-    "  <post-item ng-repeat=\"post in postList.posts | orderBy:app.postOrder\" \n" +
+    "  <post-item ng-repeat=\"post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder\"\n" +
     "             selected=\"{{post.selected}}\"\n" +
     "             post=\"post\">\n" +
     "  </post-item>\n" +

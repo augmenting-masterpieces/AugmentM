@@ -6,12 +6,14 @@ describe 'PostCtrl', ->
     title: "Hello World"
     images: [
       url: "#/images/test0.jpg"
-    ]
+    ],
+    posted: "2014-6-17 20:23:12"
   ,
     title: "Goodbye Day"
     images: [
       url: "#/images/test1.jpg"
-    ]
+    ],
+    posted: "2013-6-17 20:23:12",
     selected: true
   ]
 
@@ -36,10 +38,9 @@ describe 'PostCtrl', ->
         expect(@posts).toBeDefined()
 
       it 'is an Array', ->
-        expect((@posts).length).toBe(2)
+        expect(@posts.length).toBe(2)
 
   describe 'selecting and expanding posts', ->
-
     describe 'without url', ->
       beforeEach ->
         @$state.params.post_id = ""
@@ -48,9 +49,9 @@ describe 'PostCtrl', ->
         @PostCtrl = @controllerConstructor 'PostCtrl',
           $scope: @$scope
           posts: posts
-        @selectedPosts = _.filter(@PostCtrl.posts, 'selected')
+        @selectedPosts = _.filter(@PostCtrl.posts, 'initial')
 
-      it 'has the first posts selected after retrieval', ->
+      it 'has the first posts marked as initial after retrieval', ->
         expect(@selectedPosts.length).toBe(1)
 
       it 'has the right title', ->

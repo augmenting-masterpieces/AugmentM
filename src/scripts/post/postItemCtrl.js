@@ -10,10 +10,10 @@
     vm.post.id = stringManipulators.dasherize(vm.post.title);
     vm.post.headerImage = vm.post.images[0];
 
-    if(vm.post.selected){
+    if(vm.post.initial){
       $timeout(function(){
         scroll.toTop($element);
-      }, 3000);
+      }, 4000);
     }
 
     $scope.toggleExpanded = function(){
@@ -38,6 +38,7 @@
   function scroll(){
     return {
       toTop: function(element){
+
         var top = element.position().top - $('.site-header .logo').height();
         console.log(top);
         $('body').animate({scrollTop: top + 5}, {

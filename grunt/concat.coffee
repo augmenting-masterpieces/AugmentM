@@ -36,8 +36,9 @@ module.exports =
 
     src: [
       'src/scripts/app.js'
+      'src/scripts/routes.js'
       'src/scripts/appCtrl.js'
-      'src/scripts/post/Post.js'
+      'src/scripts/post/PostService.js'
       'src/scripts/post/postCtrl.js'
       'src/scripts/post/postItemCtrl.js'
       'src/scripts/post/postItem.js'

@@ -1,9 +1,9 @@
 (function(){
   'use strict';
 
-   angular.module('cth').factory('Post', ['$http', '$q', Post]); 
+   angular.module('cth').factory('PostService', ['$http', '$q', PostService]); 
 
-  function Post($http, $q){
+  function PostService($http, $q){
     
     function getAll(){
       var deferred = $q.defer();

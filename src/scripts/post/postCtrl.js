@@ -33,7 +33,7 @@
       var selectedPostExists = _.some(selectedPosts, 'selected');
 
       if(!selectedPostExists){
-        posts[0].selected = true;
+        posts[0].initial = true;
       }
 
       return selectedPosts;

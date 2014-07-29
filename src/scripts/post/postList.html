@@ -1,9 +1,8 @@
 <section ui-sref-active="active" 
          class="triggered"
          class="posts">
-  <!-- <post&#45;item ng&#45;repeat="post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder" -->
 
-  <post-item ng-repeat="post in postList.posts | orderBy:app.postOrder" 
+  <post-item ng-repeat="post in postList.posts | filter:{ tags: app.postFilter }| orderBy:app.postOrder"
              selected="{{post.selected}}"
              post="post">
   </post-item>

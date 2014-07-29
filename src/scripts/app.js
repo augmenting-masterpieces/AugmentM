@@ -7,39 +7,6 @@
   app.constant('$', jQuery);
   app.constant('_', _);
 
-  app.config(['$stateProvider', '$locationProvider', '$urlRouterProvider', routes]); 
-    
-  function routes($stateProvider, $locationProvider, $urlRouterProvider) {
-
-    $locationProvider.html5Mode(true);
-
-
-    $stateProvider
-      .state('posts', {
-        url: '/posts',
-        templateUrl: 'post/postList.html',
-        controller: 'PostCtrl as postList',
-        resolve: {
-          posts: ['$http', function($http){
-            return $http.get('/api/posts.json').then(function(response){
-              return response.data.posts;
-            }); 
-          }]
-        }
-      })
-      .state('posts.post', {
-        url: '/:post_id',
-      })
-      .state('about', {
-        url: '/pilot',
-        templateUrl: 'templates/pilot.html',
-        controller: 'PilotCtrl as pilot'
-
-      });
-
-    $urlRouterProvider.when('/', '/posts');
-  }
-
   app.factory('studentsData', ['$firebase', studentsData]);
 
   function studentsData($firebase){
