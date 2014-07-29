@@ -1,6 +1,3 @@
-dasherize = (str)->
-  str.replace(/\s+/g, '-').toLowerCase()
-
 describe 'PostItemCtrl', ->
 
   beforeEach(module('cth'))
@@ -11,38 +8,62 @@ describe 'PostItemCtrl', ->
       url: "#/images/test0.jpg"
     ]
 
+
   beforeEach ->
     inject ($injector) ->
-      @$controller = $injector.get '$controller'
-      $rootScope = $injector.get '$rootScope'
-      @stringManipulators = $injector.get 'stringManipulators'
+      @controllerConstructor = $injector.get '$controller'
 
-      @scope = $rootScope.$new()
-      @scope.post = new Post()
-      @PostItemCtrl = @$controller('PostItemCtrl', {$scope: @scope})
-      @post = @PostItemCtrl.post
+      @scope = {}
+      @scope.post = new Post
+
+      @dasherize = spyOn(stringManipulators, 'dasherize').and.callThrough()
+      @scrollToTop = spyOn(scroll, 'toTop')
+
+      PostItemCtrl = @controllerConstructor 'PostItemCtrl',
+        $scope: @scope
+        $element: {}
+        stringManipulators: stringManipulators
+        scroll: scroll
+
+      @post = PostItemCtrl.post
 
   describe 'post property', ->
-    beforeEach ->
-      inject ($injector) ->
+     it 'has the correct id', ->
+       expect(@dasherize).toHaveBeenCalledWith 'Hello World'
+       expect(@post.id).not.toBe undefined
 
-    it 'has the correct id', ->
-      expect(@post.id).not.toBe(undefined)
-
-   it 'has the correct headerImage property', ->
-     expect(@post.headerImage.url).toBe("#/images/test0.jpg")
-
-  describe 'expanded function', ->
+     it 'has the correct headerImage property', ->
+       expect(@post.headerImage.url).toBe "#/images/test0.jpg"
+  
+  describe 'post expansion', ->
     it "toggles state", ->
       @scope.toggleExpanded()
-      expect(@PostItemCtrl.post.expanded).toBe(true)
+      expect(@post.expanded).toBe(true)
       @scope.toggleExpanded()
-      expect(@PostItemCtrl.post.expanded).toBe(false)
+      expect(@post.expanded).toBe(false)
 
-  # describe 'scrolling', ->
-  #   beforeEach ->
-  #     spyOn(@PostItemCtrl)
-  #     expect(@PostItemCtrl).toHaveBeenCalled()
+  describe 'selection', ->
+    describe 'not selected', ->
+      it 'does not scroll to top if not selected', ->
+        expect(@scrollToTop).not.toHaveBeenCalled()
 
-  #   it 'should scroll to top if selected', ->
+    describe 'selected', ->
 
+      beforeEach ->
+        @scope.post.selected = true
+        PostItemCtrl = @controllerConstructor 'PostItemCtrl',
+          $scope: @scope
+          $element: "<p></p>"
+          stringManipulators: stringManipulators
+          scroll: scroll
+        @post = PostItemCtrl.post
+
+      it 'scroll to top if selected', ->
+        expect(@scrollToTop).toHaveBeenCalledWith("<p></p>")
+
+  stringManipulators =
+    dasherize: (string) ->
+      return 'hello-world'
+
+  scroll =
+    toTop: (element) ->

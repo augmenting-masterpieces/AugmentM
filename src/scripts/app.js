@@ -18,7 +18,7 @@
       .state('posts', {
         url: '/posts',
         templateUrl: 'post/postList.html',
-        controller: 'PostCtrl as postList',
+        controller: 'PostCtrl as postList'
       })
       .state('posts.post', {
         url: '/:post_id',

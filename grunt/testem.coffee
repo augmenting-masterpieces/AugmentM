@@ -1,8 +1,6 @@
 module.exports =
-  basic:
-    assets:
-      port: 7358
 
+  basic:
     src: [
       "dev/vendor.js"
       "bower_components/angular-mocks/angular-mocks.js"

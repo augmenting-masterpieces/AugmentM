@@ -1,4 +1,4 @@
-describe 'postItem directive', ->
+xdescribe 'postItem directive', ->
 
   beforeEach(module('cth'))
   beforeEach(module('post/postItem.html'))
