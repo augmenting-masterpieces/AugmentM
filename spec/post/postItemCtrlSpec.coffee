@@ -42,7 +42,7 @@ describe 'PostItemCtrl', ->
       @scope.toggleExpanded()
       expect(@post.expanded).toBe(false)
 
-  describe 'selection', ->
+  xdescribe 'selection', ->
     describe 'not selected', ->
       it 'does not scroll to top if not selected', ->
         expect(@scrollToTop).not.toHaveBeenCalled()

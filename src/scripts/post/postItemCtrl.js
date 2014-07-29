@@ -1,9 +1,9 @@
 (function(){
   'use strict';
 
-  angular.module('cth').controller('PostItemCtrl', ['$scope', '$element', 'stringManipulators', 'scroll', PostItemCtrl]);
+  angular.module('cth').controller('PostItemCtrl', ['$scope', '$element', '$timeout', 'stringManipulators', 'scroll', PostItemCtrl]);
 
-  function PostItemCtrl($scope, $element, stringManipulators, scroll){
+  function PostItemCtrl($scope, $element, $timeout, stringManipulators, scroll){
     var vm = this;
 
     vm.post = $scope.post;
@@ -11,9 +11,10 @@
     vm.post.headerImage = vm.post.images[0];
 
     if(vm.post.selected){
-      scroll.toTop($element);
+      $timeout(function(){
+        scroll.toTop($element);
+      }, 3000);
     }
-
 
     $scope.toggleExpanded = function(){
       vm.post.expanded = !vm.post.expanded;
@@ -34,10 +35,14 @@
 
   angular.module('cth').factory('scroll', [scroll]);
 
-  function scroll(element){
+  function scroll(){
     return {
-      toTop: function(){
-        console.log(element);
+      toTop: function(element){
+        var top = element.position().top - $('.site-header .logo').height();
+        console.log(top);
+        $('body').animate({scrollTop: top + 5}, {
+          duration: 750,
+        });
       }
     };
   }

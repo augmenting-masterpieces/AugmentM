@@ -6,14 +6,12 @@
 
     var vm = this;
 
-    // Post.getAll().then(function(posts){
-    //   var processedPosts = selectPost(posts, params);
-    //   vm.posts = processedPosts;
-    // });
+    var params = $state.params;
+    vm.posts = selectPost(posts, params);
 
     $scope.$on('$stateChangeSuccess', 
       function(event, toState, toParams, fromState, fromParams){
-        var params = toParams;
+        var params = toParams; 
         vm.posts = selectPost(posts, params);
       }
     );

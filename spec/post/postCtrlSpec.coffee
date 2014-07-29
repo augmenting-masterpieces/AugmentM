@@ -21,27 +21,19 @@ describe 'PostCtrl', ->
       @$state = $injector.get '$state'
       @$rootScope = $injector.get '$rootScope'
 
-      @$state.params.post_id = ""
-      @$scope = @$rootScope.$new @$rootScope
-
-      @PostCtrl = @controllerConstructor 'PostCtrl',
-        $scope: @$scope
-        posts: posts
-      @posts = @PostCtrl.posts
 
   describe 'posts property', ->
     describe 'object retrieval', ->
       beforeEach ->
-          @$state.params.post_id = ""
-          @$scope = @$rootScope.$new @$rootScope
+        @$scope = @$rootScope.$new @$rootScope
 
-          @PostCtrl = @controllerConstructor 'PostCtrl',
-            $scope: @$scope
-            posts: posts
-          @posts = @PostCtrl.posts
+        @PostCtrl = @controllerConstructor 'PostCtrl',
+          $scope: @$scope
+          posts: posts
+        @posts = @PostCtrl.posts
 
       it 'is only defined after it calls the post service', ->
-        expect(@posts).toBeDefined
+        expect(@posts).toBeDefined()
 
       it 'is an Array', ->
         expect((@posts).length).toBe(2)
@@ -50,13 +42,19 @@ describe 'PostCtrl', ->
 
     describe 'without url', ->
       beforeEach ->
-        @selectedPosts = _.filter(@posts, 'selected')
+        @$state.params.post_id = ""
+        @$scope = @$rootScope.$new @$rootScope
+
+        @PostCtrl = @controllerConstructor 'PostCtrl',
+          $scope: @$scope
+          posts: posts
+        @selectedPosts = _.filter(@PostCtrl.posts, 'selected')
 
       it 'has the first posts selected after retrieval', ->
         expect(@selectedPosts.length).toBe(1)
 
       it 'has the right title', ->
-        expect(@selectedPosts[0].title).toBe(posts[0].title)
+        expect(@selectedPosts[0].title).toBe('Hello World')
 
       it 'is not expanded', ->
         expect(@selectedPosts[0].expanded).toBe(undefined)
@@ -69,23 +67,23 @@ describe 'PostCtrl', ->
         @PostCtrl = @controllerConstructor 'PostCtrl',
           $scope: @$scope
           posts: posts
-        @posts = @PostCtrl.posts
-        @selectedPosts = _.filter(@posts, 'selected')
+        @selectedPosts = _.filter(@PostCtrl.posts, 'selected')
         
       it 'has one selected posts if page corresponds', ->
         expect(@selectedPosts.length).toBe(1)
 
       it 'has the right title', ->
-        expect(@selectedPosts[0].title).toBe(posts[1].title)
+        expect(@selectedPosts[0].title).toBe('Goodbye Day')
 
       it 'is expanded', ->
         expect(@selectedPosts[0].expanded).toBe(true)
 
-      xdescribe 'when selection changes', ->
+      describe 'when selection changes', ->
         beforeEach ->
-          @$state.params.postId = "hello-world"
-          @selectedPosts = _.filter(@posts, 'selected')
-          @expandedPosts = _.filter(@posts, 'expanded')
+          @$rootScope.$broadcast '$stateChangeSuccess', {},
+            post_id: "hello-world"
+          @selectedPosts = _.filter(@PostCtrl.posts, 'selected')
+          @expandedPosts = _.filter(@PostCtrl.posts, 'expanded')
 
         it 'still has one selected post', ->
           expect(@selectedPosts.length).toBe(1)
@@ -93,5 +91,5 @@ describe 'PostCtrl', ->
         it 'has the correct new title', ->
           expect(@selectedPosts[0].title).toBe(posts[0].title)
 
-        xit 'leaves the other post expanded', ->
+        it 'leaves the other post expanded', ->
           expect(@expandedPosts.length).toBe(2)
