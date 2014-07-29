@@ -18,7 +18,14 @@
       .state('posts', {
         url: '/posts',
         templateUrl: 'post/postList.html',
-        controller: 'PostCtrl as postList'
+        controller: 'PostCtrl as postList',
+        resolve: {
+          posts: ['$http', function($http){
+            return $http.get('/api/posts.json').then(function(response){
+              return response.data.posts;
+            }); 
+          }]
+        }
       })
       .state('posts.post', {
         url: '/:post_id',

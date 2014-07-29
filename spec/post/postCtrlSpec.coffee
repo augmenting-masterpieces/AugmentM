@@ -17,43 +17,39 @@ describe 'PostCtrl', ->
 
   beforeEach ->
     inject ($injector) ->
-      Post = $injector.get 'Post'
-      $q = $injector.get '$q'
-
       @controllerConstructor = $injector.get '$controller'
-      @$rootScope = $injector.get '$rootScope'
       @$state = $injector.get '$state'
+      @$rootScope = $injector.get '$rootScope'
 
-      @deferred = $q.defer()
-      @scope = @$rootScope.$new()
+      @$state.params.post_id = ""
+      @$scope = @$rootScope.$new @$rootScope
 
-      spyOn(Post, 'getAll').and.returnValue(@deferred.promise)
-
-
+      @PostCtrl = @controllerConstructor 'PostCtrl',
+        $scope: @$scope
+        posts: posts
+      @posts = @PostCtrl.posts
 
   describe 'posts property', ->
     describe 'object retrieval', ->
       beforeEach ->
-        @deferred.resolve(posts)
-        @PostCtrl = @controllerConstructor('PostCtrl', {$scope: @scope})
-        @$rootScope.$apply()
-        @posts = @PostCtrl.posts
+          @$state.params.post_id = ""
+          @$scope = @$rootScope.$new @$rootScope
+
+          @PostCtrl = @controllerConstructor 'PostCtrl',
+            $scope: @$scope
+            posts: posts
+          @posts = @PostCtrl.posts
 
       it 'is only defined after it calls the post service', ->
         expect(@posts).toBeDefined
 
       it 'is an Array', ->
-        expect(Array.isArray(@posts)).toBeTruthy()
+        expect((@posts).length).toBe(2)
 
   describe 'selecting and expanding posts', ->
 
     describe 'without url', ->
       beforeEach ->
-        @$state.params.post_id = ""
-        @deferred.resolve(posts)
-        @PostCtrl = @controllerConstructor('PostCtrl', {$scope: @scope})
-        @$rootScope.$apply()
-        @posts = @PostCtrl.posts
         @selectedPosts = _.filter(@posts, 'selected')
 
       it 'has the first posts selected after retrieval', ->
@@ -68,9 +64,11 @@ describe 'PostCtrl', ->
     describe 'with url', ->
       beforeEach ->
         @$state.params.post_id = "goodbye-day"
-        @deferred.resolve(posts)
-        @PostCtrl = @controllerConstructor('PostCtrl', {$scope: @scope})
-        @$rootScope.$apply()
+        @$scope = @$rootScope.$new @$rootScope
+
+        @PostCtrl = @controllerConstructor 'PostCtrl',
+          $scope: @$scope
+          posts: posts
         @posts = @PostCtrl.posts
         @selectedPosts = _.filter(@posts, 'selected')
         
@@ -83,7 +81,7 @@ describe 'PostCtrl', ->
       it 'is expanded', ->
         expect(@selectedPosts[0].expanded).toBe(true)
 
-      describe 'when selection changes', ->
+      xdescribe 'when selection changes', ->
         beforeEach ->
           @$state.params.postId = "hello-world"
           @selectedPosts = _.filter(@posts, 'selected')
@@ -92,7 +90,7 @@ describe 'PostCtrl', ->
         it 'still has one selected post', ->
           expect(@selectedPosts.length).toBe(1)
 
-        xit 'has the correct new title', ->
+        it 'has the correct new title', ->
           expect(@selectedPosts[0].title).toBe(posts[0].title)
 
         xit 'leaves the other post expanded', ->

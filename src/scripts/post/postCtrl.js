@@ -1,19 +1,20 @@
 (function(){
   'use strict';
-  angular.module('cth').controller('PostCtrl', ['$scope', 'Post', '$state', 'stringManipulators', '_', PostCtrl]);
+  angular.module('cth').controller('PostCtrl', ['$scope', 'posts', '$state', 'stringManipulators', '_', PostCtrl]);
 
-  function PostCtrl($scope, Post, $state, stringManipulators, _){
+  function PostCtrl($scope, posts, $state, stringManipulators, _){
 
     var vm = this;
 
-    Post.getAll().then(function(posts){
-      var params = $state.params; 
-      var processedPosts = selectPost(posts, params);
-      vm.posts = processedPosts;
-    });
+    // Post.getAll().then(function(posts){
+    //   var processedPosts = selectPost(posts, params);
+    //   vm.posts = processedPosts;
+    // });
 
     $scope.$on('$stateChangeSuccess', 
       function(event, toState, toParams, fromState, fromParams){
+        var params = toParams;
+        vm.posts = selectPost(posts, params);
       }
     );
 
