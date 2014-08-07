@@ -1,4 +1,4 @@
-angular.module('templates-cth', ['common/templates/logo-blank.html', 'common/templates/logo.html', 'common/templates/pilot.html', 'post/postItem.html', 'post/postList.html']);
+angular.module('templates-cth', ['common/templates/logo-blank.html', 'common/templates/logo.html', 'post/postItem.html', 'post/postList.html']);
 
 angular.module("common/templates/logo-blank.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("common/templates/logo-blank.html",
@@ -62,59 +62,6 @@ angular.module("common/templates/logo.html", []).run(["$templateCache", function
     "<!--   </g> -->\n" +
     "<!--   </svg> -->\n" +
     "<!-- </section> -->\n" +
-    "");
-}]);
-
-angular.module("common/templates/pilot.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("common/templates/pilot.html",
-    "<article class=\"about\">\n" +
-    "  <section class=\"goals\">\n" +
-    "    <h1>Pilot</h1>\n" +
-    "\n" +
-    "    <h2>Research through Coding</h2>\n" +
-    "\n" +
-    "    <p>Typewriter 90's tousled roof party chia Carles single-origin coffee twee, cred kitsch meggings mlkshk. Selvage mumblecore irony bitters Vice Brooklyn. Neutra 8-bit mustache actually vegan. Intelligentsia church-key Neutra whatever viral, hashtag fashion axe 8-bit pork belly. Echo Park sartorial retro DIY photo booth, selvage Helvetica. Blue Bottle craft beer Tonx, vegan High Life pour-over beard Kickstarter keytar scenester asymmetrical crucifix. Vice kale chips salvia photo booth pug.</p>\n" +
-    "\n" +
-    "    <p>Selvage synth put a bird on it, Brooklyn pour-over cred messenger bag literally disrupt Williamsburg Neutra actually. Brunch fashion axe art party, whatever pug bespoke cornhole chia lomo slow-carb. Small batch freegan Kickstarter whatever Odd Future. Fingerstache PBR&B twee, cardigan whatever McSweeney's master cleanse art party 3 wolf moon biodiesel meh deep v Intelligentsia. Fingerstache beard sartorial, ugh wayfarers scenester chillwave. Mustache you probably haven't heard of them mumblecore, messenger bag actually selfies sustainable Carles chillwave Thundercats selvage literally vegan. Hella four loko Banksy quinoa.</p>\n" +
-    "\n" +
-    "    <p>Raw denim brunch gentrify dreamcatcher leggings, +1 kale chips organic Carles Tumblr pug gluten-free. Sartorial High Life stumptown, four loko Odd Future pop-up ennui you probably haven't heard of them beard street art brunch. Ennui retro put a bird on it, narwhal Tonx bitters next level. Chillwave American Apparel fingerstache butcher. You probably haven't heard of them swag gentrify, ugh ennui selvage beard lomo fixie kale chips single-origin coffee Pitchfork hella mumblecore Pinterest. Salvia mixtape craft beer McSweeney's. Salvia craft beer 3 wolf moon, disrupt PBR cornhole church-key.</p>\n" +
-    "\n" +
-    "    <h2>Dynamic Innovation</h2>\n" +
-    "\n" +
-    "    <p>Before they sold out gluten-free squid vinyl, art party fap roof party leggings Tumblr pop-up craft beer mumblecore Tonx. Drinking vinegar American Apparel gluten-free, keffiyeh tousled vinyl hoodie lomo pop-up kitsch. Yr plaid kale chips, 90's authentic fixie Williamsburg irony High Life. PBR&B plaid meh, whatever jean shorts lomo trust fund sriracha vegan skateboard. Odd Future polaroid Vice, post-ironic locavore fixie ethical quinoa wayfarers pork belly skateboard church-key. Semiotics Brooklyn Cosby sweater asymmetrical. Brunch forage Austin, fingerstache pop-up church-key bicycle rights VHS Tonx Etsy freegan.</p>\n" +
-    "\n" +
-    "    <p>Mustache four loko XOXO skateboard church-key. Fashion axe fanny pack post-ironic plaid, paleo cray crucifix VHS Neutra authentic pop-up Helvetica Echo Park street art bespoke. PBR actually bicycle rights letterpress, master cleanse tattooed slow-carb biodiesel keffiyeh bespoke Intelligentsia sartorial Tumblr food truck. Dreamcatcher you probably haven't heard of them 3 wolf moon normcore Tonx trust fund Pinterest. Pork belly gastropub Vice Brooklyn, fap sriracha direct trade ethical Godard cliche asymmetrical gentrify. 8-bit trust fund occupy gluten-free whatever seitan. Leggings Blue Bottle art party, locavore ethical umami fingerstache pickled Pitchfork chia Pinterest four loko.</p>\n" +
-    "\n" +
-    "    <h2>From Student to Researcher</h2>\n" +
-    "\n" +
-    "    <p>Squid scenester single-origin coffee vinyl. Squid flexitarian jean shorts retro disrupt raw denim. Umami Tonx crucifix, wayfarers irony mlkshk Kickstarter brunch gastropub tousled. Pickled Thundercats selvage, umami Wes Anderson irony fashion axe post-ironic Banksy kogi Portland kitsch. Gluten-free leggings hashtag, ethical 90's four loko aesthetic yr vinyl pour-over mumblecore. Pitchfork fixie slow-carb 8-bit chia, meh sriracha street art actually sustainable Tonx tofu Echo Park put a bird on it. +1 try-hard put a bird on it, selvage farm-to-table aesthetic chia kitsch hashtag gastropub quinoa Intelligentsia Banksy.</p>\n" +
-    "\n" +
-    "    <p>Jean shorts irony street art, food truck lo-fi Marfa kitsch raw denim. Helvetica dreamcatcher blog Odd Future, Intelligentsia Tonx synth bicycle rights Kickstarter Williamsburg photo booth 8-bit Carles distillery PBR&B. Scenester normcore leggings swag High Life typewriter ethnic, raw denim Wes Anderson forage tote bag. Salvia normcore 3 wolf moon, ennui locavore direct trade chillwave retro swag 90's keytar seitan wayfarers occupy. Keffiyeh meggings locavore narwhal. Farm-to-table ethical Bushwick YOLO, American Apparel art party fanny pack lo-fi squid flexitarian letterpress put a bird on it. Locavore flexitarian kitsch pour-over Pinterest.</p>\n" +
-    "\n" +
-    "    <p>Vinyl readymade meh try-hard, occupy Portland you probably haven't heard of them. XOXO wolf Echo Park keytar, four loko kitsch small batch Godard bespoke vinyl pickled sustainable YOLO. Deep v ethnic farm-to-table Portland pug Shoreditch, bicycle rights vinyl leggings slow-carb kogi Thundercats. Irony DIY drinking vinegar polaroid, pickled cray cardigan Helvetica authentic yr literally Neutra. Chillwave viral you probably haven't heard of them gentrify kogi. Street art McSweeney's 8-bit YOLO, Marfa sustainable skateboard Wes Anderson forage Schlitz mustache crucifix brunch lomo +1. Irony pour-over quinoa gentrify pickled Banksy, semiotics Shoreditch scenester plaid church-key authentic Thundercats pop-up.</p>\n" +
-    "\n" +
-    "  </section>\n" +
-    "\n" +
-    "  <section class=\"people\">\n" +
-    "    <section class=\"students g-full\">\n" +
-    "      <div class=\"g-full\">\n" +
-    "        <h2>Students</h2>\n" +
-    "      </div>\n" +
-    "      <div class=\"g--third profile\" ng-repeat=\"student in pilot.students\">\n" +
-    "        <h1 class=\"medium\">{{student.name.first}}</h1>\n" +
-    "        <h1 class=\"medium\">{{student.study}}</h1>\n" +
-    "      </div>\n" +
-    "    </section>\n" +
-    "\n" +
-    "    <section class=\"partners\">\n" +
-    "      <h2>Partners</h2>\n" +
-    "    </section>\n" +
-    "\n" +
-    "    <section class=\"staff\">\n" +
-    "      <h2>Staff</h2>\n" +
-    "    </section>\n" +
-    "  </section>\n" +
-    "</article>\n" +
     "");
 }]);
 

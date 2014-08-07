@@ -40,7 +40,7 @@
       toTop: function(element){
 
         var top = element.position().top - $('.site-header .logo').height();
-        console.log(top);
+        //console.log(top);
         $('body').animate({scrollTop: top + 5}, {
           duration: 750,
         });
