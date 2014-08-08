@@ -4,44 +4,43 @@
 
   function AppCtrl($state, $timeout){
     var vm = this;
+    
     vm.showHeader = true;
 
-    $timeout(function(){
-      vm.showHeader = false;
-    }, 2000);
+    // $timeout(function(){
+    //   vm.showHeader = false;
+    // }, 500);
     
     
     vm.postOrder = '-posted';
     vm.postFilter = '';
 
     vm.tags = [{
-      name: 'About',
-      filter: 'about'
-    }, {
-      name: 'Posts', 
-      filter: 'post',
+      name: 'Case Study',
+      filter: 'caseStudy',
       active: true
     }, {
-      name: 'Articles',
-      filter: 'article'
+      name: 'Process', 
+      filter: 'process'
     }, {
-      name: 'All',
-      filter: ''
+      name: 'Prototype',
+      filter: 'prototype'
     }];
 
     vm.setFilter = function(filter){
+
       vm.postFilter = filter;
       _.each(vm.tags, function(tag){
         tag.active = false;
         if(tag.filter === filter){
           tag.active = true;
+          $state.go(tag.filter);
         }
         return tag;
       });
-      $state.go('posts');
-
     };
 
     return vm;
   }
+
 })();

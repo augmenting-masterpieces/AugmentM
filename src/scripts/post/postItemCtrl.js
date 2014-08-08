@@ -11,9 +11,9 @@
     vm.post.headerImage = vm.post.images[0];
 
     if(vm.post.initial){
-      $timeout(function(){
-        scroll.toTop($element);
-      }, 4000);
+      // $timeout(function(){
+      //   scroll.toTop($element);
+      // }, 4000);
     }
 
     $scope.toggleExpanded = function(){

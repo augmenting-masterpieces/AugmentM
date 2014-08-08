@@ -9,32 +9,42 @@
 
 
     $stateProvider
-      .state('posts', {
-        url: '/posts',
-        templateUrl: 'post/postList.html',
-        controller: 'PostCtrl as postList',
-        resolve: {
-          posts: ['$http', function($http){
-            return $http.get('/api/posts.json').then(function(response){
-              var posts = response.data.posts;
-              posts = _(posts).sortBy('posted').value().reverse();
-              return posts;
-            }); 
-          }]
-        }
+      .state('caseStudy', {
+        url: '/caseStudy',
+        templateUrl: 'caseStudy/caseStudy.html',
+        controller: 'CaseStudyCtrl as case'
       })
-      .state('posts.post', {
-        url: '/:post_id',
+      .state('process', {
+        url: '/process',
+        templateUrl: 'process/process.html',
+        controller: 'ProcessCtrl as proc'
       })
-      .state('about', {
-        url: '/pilot',
-        templateUrl: 'templates/pilot.html',
-        controller: 'PilotCtrl as pilot'
-
+      .state('prototype', {
+        url: '/prototype',
+        templateUrl: 'prototype/prototype.html',
+        controller: 'PrototypeCtrl as proto'
       });
 
-    $urlRouterProvider.when('/', '/posts');
+    $urlRouterProvider.when('/', '/caseStudy');
   }
+
+// .state('posts', {
+//   url: '/posts',
+//   templateUrl: 'post/postList.html',
+//   controller: 'PostCtrl as postList',
+//   resolve: {
+//     posts: ['$http', function($http){
+//       return $http.get('/api/posts.json').then(function(response){
+//         var posts = response.data.posts;
+//         posts = _(posts).sortBy('posted').value().reverse();
+//         return posts;
+//       }); 
+//     }]
+//   }
+// })
+// .state('posts.post', {
+//   url: '/:post_id',
+// })
 
 
 })();

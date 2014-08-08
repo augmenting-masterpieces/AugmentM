@@ -22,18 +22,22 @@
     <!--
     <link rel="canonical" href="http://www.example.com/">
     -->
+
     <base href="/"></base>
 
     <!-- build:css styles/components/main.min.css -->
     <link rel="stylesheet" href="main.css">
     <!-- endbuild -->
+
   </head>
   <body class="container-fluid" ng-class="{'header-on-screen':app.showHeader}" ng-cloak ng-controller="AppCtrl as app" ng-app="cth">
 
     <header class="site-header">
-      <a href ui-sref="posts"> 
+
+<!--  <a href ui-sref="posts"> 
         <div class="logo undone"  ng-include="'common/templates/logo.html'"></div>
-      </a>
+      </a> -->
+
       <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
             <ul class="nav navbar-nav">
@@ -45,6 +49,7 @@
             </ul>
         </div>
       </div>
+    
     </header>
 
     <main>
