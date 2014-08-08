@@ -1,31 +1,17 @@
-body {
-  top: -100vh;
-  transition: top 1s ease;
-}
-
-body.header-on-screen {
-  top: 0;
-}
-
 .site-header {
-  .logo {
-    width: 100vw;
-    height: 100vh;
-    background-color: $colorGreen;
-  }
-
   .navbar {
     bottom: 0;
     font-family: NittyBold;
     opacity: 1;
     margin: 0;
     border: none;
+
     ul {
       width: 100%;
     }
 
     li {
-      width: 33%;
+      width: 33.333333333%;
       text-align: center;
       overflow: hidden;
     }

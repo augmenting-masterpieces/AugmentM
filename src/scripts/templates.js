@@ -4,7 +4,6 @@ angular.module("caseStudy/caseStudy.html", []).run(["$templateCache", function($
   $templateCache.put("caseStudy/caseStudy.html",
     "<section ui-sref-active=\"active\">\n" +
     "	<p> Im the case study Template </p>\n" +
-    "\n" +
     "</section>");
 }]);
 

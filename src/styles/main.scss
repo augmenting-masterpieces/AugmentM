@@ -24,6 +24,20 @@ $colorGreen: #A5CC45 !default;
 $colorRed: #E34D2F !default;
 $colorGrayLight: #eeeeee !default;
 
+$maincolor: #000000; 
+
+$white: lighten($maincolor, 100%);
+$gray1: lighten($maincolor, 90%);
+$gray2: lighten($maincolor, 80%);
+$gray3: lighten($maincolor, 70%);
+$gray4: lighten($maincolor, 60%);
+$gray5: lighten($maincolor, 50%);
+$gray6: lighten($maincolor, 40%);
+$gray7: lighten($maincolor, 30%);
+$gray8: lighten($maincolor, 20%);
+$gray9: lighten($maincolor, 10%);
+$black: lighten($maincolor, 0%);
+
 $list-group-bg: black;
 $list-group-border: none;
 $list-group-active-bg: $colorYellow !default;
@@ -31,12 +45,13 @@ $list-group-active-color: black !default;
 
 $list-group-border-radius: 0;
 
-$navbar-inverse-color: black;
+$navbar-inverse-color: $black;
 $navbar-height: 100px;
-$navbar-inverse-bg: black;
-$navbar-inverse-link-color: white;
-$navbar-inverse-link-active-color: $colorGrayDark;
-$navbar-inverse-link-active-bg: $colorYellow;
+$navbar-inverse-bg: $gray5;
+$navbar-inverse-link-color: $gray7;
+$navbar-inverse-link-hover-color: $gray7;
+$navbar-inverse-link-active-color: $black;
+$navbar-inverse-link-active-bg: $gray3;
 
 $grid-float-breakpoint: 0;
 
