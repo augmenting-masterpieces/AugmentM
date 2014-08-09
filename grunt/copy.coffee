@@ -36,6 +36,12 @@ module.exports =
     src: "**/*.{eot,woff,ttf}"
     dest: "dev/fonts"
 
+  video:
+    expand: true
+    cwd: "src"
+    src: "video/**/*.*"
+    dest: "dev/"  
+
   dist:
     expand: true
     cwd: "dev"

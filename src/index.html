@@ -30,13 +30,12 @@
     <!-- endbuild -->
 
   </head>
-  <body class="container-fluid" ng-class="{'header-on-screen':app.showHeader}" ng-cloak ng-controller="AppCtrl as app" ng-app="cth">
+  <body ng-cloak ng-controller="AppCtrl as app" ng-app="cth">
 
-    <header class="site-header">
+    <!-- <header class="site-header">
 
-<!--  <a href ui-sref="posts"> 
-        <div class="logo undone"  ng-include="'common/templates/logo.html'"></div>
-      </a> -->
+class="container-fluid" ng-class="{'header-on-screen':app.showHeader}"
+
 
       <div class="navbar navbar-inverse navbar-static-top" role="navigation">
         <div class="container-fluid">
@@ -52,7 +51,7 @@
         </div>
       </div>
     
-    </header>
+    </header> -->
 
     <main>
       <div ui-view autoscroll="false"></div>

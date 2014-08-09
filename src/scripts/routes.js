@@ -11,18 +11,23 @@
     $stateProvider
       .state('caseStudy', {
         url: '/caseStudy',
-        templateUrl: 'caseStudy/caseStudy.html',
+        templateUrl: 'templates/caseStudy.html',
         controller: 'CaseStudyCtrl as case'
       })
       .state('process', {
         url: '/process',
-        templateUrl: 'process/process.html',
+        templateUrl: 'templates/process.html',
         controller: 'ProcessCtrl as proc'
       })
       .state('prototype', {
         url: '/prototype',
-        templateUrl: 'prototype/prototype.html',
+        templateUrl: 'templates/prototype.html',
         controller: 'PrototypeCtrl as proto'
+      })
+      .state('experiments', {
+        url: '/experiments',
+        templateUrl: 'templates/experiments.html',
+        controller: 'ExperimentsCtrl as expe'
       });
 
     $urlRouterProvider.when('/', '/caseStudy');

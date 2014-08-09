@@ -65,6 +65,7 @@ module.exports =
   assets: [
     "newer:imagemin"
     "copy:fonts"
+    "copy:video"
   ]
 
   scripts: [
