@@ -5,6 +5,8 @@
  * Web Starter Kit team.
  *
  */
+
+
 @font-face {
   font-family: NittyNormal;
   src: url('../fonts/NN.woff') format('woff');
@@ -62,10 +64,9 @@ $font-family-base: $font-family-monospace !default;
 
 @import "./src/styles/_normalize";
 @import "./bootstrap/bootstrap";
-@import "./src/styles/_featured-spotlight";
-@import "./src/styles/_site-logo";
+@import "./src/styles/_parallax";
 @import "./src/styles/_experiments";
-
+@import "./src/styles/_caseStudy";
 
 // html,
 

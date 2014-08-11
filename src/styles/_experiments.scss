@@ -1,6 +1,6 @@
-body {
-	background-color: $gray3;
-}
+// body {
+// 	background-color: $gray3;
+// }
 
 // The big beyond screensize boxes and their positions
 
@@ -84,16 +84,17 @@ $sizeh: 120vh;
 
 
 // styling for mainbox
+.centerSite {
+	h1 {
+		width: 60vw;
+		position: relative;
+		top: 40vh;
+		left: 30vw;
 
-h1 {
-	width: 60vw;
-	position: relative;
-	top: 40vh;
-	left: 30vw;
+		background: $gray5;
+		text-align: center;
 
-	background: $gray5;
-	text-align: center;
-
+	}
 }
 
 .thought {

@@ -1,0 +1,144 @@
+.caseTop {
+	background: url(./images/rijkswhite.jpg) no-repeat center center / cover;
+	background-attachment: fixed;
+	min-height: 120vh;
+	width: 100vw;
+	padding: 30vh 0 0 0;
+
+	h1 {
+		box-sizing: border-box;
+		color: $gray9;
+		font-size: 4em;
+		padding-bottom: 1%;
+		font-weight: bold;
+	}
+
+	p {
+		font-size: 2em;
+		width: 60vw;
+		margin: 0 auto;
+	}
+
+	.mainDiv {
+		box-sizing: border-box;
+		padding: 3%;
+		text-align: center;
+		background-color: hsla(0, 0%, 60%, 0.8);
+		width: 100vw;
+	}
+}
+
+.casePersons {
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100vw;
+	padding: 5% 0 10% 0;
+	background: hsla(0, 0%, 60%, 1);
+
+	.headerDiv {
+		box-sizing: border-box;
+		width: 100vw;
+		padding: 3%;
+		text-align: center;
+		background-color: hsla(0, 0%, 40%, 0.8);
+
+		.headerText {
+		width: 60vw;
+		margin: 0 auto;
+		font-size: 2em;
+		}
+
+		h1 {
+		color: $gray9;
+		font-size: 3em;
+		}
+	
+	}
+
+	.identContainer {
+		width: 90%;
+		margin: 5% auto;
+		background-color: hsla(0, 0%, 40%, 0.8); 
+
+		.identDiv {
+			display: block;
+			width: 25%;
+			height: 75vh;
+			margin: 0 (12.5% / 3);
+			background-color: hsla(0, 0%, 50%, 0.8);
+			float: left;
+			text-align: center;
+
+			h2 {
+				font-size: 2em;
+				text-decoration: underline; 
+
+			}
+			 img {
+			 	margin: 0 auto;
+			 	width: 80%;
+			}
+
+			p {
+				float: none;
+				padding: 5%;
+				font-size: 1.5em;
+			}
+		}
+	}
+}
+
+.singleCaseIntro {
+	box-sizing: border-box;
+	min-height: 30vh;
+	width: 100vw;
+	padding: 5% 0 10% 0;
+	background: linear-gradient(
+      rgba(88, 88, 88, 0.60), 
+      rgba(88, 88, 88, 0.60)
+    ), url(./images/librijks.jpg) no-repeat center center / cover;
+	overflow: hidden;
+	
+	h1 {
+		color: $white;
+		font-weight: bold;
+		font-size: 10em;
+		opacity: 0.95;
+		text-align: center;
+  }
+
+}
+
+.singleCaseTop {
+	box-sizing: border-box;
+	height: 100vh;
+	width: 100vw;
+	padding: 5% 0 10% 0;
+
+	background-color: hsla(0, 0%, 60%, 0.8);
+
+	h1 {
+		text-align: center;
+	}
+
+	img {
+		width: 80%;
+		margin: 0 auto;
+	}
+}
+
+.singleCaseBody {
+
+}
+
+.singleCaseExplain {
+
+}
+
+.transitionToAllArticle {
+
+}
+
+.allCasesArticle {
+
+}
