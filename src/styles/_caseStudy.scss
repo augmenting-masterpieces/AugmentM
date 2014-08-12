@@ -209,20 +209,41 @@
 	}
 }
 
+body {
+
+}
+
 .transitionToArticle {
+
+	// $perspective: 1; 
+	// $distance: 1; 
+
+	// transform-style: preserve-3d;
+	// perspective: $perspective * 1px;
+
 	box-sizing: border-box;
-	min-height: 30vh;
+	min-height: 25vh;
 	width: 100vw;
-	background: hsla(0, 0%, 30%, 1);
+	background: hsla(0, 0%, 40%, 1);
 	padding: 5%;
 
-	h1 {
-			color: $gray1;
-			font-weight: bold;
-			font-size: 4em;
-			text-decoration: underline;
-			text-align: center;
+	h1 {	
+		// $transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
+		// transform: $transform;
+		// z-index: $distance * 100;
+
+		color: $gray1;
+		font-weight: bold;
+		font-size: 4em;
+		text-decoration: underline;
+		text-align: center;
 		}
+
+	p {
+		text-align: center;
+		font-size: 2em;
+		text-decoration: underline;
+	}
 }
 
 
@@ -230,7 +251,7 @@
 	box-sizing: border-box;
 	min-height: 120vh;
 	width: 100vw;
-	background: hsla(0, 0%, 60%, 1);
+	background: hsla(0, 0%, 70%, 1);
 	padding: 5%;
 
 	h1 {
@@ -250,7 +271,8 @@
 		
 		&:first-of-type {
 			padding-bottom: 3%;
-			font-weight: bold;
+			font-weight: 900;
+			font-size: 1.8em;
 		}
 	}
 
@@ -258,10 +280,7 @@
 		width: 40%;
 		float: right;
 		padding: 30px;
-	}
-
-
-	
+	}	
 }
 
 .allCasesArticle {

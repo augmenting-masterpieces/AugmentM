@@ -101,7 +101,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "</section>\n" +
     "<section class=\"transitionToArticle\">\n" +
-    "	\n" +
+    "	<p> Im a real pretty footer </p>\n" +
     "</section>\n" +
     "<section class=\"allCasesArticle\">\n" +
     "	\n" +
