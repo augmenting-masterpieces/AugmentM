@@ -30,20 +30,20 @@
 
 .casePersons {
 	box-sizing: border-box;
-	min-height: 100vh;
+	min-height: 120vh;
 	width: 100vw;
 	padding: 5% 0 10% 0;
 	background: hsla(0, 0%, 60%, 1);
 
 	.headerDiv {
 		box-sizing: border-box;
-		width: 100vw;
+		width: 100%;
 		padding: 3%;
 		text-align: center;
-		background-color: hsla(0, 0%, 40%, 0.8);
+		background-color: hsla(0, 0%, 40%, 1);
 
 		.headerText {
-		width: 60vw;
+		width: 60%;
 		margin: 0 auto;
 		font-size: 2em;
 		}
@@ -57,15 +57,15 @@
 
 	.identContainer {
 		width: 90%;
-		margin: 5% auto;
-		background-color: hsla(0, 0%, 40%, 0.8); 
+		margin: 5% auto 0 auto;
+		background-color: hsla(0, 0%, 40%, 1); 
 
 		.identDiv {
 			display: block;
 			width: 25%;
 			height: 75vh;
-			margin: 0 (12.5% / 3);
-			background-color: hsla(0, 0%, 50%, 0.8);
+			margin: 5% (12.5% / 3);
+			background-color: hsla(0, 0%, 50%, 1);
 			float: left;
 			text-align: center;
 
@@ -94,8 +94,8 @@
 	width: 100vw;
 	padding: 5% 0 10% 0;
 	background: linear-gradient(
-      rgba(88, 88, 88, 0.60), 
-      rgba(88, 88, 88, 0.60)
+	    rgba(88, 88, 88, 0.60), 
+	    rgba(88, 88, 88, 0.60)
     ), url(./images/librijks.jpg) no-repeat center center / cover;
 	overflow: hidden;
 	
@@ -111,32 +111,157 @@
 
 .singleCaseTop {
 	box-sizing: border-box;
-	height: 100vh;
+	min-height: 100vh;
 	width: 100vw;
 	padding: 5% 0 10% 0;
 
-	background-color: hsla(0, 0%, 60%, 0.8);
+	background-color: hsla(0, 0%, 60%, 1);
 
 	h1 {
+		padding: 3%;
 		text-align: center;
 	}
 
 	img {
+		display: block;
 		width: 80%;
 		margin: 0 auto;
 	}
 }
 
 .singleCaseBody {
+	box-sizing: border-box;
+	min-height: 100vh;
+	width: 100vw;
+	padding: 0;
 
+	background: linear-gradient(
+	    hsla(0, 0%, 60%, 0.20),
+	    hsla(0, 0%, 60%, 0.20)
+    ), url(./images/ucs/1mrB/aGalantCompany.jpg) no-repeat center center / cover;
+    background-attachment: fixed;
+
+	.firstSq {
+		height: 30vh;
+
+		h1 {
+			padding: 5%;
+			color: $gray1;
+			font-weight: bold;
+			font-size: 4em;
+			position: relative;
+  			top: 50%;
+  			transform: translateY(-50%);
+		}
+	}
+
+	.secondSq {
+		height: 30vh;
+	}
+
+	.thirdSq {
+		min-height: 73vh;
+		padding: 5%;
+
+		.conversation {
+			display: block;
+			height: 60vh;
+			padding: 4%;
+
+  			background: hsla(0, 0%, 60%, 0.60);
+  			border-radius: 10px;
+		}
+
+		p {
+			font-size: 1.5em;
+		}
+	}
+
+	.fourthSq {
+		height: 73vh;
+		padding: 5%;
+
+		ul {
+			display: block;
+			height: 60vh;
+			padding: 0;
+
+  			background: hsla(0, 0%, 60%, 0.60);
+  			border-radius: 10px;
+		}
+			
+		li {
+			display: block;
+			width: 25%;
+			height: 25%;
+			margin: (12.5% / 3) (12.5% / 3);
+			float: left;
+			overflow:hidden;
+		}
+
+		img {
+			position: relative;
+  			top: 50%;
+  			transform: translateY(-50%);
+			width: 100%;
+			height: auto;
+		}
+	}
 }
+
+.transitionToArticle {
+	box-sizing: border-box;
+	min-height: 30vh;
+	width: 100vw;
+	background: hsla(0, 0%, 30%, 1);
+	padding: 5%;
+
+	h1 {
+			color: $gray1;
+			font-weight: bold;
+			font-size: 4em;
+			text-decoration: underline;
+			text-align: center;
+		}
+}
+
 
 .singleCaseExplain {
+	box-sizing: border-box;
+	min-height: 120vh;
+	width: 100vw;
+	background: hsla(0, 0%, 60%, 1);
+	padding: 5%;
 
-}
+	h1 {
+		padding-bottom: 5%;
+		color: $gray1;
+		font-weight: bold;
+		font-size: 4em;
+		text-align: center;
+	}
+	
+	p {	
+		padding: 1%;
+		width: 70%;
+		margin: 0 auto; 
+		color: $gray9;
+		font-size: 1.5em;
+		
+		&:first-of-type {
+			padding-bottom: 3%;
+			font-weight: bold;
+		}
+	}
 
-.transitionToAllArticle {
+	img {
+		width: 40%;
+		float: right;
+		padding: 30px;
+	}
 
+
+	
 }
 
 .allCasesArticle {

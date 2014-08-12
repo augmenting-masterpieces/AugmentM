@@ -13,8 +13,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "		<h1> Three Persons, One Museum...</h1>\n" +
     "		<p class=\"headerText\"> Here we introduce the three main actors of this essay.</p>\n" +
     "	</div>\n" +
-    "\n" +
-    "	<div class=\"identContainer\">\n" +
+    "	<div class=\"identContainer clearfix\">\n" +
     "		<div class=\"identDiv clearfix\"> \n" +
     "			<h2> Person 1 </h2>\n" +
     "			<img src=\"./images/male-icon.png\" alt=\"\">\n" +
@@ -31,26 +30,77 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste cum enim quia dolorem. Quibusdam aut dolores facere. In itaque mollitia, sint harum obcaecati? Libero autem placeat amet, officia illum.</p>\n" +
     "		</div>	\n" +
     "	</div>\n" +
-    "\n" +
-    "	<p>	<br>I guess my clearfix is only partially working!!! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, fugiat at similique impedit ea sed provident quam adipisci accusamus mollitia, sequi, commodi reprehenderit. Ex quibusdam maxime veritatis, eos nesciunt laudantium!</p>\n" +
-    "\n" +
     "</section>\n" +
     "<section class=\"singleCaseIntro\">\n" +
-    "	<h1> The mysterious mr. B </h1>\n" +
+    "	<h1> Their Routes </h1>\n" +
     "</section>\n" +
     "<section class=\"singleCaseTop\">\n" +
-    "	<h1> and his quest </h1>\n" +
     "	<img src=\"./images/rijksdoorzicht.png\">\n" +
     "</section>\n" +
     "<section class=\"singleCaseBody\">\n" +
-    "	\n" +
-    "\n" +
+    "	<div class=\"row\">\n" +
+    "		<div class=\"col-md-12 firstSq\">\n" +
+    "			<h1>\"Interesting Quote about something\"</h1>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"row\">\n" +
+    "		<div class=\"col-md-5 thirdSq\">\n" +
+    "			<div class=\"conversation\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		<div class=\"col-md-7 fourthSq clearfix\">\n" +
+    "		<ul>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00117.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00120.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00122.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00127.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00129.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00137.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00141.JPG\">\n" +
+    "			</li>\n" +
+    "			<li>\n" +
+    "				<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
+    "			</li>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</section>\n" +
+    "<section class=\"transitionToArticle\">\n" +
+    "	<h1> The Story</h1>\n" +
     "</section>\n" +
     "<section class=\"singleCaseExplain\">\n" +
+    "	<h1> The main text </h1>\n" +
+    "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate </p>\n" +
+    "	<p>laboriosam soluta architecto culpa aut facilis dolorem commodi! Non beatae delectus facilis quae omnis ipsam incidunt dolorum esse culpa vitae quibusdam minus doloribus consequatur eligendi voluptas facere, fuga reiciendis natus, blanditiis temporibus? Sint dignissimos quas ullam officia, ex vitae perspiciatis reprehenderit. Sit repudiandae asperiores corporis quidem sunt placeat accusantium ea earum libero eius debitis fugit itaque ex id sapiente perspiciatis, sint animi exercitationem iusto cumque quae. \n" +
     "\n" +
+    "	<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
     "\n" +
+    "	Numquam totam illum atque molestiae tempore sed, recusandae minima exercitationem non quibusdam est amet Repellendus ut nemo velit, explicabo. Perspiciatis ratione soluta nihil nam ab voluptatem quos eos excepturi expedita molestiae accusamus delectus dolorum dicta, aspernatur fuga nulla quas, saepe, consectetur odio maiores esse cumque! Vel eaque, expedita doloribus, voluptates rerum molestiae nulla architecto dignissimos, esse porro voluptatibus omnis explicabo? Mollitia, provident sequi eligendi quia temporibus hic ex magnam aliquam nobis, earum omnis porro odit illo dolorum. Nemo esse officiis dolorum distinctio aperiam fugit optio eum non obcaecati, sapiente rem sit tempore facilis, saepe a eaque, totam neque. </p>\n" +
+    "\n" +
+    "	\n" +
+    "\n" +
+    "	<p>Cupiditate consequatur natus, quidem magnam accusantium quae temporibus corporis repudiandae eaque necessitatibus unde ab quod molestiae, cum tenetur, sint distinctio dolor, numquam officiis reiciendis error! Aliquid illo in assumenda quos repellat! Nobis, voluptate nihil! Tempora, consequatur cumque assumenda non dolorem debitis nam qui ullam repudiandae repellat necessitatibus quia quidem dolore recusandae odio culpa minima et laborum, ad voluptatum excepturi tenetur velit? Ipsam unde vel atque harum sit nulla, aliquam dolores animi voluptatem dolorem quas, vitae doloribus velit earum distinctio nostrum porro ullam error facilis iure aperiam, saepe repellat et. Architecto eum commodi facere ut dolor, voluptate tempore voluptatem vel rerum. Nam hic velit numquam eos quo fugiat modi, sequi aliquam libero, quam qui ipsum doloremque dicta recusandae neque, deleniti ipsam laborum esse minima at dolorum laudantium? At magnam soluta quidem rerum labore, nihil maiores praesentium, eum quas ad rem officiis, laboriosam non placeat minus.</p>\n" +
+    "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "</section>\n" +
-    "<section class=\"transitionToAllArticle\">\n" +
+    "<section class=\"transitionToArticle\">\n" +
     "	\n" +
     "</section>\n" +
     "<section class=\"allCasesArticle\">\n" +
