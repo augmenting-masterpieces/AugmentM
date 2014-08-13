@@ -1,6 +1,5 @@
 body {
 	background: red;
-	overflow-x: hidden;
 }
 
 .caseTop {
@@ -206,9 +205,8 @@ body {
 
 .singleCaseBody {
 	box-sizing: border-box;
-	min-height: 100vh;
+	min-height: 120vh;
 	width: 100vw;
-	padding: 0;
 
 	background: linear-gradient(
 	    hsla(0, 0%, 60%, 0.20),
@@ -216,42 +214,27 @@ body {
     ), url(./images/ucs/1mrB/aGalantCompany.jpg) no-repeat center center / cover;
     background-attachment: fixed;
 
-	.firstSq {
-		height: 30vh;
 
-		h1 {
-			padding: 5%;
-			color: $gray1;
-			font-weight: bold;
-			font-size: 4em;
-			position: relative;
-  			top: 50%;
-  			transform: translateY(-50%);
-		}
-	}
-
-	.secondSq {
-		height: 30vh;
-	}
-
-	.thirdSq {
-		min-height: 73vh;
+	h1 {
 		padding: 5%;
+		margin: 0;
+		color: $gray1;
+		font-weight: bold;
+		font-size: 4em;
+	}
 
-		.conversation {
-			display: block;
-			padding: 4%;
-  			background: hsla(0, 0%, 60%, 0.60);
-  			border-radius: 10px;
-		}
+	.conversation {
+		display: block;
+		padding: 4%;
+		background: hsla(0, 0%, 60%, 0.60);
+		border-radius: 10px;
 
 		p {
 			font-size: 1.5em;
 		}
 	}
 
-	.fourthSq {
-		min-height: 73vh;
+	.imageGallery {
 		padding: 5%;
 
 		ul {
@@ -264,10 +247,9 @@ body {
 		li {
 			display: block;
 			width: 25%;
-
-			margin: (12.5% / 3);
+			// 	margin: (12.5% / 3);
 			float: left;
-			overflow:hidden;
+			// overflow:hidden;
 		}
 
 		img {
@@ -277,27 +259,23 @@ body {
 	}
 }
 
-body {
-
-}
-
 .grayTransition {
 	box-sizing: border-box;
 	min-height: 25vh;
 	width: 100vw;
 	background: hsla(0, 0%, 40%, 1);
-	padding: 5%;
 	text-align: center;
+	padding: 2% 0;
 
 	&.small {
 		min-height: 15vh;
+	}
 
-		img {
-			display: inline-block;
-			height: 25px;
-			margin: 20px auto 10px auto;
-			padding: 0 20px;
-		}
+	img {
+		display: inline-block;
+		height: 25px;
+		margin: 20px auto 10px auto;
+		padding: 0 20px;
 	}
 
 	h1 {	
@@ -308,8 +286,11 @@ body {
 	}
 
 	p {
+		margin: 1.5% 0; 
 		font-size: 2em;
-		text-decoration: underline;
+		&.underline {
+			text-decoration: underline;
+		}
 	}
 }
 

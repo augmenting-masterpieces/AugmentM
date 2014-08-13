@@ -6,22 +6,15 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<div class=\"mainDiv\">\n" +
     "		<h1> User Camera Studies </h1>\n" +
     "	</div>\n" +
-    "<!-- 	<div class=\"collaborationDiv\">\n" +
-    "		<p> A collaboration between:</p>\n" +
-    "		<img src=\"./images/uvalogo.png\">\n" +
-    "		<img src=\"./images/rijks.png\">\n" +
-    "		\n" +
-    "	</div> -->\n" +
     "</section>\n" +
     "<section class=\"grayTransition small\">\n" +
-    "	<p> A collaboration between:</p>\n" +
+    "	<p class=\"underline\"> A collaboration between:</p>\n" +
     "	<img src=\"./images/uvalogo.png\">\n" +
     "	<img src=\"./images/rijks.png\">\n" +
-    "	\n" +
+    "	<p>Jan Hein Hoogstad - Johanna Barnbeck - Shailo Philips</p>\n" +
     "</section>\n" +
     "<article >\n" +
     "	<h1> The intro text </h1>\n" +
-    "	<p>By Johanna Barnbeck</p>\n" +
     "	<p class=\"boldAlinea\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "\n" +
     "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate \n" +
@@ -97,24 +90,14 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "</article>\n" +
     "\n" +
-    "<!-- <section class=\"singleCaseTop\">\n" +
-    "	<img src=\"./images/rijksdoorzicht.png\">\n" +
-    "</section> -->\n" +
-    "\n" +
     "<section class=\"singleCaseBody\">\n" +
-    "	<div class=\"row\">\n" +
-    "		<div class=\"col-md-12 firstSq clearfix\">\n" +
-    "			<h1>\"Interesting Quote about something\"</h1>\n" +
-    "		</div>\n" +
+    "	<h1>\"Interesting Quote about something\"</h1>\n" +
+    "	<div class=\"conversation clearfix\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "	</div>\n" +
-    "	<div class=\"row\">\n" +
-    "		<div class=\"col-md-5 thirdSq clearfix\">\n" +
-    "			<div class=\"conversation clearfix\">\n" +
-    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
-    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"col-md-7 fourthSq clearfix\">\n" +
+    "\n" +
+    "	<div class=\"imageGallery clearfix\">\n" +
     "		<ul class=\"clearfix\">\n" +
     "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
@@ -143,7 +126,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
     "			</li>\n" +
-    "		</div>\n" +
+    "		</ul>\n" +
     "	</div>\n" +
     "</section>\n" +
     "\n" +
@@ -164,7 +147,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "</article>\n" +
     "\n" +
     "<section class=\"grayTransition small\">\n" +
-    "	<p> The End</p>\n" +
+    "	<p> The End </p>\n" +
     "</section>\n" +
     "");
 }]);
