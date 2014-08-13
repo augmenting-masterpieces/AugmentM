@@ -14,7 +14,7 @@
 	}
 
 	p {
-		font-size: 2em;
+		font-size: 1em;
 		width: 60vw;
 		margin: 0 auto;
 	}
@@ -23,7 +23,7 @@
 		box-sizing: border-box;
 		padding: 3%;
 		text-align: center;
-		background-color: hsla(0, 0%, 60%, 0.8);
+		background-color: hsla(0, 0%, 90%, 0.8);
 		width: 100vw;
 	}
 }
@@ -33,62 +33,101 @@
 	min-height: 120vh;
 	width: 100vw;
 	padding: 5% 0 10% 0;
-	background: hsla(0, 0%, 60%, 1);
-
-	.headerDiv {
-		box-sizing: border-box;
-		width: 100%;
-		padding: 3%;
-		text-align: center;
-		background-color: hsla(0, 0%, 40%, 1);
-
-		.headerText {
-		width: 60%;
-		margin: 0 auto;
-		font-size: 2em;
-		}
-
-		h1 {
-		color: $gray9;
-		font-size: 3em;
-		}
-	
-	}
+	background: hsla(0, 0%, 70%, 1);
 
 	.identContainer {
 		width: 90%;
 		margin: 5% auto 0 auto;
+		padding: 2%;
 		background-color: hsla(0, 0%, 40%, 1); 
 
-		.identDiv {
-			display: block;
-			width: 25%;
+		.nameDiv {
+			width: 30%;
 			height: 75vh;
-			margin: 5% (12.5% / 3);
-			background-color: hsla(0, 0%, 50%, 1);
+			padding: 3%;
 			float: left;
-			text-align: center;
 
 			h2 {
 				font-size: 2em;
-				text-decoration: underline; 
-
+				text-align: center;
+				text-decoration: underline;
 			}
-			 img {
+			img {
+				display: block;
+			 	width: 70%;
 			 	margin: 0 auto;
-			 	width: 80%;
-			}
+			 	padding: 1%;
+			 	border: solid 2px hsla(0, 0%, 40%, 1);
+			 	background-color: hsla(0, 0%, 80%, 1);	
+		    }
 
 			p {
 				float: none;
-				padding: 5%;
+				margin: 0;
 				font-size: 1.5em;
 			}
+		}
+
+		.statsDiv {
+			width: 70%;
+			height: 75vh;
+			display: inline-block;
+			background-color: hsla(0, 0%, 50%, 1);
+			float: left;
+
+			.pictureStats {
+				.mainPicture {
+					width: 30%;
+					float: left;
+
+					h1 {
+						margin: 75px 0 0 0;
+						text-align: center;
+					} 
+
+					img {
+						display: block;
+						margin: 0 auto;
+						width: 100px;
+						height: 100px;
+					}
+				}
+				.threeCatogoryPicture {
+					width: 70%;
+					float: left;
+
+					.paintings {
+						padding: 5% 0;
+					}
+					.building {
+						padding: 5% 0;
+					}
+					.people {
+						padding: 5% 0;
+					}
+					img {
+						width: 50px;
+						height: 50px;
+						float: left;
+					}
+					.statBar {
+						margin: 0 10%;
+						float: left;
+						height: 50px;
+						width: 50%;
+						background-color: hsla(0, 0%, 30%, 1);
+					}
+				}
+			}
+			.timeStats {
+				height: 30%;
+			}
+
 		}
 	}
 }
 
-.singleCaseIntro {
+.libTransition {
 	box-sizing: border-box;
 	min-height: 30vh;
 	width: 100vw;
@@ -102,7 +141,7 @@
 	h1 {
 		color: $white;
 		font-weight: bold;
-		font-size: 10em;
+		font-size: 6em;
 		opacity: 0.95;
 		text-align: center;
   }
@@ -111,7 +150,7 @@
 
 .singleCaseTop {
 	box-sizing: border-box;
-	min-height: 100vh;
+	min-height: 50vh;
 	width: 100vw;
 	padding: 5% 0 10% 0;
 
@@ -213,53 +252,53 @@ body {
 
 }
 
-.transitionToArticle {
-
-	// $perspective: 1; 
-	// $distance: 1; 
-
-	// transform-style: preserve-3d;
-	// perspective: $perspective * 1px;
-
+.grayTransition {
 	box-sizing: border-box;
 	min-height: 25vh;
 	width: 100vw;
 	background: hsla(0, 0%, 40%, 1);
 	padding: 5%;
+	text-align: center;
+
+	&.small {
+		min-height: 15vh;
+
+		img {
+		display: inline-block;
+		height: 25px;
+		margin: 20px auto 10px auto;
+		padding: 0 20px;
+	}
+	}
 
 	h1 {	
-		// $transform: translateZ($distance * $perspective * 1px) scale(abs($distance - 1));
-		// transform: $transform;
-		// z-index: $distance * 100;
-
 		color: $gray1;
 		font-weight: bold;
 		font-size: 4em;
 		text-decoration: underline;
-		text-align: center;
-		}
+	}
 
 	p {
-		text-align: center;
 		font-size: 2em;
 		text-decoration: underline;
 	}
 }
 
 
-.singleCaseExplain {
+article {
 	box-sizing: border-box;
 	min-height: 120vh;
 	width: 100vw;
-	background: hsla(0, 0%, 70%, 1);
+	background: hsla(0, 0%, 90%, 1);
 	padding: 5%;
 
 	h1 {
-		padding-bottom: 5%;
+		padding-bottom: 3%;
 		color: $gray1;
 		font-weight: bold;
-		font-size: 4em;
-		text-align: center;
+		font-size: 6em;
+		width: 70%;
+		margin: 0 auto; 
 	}
 	
 	p {	
@@ -269,20 +308,20 @@ body {
 		color: $gray9;
 		font-size: 1.5em;
 		
-		&:first-of-type {
-			padding-bottom: 3%;
-			font-weight: 900;
-			font-size: 1.8em;
-		}
+		
 	}
+	
+	.boldAlinea {
+		font-family: NittyBold;
+		padding-bottom: 3%;
+		font-weight: 900;
+		font-size: 1.8em;
+	}
+	
 
 	img {
 		width: 40%;
 		float: right;
 		padding: 30px;
 	}	
-}
-
-.allCasesArticle {
-
 }

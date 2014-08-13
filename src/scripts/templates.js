@@ -5,38 +5,87 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "<section class=\"caseTop\">\n" +
     "	<div class=\"mainDiv\">\n" +
     "		<h1> User Camera Studies </h1>\n" +
-    "		<p> This article will show you the museum trough the eyes of the visitor. Blablabla. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum ratione eos laudantium, nisi porro quos dignissimos. Odio iure, in, et natus debitis laboriosam dignissimos praesentium, vero neque fugit, totam libero. </p>\n" +
     "	</div>\n" +
+    "<!-- 	<div class=\"collaborationDiv\">\n" +
+    "		<p> A collaboration between:</p>\n" +
+    "		<img src=\"./images/uvalogo.png\">\n" +
+    "		<img src=\"./images/rijks.png\">\n" +
+    "		\n" +
+    "	</div> -->\n" +
     "</section>\n" +
+    "<section class=\"grayTransition small\">\n" +
+    "	<p> A collaboration between:</p>\n" +
+    "	<img src=\"./images/uvalogo.png\">\n" +
+    "	<img src=\"./images/rijks.png\">\n" +
+    "	\n" +
+    "</section>\n" +
+    "<article >\n" +
+    "	<h1> The intro text </h1>\n" +
+    "	<p>By Johanna Barnbeck</p>\n" +
+    "	<p class=\"boldAlinea\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "\n" +
+    "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate \n" +
+    "	<img class=\"clearfix\" src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
+    "	</p>\n" +
+    "\n" +
+    "	<p>laboriosam soluta architecto culpa aut facilis dolorem commodi! Non beatae delectus facilis quae omnis ipsam incidunt dolorum esse culpa vitae quibusdam minus doloribus consequatur eligendi voluptas facere, fuga reiciendis natus, blanditiis temporibus? Sint dignissimos quas ullam officia, ex vitae perspiciatis reprehenderit. Sit repudiandae asperiores corporis quidem sunt placeat accusantium ea earum libero eius debitis fugit itaque ex id sapiente perspiciatis, sint animi exercitationem iusto cumque quae. </p>\n" +
+    "</article>\n" +
+    "\n" +
     "<section class=\"casePersons\">\n" +
-    "	<div class=\"headerDiv\">\n" +
-    "		<h1> Three Persons, One Museum...</h1>\n" +
-    "		<p class=\"headerText\"> Here we introduce the three main actors of this essay.</p>\n" +
-    "	</div>\n" +
     "	<div class=\"identContainer clearfix\">\n" +
-    "		<div class=\"identDiv clearfix\"> \n" +
-    "			<h2> Person 1 </h2>\n" +
+    "\n" +
+    "		<div class=\"nameDiv clearfix\"> \n" +
     "			<img src=\"./images/male-icon.png\" alt=\"\">\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi necessitatibus et, ipsum nisi quisquam quasi quidem quia dolorem mollitia voluptatum aut aperiam nihil pariatur, quos itaque, inventore veritatis ea. Tenetur.</p>\n" +
+    "			<h2> Mister Bernard </h2>\n" +
+    "			<p> Age: 25 </p>\n" +
+    "			\n" +
+    "			<p> Accompanied by:</p>\n" +
+    "			<p> Friend </p>\n" +
     "		</div>\n" +
-    "		<div class=\"identDiv clearfix\"> \n" +
-    "			<h2> Person 2 </h2>\n" +
-    "			<img src=\"./images/female-icon.png\" alt=\"\">\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero sequi numquam provident laudantium sunt illo, iusto! Id laborum perferendis, commodi ducimus dicta ea, animi reprehenderit placeat non veniam sunt consectetur.</p>\n" +
+    "\n" +
+    "		<div class=\"statsDiv clearfix\">	\n" +
+    "			<div class=\"pictureStats clearfix\">\n" +
+    "				<div class=\"mainPicture clearfix\">\n" +
+    "					<h1>42</h1>\n" +
+    "					<img src=\"./images/icons/camera.png\" alt=\"\">\n" +
+    "				</div>\n" +
+    "				<div class=\"threeCatogoryPicture clearfix\">\n" +
+    "					<div class=\"paintings clearfix\">\n" +
+    "						<img class=\"clearfix\" src=\"./images/icons/picture.png\" alt=\"\">\n" +
+    "						<div class=\"statBar bar1 clearfix\"></div>\n" +
+    "						<img class=\"clearfix\" src=\"./images/icons/sculpture.png\" alt=\"\">\n" +
+    "					</div>\n" +
+    "					<div class=\"building clearfix\">\n" +
+    "						<img class=\"clearfix\" src=\"./images/icons/building.svg\" alt=\"\">\n" +
+    "						<div class=\"statBar bar2 clearfix\"></div>\n" +
+    "						<img class=\"clearfix\" src=\"./images/icons/brandblusser.png\" alt=\"\">\n" +
+    "					</div>\n" +
+    "					<div class=\"people clearfix\">\n" +
+    "						<img class=\"clearfix\" src=\"./images/icons/people.png\" alt=\"\">\n" +
+    "						<div class=\"statBar bar3 clearfix\"></div>\n" +
+    "					</div>\n" +
+    "				</div>\n" +
+    "			</div>\n" +
+    "			<div class=\"timeStats\"></div>\n" +
     "		</div>\n" +
-    "		<div class=\"identDiv clearfix\"> \n" +
-    "			<h2> Person 3 </h2>\n" +
-    "			<img src=\"./images/male-icon.png\" alt=\"\">\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda iste cum enim quia dolorem. Quibusdam aut dolores facere. In itaque mollitia, sint harum obcaecati? Libero autem placeat amet, officia illum.</p>\n" +
-    "		</div>	\n" +
     "	</div>\n" +
     "</section>\n" +
-    "<section class=\"singleCaseIntro\">\n" +
-    "	<h1> Their Routes </h1>\n" +
-    "</section>\n" +
-    "<section class=\"singleCaseTop\">\n" +
+    "\n" +
+    "<article>\n" +
+    "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate </p>\n" +
+    "	<p>laboriosam soluta architecto culpa aut facilis dolorem commodi! Non beatae delectus facilis quae omnis ipsam incidunt dolorum esse culpa vitae quibusdam minus doloribus consequatur eligendi voluptas facere, fuga reiciendis natus, blanditiis temporibus? Sint dignissimos quas ullam officia, ex vitae perspiciatis reprehenderit. Sit repudiandae asperiores corporis quidem sunt placeat accusantium ea earum libero eius debitis fugit itaque ex id sapiente perspiciatis, sint animi exercitationem iusto cumque quae. Numquam totam illum atque molestiae tempore sed, recusandae minima exercitationem non quibusdam est amet Repellendus ut nemo velit, explicabo. Perspiciatis ratione soluta nihil nam ab voluptatem quos eos excepturi expedita molestiae accusamus delectus dolorum dicta, aspernatur fuga nulla quas, saepe, consectetur odio maiores esse cumque! Vel eaque, expedita doloribus, voluptates rerum molestiae nulla architecto dignissimos, esse porro voluptatibus omnis explicabo? Mollitia, provident sequi eligendi quia temporibus hic ex magnam aliquam nobis, earum omnis porro odit illo dolorum. Nemo esse officiis dolorum distinctio aperiam fugit optio eum non obcaecati, sapiente rem sit tempore facilis, saepe a eaque, totam neque. </p>\n" +
+    "\n" +
+    "	\n" +
+    "\n" +
+    "	<p>Cupiditate consequatur natus, quidem magnam accusantium quae temporibus corporis repudiandae eaque necessitatibus unde ab quod molestiae, cum tenetur, sint distinctio dolor, numquam officiis reiciendis error! Aliquid illo in assumenda quos repellat! Nobis, voluptate nihil! Tempora, consequatur cumque assumenda non dolorem debitis nam qui ullam repudiandae repellat necessitatibus quia quidem dolore recusandae odio culpa minima et laborum, ad voluptatum excepturi tenetur velit? Ipsam unde vel atque harum sit nulla, aliquam dolores animi voluptatem dolorem quas, vitae doloribus velit earum distinctio nostrum porro ullam error facilis iure aperiam, saepe repellat et. Architecto eum commodi facere ut dolor, voluptate tempore voluptatem vel rerum. Nam hic velit numquam eos quo fugiat modi, sequi aliquam libero, quam qui ipsum doloremque dicta recusandae neque, deleniti ipsam laborum esse minima at dolorum laudantium? At magnam soluta quidem rerum labore, nihil maiores praesentium, eum quas ad rem officiis, laboriosam non placeat minus.</p>\n" +
+    "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "</article>\n" +
+    "\n" +
+    "<!-- <section class=\"singleCaseTop\">\n" +
     "	<img src=\"./images/rijksdoorzicht.png\">\n" +
-    "</section>\n" +
+    "</section> -->\n" +
+    "\n" +
     "<section class=\"singleCaseBody\">\n" +
     "	<div class=\"row\">\n" +
     "		<div class=\"col-md-12 firstSq\">\n" +
@@ -82,10 +131,8 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "		</div>\n" +
     "	</div>\n" +
     "</section>\n" +
-    "<section class=\"transitionToArticle\">\n" +
-    "	<h1> The Story</h1>\n" +
-    "</section>\n" +
-    "<section class=\"singleCaseExplain\">\n" +
+    "\n" +
+    "<article>\n" +
     "	<h1> The main text </h1>\n" +
     "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate </p>\n" +
@@ -99,13 +146,11 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "\n" +
     "	<p>Cupiditate consequatur natus, quidem magnam accusantium quae temporibus corporis repudiandae eaque necessitatibus unde ab quod molestiae, cum tenetur, sint distinctio dolor, numquam officiis reiciendis error! Aliquid illo in assumenda quos repellat! Nobis, voluptate nihil! Tempora, consequatur cumque assumenda non dolorem debitis nam qui ullam repudiandae repellat necessitatibus quia quidem dolore recusandae odio culpa minima et laborum, ad voluptatum excepturi tenetur velit? Ipsam unde vel atque harum sit nulla, aliquam dolores animi voluptatem dolorem quas, vitae doloribus velit earum distinctio nostrum porro ullam error facilis iure aperiam, saepe repellat et. Architecto eum commodi facere ut dolor, voluptate tempore voluptatem vel rerum. Nam hic velit numquam eos quo fugiat modi, sequi aliquam libero, quam qui ipsum doloremque dicta recusandae neque, deleniti ipsam laborum esse minima at dolorum laudantium? At magnam soluta quidem rerum labore, nihil maiores praesentium, eum quas ad rem officiis, laboriosam non placeat minus.</p>\n" +
     "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "</article>\n" +
+    "\n" +
+    "<section class=\"grayTransition\">\n" +
+    "	<p> The End</p>\n" +
     "</section>\n" +
-    "<section class=\"transitionToArticle\">\n" +
-    "	<p> Im a real pretty footer </p>\n" +
-    "</section>\n" +
-    "<section class=\"allCasesArticle\">\n" +
-    "	\n" +
-    "</section>	\n" +
     "");
 }]);
 

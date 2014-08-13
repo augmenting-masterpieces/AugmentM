@@ -3,6 +3,6 @@ module.exports =
     files: [
       expand: true
       cwd: 'src'
-      src: ['**/*.{png,jpg,gif,JPG}']
+      src: ['**/*.{png,jpg,gif,JPG,svg}']
       dest: 'dev/'
     ]
