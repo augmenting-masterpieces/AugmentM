@@ -66,7 +66,22 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "					</div>\n" +
     "				</div>\n" +
     "			</div>\n" +
-    "			<div class=\"timeStats\"></div>\n" +
+    "			<div class=\"timeStats clearfix\">\n" +
+    "				<div class=\"time clearfix\">\n" +
+    "					<p>Visit:</p>\n" +
+    "					<img src=\"./images/clock.png\" alt=\"\" class=\"clearfix\">\n" +
+    "					<div class=\"timeBar clearfix\">\n" +
+    "						<p>90 min</p>\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
+    "				<div class=\"time clearfix\">\n" +
+    "					<p>Interview:</p>\n" +
+    "					<img src=\"./images/clock.png\" alt=\"\" class=\"clearfix\">\n" +
+    "					<div class=\"timeBar timeBarSmall clearfix\">\n" +
+    "						<p>45 min</p>\n" +
+    "					</div>\n" +
+    "				</div>	\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</section>\n" +
@@ -88,44 +103,44 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "\n" +
     "<section class=\"singleCaseBody\">\n" +
     "	<div class=\"row\">\n" +
-    "		<div class=\"col-md-12 firstSq\">\n" +
+    "		<div class=\"col-md-12 firstSq clearfix\">\n" +
     "			<h1>\"Interesting Quote about something\"</h1>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "	<div class=\"row\">\n" +
-    "		<div class=\"col-md-5 thirdSq\">\n" +
-    "			<div class=\"conversation\">\n" +
+    "		<div class=\"col-md-5 thirdSq clearfix\">\n" +
+    "			<div class=\"conversation clearfix\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"col-md-7 fourthSq clearfix\">\n" +
-    "		<ul>\n" +
-    "			<li>\n" +
+    "		<ul class=\"clearfix\">\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00117.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00120.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00122.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00127.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00129.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00137.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00141.JPG\">\n" +
     "			</li>\n" +
-    "			<li>\n" +
+    "			<li class=\"clearfix\">\n" +
     "				<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
     "			</li>\n" +
     "		</div>\n" +
@@ -148,7 +163,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "</article>\n" +
     "\n" +
-    "<section class=\"grayTransition\">\n" +
+    "<section class=\"grayTransition small\">\n" +
     "	<p> The End</p>\n" +
     "</section>\n" +
     "");
