@@ -7,15 +7,24 @@
  */
 
 
-@font-face {
-  font-family: NittyNormal;
-  src: url('../fonts/NN.woff') format('woff');
-}
+// @font-face {
+//   font-family: NittyNormal;
+//   src: url('../fonts/NN.woff') format('woff');
+// }
 
-@font-face {
-  font-family: NittyBold;
-  src: url('../fonts/NB.woff') format('woff');
-}
+// @font-face {
+//   font-family: NittyBold;
+//   src: url('../fonts/NB.woff') format('woff');
+// }
+
+// @font-face {
+//   font-family: ArminoRegular;
+//   src: url('../fonts/Armino/Armino-Regular.tff') format('truetype');
+// }
+// @font-face {
+//   font-family: RobotoSlab;
+//   src: url('../fonts/RobotoSlab-Regular.tff') format('truetype');
+// }
 
 $line-height-base: 1.6 !default; // 20/14
 
@@ -59,19 +68,25 @@ $grid-float-breakpoint: 0;
 
 $brand-primary: $colorBlue !default;
 
-$font-family-monospace: NittyNormal, Menlo, Monaco, Consolas, "Courier New", monospace !default;
-$font-family-base: $font-family-monospace !default;
+// $font-family-monospace: ArminoRegular, Menlo, Monaco, Consolas, "Courier New", monospace !default;
+// $font-family-base: $font-family-monospace !default;
 
+// @import "compass";
 @import "./src/styles/_normalize";
 @import "./bootstrap/bootstrap";
-@import "./src/styles/_parallax";
+@import "./src/styles/_parallax2";
+// @import "./src/styles/_toolkit";
 @import "./src/styles/owl/_owl.carousel";
 @import "./src/styles/owl/_owl.theme";
 @import "./src/styles/owl/_owl.transitions";
 @import "./src/styles/_experiments";
 @import "./src/styles/_caseStudy";
 
-// html,
+// .content2 {
+// 	// color: scale-saturation(#ffffff, 30%);
+// }
+
+// @include parallax-init;
 
 .container-fluid {
   width: 100%;

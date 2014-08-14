@@ -3,9 +3,11 @@ angular.module('templates-cth', ['templates/caseStudy.html', 'templates/experime
 angular.module("templates/caseStudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/caseStudy.html",
     "<section class=\"caseTop\">\n" +
+    "	<div class=\"designDiv\"></div>\n" +
     "	<div class=\"mainDiv\">\n" +
     "		<h1> User Camera Studies </h1>\n" +
     "	</div>\n" +
+    "	<div class=\"designDiv2\"></div>\n" +
     "</section>\n" +
     "<section class=\"grayTransition small\">\n" +
     "	<p class=\"underline\"> A collaboration between:</p>\n" +
@@ -14,7 +16,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p>Jan Hein Hoogstad - Johanna Barnbeck - Shailoh Philips</p>\n" +
     "</section>\n" +
     "<article >\n" +
-    "	<h1> The intro text </h1>\n" +
+    "	<h1 > The intro text </h1>\n" +
     "	<p class=\"boldAlinea\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "\n" +
     "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate \n" +
@@ -127,7 +129,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate </p>\n" +
     "	<p>laboriosam soluta architecto culpa aut facilis dolorem commodi! Non beatae delectus facilis quae omnis ipsam incidunt dolorum esse culpa vitae quibusdam minus doloribus consequatur eligendi voluptas facere, fuga reiciendis natus, blanditiis temporibus? Sint dignissimos quas ullam officia, ex vitae perspiciatis reprehenderit. Sit repudiandae asperiores corporis quidem sunt placeat accusantium ea earum libero eius debitis fugit itaque ex id sapiente perspiciatis, sint animi exercitationem iusto cumque quae. \n" +
     "\n" +
-    "	<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
+    "	<img src=\"./images/ucs/1mrB/DSC00122.JPG\">\n" +
     "\n" +
     "	Numquam totam illum atque molestiae tempore sed, recusandae minima exercitationem non quibusdam est amet Repellendus ut nemo velit, explicabo. Perspiciatis ratione soluta nihil nam ab voluptatem quos eos excepturi expedita molestiae accusamus delectus dolorum dicta, aspernatur fuga nulla quas, saepe, consectetur odio maiores esse cumque! Vel eaque, expedita doloribus, voluptates rerum molestiae nulla architecto dignissimos, esse porro voluptatibus omnis explicabo? Mollitia, provident sequi eligendi quia temporibus hic ex magnam aliquam nobis, earum omnis porro odit illo dolorum. Nemo esse officiis dolorum distinctio aperiam fugit optio eum non obcaecati, sapiente rem sit tempore facilis, saepe a eaque, totam neque. </p>\n" +
     "\n" +
@@ -145,7 +147,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate </p>\n" +
     "	<p>laboriosam soluta architecto culpa aut facilis dolorem commodi! Non beatae delectus facilis quae omnis ipsam incidunt dolorum esse culpa vitae quibusdam minus doloribus consequatur eligendi voluptas facere, fuga reiciendis natus, blanditiis temporibus? Sint dignissimos quas ullam officia, ex vitae perspiciatis reprehenderit. Sit repudiandae asperiores corporis quidem sunt placeat accusantium ea earum libero eius debitis fugit itaque ex id sapiente perspiciatis, sint animi exercitationem iusto cumque quae. \n" +
     "\n" +
-    "	<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
+    "	<img src=\"./images/ucs/1mrB/DSC00129.JPG\">\n" +
     "\n" +
     "	Numquam totam illum atque molestiae tempore sed, recusandae minima exercitationem non quibusdam est amet Repellendus ut nemo velit, explicabo. Perspiciatis ratione soluta nihil nam ab voluptatem quos eos excepturi expedita molestiae accusamus delectus dolorum dicta, aspernatur fuga nulla quas, saepe, consectetur odio maiores esse cumque! Vel eaque, expedita doloribus, voluptates rerum molestiae nulla architecto dignissimos, esse porro voluptatibus omnis explicabo? Mollitia, provident sequi eligendi quia temporibus hic ex magnam aliquam nobis, earum omnis porro odit illo dolorum. Nemo esse officiis dolorum distinctio aperiam fugit optio eum non obcaecati, sapiente rem sit tempore facilis, saepe a eaque, totam neque. </p>\n" +
     "\n" +
@@ -156,7 +158,10 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "<section class=\"grayTransition small left\">\n" +
     "	<p class=\"credits\"> Written by: Johanna Barnbeck</p>\n" +
     "	<p class=\"credits\"> Supervised by: Jan Hein Hoogstad and Shailoh Philips </p>\n" +
-    "	<!-- <p class=\"left\"> Technical: Jan Hein Hoogstad and Robert-Jan Korteschiel</p> -->\n" +
+    "	<p class=\"credits\"> Technical: Robert-Jan Korteschiel</p>\n" +
+    "	<p class=\"credits\"> With thanks for: ... ...</p>\n" +
+    "	<br>\n" +
+    "	<p class=\"credits\"> Part of the study: <a href=\"\">\"Augementing Masterpieces\"</a></p>\n" +
     "</section>\n" +
     "");
 }]);
