@@ -25,6 +25,7 @@ module.exports =
       'src/vendor/angular-sanitize.js'
       'src/vendor/angular-animate.js'
       'src/vendor/angularfire.js'
+      'src/vendor/owl.carousel.js'
     ]
     dest: 'dev/vendor.js'
 

@@ -47,3 +47,7 @@ module.exports =
     src: "showdown/src/showdown.js"
     dest: "src/vendor/showdown.js"
 
+  owlCarousel:
+    src: "owl-carousel/owl-carousel/owl.carousel.js"
+    dest: "src/vendor/owl.carousel.js"  
+
