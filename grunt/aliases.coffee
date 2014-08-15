@@ -53,7 +53,7 @@ module.exports =
   ]
   
   css: [
-    "sass"
+    "compass"
   ]
 
   dataModels: [
