@@ -8,17 +8,15 @@ module.exports =
   staging: [
     "buildDev"
     "testem:ci:dev"
-    "aws_s3:staging"
   ]
 
   beta: [
     "build"
-    "aws_s3:beta"
+    "gh-pages:beta"
   ]
 
   production: [
     "build"
-    "aws_s3:production"
   ]
 
   build: [
@@ -49,7 +47,6 @@ module.exports =
     "copy:dist"
     "uglify"
     "cssmin"
-    "testem:ci:dist"
   ]
   
   css: [
