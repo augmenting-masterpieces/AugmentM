@@ -6,6 +6,7 @@
   function ProcessCtrl(){
     var vm = this;
 
+    $.stellar();
 
     return vm;
   }

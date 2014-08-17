@@ -49,5 +49,9 @@ module.exports =
 
   owlCarousel:
     src: "owl-carousel/owl-carousel/owl.carousel.js"
-    dest: "src/vendor/owl.carousel.js"  
+    dest: "src/vendor/owl.carousel.js"
+
+  stellar:
+    src: "stellar.js/jquery.stellar.js"
+    dest: "src/vendor/jquery.stellar.js"    
 

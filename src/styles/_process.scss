@@ -1,0 +1,87 @@
+
+.homeContainer {
+	postion: relative;
+	height: 100vh;
+	width: 400vw;
+	background: url('./images/rijksPanorama.jpg') no-repeat center center / cover;
+	overflow: hidden;
+}
+
+.homeHeader {
+	position: absolute;
+	top: 30vh;
+	left: 30vw;
+	
+	height: 60vh;
+	width: 30vw;
+
+	color: #fff;
+}
+
+.homeVideo {
+	position: absolute;
+	top: 30vh;
+	left: 90vw;
+	
+	height: 60vh;
+	width: 30vw;
+
+	color: #fff;
+	
+}
+
+.homeCaseStudy {
+	position: absolute;
+	top: 30vh;
+	left: 50vw;
+
+	width: 30vh;
+	height: 60vh;
+
+	color: #fff;
+}
+
+.homeMethods {
+	position: absolute;
+	top: 20vh;
+	left: 200vw;
+
+	width: 60vw;
+	height: 60vh;
+
+	background-color: black;
+
+	color: #fff;
+
+	overflow: hidden;
+}
+
+.isolated {
+	position: absolute;
+	top: 30vh;
+	left: 50vw;
+	width: 30vw;
+}
+
+.interacting {
+	position: absolute;
+	top: 50vh;
+	left: 300vw;
+	width: 30vw;
+}
+
+.homePrototypes {
+
+}
+
+.homePeople {
+
+}
+
+.homeTimeline {
+
+}
+
+.homeConnect {
+
+}

@@ -2,7 +2,13 @@ body {
 	background: red;
 }
 
-@include parallax-init;
+hr {
+	border-color: hsla(0, 0%, 0%, 1);
+	height: 1px;
+	// border: none;
+    // background: hsla(0, 0%, 100%, 1);
+    // background-image: linear-gradient(90deg, hsla(0, 0%, 100%, 1), hsla(0, 0%, 0%, 1), hsla(0, 0%, 100%, 1));
+}
 
 .caseTop {
 	background: url(./images/rijkswhite.jpg) no-repeat center center / cover;
@@ -10,9 +16,13 @@ body {
 	min-height: 120vh;
 	width: 100vw;
 	padding: 20vh 0 0 0;
+	hr {
+		border-color: hsla(0, 0%, 100%, 1);
+		width: 50%;
+	}
 
 	h1 {
-		color: $gray9;
+		color: hsla(0, 0%, 100%, 1);
 		font-size: 4em;
 		padding-bottom: 1%;
 		font-weight: bold;
@@ -28,40 +38,40 @@ body {
 		width: 100%;
 		height: 40px;
 		margin: 40px 0;
-		background-color: hsla(0, 0%, 60%, 0.8); 
 	}
 
 	.designDiv2 {
 		width: 100%;
 		height: 40px;
 		margin: 40px 0 0 0;
-		background-color: hsla(0, 0%, 60%, 0.8); 
 	}
 
 	.mainDiv {
 		padding: 3%;
 		text-align: center;
-		background-color: hsla(0, 0%, 60%, 0.8);
+		border: 1px solid hsla(0, 0%, 0%, 1);
+		background-color: hsla(0, 0%, 0%, 0.8); 
 		width: 100vw;
 	}
 }
 
 .casePersons {
 	width: 100vw;
-	padding: 5% 0 5% 0;
-	background: hsla(0, 0%, 90%, 1);
+	padding: 0;
+	background: hsla(0, 0%, 100%, 1);
 
 	.identContainer {
 		width: 70%;
 		margin: 0 auto 0 auto;
 		padding: 2%;
-		background-color: hsla(0, 0%, 40%, 1); 
+		background: hsla(0, 0%, 0%, 1); 
 
 		.nameDiv {
 			width: 30%;
 			height: 75vh;
 			padding: 3%;
 			float: left;
+			color: hsla(0, 0%, 100%, 1);
 
 			h2 {
 				font-size: 2em;
@@ -73,8 +83,8 @@ body {
 			 	width: 70%;
 			 	margin: 0 auto;
 			 	padding: 1%;
-			 	border: solid 2px hsla(0, 0%, 40%, 1);
-			 	background-color: hsla(0, 0%, 80%, 1);	
+			 	border: solid 2px hsla(0, 0%, 100%, 1);
+			 	background-color: hsla(0, 0%, 100%, 1);	
 		    }
 
 			p {
@@ -88,12 +98,12 @@ body {
 			width: 70%;
 			min-height: 75vh;
 			display: inline-block;
-			background-color: hsla(0, 0%, 60%, 1);
+			background-color: hsla(0, 0%, 30%, 1);
 			float: left;
 
 			.pictureStats {
-				border-bottom: solid 20px hsla(0, 0%, 40%, 1);
-
+				border-bottom: solid 20px hsla(0, 0%, 0%, 1);
+				
 				.mainPicture {
 					width: 30%;
 					float: left;
@@ -101,6 +111,7 @@ body {
 					h1 {
 						margin: 75px 0 0 0;
 						text-align: center;
+						color: hsla(0, 0%, 100%, 1);
 					} 
 
 					img {
@@ -133,14 +144,21 @@ body {
 						float: left;
 						height: 50px;
 						width: 50%;
-						background-color: hsla(0, 0%, 30%, 1);
+						background-color: hsla(0, 0%, 100%, 1);
 					}
+					
+					.bar3 {
+						width: 20%;
+					}
+
 					p {
 						text-align: center;
+						color: hsla(0, 0%, 100%, 1);
 					}
 				}
 			}
 			.timeStats {
+				// border: solid 1px hsla(0, 0%, 100%, 1);
 				padding: 3% 3% 5% 3%;
 
 				.time {
@@ -151,11 +169,11 @@ body {
 					width: 85%;
 					height: 50px;
 					float: left;
-					background-color: hsla(0, 0%, 30%, 1);
+					background-color: hsla(0, 0%, 100%, 1);
 
 					p {
 						text-align: center;
-						color: hsla(0, 0%, 80%, 1);
+						color: hsla(0, 0%, 0%, 1);
 					}
 				}
 
@@ -173,6 +191,7 @@ body {
 
 				p {	
 					margin: 10px 0;
+					color: hsla(0, 0%, 100%, 1);
 				}
 			}
 		}
@@ -220,26 +239,38 @@ body {
 .singleCaseBody {
 	min-height: 120vh;
 	width: 100vw;
+	position: relative;
 
 	background: linear-gradient(
-	    hsla(0, 0%, 60%, 0.20),
-	    hsla(0, 0%, 60%, 0.20)
+	    hsla(0, 0%, 0%, 0.20),
+	    hsla(0, 0%, 0%, 0.20)
     ), url(./images/ucs/1mrB/aGalantCompany.jpg) no-repeat center center / cover;
     background-attachment: fixed;
 
+    color: hsla(0, 0%, 100%, 1);
+
+
+	hr {
+		border-color: hsla(0, 0%, 100%, 1);
+	}
+
 	h1 {
+		position: relative;
 		padding: 5% 5% 5% 10%;
 		margin: 0;
-		color: $gray1;
 		font-weight: bold;
 		font-size: 4em;
+  		
 	}
 
 	.conversation {
 		display: block;
 		padding: 4%;
 		width: 40%;
-		background: hsla(0, 0%, 60%, 0.60);
+		background-image: linear-gradient( 90deg,
+		    hsla(0, 0%, 0%, 1),
+		    hsla(0, 0%, 0%, 0)
+        );
 
 		p {
 			font-size: 1.5em;
@@ -258,9 +289,10 @@ body {
 .grayTransition {
 	min-height: 25vh;
 	width: 100vw;
-	background: hsla(0, 0%, 40%, 1);
+	background: hsla(0, 0%, 0%, 1);
 	text-align: center;
 	padding: 2% 0;
+	color: hsla(0, 0%, 100%, 1);
 
 	&.small {
 		min-height: 15vh;
@@ -274,7 +306,6 @@ body {
 	}
 
 	h1 {	
-		color: $gray1;
 		font-weight: bold;
 		font-size: 4em;
 		text-decoration: underline;
@@ -294,7 +325,7 @@ body {
 		}
 	}
 	a {
-		color: black;
+		color: hsla(0, 0%, 100%, 1);
 	}	
 	
 }
@@ -303,16 +334,20 @@ body {
 article {
 	min-height: 120vh;
 	width: 100vw;
-	background: hsla(0, 0%, 90%, 1);
+	background: hsla(0, 0%, 100%, 1);
 	padding: 5%;
 
+	hr {
+		width: 50%;
+	}
+
 	h1 {
-		padding-bottom: 3%;
-		color: hsla(0, 0%, 50%, 1);
+		color: hsla(0, 0%, 0%, 1);
 		font-weight: bold;
 		font-size: 6em;
 		width: 70%;
 		margin: 0 auto; 
+		text-align: center;
 	}
 	
 	p {	
@@ -340,7 +375,7 @@ article {
 .bigImage {
 	width: 100vw;
 	padding: 5%;
-	background: hsla(0, 0%, 60%, 1);
+	background: hsla(0, 0%, 0%, 1);
 
 	img {
 		display: block;
@@ -349,6 +384,7 @@ article {
 	}
 	
 	p {
+		color: hsla(0, 0%, 100%, 1);
 		margin: 5px;
 		text-align: center;
 	}
