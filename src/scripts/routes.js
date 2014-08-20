@@ -10,12 +10,12 @@
 
     $stateProvider
       .state('caseStudy', {
-        url: '/caseStudy',
+        url: '/case-study',
         templateUrl: 'templates/caseStudy.html',
         controller: 'CaseStudyCtrl as case'
       })
       .state('process', {
-        url: '/process',
+        url: '/home',
         templateUrl: 'templates/process.html',
         controller: 'ProcessCtrl as proc'
       })
@@ -30,7 +30,7 @@
         controller: 'ExperimentsCtrl as expe'
       });
 
-    $urlRouterProvider.when('/', '/caseStudy');
+    $urlRouterProvider.when('/', '/home');
   }
 
 // .state('posts', {

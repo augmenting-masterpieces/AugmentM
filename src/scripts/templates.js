@@ -6,7 +6,8 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<div class=\"designDiv\"></div>\n" +
     "	<div class=\"mainDiv\">\n" +
     "		<hr>\n" +
-    "		<h1> User Camera Studies </h1>\n" +
+    "		<h1> // Case Study // </h1>\n" +
+    "		<p> _User Camera Study_ </p>\n" +
     "		<hr>\n" +
     "	</div>\n" +
     "	<div class=\"designDiv2\"></div>\n" +
@@ -242,7 +243,7 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\"> \n" +
-    "			<a href=\"#caseStudy\" class=\"button\"> // Case Study //</a>\n" +
+    "			<a href=\"#case-study\" class=\"button\"> // Case Study //</a>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -282,9 +283,18 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
-    "	<section class=\"homePeople\"></section>\n" +
-    "	<section class=\"homeTimeline\"></section>\n" +
-    "	<section class=\"homeConnect\"></section>\n" +
+    "	<section class=\"homeAbout\">\n" +
+    "		<div class=\"people\">\n" +
+    "			<h1>// People //</h1>\n" +
+    "			<div class=\"person\"></div>\n" +
+    "			<div class=\"person\"></div>\n" +
+    "			<div class=\"person\"></div>\n" +
+    "			<div class=\"person\"></div>\n" +
+    "		</div>\n" +
+    "		<div class=\"connect\">\n" +
+    "			\n" +
+    "		</div>\n" +
+    "	</section>	\n" +
     "</section>\n" +
     "\n" +
     "");

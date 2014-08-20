@@ -2,7 +2,7 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 610vw;
+	width: 710vw;
 	overflow: hidden;
 }
 
@@ -10,7 +10,7 @@
 	float: left;
 	height: 100vh;
 	width: 140vw;
-	background-image: url(./images/rijkswhite.jpg);
+	background: url(./images/rijkswhite.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 	color: #fff;
 
@@ -115,15 +115,21 @@
 
 	overflow: hidden;
 
+	h1 {
+		padding: 0 5%;
+	}
+
 	p {
-		max-width: 1000px;
+		max-width: 1100px;
+		padding: 0 5%;
 	}
 
 	.textBlock {
 		width: 30vw;
 		height: 40vh;
 		margin: 5vw;
-
+		
+		border: 1px solid hsla(0, 0%, 0%, 0.5);
 		float: left;
 		
 		// border: 1px solid black;
@@ -151,6 +157,7 @@
 			background-color: white;
 			width: 100%;
 			height: 100%;
+			padding: 5%;
 			overflow: scroll;
 		}	
 	}
@@ -162,14 +169,36 @@
 
 }
 
-.homePeople {
+.homeAbout {
+	width: 100vw;
+	height: 100vh;
+	float: left;
+	background: hsla(0, 0%, 100%, 1);
+	
+	h1 {
+		text-align: center;
+		color: black;
+		font-family: RobotoSlab;
+	}
 
-}
+	.people {
+		width: 100%;
+		height: 40vh;
+		padding: 0 10vw;
 
-.homeTimeline {
+		.person {
+			width: 40%;
+			height: 80%;
+			margin: 5vh 5%;
 
-}
+			float: left; 
 
-.homeConnect {
+			background-color: hsla(0, 0%, 0%, 1);
+		}
+	}
+
+	.connect {
+
+	}
 
 }
