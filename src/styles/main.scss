@@ -12,19 +12,10 @@
 //   src: url('../fonts/NN.woff') format('woff');
 // }
 
-// @font-face {
-//   font-family: NittyBold;
-//   src: url('../fonts/NB.woff') format('woff');
-// }
-
-// @font-face {
-//   font-family: ArminoRegular;
-//   src: url('../fonts/Armino/Armino-Regular.tff') format('truetype');
-// }
-// @font-face {
-//   font-family: RobotoSlab;
-//   src: url('../fonts/RobotoSlab-Regular.tff') format('truetype');
-// }
+@font-face {
+  font-family: RobotoSlab;
+  src: url('../fonts/RobotoSlab-Regular.woff') format('woff');
+}
 
 $line-height-base: 1.6 !default; // 20/14
 
@@ -73,7 +64,7 @@ $brand-primary: $colorBlue !default;
 
 @import "compass";
 @import "_normalize";
-@import "./bootstrap/_bootstrap";
+@import "./bootstrap/bootstrap";
 @import "owl/_owl.carousel";
 @import "owl/_owl.theme";
 @import "owl/_owl.transitions";

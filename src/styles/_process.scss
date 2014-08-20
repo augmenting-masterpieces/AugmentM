@@ -1,73 +1,112 @@
 
 .homeContainer {
-	postion: relative;
+	position: relative;
 	height: 100vh;
-	width: 400vw;
-	background: url('./images/rijksPanorama.jpg') no-repeat center center / cover;
+	width: 600vw;
+	// background: url('./images/rijksPanorama.jpg') no-repeat center center / cover;
 	overflow: hidden;
 }
 
 .homeHeader {
-	position: absolute;
-	top: 30vh;
-	left: 30vw;
-	
-	height: 60vh;
-	width: 30vw;
+	float: left;
+	height: 100vh;
+	width: 100vw;
 
+	// background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 15%, hsla(0, 0%, 100%, 0) 85%, hsla(0, 0%, 100%, 1) 90%, hsla(0, 0%, 100%, 1) 100%),
+	background-image: url(./images/rijkswhite.jpg);
+	background-attachment: fixed;
 	color: #fff;
+
+	.title {
+		position: relative;
+		top: 30%;
+		width: 100vw;
+	}
+
+	h1 {
+		font-size: 6em;
+		text-align: center;
+		font-family: RobotoSlab;
+	}
+
+	p {
+		font-size: 3em;
+		text-align: center;
+	}
+
+	hr {
+		border-color: white;
+	}
+}
+
+.whiteTransition {
+	background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 15%, hsla(0, 0%, 100%, 0) 85%, hsla(0, 0%, 100%, 1) 90%, hsla(0, 0%, 100%, 1) 100%),
+                      linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 1));
+	width: 10vw;
+	height: 100vh;
+	float: left;
+	&.inverse {
+		background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 15%, hsla(0, 0%, 100%, 0) 85%, hsla(0, 0%, 100%, 1) 90%, hsla(0, 0%, 100%, 1) 100%),
+                      linear-gradient(270deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 1));
+	}
 }
 
 .homeVideo {
-	position: absolute;
-	top: 30vh;
-	left: 90vw;
-	
-	height: 60vh;
-	width: 30vw;
 
-	color: #fff;
+	float: left;
+	height: 100vh;
+	width: 100vw;
+	padding: 0 10vw;
+
+	color: black;
+	
+	// background-color: white;
+	background-image: radial-gradient(at top left, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 60%, hsla(0, 0%, 100%, 0) 150%), url(./images/librijks.jpg);
+
+	.introVid {
+		width: 100%;
+		margin: 20vh auto;
+
+		height: 60vh;
+	}
 	
 }
 
 .homeCaseStudy {
-	position: absolute;
-	top: 30vh;
-	left: 50vw;
 
-	width: 30vh;
-	height: 60vh;
+	float: left;
+	height: 100vh;
+	width: 100vw;
+	
+	// background-color: purple;
+	background-image: radial-gradient(at top left, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 50%), 
+						radial-gradient(at bottom right, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 50%),
+						url(./images/librijks.jpg);
 
-	color: #fff;
+	button {
+		width: 300px;
+		height: 100px;
+
+		position: relative;
+		top: 40%;
+		left: 40%;
+
+		color: white;
+		background-color: black;
+	}
 }
 
 .homeMethods {
-	position: absolute;
-	top: 20vh;
-	left: 200vw;
+	float: left;
 
-	width: 60vw;
-	height: 60vh;
+	width: 100vw;
+	height: 100vh;
+	padding: 30px;
 
-	background-color: black;
-
-	color: #fff;
+	background-color: white;
+	color: black;
 
 	overflow: hidden;
-}
-
-.isolated {
-	position: absolute;
-	top: 30vh;
-	left: 50vw;
-	width: 30vw;
-}
-
-.interacting {
-	position: absolute;
-	top: 50vh;
-	left: 300vw;
-	width: 30vw;
 }
 
 .homePrototypes {

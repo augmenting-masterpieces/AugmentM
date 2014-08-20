@@ -229,25 +229,28 @@ angular.module("templates/experiments.html", []).run(["$templateCache", function
 angular.module("templates/process.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/process.html",
     "<section class=\"homeContainer\">\n" +
-    "	<section class=\"homeHeader\" data-stellar-ratio=\"2\">\n" +
-    "		<h1>Augmenting Masterpieces </h1>\n" +
+    "	<section class=\"homeHeader\" data-stellar-ratio=\"0\">\n" +
+    "		<div class=\"title\">\n" +
+    "			<h1>|||  Augmenting Masterpieces  |||</h1>\n" +
+    "			<p>|||  Humans, The Museum and Technology  |||</p>\n" +
+    "		</div>\n" +
     "	</section>\n" +
-    "	<section class=\"homeVideo\" data-stellar-ratio=\"3\">\n" +
-    "		<p>Im a really lovely video</p>\n" +
+    "	<section class=\"homeVideo\">\n" +
+    "		<video src=\"../video/big_buck_bunny.webm\" controls class=\"introVid\"></video>\n" +
     "	</section>\n" +
-    "	<img src=\"./images/goofy.png\" class=\"isolated\" data-stellar-ratio=\"2.5\">\n" +
-    "	<section class=\"homeCaseStudy\" data-stellar-ratio=\"1.5\">\n" +
-    "		<p>Im a big button</p>\n" +
+    "	<section class=\"homeCaseStudy\">\n" +
+    "		<button>Case Study</button>\n" +
     "	</section>\n" +
-    "	<section class=\"homeMethods\" data-stellar-ratio=\"2\">\n" +
+    "	<section class=\"homeMethods\">\n" +
+    "		<h1>Methods</h1>\n" +
     "		<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum! Eveniet eligendi, excepturi saepe, atque doloremque veniam temporibus consequatur ex? Quos atque ad accusamus beatae, minima architecto blanditiis laudantium amet omnis voluptas minus ullam sapiente, eveniet praesentium ea unde expedita, cupiditate rem velit placeat distinctio animi consectetur nesciunt ipsam. Facere dicta consequatur adipisci error ipsum repudiandae, eos cupiditate nam ut fugiat, temporibus natus exercitationem asperiores at, culpa ullam maxime facilis aliquid laudantium numquam et. Quo nam excepturi adipisci, ipsa vero reiciendis totam, sapiente, molestias architecto aliquid nostrum.</p>		\n" +
     "	</section>\n" +
-    "	<img src=\"./images/interaction.png\" class=\"interacting\" data-stellar-ratio=\"1.5\">\n" +
+    "	\n" +
     "	<section class=\"homePrototypes\"></section>\n" +
     "	<section class=\"homePeople\"></section>\n" +
     "	<section class=\"homeTimeline\"></section>\n" +
     "	<section class=\"homeConnect\"></section>\n" +
-    "<section>\n" +
+    "</section>\n" +
     "\n" +
     "");
 }]);
