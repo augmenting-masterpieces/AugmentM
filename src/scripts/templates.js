@@ -239,19 +239,49 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "	<section class=\"homeVideo\">\n" +
     "		<video src=\"../video/big_buck_bunny.webm\" controls class=\"introVid\"></video>\n" +
     "	</section>\n" +
-    "	<section class=\"homeCaseStudy\">\n" +
+    "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\"> \n" +
-    "			<button> // Case Study //</button> \n" +
+    "			<a href=\"#caseStudy\" class=\"button\"> // Case Study //</a>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<h1> // Methods // </h1>\n" +
-    "		<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum! Eveniet eligendi, excepturi saepe, atque doloremque veniam temporibus consequatur ex? Quos atque ad accusamus beatae, minima architecto blanditiis laudantium amet omnis voluptas minus ullam sapiente, eveniet praesentium ea unde expedita, cupiditate rem velit placeat distinctio animi consectetur nesciunt ipsam. Facere dicta consequatur adipisci error ipsum repudiandae, eos cupiditate nam ut fugiat, temporibus natus exercitationem asperiores at, culpa ullam maxime facilis aliquid laudantium numquam et. Quo nam excepturi adipisci, ipsa vero reiciendis totam, sapiente, molestias architecto aliquid nostrum.</p>		\n" +
+    "		<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum! Eveniet eligendi, excepturi saepe, atque doloremque veniam temporibus consequatur ex? Quos atque ad accusamus beatae, minima architecto blanditiis laudantium amet omnis voluptas minus ullam sapiente, eveniet praesentium ea unde expedita, cupiditate rem velit placeat distinctio animi consectetur nesciunt ipsam. Facere dicta consequatur adipisci error ipsum repudiandae, eos cupiditate nam ut fugiat, temporibus natus exercitationem asperiores at, culpa ullam maxime facilis aliquid laudantium numquam et. Quo nam excepturi adipisci, ipsa vero reiciendis totam, sapiente, molestias architecto aliquid nostrum.</p>\n" +
+    "\n" +
+    "		<div class=\"textBlock\">\n" +
+    "			<div class=\"diagBorder\"></div>\n" +
+    "			<div class=\"textItself\">\n" +
+    "				<h1>// Design Thinking //</h1>\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"diagBorderInverse\"></div>\n" +
+    "		</div>\n" +
+    "		<div class=\"textBlock\">\n" +
+    "			<div class=\"diagBorder\"></div>\n" +
+    "			<div class=\"textItself\">\n" +
+    "				<h1>// Digital Humanities 	//</h1>\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"diagBorderInverse\"></div>\n" +
+    "		</div>\n" +
+    "		<div class=\"textBlock\">\n" +
+    "			<div class=\"diagBorder\"></div>\n" +
+    "			<div class=\"textItself\">\n" +
+    "				<h1>// Artistic Research //</h1>\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"diagBorderInverse\"></div>\n" +
+    "		</div>		\n" +
     "	</section>\n" +
-    "	\n" +
-    "	<section class=\"homePrototypes\"></section>\n" +
+    "	<section class=\"homeButtonSection homePrototype\">\n" +
+    "		<div class=\"whiteTransition inverse\"></div>\n" +
+    "		<div class=\"buttonDiv\">\n" +
+    "			<a href=\"\" class=\"button\">// Prototypes //</a>\n" +
+    "		</div>\n" +
+    "		<div class=\"whiteTransition\"></div>\n" +
+    "	</section>\n" +
     "	<section class=\"homePeople\"></section>\n" +
     "	<section class=\"homeTimeline\"></section>\n" +
     "	<section class=\"homeConnect\"></section>\n" +

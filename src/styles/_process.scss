@@ -2,7 +2,7 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 600vw;
+	width: 610vw;
 	overflow: hidden;
 }
 
@@ -65,7 +65,7 @@
 	
 }
 
-.homeCaseStudy {
+.homeButtonSection {
 
 	float: left;
 	height: 100vh;
@@ -78,31 +78,87 @@
 		height: 100vh;
 		width: 40vw;
 
-		button {
+		.button {
 			display: block;
 			width: 300px;
 			height: 100px;
-			
 			margin: 40vh auto;
+
+			line-height: 100px;
+			vertical-align: center;
+			font-size: 2em;
+			text-align: center;
+			color: black;
+
+			border: 2px solid white;
+			border-radius: 10px;
+			background-color: hsla(0, 0%, 100%, 0.7);
+
+			&:hover {
+				background-color: hsla(0, 0%, 100%, 1);
+			}
 		}
 	}
 
 }
 
 .homeMethods {
+
 	float: left;
 
-	width: 100vw;
+	width: 130vw;
 	height: 100vh;
-	padding: 30px;
+	padding: 2vw;
 
 	background-color: white;
 	color: black;
 
 	overflow: hidden;
+
+	p {
+		max-width: 1000px;
+	}
+
+	.textBlock {
+		width: 30vw;
+		height: 40vh;
+		margin: 5vw;
+
+		float: left;
+		
+		// border: 1px solid black;
+		box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+		// .diagBorder{
+		// 	width: 0;
+		// 	height: 0;
+		// 	float: left;
+		// 	border-bottom: 40vh solid black;
+		// 	border-left: 15vw solid hsla(0, 0%, 0%, 0);
+		// }
+
+		// .diagBorderInverse {
+		// 	width: 0;
+		// 	height: 0;
+		// 	float: left;
+		// 	border-top: 40vh solid black;
+		// 	border-right: 15vw solid hsla(0, 0%, 0%, 0);
+		// }
+
+
+		.textItself {
+			float: left;
+			background-color: white;
+			width: 100%;
+			height: 100%;
+			overflow: scroll;
+		}	
+	}
 }
 
-.homePrototypes {
+.homePrototype {
+
+	background: url('./images/nachtwacht.jpg') no-repeat center center / cover;
 
 }
 
