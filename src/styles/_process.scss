@@ -3,24 +3,21 @@
 	position: relative;
 	height: 100vh;
 	width: 600vw;
-	// background: url('./images/rijksPanorama.jpg') no-repeat center center / cover;
 	overflow: hidden;
 }
 
 .homeHeader {
 	float: left;
 	height: 100vh;
-	width: 100vw;
-
-	// background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 15%, hsla(0, 0%, 100%, 0) 85%, hsla(0, 0%, 100%, 1) 90%, hsla(0, 0%, 100%, 1) 100%),
+	width: 140vw;
 	background-image: url(./images/rijkswhite.jpg);
 	background-attachment: fixed;
 	color: #fff;
 
 	.title {
-		position: relative;
-		top: 30%;
 		width: 100vw;
+		margin-top: 30%;
+		float: left;
 	}
 
 	h1 {
@@ -40,14 +37,12 @@
 }
 
 .whiteTransition {
-	background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 15%, hsla(0, 0%, 100%, 0) 85%, hsla(0, 0%, 100%, 1) 90%, hsla(0, 0%, 100%, 1) 100%),
-                      linear-gradient(90deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 1));
-	width: 10vw;
+	background-image: linear-gradient(112.5deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 0) 50%, hsla(0, 0%, 100%, 1) 55%);
+	width: 40vw;
 	height: 100vh;
 	float: left;
 	&.inverse {
-		background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 1) 0%, hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 15%, hsla(0, 0%, 100%, 0) 85%, hsla(0, 0%, 100%, 1) 90%, hsla(0, 0%, 100%, 1) 100%),
-                      linear-gradient(270deg, hsla(0, 0%, 100%, 0), hsla(0, 0%, 100%, 1));
+		background-image: linear-gradient(112.5deg, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 100%, 0) 55%);
 	}
 }
 
@@ -59,9 +54,7 @@
 	padding: 0 10vw;
 
 	color: black;
-	
-	// background-color: white;
-	background-image: radial-gradient(at top left, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 60%, hsla(0, 0%, 100%, 0) 150%), url(./images/librijks.jpg);
+	background-color: white;
 
 	.introVid {
 		width: 100%;
@@ -76,24 +69,24 @@
 
 	float: left;
 	height: 100vh;
-	width: 100vw;
+	width: 120vw;
+
+	background-image: url(./images/librijks.jpg);			
 	
-	// background-color: purple;
-	background-image: radial-gradient(at top left, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 50%), 
-						radial-gradient(at bottom right, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 10%, hsla(0, 0%, 100%, 0) 50%),
-						url(./images/librijks.jpg);
+	.buttonDiv {
+		float: left;
+		height: 100vh;
+		width: 40vw;
 
-	button {
-		width: 300px;
-		height: 100px;
-
-		position: relative;
-		top: 40%;
-		left: 40%;
-
-		color: white;
-		background-color: black;
+		button {
+			display: block;
+			width: 300px;
+			height: 100px;
+			
+			margin: 40vh auto;
+		}
 	}
+
 }
 
 .homeMethods {
