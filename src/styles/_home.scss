@@ -10,7 +10,7 @@ p {
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 845vw;
+	width: 840vw;
 	overflow: hidden;
 }
 
@@ -24,14 +24,16 @@ p {
 	float: left;
 	height: 100vh;
 	width: 140vw;
-	background: url(./images/rijkswhite.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/rijkswhite.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
+
 	color: #fff;
 
 	.title {
 		width: 100vw;
-		margin-top: 30%;
+		margin-top: 60vh;
 		float: left;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 
 	h1 {
@@ -42,10 +44,6 @@ p {
 	p {
 		font-size: 3em;
 		text-align: center;
-	}
-
-	hr {
-		border-color: white;
 	}
 }
 
@@ -88,7 +86,7 @@ p {
 	height: 100vh;
 	width: 120vw;
 
-	background: url(./images/librijks.jpg) no-repeat center center / cover;			
+	background: url(./images/backgrounds/librijks.jpg) no-repeat center center / cover;			
 	
 	.buttonDiv {
 		float: left;
@@ -99,7 +97,7 @@ p {
 			display: block;
 			width: 300px;
 			height: 100px;
-			margin: 40vh auto;
+			margin: 40vh auto 0 auto;
 
 			line-height: 100px;
 			vertical-align: center;
@@ -223,10 +221,11 @@ p {
 
 .homePrototype {
 
-	background: url('./images/nachtwacht.jpg') no-repeat center center / cover;
+	background: url('./images/backgrounds/nachtwacht.jpg') no-repeat center center / cover;
 
 	p {
 		color: white;
+		text-align: center;
 	}
 
 }
@@ -240,7 +239,6 @@ p {
 	h1 {
 		text-align: center;
 		color: black;
-		font-family: RobotoSlab;
 	}
 
 	.people {
@@ -261,11 +259,12 @@ p {
 }
 
 .homeConnect {
-	width: 145vw;
+	width: 140vw;
 	height: 100vh;
 	float: left;
-	background: url(./images/rijkswhite.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/rijkswhite.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
+	
 	
 	.connectMain {
 		width: 100vw;
@@ -276,7 +275,8 @@ p {
 			width: 100%;
 			margin-top: 10vh;
 			color: white;
-			
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
 			h1 {
 				font-size: 6em;
 				text-align: center;
@@ -287,7 +287,82 @@ p {
 				text-align: center;
 			}
 		}
-
 		
-	}	
+		.waysToConnectContainer {
+			width: 400px; 
+			margin: 10vh auto;
+
+			.diagBorder{
+				width: 0;
+				height: 0;
+				float: left;
+				border-bottom: 50vh solid hsla(0, 0%, 100%, 0.8);
+				border-left: 15vw solid hsla(0, 0%, 0%, 0);
+			}
+
+			.diagBorderInverse {
+				width: 0;
+				height: 0;
+				float: left;
+				border-top: 50vh solid hsla(0, 0%, 100%, 0.8);
+				border-right: 15vw solid hsla(0, 0%, 0%, 0);
+			}
+			
+			.connectBoxes {
+				width: 400px;
+				height: 50vh;
+				padding: 20px;
+				float: left;
+				
+				// border: 1px solid hsla(0, 0%, 0%, 0.5);
+				
+				background-color: hsla(0, 0%, 100%, 0.8);
+				box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+				p {
+					color: hsla(0, 0%, 0%, 1);
+					font-size: 2em;
+					text-align: center;
+					clear: both;
+				}
+
+				.smallText {
+					font-size: 1em;
+				}
+			
+				.socialIcon {
+					list-style-type: none;
+					margin: 20px auto;
+					padding: 0;
+					width: 336px;
+					display: block;
+
+					li {
+						height: 64px;
+						width: 64px;
+						float: left;
+						margin: 10px;
+					}
+					.facebook {
+						background: url(./images/icons/socialicons.jpg) -204px -36px;
+					}
+					.twitter {
+						background: url(./images/icons/socialicons.jpg) -44px -36px;
+					}
+					.google {
+						background: url(./images/icons/socialicons.jpg) -364px -36px;
+					}
+					.rss {
+						background: url(./images/icons/socialicons.jpg) -124px -36px;
+					}
+				}
+
+				form {
+					line-height: 2em;
+					text-align: center;
+				}
+			}	
+		}
+	}
 }
+

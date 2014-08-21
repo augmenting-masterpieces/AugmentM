@@ -10,7 +10,7 @@ hr {
 
 
 .caseTop {
-	background: url(./images/rijkswhite.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/rijkswhite.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 	height: 120vh;
 	width: 100vw;
@@ -201,7 +201,7 @@ hr {
 	background: linear-gradient(
 	    rgba(88, 88, 88, 0.60), 
 	    rgba(88, 88, 88, 0.60)
-    ), url(./images/librijks.jpg) no-repeat center center / cover;
+    ), url(./images/backgrounds/librijks.jpg) no-repeat center center / cover;
 	overflow: hidden;
 	
 	h1 {

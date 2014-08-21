@@ -1,7 +1,7 @@
-angular.module('templates-cth', ['templates/caseStudy.html', 'templates/experiments.html', 'templates/process.html', 'templates/prototype.html']);
+angular.module('templates-cth', ['templates/case-study.html', 'templates/experiments.html', 'templates/home.html', 'templates/prototype.html']);
 
-angular.module("templates/caseStudy.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/caseStudy.html",
+angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("templates/case-study.html",
     "<section class=\"caseTop\">\n" +
     "	<div class=\"designDiv\"></div>\n" +
     "	<div class=\"mainDiv\">\n" +
@@ -15,8 +15,8 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "<section class=\"grayTransition small\">\n" +
     "	<hr>\n" +
     "	<p class=\"underline\"> A collaboration between:</p>\n" +
-    "	<img src=\"./images/uvalogowhite.png\">\n" +
-    "	<img src=\"./images/rijkswhite.png\">\n" +
+    "	<img src=\"./images/logos/uvalogowhite.png\">\n" +
+    "	<img src=\"./images/logos/rijkswhite.png\">\n" +
     "	<p>Jan Hein Hoogstad - Johanna Barnbeck - Shailoh Philips</p>\n" +
     "	<hr>\n" +
     "</section>\n" +
@@ -40,7 +40,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<div class=\"identContainer clearfix\">\n" +
     "\n" +
     "		<div class=\"nameDiv clearfix\"> \n" +
-    "			<img src=\"./images/male-icon.png\" alt=\"\">\n" +
+    "			<img src=\"./images/icons/male-icon.png\" alt=\"\">\n" +
     "			<h2> Mister Bernard </h2>\n" +
     "			<p> Age: 25 </p>\n" +
     "			\n" +
@@ -75,14 +75,14 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "			<div class=\"timeStats clearfix\">\n" +
     "				<div class=\"time clearfix\">\n" +
     "					<p>Visit:</p>\n" +
-    "					<img src=\"./images/clockwhite.png\" alt=\"\" class=\"clearfix\">\n" +
+    "					<img src=\"./images/icons/clockwhite.png\" alt=\"\" class=\"clearfix\">\n" +
     "					<div class=\"timeBar clearfix\">\n" +
     "						<p>90 min</p>\n" +
     "					</div>\n" +
     "				</div>	\n" +
     "				<div class=\"time clearfix\">\n" +
     "					<p>Interview:</p>\n" +
-    "					<img src=\"./images/clockwhite.png\" alt=\"\" class=\"clearfix\">\n" +
+    "					<img src=\"./images/icons/clockwhite.png\" alt=\"\" class=\"clearfix\">\n" +
     "					<div class=\"timeBar timeBarSmall clearfix\">\n" +
     "						<p>45 min</p>\n" +
     "					</div>\n" +
@@ -155,7 +155,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "</article>\n" +
     "\n" +
     "<section class=\"bigImage\">\n" +
-    "	<img src=\"./images/librijks.jpg\" alt=\"\">\n" +
+    "	<img src=\"./images/backgrounds/librijks.jpg\" alt=\"\">\n" +
     "	<p>Im a real good caption of a picture</p>\n" +
     "</section>\n" +
     "\n" +
@@ -227,8 +227,8 @@ angular.module("templates/experiments.html", []).run(["$templateCache", function
     "");
 }]);
 
-angular.module("templates/process.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/process.html",
+angular.module("templates/home.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("templates/home.html",
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
@@ -305,11 +305,35 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
-    "				<h1>// Augmenting Masterpieces //</h1>\n" +
-    "				<p>// Humans, The Museum and Technology //</p>\n" +
+    "				<h1>//&nbsp;Augmenting Masterpieces&nbsp;//</h1>\n" +
+    "				<p>//&nbsp;Humans, The Museum and Technology&nbsp;//</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"waysToConnectContainer\">\n" +
+    "				<!-- <div class=\"diagBorder\"></div> -->\n" +
+    "				<div class=\"connectBoxes\">\n" +
+    "\n" +
+    "					<p>// Follow us! //</p>\n" +
+    "					<ul class=\"socialIcon clearfix\">\n" +
+    "						<li class=\"facebook\"></li>\n" +
+    "						<li class=\"twitter\"></li>\n" +
+    "						<li class=\"google\"></li>\n" +
+    "						<li class=\"rss\"></li>\n" +
+    "					</ul>\n" +
+    "\n" +
+    "					<p> // Mailing list // </p>\n" +
+    "					<form>\n" +
+    "						<label>\n" +
+    "							<span> Name: </span><input type=\"text\" name=\"name\" autofocus>\n" +
+    "						</label><br>\n" +
+    "						<label>\n" +
+    "							<span> E-mail: </span><input type=\"email\" name=\"user_email\">\n" +
+    "						</label>\n" +
+    "					</form>\n" +
+    "					<p class=\"smalltext\">(Low frequency)</p>\n" +
+    "				</div>\n" +
+    "				<!-- <div class=\"diagBorderInverse\"></div> -->\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<div class=\"whiteTransition final\"></div>\n" +
     "	</section>\n" +
     "</section>\n" +
     "\n" +

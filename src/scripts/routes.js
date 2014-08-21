@@ -6,18 +6,17 @@
   function routes($stateProvider, $locationProvider, $urlRouterProvider) {
 
     $locationProvider.html5Mode(true);
-
-
+    
     $stateProvider
-      .state('caseStudy', {
+      .state('case-study', {
         url: '/case-study',
-        templateUrl: 'templates/caseStudy.html',
+        templateUrl: 'templates/case-study.html',
         controller: 'CaseStudyCtrl as case'
       })
-      .state('process', {
+      .state('home', {
         url: '/home',
-        templateUrl: 'templates/process.html',
-        controller: 'ProcessCtrl as proc'
+        templateUrl: 'templates/home.html',
+        controller: 'HomeCtrl as proc'
       })
       .state('prototype', {
         url: '/prototype',

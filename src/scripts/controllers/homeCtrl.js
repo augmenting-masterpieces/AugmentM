@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('cth').controller('ProcessCtrl', [ProcessCtrl]);
+  angular.module('cth').controller('HomeCtrl', [ProcessCtrl]);
 
   function ProcessCtrl(){
     var vm = this;
