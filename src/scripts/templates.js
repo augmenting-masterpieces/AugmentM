@@ -181,7 +181,7 @@ angular.module("templates/caseStudy.html", []).run(["$templateCache", function($
     "	<p class=\"credits\"> Technical: Robert-Jan Korteschiel</p>\n" +
     "	<p class=\"credits\"> With thanks for: ... ...</p>\n" +
     "	<br>\n" +
-    "	<p class=\"credits\"> Part of the study: <a href=\"\">\"Augementing Masterpieces\"</a></p>\n" +
+    "	<p class=\"credits\"> Part of the study: <a href=\"#home\">\"Augementing Masterpieces\"</a></p>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "");
@@ -248,8 +248,16 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
-    "		<h1> // Methods // </h1>\n" +
-    "		<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum! Eveniet eligendi, excepturi saepe, atque doloremque veniam temporibus consequatur ex? Quos atque ad accusamus beatae, minima architecto blanditiis laudantium amet omnis voluptas minus ullam sapiente, eveniet praesentium ea unde expedita, cupiditate rem velit placeat distinctio animi consectetur nesciunt ipsam. Facere dicta consequatur adipisci error ipsum repudiandae, eos cupiditate nam ut fugiat, temporibus natus exercitationem asperiores at, culpa ullam maxime facilis aliquid laudantium numquam et. Quo nam excepturi adipisci, ipsa vero reiciendis totam, sapiente, molestias architecto aliquid nostrum.</p>\n" +
+    "		<div class=\"methodsTop\">\n" +
+    "			<div class=\"methodsMainText clearfix\">\n" +
+    "				<h1> // Methods // </h1>\n" +
+    "				<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum!</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"furtherReading clearfix\">\n" +
+    "				<a href=\"\" class=\"button\"> // Further Reading // </a>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "\n" +
     "\n" +
     "		<div class=\"textBlock\">\n" +
     "			<div class=\"diagBorder\"></div>\n" +
@@ -279,7 +287,8 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "	<section class=\"homeButtonSection homePrototype\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
-    "			<a href=\"\" class=\"button\">// Prototypes //</a>\n" +
+    "			<a href=\"\" class=\"button\">// Prototypes // </a>\n" +
+    "			<p> (not available yet) </p>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -291,10 +300,17 @@ angular.module("templates/process.html", []).run(["$templateCache", function($te
     "			<div class=\"person\"></div>\n" +
     "			<div class=\"person\"></div>\n" +
     "		</div>\n" +
-    "		<div class=\"connect\">\n" +
-    "			\n" +
+    "	</section>\n" +
+    "	<section class=\"homeConnect\">\n" +
+    "		<div class=\"whiteTransition inverse\"></div>\n" +
+    "		<div class=\"connectMain\">\n" +
+    "			<div class=\"title\">\n" +
+    "				<h1>// Augmenting Masterpieces //</h1>\n" +
+    "				<p>// Humans, The Museum and Technology //</p>\n" +
+    "			</div>\n" +
     "		</div>\n" +
-    "	</section>	\n" +
+    "		<div class=\"whiteTransition final\"></div>\n" +
+    "	</section>\n" +
     "</section>\n" +
     "\n" +
     "");
