@@ -24,7 +24,7 @@ p {
 	float: left;
 	height: 100vh;
 	width: 140vw;
-	background: url(./images/backgrounds/rijkswhite.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/frontrijks.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 
 	color: #fff;
@@ -55,29 +55,22 @@ p {
 	&.inverse {
 		background-image: linear-gradient(112.5deg, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 50%, hsla(0, 0%, 100%, 0) 55%);
 	}
-	&.final {
-		width: 5vw;
-		background-image: linear-gradient(270deg, hsla(0, 0%, 100%, 1), hsla(0, 0%, 100%, 1) 30%, hsla(0, 0%, 100%, 0) 100%);
-	}
 }
 
-.homeVideo {
-
-	float: left;
-	height: 100vh;
+.homeVideo {	
 	width: 100vw;
+	height: 100vh;
 	padding: 0 10vw;
+	float: left;
 
 	color: black;
 	background-color: white;
 
 	.introVid {
 		width: 100%;
-		margin: 20vh auto;
-
 		height: 60vh;
+		margin: 20vh auto;
 	}
-	
 }
 
 .homeButtonSection {
@@ -116,7 +109,6 @@ p {
 			}
 		}
 	}
-
 }
 
 .homeMethods {
@@ -182,27 +174,10 @@ p {
 		width: 30vw;
 		height: 50vh;
 		margin: 5vh 3.75vw;
-		
-		border: 1px solid hsla(0, 0%, 0%, 0.5);
 		float: left;
 		
+		border: 1px solid hsla(0, 0%, 0%, 0.5);
 		box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-
-		// .diagBorder{
-		// 	width: 0;
-		// 	height: 0;
-		// 	float: left;
-		// 	border-bottom: 40vh solid black;
-		// 	border-left: 15vw solid hsla(0, 0%, 0%, 0);
-		// }
-
-		// .diagBorderInverse {
-		// 	width: 0;
-		// 	height: 0;
-		// 	float: left;
-		// 	border-top: 40vh solid black;
-		// 	border-right: 15vw solid hsla(0, 0%, 0%, 0);
-		// }
 
 		.textItself {
 			float: left;
@@ -227,7 +202,6 @@ p {
 		color: white;
 		text-align: center;
 	}
-
 }
 
 .homeAbout {
@@ -262,10 +236,10 @@ p {
 	width: 140vw;
 	height: 100vh;
 	float: left;
-	background: url(./images/backgrounds/rijkswhite.jpg) no-repeat center center / cover;
+
+	background: url(./images/backgrounds/frontrijks.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
-	
-	
+
 	.connectMain {
 		width: 100vw;
 		height: 100vh;
@@ -291,30 +265,12 @@ p {
 		.waysToConnectContainer {
 			width: 400px; 
 			margin: 10vh auto;
-
-			.diagBorder{
-				width: 0;
-				height: 0;
-				float: left;
-				border-bottom: 50vh solid hsla(0, 0%, 100%, 0.8);
-				border-left: 15vw solid hsla(0, 0%, 0%, 0);
-			}
-
-			.diagBorderInverse {
-				width: 0;
-				height: 0;
-				float: left;
-				border-top: 50vh solid hsla(0, 0%, 100%, 0.8);
-				border-right: 15vw solid hsla(0, 0%, 0%, 0);
-			}
 			
 			.connectBoxes {
 				width: 400px;
 				height: 50vh;
 				padding: 20px;
 				float: left;
-				
-				// border: 1px solid hsla(0, 0%, 0%, 0.5);
 				
 				background-color: hsla(0, 0%, 100%, 0.8);
 				box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);

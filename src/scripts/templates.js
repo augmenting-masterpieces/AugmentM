@@ -276,12 +276,10 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<div class=\"diagBorderInverse\"></div>\n" +
     "		</div>\n" +
     "		<div class=\"textBlock\">\n" +
-    "			<div class=\"diagBorder\"></div>\n" +
     "			<div class=\"textItself\">\n" +
     "				<h1>// Artistic Research //</h1>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
     "			</div>\n" +
-    "			<div class=\"diagBorderInverse\"></div>\n" +
     "		</div>		\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
@@ -309,9 +307,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<p>//&nbsp;Humans, The Museum and Technology&nbsp;//</p>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
-    "				<!-- <div class=\"diagBorder\"></div> -->\n" +
     "				<div class=\"connectBoxes\">\n" +
-    "\n" +
     "					<p>// Follow us! //</p>\n" +
     "					<ul class=\"socialIcon clearfix\">\n" +
     "						<li class=\"facebook\"></li>\n" +
@@ -319,7 +315,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "						<li class=\"google\"></li>\n" +
     "						<li class=\"rss\"></li>\n" +
     "					</ul>\n" +
-    "\n" +
     "					<p> // Mailing list // </p>\n" +
     "					<form>\n" +
     "						<label>\n" +
@@ -331,7 +326,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "					</form>\n" +
     "					<p class=\"smalltext\">(Low frequency)</p>\n" +
     "				</div>\n" +
-    "				<!-- <div class=\"diagBorderInverse\"></div> -->\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</section>\n" +
