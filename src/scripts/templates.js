@@ -6,23 +6,23 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<div class=\"designDiv\"></div>\n" +
     "	<div class=\"mainDiv\">\n" +
     "		<hr>\n" +
-    "		<h1> // Case Study // </h1>\n" +
-    "		<p> _User Camera Study_ </p>\n" +
+    "		<h1> Case Study </h1>\n" +
+    "		<h2> User Camera Study </h2>\n" +
     "		<hr>\n" +
     "	</div>\n" +
     "	<div class=\"designDiv2\"></div>\n" +
     "</section>\n" +
-    "<section class=\"grayTransition small\">\n" +
+    "<section class=\"blackTransition small\">\n" +
     "	<hr>\n" +
-    "	<p class=\"underline\"> A collaboration between:</p>\n" +
+    "	<h2> A collaboration between:</h2>\n" +
     "	<img src=\"./images/logos/uvalogowhite.png\">\n" +
     "	<img src=\"./images/logos/rijkswhite.png\">\n" +
-    "	<p>Jan Hein Hoogstad - Johanna Barnbeck - Shailoh Philips</p>\n" +
+    "	<h2>Jan Hein Hoogstad - Johanna Barnbeck - Shailoh Philips</h2>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "<article >\n" +
     "	<hr>\n" +
-    "	<h1 > The intro text </h1>\n" +
+    "	<h3> The intro text </h3>\n" +
     "	<hr>\n" +
     "	<p class=\"boldAlinea\">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "\n" +
@@ -51,7 +51,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "		<div class=\"statsDiv clearfix\">	\n" +
     "			<div class=\"pictureStats clearfix\">\n" +
     "				<div class=\"mainPicture clearfix\">\n" +
-    "					<h1>42</h1>\n" +
+    "					<h2>42</h2>\n" +
     "					<img src=\"./images/icons/camerawhite.png\" alt=\"\">\n" +
     "				</div>\n" +
     "				<div class=\"threeCatogoryPicture clearfix\">\n" +
@@ -105,7 +105,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<hr>\n" +
     "</article>\n" +
     "\n" +
-    "<section class=\"singleCaseBody\">\n" +
+    "<section class=\"pictureGallery\">\n" +
     "	<h1>\"Interesting Quote about something\"</h1>\n" +
     "	<div class=\"conversation clearfix\">\n" +
     "		<hr>\n" +
@@ -114,15 +114,6 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "		<hr>\n" +
     "	</div>\n" +
     "	<div id=\"owl-example\" class=\"owl-carousel owlGallery\">\n" +
-    "		<!-- <div><img src=\"./images/ucs/1mrB/DSC00112.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00117.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00120.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00122.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00127.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00129.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00137.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00141.JPG\"></div>\n" +
-    "		<div><img src=\"./images/ucs/1mrB/DSC00148.JPG\"></div> -->\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00117.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00120.JPG\">\n" +
@@ -139,7 +130,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "\n" +
     "<article>\n" +
     "	<hr>\n" +
-    "	<h1> The main text </h1>\n" +
+    "	<h3> The main text </h3>\n" +
     "	<hr>\n" +
     "	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "	<p>Dolor sit amet, consectetur adipisicing elit. Fugiat magni quam recusandae dolores nihil sed molestias quaerat neque corporis iste, dolorem earum aut rem natus atque eius ad animi ut, vitae nemo cum, at incidunt! Dignissimos aperiam, dolor. Sed dicta adipisci reiciendis, eum fugiat dolorem asperiores a ut. Sit assumenda neque eius reprehenderit maxime deleniti voluptate, praesentium error asperiores ratione! Reiciendis cumque obcaecati sint sapiente cum, adipisci, libero dolorem mollitia itaque dolor natus necessitatibus in eaque facilis distinctio quisquam. Ullam debitis porro corrupti, tenetur, distinctio, sunt cum laudantium obcaecati sint, incidunt cupiditate </p>\n" +
@@ -174,14 +165,14 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<hr>\n" +
     "</article>\n" +
     "\n" +
-    "<section class=\"grayTransition small left\">\n" +
+    "<section class=\"blackTransition small left\">\n" +
     "	<hr>\n" +
-    "	<p class=\"credits\"> Written by: Johanna Barnbeck</p>\n" +
-    "	<p class=\"credits\"> Supervised by: Jan Hein Hoogstad and Shailoh Philips </p>\n" +
-    "	<p class=\"credits\"> Technical: Robert-Jan Korteschiel</p>\n" +
-    "	<p class=\"credits\"> With thanks for: ... ...</p>\n" +
+    "	<p> Written by: Johanna Barnbeck</p>\n" +
+    "	<p> Supervised by: Jan Hein Hoogstad and Shailoh Philips </p>\n" +
+    "	<p> Technical: Robert-Jan Korteschiel</p>\n" +
+    "	<p> With thanks for: ... ...</p>\n" +
     "	<br>\n" +
-    "	<p class=\"credits\"> Part of the study: <a href=\"#home\">\"Augementing Masterpieces\"</a></p>\n" +
+    "	<p> Part of the study: <a href=\"#home\">\"Augementing Masterpieces\"</a></p>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "");
@@ -233,7 +224,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
     "			<h1>// Augmenting Masterpieces //</h1>\n" +
-    "			<p>// Humans, The Museum and Technology //</p>\n" +
+    "			<h2>Humans, The Museum and Technology</h2>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -250,7 +241,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsTop\">\n" +
     "			<div class=\"methodsMainText clearfix\">\n" +
-    "				<h1> // Methods // </h1>\n" +
+    "				<h4> // Methods // </h4>\n" +
     "				<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum!</p>\n" +
     "			</div>\n" +
     "			<div class=\"furtherReading clearfix\">\n" +
@@ -262,7 +253,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"textBlock\">\n" +
     "			<div class=\"diagBorder\"></div>\n" +
     "			<div class=\"textItself\">\n" +
-    "				<h1>// Design Thinking //</h1>\n" +
+    "				<h4>// Design Thinking //</h4>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
     "			</div>\n" +
     "			<div class=\"diagBorderInverse\"></div>\n" +
@@ -270,14 +261,14 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"textBlock\">\n" +
     "			<div class=\"diagBorder\"></div>\n" +
     "			<div class=\"textItself\">\n" +
-    "				<h1>// Digital Humanities 	//</h1>\n" +
+    "				<h4>// Digital Humanities 	//</h4>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
     "			</div>\n" +
     "			<div class=\"diagBorderInverse\"></div>\n" +
     "		</div>\n" +
     "		<div class=\"textBlock\">\n" +
     "			<div class=\"textItself\">\n" +
-    "				<h1>// Artistic Research //</h1>\n" +
+    "				<h4>// Artistic Research //</h4>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
     "			</div>\n" +
     "		</div>		\n" +
@@ -286,13 +277,13 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
     "			<a href=\"\" class=\"button\">// Prototypes // </a>\n" +
-    "			<p> (not available yet) </p>\n" +
+    "			<p> (not yet available) </p>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
     "		<div class=\"people\">\n" +
-    "			<h1>// People //</h1>\n" +
+    "			<h4>// People //</h4>\n" +
     "			<div class=\"person\"></div>\n" +
     "			<div class=\"person\"></div>\n" +
     "			<div class=\"person\"></div>\n" +
@@ -304,21 +295,21 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
     "				<h1>//&nbsp;Augmenting Masterpieces&nbsp;//</h1>\n" +
-    "				<p>//&nbsp;Humans, The Museum and Technology&nbsp;//</p>\n" +
+    "				<h2>Humans, The Museum and Technology</h2>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
     "				<div class=\"connectBoxes\">\n" +
-    "					<p>// Follow us! //</p>\n" +
+    "					<h4>// Follow us! //</h4>\n" +
     "					<ul class=\"socialIcon clearfix\">\n" +
     "						<li class=\"facebook\"></li>\n" +
     "						<li class=\"twitter\"></li>\n" +
     "						<li class=\"google\"></li>\n" +
     "						<li class=\"rss\"></li>\n" +
     "					</ul>\n" +
-    "					<p> // Mailing list // </p>\n" +
+    "					<h4> // Mailing list // </h4>\n" +
     "					<form>\n" +
     "						<label>\n" +
-    "							<span> Name: </span><input type=\"text\" name=\"name\" autofocus>\n" +
+    "							<span> Name: </span><input type=\"text\" name=\"name\">\n" +
     "						</label><br>\n" +
     "						<label>\n" +
     "							<span> E-mail: </span><input type=\"email\" name=\"user_email\">\n" +

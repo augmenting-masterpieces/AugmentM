@@ -3,7 +3,7 @@
 
   angular.module('cth').controller('HomeCtrl', [ProcessCtrl]);
 
-  function ProcessCtrl(){
+  function HomeCtrl(){
     var vm = this;
 
     $.stellar();

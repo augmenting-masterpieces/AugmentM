@@ -1,0 +1,41 @@
+h1, h2, h3, h4 {
+	font-family: RobotoSlab;
+	text-align: center;
+}
+
+h1 {
+	font-size: 4em;
+	color: white;
+}
+
+h2 {
+	font-size: 2em;
+	color: white;
+}
+
+h3 {
+	font-size: 4em;
+	color: black;
+}
+
+h4 {
+	font-size: 2em;
+	color: black;
+}
+
+p {
+	font-family: Arimo;
+	color: black;
+	font-size: 1em;
+}
+
+a {
+	color: white;
+	font-family: Arimo;
+}
+
+hr {
+  border-color: hsla(0, 0%, 0%, 1);
+  height: 1px;
+  width: 50%;
+}
