@@ -16,7 +16,7 @@
       .state('home', {
         url: '/home',
         templateUrl: 'templates/home.html',
-        controller: 'HomeCtrl as proc'
+        controller: 'HomeCtrl as home'
       })
       .state('prototype', {
         url: '/prototype',

@@ -205,6 +205,7 @@
 		height: 55vh;
 		width: 100vw;
 		position: relative;
+		margin-top: 5vh;
 
 		h4 {
 			height: 5vh;
@@ -216,18 +217,30 @@
 		height: 5vh;
 		position: absolute;
 		top: 10vh;
+		z-index:1; 
 
 		background-color: black;
+
+			&:after {
+				content: "";
+				background: url('./images/icons/arrow.png') no-repeat center center / cover;
+				background-color: black;
+				position: absolute;
+				left: 145vw;
+				height: 5vh;
+				width: 5vh; 
+			}
 		}
 
-		.left{
+		.left {
 			width: 55vw;
 			height: 60vh;
+			float: left;
 
 			.singleTimeItem {
 				height: 55vh;
 				width: 14%;
-				float:left;
+				float: left;
 
 				.timepoint {
 					height: 10vh;
@@ -248,13 +261,22 @@
 				top: 11vh;
 			}
 		}
+
 		.right {
-			width: 40vw;
-			height: 55vh;
-			float: left;
-		
+			width: 35vw;
+			height: 40vh;
+			z-index: 5;
+			position: absolute;
+			left: 55vw;
+			margin: 2.5vw;
+			padding: 2.5vw;
+
+			overflow: scroll;
+			
+			background-color: hsla(0, 0%, 100%, 0.8);
 			border: 1px solid hsla(0, 0%, 0%, 0.5);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
 
 			.textItself {
 				float: left;
@@ -262,7 +284,6 @@
 				width: 100%;
 				height: 100%;
 				padding: 5%;
-				overflow: scroll;
 			}	
 		}
 	}
