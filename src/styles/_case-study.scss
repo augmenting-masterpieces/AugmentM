@@ -25,7 +25,10 @@
 		width: 70%;
 		margin: 0 auto 0 auto;
 		padding: 2%;
-		background: hsla(0, 0%, 0%, 1); 
+		background: hsla(0, 0%, 0%, 1);
+		p {
+			color: hsla(0, 0%, 100%, 1);
+		} 
 
 		.nameDiv {
 			width: 30%;
@@ -42,6 +45,10 @@
 			 	border: solid 2px hsla(0, 0%, 100%, 1);
 			 	background-color: hsla(0, 0%, 100%, 1);	
 		    }
+
+		    h2 {
+				text-align: left;
+		    }
 		}
 
 		.statsDiv {
@@ -57,40 +64,37 @@
 				.mainPicture {
 					width: 30%;
 					float: left;
+					padding: 15% 0 0 0;
 
-					h1 {
-						margin: 75px 0 0 0;
+					h2 {
+						margin: 0 0 0 0;
 					} 
 
 					img {
 						display: block;
 						margin: 0 auto;
-						width: 100px;
-						height: 100px;
+						width: 60%;
 					}
 				}
 				.threeCatogoryPicture {
 					width: 70%;
 					float: left;
 
-					.paintings {
-						padding: 5% 0;
-					}
-					.building {
-						padding: 5% 0;
-					}
-					.people {
-						padding: 5% 0;
-					}
 					img {
-						width: 50px;
-						height: 50px;
+						width: 10%;
+						height: 7.5%;
 						float: left;
+						margin: 5%;
+
+						&.rightPicture {
+							float: right;
+						}
 					}
+
 					.statBar {
-						margin: 0 10%;
+						margin: 5% 5%;
 						float: left;
-						height: 50px;
+						height: 7.5%;
 						width: 50%;
 						background-color: hsla(0, 0%, 100%, 1);
 					}
@@ -100,8 +104,8 @@
 					}
 
 					p {
-						text-align: center;
-						color: hsla(0, 0%, 100%, 1);
+						margin-top: 3%;
+						text-align: center
 					}
 				}
 			}
@@ -113,27 +117,30 @@
 				}
 				
 				.timeBar {
-					width: 85%;
-					height: 50px;
+					width: 80%;
+					height: 7.5%;
+					margin: 0 5% 0 0;
 					float: left;
 					background-color: hsla(0, 0%, 100%, 1);
 
 					p {
 						text-align: center;
 						color: hsla(0, 0%, 0%, 1);
+						line-height: 200%;
+						vertical-align: middle;
 					}
 				}
 
 				.timeBarSmall {
-					width: 42.5%;
+					width: 40%;
 				}
 
 				img {
 					display: inline-block;
 					float: left;
 					margin-right: 5%;
-					width: 50px;
-					height: 50px;
+					width: 10%;
+					height: 7.5%;
 				}
 
 				p {	
@@ -265,6 +272,9 @@ article {
 	background: hsla(0, 0%, 0%, 1);
 
 	text-align: center;
+	p {
+		color: white; 
+	}
 
 	img {
 		display: block;

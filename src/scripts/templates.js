@@ -59,12 +59,12 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "					<div class=\"paintings clearfix\">\n" +
     "						<img class=\"clearfix\" src=\"./images/icons/picturewhite.png\" alt=\"\">\n" +
     "						<div class=\"statBar bar1 clearfix\"></div>\n" +
-    "						<img class=\"clearfix\" src=\"./images/icons/sculpturewhite.png\" alt=\"\">\n" +
+    "						<img class=\"clearfix rightPicture\" src=\"./images/icons/sculpturewhite.png\" alt=\"\">\n" +
     "					</div>\n" +
     "					<div class=\"building clearfix\">\n" +
     "						<img class=\"clearfix\" src=\"./images/icons/buildingwhite.svg\" alt=\"\">\n" +
     "						<div class=\"statBar bar2 clearfix\"></div>\n" +
-    "						<img class=\"clearfix\" src=\"./images/icons/brandblusserwhite.png\" alt=\"\">\n" +
+    "						<img class=\"clearfix rightPicture\" src=\"./images/icons/brandblusserwhite.png\" alt=\"\">\n" +
     "					</div>\n" +
     "					<div class=\"people clearfix\">\n" +
     "						<img class=\"clearfix\" src=\"./images/icons/peoplewhite.png\" alt=\"\">\n" +
