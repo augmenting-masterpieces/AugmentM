@@ -216,19 +216,18 @@
 		width: 140vw;
 		height: 5vh;
 		position: absolute;
-		top: 10vh;
+		top: 15vh;
 		z-index:1; 
 
 		background-color: black;
 
 			&:after {
 				content: "";
-				background: url('./images/icons/arrow.png') no-repeat center center / cover;
-				background-color: black;
+				background: linear-gradient(90deg, hsla(0, 0%, 0%, 1), hsla(0, 0%, 0%, 0)) no-repeat center center / cover;
 				position: absolute;
-				left: 145vw;
+				left: 140vw;
 				height: 5vh;
-				width: 5vh; 
+				width: 20vw; 
 			}
 		}
 
@@ -246,19 +245,19 @@
 					height: 10vh;
 					width: 20%;
 					position: relative;
-					top: 2.5vh;
+					top: 7.5vh;
 					left: 40%;
 					background-color: black;
 				}
 				.pointText {
 					position:relative;
-					top: 4vh;
+					top: 9vh;
 					transform: rotate(-45deg);
 				}
 			}
 			.date {
 				position: relative;
-				top: 11vh;
+				top: 16vh;
 			}
 		}
 
@@ -277,14 +276,9 @@
 			border: 1px solid hsla(0, 0%, 0%, 0.5);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 
-
-			.textItself {
-				float: left;
-				background-color: white;
-				width: 100%;
-				height: 100%;
-				padding: 5%;
-			}	
+			h4 {
+				text-align: left;
+			}
 		}
 	}
 }
