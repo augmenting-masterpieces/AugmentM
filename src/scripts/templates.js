@@ -282,13 +282,59 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
-    "		<div class=\"people\">\n" +
+    "		<div class=\"people clearfix\">\n" +
     "			<h4>// People //</h4>\n" +
-    "			<div class=\"person\"></div>\n" +
-    "			<div class=\"person\"></div>\n" +
-    "			<div class=\"person\"></div>\n" +
-    "			<div class=\"person\"></div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"\" alt=\"\">\n" +
+    "				<p>Johanna Barnbeck</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"\" alt=\"\">\n" +
+    "				<p>Jan Hein Hoogstad</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"\" alt=\"\">\n" +
+    "				<p>Shailo Philips</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"\" alt=\"\">\n" +
+    "				<p>Patty Jansen</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"\" alt=\"\">\n" +
+    "				<p>Robert-Jan Korteschiel</p>\n" +
+    "			</div>\n" +
     "		</div>\n" +
+    "		<div class=\"timeline\">\n" +
+    "			<h4>// Timeline //</h3>\n" +
+    "			<div class=\"theLine\"></div>\n" +
+    "			<div class=\"left\">\n" +
+    "				<div class=\"singleTimeItem date\"><h4>2014</h4></div>\n" +
+    "				<div class=\"singleTimeItem\">\n" +
+    "					<div class=\"timePoint\"></div>\n" +
+    "					<p class=\"pointText\">Pitch</p>\n" +
+    "				</div>\n" +
+    "				<div class=\"singleTimeItem\">\n" +
+    "					<div class=\"timePoint\"></div>\n" +
+    "					<p class=\"pointText\">Observe</p>\n" +
+    "				</div>\n" +
+    "				<div class=\"singleTimeItem\">\n" +
+    "					<div class=\"timePoint\"></div>\n" +
+    "					<p class=\"pointText\">Ideate</p>\n" +
+    "				</div>\n" +
+    "				<div class=\"singleTimeItem\">\n" +
+    "					<div class=\"timePoint\"></div>\n" +
+    "					<p class=\"pointText\">Prototype</p>\n" +
+    "				</div>\n" +
+    "				<div class=\"singleTimeItem\">\n" +
+    "					<div class=\"timePoint\"></div>\n" +
+    "					<p class=\"pointText\">Wrapup</p>\n" +
+    "				</div>\n" +
+    "				<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
+    "			</div>\n" +
+    "			<div class=\"right\"> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt esse fuga ipsam, pariatur iusto consectetur, blanditiis dolor distinctio, mollitia facilis totam. Laboriosam labore, cumque, repudiandae voluptate repellat illum id, quaerat eveniet doloribus quis suscipit, quia sapiente quo officiis ipsa. Error delectus veritatis fuga pariatur soluta assumenda ipsum, dicta ex ab, quis facilis totam. Voluptates, vel vitae nostrum accusantium molestias provident impedit enim esse quaerat omnis culpa sit incidunt beatae dolor assumenda tempora laudantium magni, eum, doloremque illum similique fugiat iusto veniam corrupti! Enim veniam ea natus nam rerum ad temporibus debitis sapiente! Perspiciatis, sunt libero amet veniam, eos quis quidem.</p> </div>\n" +
+    "		</div>\n" +
+    "\n" +
     "	</section>\n" +
     "	<section class=\"homeConnect\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +

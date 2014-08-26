@@ -179,20 +179,91 @@
 	width: 100vw;
 	height: 100vh;
 	float: left;
-	background: hsla(0, 0%, 100%, 1);
+	
+	background-color: hsla(0, 0%, 100%, 1);
 
 	.people {
 		width: 100%;
 		height: 40vh;
-		padding: 0 10vw;
+		padding: 5vh 10vw;
 
 		.person {
-			width: 40%;
-			height: 80%;
-			margin: 5vh 5%;
+			width: 15%;
+			height: 15%;
+			margin: 5% 2.5%;
 			float: left; 
+		}
 
-			background-color: hsla(0, 0%, 0%, 1);
+		img {
+			width: 80%;
+			height: 80px;
+			background: hsla(0, 0%, 0%, 1);
+		}
+	}
+
+	.timeline {
+		height: 55vh;
+		width: 100vw;
+		position: relative;
+
+		h4 {
+			height: 5vh;
+			margin: 0;
+		}
+
+		.theLine {
+		width: 140vw;
+		height: 5vh;
+		position: absolute;
+		top: 10vh;
+
+		background-color: black;
+		}
+
+		.left{
+			width: 55vw;
+			height: 60vh;
+
+			.singleTimeItem {
+				height: 55vh;
+				width: 14%;
+				float:left;
+
+				.timepoint {
+					height: 10vh;
+					width: 20%;
+					position: relative;
+					top: 2.5vh;
+					left: 40%;
+					background-color: black;
+				}
+				.pointText {
+					position:relative;
+					top: 4vh;
+					transform: rotate(-45deg);
+				}
+			}
+			.date {
+				position: relative;
+				top: 11vh;
+			}
+		}
+		.right {
+			width: 40vw;
+			height: 55vh;
+			float: left;
+		
+			border: 1px solid hsla(0, 0%, 0%, 0.5);
+			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+
+			.textItself {
+				float: left;
+				background-color: white;
+				width: 100%;
+				height: 100%;
+				padding: 5%;
+				overflow: scroll;
+			}	
 		}
 	}
 }
