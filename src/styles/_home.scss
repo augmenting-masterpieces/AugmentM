@@ -213,10 +213,11 @@
 		}
 
 		.theLine {
-		width: 135vw;
-		height: 5vh;
+		width: 145vw;
+		height: 2.5vh;
 		position: absolute;
 		top: 15vh;
+		left: -10vw;
 		z-index:1; 
 
 		background-color: black;
@@ -225,8 +226,8 @@
 				content: "";
 				background: linear-gradient(90deg, hsla(0, 0%, 0%, 1), hsla(0, 0%, 0%, 0)) no-repeat center center / cover;
 				position: absolute;
-				left: 135vw;
-				height: 5vh;
+				left: 145vw;
+				height: 2.5vh;
 				width: 15vw; 
 			}
 		}
@@ -242,7 +243,7 @@
 				float: left;
 
 				.timepoint {
-					height: 10vh;
+					height: 7.5vh;
 					width: 20%;
 					position: relative;
 					top: 7.5vh;
@@ -259,7 +260,7 @@
 			}
 			.date {
 				position: relative;
-				top: 16vh;
+				top: 14vh;
 			}
 		}
 

@@ -8,7 +8,7 @@
 
 	    $(document).ready(function() {
  
-  			$("#owl-example").owlCarousel({
+  			$("#galleryCaseStudy").owlCarousel({
  
 			    // Most important owl features
 			    items : 4,
@@ -84,6 +84,10 @@
 			    afterLazyLoad : false
 			});
 		});
+	
+		// $('#')
+
+
 	    return vm;
 	}
 })();

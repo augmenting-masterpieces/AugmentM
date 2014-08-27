@@ -41,7 +41,7 @@ module.exports =
       'src/scripts/routes.js'
       'src/scripts/appCtrl.js'
       'src/scripts/controllers/caseStudyCtrl.js'
-      'src/scripts/controllers/processCtrl.js'
+      'src/scripts/controllers/homeCtrl.js'
       'src/scripts/controllers/prototypeCtrl.js'
       'src/scripts/controllers/experimentsCtrl.js'
       'src/scripts/common/directives/scroll-into-view.js'

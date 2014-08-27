@@ -44,8 +44,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "			<h2> Mister Bernard </h2>\n" +
     "			<p> Age: 25 </p>\n" +
     "			\n" +
-    "			<p> Accompanied by:</p>\n" +
-    "			<p> Friend </p>\n" +
+    "			<p> Accompanied by: Friend </p>\n" +
     "		</div>\n" +
     "\n" +
     "		<div class=\"statsDiv clearfix\">	\n" +
@@ -113,7 +112,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
     "		<hr>\n" +
     "	</div>\n" +
-    "	<div id=\"owl-example\" class=\"owl-carousel owlGallery\">\n" +
+    "	<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00117.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00120.JPG\">\n" +
@@ -172,7 +171,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<p> Technical: Robert-Jan Korteschiel</p>\n" +
     "	<p> With thanks for: ... ...</p>\n" +
     "	<br>\n" +
-    "	<p> Part of the study: <a href=\"#home\">\"Augementing Masterpieces\"</a></p>\n" +
+    "	<p> Part of the study: <a href=\"#home\">\"Augmenting Masterpieces\"</a></p>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "");

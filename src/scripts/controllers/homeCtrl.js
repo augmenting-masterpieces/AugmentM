@@ -3,14 +3,11 @@
 
   angular.module('cth').controller('HomeCtrl', [HomeCtrl]);
 
-  function HomeCtrl(){
-    var vm = this;
+	function HomeCtrl(){
+	    var vm = this;
 
-    $.stellar();
+	    $.stellar();
 
-    return vm;
-  }
-
-  
-
+	    return vm;
+	}
 })();
