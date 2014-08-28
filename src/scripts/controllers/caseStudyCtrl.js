@@ -7,8 +7,48 @@
 	    var vm = this;
 
 	    $(document).ready(function() {
- 
-  			$("#galleryCaseStudy").owlCarousel({
+	    	owlCarouselConfig(); // Owl call with hardcoded images.
+		});
+
+		function importStudyParticipantsJson() {
+			var data = "Ajax"; // Ajax call to get the participants data, data has to be created manually.
+			return data;
+		}
+
+		function calculatingInfographic(data) {
+			// The function that calulates the inforgraphic information and returns the result.
+		}
+
+		function assigningInfographicData(result) {
+			// Gets the elements and assigns the width's inline.
+		}
+
+	    function creatingGalleryImages() {
+	    	// Assign eventlisteners or are we going to use NGclick? meh, depends. Perhaps there is a way with owl.
+	    	// Append the imagetags by code might be the way to go.
+	    }
+
+	    function assigningEventsToGalleryImages() {
+
+	    }
+
+	    function galleryBackgroundChange(data) {
+	    	// Determine which image from data-tag on element this.
+
+	    	// determine which background-image src from the data with the imagenumber. 
+
+	    	// Get element jQuery
+
+	    	// Set background-image inline
+	    }
+
+	    function mapGenerate() {
+	    	// Nice idea, but problably not a good idea to put on the list right now.
+	    }
+
+
+		function owlCarouselConfig() {
+			$("#galleryCaseStudy").owlCarousel({
  
 			    // Most important owl features
 			    items : 4,
@@ -83,9 +123,7 @@
 			    startDragging : false,
 			    afterLazyLoad : false
 			});
-		});
-	
-		// $('#')
+		}
 
 
 	    return vm;
