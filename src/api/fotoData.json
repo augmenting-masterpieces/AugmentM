@@ -1,0 +1,40 @@
+{ 
+	"fotos": [
+		{ 	
+			"number": 1,
+			"photographer": "Bernard",
+			"name": "romantic farm",
+			"tags": "painting",
+			"transcript": "",
+			"quotes": "I'm a pretty picture",
+			"relations": 10,
+			"src": "./images/etc",
+			"highQuality-src": "./images/high/etc",
+			"rijksStudioLink": "http://www.Rijksstudio.nl",
+			"location": "3.14"
+		},
+		{ 	
+			"number": 2,
+			"photographer": "Bernard",
+			"name": "household",
+			"tags": "painting",
+			"transcript": "",
+			"quotes": "I'm an even prettier picture",
+			"relations": 10,
+			"src": "./images/etc",
+			"highQuality-src": "./images/high/etc",
+			"rijksStudioLink": "http://www.rijksstudio.nl",
+			"location": "2.4"
+		}
+	],
+	"photographers": [
+		{
+			"number": 1,
+			"name": "Bernard",
+			"age": "25",
+			"gender": "male",
+			"visitorCategory": "Cultural Tourist",
+			"transcriptFull": "transcripts/bernard.txt"
+		}
+	]
+}

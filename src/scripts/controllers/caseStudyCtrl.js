@@ -17,18 +17,19 @@
 
 		function calculatingInfographic(data) {
 			// The function that calulates the inforgraphic information and returns the result.
+			var result = "calculation";
+			return result;
 		}
 
-		function assigningInfographicData(result) {
+		function InfographicData(result) {
 			// Gets the elements and assigns the width's inline.
 		}
 
-	    function creatingGalleryImages() {
-	    	// Assign eventlisteners or are we going to use NGclick? meh, depends. Perhaps there is a way with owl.
+	    function galleryImages() {
 	    	// Append the imagetags by code might be the way to go.
 	    }
 
-	    function assigningEventsToGalleryImages() {
+	    function galleryEvents() {
 
 	    }
 
@@ -41,11 +42,6 @@
 
 	    	// Set background-image inline
 	    }
-
-	    function mapGenerate() {
-	    	// Nice idea, but problably not a good idea to put on the list right now.
-	    }
-
 
 		function owlCarouselConfig() {
 			$("#galleryCaseStudy").owlCarousel({
