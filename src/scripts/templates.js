@@ -113,7 +113,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "		<hr>\n" +
     "	</div>\n" +
     "	<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\">\n" +
-    "		<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
+    "<!-- 		<img src=\"./images/ucs/1mrB/DSC00112.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00117.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00120.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00122.JPG\">\n" +
@@ -121,7 +121,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "		<img src=\"./images/ucs/1mrB/DSC00129.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00137.JPG\">\n" +
     "		<img src=\"./images/ucs/1mrB/DSC00141.JPG\">\n" +
-    "		<img src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
+    "		<img src=\"./images/ucs/1mrB/DSC00148.JPG\"> -->\n" +
     "	</div>	\n" +
     "</div>\n" +
     "\n" +

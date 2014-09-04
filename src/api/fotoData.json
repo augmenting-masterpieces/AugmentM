@@ -1,7 +1,5 @@
-// tag categories: painting, sculpture, sign, building, interior, social 
-
 { 
-	"fotos": [
+	"photos": [
 		{ 	
 			"number": 109,
 			"photographer": "Bernard",
@@ -444,7 +442,6 @@
 			"rijksStudioLink": null,
 			"location": null
 		},
-		,
 		{ 	
 			"number": 146,
 			"photographer": "Bernard",
