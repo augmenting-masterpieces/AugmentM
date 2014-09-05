@@ -24,7 +24,7 @@
 			});
 			return data;
 		}
-
+	
 		function calculatingInfographic(data) {
 			// The function that calulates the inforgraphic information and returns the result.
 			var result = "calculation";
