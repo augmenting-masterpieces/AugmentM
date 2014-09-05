@@ -35,11 +35,11 @@
 			// Gets the elements and assigns the width's inline.
 		}
 
-    function galleryImages() {
+    function galleryImages(data) {
     	// Append the imagetags by code might be the way to go.
     }
 
-    function galleryEvents() {
+    function galleryEvents(data) {
 
     }
 
