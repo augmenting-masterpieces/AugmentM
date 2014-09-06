@@ -20,11 +20,31 @@
 
 	color: #fff;
 
+	img {
+		position: absolute;
+		height: 60vh;
+		top: 0vh;
+		left: 35vw;
+		transform: rotate(-90deg);
+	}
+
 	.title {
 		width: 100vw;
-		margin-top: 60vh;
+		height: 100vh;
 		float: left;
 		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		overflow: hidden;
+
+		h1 {
+			position: absolute;
+			top: 60vh;
+			left: 10vw;
+		}
+		h2 {
+			position: absolute;
+			top: 70vh;
+			left: 20vw;
+		}
 	}
 }
 
@@ -61,6 +81,12 @@
 
 	background: url(./images/backgrounds/personCamera.jpg) no-repeat center center / cover;			
 	
+	video {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
+
 	.buttonDiv {
 		float: left;
 		height: 100vh;

@@ -222,13 +222,14 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
+    "			<img src=\"images/icons/black_arrow.png\" alt=\"\">\n" +
     "			<h1>// Augmenting Masterpieces //</h1>\n" +
     "			<h2>Humans, The Museum and Technology</h2>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
-    "		<video src=\"../video/big_buck_bunny.webm\" controls class=\"introVid\"></video>\n" +
+    "		<video src=\"../video/AM_background_test.mp4\" controls class=\"introVid\"></video>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
