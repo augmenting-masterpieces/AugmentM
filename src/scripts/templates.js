@@ -240,27 +240,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
-    "		<div class=\"methodsTop\">\n" +
-    "			<div class=\"methodsMainText clearfix\">\n" +
-    "				<h4> // Methods // </h4>\n" +
-    "				<p>Im a big chuck of text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint adipisci nulla minima, tempore perspiciatis deleniti provident omnis dolores molestiae modi fugit, rem earum ipsa laudantium ullam quo consectetur ut doloribus!</p> <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex consectetur blanditiis facilis, eius officiis illo. Beatae culpa suscipit soluta ducimus accusamus, porro ipsum dolore cumque animi fugit accusantium, minima, quod laboriosam. Molestias ea assumenda aliquid beatae neque excepturi dolore placeat eaque in doloremque sit eum culpa qui similique eius quia illum voluptas dolorum iure, alias facilis. Exercitationem hic distinctio alias eius doloribus necessitatibus nam repellat, debitis sunt. Consectetur sapiente, accusantium. Modi repellendus impedit veritatis nisi eos repudiandae pariatur exercitationem, quaerat fugit harum totam, quasi officiis consequatur ratione fugiat ab placeat? Dolorum, vero similique quae numquam. Laboriosam et rem tempora cupiditate autem quidem exercitationem fugiat porro reiciendis animi dolorum nisi eligendi amet voluptas, excepturi assumenda quisquam harum. Consequuntur rerum ipsum quos voluptatibus officiis cum!</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"furtherReading clearfix\">\n" +
-    "				<a href=\"\" class=\"button\"> // Further Reading // </a>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"textBlock\">\n" +
-    "			<h4>// Design Thinking //</h4>\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
-    "		</div>\n" +
-    "		<div class=\"textBlock\">\n" +
-    "			<h4>// Digital Humanities 	//</h4>\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
-    "		</div>\n" +
-    "		<div class=\"textBlock\">\n" +
-    "			<h4>// Artistic Research //</h4>\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur ipsam labore tempora provident consequatur? Voluptatum rem fugiat veritatis temporibus autem recusandae, maiores, nihil eveniet provident maxime error consectetur assumenda qui expedita debitis, optio odit ullam explicabo cumque beatae officia a, ducimus accusamus! Totam eum, debitis, praesentium numquam, laboriosam voluptatem aperiam deleniti, ipsum dolore optio incidunt! Porro error quas expedita at, mollitia officia sed impedit illum non, voluptates deserunt fuga aspernatur dolorem a numquam, odit eius eum rerum alias eos! Nemo, in, ab explicabo nobis quam praesentium nihil velit vel ad quia placeat qui, perferendis minima! Nisi harum voluptates numquam consectetur. Obcaecati, dolorem maxime libero, autem illo aliquam ducimus culpa debitis quia ratione optio iure ipsa. Itaque, molestiae asperiores ducimus. Mollitia necessitatibus dolores adipisci incidunt quaerat assumenda minima eaque rem neque, aliquid pariatur culpa, dolore, iure nobis eius ipsum accusantium repellat doloremque reiciendis excepturi voluptates maxime. Beatae aut magni rem repellat?</p>\n" +
-    "		</div>		\n" +
+    "		\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
