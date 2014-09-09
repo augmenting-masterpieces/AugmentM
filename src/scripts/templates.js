@@ -224,7 +224,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"title\">\n" +
     "			<img src=\"images/icons/black_arrow.png\" alt=\"\">\n" +
     "			<h1>// Augmenting Masterpieces //</h1>\n" +
-    "			<h2>Humans, The Museum and Technology</h2>\n" +
+    "			<h2>\"Humans, The Museum and Technology\"</h2>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
