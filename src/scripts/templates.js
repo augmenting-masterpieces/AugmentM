@@ -240,7 +240,29 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
-    "		\n" +
+    "		<div class=\"methodsList\">\n" +
+    "			<h4>Methods</h4>\n" +
+    "			<hr>\n" +
+    "			<p>Digital Humanities</p>\n" +
+    "			<p>Artistic Research</p>\n" +
+    "			<p>Design Thinking</p>\n" +
+    "			<h4>Video</h4>\n" +
+    "			<hr>\n" +
+    "			<p>Number One</p>\n" +
+    "			<p>Number Two</p>\n" +
+    "			<h4>Literature</h4>\n" +
+    "			<hr>\n" +
+    "			<p>Artikel 1</p>\n" +
+    "			<p>Artikel 2</p>\n" +
+    "			<p>Artikel 3</p>\n" +
+    "			<!-- <p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p>\n" +
+    "			<p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p>\n" +
+    "			<p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p> -->\n" +
+    "		</div>\n" +
+    "		<div class=\"methodsContent\">\n" +
+    "			<h4>Digital Humanities (method)</h4>\n" +
+    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam quas id illum tenetur quam qui ducimus provident, hic laborum harum odit at tempore aliquid sunt minima temporibus architecto ad porro molestias voluptates doloremque. Perferendis veniam dolores, quasi pariatur. Ut voluptate mollitia numquam consectetur provident vero dolorum eos deleniti! Autem fuga suscipit, ipsam possimus doloribus distinctio illo laborum placeat id minima quod quos pariatur reiciendis tempore eveniet officiis ea, optio. Ipsam consequatur eum impedit fugiat, voluptates nihil eveniet optio, neque assumenda quo est soluta aspernatur vitae temporibus reiciendis sit officia iure repellat maxime molestiae! Numquam eveniet ullam fuga vero delectus?</p>\n" +
+    "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
