@@ -223,7 +223,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
     "			<!-- <img src=\"images/icons/black_arrow.png\" alt=\"\"> -->\n" +
-    "			<h1>// Augmenting Masterpieces //</h1>\n" +
+    "			<h1>// Augmenting Masterpieces // > </h1>\n" +
     "			<h2>\"Humans, The Museum and Technology\"</h2>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
@@ -234,8 +234,10 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
-    "		<div class=\"buttonDiv\"> \n" +
-    "			<a href=\"#case-study\" class=\"button\"> // Case Study //</a>\n" +
+    "		<div class=\"buttonDiv\">\n" +
+    "			<div class=\"verticalButton\">\n" +
+    "				<a href=\"#case-study\"><h1>// Case Study // > </h1></a>\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -267,8 +269,10 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeButtonSection homePrototype\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
-    "			<a href=\"\" class=\"button\">// Prototypes // </a>\n" +
-    "			<p> (not yet available) </p>\n" +
+    "			<div class=\"verticalButton\">\n" +
+    "				<a href=\"#case-study\"><h1>// Prototypes // > </h1></a>\n" +
+    "				<p>(not yet available)</p>\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +

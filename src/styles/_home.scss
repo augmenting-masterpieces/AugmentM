@@ -43,12 +43,12 @@
 }
 
 .whiteTransition {
-	background-image: linear-gradient(112.5deg, hsla(44, 40%, 100%, 0), hsla(44, 40%, 100%, 0) 50%, hsla(44, 40%, 100%, 1) 50%);
+	background-image: linear-gradient(112.5deg, hsla(44, 40%, 65%, 0), hsla(44, 40%, 65%, 0) 50%, hsla(44, 40%, 65%, 1) 50%);
 	width: 40vw;
 	height: 100vh;
 	float: left;
 	&.inverse {
-		background-image: linear-gradient(112.5deg, hsla(44, 40%, 100%, 1), hsla(44, 40%, 100%, 1) 50%, hsla(44, 40%, 100%, 0) 50%);
+		background-image: linear-gradient(112.5deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 1) 50%, hsla(44, 40%, 65%, 0) 50%);
 	}
 }
 
@@ -91,13 +91,26 @@
 		width: 100%;
 	}
 
+
+
 	.buttonDiv {
 		float: left;
 		height: 100vh;
 		width: 40vw;
-		
+
 		p {
 			color: white;
+		}
+
+		.verticalButton {
+			width: 100vh;
+			height: 40vw;
+			transform: rotate(90deg);
+			transform-origin: 20% 30%;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			a:hover {
+				text-decoration: none;
+			}
 		}
 
 		.button {
@@ -114,7 +127,7 @@
 
 			border: 2px solid white;
 			border-radius: 10px;
-			background-color: hsla(0, 0%, 100%, 0.7);
+			background-color: hsla(44, 40%, 65%, 0.7);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 
 			&:hover {
@@ -129,7 +142,7 @@
 	width: 100vw;
 	height: 100vh;
 
-	background-color: hsla(44, 40%, 100%, 1);
+	background-color: hsla(44, 40%, 65%, 1);
 	
 	.methodsList {
 		width: 25vw;
@@ -170,11 +183,19 @@
 		height: 90vh;
 		margin: 5vh 2.5vw;
 		padding: 0 0 0 5vw;
-		overflow: scroll;
+		// overflow: scroll;
 		float: left;
+		position: relative;
 
-		border-left: 1px solid black;
-
+		&:before {
+			content: "";
+			position: absolute;
+			top: 5vh;
+			left: -50vw; 
+			height: 90vh;
+			border-left: 1px solid black;
+			transform: rotate(22.5deg);
+		}
 
 	}
 
@@ -261,6 +282,7 @@
 					left: 40%;
 					background-color: black;
 				}
+
 				p {
 					position:relative;
 					top: 11vh;
