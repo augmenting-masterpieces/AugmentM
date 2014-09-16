@@ -7,24 +7,25 @@
 	  var vm = this;
 
 	  owlCarouselConfig(); // Owl call with hardcoded images.
-	  importData();
-
+	  var data = importData();
+	  
 		function importData() {
 			console.log("ImportData is run");
 			var data = $.ajax({
-  			url: "api/fotoData.json",
-  			dataType: "json",
-  			success: function(data){
-  				console.log("Loading the JSON is a success:");
-  				console.log(data);
-  			},
-  			error: function(obj, err, errObj){
-  				console.log("Loading the JSON did not go as planned: " + err);
-  			}
+				url: "api/fotoData.json",
+				dataType: "json",
+				success: function(data){
+					console.log("Loading the JSON is a success:");
+					console.log(data);
+					galleryImages(data);
+				},
+				error: function(obj, err, errObj){
+					console.log("Loading the JSON did not go as planned: " + err);
+				}
 			});
 			return data;
 		}
-	
+
 		function calculatingInfographic(data) {
 			// The function that calulates the inforgraphic information and returns the result.
 			var result = "calculation";
@@ -36,6 +37,23 @@
 		}
 
     function galleryImages(data) {
+    	var content = "";
+    	console.log("Im GalleryImages");
+    	console.log(data.photos);
+
+    	$(data.photos).each(function(){
+    		console.log(this);
+    	});
+
+    	// for(var i in data["items"]){
+       
+	    //   var img = data.name[i].img;
+	    //   var alt = data["items"][i].alt;
+	 
+	    //   content += "<img src=\"" +img+ "\" alt=\"" +alt+ "\">"
+    	// }
+
+    	// $("#galleryCaseStudy").html(img);
     	// Append the imagetags by code might be the way to go.
     }
 
