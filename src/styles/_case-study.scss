@@ -154,14 +154,14 @@
 }
 
 .pictureGallery {
-	min-height: 120vh;
+	min-height: 100vh;
 	width: 100vw;
 	position: relative;
 
 	background: linear-gradient(
 	    hsla(0, 0%, 0%, 0.20),
 	    hsla(0, 0%, 0%, 0.20)
-    ), url(./images/ucs/1mrB/aGalantCompany.jpg) no-repeat center center / cover;
+    ), url(./images/ucs/1mrB/original/DSC00118.JPG) no-repeat center center / cover;
     background-attachment: fixed;
 
     color: hsla(0, 0%, 100%, 1);
@@ -194,9 +194,12 @@
 
 	.owlGallery {
 		padding: 5% 0;
+
 		img {
+			background-color: white;
 			width: 100%;
-			height: 400px;
+			padding: 1px 1px 1px 0;
+			height: 300px;
 		}
 	}
 }

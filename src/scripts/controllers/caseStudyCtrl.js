@@ -64,11 +64,11 @@
 			$("#galleryCaseStudy").owlCarousel({
 
 		    // Most important owl features
-		    items : 4,
+		    items : 6,
 		    itemsCustom : false,
-		    itemsDesktop : [1199,3],
-		    itemsDesktopSmall : [980,2],
-		    itemsTablet: [768,2],
+		    itemsDesktop : [1199,5],
+		    itemsDesktopSmall : [980,4],
+		    itemsTablet: [768,3],
 		    itemsTabletSmall: false,
 		    itemsMobile : [479,1],
 		    singleItem : false,
