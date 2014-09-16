@@ -5,8 +5,6 @@
 
 	function CaseStudyCtrl(){
 	  var vm = this;
-
-	  owlCarouselConfig(); // Owl call with hardcoded images.
 	  var data = importData();
 	  
 		function importData() {
@@ -42,8 +40,14 @@
     	console.log(data.photos);
 
     	$(data.photos).each(function(){
-    		console.log(this);
+    		content += "<img src=\"" +this.src+ "\" alt=\"" +this.name+ "\">";
     	});
+
+    	$("#galleryCaseStudy").html(content);
+
+    	owlCarouselConfig();
+
+    	// console.log(content);
 
     	// for(var i in data["items"]){
        
