@@ -13,12 +13,12 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<div class=\"designDiv2\"></div>\n" +
     "</section>\n" +
     "<section class=\"blackTransition small\">\n" +
-    "	<hr>\n" +
+    "<!-- 	<hr>\n" +
     "	<h2> A collaboration between:</h2>\n" +
     "	<img src=\"./images/logos/uvalogowhite.png\">\n" +
     "	<img src=\"./images/logos/rijkswhite.png\">\n" +
     "	<h2>Jan Hein Hoogstad - Johanna Barnbeck - Shailoh Philips</h2>\n" +
-    "	<hr>\n" +
+    "	<hr> -->\n" +
     "</section>\n" +
     "<article >\n" +
     "	<hr>\n" +
@@ -165,14 +165,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</article>\n" +
     "\n" +
     "<section class=\"blackTransition small left\">\n" +
-    "	<hr>\n" +
-    "	<p> Written by: Johanna Barnbeck</p>\n" +
-    "	<p> Supervised by: Jan Hein Hoogstad and Shailoh Philips </p>\n" +
-    "	<p> Technical: Robert-Jan Korteschiel</p>\n" +
-    "	<p> With thanks for: ... ...</p>\n" +
-    "	<br>\n" +
-    "	<p> Part of the study: <a href=\"#home\">\"Augmenting Masterpieces\"</a></p>\n" +
-    "	<hr>\n" +
+    "	<h2> Part of the study: <a href=\"#home\">\"Augmenting Masterpieces\"</a></p>\n" +
     "</section>\n" +
     "");
 }]);
@@ -271,7 +264,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"buttonDiv\">\n" +
     "			<div class=\"verticalButton\">\n" +
     "				<a href=\"#case-study\"><h1>// Prototypes // > </h1></a>\n" +
-    "				<p>(not yet available)</p>\n" +
+    "				<p>(In the making)</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
