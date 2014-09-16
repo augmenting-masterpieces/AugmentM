@@ -48,12 +48,15 @@
 
     function galleryBackgroundChange(evt) {
     	// Determine which image from data-tag on element this.
-			console.log(evt);
+			var image = $(evt.target);
 
-			var target = $(evt.target);
-			// target.data = target.attr("data");
+			var info = {};
+			info.src = image.attr("src");
+			info.data = image.attr("data");
 
-			target.css({"background:":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + target.attr("src") +") no-repeat center center / cover"});
+			console.log(info);
+
+			$(".pictureGallery").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + info.src +") no-repeat center center / cover", "background-attachment": "fixed"});
     }
 
 		function owlCarouselConfig() {
