@@ -8,17 +8,14 @@
 	  var data = importData();
 	  
 		function importData() {
-			console.log("ImportData is run");
 			var data = $.ajax({
 				url: "api/fotoData.json",
 				dataType: "json",
 				success: function(data){
-					console.log("Loading the JSON is a success:");
-					console.log(data);
 					galleryImages(data);
 				},
 				error: function(obj, err, errObj){
-					console.log("Loading the JSON did not go as planned: " + err);
+					console.error("Loading the JSON did not go as planned: " + err);
 				}
 			});
 			return data;
@@ -35,44 +32,28 @@
 		}
 
     function galleryImages(data) {
+    	// Creating append variable.
     	var content = "";
-    	console.log("Im GalleryImages");
-    	console.log(data.photos);
 
     	$(data.photos).each(function(){
-    		content += "<img src=\"" +this.src+ "\" alt=\"" +this.name+ "\">";
+    		content += "<img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" >";
     	});
 
-    	$("#galleryCaseStudy").html(content);
+    	// Appending to HTML and Onclick.
+    	$("#galleryCaseStudy").html(content).on("click", "img", galleryBackgroundChange);
 
+    	// Running Owl.
     	owlCarouselConfig();
-
-    	// console.log(content);
-
-    	// for(var i in data["items"]){
-       
-	    //   var img = data.name[i].img;
-	    //   var alt = data["items"][i].alt;
-	 
-	    //   content += "<img src=\"" +img+ "\" alt=\"" +alt+ "\">"
-    	// }
-
-    	// $("#galleryCaseStudy").html(img);
-    	// Append the imagetags by code might be the way to go.
     }
 
-    function galleryEvents(data) {
-
-    }
-
-    function galleryBackgroundChange(data) {
+    function galleryBackgroundChange(evt) {
     	// Determine which image from data-tag on element this.
+			console.log(evt);
 
-    	// determine which background-image src from the data with the imagenumber. 
+			var target = $(evt.target);
+			// target.data = target.attr("data");
 
-    	// Get element jQuery
-
-    	// Set background-image inline
+			target.css({"background:":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + target.attr("src") +") no-repeat center center / cover"});
     }
 
 		function owlCarouselConfig() {
