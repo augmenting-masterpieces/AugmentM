@@ -22,34 +22,37 @@
 		}
 
     function galleryImages(data) {
-    	// Creating append variable.
-    	var content = "";
+    	// Creating one long string with all images.
+    	var imgTags = "";
 
     	$(data.photos).each(function(){
-    		content += "<img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" >";
+    		imgTags += "<img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" >";
     	});
 
-    	// Appending to HTML and Onclick.
-    	$("#galleryCaseStudy").html(content).on("click", "img", galleryChange);
+    	// Appending to HTML and event listener.
+    	$("#galleryCaseStudy").html(imgTags).on("click", "img", data, galleryChange);
 
     	// Running Owl.
-    	owlCarouselConfig();
-
-
-    	// Need to talk to the quote and other elements
-
+    	owlCarouselConfig();    	
     }
 
     function galleryChange(evt) {
     	// galleryChange
-			var image = $(evt.target);
-			var info = {};
-			info.src = image.attr("src");
-			info.data = image.attr("data");
+		var photoData = {};
+		var photoNumber = $(evt.target).attr("data");
 
-			console.log(info);
+		// Necessary loop because toplevel key is not set
+		$(evt.data.photos).each(function(){
+			if (this.number == photoNumber){
+				photoData = this;
+				return false;
+			}
+		});
 
-			$(".pictureGallery").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + info.src +") no-repeat center center / cover", "background-attachment": "fixed"});
+		// Changing HTML
+		$(".pictureGallery").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
+		$(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "</p><hr>");
+		$(".galleryQuote").html("\"" + photoData.quotes + "\"");
     }
 
 		function owlCarouselConfig() {
