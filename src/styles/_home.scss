@@ -1,7 +1,7 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 820vw;
+	width: 940vw;
 	overflow: hidden;
 }
 
@@ -12,16 +12,6 @@
 	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 
-	color: #fff;
-
-	img {
-		position: absolute;
-		height: 20vh;
-		top: 0vh;
-		left: 35vw;
-		transform: rotate(-90deg);
-	}
-
 	.title {
 		width: 100vw;
 		height: 100vh;
@@ -30,14 +20,10 @@
 		overflow: hidden;
 
 		h1 {
-			position: absolute;
-			top: 60vh;
-			left: 10vw;
+			margin: 40vh auto 0 auto;
 		}
 		h2 {
-			position: absolute;
-			top: 70vh;
-			left: 20vw;
+	
 		}
 	}
 }
@@ -73,14 +59,14 @@
 		position: absolute;
 		top: 5vh;
 		left: 60vw;
-		color: hsla(35, 92%, 80%, 1);
+		color: hsla(35, 92%, 100%, 1);
 	}
 }
 
 .homeButtonSection {
 	float: left;
 	height: 100vh;
-	width: 120vw;
+	width: 180vw;
 
 	background: url(./images/backgrounds/personCamera.jpg) no-repeat center center / cover;			
 	
@@ -90,48 +76,38 @@
 		width: 100%;
 	}
 
-
-
 	.buttonDiv {
 		float: left;
 		height: 100vh;
-		width: 40vw;
+		width: 100vw;
 
-		p {
+		h1 {
+			margin: 40vh auto 0 auto;
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+
+		h1.arrow {
+			margin: 0 auto 0 auto;
+			padding: 0 0 0 20vw;
+			transform: rotate(90deg);
+		}
+
+		p {	
+			margin-top: 35vh;
 			color: white;
 		}
 
-		.verticalButton {
+		a:hover {
+			color: white;
+		}
+
+		.verticalText {
 			width: 100vh;
 			height: 40vw;
 			transform: rotate(90deg);
 			transform-origin: 20% 30%;
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-			a:hover {
-				text-decoration: none;
-			}
-		}
-
-		.button {
-			display: block;
-			width: 300px;
-			height: 100px;
-			margin: 40vh auto 0 auto;
-
-			line-height: 100px;
-			vertical-align: center;
-			font-size: 1.5em;
-			text-align: center;
-			color: black;
-
-			border: 2px solid white;
-			border-radius: 10px;
-			background-color: hsla(44, 40%, 65%, 0.7);
-			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-
-			&:hover {
-				background-color: hsla(0, 0%, 100%, 1);
-			}
+			
 		}
 	}
 }

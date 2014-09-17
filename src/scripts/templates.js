@@ -105,7 +105,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</article>\n" +
     "\n" +
     "<section class=\"pictureGallery\">\n" +
-    "	<h1>\"Interesting Quote about something\"</h1>\n" +
+    "	<h1 class=\"galleryQuote\">\"Interesting Quote about something\"</h1>\n" +
     "	<div class=\"conversation clearfix\">\n" +
     "		<hr>\n" +
     "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
@@ -207,7 +207,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
     "			<!-- <img src=\"images/icons/black_arrow.png\" alt=\"\"> -->\n" +
-    "			<h1>// Augmenting Masterpieces // > </h1>\n" +
+    "			<h1>Augmenting Masterpieces --> </h1>\n" +
     "			<h2>\"Humans, The Museum and Technology\"</h2>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
@@ -219,9 +219,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
-    "			<div class=\"verticalButton\">\n" +
-    "				<a href=\"#case-study\"><h1>// Case Study // > </h1></a>\n" +
-    "			</div>\n" +
+    "			<h1> <- Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case </a> &nbsp;&nbsp;&nbsp; Methods -> </h1>\n" +
+    "			<h1 class=\"arrow\"> Study --> </h1>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -254,8 +253,9 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
     "			<div class=\"verticalButton\">\n" +
-    "				<a href=\"#case-study\"><h1>// Prototypes // > </h1></a>\n" +
-    "				<p>(In the making)</p>\n" +
+    "				<h1> <-- Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Proto</a>	 &nbsp;&nbsp;&nbsp; About --> </h1>\n" +
+    "				<h1 class=\"arrow\"> types --> </h1>\n" +
+    "				<p>(available soon)</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +

@@ -21,16 +21,6 @@
 			return data;
 		}
 
-		function calculatingInfographic(data) {
-			// The function that calulates the inforgraphic information and returns the result.
-			var result = "calculation";
-			return result;
-		}
-
-		function InfographicData(result) {
-			// Gets the elements and assigns the width's inline.
-		}
-
     function galleryImages(data) {
     	// Creating append variable.
     	var content = "";
@@ -40,16 +30,19 @@
     	});
 
     	// Appending to HTML and Onclick.
-    	$("#galleryCaseStudy").html(content).on("click", "img", galleryBackgroundChange);
+    	$("#galleryCaseStudy").html(content).on("click", "img", galleryChange);
 
     	// Running Owl.
     	owlCarouselConfig();
+
+
+    	// Need to talk to the quote and other elements
+
     }
 
-    function galleryBackgroundChange(evt) {
-    	// Determine which image from data-tag on element this.
+    function galleryChange(evt) {
+    	// galleryChange
 			var image = $(evt.target);
-
 			var info = {};
 			info.src = image.attr("src");
 			info.data = image.attr("data");
