@@ -219,8 +219,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
-    "			<h1> <- Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case </a> &nbsp;&nbsp;&nbsp; Methods -> </h1>\n" +
-    "			<h1 class=\"arrow\"> Study --> </h1>\n" +
+    "			<h1> <-- Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&nbsp;&nbsp; Methods --> </h1>\n" +
+    "			<h1 class=\"arrow\"> --> </h1>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -253,8 +253,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
     "			<div class=\"verticalButton\">\n" +
-    "				<h1> <-- Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Proto</a>	 &nbsp;&nbsp;&nbsp; About --> </h1>\n" +
-    "				<h1 class=\"arrow\"> types --> </h1>\n" +
+    "				<h1> <-- Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Prototypes</a>	 &nbsp;&nbsp;&nbsp; About --> </h1>\n" +
+    "				<h1 class=\"arrow\"> --> </h1>\n" +
     "				<p>(available soon)</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
@@ -262,7 +262,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
     "		<div class=\"people clearfix\">\n" +
-    "			<h4>// People //</h4>\n" +
+    "			<h4>People</h4>\n" +
     "			<div class=\"person clearfix\">\n" +
     "				<img src=\"\" alt=\"\">\n" +
     "				<p>Johanna Barnbeck</p>\n" +
@@ -285,7 +285,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"timeline\">\n" +
-    "			<h4>// Timeline //</h3>\n" +
+    "			<h4>Timeline</h4>\n" +
     "			<div class=\"theLine\"></div>\n" +
     "			<div class=\"left\">\n" +
     "				<div class=\"singleTimeItem date\"><h4>2014</h4></div>\n" +
@@ -312,7 +312,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
     "			</div>\n" +
     "			<div class=\"right\"> \n" +
-    "				<h4>// Observe //</h4>\n" +
+    "				<h4>Observe</h4>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt esse fuga ipsam, pariatur iusto consectetur, blanditiis dolor distinctio, mollitia facilis totam. Laboriosam labore, cumque, repudiandae voluptate repellat illum id, quaerat eveniet doloribus quis suscipit, quia sapiente quo officiis ipsa. Error delectus veritatis fuga pariatur soluta assumenda ipsum, dicta ex ab, quis facilis totam. Voluptates, vel vitae nostrum accusantium molestias provident impedit enim esse quaerat omnis culpa sit incidunt beatae dolor assumenda tempora laudantium magni, eum, doloremque illum similique fugiat iusto veniam corrupti! Enim veniam ea natus nam rerum ad temporibus debitis sapiente! Perspiciatis, sunt libero amet veniam, eos quis quidem.</p> \n" +
     "			</div>\n" +
     "		</div>\n" +
@@ -321,19 +321,19 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
-    "				<h1>//&nbsp;Augmenting Masterpieces&nbsp;//</h1>\n" +
+    "				<h1><-- Augmenting Masterpieces</h1>\n" +
     "				<h2>Humans, The Museum and Technology</h2>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
     "				<div class=\"connectBoxes\">\n" +
-    "					<h4>// Follow us! //</h4>\n" +
+    "					<h4>Follow us!</h4>\n" +
     "					<ul class=\"socialIcon clearfix\">\n" +
     "						<li class=\"facebook\"></li>\n" +
     "						<li class=\"twitter\"></li>\n" +
     "						<li class=\"google\"></li>\n" +
     "						<li class=\"rss\"></li>\n" +
     "					</ul>\n" +
-    "					<h4> // Mailing list // </h4>\n" +
+    "					<h4> Mailing list </h4>\n" +
     "					<form>\n" +
     "						<label>\n" +
     "							<span> Name: </span><input type=\"text\" name=\"name\">\n" +

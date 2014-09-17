@@ -88,7 +88,7 @@
 
 		h1.arrow {
 			margin: 0 auto 0 auto;
-			padding: 0 0 0 20vw;
+			padding: 0 0 0 10vw;
 			transform: rotate(90deg);
 		}
 
@@ -123,34 +123,70 @@
 		width: 25vw;
 		height: 90vh;
 		margin: 5vh 2.5vw;
-		overflow: scroll;
+		overflow: visible;
 		float: left;
 
 		p {
 			text-align: left;
+			position: relative;
+			
 		}
 
 		h4 {
 			margin-top: 5vh;
 			text-align: left;
+			position: relative;
 		}
 
 		hr {
 			text-align: left;
-			width: 100%;
+			width: 50%;
 			margin: 0 0 1vh 0;
+			position: relative;
 		}
-		
-		// I want a apple time scroller for headers here? Or not? What do I want? This one it too bright and contrasting.
-		// Hmm. I dont like diagonals. Too much work.
-		// Wat do I want? Nature? Patterns? 
-		// Do I want more? Less? How do you make a site feel like glass?
-		// 
 
-		// background: linear-gradient(90deg, hsla(44, 40%, 100%, 0), hsla(44, 40%, 100%, 0.5) 20%, hsla(44, 40%, 100%, 0.5) 80%, hsla(44, 40%, 100%, 0));
-		// box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-
-
+		h4:nth-child(1) {
+			left: 0vw;
+		}
+		hr:nth-child(2) {
+			left: -1vw;
+		}
+		p:nth-child(3) {
+			left: -2vw;
+		}
+		p:nth-child(4) {
+			left: -3vw;
+		}
+		p:nth-child(5) {
+			left: -4vw;
+		}
+		h4:nth-child(6) {
+			left: -5vw;
+		}
+		hr:nth-child(7) {	
+			left: -6vw;
+		}
+		p:nth-child(8) {
+			left: -7vw;
+		}
+		p:nth-child(9) {
+			left: -8vw;
+		}
+		h4:nth-child(10) {
+			left: -9vw;
+		}
+		hr:nth-child(11) {
+			left: -10vw;			
+		}
+		p:nth-child(12) {
+			left: -11vw;	
+		}
+		p:nth-child(13) {
+			left: -12vw;
+		}
+		p:nth-child(14) {
+			left: -13vw;
+		}
 	}
 
 	.methodsContent {
@@ -158,19 +194,8 @@
 		height: 90vh;
 		margin: 5vh 2.5vw;
 		padding: 0 0 0 5vw;
-		// overflow: scroll;
 		float: left;
 		position: relative;
-
-		&:before {
-			content: "";
-			position: absolute;
-			top: 5vh;
-			left: -50vw; 
-			height: 90vh;
-			border-left: 1px solid black;
-			transform: rotate(22.5deg);
-		}
 
 	}
 
@@ -226,8 +251,9 @@
 		top: 15vh;
 		left: -10vw;
 		z-index:1; 
+		// border-radius: 10px;
 
-		background-color: black;
+		background-color: hsla(44, 100%, 0%, 1);
 
 			&:after {
 				content: "";
@@ -255,12 +281,13 @@
 					position: relative;
 					top: 7.5vh;
 					left: 40%;
-					background-color: black;
+					// border-radius: 40px;
+					background-color: hsla(44, 100%, 0%, 1);
 				}
 
 				p {
 					position:relative;
-					top: 11vh;
+					top: 13vh;
 					transform: rotate(-45deg);
 					font-size: 1.5em;
 				}
@@ -283,7 +310,7 @@
 
 			overflow: scroll;
 			
-			background-color: hsla(0, 0%, 100%, 0.8);
+			background-color: hsla(44, 40%, 80%, 0.8);
 			border: 1px solid hsla(0, 0%, 0%, 0.5);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 
@@ -325,7 +352,7 @@
 				float: left;
 				overflow: scroll;
 				
-				background-color: hsla(0, 0%, 100%, 0.8);
+				background-color: hsla(44, 40%, 80%, 0.8);
 				box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 				text-align: center;
 
