@@ -172,22 +172,23 @@
 
 		.conversation {
 			width: 40%;
-			padding: 4%;
+			padding: 2vh;
 			float: left;
 			height: 55vh;
-			overflow: hidden;
+			overflow: scroll;
 			
 			background-image: linear-gradient( 90deg,
 			    hsla(0, 0%, 0%, 1),
 			    hsla(0, 0%, 0%, 0)
 	        );
 
-			p {
+	        p {
+	        	color: white;
+	        	font-size: 1.3em;
+	        }
+
+			p:nth-child(4) {
 				display: block;
-				font-size: 1.3em;
-				color: white;
-				overflow: scroll;
-				height: 35vh;
 			}
 
 			hr {
