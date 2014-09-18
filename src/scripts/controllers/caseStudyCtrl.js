@@ -104,7 +104,7 @@
 		    lazyEffect : "fade",
 		 
 		    //Auto height
-		    autoHeight : true,
+		    autoHeight : false,
 		 
 		    //JSON 
 		    jsonPath : false,

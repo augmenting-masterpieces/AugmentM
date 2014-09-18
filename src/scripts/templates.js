@@ -105,11 +105,10 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</article>\n" +
     "\n" +
     "<section class=\"pictureGallery\">\n" +
-    "	<h1 class=\"galleryQuote\">\"Interesting Quote about something\"</h1>\n" +
+    "	<h1 class=\"galleryQuote\">\"Click a picture\"</h1>\n" +
     "	<div class=\"conversation clearfix\">\n" +
     "		<hr>\n" +
-    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
-    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti cum modi error qui minima nam quae incidunt provident minus et. Neque cumque, totam mollitia illum sed excepturi error expedita. Molestiae.</p>\n" +
+    "		<p>Click a picture</p>\n" +
     "		<hr>\n" +
     "	</div>\n" +
     "	<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\">\n" +
