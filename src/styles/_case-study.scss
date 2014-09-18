@@ -16,143 +16,6 @@
 	}
 }
 
-.casePersons {
-	width: 100vw;
-	padding: 0;
-	background: hsla(0, 0%, 100%, 1);
-
-	.identContainer {
-		width: 70%;
-		margin: 0 auto 0 auto;
-		padding: 2%;
-		background: hsla(0, 0%, 0%, 1);
-		p {
-			color: hsla(0, 0%, 100%, 1);
-		} 
-
-		.nameDiv {
-			width: 30%;
-			height: 75vh;
-			padding: 3%;
-			float: left;
-			color: hsla(0, 0%, 100%, 1);
-
-			img {
-				display: block;
-			 	width: 70%;
-			 	margin: 0 auto;
-			 	padding: 1%;
-			 	border: solid 2px hsla(0, 0%, 100%, 1);
-			 	background-color: hsla(0, 0%, 100%, 1);	
-		    }
-
-		    h2 {
-				text-align: left;
-		    }
-		}
-
-		.statsDiv {
-			width: 70%;
-			min-height: 75vh;
-			display: inline-block;
-			background-color: hsla(0, 0%, 30%, 1);
-			float: left;
-
-			.pictureStats {
-				border-bottom: solid 20px hsla(0, 0%, 0%, 1);
-				
-				.mainPicture {
-					width: 30%;
-					float: left;
-					padding: 15% 0 0 0;
-
-					h2 {
-						margin: 0 0 0 0;
-					} 
-
-					img {
-						display: block;
-						margin: 0 auto;
-						width: 60%;
-					}
-				}
-				.threeCatogoryPicture {
-					width: 70%;
-					float: left;
-
-					img {
-						width: 10%;
-						height: 7.5%;
-						float: left;
-						margin: 5%;
-
-						&.rightPicture {
-							float: right;
-						}
-					}
-
-					.statBar {
-						margin: 5% 5%;
-						float: left;
-						height: 7.5%;
-						width: 50%;
-						background-color: hsla(0, 0%, 100%, 1);
-					}
-					
-					.bar3 {
-						width: 20%;
-					}
-
-					p {
-						margin-top: 3%;
-						text-align: center
-					}
-				}
-			}
-			.timeStats {
-				padding: 3% 3% 5% 3%;
-
-				.time {
-					margin-bottom: 5% 0;
-				}
-				
-				.timeBar {
-					width: 80%;
-					height: 7.5vh;
-					margin: 0 5% 0 0;
-					float: left;
-					background-color: hsla(0, 0%, 100%, 1);
-
-					p {
-						margin: 0;
-						text-align: center;
-						color: hsla(0, 0%, 0%, 1);
-						line-height: 7.5vh;
-						vertical-align: middle;
-					}
-				}
-
-				.timeBarSmall {
-					width: 40%;
-				}
-
-				img {
-					display: inline-block;
-					float: left;
-					margin-right: 5%;
-					width: 10%;
-					height: 7.5vh;
-				}
-
-				p {	
-					margin: 10px 0;
-					color: hsla(0, 0%, 100%, 1);
-				}
-			}
-		}
-	}
-}
-
 .pictureGallery {
 	height: 100vh;
 	width: 100vw;
@@ -284,6 +147,15 @@ article {
 		width: 40%;
 		float: right;
 		padding: 30px;
+	}
+
+	.infographic {
+		background-color: grey;
+		width: 40%;
+		height: 600px;
+		padding: 0;
+		float: left;
+		margin: 30px;
 	}
 }
 
