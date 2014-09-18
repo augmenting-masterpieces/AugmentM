@@ -25,6 +25,11 @@
 		h2 {
 	
 		}
+		p {
+			width: 60vw;
+			color: white;
+			margin: 5vh auto;
+		}
 	}
 }
 
@@ -43,7 +48,6 @@
 	height: 100vh;
 	padding: 0 10vw;
 	float: left;
-
 	position: relative;
 	
 	background: linear-gradient(90deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 0) 20%, hsla(44, 40%, 65%, 0) 80%, hsla(44, 40%, 65%, 1)), linear-gradient(hsla(44, 40%, 65%, 0.8), hsla(44, 40%, 65%, 0.8)), url('../images/backgrounds/milkmaid.jpg') no-repeat center center / cover;
@@ -58,7 +62,8 @@
 	h2 {
 		position: absolute;
 		top: 5vh;
-		left: 60vw;
+		left: 30vw;
+		width: 80vw;
 		color: hsla(35, 92%, 100%, 1);
 	}
 }
@@ -92,6 +97,12 @@
 			transform: rotate(90deg);
 		}
 
+		h2 {
+			margin: 20vh 0 0 0;
+			width: 40vw;
+			color: white;
+		}
+
 		p {	
 			margin-top: 35vh;
 			color: white;
@@ -99,15 +110,6 @@
 
 		a:hover {
 			color: white;
-		}
-
-		.verticalText {
-			width: 100vh;
-			height: 40vw;
-			transform: rotate(90deg);
-			transform-origin: 20% 30%;
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-			
 		}
 	}
 }

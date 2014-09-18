@@ -210,12 +210,13 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"title\">\n" +
     "			<!-- <img src=\"images/icons/black_arrow.png\" alt=\"\"> -->\n" +
     "			<h1>Augmenting Masterpieces --> </h1>\n" +
-    "			<h2>\"Humans, The Museum and Technology\"</h2>\n" +
+    "			<h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2>\n" +
+    "			<p>Augmenting Masterpieces is interested in finding ways of reducing the gap between academic research and creative production, while doing justice to the different modes of generating knowledge and objects. We explore visitors' experiences and the social dimensions of a museum. We ideate and prototype a digital interface that connects the physical and digital collection. We combine interdisciplinary methods and expertise. To create a very basic prerequisite for the visitors' art reception.</p>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
-    "		<h2 class=\"quote\">\"Im a very very pretty Quote\"</h2>\n" +
+    "		<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, and a smaller cohort of visitors taking photos of object labels, and we’ve all seen families struggle with the anti-social nature of audioguides.\" - Seb Chan</h2>\n" +
     "		<video src=\"../video/AM_background_test.mp4\" controls class=\"introVid\"></video>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
@@ -223,6 +224,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"buttonDiv\">\n" +
     "			<h1> <-- Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&nbsp;&nbsp; Methods --> </h1>\n" +
     "			<h1 class=\"arrow\"> --> </h1>\n" +
+    "			<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
@@ -230,9 +232,11 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"methodsList\">\n" +
     "			<h4>Methods</h4>\n" +
     "			<hr>\n" +
-    "			<p>Digital Humanities</p>\n" +
+    "			<p>Interdisciplinary Approach</p>\n" +
+    "			<p>Embedded Research</p>\n" +
     "			<p>Artistic Research</p>\n" +
     "			<p>Design Thinking</p>\n" +
+    "			<p>Digital Humanities</p>\n" +
     "			<h4>Video</h4>\n" +
     "			<hr>\n" +
     "			<p>Number One</p>\n" +
@@ -247,8 +251,16 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p> -->\n" +
     "		</div>\n" +
     "		<div class=\"methodsContent\">\n" +
+    "			<h4>Interdisciplinary Approach (method)</h4>\n" +
+    "			<p>Embedded research projects who stimulate collaborations between the creative industries and university research enable new forms of research. As do Artistic Research, Design Thinking and Digital Humanities. Each of them is a rather new discipline of itself. In order to do justice to the new goals of not only theoretically investigate, but also practically implement research results within the same project, a new set of tools and possible forms for output are necessary. The methodological combination of the above mentioned toolboxes guarantees an adequate interdisciplinary assemblage of techniques and media. Whereas Artistic Research allows to creatively and practically work with post-modern theories, the Design Thinking approach gives access to co-creation frameworks and user innovation while building a product-oriented bridge between research and prototype. The overarching question of how digitality enters musea through which technology nowadays.  </p>\n" +
+    "			<h4>Embedded Research (method)</h4>\n" +
+    "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
+    "			<h4>Artistic Research (method)</h4>\n" +
+    "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
+    "			<h4>Design Thinking (method)</h4>\n" +
+    "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
     "			<h4>Digital Humanities (method)</h4>\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa magnam quas id illum tenetur quam qui ducimus provident, hic laborum harum odit at tempore aliquid sunt minima temporibus architecto ad porro molestias voluptates doloremque. Perferendis veniam dolores, quasi pariatur. Ut voluptate mollitia numquam consectetur provident vero dolorum eos deleniti! Autem fuga suscipit, ipsam possimus doloribus distinctio illo laborum placeat id minima quod quos pariatur reiciendis tempore eveniet officiis ea, optio. Ipsam consequatur eum impedit fugiat, voluptates nihil eveniet optio, neque assumenda quo est soluta aspernatur vitae temporibus reiciendis sit officia iure repellat maxime molestiae! Numquam eveniet ullam fuga vero delectus?</p>\n" +
+    "			<p>This project approaches the collection of the Rijksmuseum primarily as data rather than artworks. This is in no way an attempt to diminish the value of the painting, but rather a shift in perspective in order to discover new ways of interacting and discovering hidden treasures in these famous artworks. This project aims at building a bridge between the practical dimensions of datavisualisation and interaction design on the one hand, and the theoretical concerns of art history and audience studies on the other. Practices of visualisation seem to be an excellent fit for the humanities.  </p>\n" +
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
