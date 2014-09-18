@@ -105,14 +105,17 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</article>\n" +
     "\n" +
     "<section class=\"pictureGallery\">\n" +
-    "	<h1 class=\"galleryQuote\">\"Click a picture\"</h1>\n" +
-    "	<div class=\"conversation clearfix\">\n" +
-    "		<hr>\n" +
-    "		<p>Click a picture</p>\n" +
-    "		<hr>\n" +
+    "	<div class=\"top\">\n" +
+    "		<div class=\"conversation clearfix\">\n" +
+    "			<hr>\n" +
+    "			<p>Click a picture</p>\n" +
+    "			<hr>\n" +
+    "		</div>\n" +
+    "		<h2 class=\"galleryQuote clearfix\">\"Click a picture\"</h2>\n" +
     "	</div>\n" +
-    "	<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\">\n" +
-    "	</div>	\n" +
+    "	<div class=\"bottom\">\n" +
+    "		<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\"></div>	\n" +
+    "	</div>\n" +
     "</div>\n" +
     "\n" +
     "</section>\n" +
