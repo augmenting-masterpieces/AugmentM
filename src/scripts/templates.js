@@ -163,18 +163,10 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<p>Artistic Research</p>\n" +
     "			<p>Design Thinking</p>\n" +
     "			<p>Digital Humanities</p>\n" +
-    "			<h4>Video</h4>\n" +
+    "			<h4>References</h4>\n" +
     "			<hr>\n" +
-    "			<p>Number One</p>\n" +
-    "			<p>Number Two</p>\n" +
-    "			<h4>Literature</h4>\n" +
-    "			<hr>\n" +
-    "			<p>Artikel 1</p>\n" +
-    "			<p>Artikel 2</p>\n" +
-    "			<p>Artikel 3</p>\n" +
-    "			<!-- <p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p>\n" +
-    "			<p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p>\n" +
-    "			<p>Achternaam, Voornaam. Titel Artikel. Publicatie, datum.</p> -->\n" +
+    "			<p>Literature</p>\n" +
+    "			<p>Videogallery</p>\n" +
     "		</div>\n" +
     "		<div class=\"methodsContent\">\n" +
     "			<h4>Interdisciplinary Approach (method)</h4>\n" +

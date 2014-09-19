@@ -61,10 +61,11 @@
 
 	h2 {
 		position: absolute;
-		top: 5vh;
+		top: 3vh;
 		left: 30vw;
 		width: 80vw;
 		color: hsla(35, 92%, 100%, 1);
+		font-size: 1.3em;
 	}
 }
 
@@ -98,7 +99,7 @@
 		}
 
 		h2 {
-			margin: 20vh 0 0 0;
+			margin: 10vh 0 0 0;
 			width: 40vw;
 			color: white;
 		}
@@ -163,32 +164,23 @@
 		p:nth-child(5) {
 			left: -4vw;
 		}
-		h4:nth-child(6) {
+		p:nth-child(6) {
 			left: -5vw;
 		}
-		hr:nth-child(7) {	
+		p:nth-child(7) {	
 			left: -6vw;
 		}
-		p:nth-child(8) {
+		h4:nth-child(8) {
 			left: -7vw;
 		}
-		p:nth-child(9) {
+		hr:nth-child(9) {
 			left: -8vw;
 		}
-		h4:nth-child(10) {
+		p:nth-child(10) {
 			left: -9vw;
 		}
-		hr:nth-child(11) {
+		p:nth-child(11) {
 			left: -10vw;			
-		}
-		p:nth-child(12) {
-			left: -11vw;	
-		}
-		p:nth-child(13) {
-			left: -12vw;
-		}
-		p:nth-child(14) {
-			left: -13vw;
 		}
 	}
 
