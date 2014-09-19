@@ -3,14 +3,9 @@ angular.module('templates-cth', ['templates/case-study.html', 'templates/experim
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
     "<section class=\"caseTop\">\n" +
-    "	<div class=\"designDiv\"></div>\n" +
-    "	<div class=\"mainDiv\">\n" +
-    "		<hr>\n" +
-    "		<h1> Case Study </h1>\n" +
-    "		<h2> User Camera Study </h2>\n" +
-    "		<hr>\n" +
-    "	</div>\n" +
-    "	<div class=\"designDiv2\"></div>\n" +
+    "	<h1> &#8592;&nbsp; <a href=\"#home\">Video</a> &nbsp;&nbsp;&nbsp;  Case Study  &nbsp;&nbsp;&nbsp; <a href=\"#home\">Methods</a> &nbsp;&#8594; </h1>\n" +
+    "	<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
+    "	<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "</section>\n" +
     "<section class=\"blackTransition small\">\n" +
     "<!-- 	<hr>\n" +
@@ -135,7 +130,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
     "			<!-- <img src=\"images/icons/black_arrow.png\" alt=\"\"> -->\n" +
-    "			<h1>Augmenting Masterpieces --> </h1>\n" +
+    "			<h1>Augmenting Masterpieces &nbsp;&#8594; </h1>\n" +
     "			<h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2>\n" +
     "			<p>Augmenting Masterpieces is interested in finding ways of reducing the gap between academic research and creative production, while doing justice to the different modes of generating knowledge and objects. We explore visitors' experiences and the social dimensions of a museum. We ideate and prototype a digital interface that connects the physical and digital collection. We combine interdisciplinary methods and expertise. To create a very basic prerequisite for the visitors' art reception.</p>\n" +
     "		</div>\n" +
@@ -148,8 +143,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
-    "			<h1> <-- Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&nbsp;&nbsp; Methods --> </h1>\n" +
-    "			<h1 class=\"arrow\"> --> </h1>\n" +
+    "			<h1> &#8592;&nbsp; Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&nbsp;&nbsp; Methods &nbsp;&#8594; </h1>\n" +
+    "			<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "			<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "		</div>\n" +
     "	</section>\n" +
@@ -183,8 +178,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeButtonSection homePrototype\">\n" +
     "		<div class=\"buttonDiv\">\n" +
     "			<div class=\"verticalButton\">\n" +
-    "				<h1> <-- Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Prototypes</a>	 &nbsp;&nbsp;&nbsp; About --> </h1>\n" +
-    "				<h1 class=\"arrow\"> --> </h1>\n" +
+    "				<h1> &#8592;&nbsp; Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Prototypes</a>	 &nbsp;&nbsp;&nbsp; About &nbsp;&#8594; </h1>\n" +
+    "				<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "				<p>(available soon)</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
@@ -251,7 +246,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
-    "				<h1><-- Augmenting Masterpieces</h1>\n" +
+    "				<h1>&#8592;&nbsp; Augmenting Masterpieces</h1>\n" +
     "				<h2>Humans, The Museum and Technology</h2>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
