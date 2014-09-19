@@ -170,6 +170,10 @@
 
 		p {
 			text-align: left;
+		}
+
+		span {
+			display: inline-block;
 			transform: skew(22.5deg,0deg);
 		}
 
@@ -234,7 +238,6 @@
 		top: 15vh;
 		left: -10vw;
 		z-index:1; 
-		// border-radius: 10px;
 
 		background-color: hsla(44, 100%, 0%, 1);
 
@@ -264,7 +267,6 @@
 					position: relative;
 					top: 7.5vh;
 					left: 40%;
-					// border-radius: 40px;
 					background-color: hsla(44, 100%, 0%, 1);
 				}
 
@@ -330,10 +332,10 @@
 			
 			.connectBoxes {
 				width: 400px;
-				height: 50vh;
+				// height: 50vh;
 				padding: 20px;
 				float: left;
-				overflow: scroll;
+				// overflow: scroll;
 				
 				background-color: hsla(44, 40%, 80%, 0.8);
 				box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
