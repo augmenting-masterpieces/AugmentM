@@ -152,7 +152,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<h1 class=\"arrow\"> --> </h1>\n" +
     "			<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "		</div>\n" +
-    "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsList\">\n" +
@@ -182,7 +181,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
-    "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
     "			<div class=\"verticalButton\">\n" +
     "				<h1> <-- Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Prototypes</a>	 &nbsp;&nbsp;&nbsp; About --> </h1>\n" +

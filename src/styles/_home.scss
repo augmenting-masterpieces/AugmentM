@@ -123,80 +123,63 @@
 
 .homeMethods {
 	float: left;
-	width: 0vw;
+	width: 100vw;
 	height: 100vh;
-
-	background-color: hsla(44, 40%, 65%, 1);
+	position: relative;
+	background-color: hsla(44, 40%, 100%, 1);
 	
 	.methodsList {
-		width: 0vw;
-		height: 90vh;
-		margin: 5vh 2.5vw;
+		width: 30vw;
+		height: 100vh;
+		padding: 5vh 5vw;
 		overflow: visible;
 		float: left;
 		white-space: nowrap;
+		transform: skew(-22.5deg,0deg);
+		background-color: hsla(44, 40%, 65%, 1);
+		position: absolute;
+		left: -15vw;
 
 		p {
 			text-align: left;
-			position: relative;
-			
+			transform: skew(22.5deg,0deg);
 		}
 
 		h4 {
 			margin-top: 5vh;
 			text-align: left;
-			position: relative;
+			transform: skew(22.5deg,0deg);
 		}
 
 		hr {
 			text-align: left;
 			width: 50%;
 			margin: 0 0 1vh 0;
-			position: relative;
-		}
-
-		h4:nth-child(1) {
-			left: 0vw;
-		}
-		hr:nth-child(2) {
-			left: -1vw;
-		}
-		p:nth-child(3) {
-			left: -2vw;
-		}
-		p:nth-child(4) {
-			left: -3vw;
-		}
-		p:nth-child(5) {
-			left: -4vw;
-		}
-		p:nth-child(6) {
-			left: -5vw;
-		}
-		p:nth-child(7) {	
-			left: -6vw;
-		}
-		h4:nth-child(8) {
-			left: -7vw;
-		}
-		hr:nth-child(9) {
-			left: -8vw;
-		}
-		p:nth-child(10) {
-			left: -9vw;
-		}
-		p:nth-child(11) {
-			left: -10vw;			
+			transform: skew(22.5deg,0deg);
 		}
 	}
 
 	.methodsContent {
-		width: 65vw;
-		height: 90vh;
-		margin: 5vh 2.5vw;
-		padding: 0 0 0 5vw;
+		width: 60vw;
+		height: 100vh;
+		padding: 5vh 10vw;
 		float: left;
 		position: relative;
+		transform: skew(-22.5deg,0deg);
+		left: 25vw;
+		background-color: hsla(44, 40%, 65%, 1);
+		overflow: scroll;
+
+		p {
+			text-align: left;
+			transform: skew(22.5deg,0deg);
+		}
+
+		h4 {
+			margin-top: 40px;
+			text-align: left;
+			transform: skew(22.5deg,0deg);
+		}
 
 	}
 
@@ -206,6 +189,7 @@
 .homePrototype {
 	background: url('./images/backgrounds/nachtwacht.jpg') no-repeat center center / cover;
 	text-align: center;
+	padding-left: 40vw;
 }
 
 .homeAbout {
