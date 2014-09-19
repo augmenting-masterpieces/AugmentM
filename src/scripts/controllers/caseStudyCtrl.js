@@ -51,8 +51,8 @@
 
 		// Changing HTML
 		$(".pictureGallery").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
-		$(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "</p><p> Title: " + photoData.name + "</p><p>Tag: " + photoData.tags[0] + "</p><hr>");
-		$(".galleryQuote").html("\"" + photoData.quotes + "\"");
+		$(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "<br><br> Title: " + photoData.name + "<br>Tag: " + photoData.tags[0] + "</p><hr>");
+		if (photoData.quotes !== null) {$(".galleryQuote").html("\"" + photoData.quotes + "\"");} else {$(".galleryQuote").html("");}
     }
 
 		function owlCarouselConfig() {
