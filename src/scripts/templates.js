@@ -125,13 +125,13 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
-    "			<div class=\"logos\">\n" +
-    "				<img src=\"./images/logos/uvalogo.png\">\n" +
-    "				<img src=\"./images/logos/rijks.png\">\n" +
-    "			</div>\n" +
     "			<h1>Augmenting Masterpieces &nbsp;&#8594; </h1>\n" +
     "			<!-- <h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2> -->\n" +
     "			<p>Augmenting Masterpieces is interested in finding ways of reducing the gap between academic research and creative production, while doing justice to the different modes of generating knowledge and objects. We explore visitors' experiences and the social dimensions of a museum. We ideate and prototype a digital interface that connects the physical and digital collection. We combine interdisciplinary methods and expertise. To create a very basic prerequisite for the visitors' art reception.</p>\n" +
+    "			<div class=\"logos\">\n" +
+    "				<img src=\"./images/logos/uvalogowhite.png\">\n" +
+    "				<img src=\"./images/logos/rijkswhite.png\">\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +

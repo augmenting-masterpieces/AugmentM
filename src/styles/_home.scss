@@ -18,24 +18,8 @@
 		float: left;
 		overflow: hidden;
 
-		.logos {
-			display: block;
-			width: 93vw;
-			margin: 10vh auto 19vh auto;
-
-			img {
-				height: 10vh;
-				padding: 2.5vh 2.5vw;
-				margin: 0 5vw;
-				background-image: radial-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0) 75%, hsla(44, 40%, 80%, 0));
-
-				// background-color: hsla(44, 40%, 80%, 0.8);
-			}
-
-		}
-
 		h1 {
-			margin: 0 auto 0 auto;
+			margin: 40vh auto 0 auto;
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		}
 		h2 {
@@ -44,11 +28,26 @@
 		p {
 			width: 60vw;
 			padding: 2.5vh 2.5vw;
-			margin: 10vh auto;
+			margin: 7.5vh auto 5vh auto;
 			
 			color: black;
 			background-color: hsla(44, 40%, 80%, 0.8);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+		}
+
+		.logos {
+			display: block;
+			width: 91vw;
+			margin: 0 auto;
+			// margin: 10vh auto 19vh auto;
+
+			img {
+				height: 10vh;
+				padding: 2.5vh 2.5vw;
+				margin: 0 5vw;
+				// background-image: radial-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0) 75%, hsla(44, 40%, 80%, 0));
+			}
+
 		}
 	}
 }
@@ -184,11 +183,11 @@
 
 		p {
 			text-align: left;
+			transform: skew(22.5deg,0deg);
 		}
 
 		span {
 			display: inline-block;
-			transform: skew(22.5deg,0deg);
 		}
 
 		h4 {
