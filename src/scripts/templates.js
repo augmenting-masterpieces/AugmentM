@@ -8,12 +8,6 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "</section>\n" +
     "<section class=\"blackTransition small\">\n" +
-    "<!-- 	<hr>\n" +
-    "	<h2> A collaboration between:</h2>\n" +
-    "	<img src=\"./images/logos/uvalogowhite.png\">\n" +
-    "	<img src=\"./images/logos/rijkswhite.png\">\n" +
-    "	<h2>Jan Hein Hoogstad - Johanna Barnbeck - Shailoh Philips</h2>\n" +
-    "	<hr> -->\n" +
     "</section>\n" +
     "<article >\n" +
     "	<hr>\n" +
@@ -131,9 +125,12 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
-    "			<!-- <img src=\"images/icons/black_arrow.png\" alt=\"\"> -->\n" +
+    "			<div class=\"logos\">\n" +
+    "				<img src=\"./images/logos/uvalogo.png\">\n" +
+    "				<img src=\"./images/logos/rijks.png\">\n" +
+    "			</div>\n" +
     "			<h1>Augmenting Masterpieces &nbsp;&#8594; </h1>\n" +
-    "			<h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2>\n" +
+    "			<!-- <h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2> -->\n" +
     "			<p>Augmenting Masterpieces is interested in finding ways of reducing the gap between academic research and creative production, while doing justice to the different modes of generating knowledge and objects. We explore visitors' experiences and the social dimensions of a museum. We ideate and prototype a digital interface that connects the physical and digital collection. We combine interdisciplinary methods and expertise. To create a very basic prerequisite for the visitors' art reception.</p>\n" +
     "		</div>\n" +
     "		<div class=\"whiteTransition\"></div>\n" +
