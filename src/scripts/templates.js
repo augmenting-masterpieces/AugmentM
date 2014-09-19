@@ -44,10 +44,12 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<div class=\"top\">\n" +
     "		<div class=\"conversation clearfix\">\n" +
     "			<hr>\n" +
-    "			<p>Click a picture</p>\n" +
+    "			<p>Het vliegtuig is alleen maar bijzonder omdat er een vliegtuig staat op n plek waar op geen enkele manier een vliegtuig binnen kan komen. Je weet niet hoe het daar is gekomen, je begrijpt alleen dat het heel lastig wordt als je de tentoonstelling ooit wilt veranderen. Om het er weer uit te krijgen. Aan het begin vond ik het in deze zaal heel fijn dat er muziek op de achtergrond is omdat alles is stil en iedereen is soort van panisch geruisloos en.. gehoorsam. Later gingen wij naar de etsen en schetsen en dan stoort het mij wel weer. Dat het daar aanstaat. Want het heeft een betrekking tot een totaal andere gedeelte van die vloer waardoor het eigenlijk op dat moment van functioneel naar niet functioneel gaat.<br><br>\n" +
+    "			Title: Airplane<br>\n" +
+    "			Tag: object (exhibit)</p>\n" +
     "			<hr>\n" +
     "		</div>\n" +
-    "		<h2 class=\"galleryQuote clearfix\">\"Click a picture\"</h2>\n" +
+    "		<h2 class=\"galleryQuote clearfix\">\"...alles is stil en iedereen is soort van panisch geruisloos en.. gehoorsam.\"</h2>\n" +
     "	</div>\n" +
     "	<div class=\"bottom\">\n" +
     "		<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\"></div>	\n" +
