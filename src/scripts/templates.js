@@ -133,19 +133,17 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<img src=\"./images/logos/rijkswhite.png\">\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
-    "		<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, and a smaller cohort of visitors taking photos of object labels, and we’ve all seen families struggle with the anti-social nature of audioguides.\" - Seb Chan</h2>\n" +
-    "		<video src=\"../video/AM_background_test.mp4\" controls class=\"introVid\"></video>\n" +
+    "		<div class=\"contents\">\n" +
+    "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, and a smaller cohort of visitors taking photos of object labels, and we’ve all seen families struggle with the anti-social nature of audioguides.\" - Seb Chan</h2>\n" +
+    "			<video src=\"../video/AM_background_test.mp4\" controls></video>\n" +
+    "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
-    "		<div class=\"whiteTransition inverse\"></div>\n" +
-    "		<div class=\"buttonDiv\">\n" +
-    "			<h1> &#8592;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&#8594; </h1>\n" +
-    "			<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
-    "			<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
-    "		</div>\n" +
+    "		<h1> &#8592;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&#8594; </h1>\n" +
+    "		<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
+    "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsList\">\n" +
@@ -182,7 +180,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<p>(available soon)</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
-    "		<div class=\"whiteTransition\"></div>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
     "		<div class=\"people clearfix\">\n" +
@@ -242,7 +239,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeConnect\">\n" +
-    "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
     "				<h1>&#8592;&nbsp; Augmenting Masterpieces</h1>\n" +

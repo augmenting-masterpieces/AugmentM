@@ -1,14 +1,15 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 880vw;
+	width: 990vw;
 	overflow: hidden;
 }
 
 .homeHeader {
 	float: left;
 	height: 100vh;
-	width: 140vw;
+	width: 210vw;
+	padding: 0 70vw 0 0vw;
 	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 
@@ -28,7 +29,7 @@
 		p {
 			width: 60vw;
 			padding: 2.5vh 2.5vw;
-			margin: 7.5vh auto 5vh auto;
+			margin: 5vh auto 5vh auto;
 			
 			color: black;
 			background-color: hsla(44, 40%, 80%, 0.8);
@@ -37,119 +38,115 @@
 
 		.logos {
 			display: block;
-			width: 91vw;
+			width: 81vw;
 			margin: 0 auto;
-			// margin: 10vh auto 19vh auto;
 
 			img {
-				height: 10vh;
-				padding: 2.5vh 2.5vw;
+				width: 30vw;
 				margin: 0 5vw;
-				// background-image: radial-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0) 75%, hsla(44, 40%, 80%, 0));
 			}
 
 		}
 	}
 }
 
-.whiteTransition {
-	background-image: linear-gradient(112.5deg, hsla(44, 40%, 65%, 0), hsla(44, 40%, 65%, 0) 50%, hsla(44, 40%, 65%, 1) 50%);
-	width: 40vw;
-	height: 100vh;
-	float: left;
-	&.inverse {
-		background-image: linear-gradient(112.5deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 1) 50%, hsla(44, 40%, 65%, 0) 50%);
-	}
-}
-
 .homeVideo {	
-	width: 100vw;
-	height: 100vh;
-	padding: 0 10vw;
+	width: 0vw;
 	float: left;
 	position: relative;
+	left: -70vw;
+	transform: skew(-22.5deg,0deg);
 	
-	background: linear-gradient(90deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 0) 20%, hsla(44, 40%, 65%, 0) 80%, hsla(44, 40%, 65%, 1)), linear-gradient(hsla(44, 40%, 65%, 0.8), hsla(44, 40%, 65%, 0.8)), url('../images/backgrounds/milkmaid.jpg') no-repeat center center / cover;
-
-
-	.introVid {
-		width: 100%;
-		height: 60vh;
-		margin: 20vh auto;
+	&:before {
+		content: "";
+		width: 140vw;
+		height: 100vh;
+		position: absolute;
+		background-color: hsla(44, 40%, 65%, 1);		
 	}
 
-	h2 {
+	.contents {
+		width: 100vw;
+		height: 100vh;
 		position: absolute;
-		top: 3vh;
-		left: 30vw;
-		width: 80vw;
-		color: hsla(35, 92%, 100%, 1);
-		font-size: 1.3em;
+		left: 20vw;
+		background-color: hsla(44, 40%, 80%, 1);		
+
+		video {
+			width: 60vw;
+			margin: 20vh 20vw;
+			transform: skew(22.5deg,0deg);
+		}
+
+		h2 {
+			position: absolute;
+			top: 3vh;
+			left: 30vw;
+			width: 80vw;
+			font-size: 1.3em;
+			transform: skew(22.5deg,0deg);
+		}
 	}
 }
 
 .homeButtonSection {
 	float: left;
 	height: 100vh;
-	width: 200vw;
+	width: 270vw;
+	padding: 0 70vw 0 70vw;
 
 	background: url(./images/backgrounds/personCamera.jpg) no-repeat center center / cover;			
-	
-	video {
-		position: absolute;
-		height: 100%;
-		width: 100%;
+
+	h1 {
+		margin: 40vh auto 0 auto;
+		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 	}
 
-	.buttonDiv {
-		float: left;
-		height: 100vh;
-		width: 100vw;
+	h1.arrow {
+		margin: 10vh auto 0 auto;
+	}
 
-		h1 {
-			margin: 40vh auto 0 auto;
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-		}
+	h2 {
+		margin: 10vh 0 0 0;
+		width: 40vw;
+		color: white;
+		font-size: 1.3em;
+	}
 
-		h1.arrow {
-			margin: 10vh auto 0 auto;
-		}
+	p {	
+		margin-top: 35vh;
+		color: white;
+	}
 
-		h2 {
-			margin: 10vh 0 0 0;
-			width: 40vw;
-			color: white;
-			font-size: 1.3em;
-		}
-
-		p {	
-			margin-top: 35vh;
-			color: white;
-		}
-
-		a:hover {
-			color: white;
-		}
+	a:hover {
+		color: white;
 	}
 }
 
 .homeMethods {
-	float: left;
 	width: 0vw;
-	height: 100vh;
+	float: left;
 	position: relative;
-	background-color: hsla(44, 40%, 100%, 1);
-	
+	left: -70vw;
+
+	transform: skew(-22.5deg,0deg);
+
+	&:before {
+		content: "";
+		width: 140vw;
+		height: 100vh;
+		position: absolute;
+		background-color: hsla(44, 40%, 65%, 1);
+	}
+
 	.methodsList {
 		width: 30vw;
 		height: 100vh;
 		padding: 5vh 5vw;
-		overflow: visible;
-		float: left;
-		transform: skew(-22.5deg,0deg);
-		background-color: hsla(44, 40%, 65%, 1);
 		position: absolute;
-		left: -55vw;
+		left: 20vw;
+
+		background-color: hsla(44, 40%, 80%, 1);
 
 		p {
 			text-align: left;
@@ -174,11 +171,9 @@
 		width: 60vw;
 		height: 100vh;
 		padding: 5vh 10vw;
-		float: left;
-		position: relative;
-		transform: skew(-22.5deg,0deg);
-		left: -15vw;
-		background-color: hsla(44, 40%, 65%, 1);
+		position: absolute;
+		left: 60vw;
+		background-color: hsla(44, 40%, 80%, 1);
 		overflow: scroll;
 
 		p {
@@ -195,16 +190,14 @@
 			text-align: left;
 			transform: skew(22.5deg,0deg);
 		}
-
 	}
-
-
 }
 
 .homePrototype {
 	background: url('./images/backgrounds/_W4A3567.JPG') no-repeat center center / cover;
-	text-align: center;
-	padding-left: 60vw;
+	padding: 0 0 0 70vw;
+	position: relative;
+	z-index: -100;
 }
 
 .homeAbout {
