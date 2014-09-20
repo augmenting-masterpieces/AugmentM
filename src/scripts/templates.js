@@ -142,7 +142,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeButtonSection\">\n" +
     "		<div class=\"whiteTransition inverse\"></div>\n" +
     "		<div class=\"buttonDiv\">\n" +
-    "			<h1> &#8592;&nbsp; Video &nbsp;&nbsp;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&nbsp;&nbsp; Methods &nbsp;&#8594; </h1>\n" +
+    "			<h1> &#8592;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&#8594; </h1>\n" +
     "			<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "			<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "		</div>\n" +
