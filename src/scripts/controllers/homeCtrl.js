@@ -6,7 +6,7 @@
 	function HomeCtrl(){
 	    var vm = this;
 
-	   //  spanTextForSkew();
+	    spanTextForSkew();
 
 	   //  function spanTextForSkew() {
 	   //  	var words = [];
@@ -25,6 +25,24 @@
 				// count++;
 		  //   }); 	
 	   //  }
+
+	   	function spanTextForSkew() {
+	    	var words = [];
+		    $(".right p").each(function(){
+		    	words.push($(this).text().split(" "));
+		    });
+		    $(".right p").empty();
+
+		    var count = 1;
+		    $(words).each(function(){
+		    	for (var i=0; i<this.length; i++){
+			        if (this[i]!=='') {
+			            $(".right p:nth-of-type(" + count + " )").append("<span>"+this[i]+"</span> ");
+		        	}
+				}
+				count++;
+		    }); 	
+	    }
 
 	    return vm;
 	}

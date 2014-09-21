@@ -1,7 +1,7 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 990vw;
+	width: 950vw;
 	overflow: hidden;
 }
 
@@ -82,7 +82,7 @@
 			position: absolute;
 			top: 3vh;
 			left: 30vw;
-			width: 80vw;
+			width: 70vw;
 			font-size: 1.3em;
 			transform: skew(22.5deg,0deg);
 		}
@@ -114,8 +114,9 @@
 	}
 
 	p {	
-		margin-top: 35vh;
+		margin-top: 25vh;
 		color: white;
+		text-align: center;
 	}
 
 	a:hover {
@@ -195,57 +196,84 @@
 
 .homePrototype {
 	background: url('./images/backgrounds/_W4A3567.JPG') no-repeat center center / cover;
-	padding: 0 0 0 70vw;
-	position: relative;
-	z-index: -100;
 }
 
 .homeAbout {
-	width: 100vw;
+	width: 0vw;
 	height: 100vh;
 	float: left;
-	
+	transform: skew(-22.5deg,0deg);
+	position: relative;
+	left: -70vw;
+
 	background-color: hsla(44, 40%, 65%, 1);
+	
+	&:before {
+		content: "";
+		width: 140vw;
+		height: 100vh;
+		position: absolute;
+		background-color: hsla(44, 40%, 65%, 1);
+		z-index: -1000;
+	}
 
 	.people {
-		width: 100%;
-		height: 40vh;
-		padding: 5vh 10vw;
+		width: 100vw;
+		height: 35vh;
+		padding: 2.5vh 2.5vw;
+		margin: 5vh 20vw;
+		background-color: hsla(44, 40%, 80%, 1);
+	
+		h4 {
+			transform: skew(22.5deg,0deg);
+			margin-bottom: 1vh;
+		}
 
 		.person {
-			width: 15%;
-			height: 15%;
-			margin: 5% 2.5%;
+			width: 15vw;
+			height: 15vh;
+			margin: 5vh 2vw;
 			float: left; 
+			transform: skew(22.5deg,0deg);
 		}
 
 		img {
-			width: 80%;
-			height: 80px;
+			display: block;
+			width: 60%;
+			height: 80%;
+			margin: 0 auto;
 			background: hsla(0, 0%, 0%, 1);
+
 		}
 	}
 
 	.timeline {
-		height: 55vh;
+		height: 50vh;
 		width: 100vw;
+		margin: 5vh 20vw;
+		padding: 2.5vh 2.5vw;
+		
 		position: relative;
-		margin-top: 5vh;
 
-		h4 {
+		background-color: hsla(44, 40%, 80%, 1);
+
+		h4.timelineTitle {
 			height: 5vh;
-			margin: 0;
+			margin: 0 0 0 25vw;
+			text-align: left;
+			transform: skew(22.5deg,0deg);
 		}
 
 		.theLine {
-		width: 145vw;
-		height: 2.5vh;
-		position: absolute;
-		top: 15vh;
-		left: -10vw;
-		z-index:1; 
+			width: 145vw;
+			height: 2.5vh;
+			position: absolute;
+			top: 15vh;
+			left: -10vw;
+			z-index:1; 
+			transform: skew(22.5deg,0deg);
 
-		background-color: hsla(44, 100%, 0%, 1);
+			background-color: hsla(44, 100%, 0%, 1);
 
 			&:after {
 				content: "";
@@ -258,7 +286,7 @@
 		}
 
 		.left {
-			width: 55vw;
+			width: 65vw;
 			height: 60vh;
 			float: left;
 
@@ -271,23 +299,29 @@
 					height: 7.5vh;
 					width: 20%;
 					position: relative;
-					top: 7.5vh;
+					top: 5vh;
 					left: 40%;
 					background-color: hsla(44, 100%, 0%, 1);
+					transform: skew(22.5deg,0deg);
+
 				}
 
 				p {
 					position:relative;
-					top: 13vh;
-					transform: rotate(-45deg);
+					top: 9vh;
+					left: 2vw;
 					font-size: 1.5em;
+					transform: skew(22.5deg,0deg) rotate(-45deg);
+				}
+
+				h4 {
+					position: relative;
+					top: 11.5vh;
+					transform: skew(22.5deg,0deg);
 				}
 
 			}
-			.date {
-				position: relative;
-				top: 14vh;
-			}
+			
 		}
 
 		.right {
@@ -296,25 +330,30 @@
 			z-index: 5;
 			position: absolute;
 			left: 55vw;
-			margin: 2.5vw;
+			margin: -2.5vh 20vw;
 			padding: 2.5vw;
-
 			overflow: scroll;
-			
+		
 			background-color: hsla(44, 40%, 80%, 0.8);
 			border: 1px solid hsla(0, 0%, 0%, 0.5);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 
 			h4 {
+				transform: skew(22.5deg,0deg);
 				text-align: left;
+			}
+			span {
+				display: inline-block;
+				transform: skew(22.5deg,0deg);
 			}
 		}
 	}
 }
 
 .homeConnect {
-	width: 140vw;
+	width: 200vw;
 	height: 100vh;
+	padding: 0 0 0 100vw;
 	float: left;
 
 	background: url(./images/backgrounds/_W4A3502.JPG) no-repeat center center / cover;

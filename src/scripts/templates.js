@@ -141,7 +141,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
-    "		<h1> &#8592;&nbsp; <a href=\"#case-study\"> Case Study </a> &nbsp;&#8594; </h1>\n" +
+    "		<h1><a href=\"#case-study\"> Case Study </a></h1>\n" +
     "		<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "	</section>\n" +
@@ -173,13 +173,9 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
-    "		<div class=\"buttonDiv\">\n" +
-    "			<div class=\"verticalButton\">\n" +
-    "				<h1> &#8592;&nbsp; Methods &nbsp;&nbsp;&nbsp; <a href=\"#prototypes\">Prototypes</a>	 &nbsp;&nbsp;&nbsp; About &nbsp;&#8594; </h1>\n" +
-    "				<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
-    "				<p>(available soon)</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		<h1><a href=\"#prototypes\">Prototypes</a></h1>\n" +
+    "		<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
+    "		<p>(available soon)</p>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
     "		<div class=\"people clearfix\">\n" +
@@ -206,7 +202,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"timeline\">\n" +
-    "			<h4>Timeline</h4>\n" +
+    "			<h4 class=\"timelineTitle\">Timeline</h4>\n" +
     "			<div class=\"theLine\"></div>\n" +
     "			<div class=\"left\">\n" +
     "				<div class=\"singleTimeItem date\"><h4>2014</h4></div>\n" +
@@ -242,7 +238,6 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
     "				<h1>&#8592;&nbsp; Augmenting Masterpieces</h1>\n" +
-    "				<h2>Humans, The Museum and Technology</h2>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
     "				<div class=\"connectBoxes\">\n" +
