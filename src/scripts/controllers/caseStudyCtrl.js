@@ -71,7 +71,7 @@
 		    itemsDesktopSmall : [980,4],
 		    itemsTablet: [768,3],
 		    itemsTabletSmall: false,
-		    itemsMobile : [479,1],
+		    itemsMobile : [479,2],
 		    singleItem : false,
 		    itemsScaleUp : false,
 		 

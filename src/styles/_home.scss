@@ -85,6 +85,7 @@
 			width: 65vw;
 			font-size: 1.3em;
 			transform: skew(22.5deg,0deg);
+			text-shadow: 2px 2px 15px rgba(150, 150, 150, 1);
 		}
 	}
 }
@@ -191,6 +192,11 @@
 			text-align: left;
 			transform: skew(22.5deg,0deg);
 		}
+
+		li {
+			transform: skew(22.5deg,0deg);
+			margin: 10px 0;
+		}
 	}
 }
 
@@ -235,6 +241,10 @@
 			margin: 5vh 2vw;
 			float: left; 
 			transform: skew(22.5deg,0deg);
+		}
+
+		p {
+			text-align: center;
 		}
 
 		img {

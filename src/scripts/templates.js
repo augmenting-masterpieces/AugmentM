@@ -109,12 +109,12 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
-    "			<h1>Augmenting Masterpieces &nbsp;&#8594; </h1>\n" +
+    "			<h1>Augmenting Masterpieces &#8594; </h1>\n" +
     "			<!-- <h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2> -->\n" +
     "			<p>Augmenting Masterpieces is interested in finding ways of reducing the gap between academic research and creative production, while doing justice to the different modes of generating knowledge and objects. We explore visitors' experiences and the social dimensions of a museum. We ideate and prototype a digital interface that connects the physical and digital collection. We combine interdisciplinary methods and expertise. To create a very basic prerequisite for the visitors' art reception.</p>\n" +
     "			<div class=\"logos\">\n" +
-    "				<img src=\"./images/logos/uvalogowhite.png\">\n" +
-    "				<img src=\"./images/logos/rijkswhite.png\">\n" +
+    "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
+    "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</section>\n" +
@@ -126,7 +126,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
     "		<h1><a href=\"#case-study\"> Case Study </a></h1>\n" +
-    "		<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
+    "		<h1 class=\"arrow\">&#8595; </h1>\n" +
     "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
@@ -154,11 +154,80 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
     "			<h4>Digital Humanities (method)</h4>\n" +
     "			<p>This project approaches the collection of the Rijksmuseum primarily as data rather than artworks. This is in no way an attempt to diminish the value of the painting, but rather a shift in perspective in order to discover new ways of interacting and discovering hidden treasures in these famous artworks. This project aims at building a bridge between the practical dimensions of datavisualisation and interaction design on the one hand, and the theoretical concerns of art history and audience studies on the other. Practices of visualisation seem to be an excellent fit for the humanities.  </p>\n" +
+    "			\n" +
+    "			<hr>\n" +
+    "\n" +
+    "			<h4>Literature</h4>\n" +
+    "			<ol>\n" +
+    "				<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
+    "\n" +
+    "				<li>Bal, Mieke. Reading Rembrandt: Beyond the Word-Image Opposition. Amsterdam: Amsterdam University Press, 2006. Print.</li>\n" +
+    "\n" +
+    "				<li>Birringer, Johannes “Moveable worlds/Digital scenographies”,            International Journal of Performance Arts &amp; Digital Media, Volume 6, Number 1, 1 June 2010 , pp. 89-107(19).</li>\n" +
+    "\n" +
+    "				<li>Bostock, Michael, Vadim Ogievetsky, and Jeffrey Heer. “D3: Data-Driven Documents” IEEE Trans. Visualization &amp; Comp. Graphics. 2011. Online.</li>\n" +
+    "\n" +
+    "				<li>Bullivant, Lucy. Interactive Architecture 4D Social: Interactive Design Environments. Indianapolis: Wiley and Sons, 2007. Print.</li>\n" +
+    "\n" +
+    "				<li>Certeau, Michel de. “Spatial Stories.” The Practice of Everyday Life. Minneapolis: University Of Minnesota Press, 1984. 115–130. Print.</li>\n" +
+    "\n" +
+    "				<li>Falk, J. (2009). Identity and the Museum Visitor Experience. Walnut Creek, CA Left Coast Press.</li>\n" +
+    "\n" +
+    "				<li>Glogner, Patrick; Föhl, Patrick (2010) Das Kulturpublikum:             Fragestellungen und Befunde der empirischen Forschung. VS Verlag für Sozialwissenschaften.</li>\n" +
+    "\n" +
+    "				<li>Heer, Jeffrey, Bostock Mike. “Declarative Language Design for Interactive Visualization.” IEEE Trans. Visualization &amp; Comp. Graphics. 2010. Online.</li>\n" +
+    "\n" +
+    "				<li>Hermes, Joke “Audience Studies 2.0. On the theory, politics and method of qualitative audience research.” In: Interactions: Studies in       Communication &amp; Culture, Volume 1, Number 1, 1 September 2009, pp. 111-127(17).</li>\n" +
+    "\n" +
+    "				<li>Informotion. Animated Infographics. Ed. Tim Finke and Sebastian Manger.Berlin: Gestalten, 2012. Print.</li>\n" +
+    "\n" +
+    "				<li>Kirchberg, Volker (2009) Innovative Besucher- und Museumsforschung: Hintergrundbericht, http://www.kulturmanagement.net/beitraege/prm/39/v__d/ni__879/index.html</li>\n" +
+    "\n" +
+    "				<li>Kittler, Friedrich. “The Perspective of Print.” Configurations. 10.1 (2002): 37–50. Print. “Universities: Wet, Hard, Soft, and Harder.” Critical Inquiry 31.1 (2004): 244–255. Print.</li>\n" +
+    "\n" +
+    "				<li>Kossman, Herman, and Mark de Jong. Engaging Spaces: Exhibition DesignExplored. Amsterdam: Frame, 2010. Print.</li>\n" +
+    "\n" +
+    "				<li>Museum Informatics: People, Information, and Technology in Museums. Ed. Paul F. Marty, and Katherine Burton Burton Jones. New York: Routledge, 2009. Print.</li>\n" +
+    "\n" +
+    "				<li>Park, Ki-Woong, et al. “Towards Interactive Museum: Mapping Cultural</li>\n" +
+    "\n" +
+    "				<li> Contexts to Historical Objects.” Relation 10.1.142 (2009): 5630. Print.</li>\n" +
+    "\n" +
+    "				<li>Parry, Ross. Museums in a Digital Age. New York: Routledge, 2010. Print.</li>\n" +
+    "\n" +
+    "				<li>Reas, Casey, and Ben Fry. Processing. A Programming Handbook for Visual Designers and Artists. Cambridge MA: MIT Press, 2007. Print.</li>\n" +
+    "\n" +
+    "				<li>Renden, Sandra. Information Graphics. Ed. Julius Wiedemann. Cologne:</li>\n" +
+    "\n" +
+    "				<li>Taschen, 2012. Print.</li>\n" +
+    "\n" +
+    "				<li>Ronell, Avitall. “Proving Grounds: On Nietzsche and the Test Drive.” MLN.118.3 (2003): 653–669. Print.</li>\n" +
+    "\n" +
+    "				<li>Rowea, Anthony “Digital Creativity - Designing for engagement in mixed reality experiences that combine projection mapping and camera- based interaction.” http://www.tandfonline.com/toc/ndcr20/current#.UZOLYCvOSjw</li>\n" +
+    "\n" +
+    "				<li>Simon, Nina. The Participatory Museum. Santa Cruz, CA: Museum 2.0, 2010.Print. </li>\n" +
+    "			\n" +
+    "				<li>Smeets, Ionica &amp; Schraffenberger Hanna “OK, Glass?”, In: AR[t] – Augmented Reality, Art and Technology, 04 nov 2013, p. 42-48. http://issuu.com/arlab/docs/art4_issuu</li>\n" +
+    "\n" +
+    "				<li>Schraffenberger, Hanna &amp; E. van der Heide “Interaction Models for Audience-Artwork Interaction: Current State and Future Directions.” In: Arts and Technology, Second International Conference, ArtsIT 2011, Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering (LNICST), 2011.</li>\n" +
+    "\n" +
+    "				<li>Tröndle, Martin (2011): The Entanglement of Arts and Sciences: On the Transaction Costs of Transdisciplinary Research Settings. In: Journalfor Artistic Research. Issue 1.</li>\n" +
+    "\n" +
+    "				<li>Tröndle, Martin / Greenwood, Steven / Kirchberg, Volker / Tschacher, Wolfgang: An Integrative and Comprehensive Methodology for Studying Aesthetic Experience in the Field: Merging Movement Tracking, Physiology and Psychological Data. Environment and Behavior. 2012. doi:10.1177/0013916512453839</li>\n" +
+    "\n" +
+    "				<li>Tschacher, Wolfgang (2012). Physiological correlates of aesthetic perception in a museum, In: Journal of Psychology of Aesthetics, Creativity, and the Arts, 6, 96-103. doi: 10.1037/a0023845</li>\n" +
+    "\n" +
+    "				<li>Tufte, Edward R. Visual Explanations: Images and Quantities, Evidence and Narrative. Chesire CT: Graphics Press, 1997. Print.</li>\n" +
+    "\n" +
+    "				<li>Van Hage, Willem Robert, et al. “Finding your way through the Rijksmuseum with an adaptive mobile museum guide.” The Semantic Web: Research and Applications. Berlin: Springer, 2010. 46–59. Print.</li>\n" +
+    "\n" +
+    "				<li>Visser, Jasper; Richardson, Jim (2013) Digital Engagement In Culture, Heritage and the Arts.http://www.digitalengagementframework.com/</li>\n" +
+    "			</ol>\n" +
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
     "		<h1><a href=\"#prototypes\">Prototypes</a></h1>\n" +
-    "		<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
+    "		<h1 class=\"arrow\"> &#8595; </h1>\n" +
     "		<p>(available soon)</p>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
@@ -221,7 +290,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeConnect\">\n" +
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
-    "				<h1>&#8592;&nbsp; Augmenting Masterpieces</h1>\n" +
+    "				<h1>&#8592; Augmenting Masterpieces</h1>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
     "				<div class=\"connectBoxes\">\n" +
