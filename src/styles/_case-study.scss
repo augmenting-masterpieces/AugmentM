@@ -160,14 +160,18 @@ article {
 		float: right;
 		padding: 30px;
 	}
+}
+
+.infoContainer {
+	background-color: white;
+	padding: 5vh 0;
 
 	.infographic {
+		display: block;
 		background-color: grey;
-		width: 40%;
+		width: 40vw;
 		height: 600px;
-		padding: 0;
-		float: left;
-		margin: 30px;
+		margin: 5vh auto;
 	}
 }
 

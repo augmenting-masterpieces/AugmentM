@@ -3,7 +3,7 @@ angular.module('templates-cth', ['templates/case-study.html', 'templates/experim
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
     "<section class=\"caseTop\">\n" +
-    "	<h1> &#8592;&nbsp; <a href=\"#home\">Video</a> &nbsp;&nbsp;&nbsp;  Case Study  &nbsp;&nbsp;&nbsp; <a href=\"#home\">Methods</a> &nbsp;&#8594; </h1>\n" +
+    "	<h1><a href=\"#home\">&#8592; </a> &nbsp;&nbsp;&nbsp;  Case Study  &nbsp;&nbsp;&nbsp; <a href=\"#home\">&#8594; </a></h1>\n" +
     "	<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "	<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "</section>\n" +
@@ -16,14 +16,20 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<p class=\"boldAlinea\">\"Thinking .. from the visitor’s own perspective is revealing because they have little conception of, or tolerance for, the museum’s own inability to meet their expectations.” - Seb Chan, Director of Digital & Emerging Media, Smithsonian, Cooper-Hewitt, National Design Museum in New York</p>\n" +
     "\n" +
     "	<p>Augmenting Masterpieces applies visitor's photography through User Camera Studies (UCS)1 as one of the main research sources. In addition to other interview methods they give not only room to individual oral, but also to visual stories and analysis which supports the project's targeted innovation process for multi-medial and digital interfaces for museums. \n" +
-    "	<img class=\"clearfix\" src=\"./images/ucs/1mrB/DSC00148.JPG\">\n" +
+    "	<img class=\"clearfix\" src=\"./images/ucs/1mrB/resized/DSC00148.jpg\">\n" +
     "	</p>\n" +
     "\n" +
     "	<p>The UCS helped to understand the social dimensions of a museum and map the museum experience as the participating visitors moved social aspects and rather basic preconditions for art reception back into the center of attention by addressing their interaction with the space, museum staff, other visitors and art objects. </p>\n" +
     "\n" +
     "	<p>This exemplary case study shows how the User Camera Studies were conducted,  givesphotographic examples and types of insights museums can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
-    "\n" +
-    "	<img class=\"infographic\"></img><p>The purpose of our study was to get actionable feedback and qualitative input from the visitors for developing digital devices or interaction in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
+    "</article>\n" +
+    "<section class=\"infoContainer\">\n" +
+    "	<hr>\n" +
+    "	<img class=\"infographic\"></img>\n" +
+    "	<hr>\n" +
+    "</section>\n" +
+    "<article>\n" +
+    "	<p>The purpose of our study was to get actionable feedback and qualitative input from the visitors for developing digital devices or interaction in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
     "\n" +
     "	<p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
     "\n" +
@@ -33,6 +39,8 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<p>Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the present survey. Below there is one detailed profile and script from a participating Cultural Tourist in order to get an indepth view on the kind of feedback provided.The most revealing result of the survey were that the social dimensions of a visit to the Rijksmuseum are highly important for all visitor's types. Whereas the amount of time spent on looking at art works and written information varied largely, all participants observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times. </p>\n" +
     "	<hr>\n" +
     "</article>\n" +
+    "\n" +
+    "<section class=\"blackTransition small left\"></section>\n" +
     "\n" +
     "<section class=\"pictureGallery\">\n" +
     "	<div class=\"top\">\n" +
@@ -48,11 +56,6 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<div class=\"bottom\">\n" +
     "		<div id=\"galleryCaseStudy\" class=\"owl-carousel owlGallery\"></div>	\n" +
     "	</div>\n" +
-    "</section>\n" +
-    "\n" +
-    "<section class=\"bigImage\">\n" +
-    "	<img src=\"./images/backgrounds/librijks.jpg\" alt=\"\">\n" +
-    "	<p>Im a real good caption of a picture</p>\n" +
     "</section>\n" +
     "\n" +
     "<section class=\"blackTransition small left\">\n" +
