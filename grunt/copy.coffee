@@ -33,7 +33,7 @@ module.exports =
   fonts:
     expand: true
     flatten: true
-    src: "**/*.{eot,woff,woff2,ttf,svg}"
+    src: "**/*.{eot,woff,woff2,ttf}"
     dest: "dev/fonts"
 
   video:

@@ -25,7 +25,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</article>\n" +
     "<section class=\"infoContainer\">\n" +
     "	<hr>\n" +
-    "	<img class=\"infographic\"></img>\n" +
+    "	<img src=\"./images/ucs/1mrB/visual_1.jpg\"class=\"infographic\"></img>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "<article>\n" +
@@ -234,23 +234,23 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<div class=\"people clearfix\">\n" +
     "			<h4>People</h4>\n" +
     "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"\" alt=\"\">\n" +
+    "				<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
     "				<p>Johanna Barnbeck</p>\n" +
     "			</div>\n" +
     "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"\" alt=\"\">\n" +
+    "				<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analasis\">\n" +
     "				<p>Jan Hein Hoogstad</p>\n" +
     "			</div>\n" +
     "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"\" alt=\"\">\n" +
+    "				<img src=\"\" alt=\"\" class=\"none\">\n" +
     "				<p>Shailo Philips</p>\n" +
     "			</div>\n" +
     "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"\" alt=\"\">\n" +
+    "				<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
     "				<p>Patty Jansen</p>\n" +
     "			</div>\n" +
     "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"\" alt=\"\">\n" +
+    "				<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
     "				<p>Robert-Jan Korteschiel</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
