@@ -1,4 +1,4 @@
-angular.module('templates-cth', ['templates/case-study.html', 'templates/experiments.html', 'templates/home.html', 'templates/prototype.html']);
+angular.module('templates-cth', ['templates/case-study.html', 'templates/home.html', 'templates/prototype.html']);
 
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
@@ -61,46 +61,6 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "<section class=\"blackTransition small left\">\n" +
     "	<h2><a href=\"#home\">Return Home</a></p>\n" +
     "</section>\n" +
-    "");
-}]);
-
-angular.module("templates/experiments.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/experiments.html",
-    "<section>\n" +
-    "	<section class=\"fullScreenBox fbg4 pos1\">\n" +
-    "	</section>\n" +
-    "	<section class=\"fullScreenBox fbg2 pos2\">\n" +
-    "	</section>\n" +
-    "	<section class=\"fullScreenBox fbg3 pos3\">\n" +
-    "	</section>\n" +
-    "</section>\n" +
-    "<section class=\"centerSite\">\n" +
-    "	<section class=\"fullScreenBox fbg2 pos4\">\n" +
-    "	</section>\n" +
-    "	<section class=\"fullScreenBox fbg1 pos5\">\n" +
-    "\n" +
-    "		<h1>Augmenting Masterpieces</h1>\n" +
-    "\n" +
-    "		<p class=\"thought t1\"> What can I do? </p>\n" +
-    "		<p class=\"thought t2\"> What do I see? </p>\n" +
-    "		<p class=\"thought t3\"> What do they see? </p>\n" +
-    "\n" +
-    "\n" +
-    "	</section>\n" +
-    "	<section class=\"fullScreenBox fbg2 pos6\">\n" +
-    "	</section>\n" +
-    "</section>\n" +
-    "<section>\n" +
-    "	<section class=\"fullScreenBox fbg4 pos7\">\n" +
-    "	</section>\n" +
-    "	<section class=\"fullScreenBox fbg3 pos8\">\n" +
-    "		<video src=\"../video/big_buck_bunny.webm\" controls class=\"vid\"></video>\n" +
-    "		<div class=\"vidOverlay\"></div>\n" +
-    "	</section>\n" +
-    "	<section class=\"fullScreenBox fbg4 pos9\">\n" +
-    "	</section>\n" +
-    "</section>\n" +
-    "\n" +
     "");
 }]);
 

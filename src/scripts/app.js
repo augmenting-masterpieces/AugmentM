@@ -9,10 +9,4 @@
 
   app.factory('studentsData', ['$firebase', studentsData]);
 
-  function studentsData($firebase){
-    var ref = new Firebase("https://cth-pilot.firebaseio.com/students");
-    var students = $firebase(ref);
-    return students;
-  }
-
 })();

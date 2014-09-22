@@ -22,11 +22,6 @@
         url: '/prototype',
         templateUrl: 'templates/prototype.html',
         controller: 'PrototypeCtrl as proto'
-      })
-      .state('experiments', {
-        url: '/experiments',
-        templateUrl: 'templates/experiments.html',
-        controller: 'ExperimentsCtrl as expe'
       });
 
     $urlRouterProvider.when('/', '/home');

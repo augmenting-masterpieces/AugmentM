@@ -6,26 +6,6 @@
  *
  */
 
-// @font-face {
-//   font-family: RobotoSlab;
-//   src: url('../fonts/RobotoSlab-Regular.woff') format('woff');
-// }
-
-// @font-face {
-//   font-family: Arimo;
-//   src: url('../fonts/Arimo-Regular.woff') format('woff');
-// }
-
-// @font-face {
-//   font-family: misoregular;
-//   src: url('../fonts/miso/miso-regular-webfont.woff') format('woff');
-// }
-
-// @font-face {
-//   font-family: deliciousroman;
-//   src: url('../fonts/delicious/delicious-roman-webfont.woff') format('woff');
-// }
-
 @font-face {
     font-family: 'misoregular';
     src: url('../fonts/miso-regular-webfont.eot');
@@ -64,76 +44,21 @@
 }
 
 $line-height-base: 1.6 !default; // 20/14
-
-$colorYellow: #E5CF39 !default;
-$colorGrayDark: #404040 !default;
-$colorBlue: #75C7B3 !default;
-$colorGreen: #A5CC45 !default;
-$colorRed: #E34D2F !default;
-$colorGrayLight: #eeeeee !default;
-
-$maincolor: #000000; 
-
-$white: lighten($maincolor, 100%);
-$gray1: lighten($maincolor, 90%);
-$gray2: lighten($maincolor, 80%);
-$gray3: lighten($maincolor, 70%);
-$gray4: lighten($maincolor, 60%);
-$gray5: lighten($maincolor, 50%);
-$gray6: lighten($maincolor, 40%);
-$gray7: lighten($maincolor, 30%);
-$gray8: lighten($maincolor, 20%);
-$gray9: lighten($maincolor, 10%);
-$black: lighten($maincolor, 0%);
-
-$list-group-bg: black;
-$list-group-border: none;
-$list-group-active-bg: $colorYellow !default;
-$list-group-active-color: black !default;
-
 $list-group-border-radius: 0;
-
-$navbar-inverse-color: $black;
-$navbar-height: 100px;
-$navbar-inverse-bg: $gray5;
-$navbar-inverse-link-color: $gray7;
-$navbar-inverse-link-hover-color: $gray7;
-$navbar-inverse-link-active-color: $black;
-$navbar-inverse-link-active-bg: $gray3;
-
 $grid-float-breakpoint: 0;
-
-$brand-primary: $colorBlue !default;
 
 // $font-family-monospace: ArminoRegular, Menlo, Monaco, Consolas, "Courier New", monospace !default;
 // $font-family-base: $font-family-monospace !default;
 
-@import "compass";
 @import "_normalize";
 @import "./bootstrap/bootstrap";
 @import "owl/_owl.carousel";
 @import "owl/_owl.theme";
 @import "owl/_owl.transitions";
 @import "_typography";
-@import "_experiments";
 @import "_case-study.scss";
 @import "_home";
 
-
 body {
   background-color: hsla(35, 92%, 54%, 1);
-}
-
-.container-fluid {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
-
-.content {
-  position: relative;
-  &.open {
-    left: 250px;
-  }
 }
