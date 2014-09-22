@@ -7,6 +7,4 @@
   app.constant('$', jQuery);
   app.constant('_', _);
 
-  app.factory('studentsData', ['$firebase', studentsData]);
-
 })();
