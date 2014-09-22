@@ -71,7 +71,7 @@
 		width: 140vw;
 		height: 100vh;
 		position: absolute;
-		background-color: hsla(44, 40%, 65%, 1);		
+		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 5%, hsla(44, 40%, 80%, 0) 95%, hsla(44, 40%, 80%, 1)), linear-gradient(hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 1));		
 	}
 
 	.contents {
@@ -79,7 +79,7 @@
 		height: 100vh;
 		position: absolute;
 		left: 20vw;
-		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 20%, hsla(44, 40%, 80%, 0) 80%, hsla(44, 30%, 80%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0.8)), url('../images/backgrounds/extra/milkmaid.jpg') no-repeat center center / cover;
+		background: linear-gradient(90deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 0) 20%, hsla(44, 40%, 65%, 0) 80%, hsla(44, 40%, 65%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.7), hsla(44, 40%, 80%, 0.7));
 
 		video {
 			display: block;
