@@ -70,7 +70,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
   $templateCache.put("templates/home.html",
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
-    "		<div class=\"title\" data-stellar-ratio=\"2\">\n" +
+    "		<div class=\"title\" data-stellar-ratio=\"0\">\n" +
     "			<h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
     "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
     "\n" +

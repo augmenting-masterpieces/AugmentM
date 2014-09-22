@@ -1,7 +1,7 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 950vw;
+	width: 890vw;
 	overflow: hidden;
 }
 
@@ -12,16 +12,17 @@
 	padding: 0 70vw 0 0vw;
 	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
+	overflow: hidden;
 
 	.title {
 		width: 100vw;
 		height: 100vh;
 		float: left;
 		overflow: hidden;
+		position: relative;
 
 		h1 {
 			margin: 67vh auto 0 32vw;
-			// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 			text-align: left;
 			letter-spacing: 5px;
 		}
@@ -32,10 +33,7 @@
 			width: 60vw;
 			padding: 0.5vh 2.5vw 0 0vw;
 			margin: 0vh 0 0vh 32vw;
-			// text-transform: uppercase;
 			color: white;
-			// background-color: rgba(169,152,98, 0.7);
-			// box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
 		}
 		span {
 			font-size: 0.8em;
@@ -73,7 +71,7 @@
 		width: 140vw;
 		height: 100vh;
 		position: absolute;
-		background-color: hsla(44, 20%, 65%, 1);		
+		background-color: hsla(44, 40%, 65%, 1);		
 	}
 
 	.contents {
@@ -81,7 +79,7 @@
 		height: 100vh;
 		position: absolute;
 		left: 20vw;
-		background: linear-gradient(90deg, hsla(44, 30%, 80%, 1), hsla(44, 40%, 80%, 0) 20%, hsla(44, 40%, 80%, 0) 80%, hsla(44, 30%, 80%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0.8)), url('../images/backgrounds/extra/milkmaid.jpg') no-repeat center center / cover;
+		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 20%, hsla(44, 40%, 80%, 0) 80%, hsla(44, 30%, 80%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0.8)), url('../images/backgrounds/extra/milkmaid.jpg') no-repeat center center / cover;
 
 		video {
 			display: block;
@@ -108,11 +106,11 @@
 .homeButtonSection {
 	float: left;
 	height: 100vh;
-	width: 140vw;
+	width: 180vw;
 	margin: 0 30vw;
 	padding: 0 40vw 0 40vw;
 
-	background: url(./images/backgrounds/personCamera.jpg) no-repeat center center / cover;			
+	background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
 
 	h1 {
 		margin: 40vh auto 0 auto;
@@ -155,7 +153,7 @@
 		width: 140vw;
 		height: 100vh;
 		position: absolute;
-		background-color: hsla(44, 20%, 65%, 1);
+		background-color: hsla(44, 40%, 65%, 1);
 	}
 
 	.methodsList {
@@ -227,16 +225,16 @@
 	float: left;
 	transform: skew(-22.5deg,0deg);
 	position: relative;
-	left: -70vw;
+	left: -85vw;
 
-	background-color: hsla(44, 20%, 65%, 1);
+	background-color: hsla(44, 40%, 65%, 1);
 	
 	&:before {
 		content: "";
 		width: 140vw;
 		height: 100vh;
 		position: absolute;
-		background-color: hsla(44, 20%, 65%, 1);
+		background-color: hsla(44, 40%, 65%, 1);
 		z-index: -1000;
 	}
 
@@ -281,7 +279,7 @@
 		
 		position: relative;
 
-		background-color: hsla(44, 30%, 80%, 1);
+		background-color: hsla(44, 40%, 80%, 1);
 
 		h4.timelineTitle {
 			height: 5vh;
@@ -379,7 +377,7 @@
 .homeConnect {
 	width: 200vw;
 	height: 100vh;
-	padding: 0 0 0 100vw;
+	padding: 0 0 0 85vw;
 	float: left;
 
 	background: url(./images/backgrounds/W4A3502.jpg) no-repeat center center / cover;
