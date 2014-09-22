@@ -25,7 +25,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</article>\n" +
     "<section class=\"infoContainer\">\n" +
     "	<hr>\n" +
-    "	<img src=\"./images/ucs/1mrB/visual_1.jpg\"class=\"infographic\"></img>\n" +
+    "	<img src=\"./images/ucs/1mrB/visual_nieuw150.jpg\"class=\"infographic\"></img>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "<article>\n" +
