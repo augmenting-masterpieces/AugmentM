@@ -89,7 +89,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
-    "		<h1><a href=\"#case-study\"> Case Study </a></h1>\n" +
+    "		<h1><a href=\"#case-study\">Case Study</a></h1>\n" +
     "		<h1 class=\"arrow\">&#8595; </h1>\n" +
     "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "	</section>\n" +
@@ -108,15 +108,15 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<p>Videogallery</p>\n" +
     "		</div>\n" +
     "		<div class=\"methodsContent\">\n" +
-    "			<h4>Interdisciplinary Approach (method)</h4>\n" +
+    "			<h4>Interdisciplinary Approach</h4>\n" +
     "			<p>Embedded research projects who stimulate collaborations between the creative industries and university research enable new forms of research. As do Artistic Research, Design Thinking and Digital Humanities. Each of them is a rather new discipline of itself. In order to do justice to the new goals of not only theoretically investigate, but also practically implement research results within the same project, a new set of tools and possible forms for output are necessary. The methodological combination of the above mentioned toolboxes guarantees an adequate interdisciplinary assemblage of techniques and media. Whereas Artistic Research allows to creatively and practically work with post-modern theories, the Design Thinking approach gives access to co-creation frameworks and user innovation while building a product-oriented bridge between research and prototype. The overarching question of how digitality enters musea through which technology nowadays.  </p>\n" +
-    "			<h4>Embedded Research (method)</h4>\n" +
+    "			<h4>Embedded Research</h4>\n" +
     "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
-    "			<h4>Artistic Research (method)</h4>\n" +
+    "			<h4>Artistic Research</h4>\n" +
     "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
-    "			<h4>Design Thinking (method)</h4>\n" +
+    "			<h4>Design Thinking</h4>\n" +
     "			<p>As embedded research project, Augmenting Masterpieces takes a close look at social aspects and focuses on visitor interaction before exploring technological enhancements and building prototypes. Through need-oriented, user centered and creative methods from both design thinking and artistic research, gaining necessary technical expertise through collaborating with private partners and carefully documenting the process, we not only present our research, but also offer support for others who might want to investigate questions around digitality in their museums or institutions.  </p>\n" +
-    "			<h4>Digital Humanities (method)</h4>\n" +
+    "			<h4>Digital Humanities</h4>\n" +
     "			<p>This project approaches the collection of the Rijksmuseum primarily as data rather than artworks. This is in no way an attempt to diminish the value of the painting, but rather a shift in perspective in order to discover new ways of interacting and discovering hidden treasures in these famous artworks. This project aims at building a bridge between the practical dimensions of datavisualisation and interaction design on the one hand, and the theoretical concerns of art history and audience studies on the other. Practices of visualisation seem to be an excellent fit for the humanities.  </p>\n" +
     "			\n" +
     "			<hr>\n" +
@@ -206,8 +206,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<p>Jan Hein Hoogstad</p>\n" +
     "			</div>\n" +
     "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"\" alt=\"\" class=\"none\">\n" +
-    "				<p>Shailo Philips</p>\n" +
+    "				<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
+    "				<p>Shailoh Phillips</p>\n" +
     "			</div>\n" +
     "			<div class=\"person clearfix\">\n" +
     "				<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
@@ -225,11 +225,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<div class=\"singleTimeItem date\"><h4>2014</h4></div>\n" +
     "				<div class=\"singleTimeItem\">\n" +
     "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Pitch</p>\n" +
-    "				</div>\n" +
-    "				<div class=\"singleTimeItem\">\n" +
-    "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Observe</p>\n" +
+    "					<p>Understand</p>\n" +
     "				</div>\n" +
     "				<div class=\"singleTimeItem\">\n" +
     "					<div class=\"timePoint\"></div>\n" +
@@ -241,7 +237,11 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				</div>\n" +
     "				<div class=\"singleTimeItem\">\n" +
     "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Wrapup</p>\n" +
+    "					<p>Test</p>\n" +
+    "				</div>\n" +
+    "				<div class=\"singleTimeItem\">\n" +
+    "					<div class=\"timePoint\"></div>\n" +
+    "					<p>Present</p>\n" +
     "				</div>\n" +
     "				<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
     "			</div>\n" +
