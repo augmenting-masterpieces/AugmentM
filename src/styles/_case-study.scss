@@ -60,6 +60,7 @@
 	        	color: white;
 	        	height: 35vh;
 	        	overflow: scroll;
+	        	font-size: 1.2em;
 	        }
 
 			p:nth-child(4) {
@@ -107,13 +108,12 @@
 	padding: 2% 0;
 	color: hsla(0, 0%, 100%, 1);
 	
-	h2 {
-		font-size: 1.5em;
-		font-family: Arimo;
+	h1 {
+		margin: 1vh 0 0 0;
 	}
 
 	p {
-		margin: 1.5% 0;
+		margin: 0 0;
 		color: white; 
 		width: 70%;
 		margin: 10px auto; 
@@ -124,10 +124,9 @@
 
 
 article {
-	min-height: 120vh;
 	width: 100vw;
 	background: hsla(0, 0%, 100%, 1);
-	padding: 5%;
+	padding: 2% 5%;
 
 	h4 {
 		width: 70%;
@@ -141,16 +140,26 @@ article {
 		font-size: 1.3em;
 	}
 	
-	.boldAlinea {
-		font-family: RobotoSlab;
-		padding-bottom: 2%;
+	p.boldAlinea {
+		margin: 0 auto 0 auto;
+		padding: 0 1% 0 1%;
 		font-size: 1.6em;
 	}
 
+	span.byline {
+		display: block;
+		font-size: 1em;
+		width: 70%;
+		margin: 0 auto 2vh auto;
+		padding: 0 0 0 2.5vw;
+		text-align: left;
+	}
+
 	img {
-		width: 40%;
+		width: 60%;
 		float: right;
 		padding: 30px;
+		transform: rotate(-90deg);
 	}
 }
 

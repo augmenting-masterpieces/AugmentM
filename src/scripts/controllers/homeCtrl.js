@@ -6,6 +6,8 @@
 	function HomeCtrl(){
 	    var vm = this;
 
+	    $(window).stellar();
+
 	    spanTextForSkew();
 
 	   //  function spanTextForSkew() {

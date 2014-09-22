@@ -13,10 +13,10 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<hr>\n" +
     "	<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
     "	<hr>\n" +
-    "	<p class=\"boldAlinea\">\"Thinking .. from the visitor’s own perspective is revealing because they have little conception of, or tolerance for, the museum’s own inability to meet their expectations.” - Seb Chan, Director of Digital & Emerging Media, Smithsonian, Cooper-Hewitt, National Design Museum in New York</p>\n" +
+    "	<p class=\"boldAlinea\">\"Thinking .. from the visitor’s own perspective is revealing because they have little conception of, or tolerance for, the museum’s own inability to meet their expectations.” </p>\n" +
+    "	<span class=\"byline\">- Seb Chan, Director of Digital &amp; Emerging Media, Smithsonian in New York</span>\n" +
     "\n" +
     "	<p>Augmenting Masterpieces applies visitor's photography through User Camera Studies (UCS)1 as one of the main research sources. In addition to other interview methods they give not only room to individual oral, but also to visual stories and analysis which supports the project's targeted innovation process for multi-medial and digital interfaces for museums. \n" +
-    "	<img class=\"clearfix\" src=\"./images/ucs/1mrB/resized/DSC00148.jpg\">\n" +
     "	</p>\n" +
     "\n" +
     "	<p>The UCS helped to understand the social dimensions of a museum and map the museum experience as the participating visitors moved social aspects and rather basic preconditions for art reception back into the center of attention by addressing their interaction with the space, museum staff, other visitors and art objects. </p>\n" +
@@ -40,7 +40,9 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<hr>\n" +
     "</article>\n" +
     "\n" +
-    "<section class=\"blackTransition small left\"></section>\n" +
+    "<section class=\"blackTransition small left\">\n" +
+    "	<h1>Full interview</h1>\n" +
+    "</section>\n" +
     "\n" +
     "<section class=\"pictureGallery\">\n" +
     "	<div class=\"top\">\n" +
@@ -68,19 +70,21 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
   $templateCache.put("templates/home.html",
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
-    "		<div class=\"title\">\n" +
-    "			<h1>Augmenting Masterpieces &#8594; </h1>\n" +
-    "			<!-- <h2>…at the Rijksmuseum Amsterdam through human-centered design and artistic research.</h2> -->\n" +
-    "			<p>Augmenting Masterpieces is interested in finding ways of reducing the gap between academic research and creative production, while doing justice to the different modes of generating knowledge and objects. We explore visitors' experiences and the social dimensions of a museum. We ideate and prototype a digital interface that connects the physical and digital collection. We combine interdisciplinary methods and expertise. To create a very basic prerequisite for the visitors' art reception.</p>\n" +
+    "		<div class=\"title\" data-stellar-ratio=\"2\">\n" +
+    "			<h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
+    "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
+    "\n" +
+    "			<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection.\n" +
+    "			   Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifests in a prototype, academic articles and this multi-medial presentation.</p>\n" +
     "			<div class=\"logos\">\n" +
-    "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
     "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
+    "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
     "		<div class=\"contents\">\n" +
-    "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, and a smaller cohort of visitors taking photos of object labels, and we’ve all seen families struggle with the anti-social nature of audioguides.\" - Seb Chan</h2>\n" +
+    "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, <br> ... taking photos of object labels, and we’ve all seen families struggle with the anti-social nature of audioguides.\" - Seb Chan</h2>\n" +
     "			<video src=\"../video/AM_background_test.mp4\" controls></video>\n" +
     "		</div>\n" +
     "	</section>\n" +

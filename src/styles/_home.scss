@@ -10,7 +10,7 @@
 	height: 100vh;
 	width: 210vw;
 	padding: 0 70vw 0 0vw;
-	background: url(./images/backgrounds/resized/navigationPeople.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 
 	.title {
@@ -20,30 +20,41 @@
 		overflow: hidden;
 
 		h1 {
-			margin: 40vh auto 0 auto;
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			margin: 67vh auto 0 30vw;
+			// text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			text-align: left;
+			letter-spacing: 5px;
 		}
 		h2 {
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 		}
 		p {
 			width: 60vw;
-			padding: 2.5vh 2.5vw;
-			margin: 5vh auto 5vh auto;
-			
-			color: black;
-			background-color: hsla(44, 40%, 80%, 0.8);
-			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+			padding: 0.5vh 2.5vw 0 0vw;
+			margin: 0vh 0 0vh 30vw;
+			// text-transform: uppercase;
+			color: white;
+			// background-color: rgba(169,152,98, 0.7);
+			// box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.3);
+		}
+		span {
+			font-size: 0.8em;
+			letter-spacing: 3px;
+		}
+
+		span.second {
+			font-size: 1em;
+			letter-spacing: 5px;
 		}
 
 		.logos {
 			display: block;
 			width: 81vw;
-			margin: 0 auto;
+			margin: 2vh 0 0 30vw;
 
 			img {
 				width: 30vw;
-				margin: 0 5vw;
+				margin: 0 5vw 0 0;
 			}
 
 		}
@@ -70,25 +81,32 @@
 		height: 100vh;
 		position: absolute;
 		left: 20vw;
-		background-color: hsla(44, 40%, 80%, 1);		
-
+		// background-color: hsla(44, 40%, 80%, 1);		
+		// background: linear-gradient(90deg, hsla(44, 40%, 80%, 1),hsla(44, 40%, 80%, 1) 10%,hsla(44, 40%, 80%, 1) 90%), linear-gradient(hsla(44, 40%, 80%, 1),hsla(44, 40%, 80%, 1) 10%,hsla(44, 40%, 80%, 1) 90%), url("images/backgrounds/extra/milkmaid.jpg");
+		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 20%, hsla(44, 40%, 80%, 0) 80%, hsla(44, 40%, 80%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.8), hsla(44, 40%, 80%, 0.8)), url('../images/backgrounds/extra/milkmaid.jpg') no-repeat center center / cover;
 		video {
+			display: block;
 			width: 60vw;
 			margin: 25vh 20vw;
 			transform: skew(22.5deg,0deg);
+
+			// padding: 2.5vh 2.5vw;
+			// background-color: hsla(40, 60%, 65%, 1);
+			// border: 1px solid white;
+
 		}
 
 		h2 {
 			position: absolute;
 			top: 3vh;
-			left: 30vw;
-			width: 65vw;
+			left: 40vw;
+			width: 40vw;
 			transform: skew(22.5deg,0deg);
-
-
+			
+			color: hsla(0, 0%, 20%, 1);
+			text-align: left;
 			font-family: misolight;
-			font-size: 1.3em;
-			text-shadow: 2px 2px 15px rgba(150, 150, 150, 1);
+			font-size: 1.4em;
 		}
 	}
 }
@@ -96,10 +114,11 @@
 .homeButtonSection {
 	float: left;
 	height: 100vh;
-	width: 210vw;
-	padding: 0 70vw 0 70vw;
+	width: 150vw;
+	margin: 0 30vw;
+	padding: 0 40vw 0 40vw;
 
-	background: url(./images/backgrounds/resized/personCamera.jpg) no-repeat center center / cover;			
+	background: url(./images/backgrounds/personCamera.jpg) no-repeat center center / cover;			
 
 	h1 {
 		margin: 40vh auto 0 auto;
@@ -205,7 +224,7 @@
 }
 
 .homePrototype {
-	background: url('./images/backgrounds/resized/W4A3567.jpg') no-repeat center center / cover;
+	background: url('./images/backgrounds/W4A3567.jpg') no-repeat center center / cover;
 }
 
 .homeAbout {
@@ -369,7 +388,7 @@
 	padding: 0 0 0 100vw;
 	float: left;
 
-	background: url(./images/backgrounds/resized/W4A3502.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/W4A3502.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 
 	.connectMain {
