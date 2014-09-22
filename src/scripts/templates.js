@@ -254,7 +254,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	<section class=\"homeConnect\">\n" +
     "		<div class=\"connectMain\">\n" +
     "			<div class=\"title\">\n" +
-    "				<h1>&#8592; Augmenting Masterpieces</h1>\n" +
+    "				<h1>&#8592; A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES</span> </h1>\n" +
     "			</div>\n" +
     "			<div class=\"waysToConnectContainer\">\n" +
     "				<div class=\"connectBoxes\">\n" +

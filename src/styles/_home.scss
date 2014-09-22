@@ -393,6 +393,16 @@
 			margin-top: 10vh;
 			color: white;
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+			
+			span {
+				font-size: 0.8em;
+				letter-spacing: 3px;
+			}
+
+			span.second {
+				font-size: 1em;
+				letter-spacing: 5px;
+			}
 		}
 		
 		.waysToConnectContainer {
