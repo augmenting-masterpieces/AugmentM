@@ -74,7 +74,7 @@
 
 		video {
 			width: 60vw;
-			margin: 20vh 20vw;
+			margin: 25vh 20vw;
 			transform: skew(22.5deg,0deg);
 		}
 
@@ -83,8 +83,11 @@
 			top: 3vh;
 			left: 30vw;
 			width: 65vw;
-			font-size: 1.3em;
 			transform: skew(22.5deg,0deg);
+
+
+			font-family: misolight;
+			font-size: 1.3em;
 			text-shadow: 2px 2px 15px rgba(150, 150, 150, 1);
 		}
 	}
@@ -108,6 +111,7 @@
 	}
 
 	h2 {
+		font-family: misolight;
 		margin: 10vh 0 0 0;
 		width: 40vw;
 		color: white;
