@@ -59,7 +59,8 @@
 	        p {
 	        	color: white;
 	        	height: 35vh;
-	        	overflow: scroll;
+	        	overflow-y: scroll;
+	        	overflow-x: hidden;
 	        	font-size: 1.2em;
 	        }
 

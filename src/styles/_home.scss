@@ -81,7 +81,7 @@
 		left: 20vw;
 		background: linear-gradient(90deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 0) 20%, hsla(44, 40%, 65%, 0) 80%, hsla(44, 40%, 65%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.7), hsla(44, 40%, 80%, 0.7));
 
-		video {
+		iframe {
 			display: block;
 			width: 60vw;
 			margin: 25vh 20vw;
@@ -153,7 +153,8 @@
 		width: 140vw;
 		height: 100vh;
 		position: absolute;
-		background-color: hsla(44, 40%, 65%, 1);
+		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 5%, hsla(44, 40%, 80%, 0) 95%, hsla(44, 40%, 80%, 1)), linear-gradient(hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 1));		
+		// background-color: hsla(44, 40%, 65%, 1);
 	}
 
 	.methodsList {
@@ -191,7 +192,8 @@
 		position: absolute;
 		left: 60vw;
 		background-color: hsla(44, 30%, 80%, 1);
-		overflow: scroll;
+		overflow-y: scroll;
+		overflow-x: hidden;
 
 		p {
 			text-align: left;
@@ -234,7 +236,8 @@
 		width: 140vw;
 		height: 100vh;
 		position: absolute;
-		background-color: hsla(44, 40%, 65%, 1);
+		// background-color: hsla(44, 40%, 65%, 1);
+		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 5%, hsla(44, 40%, 80%, 0) 95%, hsla(44, 40%, 80%, 1)), linear-gradient(hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 1));		
 		z-index: -1000;
 	}
 
@@ -393,7 +396,7 @@
 			margin-top: 10vh;
 			color: white;
 			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-			
+
 			span {
 				font-size: 0.8em;
 				letter-spacing: 3px;
@@ -411,10 +414,8 @@
 			
 			.connectBoxes {
 				width: 400px;
-				// height: 50vh;
 				padding: 20px;
 				float: left;
-				// overflow: scroll;
 				
 				background-color: hsla(44, 40%, 80%, 0.8);
 				box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);

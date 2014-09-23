@@ -3,7 +3,7 @@ angular.module('templates-cth', ['templates/case-study.html', 'templates/home.ht
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
     "<section class=\"caseTop\">\n" +
-    "	<h1><a href=\"#home\">&#8592; </a> &nbsp;&nbsp;&nbsp;  Case Study  &nbsp;&nbsp;&nbsp; <a href=\"#home\">&#8594; </a></h1>\n" +
+    "	<h1><a href=\"#home\">&#8592; </a> &nbsp;&nbsp;&nbsp;  User Camera Study  &nbsp;&nbsp;&nbsp; <a href=\"#home\">&#8594; </a></h1>\n" +
     "	<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "	<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "</section>\n" +
@@ -13,15 +13,14 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<hr>\n" +
     "	<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
     "	<hr>\n" +
-    "	<p class=\"boldAlinea\">\"Thinking .. from the visitor’s own perspective is revealing because they have little conception of, or tolerance for, the museum’s own inability to meet their expectations.” </p>\n" +
-    "	<span class=\"byline\">- Seb Chan, Director of Digital &amp; Emerging Media, Smithsonian in New York</span>\n" +
+    "	<p class=\"boldAlinea\">This case study shows how the User Camera Studies were conducted, gives visual examples and types of insights a museum can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
     "\n" +
     "	<p>Augmenting Masterpieces applies visitor's photography through User Camera Studies (UCS)1 as one of the main research sources. In addition to other interview methods they give not only room to individual oral, but also to visual stories and analysis which supports the project's targeted innovation process for multi-medial and digital interfaces for museums. \n" +
     "	</p>\n" +
     "\n" +
     "	<p>The UCS helped to understand the social dimensions of a museum and map the museum experience as the participating visitors moved social aspects and rather basic preconditions for art reception back into the center of attention by addressing their interaction with the space, museum staff, other visitors and art objects. </p>\n" +
     "\n" +
-    "	<p>This exemplary case study shows how the User Camera Studies were conducted,  givesphotographic examples and types of insights museums can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
+    "	<p></p>\n" +
     "</article>\n" +
     "<section class=\"infoContainer\">\n" +
     "	<hr>\n" +
@@ -29,7 +28,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<hr>\n" +
     "</section>\n" +
     "<article>\n" +
-    "	<p>The purpose of our study was to get actionable feedback and qualitative input from the visitors for developing digital devices or interaction in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
+    "	<p>The purpose of our study was to get qualitative input from the visitors for developing digital devices and interactive means in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
     "\n" +
     "	<p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
     "\n" +
@@ -75,7 +74,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
     "\n" +
     "			<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection.\n" +
-    "			   Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifests in a prototype, academic articles and this multi-medial presentation.</p>\n" +
+    "			   Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
     "			<div class=\"logos\">\n" +
     "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
     "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
@@ -84,12 +83,12 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
     "		<div class=\"contents\">\n" +
-    "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, <br> ... taking photos of object labels, and we’ve all seen families struggle with the anti-social nature of audioguides.\" - Seb Chan</h2>\n" +
-    "			<video src=\"../video/AM_background_test.mp4\" controls></video>\n" +
+    "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, ...<br>taking photos of object labels, and we’ve all seen families <br>struggle with the anti-social nature of audioguides.\"<br> - Seb Chan, Director of Digital & Emerging Media, Smithsonian, New York</h2>\n" +
+    "			<iframe src=\"http://prezi.com/embed/vz3s0inp6iyg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined\" frameBorder=\"0\" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>\n" +
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection\">\n" +
-    "		<h1><a href=\"#case-study\">Case Study</a></h1>\n" +
+    "		<h1><a href=\"#case-study\">User Camera <br> Study</a></h1>\n" +
     "		<h1 class=\"arrow\">&#8595; </h1>\n" +
     "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "	</section>\n" +
@@ -190,9 +189,9 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
-    "		<h1><a href=\"#prototypes\">Prototypes</a></h1>\n" +
+    "		<h1><a href=\"#prototypes\">Prototype</a></h1>\n" +
     "		<h1 class=\"arrow\"> &#8595; </h1>\n" +
-    "		<p>(available soon)</p>\n" +
+    "		<p>We are working on it!</p>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
     "		<div class=\"people clearfix\">\n" +
@@ -246,8 +245,9 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
     "			</div>\n" +
     "			<div class=\"right\"> \n" +
-    "				<h4>Observe</h4>\n" +
-    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt esse fuga ipsam, pariatur iusto consectetur, blanditiis dolor distinctio, mollitia facilis totam. Laboriosam labore, cumque, repudiandae voluptate repellat illum id, quaerat eveniet doloribus quis suscipit, quia sapiente quo officiis ipsa. Error delectus veritatis fuga pariatur soluta assumenda ipsum, dicta ex ab, quis facilis totam. Voluptates, vel vitae nostrum accusantium molestias provident impedit enim esse quaerat omnis culpa sit incidunt beatae dolor assumenda tempora laudantium magni, eum, doloremque illum similique fugiat iusto veniam corrupti! Enim veniam ea natus nam rerum ad temporibus debitis sapiente! Perspiciatis, sunt libero amet veniam, eos quis quidem.</p> \n" +
+    "				<h4>Understand</h4>\n" +
+    "				<p>The first phase of the project consists of understanding how the employees run the Rijksmuseum on a daily basis, the digital engagement methods they set up, the experiences the visitors make when using the digital interfaces and the experiences the visitors make inside the museum. In order to understand what efforts are taken by the museum itself, I will interview and engage with the people working in different departments of the Rijksmuseum.\n" +
+    "				Further, I try to understand the visitor's experience and modes of engagement through a Camera User Study, by interviewing visitors, by equipping visitors with helmet cameras which deliver a Point-of-View-video of the museum visit and by observing and capturing gestures and body language of the visitors.</p> \n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</section>\n" +
