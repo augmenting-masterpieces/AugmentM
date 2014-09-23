@@ -84,6 +84,7 @@
 		iframe {
 			display: block;
 			width: 60vw;
+			height: 50vh;
 			margin: 25vh 20vw;
 			transform: skew(22.5deg,0deg);
 		}
@@ -109,34 +110,61 @@
 	width: 180vw;
 	margin: 0 30vw;
 	padding: 0 40vw 0 40vw;
+	
+	&.homeCaseStudy {
+		background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
+	
+		h1 {
+			margin: 60vh 0vw 0 22vw;
+		}
 
-	background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
+		h1.arrow {
+			margin: 0vh 0 0 40vw;
+		}
+
+		h2 {
+			margin: 0vh 0 0 22vw;
+			width: 40vw;
+		}
+	}
+
+	&.homePrototype {
+		background: url('./images/backgrounds/W4A3567.jpg') no-repeat center center / cover;
+		
+		h1 {
+			margin: 55vh 0vw 0 30vw;
+		}
+
+		h1.arrow {
+			margin: 0vh 0vw 0 35vw;
+		}
+		h2 {
+			margin: 0vh 0 0 30vw;
+			width: 40vw;
+		}
+	}
 
 	h1 {
-		margin: 40vh 20vw 0 0;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-	}
+		text-align: left;
+		letter-spacing: 3px;
 
-	h1.arrow {
-		margin: 10vh 20vw 0 0;
-	}
+		span {
+			font-size: 0.8em;
+		}
 
+	}
+	
 	h2 {
+		text-align: left;
+		color: white;
 		font-family: misolight;
-		margin: 10vh 0 0 0;
-		width: 40vw;
-		color: white;
-		font-size: 1.3em;
-	}
-
-	p {	
-		margin: 25vh 0 0 0;
-		color: white;
-		text-align: center;
+		text-align: left;
+		font-size: 1.5em;
 	}
 
 	a:hover {
 		color: white;
+		text-decoration: none;
 	}
 }
 
@@ -217,9 +245,7 @@
 	}
 }
 
-.homePrototype {
-	background: url('./images/backgrounds/W4A3567.jpg') no-repeat center center / cover;
-}
+
 
 .homeAbout {
 	width: 0vw;

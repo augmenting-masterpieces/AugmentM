@@ -87,10 +87,10 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<iframe src=\"http://prezi.com/embed/vz3s0inp6iyg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined\" frameBorder=\"0\" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>\n" +
     "		</div>\n" +
     "	</section>\n" +
-    "	<section class=\"homeButtonSection\">\n" +
-    "		<h1><a href=\"#case-study\">User Camera <br> Study</a></h1>\n" +
-    "		<h1 class=\"arrow\">&#8595; </h1>\n" +
+    "	<section class=\"homeButtonSection homeCaseStudy\">\n" +
+    "		<h1><a href=\"#case-study\">U<span>SER </span>C<span>AMERA </span>S<span>TUDY </span></a></h1>\n" +
     "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
+    "		<h1 class=\"arrow\">&#8595; </h1>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsList\">\n" +
@@ -189,9 +189,9 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homePrototype\">\n" +
-    "		<h1><a href=\"#prototypes\">Prototype</a></h1>\n" +
+    "		<h1><a href=\"#prototypes\">P<span>ROTOTYPE</span></a></h1>\n" +
+    "		<h2>We are working on it!</h2>\n" +
     "		<h1 class=\"arrow\"> &#8595; </h1>\n" +
-    "		<p>We are working on it!</p>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
     "		<div class=\"people clearfix\">\n" +
