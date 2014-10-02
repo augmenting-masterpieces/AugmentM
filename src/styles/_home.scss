@@ -104,7 +104,9 @@
 	padding: 0 40vw 0 40vw;
 	
 	&.homeCaseStudy {
-		// background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
+		// DEACTIVATE THIS LINE!
+		background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
+		// ^^^^^^^^^^^^^^^^^^^^^
 		background-attachment: fixed;
 		
 		width: 210vw;
@@ -125,7 +127,10 @@
 	}
 
 	&.homePrototype {
-		// background: url('./images/backgrounds/W4A3567.jpg') no-repeat center center / cover;
+		// DEACTIVATE THIS LINE!
+		background: url('./images/backgrounds/W4A3567.jpg') no-repeat center center / cover;
+		// ^^^^^^^^^^^^^^^^^^^^^
+
 		background-attachment: fixed;
 
 		h1 {
