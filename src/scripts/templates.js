@@ -69,7 +69,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
   $templateCache.put("templates/home.html",
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
-    "		<div class=\"title\" data-stellar-ratio=\"0\">\n" +
+    "		<div class=\"title\">\n" +
     "			<h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
     "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
     "\n" +
@@ -82,7 +82,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
-    "		<div class=\"contents\">\n" +
+    "		<div class=\"contents .glass\">\n" +
     "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, ...<br>taking photos of object labels, and we’ve all seen families <br>struggle with the anti-social nature of audioguides.\"<br> - Seb Chan, Director of Digital & Emerging Media, Smithsonian, New York</h2>\n" +
     "			<iframe src=\"http://prezi.com/embed/vz3s0inp6iyg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined\" frameBorder=\"0\" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>\n" +
     "		</div>\n" +
@@ -105,6 +105,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "			<hr>\n" +
     "			<p>Literature</p>\n" +
     "			<p>Videogallery</p>\n" +
+    "			<p>References</p>\n" +
     "		</div>\n" +
     "		<div class=\"methodsContent\">\n" +
     "			<h4>Interdisciplinary Approach</h4>\n" +
@@ -252,32 +253,19 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeConnect\">\n" +
-    "		<div class=\"connectMain\">\n" +
-    "			<div class=\"title\">\n" +
-    "				<h1>&#8592; A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES</span> </h1>\n" +
-    "			</div>\n" +
-    "			<div class=\"waysToConnectContainer\">\n" +
-    "				<div class=\"connectBoxes\">\n" +
-    "					<h4>Follow us!</h4>\n" +
-    "					<ul class=\"socialIcon clearfix\">\n" +
-    "						<li class=\"facebook\"></li>\n" +
-    "						<li class=\"twitter\"></li>\n" +
-    "						<li class=\"google\"></li>\n" +
-    "						<li class=\"rss\"></li>\n" +
-    "					</ul>\n" +
-    "					<h4> Mailing list </h4>\n" +
-    "					<form>\n" +
-    "						<label>\n" +
-    "							<span> Name: </span><input type=\"text\" name=\"name\">\n" +
-    "						</label><br>\n" +
-    "						<label>\n" +
-    "							<span> E-mail: </span><input type=\"email\" name=\"user_email\">\n" +
-    "						</label>\n" +
-    "					</form>\n" +
-    "					<p class=\"smalltext\">(Low frequency)</p>\n" +
-    "				</div>\n" +
+    "		<div class=\"title\">\n" +
+    "			<h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
+    "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
+    "\n" +
+    "			<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection.\n" +
+    "			   Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
+    "			<div class=\"logos\">\n" +
+    "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
+    "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
     "			</div>\n" +
     "		</div>\n" +
+    "\n" +
+    "\n" +
     "	</section>\n" +
     "</section>\n" +
     "\n" +

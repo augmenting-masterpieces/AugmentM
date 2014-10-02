@@ -1,18 +1,18 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 875vw;
+	width: 785vw;
+	overflow: hidden;
+	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
+	background-attachment: fixed;
 	overflow: hidden;
 }
 
 .homeHeader {
 	float: left;
 	height: 100vh;
-	width: 210vw;
+	width: 200vw;
 	padding: 0 70vw 0 0vw;
-	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
-	background-attachment: fixed;
-	overflow: hidden;
 
 	.title {
 		width: 100vw;
@@ -63,23 +63,16 @@
 	width: 0vw;
 	float: left;
 	position: relative;
-	left: -70vw;
+	left: -50vw;
 	transform: skew(-22.5deg,0deg);
-	
-	&:before {
-		content: "";
-		width: 140vw;
-		height: 100vh;
-		position: absolute;
-		background: linear-gradient(90deg, hsla(44, 40%, 80%, 1), hsla(44, 40%, 80%, 0) 5%, hsla(44, 40%, 80%, 0) 95%, hsla(44, 40%, 80%, 1)), linear-gradient(hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 1));		
-	}
 
 	.contents {
 		width: 100vw;
 		height: 100vh;
 		position: absolute;
 		left: 20vw;
-		background: linear-gradient(90deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 0) 20%, hsla(44, 40%, 65%, 0) 80%, hsla(44, 40%, 65%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.7), hsla(44, 40%, 80%, 0.7));
+		background-color: hsla(44, 30%, 80%, 1);
+		// background: linear-gradient(90deg, hsla(44, 40%, 65%, 1), hsla(44, 40%, 65%, 0) 20%, hsla(44, 40%, 65%, 0) 80%, hsla(44, 40%, 65%, 1)), linear-gradient(hsla(44, 40%, 80%, 0.7), hsla(44, 40%, 80%, 0.7));
 
 		iframe {
 			display: block;
@@ -107,13 +100,13 @@
 .homeButtonSection {
 	float: left;
 	height: 100vh;
-	width: 180vw;
-	margin: 0 30vw;
+	width: 200vw;
 	padding: 0 40vw 0 40vw;
 	
 	&.homeCaseStudy {
 		background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
-	
+		background-attachment: fixed;
+
 		h1 {
 			margin: 60vh 0vw 0 22vw;
 		}
@@ -130,7 +123,8 @@
 
 	&.homePrototype {
 		background: url('./images/backgrounds/W4A3567.jpg') no-repeat center center / cover;
-		
+		background-attachment: fixed;
+
 		h1 {
 			margin: 58vh 0vw 0 30vw;
 		}
@@ -174,17 +168,17 @@
 	width: 0vw;
 	float: left;
 	position: relative;
-	left: -70vw;
+	left: -50vw;
 
 	transform: skew(-22.5deg,0deg);
 
-	&:before {
-		content: "";
-		width: 140vw;
-		height: 100vh;
-		position: absolute;
-		background: linear-gradient(90deg, hsla(44, 30%, 80%, 1), hsla(44, 30%, 80%, 0) 5%, hsla(44, 30%, 80%, 0) 95%, hsla(44, 30%, 80%, 1)), linear-gradient(hsla(44, 30%, 65%, 1), hsla(44, 30%, 65%, 1));		
-	}
+	// &:before {
+	// 	content: "";
+	// 	width: 140vw;
+	// 	height: 100vh;
+	// 	position: absolute;
+	// 	background: linear-gradient(90deg, hsla(44, 30%, 80%, 1), hsla(44, 30%, 80%, 0) 5%, hsla(44, 30%, 80%, 0) 95%, hsla(44, 30%, 80%, 1)), linear-gradient(hsla(44, 30%, 65%, 1), hsla(44, 30%, 65%, 1));		
+	// }
 
 	.methodsList {
 		width: 30vw;
@@ -256,14 +250,16 @@
 	float: left;
 	transform: skew(-22.5deg,0deg);
 	position: relative;
-	left: -85vw;
+	left: -70vw;
 	
 	&:before {
 		content: "";
-		width: 140vw;
+		width: 100vw;
 		height: 100vh;
 		position: absolute;
-		background: linear-gradient(90deg, hsla(44, 20%, 80%, 1), hsla(44, 20%, 80%, 0) 5%, hsla(44, 20%, 80%, 0) 95%, hsla(44, 20%, 80%, 1)), linear-gradient(hsla(44, 20%, 65%, 1), hsla(44, 20%, 65%, 1));		
+		left: 20vw;
+		background-color: hsla(44, 20%, 80%, 1);
+		// background: linear-gradient(90deg, hsla(44, 20%, 80%, 1), hsla(44, 20%, 80%, 0) 5%, hsla(44, 20%, 80%, 0) 95%, hsla(44, 20%, 80%, 1)), linear-gradient(hsla(44, 20%, 65%, 1), hsla(44, 20%, 65%, 1));		
 		z-index: -1000;
 	}
 
@@ -406,11 +402,57 @@
 .homeConnect {
 	width: 185vw;
 	height: 100vh;
-	padding: 0 0 0 85vw;
+	padding: 0 0 0 70vw;
 	float: left;
 
 	background: url(./images/backgrounds/W4A3502.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
+
+	.title {
+		width: 100vw;
+		height: 100vh;
+		float: left;
+		overflow: hidden;
+		position: relative;
+
+		h1 {
+			margin: 67vh auto 0 32vw;
+			text-align: left;
+			letter-spacing: 5px;
+		}
+		h2 {
+			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+		}
+		p {
+			width: 60vw;
+			padding: 0.5vh 2.5vw 0 0vw;
+			margin: 0vh 0 0vh 32vw;
+			color: white;
+		}
+		span {
+			font-size: 0.8em;
+			letter-spacing: 3px;
+		}
+
+		span.second {
+			font-size: 1em;
+			letter-spacing: 5px;
+		}
+
+		.logos {
+			display: block;
+			width: 81vw;
+			margin: 2vh 0 0 32vw;
+
+			img {
+				width: 30vw;
+				margin: 0 5vw 0 0;
+			}
+
+		}
+	}
+
+
 
 	.connectMain {
 		width: 100vw;
@@ -484,5 +526,39 @@
 			}	
 		}
 	}
+}
+
+
+
+
+
+
+.glass .legacy-ie-fix {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
+}
+
+.glass h1 {
+  position: relative;
+  margin: 0;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 180px;
+  font-weight: normal;
+  font-family: "Megrim", sans-serif;
+  line-height: 1;
+  text-align: center;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
+}
+
+@media only screen {
+  .glass h1 {
+    -ms-filter: "none";
+  }
 }
 
