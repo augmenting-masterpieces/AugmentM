@@ -3,7 +3,7 @@ angular.module('templates-cth', ['templates/case-study.html', 'templates/home.ht
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
     "<section class=\"caseTop\">\n" +
-    "	<h1><a href=\"#home\">&#8592; </a> &nbsp;&nbsp;&nbsp;  User Camera Study  &nbsp;&nbsp;&nbsp; <a href=\"#home\">&#8594; </a></h1>\n" +
+    "	<h1><a href=\"#home\">&#8592; </a> &nbsp;&nbsp;&nbsp;  User Camera Study  &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<a href=\"#home\">&#8594; </a></h1>\n" +
     "	<h1 class=\"arrow\"> &nbsp;&#8595; </h1>\n" +
     "	<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
     "</section>\n" +
