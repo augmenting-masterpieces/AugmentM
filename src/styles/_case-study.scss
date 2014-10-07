@@ -1,3 +1,10 @@
+.caseTopWrapper {
+	height: 400vh;
+	width: 100vw;
+	position: relative;
+	overflow: hidden;
+}
+
 .caseTop {
 	background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
 	background-attachment: fixed;
@@ -68,9 +75,8 @@
 	position: absolute;
 	top: 150vh;
 	background-color: hsla(44, 30%, 80%, 1);
-	border: solid 1px black;	
-	// background: linear-gradient(hsla(44, 30%, 80%, 1) 95%,hsla(44, 30%, 100%, 1) 100%);		
-
+	border-bottom: solid 1px black;	
+	
 	text-align: center;
 	padding: 2% 0;
 	transform: skew(0deg, 22.5deg);
@@ -80,9 +86,22 @@
 		transform: skew(0deg, -22.5deg);
 		position: absolute;
 		left: 55vw;
-		top: 70vh;
+		top: 100vh;
 		text-align: left;
+
+		h3 {
+			text-align: left;
+			position: relative;
+			left: -30vw;
+			width: 100vw;
+		}
 	}
+}
+
+.textblock2 {
+	width: 40vw;
+	position: relative;
+	left: 5vw;
 }
 
 
