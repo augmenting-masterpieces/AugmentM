@@ -1,10 +1,7 @@
 .homeContainer {
 	position: relative;
 	height: 100vh;
-	width: 795vw;
-	overflow: hidden;
-	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
-	background-attachment: fixed;
+	width: 785vw;
 	overflow: hidden;
 }
 
@@ -13,6 +10,8 @@
 	height: 100vh;
 	width: 200vw;
 	padding: 0 70vw 0 0vw;
+	background: url(./images/backgrounds/navigationPeople.jpg) no-repeat center center / cover;
+	background-attachment: fixed;
 
 	.title {
 		width: 100vw;
@@ -101,12 +100,11 @@
 	float: left;
 	height: 100vh;
 	width: 200vw;
-	padding: 0 40vw 0 40vw;
+	padding: 0 40vw 0 55vw;
 	
 	&.homeCaseStudy {
 		background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
 		background-attachment: fixed;
-		width: 210vw;
 
 		h1 {
 			margin: 60vh 0vw 0 22vw;

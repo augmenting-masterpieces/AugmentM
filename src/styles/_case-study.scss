@@ -1,7 +1,7 @@
 .caseTop {
 	background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
 	background-attachment: fixed;
-	height: 100vh;
+	height: 200vh;
 	width: 100vw;
 	position: relative;
 	overflow: hidden;
@@ -10,6 +10,7 @@
 		padding: 60vh 0vw 0 22vw;
 		text-align: left;
 		letter-spacing: 3px;
+		margin: 0;
 		span {
 			font-size: 0.8em;
 		}
@@ -17,9 +18,11 @@
 
 	h1.arrow {
 		padding: 0vh 0 0 40vw;
+		margin: 0;
 	}
 
 	h2 {
+		margin: 0;
 		padding: 0vh 0 0 22vw;
 		width: 60vw;
 		text-align: left;
@@ -40,7 +43,7 @@
 		content: "";
 		transform: skew(-22.5deg,0deg);
 		width: 100vw;
-		height: 100vh;
+		height: 200vh;
 		left: -100vw;
 		position: absolute;
 		background-color: hsla(44, 30%, 80%, 1);		
@@ -50,9 +53,9 @@
 		content: "";
 		transform: skew(-22.5deg,0deg);
 		width: 100vw;
-		height: 100vh;
+		height: 200vh;
 		position: absolute;
-		left: 103vw;
+		left: 93vw;
 		top: 0;
 		background-color: hsla(44, 30%, 80%, 1);
 	}
@@ -132,26 +135,15 @@
 	}
 }
 
-.blackTransition {
-	min-height: 15vh;
+.topdiagonal {
+	height: 100vh;
 	width: 100vw;
+	position: absolute;
+	top: 150vh;
 	background-color: hsla(44, 30%, 80%, 1);		
 	text-align: center;
 	padding: 2% 0;
-	color: hsla(0, 0%, 100%, 1);
-	
-	h1 {
-		margin: 1vh 0 0 0;
-	}
-
-	p {
-		margin: 0 0;
-		color: white; 
-		width: 70%;
-		margin: 10px auto; 
-		text-align: left;
-		font-size: 1em;
-	}
+	transform: skew(0deg, 22.5deg);
 }
 
 
@@ -195,31 +187,3 @@ article {
 	}
 }
 
-.infoContainer {
-	background-color: white;
-	padding: 5vh 0;
-
-	.infographic {
-		display: block;
-		background-color: grey;
-		width: 60vw;
-		margin: 5vh auto;
-	}
-}
-
-.bigImage {
-	width: 100vw;
-	padding: 5%;
-	background: hsla(0, 0%, 0%, 1);
-
-	text-align: center;
-	p {
-		color: white; 
-	}
-
-	img {
-		display: block;
-		margin: 0 auto;
-		width: 80%;
-	}
-}
