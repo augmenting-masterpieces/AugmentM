@@ -53,5 +53,9 @@ module.exports =
 
   stellar:
     src: "stellar.js/jquery.stellar.js"
-    dest: "src/vendor/jquery.stellar.js"    
+    dest: "src/vendor/jquery.stellar.js" 
+
+  masonry:
+    src: "masonry/dist/masonry.pkgd.js"
+    dest: "src/vendor/masonry.pkgd.js"   
 

@@ -99,7 +99,7 @@
 }
 
 .middlepiece {
-	height: 100vh;
+	height: 120vh;
 	overflow: hidden;
 
 	.textblock2 {
@@ -116,7 +116,9 @@
 }
 
 .photoPiece {
-
+	height: 200vh;
+	width: 100vw;
+	background-color: hsla(44, 30%, 80%, 1);
 }
 
 

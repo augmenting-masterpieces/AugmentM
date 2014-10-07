@@ -39,10 +39,14 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	</div>\n" +
     "</section>\n" +
     "\n" +
-    "<section class=\"returnHome\">\n" +
-    "	<h4><a href=\"#home\">Return Home</a></h4>\n" +
+    "<section class=\"photoPiece\">\n" +
+    "	\n" +
     "</section>\n" +
     "\n" +
+    "<!-- <section class=\"returnHome\">\n" +
+    "	<h4><a href=\"#home\">Return Home</a></h4>\n" +
+    "</section>\n" +
+    " -->\n" +
     "");
 }]);
 

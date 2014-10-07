@@ -27,6 +27,7 @@ module.exports =
       'src/vendor/angularfire.js'
       'src/vendor/owl.carousel.js'
       'src/vendor/jquery.stellar.js'
+      'src/vendor/masonry.pkgd.js'
     ]
     dest: 'dev/vendor.js'
 
