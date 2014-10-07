@@ -1,12 +1,18 @@
 .caseTop {
-	background: url(./images/backgrounds/resized/personCamera.jpg) no-repeat center center / cover;
+	background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
 	background-attachment: fixed;
-	height: 120vh;
+	height: 100vh;
 	width: 100vw;
+	position: relative;
 	overflow: hidden;
 
 	h1 {
 		padding: 60vh 0vw 0 22vw;
+		text-align: left;
+		letter-spacing: 3px;
+		span {
+			font-size: 0.8em;
+		}
 	}
 
 	h1.arrow {
@@ -15,28 +21,13 @@
 
 	h2 {
 		padding: 0vh 0 0 22vw;
-		width: 40vw;
-	}
-
-
-	h1 {
-		text-align: left;
-		letter-spacing: 3px;
-
-		span {
-			font-size: 0.8em;
-		}
-
-	}
-	
-	h2 {
+		width: 60vw;
 		text-align: left;
 		color: white;
 		font-family: misolight;
 		text-align: left;
 		font-size: 1.5em;
 	}
-
 
 	a:hover {
 		color: white;
@@ -50,7 +41,7 @@
 		transform: skew(-22.5deg,0deg);
 		width: 100vw;
 		height: 100vh;
-		left: -90vw;
+		left: -100vw;
 		position: absolute;
 		background-color: hsla(44, 30%, 80%, 1);		
 	}
@@ -61,7 +52,7 @@
 		width: 100vw;
 		height: 100vh;
 		position: absolute;
-		left: 80vw;
+		left: 103vw;
 		top: 0;
 		background-color: hsla(44, 30%, 80%, 1);
 	}
@@ -144,7 +135,7 @@
 .blackTransition {
 	min-height: 15vh;
 	width: 100vw;
-	background: hsla(0, 0%, 0%, 1);
+	background-color: hsla(44, 30%, 80%, 1);		
 	text-align: center;
 	padding: 2% 0;
 	color: hsla(0, 0%, 100%, 1);

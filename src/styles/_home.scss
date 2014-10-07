@@ -104,13 +104,9 @@
 	padding: 0 40vw 0 40vw;
 	
 	&.homeCaseStudy {
-		// DEACTIVATE THIS LINE!
 		background: url(./images/backgrounds/personCamera_crop.jpg) no-repeat center center / cover;			
-		// ^^^^^^^^^^^^^^^^^^^^^
 		background-attachment: fixed;
-		
 		width: 210vw;
-		
 
 		h1 {
 			margin: 60vh 0vw 0 22vw;
