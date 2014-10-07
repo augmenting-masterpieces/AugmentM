@@ -3,29 +3,69 @@
 	background-attachment: fixed;
 	height: 120vh;
 	width: 100vw;
+	overflow: hidden;
 
 	h1 {
-		padding: 40vh 0 0 0;
-		text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-		margin: 0;
+		padding: 60vh 0vw 0 22vw;
 	}
 
 	h1.arrow {
-		margin: 10vh 0 0 0;
-		padding: 0 0 0 0;
+		padding: 0vh 0 0 40vw;
 	}
 
 	h2 {
-		margin: 10vh 0 0 5vw;
+		padding: 0vh 0 0 22vw;
 		width: 40vw;
+	}
+
+
+	h1 {
+		text-align: left;
+		letter-spacing: 3px;
+
+		span {
+			font-size: 0.8em;
+		}
+
+	}
+	
+	h2 {
+		text-align: left;
 		color: white;
 		font-family: misolight;
-		font-size: 1.3em;
+		text-align: left;
+		font-size: 1.5em;
 	}
+
 
 	a:hover {
 		color: white;
+		text-decoration: none;
+		transition: letter-spacing 10px;
 	}
+
+
+	&:before {
+		content: "";
+		transform: skew(-22.5deg,0deg);
+		width: 100vw;
+		height: 100vh;
+		left: -90vw;
+		position: absolute;
+		background-color: hsla(44, 30%, 80%, 1);		
+	}
+
+	&:after {
+		content: "";
+		transform: skew(-22.5deg,0deg);
+		width: 100vw;
+		height: 100vh;
+		position: absolute;
+		left: 80vw;
+		top: 0;
+		background-color: hsla(44, 30%, 80%, 1);
+	}
+
 }
 
 .pictureGallery {
