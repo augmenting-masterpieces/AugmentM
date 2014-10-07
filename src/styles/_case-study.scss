@@ -98,10 +98,26 @@
 	}
 }
 
-.textblock2 {
-	width: 40vw;
-	position: relative;
-	left: 5vw;
+.middlepiece {
+	height: 100vh;
+	overflow: hidden;
+
+	.textblock2 {
+		width: 40vw;
+		position: relative;
+		left: 5vw;
+	}
+
+	.textblock3 {
+		width: 40vw;
+		position: relative;
+		left: 55vw;
+	}
 }
+
+.photoPiece {
+
+}
+
 
 
