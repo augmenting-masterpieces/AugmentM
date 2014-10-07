@@ -62,128 +62,27 @@
 
 }
 
-.pictureGallery {
-	height: 100vh;
-	width: 100vw;
-	position: relative;
-
-	background: linear-gradient(
-	    hsla(0, 0%, 0%, 0.20),
-	    hsla(0, 0%, 0%, 0.20)
-    ), url(./images/ucs/1mrB/resized/DSC00118.jpg) no-repeat center center / cover;
-    background-attachment: fixed;
-
-	.top {
-		width: 100%;
-		position: absolute;
-		top: 7.5vh;
-		height: 70vh;
-
-		.conversation {
-			width: 40%;
-			padding: 2vh;
-			float: left;
-			height: 55vh;
-			
-			background-image: linear-gradient( 90deg,
-			    hsla(0, 0%, 0%, 1),
-			    hsla(0, 0%, 0%, 0)
-	        );
-
-	        p {
-	        	color: white;
-	        	height: 35vh;
-	        	overflow-y: scroll;
-	        	overflow-x: hidden;
-	        	font-size: 1.2em;
-	        }
-
-			p:nth-child(4) {
-				display: block;
-			}
-
-			hr {
-				border-color: hsla(0, 0%, 100%, 1);
-			}
-		}
-
-		h2 {
-			display: block;
-			width: 60%;
-			margin: 0;
-			padding: 5vh 5vw;
-			float: left;
-		}
-	}
-
-	.bottom {
-		width: 100%;
-		position: absolute;
-		bottom: 5vh;
-
-		.owlGallery {
-			img {
-				background-color: white;
-				width: 100%;
-				height: 20vh;
-				padding: 1px 1px 1px 0;
-				&:hover {
-					cursor: pointer;
-				}
-			}
-		}	
-	}
-}
-
-.topdiagonal {
-	height: 100vh;
+.dataVisualisation {
+	height: 200vh;
 	width: 100vw;
 	position: absolute;
 	top: 150vh;
-	background-color: hsla(44, 30%, 80%, 1);		
+	background-color: hsla(44, 30%, 80%, 1);
+	border: solid 1px black;	
+	// background: linear-gradient(hsla(44, 30%, 80%, 1) 95%,hsla(44, 30%, 100%, 1) 100%);		
+
 	text-align: center;
 	padding: 2% 0;
 	transform: skew(0deg, 22.5deg);
-}
 
-
-article {
-	width: 100vw;
-	background: hsla(0, 0%, 100%, 1);
-	padding: 2% 5%;
-
-	h4 {
-		width: 70%;
-		margin: 0 auto; 
-	}
-	
-	p {	
-		width: 70%;
-		margin: 0 auto;
-		padding: 1%;
-		font-size: 1.3em;
-	}
-	
-	p.boldAlinea {
-		margin: 0 auto 0 auto;
-		padding: 0 1% 0 1%;
-		font-size: 1.6em;
-	}
-
-	span.byline {
-		display: block;
-		font-size: 1em;
-		width: 70%;
-		margin: 0 auto 2vh auto;
-		padding: 0 0 0 2.5vw;
+	.textblock1 {
+		width: 40vw;
+		transform: skew(0deg, -22.5deg);
+		position: absolute;
+		left: 55vw;
+		top: 70vh;
 		text-align: left;
 	}
-
-	img {
-		width: 60%;
-		float: right;
-		padding: 30px;
-		transform: rotate(-90deg);
-	}
 }
+
 

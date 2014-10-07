@@ -15,6 +15,11 @@ module.exports =
     "gh-pages:beta"
   ]
 
+  quick: [
+    "express"
+    "watch"
+  ]
+
   production: [
     "build"
   ]
