@@ -122,12 +122,21 @@
 	
 	#photoPiece {
 		margin: 0 auto;
-		width: 80vw;
+		width: 75vw;
 		padding: 10vh 0 0 0;
 		overflow: hidden;
 
 		.item { 
-			width: 15vw; 
+			width: 14vw;
+			margin: 0 1vw 1vw 0;
+			img {
+				width: 100%;
+			}
+		}
+
+		.itemClicked {
+			width: 44vw;
+			margin: 0 1vw 1vw 0;
 			img {
 				width: 100%;
 			}

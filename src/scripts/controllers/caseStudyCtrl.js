@@ -30,7 +30,7 @@
     	});
 
     	// Appending to HTML and event listener.
-    	$("#photoPiece").html(imgTags).on("click", "img", data, galleryChange);
+    	$("#photoPiece").html(imgTags).on("click", "div", data, galleryChange);
 
     	// Running Owl.
     	// owlCarouselConfig();
@@ -41,30 +41,34 @@
 
     function galleryChange(evt) {
     	// galleryChange
-		var photoData = {};
-		var photoNumber = $(evt.target).attr("data");
+			var photoData = {};
+			var photoNumber = $(evt.target).attr("data");
 
-		// Necessary loop because toplevel key is not set
-		$(evt.data.photos).each(function(){
-			if (this.number == photoNumber){
-				photoData = this;
-				return false;
-			}
-		});
+			// Necessary loop because toplevel key is not set
+			$(evt.data.photos).each(function(){
+				if (this.number == photoNumber){
+					photoData = this;
+					return false;
+				}
+			});
 
-		// console.log("im run");
+			console.log("clicked!");
+			console.log(evt.currentTarget);	
 
-		// // Changing HTML
-		// $(".photoPiece").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
-		// $(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "<br><br> Title: " + photoData.name + "<br>Tag: " + photoData.tags[0] + "</p><hr>");
-		
-		// if (photoData.quotes !== null) {
-		// 	$(".galleryQuote").html("\"" + photoData.quotes + "\"");
-		// } else {
-		// 	$(".galleryQuote").html("");
-		// }
+			// $(evt.currentTarget).addClass("itemClicked");
+
+			// console.log("im run");
+
+			// // Changing HTML
+			// $(".photoPiece").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
+			// $(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "<br><br> Title: " + photoData.name + "<br>Tag: " + photoData.tags[0] + "</p><hr>");
+			
+			// if (photoData.quotes !== null) {
+			// 	$(".galleryQuote").html("\"" + photoData.quotes + "\"");
+			// } else {
+			// 	$(".galleryQuote").html("");
+			// }
     }
-
 
     function masonryConfig() {
     	console.log('nooooo');
@@ -72,92 +76,12 @@
 
 			$container.imagesLoaded( function() {
 			  $container.masonry({
-				  columnWidth: 60,
-				  "gutter": 0,
+				  columnWidth: 0,
 				  itemSelector: '.item'
 				});
 			});
 			console.log('oh yeah!');
     }
-
-		function owlCarouselConfig() {
-
-			$("#galleryCaseStudy").owlCarousel({
-
-		    // Most important owl features
-		    items : 6,
-		    itemsCustom : false,
-		    itemsDesktop : [1199,5],
-		    itemsDesktopSmall : [980,4],
-		    itemsTablet: [768,3],
-		    itemsTabletSmall: false,
-		    itemsMobile : [479,2],
-		    singleItem : false,
-		    itemsScaleUp : false,
-		 
-		    //Basic Speeds
-		    slideSpeed : 200,
-		    paginationSpeed : 800,
-		    rewindSpeed : 1000,
-		 
-		    //Autoplay
-		    autoPlay : false,
-		    stopOnHover : false,
-		 
-		    // Navigation
-		    navigation : false,
-		    navigationText : ["prev","next"],
-		    rewindNav : true,
-		    scrollPerPage : false,
-		 
-		    //Pagination
-		    pagination : true,
-		    paginationNumbers: false,
-		 
-		    // Responsive 
-		    responsive: true,
-		    responsiveRefreshRate : 200,
-		    responsiveBaseWidth: window,
-		 
-		    // CSS Styles
-		    baseClass : "owl-carousel",
-		    theme : "owl-theme",
-		 
-		    //Lazy load
-		    lazyLoad : false,
-		    lazyFollow : true,
-		    lazyEffect : "fade",
-		 
-		    //Auto height
-		    autoHeight : false,
-		 
-		    //JSON 
-		    jsonPath : false,
-		    jsonSuccess : false,
-		 
-		    //Mouse Events
-		    dragBeforeAnimFinish : true,
-		    mouseDrag : true,
-		    touchDrag : true,
-		 
-		    //Transitions
-		    transitionStyle : false,
-		 
-		    // Other
-		    addClassActive : false,
-		 
-		    //Callbacks
-		    beforeUpdate : false,
-		    afterUpdate : false,
-		    beforeInit: false, 
-		    afterInit: false, 
-		    beforeMove: false, 
-		    afterMove: false,
-		    afterAction: false,
-		    startDragging : false,
-		    afterLazyLoad : false
-			});
-		}
 
     return vm;
 	}
