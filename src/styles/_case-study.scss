@@ -115,10 +115,26 @@
 	}
 }
 
-.photoPiece {
+.photoSection {
 	height: 200vh;
 	width: 100vw;
 	background-color: hsla(44, 30%, 80%, 1);
+	
+	#photoPiece {
+		margin: 0 auto;
+		width: 80vw;
+		padding: 10vh 0 0 0;
+		overflow: hidden;
+
+		.item { 
+			width: 15vw; 
+			img {
+				width: 100%;
+			}
+		}
+
+	}
+	
 }
 
 

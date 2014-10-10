@@ -26,14 +26,17 @@
     	var imgTags = "";
 
     	$(data.photos).each(function(){
-    		imgTags += "<img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" >";
+    		imgTags += "<div class=\"item\"><img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" ></div>";
     	});
 
     	// Appending to HTML and event listener.
-    	$("#galleryCaseStudy").html(imgTags).on("click", "img", data, galleryChange);
+    	$("#photoPiece").html(imgTags).on("click", "img", data, galleryChange);
 
     	// Running Owl.
-    	owlCarouselConfig();    	
+    	// owlCarouselConfig();
+
+    	// Running Masonry
+    	masonryConfig();
     }
 
     function galleryChange(evt) {
@@ -49,15 +52,32 @@
 			}
 		});
 
-		// Changing HTML
-		$(".pictureGallery").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
-		$(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "<br><br> Title: " + photoData.name + "<br>Tag: " + photoData.tags[0] + "</p><hr>");
+		// console.log("im run");
+
+		// // Changing HTML
+		// $(".photoPiece").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
+		// $(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "<br><br> Title: " + photoData.name + "<br>Tag: " + photoData.tags[0] + "</p><hr>");
 		
-		if (photoData.quotes !== null) {
-			$(".galleryQuote").html("\"" + photoData.quotes + "\"");
-		} else {
-			$(".galleryQuote").html("");
-		}
+		// if (photoData.quotes !== null) {
+		// 	$(".galleryQuote").html("\"" + photoData.quotes + "\"");
+		// } else {
+		// 	$(".galleryQuote").html("");
+		// }
+    }
+
+
+    function masonryConfig() {
+    	console.log('nooooo');
+    	var $container = $('#photoPiece');
+
+			$container.imagesLoaded( function() {
+			  $container.masonry({
+				  columnWidth: 60,
+				  "gutter": 0,
+				  itemSelector: '.item'
+				});
+			});
+			console.log('oh yeah!');
     }
 
 		function owlCarouselConfig() {
@@ -139,6 +159,6 @@
 			});
 		}
 
-	    return vm;
+    return vm;
 	}
 })();

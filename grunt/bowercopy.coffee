@@ -57,5 +57,11 @@ module.exports =
 
   masonry:
     src: "masonry/dist/masonry.pkgd.js"
-    dest: "src/vendor/masonry.pkgd.js"   
+    dest: "src/vendor/masonry.pkgd.min.js"
+
+  imagesloaded:
+    src: "imagesloaded/imagesloaded.pkgd.min.js"
+    dest: "src/vendor/imagesloaded.pkgd.min.js" 
+
+
 
