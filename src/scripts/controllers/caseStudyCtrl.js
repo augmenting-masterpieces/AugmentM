@@ -53,9 +53,11 @@
 			});
 
 			console.log("clicked!");
-			console.log(evt.currentTarget);	
+			console.log(evt.currentTarget);
 
-			// $(evt.currentTarget).addClass("itemClicked");
+			$(evt.currentTarget).addClass("itemClicked");
+
+			$container.masonry();
 
 			// console.log("im run");
 
