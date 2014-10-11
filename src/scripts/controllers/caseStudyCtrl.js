@@ -55,9 +55,9 @@
 			console.log("clicked!");
 			console.log(evt.currentTarget);
 
-			$(evt.currentTarget).addClass("itemClicked");
+			$(evt.currentTarget).toggleClass("itemClicked");
 
-			$container.masonry();
+			$('#photoPiece').masonry();
 
 			// console.log("im run");
 

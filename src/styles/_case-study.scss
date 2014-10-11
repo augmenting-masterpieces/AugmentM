@@ -116,7 +116,7 @@
 }
 
 .photoSection {
-	height: 200vh;
+	min-height: 200vh;
 	width: 100vw;
 	background-color: hsla(44, 30%, 80%, 1);
 	
@@ -124,13 +124,15 @@
 		margin: 0 auto;
 		width: 75vw;
 		padding: 10vh 0 0 0;
-		overflow: hidden;
 
 		.item { 
 			width: 14vw;
 			margin: 0 1vw 1vw 0;
 			img {
 				width: 100%;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
 

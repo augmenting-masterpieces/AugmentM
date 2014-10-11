@@ -10,13 +10,13 @@ module.exports = (grunt) ->
   options:
     accessKeyId: aws.AWSAccessKeyId
     secretAccessKey: aws.AWSSecretKey
-    region: 'us-east-1'
+    region: 'eu-west-1'
     uploadConcurrency: 5
     downloadConcurrency: 5
 
   staging:
     options:
-      bucket: 'cth-dev.cc'
+      bucket: 'augmas-staging'
     files: [
       expand: true
       cwd: 'dev'

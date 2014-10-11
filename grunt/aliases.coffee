@@ -15,6 +15,11 @@ module.exports =
     "gh-pages:beta"
   ]
 
+  betaAWS: [
+    "build"
+    "aws_s3:staging"
+  ]
+
   quick: [
     "express"
     "watch"
