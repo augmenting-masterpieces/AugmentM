@@ -26,14 +26,11 @@
     	var imgTags = "";
 
     	$(data.photos).each(function(){
-    		imgTags += "<div class=\"item\"><img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" ></div>";
+    		imgTags += "<div class=\"item\"><img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" ><hr class=\"itemText\"><p class=\"itemText\">" + this.transcriptSnippet + "<br class=\"itemText\"><br class=\"itemText\"> Title: " + this.name + "<br class=\"itemText\">Tag: " + this.tags[0] + "</p><hr class=\"itemText\"></div>";
     	});
 
     	// Appending to HTML and event listener.
     	$("#photoPiece").append(imgTags).on("click", "div", data, galleryChange);
-
-    	// Running Owl.
-    	// owlCarouselConfig();
 
     	// Running Masonry
     	masonryConfig();
@@ -52,15 +49,10 @@
 				}
 			});
 
-			var appendText = "<hr class=\"itemText\"><p class=\"itemText\">" + photoData.transcriptSnippet + "<br class=\"itemText\"><br class=\"itemText\"> Title: " + photoData.name + "<br class=\"itemText\">Tag: " + photoData.tags[0] + "</p><hr class=\"itemText\">";
-
-			console.log("remove");
-			$("#photoPiece").remove(".itemText");
 			$(evt.currentTarget).toggleClass("itemClicked");
-			$(evt.currentTarget).append(appendText);
+			$(evt.currentTarget).find("hr").css("display: block");
 
 			$('#photoPiece').masonry();
-
 
 			// console.log("im run");
 

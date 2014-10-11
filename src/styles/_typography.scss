@@ -29,9 +29,13 @@ p {
 	font-size: 1em;
 }
 
-a {
+a {	
 	color: white;
 	font-family: misoregular;
+	&:hover {
+		text-decoration: none;
+		color: white;
+	}
 }
 
 hr {

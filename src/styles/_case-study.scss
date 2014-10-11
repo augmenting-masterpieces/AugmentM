@@ -1,6 +1,6 @@
 .caseTopWrapper {
-	height: 400vh;
 	width: 100vw;
+	height: 400vh;
 	position: relative;
 	overflow: hidden;
 }
@@ -82,24 +82,30 @@
 	transform: skew(0deg, 22.5deg);
 
 	.textblock1 {
-		width: 40vw;
 		transform: skew(0deg, -22.5deg);
-		position: absolute;
-		left: 55vw;
+		position: relative;
+		// right: 10vw;
 		top: 100vh;
 		text-align: left;
 
 		h3 {
-			text-align: left;
+			text-align: right;
 			position: relative;
-			left: -30vw;
-			width: 100vw;
+			right: 5vw;
+		}
+
+		p {
+			display: block;
+			width: 40vw;
+			margin: 0 5vw 11px 0px;
+			position: relative;
+			left: 55vw;
 		}
 	}
 }
 
 .middlepiece {
-	height: 120vh;
+	height: 70vh;
 	overflow: hidden;
 
 	.textblock2 {
@@ -107,23 +113,17 @@
 		position: relative;
 		left: 5vw;
 	}
-
-	.textblock3 {
-		width: 40vw;
-		position: relative;
-		left: 55vw;
-	}
 }
 
 .photoSection {
-	min-height: 200vh;
 	width: 100vw;
+	// border-top: 1px solid black;
 	background-color: hsla(44, 30%, 80%, 1);
 	
 	#photoPiece {
 		margin: 0 auto;
 		width: 75vw;
-		padding: 10vh 0 0 0;
+		padding: 10vh 0 10vh 0;
 
 		.grid-sizer {
 			width: 0.1vw;
@@ -141,16 +141,42 @@
 		}
 
 		.itemClicked {
-			width: 44vw;
+			width: 29vw;
 			margin: 0 1vw 1vw 0;
+			// transition: width 0.4s, height 0.4s;
 			img {
 				width: 100%;
 			}
+			.itemText {
+				display: block;
+			}
+		}
+
+		.itemText {
+			display: none;
 		}
 
 	}
 	
 }
 
+.bottomPiece {
+	height: 100vh;
 
+	.textblock3 {
+		width: 40vw;
+		position: relative;
+		top: 20vh;
+		left: 55vw;
+	}
+}
+
+.returnHome {
+	background-color: hsla(44, 30%, 80%, 1);
+	padding:2.5vh;	
+
+	h1 {
+		margin: 0;	
+	}
+}
 
