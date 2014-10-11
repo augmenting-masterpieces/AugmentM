@@ -41,6 +41,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "\n" +
     "<section class=\"photoSection\">\n" +
     "	<div id=\"photoPiece\">\n" +
+    "		<div class=\"grid-sizer\"></div>\n" +
     "		\n" +
     "	</div>\n" +
     "</section>\n" +

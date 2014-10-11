@@ -30,7 +30,7 @@
     	});
 
     	// Appending to HTML and event listener.
-    	$("#photoPiece").html(imgTags).on("click", "div", data, galleryChange);
+    	$("#photoPiece").append(imgTags).on("click", "div", data, galleryChange);
 
     	// Running Owl.
     	// owlCarouselConfig();
@@ -52,18 +52,21 @@
 				}
 			});
 
-			console.log("clicked!");
-			console.log(evt.currentTarget);
+			var appendText = "<hr class=\"itemText\"><p class=\"itemText\">" + photoData.transcriptSnippet + "<br class=\"itemText\"><br class=\"itemText\"> Title: " + photoData.name + "<br class=\"itemText\">Tag: " + photoData.tags[0] + "</p><hr class=\"itemText\">";
 
+			console.log("remove");
+			$("#photoPiece").remove(".itemText");
 			$(evt.currentTarget).toggleClass("itemClicked");
+			$(evt.currentTarget).append(appendText);
 
 			$('#photoPiece').masonry();
+
 
 			// console.log("im run");
 
 			// // Changing HTML
 			// $(".photoPiece").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
-			// $(".conversation").html("<hr><p>" + photoData.transcriptSnippet + "<br><br> Title: " + photoData.name + "<br>Tag: " + photoData.tags[0] + "</p><hr>");
+			
 			
 			// if (photoData.quotes !== null) {
 			// 	$(".galleryQuote").html("\"" + photoData.quotes + "\"");
@@ -73,16 +76,14 @@
     }
 
     function masonryConfig() {
-    	console.log('nooooo');
-    	var $container = $('#photoPiece');
+    	var $container = $("#photoPiece");
 
 			$container.imagesLoaded( function() {
 			  $container.masonry({
-				  columnWidth: 0,
-				  itemSelector: '.item'
+				  columnWidth: ".grid-sizer",
+				  itemSelector: ".item"
 				});
 			});
-			console.log('oh yeah!');
     }
 
     return vm;
