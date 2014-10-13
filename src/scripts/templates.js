@@ -12,7 +12,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	</div>\n" +
     "	<div class=\"dataVisualisation\">\n" +
     "		<div class=\"visualisation\"></div>\n" +
-    "		<div class=\"textBlock1\" >\n" +
+    "		<div class=\"textBlock1\" class=\"scrollMe\">\n" +
     "			<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
     "			<p>This case study shows how the User Camera Studies were conducted, gives visual examples and types of insights a museum can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
     "\n" +
@@ -25,6 +25,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</section>\n" +
     "\n" +
     "<section class=\"middlepiece\">\n" +
+    "	<!-- <img src=\"./images/backgrounds/W4A3198.jpg\" /> -->\n" +
     "	<div class=\"textblock2\">\n" +
     "		<p>The purpose of our study was to get qualitative input from the visitors for developing digital devices and interactive means in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
     "\n" +
@@ -49,7 +50,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</section>\n" +
     "\n" +
     "<section class=\"returnHome\">\n" +
-    "	<a href=\"#home\"><h4>Return Home</h4></a>\n" +
+    "	<a href=\"#home\"><h4>H<span>OME</span></h4></a>\n" +
     "</section>\n" +
     "\n" +
     "");
@@ -60,11 +61,11 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
-    "			<h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
+    "			<a href=\"#case-study\"><h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
     "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
     "\n" +
     "			<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection.\n" +
-    "			   Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
+    "		    Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p></a>\n" +
     "			<div class=\"logos\">\n" +
     "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
     "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
@@ -78,9 +79,9 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeButtonSection homeCaseStudy\">\n" +
-    "		<h1><a href=\"#case-study\">U<span>SER </span>C<span>AMERA </span>S<span>TUDY </span></a></h1>\n" +
+    "		<a href=\"#case-study\"><h1>U<span>SER </span>C<span>AMERA </span>S<span>TUDY </span></h1>\n" +
     "		<h2>“When I have a camera in my hand, I dare to walk in front of a painting. It's like having permission to crawl through the masses.” - participant UCS</h2>\n" +
-    "		<h1 class=\"arrow\">&#8595; </h1>\n" +
+    "		<h1 class=\"arrow\">&#8595; </h1></a>\n" +
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsList\">\n" +
