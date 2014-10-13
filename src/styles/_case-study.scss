@@ -76,7 +76,7 @@
 	position: absolute;
 	top: 150vh;
 	background-color: hsla(44, 30%, 80%, 1);
-	border-bottom: solid 1px black;	
+	border-bottom: solid 10px papayawhip;	
 	
 	text-align: center;
 	padding: 2% 0;
@@ -86,32 +86,34 @@
 		transform: skew(0deg, -22.5deg);
 		position: relative;
 		// right: 10vw;
-		top: 100vh;
+		top: 70vh;
 		text-align: left;
 
 		h3 {
-			text-align: right;
+			text-align: left;
 			position: relative;
-			right: 5vw;
+			right: -2vw;
+			top: -30vh;
 		}
 
 		p {
 			display: block;
-			width: 40vw;
+			width: 25vw;
 			margin: 0 5vw 11px 0px;
 			position: relative;
-			left: 55vw;
+			left: 10vw;
+			top: -25vh;
 		}
 	}
 }
 
 .middlepiece {
-	height: 30vh;
+	height: 40vh;
 	position: relative;
 	top: -40vh;
 
 	.textblock2 {
-		width: 40vw;
+		width: 35vw;
 		position: relative;
 		left: 5vw;
 	}
@@ -197,7 +199,7 @@
 	}
 
 	.textblock3 {
-		width: 40vw;
+		width: 35vw;
 		position: relative;
 		top: 10vh;
 		left: 55vw;
