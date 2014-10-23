@@ -60,7 +60,7 @@
 	&:after {
 		content: "";
 		transform: skew(-22.5deg,0deg);
-		width: 100vw;
+		width: 50vw;
 		height: 200vh;
 		position: absolute;
 		left: 83vw;
@@ -112,10 +112,56 @@
 	position: relative;
 	top: -60vh;
 
+	&:before {
+		content: "";
+		transform: skew(-32.5deg,0deg);
+		width: 125vw;
+		height: 300vh;
+		left: -110vw;
+		position: absolute;
+		background-color: hsla(44, 30%, 80%, 1);		
+	}
+
+	&:after {
+		content: "";
+		transform: skew(-10.5deg,0deg);
+		width: 100vw;
+		height: 200vh;
+		position: absolute;
+		left: 83vw;
+		top: 0;
+		background-color: hsla(44, 30%, 80%, 1);
+	}
+
+
+
+
 	.textblock2 {
+		font-color: white;
 		width: 25vw;
 		position: relative;
-		left: 5vw;
+		left: 10vw;
+		top:42vh;
+		border-bottom: solid 2px white;
+
+	}
+
+
+
+	.textblock3 {
+		width: 25vw;
+		position: relative;
+		left: 55vw;
+		top:10vh;
+		
+	}
+
+	.textblock4 {
+		width: 25vw;
+		position: relative;
+		left: 55vw;
+		top:8.75vh;
+		
 	}
 	// img {
 	// 	position: absolute;
@@ -135,6 +181,7 @@
 	padding: 20vh 0;
 	background: linear-gradient(90deg, hsla(44, 30%, 80%, 1) 10%, hsla(44, 30%, 80%, 0) 20%, hsla(44, 30%, 80%, 0) 80%, hsla(44, 30%, 80%, 1) 90%), linear-gradient(hsla(44, 30%, 80%, 1) 10%, hsla(44, 30%, 80%, 0) 15%, hsla(44, 30%, 80%, 0) 85%, hsla(44, 30%, 80%, 1) 90%);
 	// background-color: hsla(44, 30%, 80%, 1);
+	border-top: solid 10px papayawhip;	
 	
 	#photoPiece {
 		margin: 0 auto;
@@ -183,26 +230,27 @@
 }
 
 .bottomPiece {
-	height: 70vh;
+	height: 80vh;
 	position: relative;
+
 	// background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9) 100%), url(./images/backgrounds/W4A3198.jpg) no-repeat center center / cover;
 	overflow: hidden;
-	img {
-		position: absolute;
-		width: 100vw;
-		filter: blur(5px) grayscale(100%);
-  		-webkit-filter: blur(5px) grayscale(100%);
-  		-moz-filter: blur(5px) grayscale(100%);
-  		-o-filter: blur(5px) grayscale(100%);
-  		-ms-filter: blur(5px) grayscale(100%);
-  		 opacity: 0.1;
-	}
+	border-bottom: solid 10px papayawhip;	
 
-	.textblock3 {
+
+	
+
+	.textblock5 {
 		width: 25vw;
 		position: relative;
-		top: 10vh;
+		top: 39vh;
 		left: 55vw;
+	}
+	.textblock6 {
+		width: 25vw;
+		position: relative;
+		top: -5vh;
+		left: 20vw;
 	}
 }
 
