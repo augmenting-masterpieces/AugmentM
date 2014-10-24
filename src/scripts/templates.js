@@ -29,13 +29,10 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<div class=\"textblock2\">\n" +
     "		<p>The purpose of our study was to get qualitative input from the visitors for developing digital devices and interactive means in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
     "\n" +
+    "		<p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
+    "\n" +
+    "		<p>This setting gives the participants freedom to talk about their own points of interest and observations during their visit in a vacation-style narrative that is familiar to most people. The pictures that the participants take also serve to remember certain situations and aspects easily. As the study provides oral and visual feedback, it reveals different kinds of information than a thematically focused survery. </p>\n" +
     "	</div>\n" +
-    "    <div class=\"textblock3\">\n" +
-    "    <p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
-    "    </div>\n" +
-    "    <div class=\"textblock4\">\n" +
-    "    <p>This setting gives the participants freedom to talk about their own points of interest and observations during their visit in a vacation-style narrative that is familiar to most people. The pictures that the participants take also serve to remember certain situations and aspects easily. As the study provides oral and visual feedback, it reveals different kinds of information than a thematically focused survery. </p>\n" +
-    "    </div>\n" +
     "</section>\n" +
     "\n" +
     "<section class=\"photoSection\">\n" +
@@ -45,10 +42,9 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</section>\n" +
     "\n" +
     "<section class=\"bottomPiece\">\n" +
-    "	<div class=\"textblock5\">\n" +
+    "	<img src=\"./images/backgrounds/W4A3198.jpg\" /> \n" +
+    "	<div class=\"textblock3\">\n" +
     "		<p>The survey had twelve participants from four out of the five visitors' categories the Rijksmuseum works with on a daily basis in their education and marketing department. These four categories all concern unaccompanied visitors (Cultural Tourist, Art Lover's, Cultural Professionals and Families, whereas the fifth category consists of accompanied groups (school classes and workshop groups from the Teekenschool).</p>\n" +
-    "   </div>\n" +
-    "   <div class=\"textblock6\">\n" +
     "		<p>Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the present survey. Below there is one detailed profile and script from a participating Cultural Tourist in order to get an indepth view on the kind of feedback provided.The most revealing result of the survey were that the social dimensions of a visit to the Rijksmuseum are highly important for all visitor's types. Whereas the amount of time spent on looking at art works and written information varied largely, all participants observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times. </p>\n" +
     "	</div>\n" +
     "</section>\n" +
