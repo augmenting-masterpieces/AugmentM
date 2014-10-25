@@ -22,16 +22,14 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "			<p>The UCS helped to understand the social dimensions of a museum and map the museum experience as the participating visitors moved social aspects and rather basic preconditions for art reception back into the center of attention by addressing their interaction with the space, museum staff, other visitors and art objects. </p>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "</section>\n" +
     "\n" +
-    "<section class=\"middlepiece\">\n" +
-    "	<div class=\"textblock2\">\n" +
+    "	<section class=\"middlepiece\">\n" +
     "		<p>The purpose of our study was to get qualitative input from the visitors for developing digital devices and interactive means in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
     "\n" +
     "		<p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
     "\n" +
     "		<p>This setting gives the participants freedom to talk about their own points of interest and observations during their visit in a vacation-style narrative that is familiar to most people. The pictures that the participants take also serve to remember certain situations and aspects easily. As the study provides oral and visual feedback, it reveals different kinds of information than a thematically focused survery. </p>\n" +
-    "	</div>\n" +
+    "	</section>\n" +
     "</section>\n" +
     "\n" +
     "<section class=\"photoSection\">\n" +

@@ -1,6 +1,6 @@
 .caseTopWrapper {
 	width: 100vw;
-	height: 375vh;
+	height: 460vh;
 	position: relative;
 	overflow: hidden;
 	background: transparant;
@@ -54,7 +54,9 @@
 		height: 200vh;
 		left: -110vw;
 		position: absolute;
-		background-color: hsla(44, 30%, 80%, 1);		
+		background-color: hsla(44, 30%, 80%, 1);
+		border-right: solid 10px papayawhip;	
+
 	}
 
 	&:after {
@@ -66,6 +68,8 @@
 		left: 83vw;
 		top: 0;
 		background-color: hsla(44, 30%, 80%, 1);
+		border-left: solid 10px papayawhip;	
+
 	}
 
 }
@@ -77,6 +81,9 @@
 	top: 150vh;
 	background-color: hsla(44, 30%, 80%, 1);
 	border-bottom: solid 10px papayawhip;	
+	z-index: 10;
+	border-top: solid 10px papayawhip;	
+
 	
 	text-align: center;
 	padding: 2% 0;
@@ -89,73 +96,94 @@
 		text-align: left;
 
 		h3 {
-			text-align: left;
+			text-align: center;
 			position: relative;
-			right: -16vw;
+			width: 100vw;
+			padding: 0.5em;
 			top: -40vh;
+			background: white;
+			border-top: solid 10px papayawhip;	
+			border-bottom: solid 10px papayawhip;
 		}
 
 		p {
 			display: block;
-			width: 25vw;
-			margin: 0 5vw 11px 0px;
+			width: 40em;
+			padding: 3.5em;
 			position: relative;
-			left: 55vw;
-			top: -30vh;
+			left: 30vw;
+			top: -40vh;
+			background-color: white;
+			border-left: solid 10px papayawhip;	
+			border-right: solid 10px papayawhip;
 		}
 	}
 }
 
 .middlepiece {
-	height: 40vh;
+	min-height: 180vh;
+	width: 100vw;
 	position: relative;
-	top: -60vh;
+	top: 80vh;
+	z-index: 0;
+	padding-top: 60vh;
+	// background-color: hsla(44, 30%, 80%, 1);
+	background-color: lightgrey;
 
-	&:before {
-		content: "";
-		transform: skew(-32.5deg,0deg);
-		width: 125vw;
-		height: 300vh;
-		left: -110vw;
-		position: absolute;
-		background-color: hsla(44, 30%, 80%, 1);		
-	}
+	// &:before {
+	// 	content: "";
+	// 	transform: skew(-32.5deg,0deg);
+	// 	width: 125vw;
+	// 	height: 300vh;
+	// 	left: -110vw;
+	// 	position: absolute;
+	// 	background-color: hsla(44, 30%, 80%, 1);		
+	// }
 
-	&:after {
-		content: "";
-		transform: skew(-10.5deg,0deg);
-		width: 100vw;
-		height: 200vh;
-		position: absolute;
-		left: 83vw;
-		top: 0;
-		background-color: hsla(44, 30%, 80%, 1);
-	}
+	// &:after {
+	// 	content: "";
+	// 	transform: skew(-10.5deg,0deg);
+	// 	width: 100vw;
+	// 	height: 200vh;
+	// 	position: absolute;
+	// 	left: 83vw;
+	// 	top: 0;
+	// 	background-color: hsla(44, 30%, 80%, 1);
+	// }
 
 	p:nth-of-type(1) {
+		padding: 3.5em;
 		font-color: white;
-		width: 25vw;
+		width: 40em;
 		position: relative;
 		left: 10vw;
-		top:42vh;
 		border-bottom: solid 2px white;
+		background-color: hsla(44, 30%, 100%, 1);
+		border-left: solid 10px papayawhip;	
+		border-right: solid 10px papayawhip;	
 
 	}
 
 	p:nth-of-type(2) {
-		width: 25vw;
+		display: block;
+		padding: 3.5em;
+		width: 40em;
 		position: relative;
-		left: 55vw;
-		top:10vh;
-		
+		left: 10vw;
+		background-color: hsla(44, 30%, 100%, 1);
+		border-left: solid 10px papayawhip;	
+		border-right: solid 10px papayawhip;	
 	}
 
 	p:nth-of-type(3) {
-		width: 25vw;
+		display: block;
+		padding: 3.5em;
+		width: 40em;
 		position: relative;
-		left: 55vw;
-		top:8.75vh;
-		
+		left: 10vw;
+		background-color: hsla(44, 30%, 100%, 1);
+		border-left: solid 10px papayawhip;	
+		border-right: solid 10px papayawhip;	
 	}
 }
 
@@ -175,7 +203,7 @@
 		}
 
 		.item { 
-			width: 13.4vw;
+			width: 14.4vw;
 			margin: 0 0.5vw 0.5vw 0;
 
 			img {
@@ -212,29 +240,40 @@
 }
 
 .bottomPiece {
-	height: 80vh;
+	min-height: 80vh;
+	padding: 10vh 0;
 	position: relative;
 	// background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9) 100%), url(./images/backgrounds/W4A3198.jpg) no-repeat center center / cover;
 	overflow: hidden;
+	border-top: solid 10px papayawhip;
 	border-bottom: solid 10px papayawhip;	
+	background-color: lightgrey;
 
-	.textblock5 {
-		width: 25vw;
+	p:nth-of-type(1) {
+		width: 40em;
+		padding: 3.5em;
 		position: relative;
-		top: 10vh;
 		left: 55vw;
+		border-left: solid 10px papayawhip;	
+		border-right: solid 10px papayawhip;
+		background-color: white;
 	}
-	.textblock6 {
-		width: 25vw;
+	
+	p:nth-of-type(2) {
+		width: 40em;
+		padding: 3.5em;
 		position: relative;
-		top: -5vh;
-		left: 20vw;
+		left: 55vw;
+		border-left: solid 10px papayawhip;	
+		border-right: solid 10px papayawhip;
+		background-color: white;
 	}
+
 }
 
 .returnHome {
 	background-color: hsla(44, 30%, 80%, 1);
-	padding:2.5vh;	
+	padding: 2.5vh;	
 
 	h4 {
 		margin: 0;
