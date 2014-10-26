@@ -46,7 +46,6 @@
 		transition: letter-spacing 10px;
 	}
 
-
 	&:before {
 		content: "";
 		transform: skew(-22.5deg,0deg);
@@ -55,8 +54,6 @@
 		left: -110vw;
 		position: absolute;
 		background-color: hsla(44, 30%, 80%, 1);
-		// border-right: solid 10px papayawhip;	
-
 	}
 
 	&:after {
@@ -69,9 +66,7 @@
 		top: 0;
 		background-color: hsla(44, 30%, 80%, 1);
 		border-left: solid 10px papayawhip;	
-
 	}
-
 }
 
 .dataVisualisation {
@@ -80,14 +75,21 @@
 	position: absolute;
 	top: 150vh;
 	background-color: hsla(44, 30%, 80%, 1);
-	// border-bottom: solid 10px papayawhip;	
 	z-index: 10;
 	border-top: solid 10px papayawhip;	
-
-	
 	text-align: center;
 	padding: 2% 0;
 	transform: skew(0deg, 22.5deg);
+
+	.colorblocktext {
+		width: 30px;
+		height: 30px;
+		background-color: hsla(15, 79%, 56%, 1);
+		position: relative;
+		top: 200px;
+		left: 200px;
+	}
+
 
 	.textblock1 {
 		transform: skew(0deg, -22.5deg);
@@ -101,22 +103,14 @@
 			width: 100vw;
 			padding: 0.5em;
 			top: -40vh;
-			// background: papayawhip;
-			// border-top: solid 10px papaya: ;whip;	
-			// border-bottom: solid 10px papayawhip;
 		}
 
 		p {
 			display: block;
 			width: 27em;
-			// padding: 3.5em;
 			position: relative;
 			left: 30vw;
 			top: -40vh;
-			// background: papayawhip;
-			// background-color: white;
-			// border-left: solid 10px papayawhip;	
-			// border-right: solid 10px papayawhip;
 		}
 	}
 }
@@ -128,8 +122,6 @@
 	top: 80vh;
 	z-index: 0;
 	padding-top: 60vh;
-	// background-color: hsla(44, 30%, 80%, 1);
-	// background-color: lightgrey;
 
 	// &:before {
 	// 	content: "";
@@ -153,51 +145,43 @@
 	// }
 
 	p:nth-of-type(1) {
-		// padding: 3.5em;
 		font-color: white;
 		width: 33em;
 		position: relative;
 		left: 10vw;
 		border-bottom: solid 2px white;
 		background-color: hsla(44, 30%, 100%, 1);
-		// border-top: solid 10px papayawhip;	
-		// border-right: solid 10px papayawhip;	
-
 	}
 
 	p:nth-of-type(2) {
 		display: block;
-		// padding: 3.5em;
 		width: 33em;
 		position: relative;
 		left: 10vw;
 		background-color: hsla(44, 30%, 100%, 1);
-		// border-left: solid 10px papayawhip;	
-		// border-bottom: solid 10px papayawhip;	
 	}
 
 	p:nth-of-type(3) {
 		display: block;
-		// padding: 3.5em;
 		width: 33em;
 		position: relative;
 		left: 10vw;
 		background-color: hsla(44, 30%, 100%, 1);
-		// border-bottom: solid 10px papayawhip;	
-		// border-top: solid 10px papayawhip;	
+		top: solid 10px papayawhip;	
 	}
 }
 
 .photoSection {
 	width: 100vw;
 	padding: 20vh 0;
-	background: linear-gradient(90deg, hsla(44, 30%, 80%, 1) 10%, hsla(44, 30%, 80%, 0) 20%, hsla(44, 30%, 80%, 0) 80%, hsla(44, 30%, 80%, 1) 90%), linear-gradient(hsla(44, 30%, 80%, 1) 10%, hsla(44, 30%, 80%, 0) 15%, hsla(44, 30%, 80%, 0) 85%, hsla(44, 30%, 80%, 1) 90%);
+	background-color: hsla(44, 30%, 80%, 1);
 	border-top: solid 10px papayawhip;	
 	
 	#photoPiece {
 		margin: 0 auto;
 		width: 80vw;
-		padding: 2.5vh 2.5vw;
+		padding: 2.5vw 2.5vw;
+		background: white;
 
 		.grid-sizer {
 			width: 0.1vw;
@@ -230,6 +214,9 @@
 			.itemText {
 				display: block;
 			}
+			hr {
+				width: 75%;
+			}
 		}
 
 		.itemText {
@@ -244,32 +231,22 @@
 	min-height: 80vh;
 	padding: 10vh 0;
 	position: relative;
-	// background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9) 100%), url(./images/backgrounds/W4A3198.jpg) no-repeat center center / cover;
 	overflow: hidden;
-	// border-top: solid 10px papayawhip;
 	border-bottom: solid 10px papayawhip;	
-	// background-color: lightgrey;
 
 	p:nth-of-type(1) {
 		width: 33em;
-		// padding: 3.5em;
 		position: relative;
 		left: 55vw;
-		// border-left: solid 10px papayawhip;	
-		// border-right: solid 10px papayawhip;
 		background-color: white;
 	}
 	
 	p:nth-of-type(2) {
 		width: 33em;
-		// padding: 3.5em;
 		position: relative;
 		left: 55vw;
-		// border-left: solid 10px papayawhip;	
-		// border-bottom: solid 10px papayawhip;
 		background-color: white;
 	}
-
 }
 
 .returnHome {

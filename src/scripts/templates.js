@@ -12,6 +12,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	</div>\n" +
     "	<div class=\"dataVisualisation\">\n" +
     "		<div class=\"visualisation\"></div>\n" +
+    "		<div class=\"colorblocktext\"></div>\n" +
     "		<div class=\"textBlock1\" class=\"scrollMe\">\n" +
     "			<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
     "			<p>This case study shows how the User Camera Studies were conducted, gives visual examples and types of insights a museum can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
@@ -81,18 +82,20 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsList\">\n" +
-    "			<h4>Methods</h4>\n" +
-    "			<hr>\n" +
-    "			<p>Interdisciplinary Approach</p>\n" +
-    "			<p>Embedded Research</p>\n" +
-    "			<p>Artistic Research</p>\n" +
-    "			<p>Design Thinking</p>\n" +
-    "			<p>Digital Humanities</p>\n" +
-    "			<h4>References</h4>\n" +
-    "			<hr>\n" +
-    "			<p>Literature</p>\n" +
-    "			<p>Videogallery</p>\n" +
-    "			<p>References</p>\n" +
+    "			<div class=\"contents\">\n" +
+    "				<h4>Methods</h4>\n" +
+    "				<hr>\n" +
+    "				<p>Interdisciplinary Approach</p>\n" +
+    "				<p>Embedded Research</p>\n" +
+    "				<p>Artistic Research</p>\n" +
+    "				<p>Design Thinking</p>\n" +
+    "				<p>Digital Humanities</p>\n" +
+    "				<h4>References</h4>\n" +
+    "				<hr>\n" +
+    "				<p>Literature</p>\n" +
+    "				<p>Videogallery</p>\n" +
+    "				<p>References</p>\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "		<div class=\"methodsContent\">\n" +
     "			<h4>Interdisciplinary Approach</h4>\n" +
