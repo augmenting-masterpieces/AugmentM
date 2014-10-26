@@ -522,37 +522,3 @@
 	}
 }
 
-
-
-
-
-
-.glass .legacy-ie-fix {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=20)";
-}
-
-.glass h1 {
-  position: relative;
-  margin: 0;
-  color: #fff;
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 180px;
-  font-weight: normal;
-  font-family: "Megrim", sans-serif;
-  line-height: 1;
-  text-align: center;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(opacity=50)";
-}
-
-@media only screen {
-  .glass h1 {
-    -ms-filter: "none";
-  }
-}
-
