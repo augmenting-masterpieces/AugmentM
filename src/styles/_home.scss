@@ -145,7 +145,6 @@
 		span {
 			font-size: 0.8em;
 		}
-
 	}
 	
 	h2 {
@@ -159,7 +158,6 @@
 	a:hover {
 		color: white;
 		text-decoration: none;
-		
 		transition: letter-spacing 10px;
 	}
 }
@@ -172,16 +170,19 @@
 	transform: skew(-22.5deg,0deg);
 
 	.methodsList {
-		width: 30vw;
+		width: 25vw;
 		height: 100vh;
-		padding: 5vh 5vw;
+		padding: 0 0vw 0 0vw;
 		position: absolute;
 		left: 22.5vw;
-		border-left: solid 10px papayawhip;			
-		background-color: hsla(44, 30%, 80%, 1);
+		border-left: solid 10px hsla(15, 50%, 70%, 1);
+		background: white;
+
 		
 		.contents {
-			background: white;
+			border-right: solid 10px papayawhip;	
+			background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0)), hsla(44, 30%, 80%, 1);
+			height: 100vh;
 			padding: 5vh 5vw;
 		}
 
@@ -198,6 +199,7 @@
 
 		hr {
 			text-align: left;
+			// border-color: white;
 			width: 50%;
 			margin: 0 0 1vh 0;
 			transform: skew(22.5deg,0deg);
@@ -362,9 +364,7 @@
 					top: 11.5vh;
 					transform: skew(22.5deg,0deg);
 				}
-
 			}
-			
 		}
 
 		.right {
@@ -376,7 +376,6 @@
 			margin: -2.5vh 20vw;
 			padding: 2.5vw;
 			overflow: scroll;
-		
 			background-color: hsla(44, 20%, 80%, 0.8);
 			border: 1px solid hsla(0, 0%, 0%, 0.5);
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -398,7 +397,6 @@
 	height: 100vh;
 	padding: 0 0 0 70vw;
 	float: left;
-
 	background: url(./images/backgrounds/W4A3502.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 
@@ -442,82 +440,6 @@
 				width: 30vw;
 				margin: 0 5vw 0 0;
 			}
-
-		}
-	}
-
-
-
-	.connectMain {
-		width: 100vw;
-		height: 100vh;
-		float: left;
-
-		.title {
-			width: 100%;
-			margin-top: 10vh;
-			color: white;
-			text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-
-			span {
-				font-size: 0.8em;
-				letter-spacing: 3px;
-			}
-
-			span.second {
-				font-size: 1em;
-				letter-spacing: 5px;
-			}
-		}
-		
-		.waysToConnectContainer {
-			width: 400px; 
-			margin: 10vh auto;
-			
-			.connectBoxes {
-				width: 400px;
-				padding: 20px;
-				float: left;
-				
-				background-color: hsla(44, 10%, 80%, 0.8);
-				box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-				text-align: center;
-
-				.smallText {
-					font-size: 1em;
-				}
-			
-				.socialIcon {
-					list-style-type: none;
-					margin: 20px auto;
-					padding: 0;
-					width: 336px;
-					display: block;
-
-					li {
-						height: 64px;
-						width: 64px;
-						float: left;
-						margin: 10px;
-					}
-					.facebook {
-						background: url(./images/icons/socialicons.jpg) -204px -36px;
-					}
-					.twitter {
-						background: url(./images/icons/socialicons.jpg) -44px -36px;
-					}
-					.google {
-						background: url(./images/icons/socialicons.jpg) -364px -36px;
-					}
-					.rss {
-						background: url(./images/icons/socialicons.jpg) -124px -36px;
-					}
-				}
-
-				form {
-					line-height: 2em;
-				}
-			}	
 		}
 	}
 }
