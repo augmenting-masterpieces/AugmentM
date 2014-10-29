@@ -306,6 +306,7 @@
 			left: -10vw;
 			z-index:1; 
 			transform: skew(22.5deg,0deg);
+			border-radius: 10px;
 
 			background-color: $rgba-secondary-2-3;
 
@@ -337,6 +338,7 @@
 					left: 40%;
 					background-color: $rgba-secondary-2-3;
 					transform: skew(22.5deg,0deg);
+					border-radius: 10px;
 				}
 
 				p {
@@ -372,6 +374,14 @@
 			h4 {
 				transform: skew(22.5deg,0deg);
 				text-align: left;
+			}
+
+			input {
+				transform: skew(22.5deg,0deg);	
+			}
+
+			label {
+				transform: skew(22.5deg,0deg);	
 			}
 
 			span {
