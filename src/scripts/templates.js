@@ -263,17 +263,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeConnect\">\n" +
-    "		<div class=\"title\">\n" +
-    "			<h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES</span> </h1>\n" +
-    "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
-    "\n" +
-    "			<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection.\n" +
-    "			   Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
-    "			<div class=\"logos\">\n" +
-    "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
-    "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
+    "		\n" +
     "	</section>\n" +
     "</section>\n" +
     "\n" +
