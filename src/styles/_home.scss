@@ -70,8 +70,8 @@
 		height: 100vh;
 		position: absolute;
 		left: 20vw;
-		background-color: hsla(44, 30%, 80%, 1);
-		border-left: solid 10px hsla(36, 90%, 92%, 1);	
+		background-color: $rgba-primary-1;
+		border-left: solid 10px $rgba-primary-2;	
 
 		iframe {
 			display: block;
@@ -172,16 +172,11 @@
 	.methodsList {
 		width: 25vw;
 		height: 100vh;
-		padding: 0 0vw 0 0vw;
+		padding: 5vh 5vw;
 		position: absolute;
 		left: 22.5vw;
-
-		.contents {
-			border-right: solid 10px hsla(36, 90%, 92%, 1);	
-			background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0)), hsla(44, 30%, 80%, 1);
-			height: 100vh;
-			padding: 5vh 5vw;
-		}
+		border-left: solid 10px $rgba-primary-2;	
+		background: $rgba-primary-1;
 
 		p {
 			text-align: left;
@@ -210,8 +205,8 @@
 		padding: 5vh 10vw;
 		position: absolute;
 		left: 57.5vw;
-		border-left: solid 10px hsla(36, 90%, 92%, 1);	
-		background-color: hsla(44, 30%, 80%, 1);
+		border-left: solid 10px $rgba-primary-2;	
+		background-color: $rgba-primary-1;
 		overflow-y: scroll;
 		overflow-x: hidden;
 
@@ -253,9 +248,9 @@
 		height: 100vh;
 		position: absolute;
 		left: 20vw;
-		background-color: hsla(44, 20%, 80%, 1);
+		background-color: $rgba-primary-1;
 		z-index: -1000;
-		border-left: solid 10px hsla(36, 90%, 92%, 1);	
+		border-left: solid 10px $rgba-primary-2;	
 	}
 
 	.people {
@@ -263,7 +258,6 @@
 		height: 35vh;
 		padding: 2.5vh 2.5vw;
 		margin: 5vh 20vw;
-		background-color: hsla(44, 20%, 80%, 1);
 	
 		h4 {
 			transform: skew(22.5deg,0deg);
@@ -286,8 +280,7 @@
 			display: block;
 			width: 60%;
 			margin: 0 auto;
-			background: hsla(0, 0%, 0%, 1);
-
+			border-left: solid 10px $rgba-primary-2;
 		}
 	}
 
@@ -297,7 +290,6 @@
 		margin: 5vh 20vw;
 		padding: 2.5vh 2.5vw;
 		position: relative;
-		background-color: hsla(44, 20%, 80%, 1);
 
 		h4.timelineTitle {
 			height: 5vh;
@@ -315,11 +307,11 @@
 			z-index:1; 
 			transform: skew(22.5deg,0deg);
 
-			background-color: black;
+			background-color: $rgba-secondary-2-3;
 
 			&:after {
 				content: "";
-				background: linear-gradient(90deg, hsla(0, 0%, 0%, 1), hsla(0, 0%, 0%, 0)) no-repeat center center / cover;
+				background: linear-gradient(90deg, $rgba-secondary-2-3, hsla(0, 0%, 0%, 0)) no-repeat center center / cover;
 				position: absolute;
 				left: 145vw;
 				height: 2.5vh;
@@ -343,7 +335,7 @@
 					position: relative;
 					top: 5vh;
 					left: 40%;
-					background-color: hsla(44, 100%, 0%, 1);
+					background-color: $rgba-secondary-2-3;
 					transform: skew(22.5deg,0deg);
 				}
 
@@ -373,14 +365,15 @@
 			margin: -2.5vh 20vw;
 			padding: 2.5vw;
 			overflow: scroll;
-			background-color: hsla(44, 20%, 80%, 0.8);
-			border: 1px solid hsla(0, 0%, 0%, 0.5);
+			background-color: $rgba-primary-1;
+			border-left: 10px solid $rgba-primary-2;
 			box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
-
+			
 			h4 {
 				transform: skew(22.5deg,0deg);
 				text-align: left;
 			}
+
 			span {
 				display: inline-block;
 				transform: skew(22.5deg,0deg);

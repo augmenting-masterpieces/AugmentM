@@ -70,7 +70,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		</div>\n" +
     "	</section>\n" +
     "	<section class=\"homeVideo\">\n" +
-    "		<div class=\"contents .glass\">\n" +
+    "		<div class=\"contents\">\n" +
     "			<h2 class=\"quote\">\"We’ve all observed visitors taking the #museumselfie, ...<br>taking photos of object labels, and we’ve all seen families <br>struggle with the anti-social nature of audioguides.\"<br> - Seb Chan, Director of Digital & Emerging Media, Smithsonian, New York</h2>\n" +
     "			<iframe src=\"http://prezi.com/embed/vz3s0inp6iyg/?bgcolor=ffffff&amp;lock_to_path=0&amp;autoplay=0&amp;autohide_ctrls=0&amp;features=undefined&amp;disabled_features=undefined\" frameBorder=\"0\" webkitAllowFullScreen mozAllowFullscreen allowfullscreen></iframe>\n" +
     "		</div>\n" +
@@ -82,20 +82,18 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "	</section>\n" +
     "	<section class=\"homeMethods\">\n" +
     "		<div class=\"methodsList\">\n" +
-    "			<div class=\"contents\">\n" +
-    "				<h4>Methods</h4>\n" +
-    "				<hr>\n" +
-    "				<p>Interdisciplinary Approach</p>\n" +
-    "				<p>Embedded Research</p>\n" +
-    "				<p>Artistic Research</p>\n" +
-    "				<p>Design Thinking</p>\n" +
-    "				<p>Digital Humanities</p>\n" +
-    "				<h4>References</h4>\n" +
-    "				<hr>\n" +
-    "				<p>Literature</p>\n" +
-    "				<p>Videogallery</p>\n" +
-    "				<p>References</p>\n" +
-    "			</div>\n" +
+    "			<h4>Methods</h4>\n" +
+    "			<hr>\n" +
+    "			<p>Interdisciplinary Approach</p>\n" +
+    "			<p>Embedded Research</p>\n" +
+    "			<p>Artistic Research</p>\n" +
+    "			<p>Design Thinking</p>\n" +
+    "			<p>Digital Humanities</p>\n" +
+    "			<h4>References</h4>\n" +
+    "			<hr>\n" +
+    "			<p>Literature</p>\n" +
+    "			<p>Videogallery</p>\n" +
+    "			<p>References</p>\n" +
     "		</div>\n" +
     "		<div class=\"methodsContent\">\n" +
     "			<h4>Interdisciplinary Approach</h4>\n" +
@@ -236,9 +234,31 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "				<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
     "			</div>\n" +
     "			<div class=\"right\"> \n" +
-    "				<h4>Understand</h4>\n" +
-    "				<p>The first phase of the project consists of understanding how the employees run the Rijksmuseum on a daily basis, the digital engagement methods they set up, the experiences the visitors make when using the digital interfaces and the experiences the visitors make inside the museum. In order to understand what efforts are taken by the museum itself, I will interview and engage with the people working in different departments of the Rijksmuseum.\n" +
-    "				Further, I try to understand the visitor's experience and modes of engagement through a Camera User Study, by interviewing visitors, by equipping visitors with helmet cameras which deliver a Point-of-View-video of the museum visit and by observing and capturing gestures and body language of the visitors.</p> \n" +
+    "				<!-- Begin MailChimp Signup Form -->\n" +
+    "				<div id=\"mc_embed_signup\">\n" +
+    "					<form action=\"//wix.us3.list-manage.com/subscribe/post?u=441ffe1b780f94da8bfedb43c&amp;id=ec4ca8f48f\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n" +
+    "					    <div id=\"mc_embed_signup_scroll\">\n" +
+    "							<h4>Subscribe to our mailing list</h4>\n" +
+    "							<div class=\"indicates-required\"><span class=\"asterisk\">*</span>indicates required</div>\n" +
+    "						<div class=\"mc-field-group\">\n" +
+    "							<label for=\"mce-EMAIL\">Email Address  <span class=\"asterisk\">*</span>\n" +
+    "							</label>\n" +
+    "							<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\n" +
+    "						</div>\n" +
+    "\n" +
+    "						<div id=\"mce-responses\" class=\"clear\">\n" +
+    "							<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n" +
+    "							<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n" +
+    "						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n" +
+    "					    <div style=\"position: absolute; left: -5000px;\">\n" +
+    "					    	<input type=\"text\" name=\"b_441ffe1b780f94da8bfedb43c_ec4ca8f48f\" tabindex=\"-1\" value=\"\">\n" +
+    "					    </div>\n" +
+    "					    <div class=\"clear\">\n" +
+    "					    	<input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></div>\n" +
+    "					    </div>\n" +
+    "					</form>\n" +
+    "				</div>\n" +
+    "				<!--End mc_embed_signup--> \n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</section>\n" +
