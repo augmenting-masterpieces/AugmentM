@@ -71,7 +71,7 @@
 		position: absolute;
 		left: 20vw;
 		background-color: hsla(44, 30%, 80%, 1);
-		border-left: solid 10px papayawhip;	
+		border-left: solid 10px hsla(36, 90%, 92%, 1);	
 
 		iframe {
 			display: block;
@@ -175,12 +175,9 @@
 		padding: 0 0vw 0 0vw;
 		position: absolute;
 		left: 22.5vw;
-		border-left: solid 10px hsla(15, 50%, 70%, 1);
-		background: white;
 
-		
 		.contents {
-			border-right: solid 10px papayawhip;	
+			border-right: solid 10px hsla(36, 90%, 92%, 1);	
 			background: linear-gradient(90deg, hsla(0, 0%, 100%, 0.05), hsla(0, 0%, 100%, 0)), hsla(44, 30%, 80%, 1);
 			height: 100vh;
 			padding: 5vh 5vw;
@@ -213,7 +210,7 @@
 		padding: 5vh 10vw;
 		position: absolute;
 		left: 57.5vw;
-		border-left: solid 10px papayawhip;	
+		border-left: solid 10px hsla(36, 90%, 92%, 1);	
 		background-color: hsla(44, 30%, 80%, 1);
 		overflow-y: scroll;
 		overflow-x: hidden;
@@ -258,7 +255,7 @@
 		left: 20vw;
 		background-color: hsla(44, 20%, 80%, 1);
 		z-index: -1000;
-		border-left: solid 10px papayawhip;	
+		border-left: solid 10px hsla(36, 90%, 92%, 1);	
 	}
 
 	.people {

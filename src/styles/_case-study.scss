@@ -53,7 +53,7 @@
 		height: 200vh;
 		left: -110vw;
 		position: absolute;
-		background-color: hsla(44, 30%, 80%, 1);
+		background-color: $rgba-primary-0;
 	}
 
 	&:after {
@@ -64,8 +64,8 @@
 		position: absolute;
 		left: 83vw;
 		top: 0;
-		background-color: hsla(44, 30%, 80%, 1);
-		border-left: solid 10px papayawhip;	
+		background-color: $rgba-primary-0;
+		border-left: solid 10px $rgba-primary-4;	
 	}
 }
 
@@ -74,9 +74,9 @@
 	width: 100vw;
 	position: absolute;
 	top: 150vh;
-	background-color: hsla(44, 30%, 80%, 1);
+	background-color: $rgba-primary-0;
 	z-index: 10;
-	border-top: solid 10px papayawhip;	
+	border-top: solid 10px $rgba-primary-4;	
 	text-align: center;
 	padding: 2% 0;
 	transform: skew(0deg, 22.5deg);
@@ -84,7 +84,7 @@
 	.colorblocktext {
 		width: 30px;
 		height: 30px;
-		background-color: hsla(15, 79%, 56%, 1);
+		background-color: $rgba-complement-0;
 		position: relative;
 		top: 200px;
 		left: 200px;
@@ -130,7 +130,7 @@
 	// 	height: 300vh;
 	// 	left: -110vw;
 	// 	position: absolute;
-	// 	background-color: hsla(44, 30%, 80%, 1);		
+	// 	background-color: $rgba-primary-0;		
 	// }
 
 	// &:after {
@@ -141,7 +141,7 @@
 	// 	position: absolute;
 	// 	left: 83vw;
 	// 	top: 0;
-	// 	background-color: hsla(44, 30%, 80%, 1);
+	// 	background-color: $rgba-primary-0;
 	// }
 
 	p:nth-of-type(1) {
@@ -167,15 +167,15 @@
 		position: relative;
 		left: 10vw;
 		background-color: hsla(44, 30%, 100%, 1);
-		top: solid 10px papayawhip;	
+		top: solid 10px $rgba-primary-4;	
 	}
 }
 
 .photoSection {
 	width: 100vw;
 	padding: 20vh 0;
-	background-color: hsla(44, 30%, 80%, 1);
-	border-top: solid 10px papayawhip;	
+	background-color: $rgba-primary-0;
+	border-top: solid 10px $rgba-primary-4;	
 	
 	#photoPiece {
 		margin: 0 auto;
@@ -233,7 +233,7 @@
 	padding: 10vh 0;
 	position: relative;
 	overflow: hidden;
-	border-bottom: solid 10px papayawhip;	
+	border-bottom: solid 10px $rgba-primary-4;	
 
 	p:nth-of-type(1) {
 		width: 33em;
@@ -251,7 +251,7 @@
 }
 
 .returnHome {
-	background-color: hsla(44, 30%, 80%, 1);
+	background-color: $rgba-primary-0;
 	padding: 2.5vh;	
 
 	h4 {

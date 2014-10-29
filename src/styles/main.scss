@@ -49,6 +49,36 @@ $grid-float-breakpoint: 0;
 // $font-family-monospace: ArminoRegular, Menlo, Monaco, Consolas, "Courier New", monospace !default;
 // $font-family-base: $font-family-monospace !default;
 
+$rgba-primary-0: rgba(255,228,192,1);   /* Main Primary color */
+$rgba-primary-1: rgba(255,244,230,1);
+$rgba-primary-2: rgba(255,236,211,1);
+$rgba-primary-3: rgba(255,220,173,1);
+$rgba-primary-4: rgba(255,212,154,1);
+
+$rgba-secondary-1-0: rgba(255,240,192,1);   /* Main Secondary color (1) */
+$rgba-secondary-1-1: rgba(255,249,230,1);
+$rgba-secondary-1-2: rgba(255,244,211,1);
+$rgba-secondary-1-3: rgba(255,235,173,1);
+$rgba-secondary-1-4: rgba(255,231,154,1);
+
+$rgba-secondary-2-0: rgba(255,208,192,1);   /* Main Secondary color (2) */
+$rgba-secondary-2-1: rgba(255,236,230,1);
+$rgba-secondary-2-2: rgba(255,222,211,1);
+$rgba-secondary-2-3: rgba(255,194,173,1);
+$rgba-secondary-2-4: rgba(255,180,154,1);
+
+$rgba-complement-0: rgba(181,212,236,1);    /* Main Complement color */
+$rgba-complement-1: rgba(228,241,251,1);
+$rgba-complement-2: rgba(205,228,245,1);
+$rgba-complement-3: rgba(157,195,224,1);
+$rgba-complement-4: rgba(132,176,210,1);
+
+
+body {
+  background-color: hsla(35, 92%, 54%, 1);
+  background-color: white;
+}
+
 @import "_normalize";
 @import "./bootstrap/bootstrap";
 @import "owl/_owl.carousel";
@@ -57,8 +87,3 @@ $grid-float-breakpoint: 0;
 @import "_typography";
 @import "_case-study.scss";
 @import "_home";
-
-body {
-  background-color: hsla(35, 92%, 54%, 1);
-  background-color: white;
-}
