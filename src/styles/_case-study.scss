@@ -59,7 +59,7 @@
 	&:after {
 		content: "";
 		transform: skew(-22.5deg,0deg);
-		width: 50vw;
+		width: 100vw;
 		height: 200vh;
 		position: absolute;
 		left: 83vw;
@@ -70,10 +70,10 @@
 }
 
 .dataVisualisation {
-	height: 175vh;
+	height: 150vh;
 	width: 100vw;
-	position: absolute;
-	top: 150vh;
+	position: relative;
+	top: -30vh;
 	background-color: $rgba-primary-1;
 	z-index: 10;
 	border-top: solid 10px $rgba-primary-2;	
@@ -84,34 +84,27 @@
 	.colorblocktext {
 		width: 30px;
 		height: 30px;
-		background-color: $rgba-secondary-2-4;
+		background-color: $rgba-complement-0;
 		position: relative;
 		top: 200px;
 		left: 200px;
 	}
 
+	h3 {
+		transform: skew(0deg, -22.5deg);
+		margin-top: 30vh;
+		text-align: center;
+		width: 100vw;
+		padding: 0.5em;
+	}
 
 	.textblock1 {
 		transform: skew(0deg, -22.5deg);
-		position: relative;
-		top: 70vh;
+		position: absolute;
 		text-align: left;
-
-		h3 {
-			text-align: center;
-			position: relative;
-			width: 100vw;
-			padding: 0.5em;
-			top: -40vh;
-		}
-
-		p {
-			display: block;
-			width: 33em;
-			position: relative;
-			left: 30vw;
-			top: -40vh;
-		}
+		max-width: 40em;
+		right: 0vw;
+		padding: 0 3.5em;
 	}
 }
 
@@ -119,55 +112,16 @@
 	min-height: 180vh;
 	width: 100vw;
 	position: relative;
-	top: 80vh;
 	z-index: 0;
-	padding-top: 60vh;
 
-	// &:before {
-	// 	content: "";
-	// 	transform: skew(-32.5deg,0deg);
-	// 	width: 125vw;
-	// 	height: 300vh;
-	// 	left: -110vw;
-	// 	position: absolute;
-	// 	background-color: $rgba-primary-1;		
-	// }
-
-	// &:after {
-	// 	content: "";
-	// 	transform: skew(-10.5deg,0deg);
-	// 	width: 100vw;
-	// 	height: 200vh;
-	// 	position: absolute;
-	// 	left: 83vw;
-	// 	top: 0;
-	// 	background-color: $rgba-primary-1;
-	// }
-
-	p:nth-of-type(1) {
+	.textblock2 {
 		font-color: white;
-		width: 33em;
+		max-width: 40em;
 		position: relative;
-		left: 10vw;
+		left: 0vw;
+		padding: 0 3.5em;
 		border-bottom: solid 2px white;
 		background-color: hsla(44, 30%, 100%, 1);
-	}
-
-	p:nth-of-type(2) {
-		display: block;
-		width: 33em;
-		position: relative;
-		left: 10vw;
-		background-color: hsla(44, 30%, 100%, 1);
-	}
-
-	p:nth-of-type(3) {
-		display: block;
-		width: 33em;
-		position: relative;
-		left: 10vw;
-		background-color: hsla(44, 30%, 100%, 1);
-		top: solid 10px $rgba-primary-2;	
 	}
 }
 
@@ -230,23 +184,18 @@
 }
 
 .bottomPiece {
+	width: 100vw;
 	min-height: 80vh;
 	padding: 10vh 0;
 	position: relative;
 	overflow: hidden;
 	border-bottom: solid 10px $rgba-primary-2;	
 
-	p:nth-of-type(1) {
-		width: 33em;
-		position: relative;
-		left: 55vw;
-		background-color: white;
-	}
-	
-	p:nth-of-type(2) {
-		width: 33em;
-		position: relative;
-		left: 55vw;
+	.textblock3 {
+		max-width: 40em;
+		position: absolute;
+		right: 0vw;
+		padding: 0 3.5em;
 		background-color: white;
 	}
 }

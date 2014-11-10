@@ -13,8 +13,8 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	<div class=\"dataVisualisation\">\n" +
     "		<div class=\"visualisation\"></div>\n" +
     "		<div class=\"colorblocktext\"></div>\n" +
+    "		<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
     "		<div class=\"textBlock1\" class=\"scrollMe\">\n" +
-    "			<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
     "			<p>This case study shows how the User Camera Studies were conducted, gives visual examples and types of insights a museum can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
     "\n" +
     "			<p>Augmenting Masterpieces applies visitor's photography through User Camera Studies (UCS)1 as one of the main research sources. In addition to other interview methods they give not only room to individual oral, but also to visual stories and analysis which supports the project's targeted innovation process for multi-medial and digital interfaces for museums. \n" +
@@ -25,11 +25,13 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "	</div>\n" +
     "\n" +
     "	<section class=\"middlepiece\">\n" +
-    "		<p>The purpose of our study was to get qualitative input from the visitors for developing digital devices and interactive means in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
+    "		<div class=\"textblock2\">\n" +
+    "			<p>The purpose of our study was to get qualitative input from the visitors for developing digital devices and interactive means in the Rijksmuseum. The User Camera Study consists of two phases. First the participants are given a camera with which they walk through the museum and take pictures of whatever draws their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they want to take.</p>\n" +
     "\n" +
-    "		<p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
+    "			<p>The second phase is a qualitative interview in which they first get to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) </p>\n" +
     "\n" +
-    "		<p>This setting gives the participants freedom to talk about their own points of interest and observations during their visit in a vacation-style narrative that is familiar to most people. The pictures that the participants take also serve to remember certain situations and aspects easily. As the study provides oral and visual feedback, it reveals different kinds of information than a thematically focused survery. </p>\n" +
+    "			<p>This setting gives the participants freedom to talk about their own points of interest and observations during their visit in a vacation-style narrative that is familiar to most people. The pictures that the participants take also serve to remember certain situations and aspects easily. As the study provides oral and visual feedback, it reveals different kinds of information than a thematically focused survery. </p>\n" +
+    "		</div>\n" +
     "	</section>\n" +
     "</section>\n" +
     "\n" +
@@ -40,7 +42,7 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "</section>\n" +
     "\n" +
     "<section class=\"bottomPiece\">\n" +
-    "	<div class=\"textblock5\">\n" +
+    "	<div class=\"textblock3\">\n" +
     "		<p>The survey had twelve participants from four out of the five visitors' categories the Rijksmuseum works with on a daily basis in their education and marketing department. These four categories all concern unaccompanied visitors (Cultural Tourist, Art Lover's, Cultural Professionals and Families, whereas the fifth category consists of accompanied groups (school classes and workshop groups from the Teekenschool).</p>\n" +
     "		<p>Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the present survey. Below there is one detailed profile and script from a participating Cultural Tourist in order to get an indepth view on the kind of feedback provided.The most revealing result of the survey were that the social dimensions of a visit to the Rijksmuseum are highly important for all visitor's types. Whereas the amount of time spent on looking at art works and written information varied largely, all participants observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times. </p>\n" +
     "	</div>\n" +
@@ -58,7 +60,7 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
-    "			<a href=\"#case-study\"><h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES &#8594;</span> </h1>\n" +
+    "			<a href=\"#case-study\"><h1>A<span>UGMENTING</span><span class=\"second\">&nbsp;M</span><span>ASTERPIECES</span> </h1>\n" +
     "			<!-- <h2>...through embedded research and human-centered design.</h2 > -->\n" +
     "\n" +
     "			<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection.\n" +
@@ -183,82 +185,82 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "		<h1 class=\"arrow\"> &#8595; </h1>\n" +
     "	</section>\n" +
     "	<section class=\"homeAbout\">\n" +
-    "		<div class=\"people clearfix\">\n" +
-    "			<h4>People</h4>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
-    "				<p>Johanna Barnbeck</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analasis\">\n" +
-    "				<p>Jan Hein Hoogstad</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
-    "				<p>Shailoh Phillips</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
-    "				<p>Patty Jansen</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
-    "				<p>Robert-Jan Korteschiel</p>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		<div class=\"timeline\">\n" +
-    "			<h4 class=\"timelineTitle\">Timeline</h4>\n" +
-    "			<div class=\"theLine\"></div>\n" +
-    "			<div class=\"left\">\n" +
-    "				<div class=\"singleTimeItem date\"><h4>2014</h4></div>\n" +
-    "				<div class=\"singleTimeItem\">\n" +
-    "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Understand</p>\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"people clearfix\">\n" +
+    "				<h4>People</h4>\n" +
+    "				<div class=\"person clearfix\">\n" +
+    "					<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
+    "					<p>Johanna Barnbeck</p>\n" +
     "				</div>\n" +
-    "				<div class=\"singleTimeItem\">\n" +
-    "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Ideate</p>\n" +
+    "				<div class=\"person clearfix\">\n" +
+    "					<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analasis\">\n" +
+    "					<p>Jan Hein Hoogstad</p>\n" +
     "				</div>\n" +
-    "				<div class=\"singleTimeItem\">\n" +
-    "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Prototype</p>\n" +
+    "				<div class=\"person clearfix\">\n" +
+    "					<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
+    "					<p>Shailoh Phillips</p>\n" +
     "				</div>\n" +
-    "				<div class=\"singleTimeItem\">\n" +
-    "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Test</p>\n" +
+    "				<div class=\"person clearfix\">\n" +
+    "					<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
+    "					<p>Patty Jansen</p>\n" +
     "				</div>\n" +
-    "				<div class=\"singleTimeItem\">\n" +
-    "					<div class=\"timePoint\"></div>\n" +
-    "					<p>Present</p>\n" +
+    "				<div class=\"person clearfix\">\n" +
+    "					<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
+    "					<p>Robert-Jan Korteschiel</p>\n" +
     "				</div>\n" +
-    "				<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
     "			</div>\n" +
-    "			<div class=\"right\"> \n" +
-    "				<!-- Begin MailChimp Signup Form -->\n" +
-    "				<div id=\"mc_embed_signup\">\n" +
-    "					<form action=\"//wix.us3.list-manage.com/subscribe/post?u=441ffe1b780f94da8bfedb43c&amp;id=ec4ca8f48f\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n" +
-    "					    <div id=\"mc_embed_signup_scroll\">\n" +
-    "							<h4>Subscribe to our mailing list</h4>\n" +
-    "							<div class=\"indicates-required\"><span class=\"asterisk\">*</span>indicates required</div>\n" +
-    "						<div class=\"mc-field-group\">\n" +
-    "							<label for=\"mce-EMAIL\">Email Address  <span class=\"asterisk\">*</span>\n" +
-    "							</label>\n" +
-    "							<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\n" +
-    "						</div>\n" +
+    "			<div class=\"timeline\">\n" +
+    "				<h4 class=\"timelineTitle\">Timeline</h4>\n" +
+    "				<div class=\"theLine\"></div>\n" +
+    "				<div class=\"left\">\n" +
+    "					<div class=\"singleTimeItem date\"><h4>2014</h4></div>\n" +
+    "					<div class=\"singleTimeItem\">\n" +
+    "						<div class=\"timePoint\"></div>\n" +
+    "						<p>Understand</p>\n" +
+    "					</div>\n" +
+    "					<div class=\"singleTimeItem\">\n" +
+    "						<div class=\"timePoint\"></div>\n" +
+    "						<p>Ideate</p>\n" +
+    "					</div>\n" +
+    "					<div class=\"singleTimeItem\">\n" +
+    "						<div class=\"timePoint\"></div>\n" +
+    "						<p>Prototype</p>\n" +
+    "					</div>\n" +
+    "					<div class=\"singleTimeItem\">\n" +
+    "						<div class=\"timePoint\"></div>\n" +
+    "						<p>Test</p>\n" +
+    "					</div>\n" +
+    "					<div class=\"singleTimeItem\">\n" +
+    "						<div class=\"timePoint\"></div>\n" +
+    "						<p>Present</p>\n" +
+    "					</div>\n" +
+    "					<div class=\"singleTimeItem date\"><h4>2015</h4></div>\n" +
+    "				</div>\n" +
+    "				<div class=\"right\"> \n" +
+    "					<!-- Begin MailChimp Signup Form -->\n" +
+    "					<div id=\"mc_embed_signup\">\n" +
+    "						<form action=\"//wix.us3.list-manage.com/subscribe/post?u=441ffe1b780f94da8bfedb43c&amp;id=ec4ca8f48f\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n" +
+    "						    <div id=\"mc_embed_signup_scroll\">\n" +
+    "								<h4>Subscribe to our mailing list</h4>\n" +
+    "							<div class=\"mc-field-group\">\n" +
+    "								<label for=\"mce-EMAIL\">Email Address</label>\n" +
+    "								<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\n" +
+    "							</div>\n" +
     "\n" +
-    "						<div id=\"mce-responses\" class=\"clear\">\n" +
-    "							<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n" +
-    "							<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n" +
-    "						</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n" +
-    "					    <div style=\"position: absolute; left: -5000px;\">\n" +
-    "					    	<input type=\"text\" name=\"b_441ffe1b780f94da8bfedb43c_ec4ca8f48f\" tabindex=\"-1\" value=\"\">\n" +
-    "					    </div>\n" +
-    "					    <div class=\"clear\">\n" +
-    "					    	<input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></div>\n" +
-    "					    </div>\n" +
-    "					</form>\n" +
+    "							<div id=\"mce-responses\" class=\"clear\">\n" +
+    "								<div class=\"response\" id=\"mce-error-response\" style=\"display:none\"></div>\n" +
+    "								<div class=\"response\" id=\"mce-success-response\" style=\"display:none\"></div>\n" +
+    "							</div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->\n" +
+    "						    <div style=\"position: absolute; left: -5000px;\">\n" +
+    "						    	<input type=\"text\" name=\"b_441ffe1b780f94da8bfedb43c_ec4ca8f48f\" tabindex=\"-1\" value=\"\">\n" +
+    "						    </div>\n" +
+    "						    <div class=\"clear\">\n" +
+    "						    	<input type=\"submit\" value=\"Subscribe\" name=\"subscribe\" id=\"mc-embedded-subscribe\" class=\"button\"></div>\n" +
+    "						    </div>\n" +
+    "						</form>\n" +
+    "					</div>\n" +
+    "					<!--End mc_embed_signup--> \n" +
     "				</div>\n" +
-    "				<!--End mc_embed_signup--> \n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</section>\n" +
