@@ -10,17 +10,18 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "			<h1 class=\"arrow\">&#8595; </h1>\n" +
     "		</hgroup>\n" +
     "	</div>\n" +
-    "	<div class=\"dataVisualisation\">\n" +
-    "		<div class=\"visualisation\"></div>\n" +
-    "		<div class=\"colorblocktext\"></div>\n" +
-    "		<h3> How do visitors experience the Rijksmuseum?</h3>\n" +
-    "		<div class=\"textBlock1\" class=\"scrollMe\">\n" +
-    "			<p>This case study shows how the User Camera Studies were conducted, gives visual examples and types of insights a museum can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
+    "	<div class=\"dataVisualisation clearfix\">\n" +
+    "		<div class=\"visualisation \"></div>\n" +
+    "		<div class=\"textcontainer clearfix\">\n" +
+    "			<h3 class=\"scrollTo\"> How do visitors experience the Rijksmuseum?</h3>\n" +
+    "			<div class=\"textBlock1 clearfix\">\n" +
+    "				<p>This case study shows how the User Camera Studies were conducted, gives visual examples and types of insights a museum can gain by using photographic means as a source of feedback from their visitors.</p>\n" +
     "\n" +
-    "			<p>Augmenting Masterpieces applies visitor's photography through User Camera Studies (UCS)1 as one of the main research sources. In addition to other interview methods they give not only room to individual oral, but also to visual stories and analysis which supports the project's targeted innovation process for multi-medial and digital interfaces for museums. \n" +
-    "			</p>\n" +
+    "				<p>Augmenting Masterpieces applies visitor's photography through User Camera Studies (UCS)1 as one of the main research sources. In addition to other interview methods they give not only room to individual oral, but also to visual stories and analysis which supports the project's targeted innovation process for multi-medial and digital interfaces for museums. \n" +
+    "				</p>\n" +
     "\n" +
-    "			<p>The UCS helped to understand the social dimensions of a museum and map the museum experience as the participating visitors moved social aspects and rather basic preconditions for art reception back into the center of attention by addressing their interaction with the space, museum staff, other visitors and art objects. </p>\n" +
+    "				<p>The UCS helped to understand the social dimensions of a museum and map the museum experience as the participating visitors moved social aspects and rather basic preconditions for art reception back into the center of attention by addressing their interaction with the space, museum staff, other visitors and art objects. </p>\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "\n" +

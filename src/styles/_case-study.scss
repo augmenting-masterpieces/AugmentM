@@ -1,6 +1,6 @@
 .caseTopWrapper {
 	width: 100vw;
-	height: 420vh;
+	// height: 420vh;
 	position: relative;
 	overflow: hidden;
 	background: transparant;
@@ -14,44 +14,49 @@
 	position: relative;
 	overflow: hidden;
 
-	h1 {
-		padding: 60vh 0vw 0 22vw;
-		text-align: left;
-		letter-spacing: 3px;
+	hgroup {
+		padding: 60vh 0 0 22vw;
 		margin: 0;
-		span {
-			font-size: 0.8em;
+		max-width: 82vw;
+		position: relative;
+		z-index: 10;
+		
+		h1 {
+			letter-spacing: 3px;
+			margin: 0;
+			text-align: left;
+			span {
+				font-size: 0.8em;
+			}
 		}
-	}
 
-	h1.arrow {
-		padding: 0vh 0 0 40vw;
-		margin: 0;
-	}
+		h1.arrow {
+			margin: 0;
+			text-align: center;
+		}
 
-	h2 {
-		margin: 0;
-		padding: 0vh 0 0 22vw;
-		width: 60vw;
-		text-align: left;
-		color: white;
-		font-family: misolight;
-		text-align: left;
-		font-size: 1.5em;
-	}
+		h2 {
+			max-width: 20em;
+			text-align: left;
+			margin: 0;
+			color: white;
+			font-family: misolight;
+			font-size: 1.5em;
+		}
 
-	a:hover {
-		color: white;
-		text-decoration: none;
-		transition: letter-spacing 10px;
+		a:hover {
+			color: white;
+			text-decoration: none;
+			transition: letter-spacing 10px;
+		}
 	}
 
 	&:before {
 		content: "";
 		transform: skew(-22.5deg,0deg);
-		width: 100vw;
+		width: 140vw;
 		height: 200vh;
-		left: -110vw;
+		left: -150vw;
 		position: absolute;
 		background-color: $rgba-primary-1;
 	}
@@ -59,7 +64,7 @@
 	&:after {
 		content: "";
 		transform: skew(-22.5deg,0deg);
-		width: 100vw;
+		width: 150vw;
 		height: 200vh;
 		position: absolute;
 		left: 83vw;
@@ -70,58 +75,45 @@
 }
 
 .dataVisualisation {
-	height: 150vh;
 	width: 100vw;
 	position: relative;
-	top: -30vh;
-	background-color: $rgba-primary-1;
+	margin: -40vh 0 0 0;
 	z-index: 10;
+	background-color: $rgba-primary-1;
 	border-top: solid 10px $rgba-primary-2;	
 	text-align: center;
-	padding: 2% 0;
 	transform: skew(0deg, 22.5deg);
-
-	.colorblocktext {
-		width: 30px;
-		height: 30px;
-		background-color: $rgba-complement-0;
-		position: relative;
-		top: 200px;
-		left: 200px;
+	
+	.textcontainer {
+		transform: skew(0deg, -22.5deg);
+		margin: 40vh 0;
 	}
 
 	h3 {
-		transform: skew(0deg, -22.5deg);
-		margin-top: 30vh;
-		text-align: center;
+		text-align: right;
+		float:right;
 		width: 100vw;
-		padding: 0.5em;
+		padding: 0vw 5vw;
 	}
 
 	.textblock1 {
-		transform: skew(0deg, -22.5deg);
-		position: absolute;
+		float: right;
+		clear: both;
 		text-align: left;
-		max-width: 40em;
-		right: 0vw;
-		padding: 0 3.5em;
+		max-width: 33em;
+		box-sizing: content-box;
+		padding: 0 5vw;
 	}
 }
 
 .middlepiece {
-	min-height: 180vh;
-	width: 100vw;
 	position: relative;
 	z-index: 0;
 
 	.textblock2 {
 		font-color: white;
 		max-width: 40em;
-		position: relative;
-		left: 0vw;
-		padding: 0 3.5em;
-		border-bottom: solid 2px white;
-		background-color: hsla(44, 30%, 100%, 1);
+		padding: 20vh 3.5em 10vh 3.5em;
 	}
 }
 
@@ -193,8 +185,8 @@
 
 	.textblock3 {
 		max-width: 40em;
-		position: absolute;
-		right: 0vw;
+		float: right;
+		clear: both;
 		padding: 0 3.5em;
 		background-color: white;
 	}

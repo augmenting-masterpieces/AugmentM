@@ -79,7 +79,7 @@
 	    }
 
 	    setTimeout( function() {
-	    	var offset = $(".textblock1").offset();
+	    	var offset = $(".scrollTo").offset();
 	   		$('html, body').animate({
 	   			duration: "4000",
 	   			easing: "swing",
