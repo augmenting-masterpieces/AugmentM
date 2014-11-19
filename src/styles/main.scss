@@ -79,16 +79,16 @@ $rijksgroengrijs: rgba(167, 154, 143, 1);
 $rijksgroen: rgba(108, 112, 92, 1);
 $rijksdonkergrijs: rgba(85, 83, 84, 1);
 $rijksbruin: rgba(150, 135, 115, 1);
-$rijkszwartgrijs: rgba(41, 41, 45, 1);
+$rijkszwartgrijs: rgba(54, 55, 59, 1);
 
-$boxcolor: $rijksdonkergrijs;
+$boxcolor: $rijkszwartgrijs;
 $boxcolor2: $rijkswitgrijs;
-$boxborder: $rijksmiddengrijs;
+$boxborder: $rijksdonkergrijs;
 
 // Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      white;
-$navbar-inverse-bg:                         $rijksdonkergrijs;
+$navbar-inverse-bg:                         $rijkszwartgrijs;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%);
 
 // Inverted navbar links
