@@ -49,35 +49,46 @@ $grid-float-breakpoint: 0;
 // $font-family-monospace: ArminoRegular, Menlo, Monaco, Consolas, "Courier New", monospace !default;
 // $font-family-base: $font-family-monospace !default;
 
-// http://paletton.com/#uid=6190w0k8aoB43uX62r-aplVc-jl
-
-// new: http://paletton.com/#uid=20-0u0k9iHq1RYr5dRsdRvTiLqF
-
-/* As RGBa codes */
-
-$rgba-primary-0: rgba(255,228,181,1);   /* Main Primary color */
-$rgba-primary-1: rgba(255,250,240,1);
-$rgba-primary-2: rgba(255,240,214,1);
-$rgba-primary-3: rgba(254,214,144,1);
-$rgba-primary-4: rgba(213,167, 88,1);
-
-$rgba-complement-0: rgba(141,184,196,1);    /* Main Complement color */
-$rgba-complement-1: rgba(233,244,247,1);
-$rgba-complement-2: rgba(191,218,226,1);
-$rgba-complement-3: rgba( 92,143,158,1);
-$rgba-complement-4: rgba( 57,116,132,1);
-
 
 body {
   background-color: hsla(35, 92%, 54%, 1);
   background-color: white;
-  padding-top: 50px;
+  // padding-top: 50px;
 }
+
+
+$rijkszachtterra: rgba(203, 179, 138, 1);
+$rijkszachtrood: rgba(200, 179, 160, 1);
+$rijkszachtoker: rgba(209, 197, 173, 1);
+$rijkszachtgroen: rgba(159, 152, 130, 1);
+$rijkszachtbruin: rgba(171, 158, 136, 1);
+$rijkswitgrijs: rgba(235, 232, 222, 1);
+$rijkswarmgrijs: rgba(106, 103, 97, 1);
+$rijksterra: rgba(172, 128, 81, 1);
+$rijksrood: rgba(140, 73, 58, 1);
+$rijkspuurterra: rgba(128, 94, 76, 1);
+$rijkspuurrood: rgba(99, 48, 42, 1);
+$rijkspuuroker: rgba(161, 130, 70, 1);
+$rijkspuurgroen: rgba(68, 74, 67, 1);
+$rijkspuurbruin: rgba(104, 92, 75, 1);
+$rijksoker: rgba(179, 155, 113, 1);
+$rijksmiddengrijs: rgba(153, 158, 163, 1);
+$rijkslichtgrijs: rgba(191, 190, 174, 1);
+$rijkskoelgrijs: rgba(187, 187, 184, 1);
+$rijksgroengrijs: rgba(167, 154, 143, 1);
+$rijksgroen: rgba(108, 112, 92, 1);
+$rijksdonkergrijs: rgba(85, 83, 84, 1);
+$rijksbruin: rgba(150, 135, 115, 1);
+$rijkszwartgrijs: rgba(41, 41, 45, 1);
+
+$boxcolor: $rijksdonkergrijs;
+$boxcolor2: $rijkswitgrijs;
+$boxborder: $rijksmiddengrijs;
 
 // Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      white;
-$navbar-inverse-bg:                         rgba(209, 197, 173, 1);
+$navbar-inverse-bg:                         $rijksdonkergrijs;
 $navbar-inverse-border:                     darken($navbar-inverse-bg, 10%);
 
 // Inverted navbar links

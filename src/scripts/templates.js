@@ -275,7 +275,10 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
 
 angular.module("templates/homepage.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/homepage.html",
-    "<section class=\"container-fluid maintro\">\n" +
+    "<section class=\"container-fluid block maintro\">\n" +
+    "	\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block understand\">\n" +
     "	<div class=\"col-md-6 col-sm-8 col-xs-12\">\n" +
     "		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quisquam dolore ipsum molestias rerum maiores? Quaerat voluptates pariatur maiores reiciendis. Repellendus quo debitis velit, natus asperiores fugiat dolores perferendis voluptatem.</div>\n" +
     "		<div>Harum earum quisquam fuga quidem ipsam voluptates cumque vel dolore placeat iure adipisci animi non, ab libero exercitationem atque optio distinctio numquam repellat iusto omnis quo ullam. Eius vero, laboriosam.</div>\n" +
@@ -293,24 +296,23 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore perferendis, debitis odit totam animi, veritatis maxime temporibus similique libero ex, esse ea mollitia adipisci fugiat quod dolores consequatur ut.</div>\n" +
     "		<div>Placeat nulla molestiae architecto facere at laborum iste eligendi, cupiditate doloremque sint, maxime consequuntur? Iure fuga debitis natus atque, cum eveniet quidem accusamus, eius voluptatum fugit magnam adipisci dignissimos, corporis.</div>\n" +
     "	</div>\n" +
-    "	<h1>mainintro</h1>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid understand\">\n" +
-    "	<h1>understand</h1>\n" +
-    "</section>\n" +
-    "<section class=\"container-fluid assumptions\">\n" +
+    "<section class=\"container-fluid block assumptions\">\n" +
     "	<h1>assumption</h1>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid videostudy\">\n" +
+    "<section class=\"container-fluid block casetro\">\n" +
+    "	<h1>casetro</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block videostudy\">\n" +
     "	<h1>video</h1>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid infographic\">\n" +
+    "<section class=\"container-fluid block infographic\">\n" +
     "	<h1>graphic</h1>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid masonry\">\n" +
+    "<section class=\"container-fluid block masonry\">\n" +
     "	<h1>masonry</h1>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid endtro\">\n" +
+    "<section class=\"container-fluid block endtro\">\n" +
     "	<h1>endtro</h1>\n" +
     "</section>");
 }]);
