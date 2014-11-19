@@ -22,9 +22,14 @@
         url: '/prototype',
         templateUrl: 'templates/prototype.html',
         controller: 'PrototypeCtrl as proto'
+      })
+      .state('homepage', {
+        url: '/homepage',
+        templateUrl: 'templates/homepage.html',
+        controller: 'HomepageCtrl as homep'
       });
 
-    $urlRouterProvider.when('/', '/home');
+    $urlRouterProvider.when('/', '/homepage');
   }
 
 // .state('posts', {

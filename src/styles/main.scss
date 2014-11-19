@@ -71,7 +71,34 @@ $rgba-complement-4: rgba( 57,116,132,1);
 body {
   background-color: hsla(35, 92%, 54%, 1);
   background-color: white;
+  padding-top: 50px;
 }
+
+// Inverted navbar
+// Reset inverted navbar basics
+$navbar-inverse-color:                      white;
+$navbar-inverse-bg:                         rgba(209, 197, 173, 1);
+$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+$navbar-inverse-link-color:                 white;
+$navbar-inverse-link-hover-color:           #fff;
+$navbar-inverse-link-hover-bg:              transparent;
+$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color;
+$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%);
+$navbar-inverse-link-disabled-color:        #444;
+$navbar-inverse-link-disabled-bg:           transparent;
+
+// Inverted navbar brand label
+$navbar-inverse-brand-color:                $navbar-inverse-link-color;
+$navbar-inverse-brand-hover-color:          #fff;
+$navbar-inverse-brand-hover-bg:             transparent;
+
+// Inverted navbar toggle
+$navbar-inverse-toggle-hover-bg:            #333;
+$navbar-inverse-toggle-icon-bar-bg:         #fff;
+$navbar-inverse-toggle-border-color:        #333;
+
 
 @import "_normalize";
 @import "./bootstrap/bootstrap";
@@ -81,3 +108,6 @@ body {
 @import "_typography";
 @import "_case-study.scss";
 @import "_home";
+@import "_homepage";
+
+

@@ -1,4 +1,4 @@
-angular.module('templates-cth', ['templates/case-study.html', 'templates/home.html', 'templates/prototype.html']);
+angular.module('templates-cth', ['templates/case-study.html', 'templates/home.html', 'templates/homepage.html', 'templates/prototype.html']);
 
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
@@ -271,6 +271,43 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "</section>\n" +
     "\n" +
     "");
+}]);
+
+angular.module("templates/homepage.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("templates/homepage.html",
+    "<section class=\"container-fluid maintro\">\n" +
+    "	<div class=\"col-md-6 col-xs-12\"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quisquam dolore ipsum molestias rerum maiores? Quaerat voluptates pariatur maiores reiciendis. Repellendus quo debitis velit, natus asperiores fugiat dolores perferendis voluptatem.</div>\n" +
+    "	<div>Harum earum quisquam fuga quidem ipsam voluptates cumque vel dolore placeat iure adipisci animi non, ab libero exercitationem atque optio distinctio numquam repellat iusto omnis quo ullam. Eius vero, laboriosam.</div>\n" +
+    "	<div>Ea nesciunt odio omnis. Blanditiis, debitis obcaecati? Minima odit, modi vel quibusdam sit quaerat. Dolorem odit ad sequi corrupti esse, dignissimos totam quaerat quam repudiandae quae quos quisquam omnis porro!</div>\n" +
+    "	<div>Architecto laboriosam unde voluptatem neque saepe perferendis tempore expedita itaque dolorem accusamus, culpa possimus, ea. Facere laudantium iste mollitia, dolore eum commodi ad, voluptatem, totam labore sunt consequatur dolorum sequi!</div>\n" +
+    "	<div>Corporis pariatur eos culpa animi porro distinctio sed eaque alias dolore necessitatibus quisquam dolores optio, quidem, commodi dignissimos enim exercitationem esse nesciunt saepe asperiores, quam inventore? Iure, eum repellendus veritatis!</div>\n" +
+    "	<div>Vitae quisquam, reiciendis. Neque mollitia, tempora vel delectus nobis fuga, explicabo sapiente in dolore esse atque quis error fugit veritatis quam molestias rerum assumenda possimus impedit labore repellendus. Nam, doloremque.</div>\n" +
+    "	<div>Adipisci eos asperiores recusandae aut facere quae voluptatum ut. Facere ratione vero quisquam aperiam, illo, impedit iusto placeat? Excepturi culpa facere, alias, harum ipsa quos? Voluptatem laboriosam doloribus cumque laudantium?</div>\n" +
+    "	<div>Dolores vitae nisi nulla recusandae nobis! Illum sapiente quas provident repellendus qui nam, id ullam aperiam, odio fugiat unde magnam iure. Alias quis quasi itaque facilis. Unde doloribus dignissimos earum.</div>\n" +
+    "	<div>Repellendus, quasi esse eligendi accusamus culpa aperiam est magnam modi dignissimos eos repudiandae deserunt maxime maiores provident, iusto magni, id quos perferendis nostrum porro mollitia. Aperiam consequatur cumque vitae asperiores?</div>\n" +
+    "	<div>Autem culpa reprehenderit eligendi molestias dignissimos corrupti eveniet pariatur nobis sint voluptatem libero non repellendus ut est sit obcaecati nisi perspiciatis ipsam natus, cupiditate officia alias provident eaque dolorem. Non?</div></div>\n" +
+    "	<div class=\"col-md-6 col-xs-12\"><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore perferendis, debitis odit totam animi, veritatis maxime temporibus similique libero ex, esse ea mollitia adipisci fugiat quod dolores consequatur ut.</div>\n" +
+    "	<div>Placeat nulla molestiae architecto facere at laborum iste eligendi, cupiditate doloremque sint, maxime consequuntur? Iure fuga debitis natus atque, cum eveniet quidem accusamus, eius voluptatum fugit magnam adipisci dignissimos, corporis.</div></div>\n" +
+    "	<h1>mainintro</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid understand\">\n" +
+    "	<h1>understand</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid assumptions\">\n" +
+    "	<h1>assumption</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid videostudy\">\n" +
+    "	<h1>video</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid infographic\">\n" +
+    "	<h1>graphic</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid masonry\">\n" +
+    "	<h1>masonry</h1>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid endtro\">\n" +
+    "	<h1>endtro</h1>\n" +
+    "</section>");
 }]);
 
 angular.module("templates/prototype.html", []).run(["$templateCache", function($templateCache) {
