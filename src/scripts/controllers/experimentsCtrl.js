@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('cth').controller('ExperimentsCtrl', [ExperimentsCtrl]);
+  angular.module('augm').controller('ExperimentsCtrl', [ExperimentsCtrl]);
 
   function ExperimentsCtrl(){
     var vm = this;

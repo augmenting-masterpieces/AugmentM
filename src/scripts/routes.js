@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('cth').config(['$stateProvider', '$locationProvider', '$urlRouterProvider', routes]); 
+  angular.module('augm').config(['$stateProvider', '$locationProvider', '$urlRouterProvider', routes]); 
     
   function routes($stateProvider, $locationProvider, $urlRouterProvider) {
 

@@ -1,4 +1,4 @@
-angular.module('templates-cth', ['templates/case-study.html', 'templates/home.html', 'templates/homepage.html', 'templates/prototype.html']);
+angular.module('templates-augm', ['templates/case-study.html', 'templates/home.html', 'templates/homepage.html', 'templates/prototype.html']);
 
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
