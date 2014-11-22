@@ -1,20 +1,56 @@
-h1 {
-	margin: 0;
+.block {
+   	min-height: 100%;
 }
+
+.contents {
+	display: table;
+   	width: 100%;
+   	min-height: 100%;
+}
+
+.vAlign {
+   display: table-cell;
+   vertical-align: middle;
+   width: 100%;
+   min-height: 100%;
+}
+
+img {
+	display: block;
+	background-color: black;
+	margin: 0 auto;
+	width: 80%;
+	height: 200px;
+}
+
+
+
+// Navsetting
+
 
 .navbar {
 	margin: 0;
 	border-radius: 0;
-	opacity: 0.5;
 }
 
-.block {
-	min-height: 100%;
-}
+
+
+// Backgrounds
 
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;		
 }
+
+
+
+
+
+
+
+
+
+
+
 
 .understand {
 	background: $boxcolor;

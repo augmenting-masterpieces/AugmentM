@@ -278,42 +278,235 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "<section class=\"container-fluid block maintro\">\n" +
     "	\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block understand\">\n" +
-    "	<div class=\"col-md-6 col-sm-8 col-xs-12\">\n" +
-    "		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est, quisquam dolore ipsum molestias rerum maiores? Quaerat voluptates pariatur maiores reiciendis. Repellendus quo debitis velit, natus asperiores fugiat dolores perferendis voluptatem.</div>\n" +
-    "		<div>Harum earum quisquam fuga quidem ipsam voluptates cumque vel dolore placeat iure adipisci animi non, ab libero exercitationem atque optio distinctio numquam repellat iusto omnis quo ullam. Eius vero, laboriosam.</div>\n" +
-    "		<div>Ea nesciunt odio omnis. Blanditiis, debitis obcaecati? Minima odit, modi vel quibusdam sit quaerat. Dolorem odit ad sequi corrupti esse, dignissimos totam quaerat quam repudiandae quae quos quisquam omnis porro!</div>\n" +
-    "		<div>Architecto laboriosam unde voluptatem neque saepe perferendis tempore expedita itaque dolorem accusamus, culpa possimus, ea. Facere laudantium iste mollitia, dolore eum commodi ad, voluptatem, totam labore sunt consequatur dolorum sequi!</div>\n" +
-    "		<div>Corporis pariatur eos culpa animi porro distinctio sed eaque alias dolore necessitatibus quisquam dolores optio, quidem, commodi dignissimos enim exercitationem esse nesciunt saepe asperiores, quam inventore? Iure, eum repellendus veritatis!</div>\n" +
-    "		<div>Vitae quisquam, reiciendis. Neque mollitia, tempora vel delectus nobis fuga, explicabo sapiente in dolore esse atque quis error fugit veritatis quam molestias rerum assumenda possimus impedit labore repellendus. Nam, doloremque.</div>\n" +
-    "		<div>Adipisci eos asperiores recusandae aut facere quae voluptatum ut. Facere ratione vero quisquam aperiam, illo, impedit iusto placeat? Excepturi culpa facere, alias, harum ipsa quos? Voluptatem laboriosam doloribus cumque laudantium?</div>\n" +
-    "		<div>Dolores vitae nisi nulla recusandae nobis! Illum sapiente quas provident repellendus qui nam, id ullam aperiam, odio fugiat unde magnam iure. Alias quis quasi itaque facilis. Unde doloribus dignissimos earum.</div>\n" +
-    "		<div>Repellendus, quasi esse eligendi accusamus culpa aperiam est magnam modi dignissimos eos repudiandae deserunt maxime maiores provident, iusto magni, id quos perferendis nostrum porro mollitia. Aperiam consequatur cumque vitae asperiores?</div>\n" +
-    "		<div>Autem culpa reprehenderit eligendi molestias dignissimos corrupti eveniet pariatur nobis sint voluptatem libero non repellendus ut est sit obcaecati nisi perspiciatis ipsam natus, cupiditate officia alias provident eaque dolorem. Non?</div>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "		\n" +
     "	</div>\n" +
-    "\n" +
-    "	<div class=\"col-md-6 col-xs-12\">\n" +
-    "		<div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum labore perferendis, debitis odit totam animi, veritatis maxime temporibus similique libero ex, esse ea mollitia adipisci fugiat quod dolores consequatur ut.</div>\n" +
-    "		<div>Placeat nulla molestiae architecto facere at laborum iste eligendi, cupiditate doloremque sint, maxime consequuntur? Iure fuga debitis natus atque, cum eveniet quidem accusamus, eius voluptatum fugit magnam adipisci dignissimos, corporis.</div>\n" +
+    "	<hr>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<h1> Header 1 </h1>\n" +
+    "				<h2> Header 2 </h2>\n" +
+    "				<h3> Header 3 </h3>\n" +
+    "				<h4> Header 4 </h4>\n" +
+    "				<h5> Header 5 </h5>\n" +
+    "				<h6> Header 6 </h6>\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>	\n" +
+    "	</div>\n" +
+    "	<hr>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<hr>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<hr>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<h1> Hello </h1>\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<hr>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
     "	</div>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block assumptions\">\n" +
-    "	<h1>assumption</h1>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block casetro\">\n" +
-    "	<h1>casetro</h1>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block videostudy\">\n" +
-    "	<h1>video</h1>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block infographic\">\n" +
-    "	<h1>graphic</h1>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block masonry\">\n" +
-    "	<h1>masonry</h1>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block endtro\">\n" +
-    "	<h1>endtro</h1>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</section>\n" +
+    "<section class=\"container-fluid block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "		<div class=\"contents\">\n" +
+    "			<div class=\"vAlign\">\n" +
+    "				<img class=\"child\" src=\"#\">\n" +
+    "			</div>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "</section>");
 }]);
 

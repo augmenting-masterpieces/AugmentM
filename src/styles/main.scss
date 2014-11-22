@@ -56,6 +56,7 @@ body {
   // padding-top: 50px;
 }
 
+// Rijkskleuren
 
 $rijkszachtterra: rgba(203, 179, 138, 1);
 $rijkszachtrood: rgba(200, 179, 160, 1);
@@ -81,22 +82,30 @@ $rijksdonkergrijs: rgba(85, 83, 84, 1);
 $rijksbruin: rgba(150, 135, 115, 1);
 $rijkszwartgrijs: rgba(54, 55, 59, 1);
 
-$boxcolor: $rijkszwartgrijs;
-$boxcolor2: $rijkswitgrijs;
-$boxborder: $rijksdonkergrijs;
+// Orange colors 
+
+$brandorange: rgba(201, 134, 64, 1);
+$brandblack: rgba(7, 8, 8, 1);
+$brandoffwhite: rgba(255, 254, 246, 1);
+
+$boxcolor: $brandoffwhite;
+$boxcolor2: white;
+$boxborder: $brandblack;
+
+
 
 // Inverted navbar
 // Reset inverted navbar basics
 $navbar-inverse-color:                      white;
-$navbar-inverse-bg:                         $rijkszwartgrijs;
-$navbar-inverse-border:                     darken($navbar-inverse-bg, 10%);
+$navbar-inverse-bg:                         white;
+$navbar-inverse-border:                     black;
 
 // Inverted navbar links
-$navbar-inverse-link-color:                 white;
-$navbar-inverse-link-hover-color:           #fff;
+$navbar-inverse-link-color:                 black;
+$navbar-inverse-link-hover-color:           white;
 $navbar-inverse-link-hover-bg:              transparent;
 $navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color;
-$navbar-inverse-link-active-bg:             darken($navbar-inverse-bg, 10%);
+$navbar-inverse-link-active-bg:             black;
 $navbar-inverse-link-disabled-color:        #444;
 $navbar-inverse-link-disabled-bg:           transparent;
 
