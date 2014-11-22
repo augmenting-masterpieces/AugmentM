@@ -282,7 +282,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
-    "				<img class=\"child\" src=\"#\">\n" +
+    "				<img class=\"study\" src=\"#\">\n" +
     "			</div>\n" +
     "		</div>\n" +
     "		\n" +
