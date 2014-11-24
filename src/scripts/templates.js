@@ -1,4 +1,4 @@
-angular.module('templates-augm', ['templates/case-study.html', 'templates/home.html', 'templates/homepage.html', 'templates/prototype.html']);
+angular.module('templates-augm', ['templates/case-study.html', 'templates/home.html', 'templates/homepage.html']);
 
 angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("templates/case-study.html",
@@ -290,7 +290,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	<hr>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<h1> Header 1 </h1>\n" +
@@ -303,7 +303,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -313,14 +313,15 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	<hr>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
+    "				<h1>Assumptions</h1>\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -330,14 +331,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	<hr>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -347,7 +348,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	<hr>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<h1> Hello </h1>\n" +
@@ -355,7 +356,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -365,14 +366,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	<hr>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -381,14 +382,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -397,14 +398,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -413,14 +414,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -429,14 +430,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -445,14 +446,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -461,14 +462,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -477,14 +478,14 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
@@ -493,27 +494,19 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti, excepturi, a totam nobis quo, suscipit cumque nostrum error similique. Natus, labore, repellat. Vero, vitae itaque molestias nisi, magnam obcaecati distinctio molestiae adipisci in, iste repudiandae provident eius laboriosam pariatur quidem modi ipsum aut! Modi ipsam quaerat amet voluptatem eligendi consequuntur quis qui, sunt repellat enim debitis doloribus dolore sint perspiciatis corporis rem veniam. Id aut accusamus delectus hic officiis et facilis corrupti necessitatibus voluptatem at cum deleniti distinctio fuga quia dolorem totam doloremque tenetur nobis, possimus dolor, velit a sequi minus voluptate nam. Corporis similique facilis iste reprehenderit.</p>\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
     "				<img class=\"child\" src=\"#\">\n" +
     "			</div>\n" +
     "		</div>\n" +
     "	</div>\n" +
-    "</section>");
-}]);
-
-angular.module("templates/prototype.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/prototype.html",
-    "<section>\n" +
-    "	<p> Im the Prototype Template </p>\n" +
-    " <!-- ui-sref-active=\"active\" -->\n" +
     "</section>");
 }]);

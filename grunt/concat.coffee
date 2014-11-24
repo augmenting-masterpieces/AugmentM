@@ -16,17 +16,11 @@ module.exports =
     src: [
       'src/vendor/jquery.js'
       'src/vendor/lodash.js'
-      'src/vendor/firebase.js'
       'src/vendor/viewport-units-buggyfill.js'
-      'src/vendor/showdown.js'
       'src/vendor/scroll-into-view.js'
       'src/vendor/angular.js'
       'src/vendor/angular-ui-router.js'
       'src/vendor/angular-sanitize.js'
-      'src/vendor/angular-animate.js'
-      'src/vendor/angularfire.js'
-      'src/vendor/owl.carousel.js'
-      'src/vendor/jquery.stellar.js'
       'src/vendor/masonry.pkgd.min.js'
       'src/vendor/imagesloaded.pkgd.min.js'
     ]

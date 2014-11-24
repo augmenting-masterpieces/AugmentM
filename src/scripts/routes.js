@@ -18,11 +18,6 @@
         templateUrl: 'templates/home.html',
         controller: 'HomeCtrl as home'
       })
-      .state('prototype', {
-        url: '/prototype',
-        templateUrl: 'templates/prototype.html',
-        controller: 'PrototypeCtrl as proto'
-      })
       .state('homepage', {
         url: '/homepage',
         templateUrl: 'templates/homepage.html',
