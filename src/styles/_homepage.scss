@@ -27,71 +27,15 @@ img.study {
 	height: 80%;
 }
 
-
-
-// Navsetting
-
-
-.navbar {
-	margin: 0;
-	border-radius: 0;
+video {
+	width: 100%;
 }
 
+// Special Styling
 
-
-// Backgrounds
+// Titlebox
 
 .maintro {
-	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;		
+	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-.understand {
-	background: $boxcolor;
-	border-top: 10px solid $boxborder; 
-	// background: url(./images/webimages/2_overview_navigation.jpg) no-repeat center center / cover;
-}
-
-.assumptions {
-	background: $boxcolor2;
-	// border-top: 10px solid $boxborder;
-	// background: url(./images/webimages/3_thatswhatwethinktheywant.jpg) no-repeat center center / cover;
-}
-
-.casetro {
-	background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
-
-}
-
-.videostudy {
-	background: $boxcolor;
-	border-top: 10px solid $boxborder;
-}
-
-.infographic {
-	background: $boxcolor2;
-	// border-top: 10px solid $boxborder; 
-}
-
-.masonry {
-	background: $boxcolor;
-	border-top: 10px solid $boxborder; 
-}
-
-.endtro {
-	background: url(./images/backgrounds/W4A3502.jpg) no-repeat center center / cover;
-}
-
-footer {
-	background: url(./images/backgrounds/W4A3502.jpg) no-repeat center center / cover;
-}

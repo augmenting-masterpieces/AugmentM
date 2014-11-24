@@ -42,92 +42,13 @@
     font-style: normal;
 }
 
-$line-height-base: 1.6 !default; // 20/14
-$list-group-border-radius: 0;
-$grid-float-breakpoint: 0;
-
-// $font-family-monospace: ArminoRegular, Menlo, Monaco, Consolas, "Courier New", monospace !default;
-// $font-family-base: $font-family-monospace !default;
-
-
-body {
-  background-color: hsla(35, 92%, 54%, 1);
-  background-color: white;
-  // padding-top: 50px;
-}
-
-// Rijkskleuren
-
-$rijkszachtterra: rgba(203, 179, 138, 1);
-$rijkszachtrood: rgba(200, 179, 160, 1);
-$rijkszachtoker: rgba(209, 197, 173, 1);
-$rijkszachtgroen: rgba(159, 152, 130, 1);
-$rijkszachtbruin: rgba(171, 158, 136, 1);
-$rijkswitgrijs: rgba(235, 232, 222, 1);
-$rijkswarmgrijs: rgba(106, 103, 97, 1);
-$rijksterra: rgba(172, 128, 81, 1);
-$rijksrood: rgba(140, 73, 58, 1);
-$rijkspuurterra: rgba(128, 94, 76, 1);
-$rijkspuurrood: rgba(99, 48, 42, 1);
-$rijkspuuroker: rgba(161, 130, 70, 1);
-$rijkspuurgroen: rgba(68, 74, 67, 1);
-$rijkspuurbruin: rgba(104, 92, 75, 1);
-$rijksoker: rgba(179, 155, 113, 1);
-$rijksmiddengrijs: rgba(153, 158, 163, 1);
-$rijkslichtgrijs: rgba(191, 190, 174, 1);
-$rijkskoelgrijs: rgba(187, 187, 184, 1);
-$rijksgroengrijs: rgba(167, 154, 143, 1);
-$rijksgroen: rgba(108, 112, 92, 1);
-$rijksdonkergrijs: rgba(85, 83, 84, 1);
-$rijksbruin: rgba(150, 135, 115, 1);
-$rijkszwartgrijs: rgba(54, 55, 59, 1);
-
-// Orange colors 
-
-$brandorange: rgba(201, 134, 64, 1);
-$brandblack: rgba(7, 8, 8, 1);
-$brandoffwhite: rgba(255, 254, 246, 1);
-
-$boxcolor: $brandoffwhite;
-$boxcolor2: white;
-$boxborder: $brandblack;
-
-
-
-// Inverted navbar
-// Reset inverted navbar basics
-$navbar-inverse-color:                      white;
-$navbar-inverse-bg:                         white;
-$navbar-inverse-border:                     black;
-
-// Inverted navbar links
-$navbar-inverse-link-color:                 black;
-$navbar-inverse-link-hover-color:           white;
-$navbar-inverse-link-hover-bg:              transparent;
-$navbar-inverse-link-active-color:          $navbar-inverse-link-hover-color;
-$navbar-inverse-link-active-bg:             black;
-$navbar-inverse-link-disabled-color:        #444;
-$navbar-inverse-link-disabled-bg:           transparent;
-
-// Inverted navbar brand label
-$navbar-inverse-brand-color:                $navbar-inverse-link-color;
-$navbar-inverse-brand-hover-color:          #fff;
-$navbar-inverse-brand-hover-bg:             transparent;
-
-// Inverted navbar toggle
-$navbar-inverse-toggle-hover-bg:            #333;
-$navbar-inverse-toggle-icon-bar-bg:         #fff;
-$navbar-inverse-toggle-border-color:        #333;
-
-
 @import "_normalize";
+@import "_variables";
 @import "./bootstrap/bootstrap";
-@import "owl/_owl.carousel";
-@import "owl/_owl.theme";
-@import "owl/_owl.transitions";
-@import "_typography";
 @import "_case-study.scss";
 @import "_home";
 @import "_homepage";
 
-
+// a {
+//     text-decoration: underline;
+// }
