@@ -7,6 +7,10 @@ module.exports =
     src: "bootstrap-sass-official/assets/stylesheets"
     dest: "src/styles/bootstrap"
 
+  bootstrapjs:
+    src: "bootstrap-sass-official/assets/javascripts/bootstrap.js"
+    dest: "src/vendor/bootstrap.js"
+
   angularUiRouter:
     src: "angular-ui-router/release/angular-ui-router.js"
     dest: "src/vendor/angular-ui-router.js"
@@ -62,6 +66,3 @@ module.exports =
   imagesloaded:
     src: "imagesloaded/imagesloaded.pkgd.min.js"
     dest: "src/vendor/imagesloaded.pkgd.min.js" 
-
-
-

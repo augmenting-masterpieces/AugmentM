@@ -313,7 +313,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "	<hr>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block\">\n" +
+    "<section class=\"block\">\n" +
     "	\n" +
     "				<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
     "\n" +
