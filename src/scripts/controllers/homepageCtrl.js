@@ -5,9 +5,13 @@
 
 	function HomepageCtrl(){
 	    var vm = this;
+	 //    $( document ).ready( 
+		//     .each(function () {
+		// 	  var $spy = $(this).scrollspy('refresh');
+		// 	});
+		// );
 
-	    $('body').scrollspy({ target: '.navbar-example' });
-
+		$('[data-spy="scroll"]').scrollspy();
 
 	    return vm;
 	}
