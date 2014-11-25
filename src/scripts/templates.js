@@ -278,7 +278,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "<section class=\"container-fluid block maintro\">\n" +
     "	\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block\">\n" +
+    "<section id=\"understand\" class=\"container-fluid block\">\n" +
     "	<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +
@@ -313,10 +313,8 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "	<hr>\n" +
     "</section>\n" +
-    "<section class=\"block\">\n" +
-    "	\n" +
-    "				<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
-    "\n" +
+    "<section id=\"analyse\" class=\"block\">\n" +
+    "	<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
     "	<hr>\n" +
     "</section>\n" +
     "<section class=\"container-fluid block\">\n" +
@@ -354,7 +352,7 @@ angular.module("templates/homepage.html", []).run(["$templateCache", function($t
     "	</div>\n" +
     "	<hr>\n" +
     "</section>\n" +
-    "<section class=\"container-fluid block\">\n" +
+    "<section id=\"prototype\" class=\"container-fluid block\">\n" +
     "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"contents\">\n" +
     "			<div class=\"vAlign\">\n" +

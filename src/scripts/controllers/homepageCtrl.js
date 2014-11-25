@@ -6,6 +6,9 @@
 	function HomepageCtrl(){
 	    var vm = this;
 
+	    $('body').scrollspy({ target: '.navbar-example' });
+
+
 	    return vm;
 	}
 })();

@@ -34,3 +34,7 @@
 @import "_variables";
 @import "./bootstrap/bootstrap";
 @import "_homepage";
+
+body {
+    position: relative;
+}
