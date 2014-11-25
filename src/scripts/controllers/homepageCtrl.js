@@ -1,9 +1,9 @@
 (function(){
   'use strict';
 
-  angular.module('augm').controller('HomeCtrl', [HomeCtrl]);
+  angular.module('augm').controller('HomepageCtrl', [HomepageCtrl]);
 
-	function HomeCtrl(){
+	function HomepageCtrl(){
 	    var vm = this;
 
 	    return vm;
