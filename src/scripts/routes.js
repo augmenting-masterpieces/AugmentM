@@ -24,7 +24,12 @@
           "header": { templateUrl: "../templates/content/header.html" },
           "process": { templateUrl: "../templates/content/process.html" },
           "assumptions": { templateUrl: "../templates/content/assumptions.html" },
-          "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" }
+          "usercamerastudy": { templateUrl: "../templates/content/usercamerastudy.html" },
+          "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" },
+          "survey": { templateUrl: "../templates/content/survey.html" },
+          "masonry": { templateUrl: "../templates/content/masonry.html" },
+          "demo": { templateUrl: "../templates/content/demo.html" },
+          "evaluation": { templateUrl: "../templates/content/evaluation.html" }
         }
       });
 

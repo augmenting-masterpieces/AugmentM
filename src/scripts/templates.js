@@ -1,17 +1,17 @@
-angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/header.html', '../templates/content/process.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
+angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/masonry.html', '../templates/content/process.html', '../templates/content/survey.html', '../templates/content/usercamerastudy.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
     "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
-    "			<h1> Header 1 </h1>\n" +
-    "			<h2> Header 2 </h2>\n" +
-    "			<h3> Header 3 </h3>\n" +
-    "			<h4> Header 4 </h4>\n" +
-    "			<h5> Header 5 </h5>\n" +
-    "			<h6> Header 6 </h6>\n" +
-    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti.</p>\n" +
+    "			<h1> ASSUMPTIONS</h1>\n" +
+    "			<h3>“That's what we think they want.”</h3>\n" +
+    "			<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
+    "\n" +
+    "			Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”\n" +
+    "\n" +
+    "			This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "			<a href=\"#\">Im a bigger link</a>\n" +
     "		</div>\n" +
     "	</div>\n" +
@@ -20,6 +20,71 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<img class=\"child\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
+angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/demo.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<h1>Doesn't matter how much 'cultural capital' you bring.</h1>\n" +
+    "			<h3>Features for visitor's engagement</h3>\n" +
+    "			<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.\n" +
+    "\n" +
+    "			The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.\n" +
+    "\n" +
+    "			Rather than trying to attempt to engage people with in-depth (art) historical background information about art works, we set up three ways of social interaction on a broader range with the museum and the other visitors.\n" +
+    "\n" +
+    "			Through engaging on more general terms with the surrounding, people will be more likely to find their own access to the museum and ultimately to the artworks in it.\n" +
+    "\n" +
+    "			Visitors can contribute and share their observations and knowledge, no matter what their 'cultural capital' is, which creates a feeling of being valuable.</a>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<img class=\"child\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
+angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/evaluation.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<h1> EVALUATION</h1>\n" +
+    "			<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”\n" +
+    "\n" +
+    "			Even stronger, by letting them emphasizing their own aspects in order to find their own approach to the exhibition.\n" +
+    "\n" +
+    "			The ambition was to take away their feeling of 'social awkwardness' or felt lack of knowledge through letting them contribute their own impressions and observations about the museum and the artworks in it, and through encountering random stories or trivia questions at at random pieces of art by other visitors.\n" +
+    "\n" +
+    "			The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
+    "			<a href=\"#\">Im a bigger link</a>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<h1> OUTLOOK </h1>\n" +
+    "			<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.\n" +
+    "\n" +
+    "			The majority of the test persons indicated that they would use the app throughout the museum if it was available, that they would recommend it to their friends or family and like the idea to contribute to the app content themselves. In that regard, the first prototyped versions of design features are ready to develop further and to be tested with extended functionality.\n" +
+    "\n" +
+    "			On general terms, the human-centered design approach in combination with creative and visual research methods has proven to\n" +
+    "\n" +
+    "			be incredibly fruitful when researching the different aspects that visitors deal with when visiting the Rijksmuseum. And to carefully compare those to the assumptions made by museum professional (including ourselves).\n" +
+    "\n" +
+    "			To take museum visitors serious in their needs and different levels of cultural capital, allowed us to socially augment the masterpieces of</p>\n" +
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
@@ -40,6 +105,35 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "</div>");
 }]);
 
+angular.module("../templates/content/masonry.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/masonry.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<p>[Here/Below...] is one detailed profile and script from a participating Cultural Tourist providing insights on the kind of collected input.\n" +
+    "\n" +
+    "\n" +
+    "			However, Chris described in detail the other pictures that he took, the observed situations and he told stories that he overheard from other visitors. He seemed more relaxed and engaged with his surrounding.\n" +
+    "\n" +
+    "			Whereas the amount of time spent on looking at art works and written information varied largely between different visitors, all participants carefully observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times.\n" +
+    "\n" +
+    "			So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.\n" +
+    "\n" +
+    "			Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
+    "			<a href=\"#\">Im a bigger link</a>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<img class=\"child\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
 angular.module("../templates/content/process.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/process.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
@@ -53,10 +147,62 @@ angular.module("../templates/content/process.html", []).run(["$templateCache", f
     "");
 }]);
 
+angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/survey.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<h1>No comment on the Masterpieces.</h1>\n" +
+    "			<h3>“I know they are important.”</h3>\n" +
+    "			<p>The qualitative survey had twelve participants who belong to four of the five visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.\n" +
+    "\n" +
+    "			As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam.\n" +
+    "\n" +
+    "			In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.\"</p>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<img class=\"child\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
+angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/usercamerastudy.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<h1> UCS</h1>\n" +
+    "			<h3>“That's what we think they want.”</h3>\n" +
+    "			<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
+    "\n" +
+    "			Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”\n" +
+    "\n" +
+    "			This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<img class=\"child\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
 angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/uservideostudy.html",
     "<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
-    "<hr>");
+    "<hr>\n" +
+    "\n" +
+    "");
 }]);
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
@@ -64,9 +210,12 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"header\" class=\"container-fluid block maintro\"></section>\n" +
     "<section ui-view=\"process\" id=\"understand\" class=\"container-fluid block\"></section>\n" +
     "<section ui-view=\"assumptions\" class=\"container-fluid block\"></section>\n" +
+    "<section ui-view=\"usercamerastudy\" class=\"container-fluid block\"></section>\n" +
     "<section ui-view=\"uservideostudy\" class=\"block\"></section>\n" +
-    "\n" +
-    "");
+    "<section ui-view=\"survey\" class=\"container-fluid block\"></section>\n" +
+    "<section ui-view=\"masonry\" class=\"container-fluid block\"></section>\n" +
+    "<section ui-view=\"demo\" class=\"container-fluid block\"></section>\n" +
+    "<section ui-view=\"evaluation\" class=\"container-fluid block\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
