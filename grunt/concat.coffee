@@ -36,7 +36,7 @@ module.exports =
       'src/scripts/app.js'
       'src/scripts/routes.js'
       'src/scripts/appCtrl.js'
-      'src/scripts/controllers/homepageCtrl.js'
+      'src/scripts/controllers/NavCtrl.js'
       'src/scripts/templates.js'
     ]
     dest: 'dev/app.js'

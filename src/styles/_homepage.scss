@@ -1,5 +1,7 @@
 .block {
    	min-height: 100%;
+   	margin-top: -50px;
+   	padding-top: 50px;
 }
 
 .contents {
@@ -25,6 +27,7 @@ img {
 
 img.study {
 	height: 80%;
+	width: 80%
 }
 
 video {

@@ -10,7 +10,10 @@
     $stateProvider
       .state('displayorderHome', {
         views: {
-          "nav": { templateUrl: "../templates/functional/nav.html" },
+          "nav": { 
+            templateUrl: "../templates/functional/nav.html",
+            controller: 'NavCtrl as nav',      
+          },
           "displayorder": { templateUrl: "../templates/displayorder.html" },
           "footer": { templateUrl: "../templates/functional/footer.html" }
         }

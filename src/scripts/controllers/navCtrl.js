@@ -1,12 +1,13 @@
 (function(){
   'use strict';
 
-  angular.module('augm').controller('HomepageCtrl', [HomepageCtrl]);
+  angular.module('augm').controller('NavCtrl', [NavCtrl]);
 
-	function HomepageCtrl(){
+	function NavCtrl(){
     var vm = this;
 
 		$(function() {
+
 		  $('a[href*=#]:not([href=#])').click(function() {
 		    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 		      var target = $(this.hash);
@@ -19,6 +20,7 @@
 		      }
 		    }
 		  });
+
 		});
 
 	  return vm;

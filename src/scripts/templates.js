@@ -64,6 +64,7 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"process\" id=\"understand\" class=\"container-fluid block\"></section>\n" +
     "<section ui-view=\"assumptions\" class=\"container-fluid block\"></section>\n" +
     "<section ui-view=\"uservideostudy\" class=\"block\"></section>\n" +
+    "\n" +
     "");
 }]);
 
@@ -90,10 +91,10 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\">\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li><a href=\"#understand\">Understand and Observe</a></li>\n" +
-    "        <li><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li><a href=\"#prototype\">Prototype and test</a></li>\n" +
-    "        <li><a href=\"#evaluate\">Evaluate and Party</a></li>\n" +
+    "        <li><a href=\"home#understand\">Understand and Observe</a></li>\n" +
+    "        <li><a ui-sref=\"home#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li><a ui-sref=\"home#prototype\">Prototype and test</a></li>\n" +
+    "        <li><a ui-sref=\"home#evaluate\">Evaluate and Party</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"#\">About</a></li>\n" +
