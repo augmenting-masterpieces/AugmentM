@@ -50,7 +50,8 @@ video {
 
 .title {
 	margin: 0 auto;
-	padding-top: 100px;
+	padding-top: 150px;
+	padding-left: 100px;
 	color: white;
 
 	h1{
@@ -72,7 +73,15 @@ video {
 		width: 15em;
 		height: 2em;
 	}
+
 }
 
+.infographic {
+	padding-top: 80px;
+	width: 105%;
+}
 
+.video{
+	width: 130%;
+}
 

@@ -1,4 +1,4 @@
-angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/masonry.html', '../templates/content/process.html', '../templates/content/survey.html', '../templates/content/usercamerastudy.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
+angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/masonry.html', '../templates/content/survey.html', '../templates/content/usercamerastudy.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
@@ -134,19 +134,6 @@ angular.module("../templates/content/masonry.html", []).run(["$templateCache", f
     "<hr>");
 }]);
 
-angular.module("../templates/content/process.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/process.html",
-    "<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
-    "	<div class=\"contents\">\n" +
-    "		<div class=\"vAlign\">\n" +
-    "			<img class=\"study\" src=\"#\">\n" +
-    "			<hr>\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "");
-}]);
-
 angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/survey.html",
     "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
@@ -162,10 +149,9 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
-    "	<div class=\"contents\">\n" +
+    "<div class=\"col-lg-4 col-md-6 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"vAlign\">\n" +
-    "			<img class=\"child\" src=\"#\">\n" +
+    "			<img class=\"infographic\" src=\"images/webimages/infographic.jpg\">\n" +
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
@@ -177,8 +163,8 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
-    "			<h1> UCS</h1>\n" +
-    "			<h3>“That's what we think they want.”</h3>\n" +
+    "			<h1>...and how to get rid of them.</h1>\n" +
+    "			<h3>Visual Feedback Methods</h3>\n" +
     "			<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
     "\n" +
     "			Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”\n" +
@@ -199,23 +185,28 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 
 angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/uservideostudy.html",
-    "<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
-    "<hr>\n" +
-    "\n" +
     "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "<video class=\"video\" src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
+    "	</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "<div class=\"col-lg-4 col-md-6 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<p>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</p>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
+    "<hr>\n" +
     "");
 }]);
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
-    "<section ui-view=\"process\" id=\"understand\" class=\"row block\"></section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
     "<section ui-view=\"uservideostudy\" class=\"row block\"></section>\n" +
