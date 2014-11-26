@@ -31,39 +31,8 @@
 
   </head>
   <body ng-cloak ng-controller="AppCtrl as app" ng-app="augm" data-spy="scroll" data-target=".navbar">
-    
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcontents">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Augmenting Masterpieces</a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbarcontents">
-          <ul class="nav navbar-nav">
-            <li><a href="#understand">Understand and Observe</a></li>
-            <li><a href="#analyse">Analyse and Ideate</a></li>
-            <li><a href="#prototype">Prototype and test</a></li>
-            <li><a href="#evaluate">Evaluate and Party</a></li>
-          </ul>
-          <ul class="nav navbar-nav navbar-right">
-            <li><a href="#">About</a></li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
-
-
-    <main ui-view autoscroll="false"></main>
-
-    <nav class="navbar navbar-default" role="navigation"></nav>
+  
+    <main ui-view="displayorder" autoscroll="false"></main>
 
     <script src="vendor.js"></script>
     <script src="app.js"></script>

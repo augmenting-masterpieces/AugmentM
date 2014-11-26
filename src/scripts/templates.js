@@ -1,7 +1,12 @@
-angular.module('templates-augm', ['templates/case-study.html', 'templates/home.html', 'templates/homepage.html']);
+angular.module('templates-augm', ['../templates/homepage.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
 
-angular.module("templates/case-study.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/case-study.html",
+angular.module("../templates/homepage.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/homepage.html",
+    "");
+}]);
+
+angular.module("../templates/old/case-study.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/old/case-study.html",
     "<section class=\"caseTopWrapper\">\n" +
     "	<div class=\"caseTop\">\n" +
     "		<hgroup>\n" +
@@ -56,8 +61,8 @@ angular.module("templates/case-study.html", []).run(["$templateCache", function(
     "");
 }]);
 
-angular.module("templates/home.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/home.html",
+angular.module("../templates/old/home.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/old/home.html",
     "<section class=\"homeContainer\">\n" +
     "	<section class=\"homeHeader\">\n" +
     "		<div class=\"title\">\n" +
@@ -273,8 +278,8 @@ angular.module("templates/home.html", []).run(["$templateCache", function($templ
     "");
 }]);
 
-angular.module("templates/homepage.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("templates/homepage.html",
+angular.module("../templates/old/homepageold.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/old/homepageold.html",
     "<section class=\"container-fluid block maintro\">\n" +
     "	\n" +
     "</section>\n" +

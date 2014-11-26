@@ -26,7 +26,7 @@ module.exports = (grunt) ->
 
   beta:
     options:
-      bucket: 'beta.codingthehumanities.com'
+      bucket: ''
     files: [
       expand: true
       cwd: 'dist'
@@ -36,7 +36,7 @@ module.exports = (grunt) ->
 
   production:
     options:
-      bucket: 'codingthehumanities.com'
+      bucket: ' '
     files: [
       expand: true
       cwd: 'dist'
