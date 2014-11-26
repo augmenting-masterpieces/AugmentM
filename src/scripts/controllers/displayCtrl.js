@@ -8,7 +8,7 @@
 
 		$(function() {
 
-		  console.log("hi");
+		  $('body').panelSnap();
 
 		});
 
