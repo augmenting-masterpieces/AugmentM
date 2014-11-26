@@ -46,10 +46,11 @@ angular.module("../templates/content/process.html", []).run(["$templateCache", f
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<img class=\"study\" src=\"#\">\n" +
+    "			<hr>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
@@ -92,9 +93,9 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\">\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
     "        <li><a href=\"home#understand\">Understand and Observe</a></li>\n" +
-    "        <li><a ui-sref=\"home#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li><a ui-sref=\"home#prototype\">Prototype and test</a></li>\n" +
-    "        <li><a ui-sref=\"home#evaluate\">Evaluate and Party</a></li>\n" +
+    "        <li><a href=\"home#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li><a href=\"home#prototype\">Prototype and test</a></li>\n" +
+    "        <li><a href=\"home#evaluate\">Evaluate and Party</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"#\">About</a></li>\n" +
