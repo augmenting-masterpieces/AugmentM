@@ -203,13 +203,13 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" class=\"row block maintro panelforSnapping\"></section>\n" +
-    "<section ui-view=\"assumptions\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"uservideostudy\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"uservideostudy\" id=\"analyse\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"masonry\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>");
+    "<section ui-view=\"demo\" id=\"prototype\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
@@ -235,10 +235,10 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\">\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li><a href=\"home#understand\">Understand and Observe</a></li>\n" +
-    "        <li><a href=\"home#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li><a href=\"home#prototype\">Prototype and test</a></li>\n" +
-    "        <li><a href=\"home#evaluate\">Evaluate and Party</a></li>\n" +
+    "        <li><a href=\"#understand\">Understand and Observe</a></li>\n" +
+    "        <li><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li><a href=\"#prototype\">Prototype and test</a></li>\n" +
+    "        <li><a href=\"#evaluate\">Evaluate and Party</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"#\">About</a></li>\n" +
