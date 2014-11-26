@@ -12,7 +12,6 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "			Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”\n" +
     "\n" +
     "			This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
-    "			<a href=\"#\">Im a bigger link</a>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
@@ -23,7 +22,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
@@ -52,7 +51,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
@@ -68,7 +67,6 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "			The ambition was to take away their feeling of 'social awkwardness' or felt lack of knowledge through letting them contribute their own impressions and observations about the museum and the artworks in it, and through encountering random stories or trivia questions at at random pieces of art by other visitors.\n" +
     "\n" +
     "			The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
-    "			<a href=\"#\">Im a bigger link</a>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
@@ -88,7 +86,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
@@ -120,7 +118,6 @@ angular.module("../templates/content/masonry.html", []).run(["$templateCache", f
     "			So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.\n" +
     "\n" +
     "			Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
-    "			<a href=\"#\">Im a bigger link</a>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
@@ -131,7 +128,7 @@ angular.module("../templates/content/masonry.html", []).run(["$templateCache", f
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
@@ -155,7 +152,7 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
@@ -180,7 +177,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
-    "<hr>");
+    "");
 }]);
 
 angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
@@ -200,34 +197,19 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<hr>\n" +
     "");
 }]);
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
-<<<<<<< HEAD
-    "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
-    "<section ui-view=\"assumptions\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"uservideostudy\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"masonry\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"evaluation\" class=\"row block\"></section>");
-=======
-    "<!-- <div class=\"panel-container\"> -->\n" +
-    "	<section ui-view=\"header\" class=\"row block maintro panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"process\" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"assumptions\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"uservideostudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"masonry\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
-    "	<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>\n" +
-    "<!-- </div> -->");
->>>>>>> panelsnap tests
+    "<section ui-view=\"header\" class=\"row block maintro panelforSnapping\"></section>\n" +
+    "<section ui-view=\"assumptions\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"uservideostudy\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"masonry\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
