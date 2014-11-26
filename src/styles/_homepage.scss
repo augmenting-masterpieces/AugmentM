@@ -17,16 +17,18 @@
    min-height: 100%;
 }
 
-img {
-	display: block;
-	margin: 0 auto;
-	width: 80%;
-	height: 200px;
-}
+.contents {
+	img {
+		display: block;
+		margin: 0 auto;
+		width: 80%;
+		height: 200px;
+	}
 
-img.study {
-	height: 80%;
-	width: 80%
+	img.study {
+		height: 80%;
+		width: 80%
+	}
 }
 
 video {
@@ -50,7 +52,7 @@ video {
 	font-family: 'miso';
 	font-size: 3.5em;
 	color: white;
-	
+
 	span {
 		display: inline-block;
 		color: white;
