@@ -8,42 +8,23 @@
     $locationProvider.html5Mode(true);
     
     $stateProvider
-      .state('case-study', {
-        url: '/case-study',
-        templateUrl: 'templates/case-study.html',
-        controller: 'CaseStudyCtrl as case'
+      .state('displayorderHome', {
+        views: {
+          "nav": { templateUrl: "../templates/functional/nav.html" },
+          "displayorder": { templateUrl: "../templates/displayorder.html" },
+          "footer": { templateUrl: "../templates/functional/footer.html" }
+        }
       })
-      .state('home', {
+      .state('displayorderHome.withSubroutes', {
         url: '/home',
-        templateUrl: 'templates/home.html',
-        controller: 'HomeCtrl as home'
-      })
-      .state('homepage', {
-        url: '/homepage',
-        templateUrl: 'templates/homepage.html',
-        controller: 'HomepageCtrl as homep'
+        views: {
+          "header": { templateUrl: "../templates/content/header.html" },
+          "process": { templateUrl: "../templates/content/process.html" },
+          "assumptions": { templateUrl: "../templates/content/assumptions.html" },
+          "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" }
+        }
       });
 
-    $urlRouterProvider.when('/', '/homepage');
+    $urlRouterProvider.when('/', '/home');
   }
-
-// .state('posts', {
-//   url: '/posts',
-//   templateUrl: 'post/postList.html',
-//   controller: 'PostCtrl as postList',
-//   resolve: {
-//     posts: ['$http', function($http){
-//       return $http.get('/api/posts.json').then(function(response){
-//         var posts = response.data.posts;
-//         posts = _(posts).sortBy('posted').value().reverse();
-//         return posts;
-//       }); 
-//     }]
-//   }
-// })
-// .state('posts.post', {
-//   url: '/:post_id',
-// })
-
-
 })();

@@ -6,7 +6,7 @@ module.exports =
     ]
 
   templates:
-    files: ["src/scripts/**/*.html"]
+    files: ["src/templates/**/*.html"]
     tasks: [
       "html2js"
     ]

@@ -14,7 +14,7 @@ module.exports =
   html:
     expand: true
     cwd: "src"
-    src: ["**/*.html", "!scripts/**/*"]
+    src: ["**/*.html", "!templates/**/*"]
     dest: "dev/"
 
   js:
