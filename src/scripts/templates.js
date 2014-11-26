@@ -202,20 +202,27 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
     "<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
     "<hr>\n" +
     "\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<p>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</p>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "");
 }]);
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
-    "<section ui-view=\"header\" class=\"container-fluid block maintro\"></section>\n" +
-    "<section ui-view=\"process\" id=\"understand\" class=\"container-fluid block\"></section>\n" +
-    "<section ui-view=\"assumptions\" class=\"container-fluid block\"></section>\n" +
-    "<section ui-view=\"usercamerastudy\" class=\"container-fluid block\"></section>\n" +
-    "<section ui-view=\"uservideostudy\" class=\"block\"></section>\n" +
-    "<section ui-view=\"survey\" class=\"container-fluid block\"></section>\n" +
-    "<section ui-view=\"masonry\" class=\"container-fluid block\"></section>\n" +
-    "<section ui-view=\"demo\" class=\"container-fluid block\"></section>\n" +
-    "<section ui-view=\"evaluation\" class=\"container-fluid block\"></section>");
+    "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
+    "<section ui-view=\"process\" id=\"understand\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"assumptions\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"uservideostudy\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"masonry\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"evaluation\" class=\"row block\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
