@@ -1,8 +1,97 @@
-angular.module('templates-augm', ['../templates/homepage.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
+angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/header.html', '../templates/content/process.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
 
-angular.module("../templates/homepage.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/homepage.html",
+angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/assumptions.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<h1> Header 1 </h1>\n" +
+    "			<h2> Header 2 </h2>\n" +
+    "			<h3> Header 3 </h3>\n" +
+    "			<h4> Header 4 </h4>\n" +
+    "			<h5> Header 5 </h5>\n" +
+    "			<h6> Header 6 </h6>\n" +
+    "			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti.</p>\n" +
+    "			<a href=\"#\">Im a bigger link</a>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<img class=\"child\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>	\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
+angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/header.html",
     "");
+}]);
+
+angular.module("../templates/content/process.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/process.html",
+    "<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"contents\">\n" +
+    "		<div class=\"vAlign\">\n" +
+    "			<img class=\"study\" src=\"#\">\n" +
+    "		</div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<hr>");
+}]);
+
+angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/uservideostudy.html",
+    "<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
+    "<hr>");
+}]);
+
+angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/displayorder.html",
+    "<section ui-view=\"header\" class=\"container-fluid block maintro\"></section>\n" +
+    "<section ui-view=\"process\" id=\"understand\" class=\"container-fluid block\"></section>\n" +
+    "<section ui-view=\"assumptions\" class=\"container-fluid block\"></section>\n" +
+    "<section ui-view=\"uservideostudy\" class=\"block\"></section>\n" +
+    "");
+}]);
+
+angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/functional/footer.html",
+    "<p>Im the footerdiv!</p>");
+}]);
+
+angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/functional/nav.html",
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbarcontents\">\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <a class=\"navbar-brand\" href=\"#\">Augmenting Masterpieces</a>\n" +
+    "    </div>\n" +
+    "\n" +
+    "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\">\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li><a href=\"#understand\">Understand and Observe</a></li>\n" +
+    "        <li><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li><a href=\"#prototype\">Prototype and test</a></li>\n" +
+    "        <li><a href=\"#evaluate\">Evaluate and Party</a></li>\n" +
+    "      </ul>\n" +
+    "      <ul class=\"nav navbar-nav navbar-right\">\n" +
+    "        <li><a href=\"#\">About</a></li>\n" +
+    "      </ul>\n" +
+    "    </div><!-- /.navbar-collapse -->\n" +
+    "  </div><!-- /.container-fluid -->\n" +
+    "</nav>");
 }]);
 
 angular.module("../templates/old/case-study.html", []).run(["$templateCache", function($templateCache) {
@@ -280,53 +369,23 @@ angular.module("../templates/old/home.html", []).run(["$templateCache", function
 
 angular.module("../templates/old/homepageold.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/old/homepageold.html",
-    "<section class=\"container-fluid block maintro\">\n" +
+    "<section >\n" +
     "	\n" +
     "</section>\n" +
     "\n" +
     "\n" +
-    "<section id=\"understand\" class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
-    "		<div class=\"contents\">\n" +
-    "			<div class=\"vAlign\">\n" +
-    "				<img class=\"study\" src=\"#\">\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "		\n" +
-    "	</div>\n" +
-    "	<hr>\n" +
+    "<section >\n" +
+    "\n" +
     "</section>\n" +
     "\n" +
     "\n" +
     "<section class=\"container-fluid block\">\n" +
-    "	<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
-    "		<div class=\"contents\">\n" +
-    "			<div class=\"vAlign\">\n" +
-    "				<h1> Header 1 </h1>\n" +
-    "				<h2> Header 2 </h2>\n" +
-    "				<h3> Header 3 </h3>\n" +
-    "				<h4> Header 4 </h4>\n" +
-    "				<h5> Header 5 </h5>\n" +
-    "				<h6> Header 6 </h6>\n" +
-    "				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A magni veniam quas fuga quisquam quaerat voluptates, molestias, labore inventore ullam. Sit porro consectetur ipsa nostrum cupiditate, unde. Voluptatibus voluptate minima ullam voluptatum iure beatae, ut eligendi est, ad eum repellat, laudantium, iusto magni quaerat saepe. A doloribus unde, modi, quo minus deserunt, eum dolor accusantium illum aspernatur quasi, maxime distinctio obcaecati itaque iste. Facere aperiam, placeat. Quos quas nemo, in deleniti.</p>\n" +
-    "				<a href=\"#\">Im a bigger link</a>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "	<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
-    "		<div class=\"contents\">\n" +
-    "			<div class=\"vAlign\">\n" +
-    "				<img class=\"child\" src=\"#\">\n" +
-    "			</div>\n" +
-    "		</div>	\n" +
-    "	</div>\n" +
-    "	<hr>\n" +
+    "\n" +
     "</section>\n" +
     "\n" +
     "\n" +
     "<section class=\"block\">\n" +
-    "	<video src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
-    "	<hr>\n" +
+    "	\n" +
     "</section>\n" +
     "\n" +
     "\n" +

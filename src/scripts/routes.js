@@ -8,16 +8,20 @@
     $locationProvider.html5Mode(true);
     
     $stateProvider
-      .state('home', {
-        url: '/home',
+      .state('displayorderHome', {
         views: {
-          "displayorder": { templateUrl: "templates/displayorder.html" }
+          "nav": { templateUrl: "../templates/functional/nav.html" },
+          "displayorder": { templateUrl: "../templates/displayorder.html" },
+          "footer": { templateUrl: "../templates/functional/footer.html" }
         }
       })
-      .state('home.header', {
-        url: '/header',
+      .state('displayorderHome.withSubroutes', {
+        url: '/home',
         views: {
-          "header": { templateUrl: "templates/content/header.html" }
+          "header": { templateUrl: "../templates/content/header.html" },
+          "process": { templateUrl: "../templates/content/process.html" },
+          "assumptions": { templateUrl: "../templates/content/assumptions.html" },
+          "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" }
         }
       });
 
