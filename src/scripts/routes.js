@@ -14,7 +14,10 @@
             templateUrl: "../templates/functional/nav.html",
             controller: 'NavCtrl as nav',      
           },
-          "displayorder": { templateUrl: "../templates/displayorder.html" },
+          "displayorder": { 
+            templateUrl: "../templates/displayorder.html",
+            controller: "DisplayCtrl as disp"
+          },
           "footer": { templateUrl: "../templates/functional/footer.html" }
         }
       })

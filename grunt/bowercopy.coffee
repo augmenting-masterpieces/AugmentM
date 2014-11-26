@@ -19,18 +19,6 @@ module.exports =
     src: "angular-sanitize/angular-sanitize.js"
     dest: "src/vendor/angular-sanitize.js"
 
-  angularAnimate:
-    src: "angular-animate/angular-animate.js"
-    dest: "src/vendor/angular-animate.js"
-
-  angularfire:
-    src: "angularfire/angularfire.js"
-    dest: "src/vendor/angularfire.js"
-
-  firebase:
-    src: "firebase/firebase.js"
-    dest: "src/vendor/firebase.js"
-
   lodash:
     src: "lodash/dist/lodash.js"
     dest: "src/vendor/lodash.js"
@@ -43,26 +31,14 @@ module.exports =
     src: "viewport-units-buggyfill/viewport-units-buggyfill.js"
     dest: "src/vendor/viewport-units-buggyfill.js"
 
-  scrollIntoView:
-    src: "jQuery.scrollIntoView/jquery.scrollIntoView.js"
-    dest: "src/vendor/scroll-into-view.js"
-
-  showdown:
-    src: "showdown/src/showdown.js"
-    dest: "src/vendor/showdown.js"
-
-  owlCarousel:
-    src: "owl-carousel/owl-carousel/owl.carousel.js"
-    dest: "src/vendor/owl.carousel.js"
-
-  stellar:
-    src: "stellar.js/jquery.stellar.js"
-    dest: "src/vendor/jquery.stellar.js" 
-
   masonry:
     src: "masonry/dist/masonry.pkgd.js"
     dest: "src/vendor/masonry.pkgd.min.js"
 
   imagesloaded:
     src: "imagesloaded/imagesloaded.pkgd.min.js"
-    dest: "src/vendor/imagesloaded.pkgd.min.js" 
+    dest: "src/vendor/imagesloaded.pkgd.min.js"
+
+  panelSnap:
+    src: "panelsnap/jquery.panelSnap.js"
+    dest: "src/vendor/jquery.panelSnap.js" 

@@ -23,6 +23,7 @@ module.exports =
       'src/vendor/angular-sanitize.js'
       'src/vendor/masonry.pkgd.min.js'
       'src/vendor/imagesloaded.pkgd.min.js'
+      'src/vendor/jquery.panelSnap.js'
     ]
     dest: 'dev/vendor.js'
 
@@ -37,6 +38,7 @@ module.exports =
       'src/scripts/routes.js'
       'src/scripts/appCtrl.js'
       'src/scripts/controllers/NavCtrl.js'
+      'src/scripts/controllers/displayCtrl.js'
       'src/scripts/templates.js'
     ]
     dest: 'dev/app.js'
