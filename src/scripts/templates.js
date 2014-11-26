@@ -28,7 +28,16 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/header.html",
-    "");
+    "<div class=\"col-md-9 col-md-offset-3 col-sm-12 col-xs-10 col-xs-offset-1 block\">\n" +
+    "	<div class=\"title\">\n" +
+    "		<span>AUGMENTING</span>&nbsp;<span> MASTERPIECES</span>\n" +
+    "		<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
+    "		<div class=\"logos\">\n" +
+    "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
+    "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
+    "		</div>\n" +
+    "	</div> \n" +
+    "</div>");
 }]);
 
 angular.module("../templates/content/process.html", []).run(["$templateCache", function($templateCache) {
