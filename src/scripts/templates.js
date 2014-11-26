@@ -30,7 +30,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
   $templateCache.put("../templates/content/header.html",
     "<div class=\"col-md-9 col-md-offset-3 col-sm-12 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"title\">\n" +
-    "		<span>AUGMENTING</span>&nbsp;<span> MASTERPIECES</span>\n" +
+    "		<h1><span>AUGMENTING</span>&nbsp;<span> MASTERPIECES</span></h1>\n" +
     "		<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
     "		<div class=\"logos\">\n" +
     "				<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +

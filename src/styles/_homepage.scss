@@ -49,23 +49,33 @@ video {
 .title {
 	margin: 0 auto;
 	padding-top: 100px;
-	font-family: 'miso';
-	font-size: 3.5em;
 	color: white;
 
-	span {
-		display: inline-block;
-		color: white;
-		&:first-letter {
-			font-family: 'miso';
-			font-size: 1.2em;
+	h1{
+		margin-bottom: 4px;
+	
+		span {
+			display: inline-block;
 			color: white;
+			font-size: 1.3em;
+			&:first-letter {
+				font-size: 1.2em;
+				color: white;
+			}
 		}
-	p {
-		font-size: 1em;
-		color: white;
+	}
 
-	  }
+	p {
+		color: white;
+		width: 30em;
+
+	}
+
+	img {
+		width: 15em;
+		height: 2em;
 	}
 }
+
+
 
