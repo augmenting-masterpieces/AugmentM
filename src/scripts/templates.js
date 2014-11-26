@@ -206,6 +206,7 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
+<<<<<<< HEAD
     "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
@@ -214,6 +215,19 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"masonry\" class=\"row block\"></section>\n" +
     "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
     "<section ui-view=\"evaluation\" class=\"row block\"></section>");
+=======
+    "<!-- <div class=\"panel-container\"> -->\n" +
+    "	<section ui-view=\"header\" class=\"row block maintro panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"process\" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"assumptions\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"uservideostudy\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"masonry\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
+    "	<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>\n" +
+    "<!-- </div> -->");
+>>>>>>> panelsnap tests
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
