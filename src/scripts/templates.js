@@ -5,11 +5,11 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1> ASSUMPTIONS</h1>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
-    "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
+    "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.<br>\n" +
     "\n" +
-    "	Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”\n" +
+    "	Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”</p>\n" +
     "\n" +
-    "	This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
+    "	<p>This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"child\" src=\"#\">\n" +
@@ -19,7 +19,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>Doesn't matter how much 'cultural capital' you bring.</h1>\n" +
     "	<h3>Features for visitor's engagement</h3>\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.\n" +
@@ -32,7 +32,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "\n" +
     "	Visitors can contribute and share their observations and knowledge, no matter what their 'cultural capital' is, which creates a feeling of being valuable.</a>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<iframe src=\"//player.vimeo.com/video/112958657\" frameborder=\"0\" width=\"10\" height=\"10\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
     "</div>\n" +
     "");
@@ -112,7 +112,7 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "\n" +
     "	In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.\"</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"infographic\" src=\"images/webimages/infographic.jpg\">\n" +
     "</div>\n" +
     "");
@@ -139,7 +139,7 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<iframe src=\"//player.vimeo.com/video/112510250\" width=\"10\" height=\"10\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
     "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "</div>\n" +
@@ -162,7 +162,7 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
     "<section id=\"analyse\" class=\"row block intermezzoAnalyse panelforSnapping\"></section>\n" +
     "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"masonryviewer\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"masonryviewer\" class=\"row block masonry panelforSnapping\"></section>\n" +
     "<section id=\"prototype\" class=\"row block intermezzoProto panelforSnapping\"></section>\n" +
     "<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
     "<section id=\"evaluate\" class=\"row block intermezzoEvaluate panelforSnapping\"></section>\n" +

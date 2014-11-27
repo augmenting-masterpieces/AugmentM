@@ -48,7 +48,8 @@ main {
 	}
 }
 
-// Assumption
+// Intermezzo Backgrounds
+
 .intermezzoAnalyse {
 	background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
@@ -71,13 +72,18 @@ main {
 
 // Other modules
 
+// Survey
 .infographic {
 	width: 100%;
 }
 
+// Placing images on textline
+
 img {
 	margin-top: 24px;
 }
+
+// Vimeo video styling
 
 iframe {
 	margin-top: 24px;
@@ -85,15 +91,14 @@ iframe {
 	height: 56.25%;
 }
 
-footer {
-	height: 100px;
-	color: lighten($brand-primary, 60%);
-	padding-top: 10px;
-	font-size: 0.9em;
-	text-align: center;
-}
-
 // Masonry
+
+.masonry {
+	blockquote {
+		margin-bottom: 0;
+	}
+
+}
 
 #photoPiece {
 	
@@ -130,5 +135,15 @@ footer {
 	.itemText {
 		display: none;
 	}
+}
+
+// Footer
+
+footer {
+	height: 100px;
+	color: lighten($brand-primary, 60%);
+	padding-top: 10px;
+	font-size: 0.9em;
+	text-align: center;
 }
 
