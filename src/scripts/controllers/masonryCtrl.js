@@ -64,7 +64,6 @@
 				// } else {
 				// 	$(".galleryQuote").html("");
 				// }
-				console.log(photoData.name);
 				$("#transcriptHeader").html(photoData.name);
 				$("#transcriptSnippet").html(photoData.transcriptSnippet);
 	    }
