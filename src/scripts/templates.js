@@ -20,17 +20,17 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1>Doesn't matter how much 'cultural capital' you bring.</h1>\n" +
-    "	<h3>Features for visitor's engagement</h3>\n" +
-    "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.\n" +
+    "	<h1>It doesn't matter how much <i>cultural capital</i> you bring.</h1>\n" +
+    "	<h3>Social features for visitor's engagement</h3>\n" +
+    "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
     "\n" +
-    "	The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.\n" +
+    "	The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.<br>\n" +
     "\n" +
-    "	Rather than trying to attempt to engage people with in-depth (art) historical background information about art works, we set up three ways of social interaction on a broader range with the museum and the other visitors.\n" +
+    "	<p>Rather than trying to attempt to engage people with in-depth (art) historical background information about art works, we set up three ways of social interaction on a broader range with the museum and the other visitors.</p>\n" +
     "\n" +
-    "	Through engaging on more general terms with the surrounding, people will be more likely to find their own access to the museum and ultimately to the artworks in it.\n" +
+    "	<p>Through engaging on more general terms with the surrounding, people will be more likely to find their own access to the museum and ultimately to the artworks in it.</p>\n" +
     "\n" +
-    "	Visitors can contribute and share their observations and knowledge, no matter what their 'cultural capital' is, which creates a feeling of being valuable.</a>\n" +
+    "	<p>Visitors can contribute and share their observations and knowledge, no matter what their <i>cultural capital</i> is, which creates a feeling of being valuable.</p></a>\n" +
     "</div>\n" +
     "<div class=\"col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<iframe src=\"//player.vimeo.com/video/112958657\" frameborder=\"0\" width=\"10\" height=\"10\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
@@ -82,7 +82,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
     "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<blockquote>[Here/Below...] is one detailed profile and script from a participating Cultural Tourist providing insights on the kind of collected input.</blockquote>\n" +
+    "	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating the kind of collected input.</blockquote>\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "	</div>\n" +
@@ -90,11 +90,11 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<p>\n" +
-    "	However, Chris described in detail the other pictures that he took, the observed situations and he told stories that he overheard from other visitors. He seemed more relaxed and engaged with his surrounding.\n" +
+    "	However, Chris described in detail the other pictures that he took, the observed situations and he told stories that he overheard from other visitors. He seemed more relaxed and engaged with his surrounding.<br>\n" +
     "\n" +
-    "	Whereas the amount of time spent on looking at art works and written information varied largely between different visitors, all participants carefully observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times.\n" +
+    "	Whereas the amount of time spent on looking at art works and written information varied largely between different visitors, all participants carefully observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times.<br>\n" +
     "\n" +
-    "	So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.\n" +
+    "	So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.<br>\n" +
     "\n" +
     "	Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
     "</div>\n" +
@@ -106,11 +106,9 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>No comment on the Masterpieces.</h1>\n" +
     "	<h3>“I know they are important.”</h3>\n" +
-    "	<p>The qualitative survey had twelve participants who belong to four of the five visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.\n" +
-    "\n" +
-    "	As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam.\n" +
-    "\n" +
-    "	In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.\"</p>\n" +
+    "	<p>The qualitative survey had twelve participants who belong to four of the five  visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.<br> \n" +
+    "As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam. <br>\n" +
+    "In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.”</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"infographic\" src=\"images/webimages/infographic.jpg\">\n" +
@@ -146,11 +144,9 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>...and how to get rid of them.</h1>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
-    "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
-    "\n" +
-    "	Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”\n" +
-    "\n" +
-    "	This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
+    "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
+    "The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
+    "The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
     "</div>\n" +
     "");
 }]);
