@@ -1,8 +1,7 @@
 // General Styling
 
 .block {
-   	margin-top: -50px;
-   	padding: 150px 30px 150px 30px;
+   	padding: 100px 30px 100px 30px;
    	min-height: 100%;
 }
 
@@ -17,8 +16,6 @@ main {
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
 	// background-attachment: fixed;
-	margin-top: 0px;
-   	padding-top: 0px;
 
 	.title {
 		margin: 0 auto;
@@ -49,25 +46,26 @@ main {
 }
 
 // Intermezzo Backgrounds
+.intermezzo {
+	.Analyse {
+		background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
+		background-attachment: fixed;
+	}
 
-.intermezzoAnalyse {
-	background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
-	background-attachment: fixed;
-}
 
+	.Proto {
+		background: url(./images/webimages/3_thatswhatwethinktheywant.jpg) no-repeat center center / cover;
+	}
 
-.intermezzoProto {
-	background: url(./images/webimages/3_thatswhatwethinktheywant.jpg) no-repeat center center / cover;
-}
+	.Evaluate {
+		background: url(./images/webimages/_W4A3487.jpg) no-repeat center center / cover;
+		background-attachment: fixed;
+	}
 
-.intermezzoEvaluate {
-	background: url(./images/webimages/_W4A3487.jpg) no-repeat center center / cover;
-	background-attachment: fixed;
-}
-
-.intermezzoTheory {
-	background: url(./images/backgrounds/W4A3567.jpg) no-repeat center center / cover;
-	background-attachment: fixed;
+	.Theory {
+		background: url(./images/backgrounds/W4A3567.jpg) no-repeat center center / cover;
+		background-attachment: fixed;
+	}
 }
 
 // Other modules
