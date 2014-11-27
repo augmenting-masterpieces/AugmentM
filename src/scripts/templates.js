@@ -20,7 +20,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1>It doesn't matter how much <i>cultural capital</i> you bring.</h1>\n" +
+    "	<h1>It doesn't matter how much 'cultural capital' you bring.</h1>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
     "\n" +
@@ -98,6 +98,12 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "	So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.<br>\n" +
     "\n" +
     "	Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
+    "\n" +
+    "	<br><br>\n" +
+    "	<h5>Photo transcript:</h5>\n" +
+    "	<h1 id=\"transcriptHeader\"></h1>\n" +
+    "	<p id=\"transcriptSnippet\"></p>\n" +
+    "\n" +
     "</div>\n" +
     "");
 }]);
@@ -157,23 +163,23 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
     "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
-    "<section id=\"analyse\" class=\"row block intermezzo Analyse\">\n" +
+    "<section class=\"row block intermezzo Analyse\">\n" +
     "	<h1> Analyse and Ideate </h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"survey\" id=\"analyse\" class=\"row block\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
-    "<section id=\"prototype\" class=\"row block intermezzo proto\">\n" +
+    "<section class=\"row block intermezzo proto\">\n" +
     "	<h1>Prototype and Test</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
-    "<section id=\"evaluate\" class=\"row block intermezzo evaluate\">\n" +
+    "<section ui-view=\"demo\" id=\"prototype\" class=\"row block\"></section>\n" +
+    "<section class=\"row block intermezzo evaluate\">\n" +
     "	<h1>Evaluate and Outlook</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
-    "<section id=\"theory\" class=\"row block intermezzo theory\">\n" +
+    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block\"></section>\n" +
+    "<section  class=\"row block intermezzo theory\">\n" +
     "	<h1>Methods and Theory</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"theory\" id=\"theory\" class=\"row block\"></section>\n" +
     "");
 }]);
 
