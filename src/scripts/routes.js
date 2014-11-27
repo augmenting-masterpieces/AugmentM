@@ -32,7 +32,8 @@
           "survey": { templateUrl: "../templates/content/survey.html" },
           "masonry": { templateUrl: "../templates/content/masonry.html" },
           "demo": { templateUrl: "../templates/content/demo.html" },
-          "evaluation": { templateUrl: "../templates/content/evaluation.html" }
+          "evaluation": { templateUrl: "../templates/content/evaluation.html" },
+          "theory": { templateUrl: "../templates/content/theory.html" }
         }
       });
 

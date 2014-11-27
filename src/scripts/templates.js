@@ -1,8 +1,8 @@
-angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/masonry.html', '../templates/content/survey.html', '../templates/content/usercamerastudy.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
+angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/masonry.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/content/uservideostudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1> ASSUMPTIONS</h1>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
     "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
@@ -11,7 +11,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "\n" +
     "	This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"child\" src=\"#\">\n" +
     "</div>\n" +
     "");
@@ -19,7 +19,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>Doesn't matter how much 'cultural capital' you bring.</h1>\n" +
     "	<h3>Features for visitor's engagement</h3>\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.\n" +
@@ -32,7 +32,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "\n" +
     "	Visitors can contribute and share their observations and knowledge, no matter what their 'cultural capital' is, which creates a feeling of being valuable.</a>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<iframe src=\"//player.vimeo.com/video/112958657\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
     "</div>\n" +
     "");
@@ -40,7 +40,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
 
 angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/evaluation.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1> EVALUATION</h1>\n" +
     "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”\n" +
     "\n" +
@@ -50,7 +50,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "\n" +
     "	The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1> OUTLOOK </h1>\n" +
     "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.\n" +
     "\n" +
@@ -67,7 +67,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
 
 angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/header.html",
-    "<div class=\"col-md-9 col-md-offset-3 col-sm-12 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-md-9 col-md-offset-3 col-sm-12 col-xs-12 col-xs-offset-0\">\n" +
     "	<div class=\"title\">\n" +
     "		<h1><span>AUGMENTING</span>&nbsp;<span> MASTERPIECES</span></h1>\n" +
     "		<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
@@ -81,7 +81,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/masonry.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonry.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<p>[Here/Below...] is one detailed profile and script from a participating Cultural Tourist providing insights on the kind of collected input.\n" +
     "\n" +
     "\n" +
@@ -93,7 +93,7 @@ angular.module("../templates/content/masonry.html", []).run(["$templateCache", f
     "\n" +
     "	Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"child\" src=\"#\">\n" +
     "</div>\n" +
     "");
@@ -101,7 +101,7 @@ angular.module("../templates/content/masonry.html", []).run(["$templateCache", f
 
 angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/survey.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>No comment on the Masterpieces.</h1>\n" +
     "	<h3>“I know they are important.”</h3>\n" +
     "	<p>The qualitative survey had twelve participants who belong to four of the five visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.\n" +
@@ -110,15 +110,34 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "\n" +
     "	In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.\"</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"infographic\" src=\"images/webimages/infographic.jpg\">\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("../templates/content/theory.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/theory.html",
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
+    "	<h1>Social augmentation vs. technological masterpieces?</h1>\n" +
+    "	<h2>Project objectives</h2>\n" +
+    "	<p>'Augmentation' is currently often brought up in relation to 'augmented reality' which uses a virtual layer over what we conceive as our real life. Often the use of the word goes hand in hand with a supposed technological innovation, and also our project title suggests that a superimposed “computer-generated image on a user's view of the real world, thus providing a composite view”1 will be in the centre of attention. \n" +
+    "	However, the research at stake is not implying an augmented reality but much rather the process of augmentation of artworks in the Rijksmuseum by means of technology. \n" +
+    "	When the literal meaning of 'augmentation' simply describes it as 'make something greater by adding to it', 'to increase' or the 'act of making greater'2, the questions arise of (a) what aspects of the artworks should be highlighted, (b) for whom, (c) how does the interface between the object and the viewer look like and (d) through which digital device and software will the work of art be enhanced? </p>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "	<h1>Interdisciplinary approach</h1>\n" +
+    "	<p>In order to tackle the first two questions, the design thinking method was used for structuring the whole process of the project, substituted by Visual Feedback Methods which are partly taken from the design thinking toolbox3 and partly developed in my artistic research practice throughout the past years. \n" +
+    "	Embedded research projects stimulate collaborations between cultural institutions, the creative industries and universities. \n" +
+    "	In order to do justice to not only theoretically investigate, but also practically implement research results within the same project, this new form of research within the humanities, also needs a revised set of tools and possible forms for output. \n" +
+    "	The methodological combination of the above mentioned toolboxes from design thinking and artistic research, guaranteed an adequate interdisciplinary assemblage of techniques and media. Whereas Artistic Research allows to creatively and practically work with post-modern theories, the Design Thinking approach gives access to co-creation frameworks and user innovation while building a product-oriented bridge between research and prototype. </p>\n" +
     "</div>\n" +
     "");
 }]);
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>...and how to get rid of them.</h1>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.\n" +
@@ -127,7 +146,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "\n" +
     "	This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<img class=\"child\" src=\"#\">\n" +
     "</div>\n" +
     "");
@@ -135,11 +154,11 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 
 angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/uservideostudy.html",
-    "<div class=\"col-lg-4 col-lg-offset-2 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1\">\n" +
     "	<iframe src=\"//player.vimeo.com/video/112510250\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
     "</div>\n" +
     "\n" +
-    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1\">\n" +
     "	<p>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</p>\n" +
     "</div>\n" +
     "");
@@ -154,12 +173,15 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"masonry\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"demo\" id=\"prototype\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>");
+    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"theory\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
+    "");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/footer.html",
-    "<p>Im the footerdiv!</p>");
+    "<hr>\n" +
+    "<p>Last update: Thursday 27 Oktober 2014 - Augmenting masterpieces</p>");
 }]);
 
 angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
