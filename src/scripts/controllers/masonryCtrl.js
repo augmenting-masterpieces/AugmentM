@@ -1,9 +1,9 @@
 (function(){
 	'use strict';
 
-	angular.module('augm').controller('CaseStudyCtrl', [CaseStudyCtrl]);
+	angular.module('augm').controller('MasonryCtrl', [MasonryCtrl]);
 
-	function CaseStudyCtrl(){
+	function MasonryCtrl(){
 		var vm = this;
 		var data = importData();
 	  

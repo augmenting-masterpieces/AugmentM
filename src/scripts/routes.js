@@ -27,9 +27,11 @@
           "header": { templateUrl: "../templates/content/header.html" },
           "assumptions": { templateUrl: "../templates/content/assumptions.html" },
           "usercamerastudy": { templateUrl: "../templates/content/usercamerastudy.html" },
-          "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" },
           "survey": { templateUrl: "../templates/content/survey.html" },
-          "masonry": { templateUrl: "../templates/content/masonry.html" },
+          "masonryviewer": { 
+            templateUrl: "../templates/content/masonryviewer.html",
+            controller: 'MasonryCtrl as mason'                
+          },
           "demo": { templateUrl: "../templates/content/demo.html" },
           "evaluation": { templateUrl: "../templates/content/evaluation.html" },
           "theory": { templateUrl: "../templates/content/theory.html" }
