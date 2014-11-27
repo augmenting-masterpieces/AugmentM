@@ -3,7 +3,7 @@ angular.module('templates-augm', ['../templates/content/assumptions.html', '../t
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1> ASSUMPTIONS</h1>\n" +
+    "	<h1> ASSUMPTIONS...</h1>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
     "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.<br>\n" +
     "\n" +
@@ -78,7 +78,8 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div> \n" +
     "</div>\n" +
-    "<h1 class=\"subtitle\">Understand and Observe</h1>");
+    "<h1 class=\"subtitle\">Understand and Observe</h1>\n" +
+    "");
 }]);
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
