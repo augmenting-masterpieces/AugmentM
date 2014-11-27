@@ -9,6 +9,7 @@
     
     $stateProvider
       .state('displayorderHome', {
+        url: '/home',
         views: {
           "nav": { 
             templateUrl: "../templates/functional/nav.html",
@@ -20,22 +21,22 @@
           },
           "footer": { templateUrl: "../templates/functional/footer.html" }
         }
-      })
-      .state('displayorderHome.withSubroutes', {
-        url: '/home',
-        views: {
-          "header": { templateUrl: "../templates/content/header.html" },
-          "process": { templateUrl: "../templates/content/process.html" },
-          "assumptions": { templateUrl: "../templates/content/assumptions.html" },
-          "usercamerastudy": { templateUrl: "../templates/content/usercamerastudy.html" },
-          "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" },
-          "survey": { templateUrl: "../templates/content/survey.html" },
-          "masonry": { templateUrl: "../templates/content/masonry.html" },
-          "demo": { templateUrl: "../templates/content/demo.html" },
-          "evaluation": { templateUrl: "../templates/content/evaluation.html" },
-          "theory": { templateUrl: "../templates/content/theory.html" }
-        }
       });
+      // .state('displayorderHome.withSubroutes', {
+      //   url: '/home',
+      //   views: {
+      //     "header": { templateUrl: "../templates/content/header.html" },
+      //     "process": { templateUrl: "../templates/content/process.html" },
+      //     "assumptions": { templateUrl: "../templates/content/assumptions.html" },
+      //     "usercamerastudy": { templateUrl: "../templates/content/usercamerastudy.html" },
+      //     "uservideostudy": { templateUrl: "../templates/content/uservideostudy.html" },
+      //     "survey": { templateUrl: "../templates/content/survey.html" },
+      //     "masonry": { templateUrl: "../templates/content/masonry.html" },
+      //     "demo": { templateUrl: "../templates/content/demo.html" },
+      //     "evaluation": { templateUrl: "../templates/content/evaluation.html" },
+      //     "theory": { templateUrl: "../templates/content/theory.html" }
+      //   }
+      // });
 
     $urlRouterProvider.when('/', '/home');
   }

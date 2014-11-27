@@ -33,7 +33,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "	Visitors can contribute and share their observations and knowledge, no matter what their 'cultural capital' is, which creates a feeling of being valuable.</a>\n" +
     "</div>\n" +
     "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<iframe src=\"//player.vimeo.com/video/112958657\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
+    "	<!-- <iframe src=\"//player.vimeo.com/video/112958657\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->\n" +
     "</div>\n" +
     "");
 }]);
@@ -155,7 +155,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 angular.module("../templates/content/uservideostudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/uservideostudy.html",
     "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-10 col-xs-offset-1\">\n" +
-    "	<iframe src=\"//player.vimeo.com/video/112510250\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
+    "	<!-- <iframe src=\"//player.vimeo.com/video/112510250\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> -->\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"col-lg-4 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-10 col-xs-offset-1\">\n" +
@@ -166,15 +166,15 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
-    "<section ui-view=\"header\" class=\"row block maintro panelforSnapping\"></section>\n" +
-    "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"uservideostudy\" id=\"analyse\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"masonry\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"demo\" id=\"prototype\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"theory\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/header.html' \" class=\"row block maintro panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/process.html' \" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/assumptions.html' \" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/usercamerastudy.html' \" id=\"analyse\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/uservideostudy.html' \" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/survey.html' \" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/masonry.html' \" id=\"prototype\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/demo.html' \" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/theory.html' \" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
     "");
 }]);
 
