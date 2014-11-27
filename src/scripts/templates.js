@@ -5,7 +5,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1> ASSUMPTIONS...</h1>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
-    "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their needs of engaging visitors with the exhibition.<br>\n" +
+    "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.<br>\n" +
     "\n" +
     "	Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is what we think they want.”</p>\n" +
     "\n" +
