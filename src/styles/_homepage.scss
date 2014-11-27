@@ -1,3 +1,5 @@
+// General Styling
+
 .block {
    	min-height: 100%;
    	margin-top: -50px;
@@ -5,7 +7,6 @@
 }
 
 .contents {
-	padding: 10px 0;
 	display: table;
    	width: 100%;
    	min-height: 100%;
@@ -22,70 +23,53 @@ main {
 	min-height: 100%;
 }
 
-.contents {
-	img {
-		display: block;
-		margin: 0 auto;
-		width: 80%;
-		height: 200px;
-	}
+// Module Specific Styling
 
-	img.study {
-		height: 80%;
-		width: 80%;
-	}
-}
-
-video {
-	max-height: 100%;
-	width: 100%;
-}
-
-// Special Styling
-
-// Titlebox
+// Header module
 
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 	margin-top: 0px;
    	padding-top: 0px;
-}
 
-.title {
-	margin: 0 auto;
-	padding-top: 150px;
-	padding-left: 100px;
-	color: white;
+	.title {
+		margin: 0 auto;
+		padding-top: 150px;
+		padding-left: 100px;
+		color: white;
 
-	h1{
-		margin-bottom: 4px;
-		font-size: 3.6em;
-		span {
-			display: inline-block;
-			&:first-letter {
-				font-size: 1.2em;
+		h1{
+			margin-bottom: 4px;
+			font-size: 3.6em;
+			span {
+				display: inline-block;
+				&:first-letter {
+					font-size: 1.2em;
+				}
 			}
 		}
-	}
 
-	p {
-		max-width: 30em;
-	}
+		p {
+			max-width: 30em;
+		}
 
-	img {
-		width: 15em;
-		height: 2em;
+		img {
+			max-width: 15em;
+			height: 2em;
+		}
 	}
-
 }
+
+// Other modules
 
 .infographic {
-	padding-top: 80px;
-	width: 105%;
+	margin-top: 80px;
+	width: 100%;
 }
 
-.video{
-	width: 130%;
+iframe {
+	width: 100%;
+	height: 40%;
 }
 

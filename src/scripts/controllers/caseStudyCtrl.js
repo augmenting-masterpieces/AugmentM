@@ -78,16 +78,6 @@
 				});
 	    }
 
-	    setTimeout( function() {
-	    	var offset = $(".scrollTo").offset();
-	   		$('html, body').animate({
-	   			duration: "4000",
-	   			easing: "swing",
-    			scrollTop: offset.top,
-    			scrollLeft: offset.left
-			});
-	   	}, 1000);
-
     return vm;
 	}
 })();

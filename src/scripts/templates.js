@@ -15,7 +15,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<img class=\"child\" src=\"#\">\n" +
@@ -44,10 +44,10 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
-    "			<img class=\"child\" src=\"#\">\n" +
+    "			<iframe src=\"//player.vimeo.com/video/112958657\" width=\"500\" height=\"375\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
     "		</div>\n" +
     "	</div>	\n" +
     "</div>\n" +
@@ -70,7 +70,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<h1> OUTLOOK </h1>\n" +
@@ -121,7 +121,7 @@ angular.module("../templates/content/masonry.html", []).run(["$templateCache", f
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<img class=\"child\" src=\"#\">\n" +
@@ -146,7 +146,7 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-6 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<img class=\"infographic\" src=\"images/webimages/infographic.jpg\">\n" +
     "		</div>\n" +
@@ -170,7 +170,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-5 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<img class=\"child\" src=\"#\">\n" +
@@ -185,12 +185,12 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
     "<div class=\"col-lg-4 col-md-5 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
-    "<video class=\"video\" src=\"video/AM_background_test.mp4\" autoplay controls></video>\n" +
-    "	</div>\n" +
+    "			<iframe src=\"//player.vimeo.com/video/112510250\" width=\"500\" height=\"281\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
+    "		</div>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
-    "<div class=\"col-lg-4 col-md-6 col-sm-5 col-sm-offset-1 col-xs-10 col-xs-offset-1 block\">\n" +
+    "<div class=\"col-lg-4 col-md-6 col-sm-5 col-xs-10 col-xs-offset-1 block\">\n" +
     "	<div class=\"contents\">\n" +
     "		<div class=\"vAlign\">\n" +
     "			<p>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</p>\n" +
