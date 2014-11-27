@@ -167,15 +167,14 @@ angular.module("../templates/content/uservideostudy.html", []).run(["$templateCa
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ng-include=\" '../templates/content/header.html' \" class=\"row block maintro panelforSnapping\"></section>\n" +
-    "<section ng-include=\" '../templates/content/process.html' \" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ng-include=\" '../templates/content/assumptions.html' \" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/assumptions.html' \" id=\"understand\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ng-include=\" '../templates/content/usercamerastudy.html' \" id=\"analyse\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ng-include=\" '../templates/content/uservideostudy.html' \" class=\"row block panelforSnapping\"></section>\n" +
     "<section ng-include=\" '../templates/content/survey.html' \" class=\"row block panelforSnapping\"></section>\n" +
     "<section ng-include=\" '../templates/content/masonry.html' \" id=\"prototype\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ng-include=\" '../templates/content/demo.html' \" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ng-include=\" '../templates/content/theory.html' \" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
-    "");
+    "<section ng-include=\" '../templates/content/evaluation.html' \" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ng-include=\" '../templates/content/theory.html' \" id=\"evaluate\" class=\"row block panelforSnapping\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
