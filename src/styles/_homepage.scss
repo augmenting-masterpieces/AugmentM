@@ -3,20 +3,7 @@
 .block {
    	min-height: 100%;
    	margin-top: -50px;
-   	padding-top: 50px;
-}
-
-.contents {
-	display: table;
-   	width: 100%;
-   	min-height: 100%;
-}
-
-.vAlign {
-   display: table-cell;
-   vertical-align: middle;
-   width: 100%;
-   min-height: 100%;
+   	padding: 65px 30px 15px 30px;
 }
 
 main {
@@ -64,7 +51,6 @@ main {
 // Other modules
 
 .infographic {
-	margin-top: 80px;
 	width: 100%;
 }
 
