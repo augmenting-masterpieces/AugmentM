@@ -17,14 +17,18 @@ main {
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
 	// background-attachment: fixed;
+	
 	margin-top: 0px;
    	padding-top: 0px;
+
+
+	position: relative;
+	color: white;
 
 	.title {
 		margin: 0 auto;
 		padding-top: 170px;
 		padding-bottom: 150px;
-		color: white;
 
 		h1{
 			margin-left: 40px;
@@ -52,15 +56,37 @@ main {
 			width:15em;
 		}
 	}
+
+	.subtitle {
+		position: absolute;
+		bottom: 10px;
+	}
 }
 
 // Intermezzo Backgrounds
+<<<<<<< HEAD
+=======
+.intermezzo {
+	color: white;
+	position: relative;
+
+	h1 {
+		position: absolute;
+		bottom: 10px; 
+	}
+
+	&.Analyse {
+		background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
+		background-attachment: fixed;
+	}
+>>>>>>> b961a8a3ccba2d85181b828aba2a954735d3b916
 
 .intermezzoAnalyse {
 	background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
 }
 
+<<<<<<< HEAD
 
 .intermezzoProto {
 	background: url(./images/webimages/3_thatswhatwethinktheywant.jpg) no-repeat center center / cover;
@@ -74,6 +100,21 @@ main {
 .intermezzoTheory {
 	background: url(./images/webimages/W4A3567.jpg) no-repeat center center / cover;
 	background-attachment: fixed;
+=======
+	&.Proto {
+		background: url(./images/webimages/3_thatswhatwethinktheywant.jpg) no-repeat center center / cover;
+	}
+
+	&.Evaluate {
+		background: url(./images/webimages/W4A3487.jpg) no-repeat center center / cover;
+		background-attachment: fixed;
+	}
+
+	&.Theory {
+		background: url(./images/webimages/W4A3567.jpg) no-repeat center center / cover;
+		background-attachment: fixed;
+	}
+>>>>>>> b961a8a3ccba2d85181b828aba2a954735d3b916
 }
 
 // Other modules
@@ -87,6 +128,7 @@ main {
 
 img {
 	margin-top: 24px;
+	width: 100%;
 }
 
 // Vimeo video styling

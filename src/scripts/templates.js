@@ -12,7 +12,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "	<p>This sentence beautifully sums up what one both needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<img class=\"child\" src=\"#\">\n" +
+    "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
     "</div>\n" +
     "");
 }]);
@@ -77,7 +77,8 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "				<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
     "		</div>\n" +
     "	</div> \n" +
-    "</div>");
+    "</div>\n" +
+    "<h1 class=\"subtitle\">Understand and Observe</h1>");
 }]);
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
@@ -98,6 +99,12 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "	So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.<br>\n" +
     "\n" +
     "	Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
+    "\n" +
+    "	<br><br>\n" +
+    "	<h5>Photo transcript:</h5>\n" +
+    "	<h1 id=\"transcriptHeader\"></h1>\n" +
+    "	<p id=\"transcriptSnippet\"></p>\n" +
+    "\n" +
     "</div>\n" +
     "");
 }]);
@@ -154,26 +161,26 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
-    "<section ui-view=\"header\" id=\"main\" class=\"row block maintro panelforSnapping\"></section>\n" +
-    "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block assumptions panelforSnapping\"></section>\n" +
-    "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section id=\"analyse\" class=\"row block intermezzo Analyse panelforSnapping\">\n" +
+    "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
+    "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block assumptions\"></section>\n" +
+    "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
+    "<section class=\"row block intermezzo Analyse\">\n" +
     "	<h1> Analyse and Ideate </h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section ui-view=\"masonryviewer\" class=\"row block masonry panelforSnapping\"></section>\n" +
-    "<section id=\"prototype\" class=\"row block intermezzo Proto panelforSnapping\">\n" +
+    "<section ui-view=\"survey\" id=\"analyse\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
+    "<section class=\"row block intermezzo proto\">\n" +
     "	<h1>Prototype and Test</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section id=\"evaluate\" class=\"row block intermezzo Evaluate panelforSnapping\">\n" +
+    "<section ui-view=\"demo\" id=\"prototype\" class=\"row block\"></section>\n" +
+    "<section class=\"row block intermezzo evaluate\">\n" +
     "	<h1>Evaluate and Outlook</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section id=\"theory\" class=\"row block intermezzo Theory panelforSnapping\">\n" +
+    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block\"></section>\n" +
+    "<section  class=\"row block intermezzo theory\">\n" +
     "	<h1>Methods and Theory</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"theory\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section ui-view=\"theory\" id=\"theory\" class=\"row block\"></section>\n" +
     "");
 }]);
 

@@ -50,7 +50,6 @@
 				});
 
 				$(evt.currentTarget).toggleClass("itemClicked");
-				$(evt.currentTarget).find("hr").css("display: block");
 
 				$('#photoPiece').masonry();
 
@@ -65,6 +64,8 @@
 				// } else {
 				// 	$(".galleryQuote").html("");
 				// }
+				$("#transcriptHeader").html(photoData.name);
+				$("#transcriptSnippet").html(photoData.transcriptSnippet);
 	    }
 
 	    function masonryConfig() {
