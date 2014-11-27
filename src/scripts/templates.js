@@ -41,26 +41,26 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
 angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/evaluation.html",
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1> EVALUATION</h1>\n" +
-    "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”\n" +
+    "	<h1>PROCESS EVALUATION</h1>\n" +
+    "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”<br>\n" +
     "\n" +
-    "	Even stronger, by letting them emphasizing their own aspects in order to find their own approach to the exhibition.\n" +
+    "	Even stronger, by letting them emphasizing their own aspects in order to find their own approach to the exhibition.</p>\n" +
     "\n" +
-    "	The ambition was to take away their feeling of 'social awkwardness' or felt lack of knowledge through letting them contribute their own impressions and observations about the museum and the artworks in it, and through encountering random stories or trivia questions at at random pieces of art by other visitors.\n" +
+    "	<p>The ambition was to take away their feeling of 'social awkwardness' or felt lack of knowledge through letting them contribute their own impressions and observations about the museum and the artworks in it, and through encountering random stories or trivia questions at at random pieces of art by other visitors.<br>\n" +
     "\n" +
     "	The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1> OUTLOOK </h1>\n" +
-    "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.\n" +
+    "	<h1>CONCLUDING REMARKS</h1>\n" +
+    "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.<br>\n" +
     "\n" +
-    "	The majority of the test persons indicated that they would use the app throughout the museum if it was available, that they would recommend it to their friends or family and like the idea to contribute to the app content themselves. In that regard, the first prototyped versions of design features are ready to develop further and to be tested with extended functionality.\n" +
+    "	The majority of the test persons indicated that they would use the app throughout the museum if it was available, that they would recommend it to their friends or family and like the idea to contribute to the app content themselves. In that regard, the first prototyped versions of design features are ready to develop further and to be tested with extended functionality.</p>\n" +
     "\n" +
-    "	On general terms, the human-centered design approach in combination with creative and visual research methods has proven to\n" +
+    "	<p>On general terms, the human-centered design approach in combination with creative and visual research methods has proven to\n" +
     "\n" +
-    "	be incredibly fruitful when researching the different aspects that visitors deal with when visiting the Rijksmuseum. And to carefully compare those to the assumptions made by museum professional (including ourselves).\n" +
+    "	be incredibly fruitful when researching the different aspects that visitors deal with when visiting the Rijksmuseum. And to carefully compare those to the assumptions made by museum professional (including ourselves).</p>\n" +
     "\n" +
-    "	To take museum visitors serious in their needs and different levels of cultural capital, allowed us to socially augment the masterpieces of</p>\n" +
+    "	<p>To take museum visitors serious in their needs and different levels of cultural capital, allowed us to <i>socially</i> augment the masterpieces of the Rijksmuseum.</p>\n" +
     "</div>\n" +
     "");
 }]);
@@ -121,16 +121,16 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>Social augmentation vs. technological masterpieces?</h1>\n" +
     "	<h2>Project objectives</h2>\n" +
-    "	<p>'Augmentation' is currently often brought up in relation to 'augmented reality' which uses a virtual layer over what we conceive as our real life. Often the use of the word goes hand in hand with a supposed technological innovation, and also our project title suggests that a superimposed “computer-generated image on a user's view of the real world, thus providing a composite view”1 will be in the centre of attention. \n" +
-    "	However, the research at stake is not implying an augmented reality but much rather the process of augmentation of artworks in the Rijksmuseum by means of technology. \n" +
+    "	<p>'Augmentation' is currently often brought up in relation to 'augmented reality' which uses a virtual layer over what we conceive as our real life. Often the use of the word goes hand in hand with a supposed technological innovation, and also our project title suggests that a superimposed “computer-generated image on a user's view of the real world, thus providing a composite view”1 will be in the centre of attention.<br> \n" +
+    "	However, the research at stake is not implying an augmented reality but much rather the process of augmentation of artworks in the Rijksmuseum by means of technology.<br> \n" +
     "	When the literal meaning of 'augmentation' simply describes it as 'make something greater by adding to it', 'to increase' or the 'act of making greater'2, the questions arise of (a) what aspects of the artworks should be highlighted, (b) for whom, (c) how does the interface between the object and the viewer look like and (d) through which digital device and software will the work of art be enhanced? </p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>Interdisciplinary approach</h1>\n" +
-    "	<p>In order to tackle the first two questions, the design thinking method was used for structuring the whole process of the project, substituted by Visual Feedback Methods which are partly taken from the design thinking toolbox3 and partly developed in my artistic research practice throughout the past years. \n" +
-    "	Embedded research projects stimulate collaborations between cultural institutions, the creative industries and universities. \n" +
-    "	In order to do justice to not only theoretically investigate, but also practically implement research results within the same project, this new form of research within the humanities, also needs a revised set of tools and possible forms for output. \n" +
-    "	The methodological combination of the above mentioned toolboxes from design thinking and artistic research, guaranteed an adequate interdisciplinary assemblage of techniques and media. Whereas Artistic Research allows to creatively and practically work with post-modern theories, the Design Thinking approach gives access to co-creation frameworks and user innovation while building a product-oriented bridge between research and prototype. </p>\n" +
+    "	<p>In order to tackle the first two questions, the design thinking method was used for structuring the whole process of the project, substituted by Visual Feedback Methods which are partly taken from the design thinking toolbox3 and partly developed in my artistic research practice throughout the past years.<br> \n" +
+    "	Embedded research projects stimulate collaborations between cultural institutions, the creative industries and universities.<br> \n" +
+    "	In order to do justice to not only theoretically investigate, but also practically implement research results within the same project, this new form of research within the humanities, also needs a revised set of tools and possible forms for output.<br> \n" +
+    "	The methodological combination of the above mentioned toolboxes from design thinking and artistic research, guaranteed an adequate interdisciplinary assemblage of techniques and media. Whereas Artistic Research allows to creatively and practically work with post-modern theories, the Design Thinking approach gives access to co-creation frameworks and user innovation while building a product-oriented bridge between academic research, creative output and technological prototype.</p>\n" +
     "</div>\n" +
     "");
 }]);
@@ -145,8 +145,8 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "	<h1>...and how to get rid of them.</h1>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
-    "The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
-    "The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
+    "	The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
+    "	The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
     "</div>\n" +
     "");
 }]);
@@ -156,14 +156,22 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro panelforSnapping\"></section>\n" +
     "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block assumptions panelforSnapping\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section id=\"analyse\" class=\"row block intermezzoAnalyse panelforSnapping\"></section>\n" +
+    "<section id=\"analyse\" class=\"row block intermezzo Analyse panelforSnapping\">\n" +
+    "	<h1> Analyse and Ideate </h1>\n" +
+    "</section>\n" +
     "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry panelforSnapping\"></section>\n" +
-    "<section id=\"prototype\" class=\"row block intermezzoProto panelforSnapping\"></section>\n" +
+    "<section id=\"prototype\" class=\"row block intermezzo Proto panelforSnapping\">\n" +
+    "	<h1>Prototype and Test</h1>\n" +
+    "</section>\n" +
     "<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section id=\"evaluate\" class=\"row block intermezzoEvaluate panelforSnapping\"></section>\n" +
+    "<section id=\"evaluate\" class=\"row block intermezzo Evaluate panelforSnapping\">\n" +
+    "	<h1>Evaluate and Outlook</h1>\n" +
+    "</section>\n" +
     "<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section id=\"theory\" class=\"row block intermezzoTheory panelforSnapping\"></section>\n" +
+    "<section id=\"theory\" class=\"row block intermezzo Theory panelforSnapping\">\n" +
+    "	<h1>Methods and Theory</h1>\n" +
+    "</section>\n" +
     "<section ui-view=\"theory\" class=\"row block panelforSnapping\"></section>\n" +
     "");
 }]);
