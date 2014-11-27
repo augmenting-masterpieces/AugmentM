@@ -82,7 +82,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
     "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<p>[Here/Below...] is one detailed profile and script from a participating Cultural Tourist providing insights on the kind of collected input.</p>\n" +
+    "	<blockquote>[Here/Below...] is one detailed profile and script from a participating Cultural Tourist providing insights on the kind of collected input.</blockquote>\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "	</div>\n" +
@@ -141,7 +141,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
   $templateCache.put("../templates/content/usercamerastudy.html",
     "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<iframe src=\"//player.vimeo.com/video/112510250\" width=\"10\" height=\"10\" frameborder=\"0\" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>\n" +
-    "	<p>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</p>\n" +
+    "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
     "	<h1>...and how to get rid of them.</h1>\n" +
@@ -160,15 +160,15 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro panelforSnapping\"></section>\n" +
     "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block assumptions panelforSnapping\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section class=\"row block intermezzoAnalyse panelforSnapping\"></section>\n" +
+    "<section id=\"analyse\" class=\"row block intermezzoAnalyse panelforSnapping\"></section>\n" +
     "<section ui-view=\"survey\" class=\"row block panelforSnapping\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section class=\"row block intermezzoProto panelforSnapping\"></section>\n" +
-    "<section ui-view=\"demo\" id=\"prototype\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section class=\"row block intermezzoEvaluate panelforSnapping\"></section>\n" +
-    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
-    "<section class=\"row block intermezzoTheory panelforSnapping\"></section>\n" +
-    "<section ui-view=\"theory\" id=\"evaluate\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section id=\"prototype\" class=\"row block intermezzoProto panelforSnapping\"></section>\n" +
+    "<section ui-view=\"demo\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section id=\"evaluate\" class=\"row block intermezzoEvaluate panelforSnapping\"></section>\n" +
+    "<section ui-view=\"evaluation\" class=\"row block panelforSnapping\"></section>\n" +
+    "<section id=\"theory\" class=\"row block intermezzoTheory panelforSnapping\"></section>\n" +
+    "<section ui-view=\"theory\" class=\"row block panelforSnapping\"></section>\n" +
     "");
 }]);
 
@@ -200,7 +200,7 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "        <li><a href=\"home#analyse\">Analyse and Ideate</a></li>\n" +
     "        <li><a href=\"home#prototype\">Prototype and test</a></li>\n" +
     "        <li><a href=\"home#evaluate\">Evaluate and Outlook</a></li>\n" +
-    "        <li><a href=\"home#evaluate\">Theory and Methods</a></li>\n" +
+    "        <li><a href=\"home#theory\">Theory and Methods</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"home#about\">About</a></li>\n" +
