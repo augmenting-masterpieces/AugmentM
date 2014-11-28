@@ -3,7 +3,7 @@ angular.module('templates-augm', ['../templates/content/assumptions.html', '../t
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1> ASSUMPTIONS...</h1>\n" +
+    "	<h1> Assumptions...</h1>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
     "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.<br>\n" +
     "\n" +
@@ -41,7 +41,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
 angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/evaluation.html",
     "<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1>PROCESS EVALUATION</h1>\n" +
+    "	<h1>Process Evaluation</h1>\n" +
     "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”<br>\n" +
     "\n" +
     "	Even stronger, by letting them emphasizing their own aspects in order to find their own approach to the exhibition.</p>\n" +
@@ -51,7 +51,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "	The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<h1>CONCLUDING REMARKS</h1>\n" +
+    "	<h1>Concluding Remarks</h1>\n" +
     "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.<br>\n" +
     "\n" +
     "	The majority of the test persons indicated that they would use the app throughout the museum if it was available, that they would recommend it to their friends or family and like the idea to contribute to the app content themselves. In that regard, the first prototyped versions of design features are ready to develop further and to be tested with extended functionality.</p>\n" +
@@ -85,7 +85,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
     "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating the kind of collected input.</blockquote>\n" +
+    "	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote>\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "	</div>\n" +
@@ -120,7 +120,7 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.”</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "	<img class=\"infographic\" src=\"images/webimages/infographic.jpg\">\n" +
+    "	<img class=\"infographic\" src=\"images/webimages/infographic_new.jpg\">\n" +
     "</div>\n" +
     "");
 }]);
