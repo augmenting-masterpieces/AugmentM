@@ -70,7 +70,7 @@ module.exports =
   ]
 
   assets: [
-    "newer:imagemin"
+    "newer:copy:images"
     "copy:fonts"
     "copy:video"
   ]
