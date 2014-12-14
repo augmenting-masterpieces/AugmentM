@@ -9,6 +9,23 @@ main {
 	min-height: 100%;
 }
 
+// Nav animation
+
+.collapse.am-collapse {
+  animation-duration: .3s;
+  animation-timing-function: ease;
+  animation-fill-mode: backwards;
+  overflow: hidden;
+  &.in-remove {
+    animation-name: collapse;
+    display: block;
+  }
+  &.in-add {
+    animation-name: expand;
+  }
+}
+
+
 // Module Specific Styling
 
 // Header module
