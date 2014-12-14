@@ -6,10 +6,10 @@ module.exports =
     dest: "dev/"
 
   css:
-   expand: true
-   cwd: "dev"
-   src: "styles/**/*.{css,scss}"
-   dest: "dev/"
+    expand: true
+    cwd: "dev"
+    src: "styles/**/*.{css,scss}"
+    dest: "dev/"
 
   html:
     expand: true
@@ -29,6 +29,13 @@ module.exports =
     cwd: "src"
     src: "api/**/*.json"
     dest: "dev/api"
+
+  images:
+    expand: true
+    flatten: true
+    cwd: "src"
+    src: "images/**/*.*"
+    dest: "dev/images"
 
   fonts:
     expand: true
