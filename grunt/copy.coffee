@@ -32,10 +32,10 @@ module.exports =
 
   images:
     expand: true
-    flatten: true
+    flatten: false
     cwd: "src"
     src: "images/**/*.*"
-    dest: "dev/images"
+    dest: "dev/"
 
   fonts:
     expand: true
