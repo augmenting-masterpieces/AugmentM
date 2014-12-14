@@ -324,7 +324,7 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
 
 angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/nav.html",
-    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse startCollapsed=\"true\" bs-scrollspy-list role=\"navigation\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
     "    <div class=\"navbar-header\">\n" +

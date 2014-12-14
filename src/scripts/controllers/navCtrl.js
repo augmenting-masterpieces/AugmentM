@@ -3,6 +3,14 @@
 
   angular.module('augm').controller('NavCtrl', [NavCtrl]);
 
+  angular.module('augm')
+    .config(function($collapseProvider) {
+      angular.extend($collapseProvider.defaults, {
+        startCollapsed: 'true'
+      });
+    });
+  
+
   function NavCtrl(){
     var vm = this;
 
