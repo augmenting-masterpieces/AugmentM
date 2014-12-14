@@ -340,11 +340,11 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\">\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li><a href=\"#understand\">Understand and Observe</a></li>\n" +
-    "        <li><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li><a href=\"#prototype\">Prototype and test</a></li>\n" +
-    "        <li><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
-    "        <li><a href=\"#theory\">Theory and Methods</a></li>\n" +
+    "        <li><a href=\"home#understand\">Understand and Observe</a></li>\n" +
+    "        <li><a href=\"home#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li><a href=\"home#prototype\">Prototype and test</a></li>\n" +
+    "        <li><a href=\"home#evaluate\">Evaluate and Outlook</a></li>\n" +
+    "        <li><a href=\"home#theory\">Theory and Methods</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"home#about\">About</a></li>\n" +
