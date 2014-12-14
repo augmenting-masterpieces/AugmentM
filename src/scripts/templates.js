@@ -324,27 +324,27 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
 
 angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/nav.html",
-    "<nav class=\"navbar navbar-default navbar-fixed-top\" role=\"navigation\">\n" +
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-navbar bs-collapse bs-scrollspy-list role=\"navigation\" data-animation=\"1\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
     "    <div class=\"navbar-header\">\n" +
-    "      <button type=\"button\" class=\"navbar-toggle collapsed\" data-toggle=\"collapse\" data-target=\"#navbarcontents\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle collapsed\" bs-collapse-toggle>\n" +
     "        <span class=\"sr-only\">Toggle navigation</span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" href=\"home#main\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" href=\"#main\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "\n" +
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
-    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\">\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li><a href=\"home#understand\">Understand and Observe</a></li>\n" +
-    "        <li><a href=\"home#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li><a href=\"home#prototype\">Prototype and test</a></li>\n" +
-    "        <li><a href=\"home#evaluate\">Evaluate and Outlook</a></li>\n" +
-    "        <li><a href=\"home#theory\">Theory and Methods</a></li>\n" +
+    "        <li data-target=\"#understand\" bs-scrollspy><a href=\"#understand\">Understand and Observe</a></li>\n" +
+    "        <li data-target=\"#analyse\" bs-scrollspy><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li data-target=\"#prototype\" bs-scrollspy><a href=\"#prototype\">Prototype and test</a></li>\n" +
+    "        <li data-target=\"#evaluate\" bs-scrollspy><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
+    "        <li data-target=\"#theory\" bs-scrollspy><a href=\"#theory\">Theory and Methods</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"home#about\">About</a></li>\n" +

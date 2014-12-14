@@ -1,24 +1,24 @@
-<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" bs-navbar bs-collapse bs-scrollspy-list role="navigation" data-animation="1">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbarcontents">
+      <button type="button" class="navbar-toggle collapsed" bs-collapse-toggle>
         <span class="sr-only">Toggle navigation</span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="home#main">Augmenting Masterpieces</a>
+      <a class="navbar-brand" href="#main">Augmenting Masterpieces</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="navbarcontents">
+    <div class="collapse navbar-collapse" id="navbarcontents" bs-collapse-target>
       <ul class="nav navbar-nav">
-        <li><a href="home#understand">Understand and Observe</a></li>
-        <li><a href="home#analyse">Analyse and Ideate</a></li>
-        <li><a href="home#prototype">Prototype and test</a></li>
-        <li><a href="home#evaluate">Evaluate and Outlook</a></li>
-        <li><a href="home#theory">Theory and Methods</a></li>
+        <li data-target="#understand" bs-scrollspy><a href="#understand">Understand and Observe</a></li>
+        <li data-target="#analyse" bs-scrollspy><a href="#analyse">Analyse and Ideate</a></li>
+        <li data-target="#prototype" bs-scrollspy><a href="#prototype">Prototype and test</a></li>
+        <li data-target="#evaluate" bs-scrollspy><a href="#evaluate">Evaluate and Outlook</a></li>
+        <li data-target="#theory" bs-scrollspy><a href="#theory">Theory and Methods</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li><a href="home#about">About</a></li>
