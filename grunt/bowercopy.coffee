@@ -23,6 +23,10 @@ module.exports =
     src: "angular-strap/dist/angular-strap.tpl.js"
     dest: "src/vendor/angular-strap.tpl.js"
 
+  angularstrapdimensions:
+    src: "angular-strap/dist/modules/dimensions.js"
+    dest: "src/vendor/dimensions.js"
+
   lodash:
     src: "lodash/dist/lodash.js"
     dest: "src/vendor/lodash.js"

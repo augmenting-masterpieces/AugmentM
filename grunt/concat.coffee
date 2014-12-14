@@ -22,6 +22,7 @@ module.exports =
       'src/vendor/angular-sanitize.js'
       'src/vendor/angular-strap.js'
       'src/vendor/angular-strap.tpl.js'
+      'src/vendor/dimensions.js'
       'src/vendor/masonry.pkgd.js'
       'src/vendor/imagesloaded.pkgd.js'
       'src/vendor/jquery.panelSnap.js'
