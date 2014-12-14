@@ -16,13 +16,14 @@ module.exports =
     src: [
       'src/vendor/jquery.js'
       'src/vendor/lodash.js'
-      'src/vendor/bootstrap.js'
       'src/vendor/viewport-units-buggyfill.js'
       'src/vendor/angular.js'
       'src/vendor/angular-ui-router.js'
       'src/vendor/angular-sanitize.js'
-      'src/vendor/masonry.pkgd.min.js'
-      'src/vendor/imagesloaded.pkgd.min.js'
+      'src/vendor/angular-strap.js'
+      'src/vendor/angular-strap.tpl.js'
+      'src/vendor/masonry.pkgd.js'
+      'src/vendor/imagesloaded.pkgd.js'
       'src/vendor/jquery.panelSnap.js'
     ]
     dest: 'dev/vendor.js'
