@@ -324,7 +324,7 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
 
 angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/nav.html",
-    "<nav class=\"navbar navbar-default navbar-fixed-top\" ng-controller=\"NavCtrl\" bs-collapse startCollapsed=\"true\" bs-scrollspy-list role=\"navigation\">\n" +
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
     "    <div class=\"navbar-header\">\n" +
@@ -340,11 +340,11 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li data-target=\"#understand\" bs-scrollspy><a ng-click=\"gotoBottom()\" ng-href=\"#\">Understand and Observe</a></li>\n" +
-    "        <li data-target=\"#analyse\" bs-scrollspy><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li data-target=\"#prototype\" bs-scrollspy><a href=\"#prototype\">Prototype and test</a></li>\n" +
-    "        <li data-target=\"#evaluate\" bs-scrollspy><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
-    "        <li data-target=\"#theory\" bs-scrollspy><a href=\"#theory\">Theory and Methods</a></li>\n" +
+    "        <li bs-scrollspy><a href=\"#understand\">Understand and Observe</a></li>\n" +
+    "        <li bs-scrollspy><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li bs-scrollspy><a href=\"#prototype\">Prototype and test</a></li>\n" +
+    "        <li bs-scrollspy><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
+    "        <li bs-scrollspy><a href=\"#theory\">Theory and Methods</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li><a href=\"home#about\">About</a></li>\n" +

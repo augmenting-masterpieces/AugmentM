@@ -3,8 +3,6 @@
 
 	angular.module('augm').controller('MasonryCtrl', [MasonryCtrl]);
 
-	console.log("masonryevaluated");
-
 	function MasonryCtrl(){
 		var vm = this;
 		var data = importData();
