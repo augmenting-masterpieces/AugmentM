@@ -1,4 +1,48 @@
-angular.module('templates-augm', ['../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
+angular.module('templates-augm', ['../templates/content/about.html', '../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/old/case-study.html', '../templates/old/home.html', '../templates/old/homepageold.html']);
+
+angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/about.html",
+    "<div class=\"col-lg-12 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
+    "	<h1>About</h1>\n" +
+    "	<h4>People</h4>\n" +
+    "\n" +
+    "</div>\n" +
+    "\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
+    "				<p>Johanna Barnbeck</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analysis\">\n" +
+    "				<p>Jan Hein Hoogstad</p>\n" +
+    "				<p>Assistant Professor Cultural Analysis</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
+    "				<p>Shailoh Phillips</p>\n" +
+    "			</div>\n" +
+    "	</div>\n" +
+    "\n" +
+    "\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\" >\n" +
+    "\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
+    "				<p>Patty Jansen</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
+    "				<p>Robert-Jan Korteschiel</p>\n" +
+    "			</div>\n" +
+    "			<div class=\"person clearfix\">\n" +
+    "				<p>CONTACT</p>\n" +
+    "			</div>\n" +
+    "	</div>\n" +
+    "\n" +
+    "\n" +
+    "");
+}]);
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
@@ -258,13 +302,24 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "	<h1>Methods and Theory</h1>\n" +
     "</section>\n" +
     "<section ui-view=\"theory\" id=\"theory\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"literature\" id=\"literature\" class=\"row block\"></section>");
+    "<section ui-view=\"literature\" id=\"literature\" class=\"row block literature\"></section>\n" +
+    "<section ui-view=\"about\" id=\"about\" class=\"row block about\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/footer.html",
     "<hr>\n" +
-    "<p>Last update: Thursday 27 Oktober 2014 - Augmenting Masterpieces</p>");
+    "<p>Last update: Thursday 27 Oktober 2014 - Augmenting Masterpieces</p>\n" +
+    "<div class=\"footer\">\n" +
+    "<a> Home </a> &nbsp;\n" +
+    "<a> Understand and Obeserve</a>&nbsp;\n" +
+    "<a> Analyse and Ideate </a>&nbsp;\n" +
+    "<a> Prototype and Test </a>&nbsp;\n" +
+    "<a> Evaluate and Outlook </a>&nbsp;\n" +
+    "<a> Theory and Methods </a>&nbsp;\n" +
+    "<a> About </a>\n" +
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
