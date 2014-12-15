@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('augm').controller('NavCtrl', [NavCtrl]);
+  angular.module('augm').controller('NavCtrl', ['$scope', '$location', '$anchorScroll', NavCtrl]);
 
   angular.module('augm')
     .config(function($collapseProvider) {
@@ -9,27 +9,45 @@
         startCollapsed: 'true'
       });
     });
-  
 
-  function NavCtrl(){
+
+  function NavCtrl($scope, $location, $anchorScroll){
     var vm = this;
 
-    $(function() {
+    console.log("NavEvaluated");
+    var hello = "Im sayingHElloooo";
 
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
+    var gotoBottom = function() {
+      // set the location.hash to the id of
+      // the element you wish to scroll to.
+      console.log("im run");
+      $location.hash('theory');
 
-    });
+      // call $anchorScroll()
+      $anchorScroll();
+    };
+
+
+
+
+
+
+    // Old scrolling
+
+    // $(function() {
+    //   $('a[href*="#"]:not([href=#])').click(function() {
+    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    //       var target = $(this.hash);
+    //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    //       if (target.length) {
+    //         $('html,body').animate({
+    //           scrollTop: target.offset().top
+    //         }, 1000);
+    //         return false;
+    //       }
+    //     }
+    //   });
+    // });
 
     return vm;
   }

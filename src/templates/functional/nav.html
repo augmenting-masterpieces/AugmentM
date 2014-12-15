@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default navbar-fixed-top" bs-collapse startCollapsed="true" bs-scrollspy-list role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" ng-controller="NavCtrl" bs-collapse startCollapsed="true" bs-scrollspy-list role="navigation">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -14,7 +14,7 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="navbarcontents" bs-collapse-target>
       <ul class="nav navbar-nav">
-        <li data-target="#understand" bs-scrollspy><a href="#understand">Understand and Observe</a></li>
+        <li data-target="#understand" bs-scrollspy><a ng-click="gotoBottom()" ng-href="#">Understand and Observe</a></li>
         <li data-target="#analyse" bs-scrollspy><a href="#analyse">Analyse and Ideate</a></li>
         <li data-target="#prototype" bs-scrollspy><a href="#prototype">Prototype and test</a></li>
         <li data-target="#evaluate" bs-scrollspy><a href="#evaluate">Evaluate and Outlook</a></li>
