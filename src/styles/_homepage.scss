@@ -1,7 +1,7 @@
 // General Styling
 
 .block {
-   	padding: 100px 30px 100px 30px;
+   	padding: 25px 30px 100px 30px;
    	min-height: 100%;
 }
 
@@ -54,6 +54,7 @@ main {
 	}
 
 	.subtitle {
+		margin-left: 54px;
 		position: absolute;
 		bottom: 10px;
 	}
@@ -65,8 +66,10 @@ main {
 	position: relative;
 
 	h1 {
+		margin-left: 54px;
 		position: absolute;
 		bottom: 10px; 
+		border-bottom: 0.5px;
 	}
 
 	&.Analyse {
