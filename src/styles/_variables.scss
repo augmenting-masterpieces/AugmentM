@@ -2,7 +2,7 @@
 $list-group-border-radius: 0;
 
 //Grid Changes
-$grid-gutter-width: 60px;
+$grid-gutter-width: 110px;
 $grid-float-breakpoint: 1110px;
 
 
@@ -30,6 +30,7 @@ $line-height-base: 1.6 !default;
 // Main variables
 $body-bg:               white;
 $brand-primary: 		$rijkszwartgrijs;
+$brand-succes:			$rijksrood;
 
 // Nav Variables
 $navbar-default-color:             $brand-primary;
@@ -48,7 +49,9 @@ $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 1
 $navbar-default-brand-hover-bg:            transparent !default;
 
 // Footer
-$sitemap-default-brand-color:   			$brand-primary;
+$sitemap-default-brand-color:   			$rijksrood;
+
+					
 
 
 
