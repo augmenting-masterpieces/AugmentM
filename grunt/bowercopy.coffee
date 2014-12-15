@@ -7,10 +7,6 @@ module.exports =
     src: "bootstrap-sass-official/assets/stylesheets"
     dest: "src/styles/bootstrap"
 
-  bootstrapjs:
-    src: "bootstrap-sass-official/assets/javascripts/bootstrap.js"
-    dest: "src/vendor/bootstrap.js"
-
   angularUiRouter:
     src: "angular-ui-router/release/angular-ui-router.js"
     dest: "src/vendor/angular-ui-router.js"
@@ -18,6 +14,18 @@ module.exports =
   angularSanitize:
     src: "angular-sanitize/angular-sanitize.js"
     dest: "src/vendor/angular-sanitize.js"
+
+  angularstrap:
+    src: "angular-strap/dist/angular-strap.js"
+    dest: "src/vendor/angular-strap.js"
+
+  angularstrapTPL:
+    src: "angular-strap/dist/angular-strap.tpl.js"
+    dest: "src/vendor/angular-strap.tpl.js"
+
+  angularstrapdimensions:
+    src: "angular-strap/dist/modules/dimensions.js"
+    dest: "src/vendor/dimensions.js"
 
   lodash:
     src: "lodash/dist/lodash.js"
@@ -33,11 +41,11 @@ module.exports =
 
   masonry:
     src: "masonry/dist/masonry.pkgd.js"
-    dest: "src/vendor/masonry.pkgd.min.js"
+    dest: "src/vendor/masonry.pkgd.js"
 
   imagesloaded:
-    src: "imagesloaded/imagesloaded.pkgd.min.js"
-    dest: "src/vendor/imagesloaded.pkgd.min.js"
+    src: "imagesloaded/imagesloaded.pkgd.js"
+    dest: "src/vendor/imagesloaded.pkgd.js"
 
   panelSnap:
     src: "panelsnap/jquery.panelSnap.js"
