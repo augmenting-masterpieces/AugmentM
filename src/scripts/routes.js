@@ -35,7 +35,8 @@
           "demo": { templateUrl: "../templates/content/demo.html" },
           "evaluation": { templateUrl: "../templates/content/evaluation.html" },
           "theory": { templateUrl: "../templates/content/theory.html" },
-          "literature": { templateUrl: "../templates/content/literature.html" }
+          "literature": { templateUrl: "../templates/content/literature.html" },
+          "about": { templateUrl: "../templates/content/about.html" }
         }
       });
 

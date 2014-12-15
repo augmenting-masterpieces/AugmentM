@@ -158,15 +158,50 @@ iframe {
 	}
 }
 
-// Footer
+// About
 
+
+.about {
+		.person {
+			width: 100%;
+			padding: 10px;
+
+		}
+
+		p {
+			float: left;
+			color: red;
+			padding-left: 10px;
+		}
+
+
+		img {
+			display: block;
+			width: 30%;
+			margin: 0 auto;
+			border-left: solid 10px black;
+			float: left;
+
+		}
+
+	}
+
+// Footer
 footer {
-	height: 100px;
+	height: 150px;
 	color: lighten($brand-primary, 60%);
 	padding-top: 10px;
 	font-size: 0.9em;
 	text-align: center;
-}
+		}
 
+.footer {
+	.sitemap {
+		margin-bottom: 40px;
+	}
+		a {
+	  	color: lighten($sitemap-default-brand-color, 60%);
+		}
+	}
 
 
