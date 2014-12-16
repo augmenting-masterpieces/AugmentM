@@ -124,7 +124,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div> \n" +
     "</div>\n" +
-    "<h1 class=\"subtitle\">Understand and Observe</h1>\n" +
+    "<h1 id=\"understand\" class=\"subtitle\">Understand and Observe</h1>\n" +
     "");
 }]);
 
@@ -287,25 +287,25 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
-    "<section ui-view=\"assumptions\" id=\"understand\" class=\"row block assumptions\"></section>\n" +
+    "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo Analyse\">\n" +
-    "	<h1> Analyse and Ideate </h1>\n" +
+    "	<h1 id=\"analyse\">Analyse and Ideate </h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"survey\" id=\"analyse\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
     "<section class=\"row block intermezzo proto\">\n" +
-    "	<h1>Prototype and Test</h1>\n" +
+    "	<h1 id=\"prototype\" >Prototype and Test</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"demo\" id=\"prototype\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo evaluate\">\n" +
-    "	<h1>Evaluate and Outlook</h1>\n" +
+    "	<h1 id=\"evaluate\">Evaluate and Outlook</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"evaluation\" id=\"evaluate\" class=\"row block\"></section>\n" +
-    "<section  class=\"row block intermezzo theory\">\n" +
-    "	<h1>Methods and Theory</h1>\n" +
+    "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
+    "<section class=\"row block intermezzo theory\">\n" +
+    "	<h1 id=\"theory\">Methods and Theory</h1>\n" +
     "</section>\n" +
-    "<section ui-view=\"theory\" id=\"theory\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
     "<section ui-view=\"literature\" id=\"literature\" class=\"row block literature\"></section>\n" +
     "<section ui-view=\"about\" id=\"about\" class=\"row block about\"></section>");
 }]);
@@ -338,7 +338,7 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" href=\"#main\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "\n" +
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
