@@ -87,25 +87,30 @@ main {
 		border-bottom: 0.5px;
 	}
 
-	&.Analyse {
+	&.analyse {
 		background: url(./images/webimages/4_visualfeedbackmethods.jpg) no-repeat center center / cover;
 		background-attachment: fixed;
 	}
 
 
-	&.Proto {
+	&.proto {
 		background: url(./images/webimages/3_thatswhatwethinktheywant.jpg) no-repeat center center / cover;
 	}
 
-	&.Evaluate {
+	&.evaluate {
 		background: url(./images/webimages/W4A3487.jpg) no-repeat center center / cover;
 		background-attachment: fixed;
 	}
 
-	&.Theory {
+	&.theory {
 		background: url(./images/webimages/W4A3567.jpg) no-repeat center center / cover;
 		background-attachment: fixed;
 	}
+
+	&.about {
+		background: url(./images/webimages/W4A3367.jpg) no-repeat center center / cover;
+	}
+
 }
 
 // Other modules
@@ -192,7 +197,7 @@ img {
 // About
 
 
-.about {
+.people {
 		.person {
 			width: 100%;
 			padding: 10px;
@@ -231,7 +236,7 @@ footer {
 		margin-bottom: 40px;
 	}
 		a {
-	  	color: lighten($sitemap-default-brand-color, 60%);
+	  		color: lighten($sitemap-default-brand-color, 40%);
 		}
 	}
 

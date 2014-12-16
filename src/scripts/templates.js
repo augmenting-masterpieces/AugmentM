@@ -305,8 +305,11 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "	<h1 id=\"theory\">Methods and Theory</h1>\n" +
     "</section>\n" +
     "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"literature\" id=\"literature\" class=\"row block literature\"></section>\n" +
-    "<section ui-view=\"about\" id=\"about\" class=\"row block about\"></section>");
+    "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
+    "<section class=\"row block intermezzo about\">\n" +
+    "	<h1 id=\"about\">About</h1>\n" +
+    "</section>\n" +
+    "<section ui-view=\"about\" class=\"row block people\"></section>");
 }]);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
@@ -350,7 +353,7 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "        <li bs-scrollspy><a href=\"#theory\">Theory and Methods</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li><a href=\"home#about\">About</a></li>\n" +
+    "        <li bs-scrollspy><a href=\"#about\">About</a></li>\n" +
     "      </ul>\n" +
     "    </div><!-- /.navbar-collapse -->\n" +
     "  </div><!-- /.container-fluid -->\n" +
