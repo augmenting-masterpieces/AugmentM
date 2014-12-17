@@ -2,43 +2,38 @@ angular.module('templates-augm', ['../templates/content/about.html', '../templat
 
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
-    "<div class=\"col-lg-12 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-24 col-lg-offset-2 col-md-24 col-md-offset-2 col-sm-24 col-sm-offset-2 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>About</h1>\n" +
     "	<h4>People</h4>\n" +
-    "\n" +
     "</div>\n" +
-    "\n" +
-    "	<div class=\"col-lg-5 col-lg-offset-1 col-md-5 col-md-offset-1 col-sm-5 col-sm-offset-1 col-xs-12 col-xs-offset-0\">\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
-    "				<p>Johanna Barnbeck</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analysis\">\n" +
-    "				<p>Jan Hein Hoogstad</p>\n" +
-    "				<p>Assistant Professor Cultural Analysis</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
-    "				<p>Shailoh Phillips</p>\n" +
-    "			</div>\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-24 col-xs-offset-0\">\n" +
+    "	<div class=\"person clearfix\">\n" +
+    "		<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
+    "		<p>Johanna Barnbeck</p>\n" +
     "	</div>\n" +
-    "\n" +
-    "\n" +
-    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\" >\n" +
-    "\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
-    "				<p>Patty Jansen</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
-    "				<p>Robert-Jan Korteschiel</p>\n" +
-    "			</div>\n" +
-    "			<div class=\"person clearfix\">\n" +
-    "				<p>CONTACT</p>\n" +
-    "			</div>\n" +
+    "	<div class=\"person clearfix\">\n" +
+    "		<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analysis\">\n" +
+    "		<p>Jan Hein Hoogstad</p>\n" +
+    "		<p>Assistant Professor Cultural Analysis</p>\n" +
     "	</div>\n" +
+    "	<div class=\"person clearfix\">\n" +
+    "		<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
+    "		<p>Shailoh Phillips</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\" >\n" +
+    "	<div class=\"person clearfix\">\n" +
+    "		<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
+    "		<p>Patty Jansen</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"person clearfix\">\n" +
+    "		<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
+    "		<p>Robert-Jan Korteschiel</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"person clearfix\">\n" +
+    "		<p>CONTACT</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "\n" +
     "\n" +
     "");
@@ -46,7 +41,7 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2> Assumptions...</h2>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
     "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.<br>\n" +
@@ -55,7 +50,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "\n" +
     "	<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
     "</div>\n" +
     "");
@@ -63,7 +58,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
@@ -76,7 +71,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "\n" +
     "	<p>Visitors can contribute and share their observations and knowledge, no matter what their <i>cultural capital</i> is, which creates a feeling of being valuable.</p></a>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112958657' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
@@ -86,7 +81,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
 
 angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/evaluation.html",
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Process Evaluation</h2>\n" +
     "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”<br>\n" +
     "\n" +
@@ -96,7 +91,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "\n" +
     "	The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Concluding Remarks</h1>\n" +
     "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.<br>\n" +
     "\n" +
@@ -113,7 +108,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
 
 angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/header.html",
-    "<div class=\"col-md-9 col-md-offset-3 col-sm-12 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-12 col-lg-offset-7 col-md-14 col-md-offset-7 col-sm-18 col-sm-offset-6 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"title\">\n" +
     "		<h1><span>AUGMENTING</span>&nbsp;<span> MASTERPIECES</span></h1>\n" +
     "		<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
@@ -129,90 +124,89 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/literature.html",
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
-    "<h2>Literature</h2>\n" +
-    "<ul>\n" +
-    "				<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-19 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "	<h2>Literature</h2>\n" +
+    "	<ul>\n" +
+    "		<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
     "\n" +
-    "				<li>Bal, Mieke. Reading Rembrandt: Beyond the Word-Image Opposition. Amsterdam: Amsterdam University Press, 2006. Print.</li>\n" +
+    "		<li>Bal, Mieke. Reading Rembrandt: Beyond the Word-Image Opposition. Amsterdam: Amsterdam University Press, 2006. Print.</li>\n" +
     "\n" +
-    "				<li>Birringer, Johannes “Moveable worlds/Digital scenographies”,            International Journal of Performance Arts &amp; Digital Media, Volume 6, Number 1, 1 June 2010 , pp. 89-107(19).</li>\n" +
+    "		<li>Birringer, Johannes “Moveable worlds/Digital scenographies”,            International Journal of Performance Arts &amp; Digital Media, Volume 6, Number 1, 1 June 2010 , pp. 89-107(19).</li>\n" +
     "\n" +
-    "				<li>Bostock, Michael, Vadim Ogievetsky, and Jeffrey Heer. “D3: Data-Driven Documents” IEEE Trans. Visualization &amp; Comp. Graphics. 2011. Online.</li>\n" +
+    "		<li>Bostock, Michael, Vadim Ogievetsky, and Jeffrey Heer. “D3: Data-Driven Documents” IEEE Trans. Visualization &amp; Comp. Graphics. 2011. Online.</li>\n" +
     "\n" +
-    "				<li>Bullivant, Lucy. Interactive Architecture 4D Social: Interactive Design Environments. Indianapolis: Wiley and Sons, 2007. Print.</li>\n" +
+    "		<li>Bullivant, Lucy. Interactive Architecture 4D Social: Interactive Design Environments. Indianapolis: Wiley and Sons, 2007. Print.</li>\n" +
     "\n" +
-    "				<li>Certeau, Michel de. “Spatial Stories.” The Practice of Everyday Life. Minneapolis: University Of Minnesota Press, 1984. 115–130. Print.</li>\n" +
+    "		<li>Certeau, Michel de. “Spatial Stories.” The Practice of Everyday Life. Minneapolis: University Of Minnesota Press, 1984. 115–130. Print.</li>\n" +
     "\n" +
-    "				<li>Falk, J. (2009). Identity and the Museum Visitor Experience. Walnut Creek, CA Left Coast Press.</li>\n" +
+    "		<li>Falk, J. (2009). Identity and the Museum Visitor Experience. Walnut Creek, CA Left Coast Press.</li>\n" +
     "\n" +
-    "				<li>Glogner, Patrick; Föhl, Patrick (2010) Das Kulturpublikum:             Fragestellungen und Befunde der empirischen Forschung. VS Verlag für Sozialwissenschaften.</li>\n" +
+    "		<li>Glogner, Patrick; Föhl, Patrick (2010) Das Kulturpublikum:             Fragestellungen und Befunde der empirischen Forschung. VS Verlag für Sozialwissenschaften.</li>\n" +
     "\n" +
-    "				<li>Heer, Jeffrey, Bostock Mike. “Declarative Language Design for Interactive Visualization.” IEEE Trans. Visualization &amp; Comp. Graphics. 2010. Online.</li>\n" +
+    "		<li>Heer, Jeffrey, Bostock Mike. “Declarative Language Design for Interactive Visualization.” IEEE Trans. Visualization &amp; Comp. Graphics. 2010. Online.</li>\n" +
     "\n" +
-    "				<li>Hermes, Joke “Audience Studies 2.0. On the theory, politics and method of qualitative audience research.” In: Interactions: Studies in       Communication &amp; Culture, Volume 1, Number 1, 1 September 2009, pp. 111-127(17).</li>\n" +
+    "		<li>Hermes, Joke “Audience Studies 2.0. On the theory, politics and method of qualitative audience research.” In: Interactions: Studies in       Communication &amp; Culture, Volume 1, Number 1, 1 September 2009, pp. 111-127(17).</li>\n" +
     "\n" +
-    "				<li>Informotion. Animated Infographics. Ed. Tim Finke and Sebastian Manger.Berlin: Gestalten, 2012. Print.</li>\n" +
+    "		<li>Informotion. Animated Infographics. Ed. Tim Finke and Sebastian Manger.Berlin: Gestalten, 2012. Print.</li>\n" +
     "\n" +
-    "				<li>Kirchberg, Volker (2009) Innovative Besucher- und Museumsforschung: Hintergrundbericht, \n" +
-    "				<a href=\"http://www.kulturmanagement.net/beitraege/prm/39/v__d/ni__879/index.html\">website</a></li>\n" +
+    "		<li>Kirchberg, Volker (2009) Innovative Besucher- und Museumsforschung: Hintergrundbericht, \n" +
+    "		<a href=\"http://www.kulturmanagement.net/beitraege/prm/39/v__d/ni__879/index.html\">website</a></li>\n" +
     "\n" +
-    "				<li>Kittler, Friedrich. “The Perspective of Print.” Configurations. 10.1 (2002): 37–50. Print. “Universities: Wet, Hard, Soft, and Harder.” Critical Inquiry 31.1 (2004): 244–255. Print.</li>\n" +
+    "		<li>Kittler, Friedrich. “The Perspective of Print.” Configurations. 10.1 (2002): 37–50. Print. “Universities: Wet, Hard, Soft, and Harder.” Critical Inquiry 31.1 (2004): 244–255. Print.</li>\n" +
     "\n" +
-    "				<li>Kossman, Herman, and Mark de Jong. Engaging Spaces: Exhibition DesignExplored. Amsterdam: Frame, 2010. Print.</li>\n" +
+    "		<li>Kossman, Herman, and Mark de Jong. Engaging Spaces: Exhibition DesignExplored. Amsterdam: Frame, 2010. Print.</li>\n" +
     "\n" +
-    "				<li>Museum Informatics: People, Information, and Technology in Museums. Ed. Paul F. Marty, and Katherine Burton Burton Jones. New York: Routledge, 2009. Print.</li>\n" +
+    "		<li>Museum Informatics: People, Information, and Technology in Museums. Ed. Paul F. Marty, and Katherine Burton Burton Jones. New York: Routledge, 2009. Print.</li>\n" +
     "\n" +
-    "				<li>Park, Ki-Woong, et al. “Towards Interactive Museum: Mapping Cultural\n" +
-    "				Contexts to Historical Objects.” Relation 10.1.142 (2009): 5630. Print.</li>\n" +
+    "		<li>Park, Ki-Woong, et al. “Towards Interactive Museum: Mapping Cultural\n" +
+    "		Contexts to Historical Objects.” Relation 10.1.142 (2009): 5630. Print.</li>\n" +
     "\n" +
-    "			</ul>\n" +
+    "	</ul>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "    <ul>\n" +
+    "		<li>Parry, Ross. Museums in a Digital Age. New York: Routledge, 2010. Print.</li>\n" +
     "\n" +
-    "            <ul>\n" +
-    "				<li>Parry, Ross. Museums in a Digital Age. New York: Routledge, 2010. Print.</li>\n" +
+    "		<li>Reas, Casey, and Ben Fry. Processing. A Programming Handbook for Visual Designers and Artists. Cambridge MA: MIT Press, 2007. Print.</li>\n" +
     "\n" +
-    "				<li>Reas, Casey, and Ben Fry. Processing. A Programming Handbook for Visual Designers and Artists. Cambridge MA: MIT Press, 2007. Print.</li>\n" +
+    "		<li>Renden, Sandra. Information Graphics. Ed. Julius Wiedemann. Cologne, Taschen, 2012. Print.</li>\n" +
     "\n" +
-    "				<li>Renden, Sandra. Information Graphics. Ed. Julius Wiedemann. Cologne, Taschen, 2012. Print.</li>\n" +
+    "		<li>Ronell, Avitall. “Proving Grounds: On Nietzsche and the Test Drive.” MLN.118.3 (2003): 653–669. Print.</li>\n" +
     "\n" +
-    "				<li>Ronell, Avitall. “Proving Grounds: On Nietzsche and the Test Drive.” MLN.118.3 (2003): 653–669. Print.</li>\n" +
+    "		<li>Rowea, Anthony “Digital Creativity - Designing for engagement in mixed reality experiences that combine projection mapping and camera- based interaction.” http://www.tandfonline.com/toc/ndcr20/current#.UZOLYCvOSjw</li>\n" +
     "\n" +
-    "				<li>Rowea, Anthony “Digital Creativity - Designing for engagement in mixed reality experiences that combine projection mapping and camera- based interaction.” http://www.tandfonline.com/toc/ndcr20/current#.UZOLYCvOSjw</li>\n" +
+    "		<li>Simon, Nina. The Participatory Museum. Santa Cruz, CA: Museum 2.0, 2010.Print. </li>\n" +
+    "	\n" +
+    "		<li>Smeets, Ionica &amp; Schraffenberger Hanna “OK, Glass?”, In: AR[t] – Augmented Reality, Art and Technology, 04 nov 2013, p. 42-48. http://issuu.com/arlab/docs/art4_issuu</li>\n" +
     "\n" +
-    "				<li>Simon, Nina. The Participatory Museum. Santa Cruz, CA: Museum 2.0, 2010.Print. </li>\n" +
-    "			\n" +
-    "				<li>Smeets, Ionica &amp; Schraffenberger Hanna “OK, Glass?”, In: AR[t] – Augmented Reality, Art and Technology, 04 nov 2013, p. 42-48. http://issuu.com/arlab/docs/art4_issuu</li>\n" +
+    "		<li>Schraffenberger, Hanna &amp; E. van der Heide “Interaction Models for Audience-Artwork Interaction: Current State and Future Directions.” In: Arts and Technology, Second International Conference, ArtsIT 2011, Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering (LNICST), 2011.</li>\n" +
     "\n" +
-    "				<li>Schraffenberger, Hanna &amp; E. van der Heide “Interaction Models for Audience-Artwork Interaction: Current State and Future Directions.” In: Arts and Technology, Second International Conference, ArtsIT 2011, Lecture Notes of the Institute for Computer Sciences, Social Informatics and Telecommunications Engineering (LNICST), 2011.</li>\n" +
+    "		<li>Tröndle, Martin (2011): The Entanglement of Arts and Sciences: On the Transaction Costs of Transdisciplinary Research Settings. In: Journalfor Artistic Research. Issue 1.</li>\n" +
     "\n" +
-    "				<li>Tröndle, Martin (2011): The Entanglement of Arts and Sciences: On the Transaction Costs of Transdisciplinary Research Settings. In: Journalfor Artistic Research. Issue 1.</li>\n" +
+    "		<li>Tröndle, Martin / Greenwood, Steven / Kirchberg, Volker / Tschacher, Wolfgang: An Integrative and Comprehensive Methodology for Studying Aesthetic Experience in the Field: Merging Movement Tracking, Physiology and Psychological Data. Environment and Behavior. 2012. doi:10.1177/0013916512453839</li>\n" +
     "\n" +
-    "				<li>Tröndle, Martin / Greenwood, Steven / Kirchberg, Volker / Tschacher, Wolfgang: An Integrative and Comprehensive Methodology for Studying Aesthetic Experience in the Field: Merging Movement Tracking, Physiology and Psychological Data. Environment and Behavior. 2012. doi:10.1177/0013916512453839</li>\n" +
+    "		<li>Tschacher, Wolfgang (2012). Physiological correlates of aesthetic perception in a museum, In: Journal of Psychology of Aesthetics, Creativity, and the Arts, 6, 96-103. doi: 10.1037/a0023845</li>\n" +
     "\n" +
-    "				<li>Tschacher, Wolfgang (2012). Physiological correlates of aesthetic perception in a museum, In: Journal of Psychology of Aesthetics, Creativity, and the Arts, 6, 96-103. doi: 10.1037/a0023845</li>\n" +
+    "		<li>Tufte, Edward R. Visual Explanations: Images and Quantities, Evidence and Narrative. Chesire CT: Graphics Press, 1997. Print.</li>\n" +
     "\n" +
-    "				<li>Tufte, Edward R. Visual Explanations: Images and Quantities, Evidence and Narrative. Chesire CT: Graphics Press, 1997. Print.</li>\n" +
+    "		<li>Van Hage, Willem Robert, et al. “Finding your way through the Rijksmuseum with an adaptive mobile museum guide.” The Semantic Web: Research and Applications. Berlin: Springer, 2010. 46–59. Print.</li>\n" +
     "\n" +
-    "				<li>Van Hage, Willem Robert, et al. “Finding your way through the Rijksmuseum with an adaptive mobile museum guide.” The Semantic Web: Research and Applications. Berlin: Springer, 2010. 46–59. Print.</li>\n" +
-    "\n" +
-    "				<li>Visser, Jasper; Richardson, Jim (2013) Digital Engagement In Culture, Heritage and the Arts.http://www.digitalengagementframework.com/</li>\n" +
-    "			</ul>\n" +
+    "		<li>Visser, Jasper; Richardson, Jim (2013) Digital Engagement In Culture, Heritage and the Arts.http://www.digitalengagementframework.com/</li>\n" +
+    "	</ul>\n" +
     "</div>\n" +
     "");
 }]);
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote>\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<p>\n" +
     "	However, Chris described in detail the other pictures that he took, the observed situations and he told stories that he overheard from other visitors. He seemed more relaxed and engaged with his surrounding.<br>\n" +
     "\n" +
@@ -226,21 +220,20 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "	<h5>Photo transcript:</h5>\n" +
     "	<h1 id=\"transcriptHeader\"></h1>\n" +
     "	<p id=\"transcriptSnippet\"></p>\n" +
-    "\n" +
     "</div>\n" +
     "");
 }]);
 
 angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/survey.html",
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>No comment on the Masterpieces.</h2>\n" +
     "	<h3>“I know they are important.”</h3>\n" +
     "	<p>The qualitative survey had twelve participants who belong to four of the five  visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.<br> \n" +
     "As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam. <br>\n" +
     "In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.”</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<img class=\"infographic\" src=\"images/webimages/infographic_new.jpg\">\n" +
     "</div>\n" +
     "");
@@ -248,14 +241,14 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/theory.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/theory.html",
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Social augmentation vs. technological masterpieces?</h2>\n" +
     "	<h3>Project objectives</h3>\n" +
     "	<p>'Augmentation' is currently often brought up in relation to 'augmented reality' which uses a virtual layer over what we conceive as our real life. Often the use of the word goes hand in hand with a supposed technological innovation, and also our project title suggests that a superimposed “computer-generated image on a user's view of the real world, thus providing a composite view”1 will be in the centre of attention.<br> \n" +
     "	However, the research at stake is not implying an augmented reality but much rather the process of augmentation of artworks in the Rijksmuseum by means of technology.<br> \n" +
     "	When the literal meaning of 'augmentation' simply describes it as 'make something greater by adding to it', 'to increase' or the 'act of making greater'2, the questions arise of (a) what aspects of the artworks should be highlighted, (b) for whom, (c) how does the interface between the object and the viewer look like and (d) through which digital device and software will the work of art be enhanced? </p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Interdisciplinary approach</h1>\n" +
     "	<p>In order to tackle the first two questions, the design thinking method was used for structuring the whole process of the project, substituted by Visual Feedback Methods which are partly taken from the design thinking toolbox3 and partly developed in my artistic research practice throughout the past years.<br> \n" +
     "	Embedded research projects stimulate collaborations between cultural institutions, the creative industries and universities.<br> \n" +
@@ -267,13 +260,13 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-7 col-lg-offset-0 col-md-7 col-md-offset-0 col-sm-7 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-5 col-lg-offset-0 col-md-5 col-md-offset-0 col-sm-5 col-sm-offset-0 col-xs-12 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>...and how to get rid of them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
