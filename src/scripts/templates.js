@@ -124,7 +124,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/literature.html",
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-19 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Literature</h2>\n" +
     "	<ul>\n" +
     "		<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
@@ -287,7 +287,7 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
     "<section class=\"row block intermezzo proto\">\n" +
-    "	<h1 id=\"prototype\" >Prototype and Test</h1>\n" +
+    "	<h1 id=\"prototype\">Prototype and Test</h1>\n" +
     "</section>\n" +
     "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo evaluate\">\n" +
@@ -295,7 +295,7 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "</section>\n" +
     "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo theory\">\n" +
-    "	<h1 id=\"theory\">Methods and Theory</h1>\n" +
+    "	<h1 id=\"theory\">Theory and Methods</h1>\n" +
     "</section>\n" +
     "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
     "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
