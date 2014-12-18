@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('augm').controller('NavCtrl', ['$scope', '$location', '$anchorScroll', NavCtrl]);
+  angular.module('augm').controller('NavCtrl', ['$scope', '$location', NavCtrl]);
 
   angular.module('augm')
     .config(function($collapseProvider) {
