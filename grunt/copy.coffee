@@ -52,6 +52,6 @@ module.exports =
   dist:
     expand: true
     cwd: "dev"
-    src: ["index.html", "images/**/*", "fonts/**/*", "api/**/*"]
+    src: ["index.html", "images/**/*", "fonts/**/*", "api/**/*", "**/*.js"]
     dest: "dist"
 
