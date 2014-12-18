@@ -1,7 +1,6 @@
 // General Styling
 
 .block {
-   	padding: 25px 30px 100px 30px;
    	min-height: 100%;
 }
 
@@ -9,30 +8,12 @@ main {
 	min-height: 100%;
 }
 
-// Nav animation
-
-.collapse.am-collapse {
-  animation-duration: .3s;
-  animation-timing-function: ease;
-  animation-fill-mode: backwards;
-  overflow: hidden;
-  &.in-remove {
-    animation-name: collapse;
-    display: block;
-  }
-  &.in-add {
-    animation-name: expand;
-  }
-}
-
-
 // Module Specific Styling
 
 // Header module
 
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
-	// background-attachment: fixed;
 	position: relative;
 	color: white;
 	
@@ -43,8 +24,8 @@ main {
 		color: white;
 
 		h1{
-			margin-bottom: -5px;
 			font-size: 3.6em;
+			margin-bottom: 0px;
 			span {
 				display: inline-block;
 				&:first-letter {
@@ -55,7 +36,7 @@ main {
 
 		p {
 			max-width: 29em;
-			margin-top: 5px;
+			margin-top: 0px;
 			margin-bottom: 0px;
 		}
 
@@ -68,14 +49,14 @@ main {
 	}
 
 	.subtitle {
-		margin-left: 54px;
+		margin-left: 20px;
 		padding-top: 80px;
 		position: absolute;
 		bottom: 10px;
 	}
 }
 
-// Intermezzo Backgrounds
+// Intermezzos
 .intermezzo {
 	color: white;
 	position: relative;
@@ -83,7 +64,7 @@ main {
 	h1 {
 		margin-left: 54px;
 		position: absolute;
-		padding-top: 80px;
+		padding-top: 400px;
 		bottom: 10px; 
 		border-bottom: 0.5px;
 	}
@@ -132,6 +113,7 @@ img {
 
 .embed-container { 
 	position: relative; 
+	margin-top: 24px;
 	padding-bottom: 56.25%; 
 	height: 0; 
 	overflow: hidden; 

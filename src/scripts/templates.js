@@ -325,7 +325,6 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
   $templateCache.put("../templates/functional/nav.html",
     "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
     "  <div class=\"container-fluid\">\n" +
-    "    <!-- Brand and toggle get grouped for better mobile display -->\n" +
     "    <div class=\"navbar-header\">\n" +
     "      <button type=\"button\" class=\"navbar-toggle\" bs-collapse-toggle>\n" +
     "        <span class=\"sr-only\">Toggle navigation</span>\n" +
@@ -335,8 +334,6 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "      </button>\n" +
     "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
-    "\n" +
-    "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
     "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand and Observe</a></li>\n" +
@@ -348,8 +345,8 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li bs-scrollspy data-target=\"#about\"><a href=\"#about\">About</a></li>\n" +
     "      </ul>\n" +
-    "    </div><!-- /.navbar-collapse -->\n" +
-    "  </div><!-- /.container-fluid -->\n" +
+    "    </div>\n" +
+    "  </div>\n" +
     "</nav>");
 }]);
 
