@@ -339,14 +339,14 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    <!-- Collect the nav links, forms, and other content for toggling -->\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy><a href=\"#understand\">Understand and Observe</a></li>\n" +
-    "        <li bs-scrollspy><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li bs-scrollspy><a href=\"#prototype\">Prototype and test</a></li>\n" +
-    "        <li bs-scrollspy><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
-    "        <li bs-scrollspy><a href=\"#theory\">Theory and Methods</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand and Observe</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a href=\"#prototype\">Prototype and test</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\"><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a href=\"#theory\">Theory and Methods</a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li bs-scrollspy><a href=\"#about\">About</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#about\"><a href=\"#about\">About</a></li>\n" +
     "      </ul>\n" +
     "    </div><!-- /.navbar-collapse -->\n" +
     "  </div><!-- /.container-fluid -->\n" +
