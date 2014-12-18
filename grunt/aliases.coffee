@@ -55,7 +55,6 @@ module.exports =
   buildDist: [
     "clean:dist"
     "copy:dist"
-    "uglify"
     "cssmin"
   ]
   
