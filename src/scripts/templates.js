@@ -67,9 +67,12 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 \">\n" +
+    "<div class=\"container-fluid\">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
+    "</div>\n" +
+    "\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 \">\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
     "\n" +
     "	The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.<br>\n" +
