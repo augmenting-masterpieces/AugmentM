@@ -50,10 +50,9 @@
 				});
 
 				$(evt.currentTarget).toggleClass("itemClicked");
-
-				$('#photoPiece').packery();
 				$("#transcriptHeader").html(photoData.name);
 				$("#transcriptSnippet").html(photoData.transcriptSnippet);
+				$('#photoPiece').packery();
 	    }
 
 	    function masonryConfig() {
@@ -64,7 +63,7 @@
 					  columnWidth: ".grid-sizer",
 					  itemSelector: ".item",
 					  stamp: ".stamp",
-					  "isOriginTop": false
+					  "isOriginTop": true
 					});
 				});
 	    }
