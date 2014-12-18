@@ -2,10 +2,10 @@ angular.module('templates-augm', ['../templates/content/about.html', '../templat
 
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
-    "<div class=\"col-lg-24 col-lg-offset-2 col-md-24 col-md-offset-2 col-sm-24 col-sm-offset-2 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"container-fluid\">\n" +
     "	<h1>People</h1>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
     "		<p>Johanna Barnbeck</p>\n" +
@@ -19,8 +19,6 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
     "		<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
     "		<p>Shailoh Phillips</p>\n" +
     "	</div>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\" >\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
     "		<p>Patty Jansen</p>\n" +
@@ -29,6 +27,9 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
     "		<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
     "		<p>Robert-Jan Korteschiel</p>\n" +
     "	</div>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\" >\n" +
+    "\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<p>CONTACT</p>\n" +
     "	</div>\n" +
@@ -135,7 +136,7 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
     "<div class=\"container-fluid\">\n" +
     "	<h2>Literature</h2>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 literatureDiv\">\n" +
     "	<ul>\n" +
     "		<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
     "\n" +

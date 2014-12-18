@@ -172,7 +172,7 @@ img {
 
 	.stamp {
 		width: 43%;
-		height: 60%;
+		min-height: 30%;
 		display: inline-block;
 	}
 
@@ -192,19 +192,25 @@ img {
 	}
 }
 
-// About
+// Literature
 
+.literature {
+	ul {
+		border-left: 10px solid black;
+		list-style-type: square;
+		padding-left: 20px;
+	}
+}
+
+// About
 
 .people {
 		.person {
 			width: 100%;
-			padding: 10px;
-
 		}
 
 		p {
 			float: left;
-			color: red;
 			padding-left: 10px;
 		}
 
