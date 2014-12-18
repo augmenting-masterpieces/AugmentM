@@ -43,6 +43,10 @@ module.exports =
     src: "masonry/dist/masonry.pkgd.js"
     dest: "src/vendor/masonry.pkgd.js"
 
+  packery:
+    src: "packery/dist/packery.pkgd.js"
+    dest: "src/vendor/packery.pkgd.js"
+
   imagesloaded:
     src: "imagesloaded/imagesloaded.pkgd.js"
     dest: "src/vendor/imagesloaded.pkgd.js"

@@ -51,19 +51,7 @@
 
 				$(evt.currentTarget).toggleClass("itemClicked");
 
-				$('#photoPiece').masonry();
-
-				// console.log("im run");
-
-				// // Changing HTML
-				// $(".photoPiece").css({"background":"linear-gradient( hsla(0, 0%, 0%, 0.20), hsla(0, 0%, 0%, 0.20)), url(" + photoData.src +") no-repeat center center / cover", "background-attachment": "fixed"});
-				
-				
-				// if (photoData.quotes !== null) {
-				// 	$(".galleryQuote").html("\"" + photoData.quotes + "\"");
-				// } else {
-				// 	$(".galleryQuote").html("");
-				// }
+				$('#photoPiece').packery();
 				$("#transcriptHeader").html(photoData.name);
 				$("#transcriptSnippet").html(photoData.transcriptSnippet);
 	    }
@@ -72,9 +60,11 @@
 	    	var $container = $("#photoPiece");
 
 				$container.imagesLoaded( function() {
-				  $container.masonry({
+				  $container.packery({
 					  columnWidth: ".grid-sizer",
-					  itemSelector: ".item"
+					  itemSelector: ".item",
+					  stamp: ".stamp",
+					  "isOriginTop": false
 					});
 				});
 	    }

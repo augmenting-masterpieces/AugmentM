@@ -1,6 +1,7 @@
 // General Styling
 
 .block {
+	padding: 20px 0 20px 0;
    	min-height: 100%;
 }
 
@@ -19,7 +20,7 @@ main {
 	
 	.title {
 		margin: 0 auto;
-		padding-top: 80px;
+		padding-top: 120px;
 		padding-bottom: 50px;
 		color: white;
 
@@ -53,6 +54,14 @@ main {
 		padding-top: 80px;
 		position: absolute;
 		bottom: 10px;
+		text-transform: uppercase;
+
+		span {
+			display: inline-block;
+			&:first-letter {
+				font-size: 1.2em;
+			}
+		}
 	}
 }
 
@@ -62,11 +71,19 @@ main {
 	position: relative;
 
 	h1 {
-		margin-left: 54px;
+		margin-left: 20px;
 		position: absolute;
 		padding-top: 400px;
 		bottom: 10px; 
 		border-bottom: 0.5px;
+		text-transform: uppercase;
+
+		span {
+			display: inline-block;
+			&:first-letter {
+				font-size: 1.2em;
+			}
+		}
 	}
 
 	&.analyse {
@@ -141,34 +158,32 @@ img {
 }
 
 #photoPiece {
-	
+	height: 100%;
+	overflow: hidden;
+
 	img {
 		margin-top: 0;
+		width: auto;
 	}
 
-	transition: height 1s;
 	.grid-sizer {
-		width: 0.1%;
+		width: 10%;
+	}
+
+	.stamp {
+		width: 43%;
+		min-height: 30%;
+		display: inline-block;
 	}
 
 	.item { 
-		width: 33%;
+		width: 10%;
 		img {
 			width: 100%;
+			height: auto;
 			&:hover {
 				cursor: pointer;
 			}
-		}
-		
-		p {
-			padding: 0 10px;
-		}
-	}
-
-	.itemClicked {
-		width: 33%;
-		hr {
-			width: 75%;
 		}
 	}
 
@@ -177,19 +192,25 @@ img {
 	}
 }
 
-// About
+// Literature
 
+.literature {
+	ul {
+		border-left: 10px solid black;
+		list-style-type: square;
+		padding-left: 20px;
+	}
+}
+
+// About
 
 .people {
 		.person {
 			width: 100%;
-			padding: 10px;
-
 		}
 
 		p {
 			float: left;
-			color: red;
 			padding-left: 10px;
 		}
 
