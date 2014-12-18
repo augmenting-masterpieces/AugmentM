@@ -49,6 +49,15 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "	Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is just what we think they want.”</p>\n" +
     "\n" +
     "	<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
+    "	<br>\n" +
+    "	<h2 class=\"hidden-xs hidden-sm\">...and how to get rid of them.</h2>\n" +
+    "	<h3 class=\"hidden-xs hidden-sm\">Visual Feedback Methods</h3>\n" +
+    "	<p class=\"hidden-xs hidden-sm\">I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
+    "	The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
+    "	The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
+    "\n" +
+    "\n" +
+    "\n" +
     "</div>\n" +
     "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
@@ -58,7 +67,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 \">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
@@ -262,13 +271,13 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-24 col-lg-offset-0 col-md-24 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-md hidden-lg\">\n" +
     "	<h2>...and how to get rid of them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
