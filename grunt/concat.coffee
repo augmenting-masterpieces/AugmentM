@@ -26,6 +26,7 @@ module.exports =
       'src/vendor/masonry.pkgd.js'
       'src/vendor/imagesloaded.pkgd.js'
       'src/vendor/jquery.panelSnap.js'
+      'src/vendor/packery.pkgd.js'
     ]
     dest: 'dev/vendor.js'
 

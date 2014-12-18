@@ -209,13 +209,6 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote>\n" +
-    "	<div id=\"photoPiece\">\n" +
-    "		<div class=\"grid-sizer\"></div>\n" +
-    "	</div>\n" +
-    "</div>\n" +
-    "\n" +
     "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<p>\n" +
     "	However, Chris described in detail the other pictures that he took, the observed situations and he told stories that he overheard from other visitors. He seemed more relaxed and engaged with his surrounding.<br>\n" +
@@ -231,6 +224,15 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "	<h1 id=\"transcriptHeader\"></h1>\n" +
     "	<p id=\"transcriptSnippet\"></p>\n" +
     "</div>\n" +
+    "\n" +
+    "<div class=\"col-lg-24 col-lg-offset-0 col-md-24 col-md-offset-0 col-sm-24 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<!-- 	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote> -->\n" +
+    "	<div id=\"photoPiece\">\n" +
+    "		<div class=\"grid-sizer\"></div>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "\n" +
+    "\n" +
     "");
 }]);
 

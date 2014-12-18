@@ -158,27 +158,26 @@ img {
 }
 
 #photoPiece {
-	
+	height: 100%;
+	overflow: hidden;
+
 	img {
 		margin-top: 0;
+		width: auto;
 	}
 
-	transition: height 1s;
 	.grid-sizer {
-		width: 0.1%;
+		width: 10%;
 	}
 
 	.item { 
-		width: 25%;
+		width: 10%;
 		img {
 			width: 100%;
+			height: auto;
 			&:hover {
 				cursor: pointer;
 			}
-		}
-		
-		p {
-			padding: 0 10px;
 		}
 	}
 
