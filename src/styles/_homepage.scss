@@ -53,6 +53,14 @@ main {
 		padding-top: 80px;
 		position: absolute;
 		bottom: 10px;
+		text-transform: uppercase;
+
+		span {
+			display: inline-block;
+			&:first-letter {
+				font-size: 1.2em;
+			}
+		}
 	}
 }
 
@@ -62,11 +70,19 @@ main {
 	position: relative;
 
 	h1 {
-		margin-left: 54px;
+		margin-left: 20px;
 		position: absolute;
 		padding-top: 400px;
 		bottom: 10px; 
 		border-bottom: 0.5px;
+		text-transform: uppercase;
+
+		span {
+			display: inline-block;
+			&:first-letter {
+				font-size: 1.2em;
+			}
+		}
 	}
 
 	&.analyse {

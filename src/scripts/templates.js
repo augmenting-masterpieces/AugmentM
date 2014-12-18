@@ -3,8 +3,7 @@ angular.module('templates-augm', ['../templates/content/about.html', '../templat
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
     "<div class=\"col-lg-24 col-lg-offset-2 col-md-24 col-md-offset-2 col-sm-24 col-sm-offset-2 col-xs-24 col-xs-offset-0\">\n" +
-    "	<h1>About</h1>\n" +
-    "	<h4>People</h4>\n" +
+    "	<h1>People</h1>\n" +
     "</div>\n" +
     "<div class=\"col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-10 col-sm-offset-2 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"person clearfix\">\n" +
@@ -128,7 +127,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div> \n" +
     "</div>\n" +
-    "<h1 id=\"understand\" class=\"subtitle\">Understand and Observe</h1>");
+    "<h1 id=\"understand\" class=\"subtitle\"><span>Understand</span> and <span>Observe</span></h1>");
 }]);
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
@@ -210,7 +209,7 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote>\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
@@ -241,10 +240,10 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "	<h2>No comment on the Masterpieces.</h2>\n" +
     "	<h3>“I know they are important.”</h3>\n" +
     "	<p>The qualitative survey had twelve participants who belong to four of the five  visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.<br> \n" +
-    "As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam. <br>\n" +
-    "In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.”</p>\n" +
+    "	As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam. <br>\n" +
+    "	In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.”</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-14 col-lg-offset-0 col-md-14 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<img class=\"infographic\" src=\"images/webimages/infographic_new.jpg\">\n" +
     "</div>\n" +
     "");
@@ -293,25 +292,25 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo Analyse\">\n" +
-    "	<h1 id=\"analyse\">Analyse and Ideate </h1>\n" +
+    "	<h1 id=\"analyse\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
     "</section>\n" +
     "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
     "<section class=\"row block intermezzo proto\">\n" +
-    "	<h1 id=\"prototype\">Prototype and Test</h1>\n" +
+    "	<h1 id=\"prototype\"><span>Prototype</span> and <span>Test</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo evaluate\">\n" +
-    "	<h1 id=\"evaluate\">Evaluate and Outlook</h1>\n" +
+    "	<h1 id=\"evaluate\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo theory\">\n" +
-    "	<h1 id=\"theory\">Theory and Methods</h1>\n" +
+    "	<h1 id=\"theory\"><span>Theory</span> and <span>Methods</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
     "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
     "<section class=\"row block intermezzo about\">\n" +
-    "	<h1 id=\"about\">About</h1>\n" +
+    "	<h1 id=\"about\"><span>About</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"about\" class=\"row block people\"></section>");
 }]);
