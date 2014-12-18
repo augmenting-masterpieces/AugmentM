@@ -63,6 +63,7 @@
 				  $container.packery({
 					  columnWidth: ".grid-sizer",
 					  itemSelector: ".item",
+					  stamp: ".stamp",
 					  "isOriginTop": false
 					});
 				});
