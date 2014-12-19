@@ -246,11 +246,13 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "		<div class=\"container-fluid\">\n" +
     "			<div class=\"row\">\n" +
     "				<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 stamp\">\n" +
-    "					<div>\n" +
+    "					<div class=\"stampGradient\"></div>\n" +
+    "					<div class=\"stampContent\">\n" +
     "						<h5>Photo transcript:</h5>\n" +
     "						<h1 id=\"transcriptHeader\"></h1>\n" +
     "						<p id=\"transcriptSnippet\"></p>\n" +
     "					</div>\n" +
+    "					<div class=\"stampGradient End\"></div>\n" +
     "				</div>\n" +
     "			</div>\n" +
     "		</div>\n" +
