@@ -49,9 +49,14 @@
 					}
 				});
 
+				console.log(photoData.src);
+
 				$(evt.currentTarget).toggleClass("itemClicked");
 				$("#transcriptHeader").html(photoData.name);
 				$("#transcriptSnippet").html(photoData.transcriptSnippet);
+				$("#transcriptIMG").html("<img src=\"" + photoData.src + "\"></img>");
+
+
 				$('#photoPiece').packery();
 	    }
 
@@ -62,7 +67,6 @@
 				  $container.packery({
 					  columnWidth: ".grid-sizer",
 					  itemSelector: ".item",
-					  stamp: ".stamp",
 					  "isOriginTop": true
 					});
 				});

@@ -175,6 +175,7 @@ img {
 #photoPiece {
 	height: 80%;
 	overflow: hidden;
+	margin-top: 24px;
 
 	img {
 		margin-top: 0;
@@ -182,31 +183,12 @@ img {
 	}
 
 	.grid-sizer {
-		width: 10%;
-	}
-
-	.stamp {
-		position: relative;
-		height: 50%;
-		padding-bottom: 10px;
-		display: inline-block;
-		transition: height 0.5s ease-in;
-	}
-
-	.stampGradient{
-		position: absolute;
-		height: 2.5%;
-		width: 100%;
-		background: red;
-	}
-
-	.stampContent {
-		overflow: scroll;
-		height: 95%;		
+		width: 20%;
 	}
 
 	.item { 
-		width: 10%;
+		width: 20%;
+		padding: 5px;
 		img {
 			width: 100%;
 			height: auto;

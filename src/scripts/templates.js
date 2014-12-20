@@ -239,27 +239,18 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-24 col-lg-offset-0 col-md-24 col-md-offset-0 col-sm-24 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
+    "	<h1 id=\"transcriptHeader\"></h1>\n" +
+    "	<p id=\"transcriptSnippet\"></p>\n" +
+    "	<div id=\"transcriptIMG\"></div>\n" +
+    "</div>\n" +
+    "\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-11 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "<!-- 	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote> -->\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
-    "		<div class=\"container-fluid\">\n" +
-    "			<div class=\"row\">\n" +
-    "				<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 stamp\">\n" +
-    "					<div class=\"stampGradient\"></div>\n" +
-    "					<div class=\"stampContent\">\n" +
-    "						<h5>Photo transcript:</h5>\n" +
-    "						<h1 id=\"transcriptHeader\"></h1>\n" +
-    "						<p id=\"transcriptSnippet\"></p>\n" +
-    "					</div>\n" +
-    "					<div class=\"stampGradient End\"></div>\n" +
-    "				</div>\n" +
-    "			</div>\n" +
-    "		</div>\n" +
-    "\n" +
     "	</div>\n" +
     "</div>\n" +
-    "\n" +
     "\n" +
     "");
 }]);
@@ -335,7 +326,7 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "	<h1 id=\"analyse\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
     "</section>\n" +
     "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"masonryviewer\" class=\"row block masonry hidden-xs\"></section>\n" +
+    "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
     "<section class=\"row block intermezzo proto\">\n" +
     "	<h1 id=\"prototype\"><span>Prototype</span> and <span>Test</span></h1>\n" +
     "</section>\n" +
