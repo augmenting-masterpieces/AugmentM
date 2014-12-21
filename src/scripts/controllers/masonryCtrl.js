@@ -76,7 +76,7 @@
 				});
 	    }
 
-	    this.hello = "bye";
+	    // this.hello = "bye";
 
     return vm;
 	}

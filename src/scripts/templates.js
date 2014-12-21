@@ -234,8 +234,8 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
     "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">	\n" +
-    "	<h1 id=\"transcriptHeader\">{{mason.hello}}</h1>\n" +
-    "	<p id=\"transcriptSnippet\">{{mason.snippet}}</p>\n" +
+    "	<h1 id=\"transcriptHeader\"></h1>\n" +
+    "	<p id=\"transcriptSnippet\"></p>\n" +
     "	<div id=\"transcriptIMG\"></div>\n" +
     "</div>\n" +
     "\n" +
