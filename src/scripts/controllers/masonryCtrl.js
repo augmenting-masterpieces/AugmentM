@@ -31,6 +31,7 @@
 
 	    	// Appending to HTML and event listener.
 	    	$("#photoPiece").append(imgTags).on("click", "div", data, galleryChange);
+	    	$(".legend").html("<h1>" + data.photos[0].name + "</h1><p>" + data.photos[0].transcriptSnippet + "</p><img src=\"" + data.photos[0].src + "\"></img>").fadeIn();
 
 	    	// Running Masonry
 	    	masonryConfig();

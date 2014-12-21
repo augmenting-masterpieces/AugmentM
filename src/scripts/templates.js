@@ -369,11 +369,11 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand and Observe</a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#analyse\"><a href=\"#analyse\">Analyse and Ideate</a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#prototype\"><a href=\"#prototype\">Prototype and test</a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#evaluate\"><a href=\"#evaluate\">Evaluate and Outlook</a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#theory\"><a href=\"#theory\">Theory and Methods</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a href=\"#analyse\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a href=\"#prototype\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\"><a href=\"#evaluate\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a href=\"#theory\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
     "        <li bs-scrollspy data-target=\"#about\"><a href=\"#about\">About</a></li>\n" +
