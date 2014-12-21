@@ -31,6 +31,7 @@
 
 	    	// Appending to HTML and event listener.
 	    	$("#photoPiece").append(imgTags).on("click", "div", data, galleryChange);
+	    	$(".legend").html("<h1>" + data.photos[0].name + "</h1><p>" + data.photos[0].transcriptSnippet + "</p><img src=\"" + data.photos[0].src + "\"></img>").fadeIn();
 
 	    	// Running Masonry
 	    	masonryConfig();
@@ -49,10 +50,16 @@
 					}
 				});
 
-				$(evt.currentTarget).toggleClass("itemClicked");
-				$("#transcriptHeader").html(photoData.name);
-				$("#transcriptSnippet").html(photoData.transcriptSnippet);
-				$('#photoPiece').packery();
+
+				// Angular templating Tryout -> To use ngAnimate (and to learn how to make things easyer)
+				// vm.name = photoData.name;
+				// vm.snippet = photoData.transcriptSnippet;
+				// vm.src = photoData.src;
+
+				// $(evt.currentTarget).toggleClass("itemClicked");
+				$(".legend").fadeOut(function(){
+					$(this).html("<h1>" + photoData.name + "</h1><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
+				});
 	    }
 
 	    function masonryConfig() {
@@ -62,11 +69,12 @@
 				  $container.packery({
 					  columnWidth: ".grid-sizer",
 					  itemSelector: ".item",
-					  stamp: ".stamp",
 					  "isOriginTop": true
 					});
 				});
 	    }
+
+	    // this.hello = "bye";
 
     return vm;
 	}
