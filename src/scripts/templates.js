@@ -2,7 +2,7 @@ angular.module('templates-augm', ['../templates/content/about.html', '../templat
 
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
-    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>People</h1>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
@@ -26,7 +26,7 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
     "		<p>Robert-Jan Korteschiel</p>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-3 col-md-9 col-md-offset-3 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\" >\n" +
+    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\" >\n" +
     "	<h1>Contact</h1>\n" +
     "	<p>Johanna Barnbeck</p>\n" +
     "	<p>Locatie 13</p>\n" +
@@ -67,7 +67,7 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
-    "<div class=\"col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-9 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2> Assumptions...</h2>\n" +
     "	<h3>“That's what we think they want.”</h3>\n" +
     "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.<br>\n" +
@@ -81,11 +81,8 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "	<p class=\"hidden-xs hidden-sm\">I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
     "	The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
     "	The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
-    "\n" +
-    "\n" +
-    "\n" +
     "</div>\n" +
-    "<div class=\"col-lg-14 col-lg-offset-1 col-md-14 col-md-offset-1 col-sm-14 col-sm-offset-1 col-xs-24 col-xs-offset-0 hidden-xs\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0 hidden-xs\">\n" +
     "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
     "</div>\n" +
     "");
@@ -98,7 +95,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "	<h3>Social features for visitor's engagement</h3>\n" +
     "</div>\n" +
     "\n" +
-    "<div class=\"col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-9 col-sm-offset-0 col-xs-24 col-xs-offset-0 \">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-7 col-md-10 col-md-offset-7 col-sm-11 col-sm-offset-6 col-xs-24 col-xs-offset-0 \">\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
     "\n" +
     "	The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.<br>\n" +
@@ -109,7 +106,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "\n" +
     "	<p>Visitors can contribute and share their observations and knowledge, no matter what their <i>cultural capital</i> is, which creates a feeling of being valuable.</p></a>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-14 col-lg-offset-1 col-md-14 col-md-offset-1 col-sm-14 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112958657' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
@@ -239,13 +236,13 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
     "	<h1 id=\"transcriptHeader\"></h1>\n" +
     "	<p id=\"transcriptSnippet\"></p>\n" +
     "	<div id=\"transcriptIMG\"></div>\n" +
     "</div>\n" +
     "\n" +
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-11 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "<!-- 	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote> -->\n" +
     "	<div id=\"photoPiece\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
@@ -257,7 +254,7 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
 
 angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/survey.html",
-    "<div class=\"col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-9 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>No comment on the Masterpieces.</h2>\n" +
     "	<h3>“I know they are important.”</h3>\n" +
     "	<p>The qualitative survey had twelve participants who belong to four of the five  visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.</p> \n" +
@@ -274,7 +271,7 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "</div>\n" +
     "\n" +
     "</div>\n" +
-    "<div class=\"col-lg-14 col-lg-offset-1 col-md-14 col-md-offset-1 col-sm-14 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<img class=\"infographic\" src=\"images/webimages/infographic_new.jpg\">\n" +
     "</div>\n" +
     "");
@@ -301,13 +298,13 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-24 col-lg-offset-0 col-md-24 col-md-offset-0 col-sm-14 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-md hidden-lg\">\n" +
+    "<div class=\"col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-md hidden-lg\">\n" +
     "	<h2>...and how to get rid of them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
