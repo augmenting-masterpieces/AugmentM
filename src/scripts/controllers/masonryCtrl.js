@@ -49,7 +49,11 @@
 					}
 				});
 
-				console.log(photoData.src);
+
+				// Angular templating Tryout -> To use ngAnimate (and to learn how to make things easyer)
+				// vm.name = photoData.name;
+				// vm.snippet = photoData.transcriptSnippet;
+				// vm.src = photoData.src;
 
 				$(evt.currentTarget).toggleClass("itemClicked");
 				$("#transcriptHeader").html(photoData.name);
@@ -57,7 +61,7 @@
 				$("#transcriptIMG").html("<img src=\"" + photoData.src + "\"></img>");
 
 
-				$('#photoPiece').packery();
+				// $('#photoPiece').packery();
 	    }
 
 	    function masonryConfig() {
@@ -71,6 +75,8 @@
 					});
 				});
 	    }
+
+	    this.hello = "bye";
 
     return vm;
 	}

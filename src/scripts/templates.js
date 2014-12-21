@@ -90,7 +90,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-9 col-lg-offset-7 col-md-10 col-md-offset-7 col-sm-11 col-sm-offset-6 col-xs-24 col-xs-offset-0 \">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-7 col-md-10 col-md-offset-7 col-sm-11 col-sm-offset-6 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
@@ -233,9 +233,9 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
-    "	<h1 id=\"transcriptHeader\"></h1>\n" +
-    "	<p id=\"transcriptSnippet\"></p>\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">	\n" +
+    "	<h1 id=\"transcriptHeader\">{{mason.hello}}</h1>\n" +
+    "	<p id=\"transcriptSnippet\">{{mason.snippet}}</p>\n" +
     "	<div id=\"transcriptIMG\"></div>\n" +
     "</div>\n" +
     "\n" +

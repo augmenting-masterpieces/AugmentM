@@ -166,10 +166,16 @@ img {
 
 // Masonry
 
+
+
 .masonry {
 	blockquote {
 		margin-bottom: 0;
 	}
+	.legend {
+		max-height: 800%;
+   		// transition: height 1s ease-out;
+  	}
 }
 
 #photoPiece {
