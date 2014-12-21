@@ -2,7 +2,7 @@ angular.module('templates-augm', ['../templates/content/about.html', '../templat
 
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
-    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>People</h1>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
@@ -26,7 +26,7 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
     "		<p>Robert-Jan Korteschiel</p>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\" >\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
     "	<h1>Contact</h1>\n" +
     "	<p>Johanna Barnbeck</p>\n" +
     "	<p>Locatie 13</p>\n" +
@@ -78,9 +78,9 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "	<br>\n" +
     "	<h2 class=\"hidden-xs hidden-sm\">...and how to get rid of them.</h2>\n" +
     "	<h3 class=\"hidden-xs hidden-sm\">Visual Feedback Methods</h3>\n" +
-    "	<p class=\"hidden-xs hidden-sm\">I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
-    "	The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
-    "	The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
+    "	<p class=\"hidden-xs hidden-sm\">I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.</p>\n" +
+    "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
+    "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0 hidden-xs\">\n" +
     "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
@@ -90,12 +90,9 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"container-fluid\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-7 col-md-10 col-md-offset-7 col-sm-11 col-sm-offset-6 col-xs-24 col-xs-offset-0 \">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
-    "</div>\n" +
-    "\n" +
-    "<div class=\"col-lg-9 col-lg-offset-7 col-md-10 col-md-offset-7 col-sm-11 col-sm-offset-6 col-xs-24 col-xs-offset-0 \">\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
     "\n" +
     "	The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.<br>\n" +
@@ -116,7 +113,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
 
 angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/evaluation.html",
-    "<div class=\"col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Process Evaluation</h2>\n" +
     "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”<br>\n" +
     "\n" +
@@ -126,7 +123,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "\n" +
     "	The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-5 col-md-9 col-md-offset-5 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Concluding Remarks</h1>\n" +
     "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.<br>\n" +
     "\n" +
@@ -279,14 +276,14 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/theory.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/theory.html",
-    "<div class=\"col-lg-9 col-lg-offset-0 col-md-9 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Social augmentation vs. technological masterpieces?</h2>\n" +
     "	<h3>Project objectives</h3>\n" +
     "	<p>'Augmentation' is currently often brought up in relation to 'augmented reality' which uses a virtual layer over what we conceive as our real life. Often the use of the word goes hand in hand with a supposed technological innovation, and also our project title suggests that a superimposed “computer-generated image on a user's view of the real world, thus providing a composite view”1 will be in the centre of attention.<br> \n" +
     "	However, the research at stake is not implying an augmented reality but much rather the process of augmentation of artworks in the Rijksmuseum by means of technology.<br> \n" +
     "	When the literal meaning of 'augmentation' simply describes it as 'make something greater by adding to it', 'to increase' or the 'act of making greater'2, the questions arise of (a) what aspects of the artworks should be highlighted, (b) for whom, (c) how does the interface between the object and the viewer look like and (d) through which digital device and software will the work of art be enhanced? </p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-5 col-md-9 col-md-offset-5 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Interdisciplinary approach</h1>\n" +
     "	<p>In order to tackle the first two questions, the design thinking method was used for structuring the whole process of the project, substituted by Visual Feedback Methods which are partly taken from the design thinking toolbox3 and partly developed in my artistic research practice throughout the past years.<br> \n" +
     "	Embedded research projects stimulate collaborations between cultural institutions, the creative industries and universities.<br> \n" +
