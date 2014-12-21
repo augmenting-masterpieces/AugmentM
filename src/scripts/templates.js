@@ -26,7 +26,7 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
     "		<p>Robert-Jan Korteschiel</p>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
     "	<h1>Contact</h1>\n" +
     "	<p>Johanna Barnbeck</p>\n" +
     "	<p>Locatie 13</p>\n" +
@@ -102,6 +102,7 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "	<p>Through engaging on more general terms with the surrounding, people will be more likely to find their own access to the museum and ultimately to the artworks in it.</p>\n" +
     "\n" +
     "	<p>Visitors can contribute and share their observations and knowledge, no matter what their <i>cultural capital</i> is, which creates a feeling of being valuable.</p></a>\n" +
+    "	<br>\n" +
     "</div>\n" +
     "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
