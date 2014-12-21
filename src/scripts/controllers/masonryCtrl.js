@@ -55,13 +55,10 @@
 				// vm.snippet = photoData.transcriptSnippet;
 				// vm.src = photoData.src;
 
-				$(evt.currentTarget).toggleClass("itemClicked");
-				$("#transcriptHeader").html(photoData.name);
-				$("#transcriptSnippet").html(photoData.transcriptSnippet);
-				$("#transcriptIMG").html("<img src=\"" + photoData.src + "\"></img>");
-
-
-				// $('#photoPiece').packery();
+				// $(evt.currentTarget).toggleClass("itemClicked");
+				$(".legend").fadeOut(function(){
+					$(this).html("<h1>" + photoData.name + "</h1><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
+				});
 	    }
 
 	    function masonryConfig() {

@@ -123,7 +123,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "\n" +
     "	The critical feedback we received matched our hypothesis that visitors of the 'cultural professional'-group, who already know how they can personally interact with the museum setting, required and appreciated the informal quality of the stories less than visitors of the other categories. However, all of the visitors said that it made their museum visit more interactive and brought in different perspectives they wouldn't have thought of themselves.</p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Concluding Remarks</h1>\n" +
     "	<p>Visitors largely appreciated the possibility of submitting own stories and trivia questions, and were tempted to do so.<br>\n" +
     "\n" +
@@ -156,10 +156,10 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/literature.html",
-    "<div class=\"container-fluid\">\n" +
+    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Literature</h1>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 literatureDiv\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 literatureDiv\">\n" +
     "	<ul>\n" +
     "		<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
     "\n" +
@@ -197,7 +197,7 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
     "\n" +
     "	</ul>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "    <ul>\n" +
     "		<li>Parry, Ross. Museums in a Digital Age. New York: Routledge, 2010. Print.</li>\n" +
     "\n" +
@@ -233,10 +233,7 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
 
 angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/masonryviewer.html",
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">	\n" +
-    "	<h1 id=\"transcriptHeader\"></h1>\n" +
-    "	<p id=\"transcriptSnippet\"></p>\n" +
-    "	<div id=\"transcriptIMG\"></div>\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
@@ -276,14 +273,14 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/theory.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/theory.html",
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Social augmentation vs. technological masterpieces?</h2>\n" +
     "	<h3>Project objectives</h3>\n" +
     "	<p>'Augmentation' is currently often brought up in relation to 'augmented reality' which uses a virtual layer over what we conceive as our real life. Often the use of the word goes hand in hand with a supposed technological innovation, and also our project title suggests that a superimposed “computer-generated image on a user's view of the real world, thus providing a composite view”1 will be in the centre of attention.<br> \n" +
     "	However, the research at stake is not implying an augmented reality but much rather the process of augmentation of artworks in the Rijksmuseum by means of technology.<br> \n" +
     "	When the literal meaning of 'augmentation' simply describes it as 'make something greater by adding to it', 'to increase' or the 'act of making greater'2, the questions arise of (a) what aspects of the artworks should be highlighted, (b) for whom, (c) how does the interface between the object and the viewer look like and (d) through which digital device and software will the work of art be enhanced? </p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Interdisciplinary approach</h1>\n" +
     "	<p>In order to tackle the first two questions, the design thinking method was used for structuring the whole process of the project, substituted by Visual Feedback Methods which are partly taken from the design thinking toolbox3 and partly developed in my artistic research practice throughout the past years.<br> \n" +
     "	Embedded research projects stimulate collaborations between cultural institutions, the creative industries and universities.<br> \n" +
