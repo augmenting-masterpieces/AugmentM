@@ -32,11 +32,14 @@ main {
 		h1{
 			font-size: 3.6em;
 			margin-bottom: 0px;
-			span {
+			span.capitalisation {
 				display: inline-block;
 				&:first-letter {
 					font-size: 1.2em;
 				}
+			}
+			span.hideclasss {
+				display: inline-block;
 			}
 		}
 
