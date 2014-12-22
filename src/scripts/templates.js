@@ -1,4 +1,4 @@
-angular.module('templates-augm', ['../templates/content/about.html', '../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html']);
+angular.module('templates-augm', ['../templates/content/about.html', '../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/processmap.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html']);
 
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
@@ -251,6 +251,19 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "");
 }]);
 
+angular.module("../templates/content/processmap.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/processmap.html",
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
+    "\n" +
+    "</div>\n" +
+    "\n" +
+    "\n" +
+    "");
+}]);
+
 angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/survey.html",
     "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
@@ -316,6 +329,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
+    "<section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo Analyse\">\n" +
