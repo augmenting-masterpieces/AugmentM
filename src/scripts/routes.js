@@ -24,7 +24,11 @@
       .state('displayorderHome.withSubroutes', {
         url: '/home',
         views: {
-          "header": { templateUrl: "../templates/content/header.html" },
+          "header": { 
+            templateUrl: "../templates/content/header.html",
+            controller: 'HeaderCtrl as head'                
+          },
+          "processmap": { templateUrl: "../templates/content/processmap.html" },
           "assumptions": { templateUrl: "../templates/content/assumptions.html" },
           "usercamerastudy": { templateUrl: "../templates/content/usercamerastudy.html" },
           "survey": { templateUrl: "../templates/content/survey.html" },

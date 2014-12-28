@@ -1,4 +1,4 @@
-angular.module('templates-augm', ['../templates/content/about.html', '../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html']);
+angular.module('templates-augm', ['../templates/content/about.html', '../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/processmap.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html']);
 
 angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/about.html",
@@ -90,13 +90,17 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
 
 angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/demo.html",
-    "<div class=\"col-lg-9 col-lg-offset-7 col-md-10 col-md-offset-7 col-sm-11 col-sm-offset-6 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-20 col-lg-offset-2 col-md-20 col-md-offset-1 col-sm-20 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<p>The visitor's experience of the Rijksmuseum and the interaction of visitors with artworks are necessarily embedded in a strong social framework. As the museum adheres to a large number of social rules it is often thought of as a rather intimidating place, than a place for learning and curiosity and as a visitor, one cannot get anywhere close to knowing everything about the collection.<br>\n" +
     "\n" +
     "	The vast amount of knowledge that is bundled in and around the museum often reminds visitors of their insufficient knowledge, which therefore lets them feel slightly awkward when walking through the exhibition.<br>\n" +
-    "\n" +
+    "	</p>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<p>Rather than trying to attempt to engage people with in-depth (art) historical background information about art works, we set up three ways of social interaction on a broader range with the museum and the other visitors.</p>\n" +
     "\n" +
     "	<p>Through engaging on more general terms with the surrounding, people will be more likely to find their own access to the museum and ultimately to the artworks in it.</p>\n" +
@@ -143,8 +147,8 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
   $templateCache.put("../templates/content/header.html",
     "<div class=\"col-lg-12 col-lg-offset-7 col-md-14 col-md-offset-7 col-sm-18 col-sm-offset-6 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"title\">\n" +
-    "		<h1><span>AUGMENTING</span>&nbsp;<span> MASTERPIECES</span></h1>\n" +
-    "		<p>Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
+    "		<h1><span class=\"capitalisation\"><span class=\"fadeclass\">A</span><span class=\"fadeclass\">U</span><span class=\"fadeclass\">G</span><span class=\"fadeclass\">M</span><span class=\"fadeclass\">E</span><span class=\"fadeclass\">N</span><span class=\"fadeclass\">T</span><span class=\"fadeclass\">I</span><span class=\"fadeclass\">N</span><span class=\"fadeclass\">G</span></span>&nbsp;<span class=\"capitalisation\"><span class=\"fadeclass\">M</span><span class=\"fadeclass\">A</span><span class=\"fadeclass\">S</span><span class=\"fadeclass\">T</span><span class=\"fadeclass\">E</span><span class=\"fadeclass\">R</span><span class=\"fadeclass\">P</span><span class=\"fadeclass\">I</span><span class=\"fadeclass\">E</span><span class=\"fadeclass\">C</span><span class=\"fadeclass\">E</span><span class=\"fadeclass\">S</span></span></h1>\n" +
+    "		<p class=\"headerText\">Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
     "		<div class=\"logos\">\n" +
     "			<a href=\"https://www.rijksmuseum.nl/\"><img src=\"./images/logos/rijkswhite.png\"></a>\n" +
     "			\n" +
@@ -160,7 +164,7 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
     "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Literature</h1>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 literatureDiv\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 literatureDiv\">\n" +
     "	<ul>\n" +
     "		<li>A Touch of Code. Interactive Installations and Experiences. Ed. Robert Klanten, Sven Ehmann, and Verena Hanschke. Berlin: Gestalten, 2011. Print.</li>\n" +
     "\n" +
@@ -198,7 +202,7 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
     "\n" +
     "	</ul>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-2 col-md-10 col-md-offset-2 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "    <ul>\n" +
     "		<li>Parry, Ross. Museums in a Digital Age. New York: Routledge, 2010. Print.</li>\n" +
     "\n" +
@@ -243,6 +247,19 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "		<div class=\"grid-sizer\"></div>\n" +
     "	</div>\n" +
     "</div>\n" +
+    "\n" +
+    "");
+}]);
+
+angular.module("../templates/content/processmap.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/content/processmap.html",
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
+    "\n" +
+    "</div>\n" +
+    "\n" +
     "\n" +
     "");
 }]);
@@ -312,6 +329,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
+    "<section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo Analyse\">\n" +
