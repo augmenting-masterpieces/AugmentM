@@ -359,15 +359,15 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/footer.html",
     "<div class=\"sitemap\">\n" +
-    "	<a> Home </a> &nbsp;\n" +
-    "	<a> Understand and Observe</a>&nbsp;\n" +
-    "	<a> Analyse and Ideate </a>&nbsp;\n" +
-    "	<a> Prototype and Test </a>&nbsp;\n" +
-    "	<a> Evaluate and Outlook </a>&nbsp;\n" +
-    "	<a> Theory and Methods </a>&nbsp;\n" +
-    "	<a> About </a>\n" +
+    "	<a href=\"#main\"> Home </a> &nbsp;\n" +
+    "	<a href=\"#understand\"> Understand and Observe</a>&nbsp;\n" +
+    "	<a href=\"#analyse\"> Analyse and Ideate </a>&nbsp;\n" +
+    "	<a href=\"#prototype\"> Prototype and Test </a>&nbsp;\n" +
+    "	<a href=\"#evaluate\"> Evaluate and Outlook </a>&nbsp;\n" +
+    "	<a href=\"#theory\"> Theory and Methods </a>&nbsp;\n" +
+    "	<a href=\"#about\"> About </a>\n" +
     "</div>\n" +
-    "<p>Last update: Thursday 27 Oktober 2014 - Augmenting Masterpieces</p>\n" +
+    "<p>4 Januari 2015 - Augmenting Masterpieces</p>\n" +
     "\n" +
     "");
 }]);
