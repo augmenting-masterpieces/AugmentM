@@ -44,6 +44,7 @@
         }
       });
 
-    // $urlRouterProvider.when('/', '/home');
+    $urlRouterProvider.when('', '/');
+    $urlRouterProvider.otherwise('/');
   }
 })();
