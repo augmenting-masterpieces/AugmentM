@@ -58,7 +58,7 @@ main {
 	}
 
 	.subtitle {
-		margin-left: 25px;
+		// margin-left: 25px;
 		padding-top: 80px;
 		position: absolute;
 		bottom: 10px;
@@ -79,7 +79,7 @@ main {
 	position: relative;
 
 	h1 {
-		margin-left: 25px;
+		// margin-left: 25px;
 		position: absolute;
 		padding-top: 400px;
 		bottom: 10px; 
@@ -113,6 +113,8 @@ main {
 	&.about {
 		background: url(./images/webimages/W4A3367.jpg) no-repeat center center / cover;
 	}
+
+
 }
 
 @media only screen 
@@ -169,48 +171,50 @@ img {
 
 // Masonry
 
-
-
 .masonry {
+
 	blockquote {
 		margin-bottom: 0;
 	}
+
 	.legend {
 		max-height: 800%;
    		// transition: height 1s ease-out;
   	}
-}
 
-#photoPiece {
-	height: 80%;
-	overflow: hidden;
-	margin-top: 24px;
+  	#photoPiece {
+		height: 80%;
+		overflow: hidden;
+		margin-top: 24px;
 
-	img {
-		margin-top: 0;
-		width: auto;
-	}
-
-	.grid-sizer {
-		width: 20%;
-	}
-
-	.item { 
-		width: 20%;
-		padding: 5px;
 		img {
-			width: 100%;
-			height: auto;
-			&:hover {
-				cursor: pointer;
+			margin-top: 0;
+			width: auto;
+		}
+
+		.grid-sizer {
+			width: 20%;
+		}
+
+		.item { 
+			width: 20%;
+			padding: 5px;
+			img {
+				width: 100%;
+				height: auto;
+				&:hover {
+					cursor: pointer;
+				}
 			}
 		}
-	}
 
-	.itemText {
-		display: none;
+		.itemText {
+			display: none;
+		}
 	}
 }
+
+
 
 // Literature
 
@@ -246,9 +250,7 @@ img {
 		border-left: solid 5px $brand-primary;
 		padding-left: 10px;
 		float: left;
-
 	}
-
 }
 
 // Footer
