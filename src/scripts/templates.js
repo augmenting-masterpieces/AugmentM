@@ -151,7 +151,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div> \n" +
     "</div>\n" +
-    "<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 subtitle\"><span>Understand</span> and <span>Observe</span></h1>");
+    "<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 subtitle\"><span>Process</span></h1>");
 }]);
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
@@ -387,9 +387,12 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
     "<section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
+    "<section class=\"row block intermezzo understand\">\n" +
+    "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
+    "</section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
-    "<section class=\"row block intermezzo Analyse\">\n" +
+    "<section class=\"row block intermezzo analyse\">\n" +
     "	<h1 id=\"analyse\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
     "</section>\n" +
     "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
