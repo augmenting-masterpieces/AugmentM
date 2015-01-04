@@ -9,7 +9,7 @@
     // console.log($(".fadeclass")[0]);
 
     $(".fadeclass").map(function(){
-    	var time = Math.random() * (6000 - 2000) + 2000;
+    	var time = Math.random() * (5000 - 1000) + 1000;
         $(this).fadeTo(1, 0).delay(time).fadeTo(1000, 1);
     });
 
