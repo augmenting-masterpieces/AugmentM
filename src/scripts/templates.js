@@ -76,11 +76,6 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "\n" +
     "	<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "	<br>\n" +
-    "	<h2 class=\"hidden-xs hidden-sm\">...and how to get rid of them.</h2>\n" +
-    "	<h3 class=\"hidden-xs hidden-sm\">Visual Feedback Methods</h3>\n" +
-    "	<p class=\"hidden-xs hidden-sm\">I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.</p>\n" +
-    "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
-    "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0 hidden-xs\">\n" +
     "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
@@ -156,7 +151,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "		</div>\n" +
     "	</div> \n" +
     "</div>\n" +
-    "<h1 id=\"understand\" class=\"subtitle\"><span>Understand</span> and <span>Observe</span></h1>");
+    "<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 subtitle\"><span>Process</span></h1>");
 }]);
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
@@ -253,13 +248,74 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
 
 angular.module("../templates/content/processmap.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/processmap.html",
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "\n" +
+    "<div>\n" +
+    "	<div class=\"col-lg-6 col-lg-offset-2 col-md-22 col-md-offset-1 col-sm-20 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h1>Understand and Observe</h1>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-0\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-20 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ducimus eos magni in, culpa animi obcaecati quidem totam hic, nostrum veniam, et corporis molestias facilis nobis ex assumenda vel accusamus suscipit. Culpa quisquam dignissimos quam modi, ipsum hic vitae sit sunt, eligendi officia nesciunt magni atque nisi et ducimus voluptate.</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-7 col-sm-4 col-sm-offset-5 col-xs-4 col-xs-offset-2\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-18 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at dolor sapiente quod rerum praesentium blanditiis nobis, amet minus quaerat quisquam a nihil laudantium unde iure, recusandae, reprehenderit aperiam. Numquam, libero magni pariatur fugiat ab iste minus fuga, omnis ea nemo saepe? Cum, vitae, recusandae. Sunt iure est dolore placeat!</p>\n" +
+    "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
-    "\n" +
+    "<div>\n" +
+    "	<div class=\"col-lg-6 col-lg-offset-2 col-md-22 col-md-offset-1 col-sm-20 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h1>Analyse and Ideate</h1>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-0\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-20 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ducimus eos magni in, culpa animi obcaecati quidem totam hic, nostrum veniam, et corporis molestias facilis nobis ex assumenda vel accusamus suscipit. Culpa quisquam dignissimos quam modi, ipsum hic vitae sit sunt, eligendi officia nesciunt magni atque nisi et ducimus voluptate.</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-7 col-sm-4 col-sm-offset-5 col-xs-4 col-xs-offset-2\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-18 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at dolor sapiente quod rerum praesentium blanditiis nobis, amet minus quaerat quisquam a nihil laudantium unde iure, recusandae, reprehenderit aperiam. Numquam, libero magni pariatur fugiat ab iste minus fuga, omnis ea nemo saepe? Cum, vitae, recusandae. Sunt iure est dolore placeat!</p>\n" +
+    "	</div>\n" +
     "</div>\n" +
-    "\n" +
+    "<div>\n" +
+    "	<div class=\"col-lg-6 col-lg-offset-2 col-md-22 col-md-offset-1 col-sm-20 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h1>Prototype and Test</h1>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-0\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-20 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ducimus eos magni in, culpa animi obcaecati quidem totam hic, nostrum veniam, et corporis molestias facilis nobis ex assumenda vel accusamus suscipit. Culpa quisquam dignissimos quam modi, ipsum hic vitae sit sunt, eligendi officia nesciunt magni atque nisi et ducimus voluptate.</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-7 col-sm-4 col-sm-offset-5 col-xs-4 col-xs-offset-2\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-18 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at dolor sapiente quod rerum praesentium blanditiis nobis, amet minus quaerat quisquam a nihil laudantium unde iure, recusandae, reprehenderit aperiam. Numquam, libero magni pariatur fugiat ab iste minus fuga, omnis ea nemo saepe? Cum, vitae, recusandae. Sunt iure est dolore placeat!</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
+    "<div>\n" +
+    "	<div class=\"col-lg-6 col-lg-offset-2 col-md-22 col-md-offset-1 col-sm-20 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h1>Evaluate and Outlook</h1>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-2 col-sm-4 col-sm-offset-1 col-xs-4 col-xs-offset-0\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-20 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod ducimus eos magni in, culpa animi obcaecati quidem totam hic, nostrum veniam, et corporis molestias facilis nobis ex assumenda vel accusamus suscipit. Culpa quisquam dignissimos quam modi, ipsum hic vitae sit sunt, eligendi officia nesciunt magni atque nisi et ducimus voluptate.</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-2 col-lg-offset-0 col-md-4 col-md-offset-7 col-sm-4 col-sm-offset-5 col-xs-4 col-xs-offset-2\">\n" +
+    "		<p class=\"arrow\">&#8594;</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-5 col-lg-offset-0 col-md-10 col-md-offset-0 col-sm-11 col-sm-offset-0 col-xs-18 col-xs-offset-0\">\n" +
+    "		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis at dolor sapiente quod rerum praesentium blanditiis nobis, amet minus quaerat quisquam a nihil laudantium unde iure, recusandae, reprehenderit aperiam. Numquam, libero magni pariatur fugiat ab iste minus fuga, omnis ea nemo saepe? Cum, vitae, recusandae. Sunt iure est dolore placeat!</p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "\n" +
     "");
 }]);
@@ -284,7 +340,7 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "\n" +
     "</div>\n" +
     "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-12 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<img class=\"infographic\" src=\"images/webimages/infographic_new.jpg\">\n" +
+    "	<img src=\"images/webimages/infographic_new.jpg\">\n" +
     "</div>\n" +
     "");
 }]);
@@ -310,48 +366,52 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
-    "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "</div>\n" +
-    "<div class=\"col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-md hidden-lg\">\n" +
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>...and how to get rid of them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
-    "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey.<br> \n" +
-    "	The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.<br>\n" +
-    "	The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
+    "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey. </p>\n" +
     "</div>\n" +
-    "");
+    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
+    "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
+    "</div>");
 }]);
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
     "<section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
+    "<section class=\"row block intermezzo understand\">\n" +
+    "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
+    "</section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
-    "<section class=\"row block intermezzo Analyse\">\n" +
-    "	<h1 id=\"analyse\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
+    "<section class=\"row block intermezzo analyse\">\n" +
+    "	<h1 id=\"analyse\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
     "</section>\n" +
     "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
     "<section class=\"row block intermezzo proto\">\n" +
-    "	<h1 id=\"prototype\"><span>Prototype</span> and <span>Test</span></h1>\n" +
+    "	<h1 id=\"prototype\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Prototype</span> and <span>Test</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo evaluate\">\n" +
-    "	<h1 id=\"evaluate\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
+    "	<h1 id=\"evaluate\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
     "<section class=\"row block intermezzo theory\">\n" +
-    "	<h1 id=\"theory\"><span>Theory</span> and <span>Methods</span></h1>\n" +
+    "	<h1 id=\"theory\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Theory</span> and <span>Methods</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
     "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
     "<section class=\"row block intermezzo about\">\n" +
-    "	<h1 id=\"about\"><span>About</span></h1>\n" +
+    "	<h1 id=\"about\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>About</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"about\" class=\"row block people\"></section>");
 }]);
@@ -359,15 +419,15 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/footer.html",
     "<div class=\"sitemap\">\n" +
-    "	<a> Home </a> &nbsp;\n" +
-    "	<a> Understand and Observe</a>&nbsp;\n" +
-    "	<a> Analyse and Ideate </a>&nbsp;\n" +
-    "	<a> Prototype and Test </a>&nbsp;\n" +
-    "	<a> Evaluate and Outlook </a>&nbsp;\n" +
-    "	<a> Theory and Methods </a>&nbsp;\n" +
-    "	<a> About </a>\n" +
+    "	<a href=\"#main\"> Home </a> &nbsp;\n" +
+    "	<a href=\"#understand\"> Understand and Observe</a>&nbsp;\n" +
+    "	<a href=\"#analyse\"> Analyse and Ideate </a>&nbsp;\n" +
+    "	<a href=\"#prototype\"> Prototype and Test </a>&nbsp;\n" +
+    "	<a href=\"#evaluate\"> Evaluate and Outlook </a>&nbsp;\n" +
+    "	<a href=\"#theory\"> Theory and Methods </a>&nbsp;\n" +
+    "	<a href=\"#about\"> About </a>\n" +
     "</div>\n" +
-    "<p>Last update: Thursday 27 Oktober 2014 - Augmenting Masterpieces</p>\n" +
+    "<p>4 Januari 2015 - Augmenting Masterpieces</p>\n" +
     "\n" +
     "");
 }]);

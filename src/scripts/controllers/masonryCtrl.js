@@ -39,9 +39,14 @@
 
 	    function galleryChange(evt) {
 	    	// galleryChange
-				var photoData = {};
-				var photoNumber = $(evt.target).attr("data");
 
+				if ($(evt.target).attr("data")) {
+					var photoData = {};
+					var photoNumber = $(evt.target).attr("data");
+				} else {
+					return false;
+				}
+				
 				// Necessary loop because toplevel key is not set
 				$(evt.data.photos).each(function(){
 					if (this.number == photoNumber){
@@ -50,13 +55,11 @@
 					}
 				});
 
-
 				// Angular templating Tryout -> To use ngAnimate (and to learn how to make things easyer)
 				// vm.name = photoData.name;
 				// vm.snippet = photoData.transcriptSnippet;
 				// vm.src = photoData.src;
 
-				// $(evt.currentTarget).toggleClass("itemClicked");
 				$(".legend").fadeOut(function(){
 					$(this).html("<h1>" + photoData.name + "</h1><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
 				});
