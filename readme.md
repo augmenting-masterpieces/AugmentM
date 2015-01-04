@@ -9,4 +9,4 @@ To use this:
 - run npm install
 - run grunt
 
-And you website is visible on localhost:3333
+The website is now visible on localhost:3333
