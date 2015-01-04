@@ -367,7 +367,6 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
     "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<blockquote>For the User Video Study, I asked children to wear a camera during their museum visit as their perspective is not only physically different, but their view and span of attention is less trained yet compared to adults.</blockquote>\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
@@ -391,7 +390,7 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
     "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
     "</section>\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
-    "<section ui-view=\"usercamerastudy\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"usercamerastudy\" class=\"row block userCameraStudy\"></section>\n" +
     "<section class=\"row block intermezzo analyse\">\n" +
     "	<h1 id=\"analyse\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
     "</section>\n" +
