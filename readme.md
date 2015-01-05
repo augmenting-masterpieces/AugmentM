@@ -2,10 +2,10 @@
 
 This is the source for the Augmenting Masterpieces site.
 
-Dependencies: Node, Grunt and Ruby with compass gem. 
+Dev-dependencies: Node, Grunt, Bower and Ruby with Compass gem. 
 
 To use this:
-- Clone the Repo
+- Clone the repo
 - run npm install
 - run grunt
 
