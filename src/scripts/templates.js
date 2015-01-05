@@ -150,8 +150,7 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "			<a href=\"http://cdh.uva.nl/\"><img src=\"./images/logos/uvalogowhite.png\"></a>\n" +
     "		</div>\n" +
     "	</div> \n" +
-    "</div>\n" +
-    "<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0 subtitle\"><span>Process</span></h1>");
+    "</div>");
 }]);
 
 angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
