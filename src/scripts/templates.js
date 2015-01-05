@@ -383,7 +383,7 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
-    "<section ui-view=\"header\" id=\"main\" class=\"row block maintro\"></section>\n" +
+    "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
     "<section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
     "<section class=\"row block intermezzo understand\">\n" +
     "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
