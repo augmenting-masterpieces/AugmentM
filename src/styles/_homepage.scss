@@ -136,19 +136,7 @@ img {
 	width: 100%;
 }
 
-// processblock 
-
-.assumptions {
-	.overflow-container {
-		overflow: hidden;
-	}
-	.image-container {
-		position: relative;
-	}
-	img {
-		position: absolute;
-	}
-}
+// Individual Blocks
 
 .processmap {
 	.arrow {
@@ -160,6 +148,25 @@ img {
 			text-decoration: none;
 			color: $rijksmiddengrijs;
 		}
+	}
+}
+
+.assumptions {
+	.overflow-container {
+		overflow: hidden;
+	}
+	.image-container {
+		position: relative;
+	}
+	img {
+		position: absolute;
+		padding-right: ($grid-gutter-width);
+	}
+}
+
+.userCameraStudy {
+	.embed-container {
+		margin-top: 24px;
 	}
 }
 
@@ -186,12 +193,6 @@ img {
 
 // UserCamaraStudy margins arround video
 
-.userCameraStudy {
-	.embed-container {
-		margin-top: 25px;
-		margin-bottom: 50px;
-	}
-}
 
 
 

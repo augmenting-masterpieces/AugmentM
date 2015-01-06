@@ -68,7 +68,7 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
     "<div class=\"overflow-container\">\n" +
-    "	<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "	<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "		<h2> Assumptions...</h2>\n" +
     "		<h3>“That's what we think they want.”</h3>\n" +
     "		<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.</p>\n" +
@@ -77,7 +77,7 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "\n" +
     "		<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
     "	</div>\n" +
-    "	<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-xs image-container\">\n" +
+    "	<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-xs image-container\">\n" +
     "		<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
     "	</div>\n" +
     "</div>\n" +
@@ -366,17 +366,18 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "\n" +
+    "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>...and how to get rid of them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey. </p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
     "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
     "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
     "</div>");
