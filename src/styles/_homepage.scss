@@ -136,7 +136,7 @@ img {
 	width: 100%;
 }
 
-// processblock 
+// Individual Blocks
 
 .processmap {
 	.arrow {
@@ -148,6 +148,25 @@ img {
 			text-decoration: none;
 			color: $rijksmiddengrijs;
 		}
+	}
+}
+
+.assumptions {
+	.overflow-container {
+		overflow: hidden;
+	}
+	.image-container {
+		position: relative;
+	}
+	img {
+		position: absolute;
+		padding-right: ($grid-gutter-width);
+	}
+}
+
+.userCameraStudy {
+	.embed-container {
+		margin-top: 24px;
 	}
 }
 
@@ -174,12 +193,6 @@ img {
 
 // UserCamaraStudy margins arround video
 
-.userCameraStudy {
-	.embed-container {
-		margin-top: 25px;
-		margin-bottom: 50px;
-	}
-}
 
 
 
@@ -265,23 +278,22 @@ img {
 
 // Footer
 footer {
-	height: 150px;
 	color: lighten($brand-primary, 60%);
 	padding-top: 40px;
+	padding-bottom: 40px;
 	font-size: 0.9em;
-	text-align: center;
 	background: $brand-primary;
-	color: white;
+	// color: white;
 	
 	a {
-		color: white;
+		color: lighten($brand-primary, 60%);
 		&:hover {
 			color: white;
 		}
 	}
 
-	.sitemap {
-		margin-bottom: 10px;
+	p.copyright {
+		padding-top: 10px;
 	}
 }
 

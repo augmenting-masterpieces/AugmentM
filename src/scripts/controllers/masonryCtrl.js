@@ -61,7 +61,7 @@
 				// vm.src = photoData.src;
 
 				$(".legend").fadeOut(function(){
-					$(this).html("<h1>" + photoData.name + "</h1><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
+					$(this).html("<h1>" + photoData.name + "</h1><p>\"" + photoData.quotes + "\"</p><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
 				});
 	    }
 

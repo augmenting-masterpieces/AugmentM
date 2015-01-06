@@ -67,18 +67,19 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
 
 angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/assumptions.html",
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<h2> Assumptions...</h2>\n" +
-    "	<h3>“That's what we think they want.”</h3>\n" +
-    "	<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.<br>\n" +
+    "<div class=\"overflow-container\">\n" +
+    "	<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h2> Assumptions...</h2>\n" +
+    "		<h3>“That's what we think they want.”</h3>\n" +
+    "		<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.</p>\n" +
     "\n" +
-    "	Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is just what we think they want.”</p>\n" +
+    "		<p>Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is just what we think they want.”</p>\n" +
     "\n" +
-    "	<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
-    "	<br>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-10 col-lg-offset-1 col-md-11 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-xs\">\n" +
-    "	<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
+    "		<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
+    "	</div>\n" +
+    "	<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-xs image-container\">\n" +
+    "		<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
+    "	</div>\n" +
     "</div>\n" +
     "");
 }]);
@@ -365,17 +366,18 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
-    "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class='embed-container'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "\n" +
+    "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>...and how to get rid of them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
     "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey. </p>\n" +
     "</div>\n" +
-    "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
     "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
     "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
     "</div>");
@@ -384,10 +386,10 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
     "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
-    "<section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
+    "<!-- <section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
     "<section class=\"row block intermezzo understand\">\n" +
     "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
-    "</section>\n" +
+    "</section> -->\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block userCameraStudy\"></section>\n" +
     "<section class=\"row block intermezzo analyse\">\n" +
@@ -416,17 +418,77 @@ angular.module("../templates/displayorder.html", []).run(["$templateCache", func
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/footer.html",
-    "<div class=\"sitemap\">\n" +
-    "	<a href=\"#main\"> Home </a> &nbsp;\n" +
-    "	<a href=\"#understand\"> Understand and Observe</a>&nbsp;\n" +
-    "	<a href=\"#analyse\"> Analyse and Ideate </a>&nbsp;\n" +
-    "	<a href=\"#prototype\"> Prototype and Test </a>&nbsp;\n" +
-    "	<a href=\"#evaluate\"> Evaluate and Outlook </a>&nbsp;\n" +
-    "	<a href=\"#theory\"> Theory and Methods </a>&nbsp;\n" +
-    "	<a href=\"#about\"> About </a>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#main\"> Home </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
     "</div>\n" +
-    "<p>4 Januari 2015 - Augmenting Masterpieces</p>\n" +
-    "\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> Impressum </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
     "");
 }]);
 
