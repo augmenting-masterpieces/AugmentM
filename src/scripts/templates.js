@@ -420,50 +420,74 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
   $templateCache.put("../templates/functional/footer.html",
     "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
     "	<ul class=\"list-unstyled\">\n" +
-    "		<ul class=\"list-unstyled\">\n" +
-    "			<li><h4><a href=\"#main\"> Home </a></h4></li>\n" +
-    "		</ul>\n" +
-    "		<ul class=\"list-unstyled\">\n" +
-    "			<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
-    "			<li>Assumptions</li>\n" +
-    "			<li>Film:Children</li>\n" +
-    "			<li>Losing them</li>\n" +
-    "		</ul>\n" +
-    "		<ul class=\"list-unstyled\">\n" +
-    "			<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
-    "			<li>Infographic</li>\n" +
-    "			<li>Masonry</li>\n" +
-    "		</ul>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#main\"> Home </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
     "	</ul>\n" +
     "</div>\n" +
     "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
     "	<ul class=\"list-unstyled\">\n" +
-    "		<ul class=\"list-unstyled\">\n" +
-    "			<li><a href=\"#prototype\"> Prototype and Test </a></li>\n" +
-    "		</ul>\n" +
-    "		<ul class=\"list-unstyled\">\n" +
-    "			<li><a href=\"#evaluate\"> Evaluate and Outlook </a></li>\n" +
-    "			<li>Assumptions</li>\n" +
-    "			<li>Film:Children</li>\n" +
-    "			<li>Losing them</li>\n" +
-    "		</ul>\n" +
-    "		<ul class=\"list-unstyled\">\n" +
-    "			<li><a href=\"#theory\"> Theory and Methods </a></li>\n" +
-    "			<li>Infographic</li>\n" +
-    "			<li>Masonry</li>\n" +
-    "		</ul>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
     "	</ul>\n" +
     "</div>\n" +
     "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
     "	<ul class=\"list-unstyled\">\n" +
-    "		<li><a href=\"#about\"> About </a></li>\n" +
-    "		<li><a href=\"#about\"> Impressum </a></li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> Impressum </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "		</li>\n" +
     "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-20 col-lg-offset-2 col-md-20 col-md-offset-2 col-sm-20 col-sm-offset-2 col-xs-20 col-xs-offset-2\">\n" +
-    "	<br>\n" +
-    "	<br>\n" +
-    "	<p>2015 &#169; Augmenting Masterpieces</p>\n" +
     "</div>\n" +
     "");
 }]);
