@@ -138,6 +138,18 @@ img {
 
 // processblock 
 
+.assumptions {
+	.overflow-container {
+		overflow: hidden;
+	}
+	.image-container {
+		position: relative;
+	}
+	img {
+		position: absolute;
+	}
+}
+
 .processmap {
 	.arrow {
 		padding-top: 30px;
