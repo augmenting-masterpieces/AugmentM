@@ -278,23 +278,20 @@ img {
 
 // Footer
 footer {
-	height: 150px;
 	color: lighten($brand-primary, 60%);
 	padding-top: 40px;
 	font-size: 0.9em;
-	text-align: center;
 	background: $brand-primary;
-	color: white;
+	// color: white;
 	
 	a {
-		color: white;
+		color: lighten($brand-primary, 60%);
 		&:hover {
 			color: white;
 		}
 	}
-
-	.sitemap {
-		margin-bottom: 10px;
+	p {
+		text-align: center;
 	}
 }
 
