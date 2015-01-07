@@ -25,7 +25,7 @@ main {
 
 		@media only screen 
 		and (min-width : 480px) {
-			padding-top: 120px;
+			padding-top: 50px;
 		}
 
 
@@ -49,27 +49,13 @@ main {
 			margin-bottom: 0px;
 		}
 
-		img {
+		img.alienlogos {
 			margin-top: 18px;
 			margin-right: 4%;
 			width:45%;
 			min-width: 15em;
 		}
 	}
-
-	// .subtitle {
-	// 	padding-top: 400px;
-	// 	position: absolute;
-	// 	bottom: 10px;
-	// 	text-transform: uppercase;
-
-	// 	span {
-	// 		display: inline-block;
-	// 		&:first-letter {
-	// 			font-size: 1.2em;
-	// 		}
-	// 	}
-	// }
 }
 
 // Intermezzos
