@@ -28,7 +28,7 @@ img {
 	.title {		
 		@media only screen 
 		and (min-width : 480px) {
-			padding-top: 75px;
+			padding-top: 100px;
 		}
 
 		img.alienlogos {
@@ -120,6 +120,7 @@ img {
 .userCameraStudy {
 	.videos {
 		margin-top: 24px;
+		margin-bottom: 24px;
 	}
 }
 
@@ -134,7 +135,6 @@ img {
 
   	#photoPiece {
 		height: 80%;
-		overflow: hidden;
 		margin-top: 24px;
 
 		img {
