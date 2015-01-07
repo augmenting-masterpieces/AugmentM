@@ -141,7 +141,7 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
 
 angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/header.html",
-    "<div class=\"col-lg-12 col-lg-offset-7 col-md-14 col-md-offset-7 col-sm-18 col-sm-offset-6 col-xs-24 col-xs-offset-0\">\n" +
+    "<div class=\"col-lg-10 col-lg-offset-7 col-md-12 col-md-offset-6 col-sm-16 col-sm-offset-4 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"title\">\n" +
     "		<img src=\"images/logos/augmlogo.png\" alt=\"\">\n" +
     "		<p class=\"headerText\">Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
