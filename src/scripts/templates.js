@@ -145,9 +145,13 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "	<div class=\"title\">\n" +
     "		<img src=\"images/logos/augmlogo.png\" alt=\"\">\n" +
     "		<p class=\"headerText\">Augmenting Masterpieces explores visitors' experiences and the social dimensions of a visit to the Rijksmuseum. It translates the findings into an interface which lets the visitor interact with both the physical and the digital collection. Through embedded and artistic research methods the project reduces the gap between academic research and creative production. Its results manifest in a prototype, academic articles and this multi-medial presentation.</p>\n" +
-    "		<div>\n" +
-    "			<a href=\"https://www.rijksmuseum.nl/\"><img class=\"alienlogos\" src=\"./images/logos/rijkswhite.png\"></a>\n" +
-    "			<a href=\"http://cdh.uva.nl/\"><img class=\"alienlogos\" src=\"./images/logos/uvalogowhite.png\"></a>\n" +
+    "		<div class=\"row\">\n" +
+    "			<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "				<a href=\"https://www.rijksmuseum.nl/\"><img class=\"alienlogos\" src=\"./images/logos/rijkswhite.png\"></a>\n" +
+    "			</div>\n" +
+    "			<div class=\"col-lg-12 col-lg-offset-0 col-md-12 col-md-offset-0 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "				<a href=\"http://cdh.uva.nl/\"><img class=\"alienlogos\" src=\"./images/logos/uvalogowhite.png\"></a>\n" +
+    "			</div>\n" +
     "		</div>\n" +
     "	</div> \n" +
     "</div>");
@@ -366,7 +370,7 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
     "<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<div class='embed-container'>\n" +
+    "	<div class='embed-responsive embed-responsive-16by9'>\n" +
     "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "</div>\n" +

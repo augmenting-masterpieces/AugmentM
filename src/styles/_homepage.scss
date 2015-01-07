@@ -9,50 +9,28 @@ main {
 	min-height: 100%;
 }
 
+img {
+	width: 100%;
+}
+
 // Module Specific Styling
 
 // Header module
 
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
-	position: relative;
 	color: white;
 	
-	.title {
-		margin: 0 auto;
-		padding-bottom: 50px;
-		color: white;
-
+	.title {		
 		@media only screen 
 		and (min-width : 480px) {
 			padding-top: 50px;
 		}
 
-
-		h1{
-			font-size: 3.6em;
-			margin-bottom: 0px;
-			span.capitalisation {
-				display: inline-block;
-				&:first-letter {
-					font-size: 1.2em;
-				}
-			}
-			span.hideclasss {
-				display: inline-block;
-			}
-		}
-
-		p {
-			margin-top: 0px;
-			margin-bottom: 0px;
-		}
-
 		img.alienlogos {
-			margin-top: 18px;
-			margin-right: 4%;
-			width:45%;
-			min-width: 15em;
+			margin-top: 0;
+			padding-bottom: 24px;
+			width: 100%;
 		}
 	}
 }
@@ -63,11 +41,8 @@ main {
 	position: relative;
 
 	h1 {
-		// margin-left: 25px;
 		position: absolute;
-		padding-top: 400px;
 		bottom: 10px; 
-		border-bottom: 0.5px;
 		text-transform: uppercase;
 
 		span {
@@ -101,27 +76,15 @@ main {
 	&.about {
 		background: url(./images/webimages/W4A3367.jpg) no-repeat center center / cover;
 	}
-
-
-}
-
-@media only screen 
-and (min-width : 1024px) {
-	.intermezzo {	
+	
+	@media only screen 
+	and (min-width : 1024px) {
 		&.analyse{
 			background-attachment: fixed;
 		}
 	}
+
 }
-
-// Placing images on textline
-
-img {
-	margin-top: 24px;
-	width: 100%;
-}
-
-// Individual Blocks
 
 .processmap {
 	.arrow {
@@ -145,6 +108,7 @@ img {
 	}
 	img {
 		position: absolute;
+		margin-top: 24px;
 		padding-right: ($grid-gutter-width);
 	}
 }
@@ -158,23 +122,27 @@ img {
 
 // Vimeo video styling
 
-.embed-container { 
-	position: relative;
-	margin-bottom: 20px; 
-	padding-bottom: 56.25%; 
-	height: 0; 
-	overflow: hidden; 
-	max-width: 100%; 
-	height: auto; 
-} 
-
-.embed-container iframe, .embed-container object, .embed-container embed { 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
+.videos {
+	width: 100%;
 }
+
+// .embed-container { 
+// 	position: relative;
+// 	margin-bottom: 20px; 
+// 	padding-bottom: 56.25%; 
+// 	height: 0; 
+// 	overflow: hidden; 
+// 	max-width: 100%; 
+// 	height: auto; 
+// } 
+
+// .embed-container iframe, .embed-container object, .embed-container embed { 
+// 	position: absolute; 
+// 	top: 0; 
+// 	left: 0; 
+// 	width: 100%; 
+// 	height: 100%; 
+// }
 
 // UserCamaraStudy margins arround video
 
