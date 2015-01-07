@@ -12,16 +12,18 @@
         views: {
           "nav": { 
             templateUrl: "../templates/functional/nav.html",
-            controller: 'NavCtrl as nav',      
+            controller: 'NavCtrl as nav'      
           },
           "main": { 
             templateUrl: "../templates/home.html"
           },
-          "footer": { templateUrl: "../templates/functional/footer.html" }
+          "footer": { 
+            templateUrl: "../templates/functional/footer.html",
+            controller: 'NavCtrl as nav' }
         }
       })
       .state('home.subroutes', {
-        url: "/",
+        url: "/home/:scrollTo",
         views: {
           "header": { 
             templateUrl: "../templates/home/header.html",
@@ -46,16 +48,19 @@
         views: {
           "nav": { 
             templateUrl: "../templates/functional/nav.html",
-            controller: 'NavCtrl as nav',      
+            controller: 'NavCtrl as nav'      
           },
           "main": { 
             templateUrl: "../templates/impressum.html"
           },
-          "footer": { templateUrl: "../templates/functional/footer.html" }
+          "footer": { 
+            templateUrl: "../templates/functional/footer.html",
+            controller: 'NavCtrl as nav'
+          }
         }
       });
 
-    $urlRouterProvider.when('', '/');
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.when('/', '/home');
+    // $urlRouterProvider.otherwise('/home');
   }
 })();

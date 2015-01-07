@@ -6,31 +6,12 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#main\"> Home </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"#main\"> Home </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"#understand\"> Understand and Observe</a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
@@ -38,15 +19,7 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "			</ul>\n" +
@@ -57,7 +30,7 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
@@ -65,7 +38,34 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#about\"> Impressum </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\"> About </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"impressum\"> Impressum </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
