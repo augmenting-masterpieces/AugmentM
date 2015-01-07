@@ -13,6 +13,10 @@ img {
 	width: 100%;
 }
 
+.videos {
+	width: 100%;
+}
+
 // Module Specific Styling
 
 // Header module
@@ -24,7 +28,7 @@ img {
 	.title {		
 		@media only screen 
 		and (min-width : 480px) {
-			padding-top: 50px;
+			padding-top: 75px;
 		}
 
 		img.alienlogos {
@@ -114,40 +118,10 @@ img {
 }
 
 .userCameraStudy {
-	.embed-container {
+	.videos {
 		margin-top: 24px;
 	}
 }
-
-
-// Vimeo video styling
-
-.videos {
-	width: 100%;
-}
-
-// .embed-container { 
-// 	position: relative;
-// 	margin-bottom: 20px; 
-// 	padding-bottom: 56.25%; 
-// 	height: 0; 
-// 	overflow: hidden; 
-// 	max-width: 100%; 
-// 	height: auto; 
-// } 
-
-// .embed-container iframe, .embed-container object, .embed-container embed { 
-// 	position: absolute; 
-// 	top: 0; 
-// 	left: 0; 
-// 	width: 100%; 
-// 	height: 100%; 
-// }
-
-// UserCamaraStudy margins arround video
-
-
-
 
 // Masonry
 
@@ -190,10 +164,6 @@ img {
 	}
 }
 
-
-
-// Literature
-
 .literature {
 	word-wrap: break-word;
 	ul {
@@ -206,8 +176,6 @@ img {
 		margin-bottom: 5px;
 	}
 }
-
-// About
 
 .people {
 	.person {
@@ -229,14 +197,13 @@ img {
 	}
 }
 
-// Footer
+
 footer {
 	color: lighten($brand-primary, 60%);
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-size: 0.9em;
 	background: $brand-primary;
-	// color: white;
 	
 	a {
 		color: lighten($brand-primary, 60%);

@@ -105,8 +105,8 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "	<br>\n" +
     "</div>\n" +
     "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<div class='embed-container'>\n" +
-    "		<iframe src='http://player.vimeo.com/video/112958657' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
+    "	<div class=\"videos embed-responsive embed-responsive-16by9\">\n" +
+    "		<iframe src=\"http://player.vimeo.com/video/112958657\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "</div>\n" +
     "");
@@ -370,8 +370,8 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
 angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/content/usercamerastudy.html",
     "<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<div class='embed-responsive embed-responsive-16by9'>\n" +
-    "		<iframe src='http://player.vimeo.com/video/112510250' frameborder='0' webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
+    "	<div class=\"videos embed-responsive embed-responsive-16by9\">\n" +
+    "		<iframe src=\"http://player.vimeo.com/video/112510250\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
