@@ -9,67 +9,34 @@ main {
 	min-height: 100%;
 }
 
+img {
+	width: 100%;
+}
+
+.videos {
+	width: 100%;
+}
+
 // Module Specific Styling
 
 // Header module
 
 .maintro {
-	background: url(./images/webimages/1_landingpage.jpg) no-repeat center center / cover;
-	position: relative;
+	background: url(./images/webimages/1_landingpage.jpg) no-repeat center bottom / cover;
 	color: white;
 	
-	.title {
-		margin: 0 auto;
-		padding-bottom: 50px;
-		color: white;
-
+	.title {		
 		@media only screen 
 		and (min-width : 480px) {
-			padding-top: 120px;
+			padding-top: 100px;
 		}
 
-
-		h1{
-			font-size: 3.6em;
-			margin-bottom: 0px;
-			span.capitalisation {
-				display: inline-block;
-				&:first-letter {
-					font-size: 1.2em;
-				}
-			}
-			span.hideclasss {
-				display: inline-block;
-			}
-		}
-
-		p {
-			max-width: 29em;
-			margin-top: 0px;
-			margin-bottom: 0px;
-		}
-
-		img {
-			margin-top: 18px;
-			margin-right: 4%;
-			width:45%;
-			min-width: 15em;
+		img.alienlogos {
+			margin-top: 0;
+			padding-bottom: 24px;
+			width: 100%;
 		}
 	}
-
-	// .subtitle {
-	// 	padding-top: 400px;
-	// 	position: absolute;
-	// 	bottom: 10px;
-	// 	text-transform: uppercase;
-
-	// 	span {
-	// 		display: inline-block;
-	// 		&:first-letter {
-	// 			font-size: 1.2em;
-	// 		}
-	// 	}
-	// }
 }
 
 // Intermezzos
@@ -78,11 +45,8 @@ main {
 	position: relative;
 
 	h1 {
-		// margin-left: 25px;
 		position: absolute;
-		padding-top: 400px;
 		bottom: 10px; 
-		border-bottom: 0.5px;
 		text-transform: uppercase;
 
 		span {
@@ -116,27 +80,15 @@ main {
 	&.about {
 		background: url(./images/webimages/W4A3367.jpg) no-repeat center center / cover;
 	}
-
-
-}
-
-@media only screen 
-and (min-width : 1024px) {
-	.intermezzo {	
+	
+	@media only screen 
+	and (min-width : 1024px) {
 		&.analyse{
 			background-attachment: fixed;
 		}
 	}
+
 }
-
-// Placing images on textline
-
-img {
-	margin-top: 24px;
-	width: 100%;
-}
-
-// Individual Blocks
 
 .processmap {
 	.arrow {
@@ -160,41 +112,17 @@ img {
 	}
 	img {
 		position: absolute;
+		margin-top: 24px;
 		padding-right: ($grid-gutter-width);
 	}
 }
 
 .userCameraStudy {
-	.embed-container {
+	.videos {
 		margin-top: 24px;
+		margin-bottom: 24px;
 	}
 }
-
-
-// Vimeo video styling
-
-.embed-container { 
-	position: relative;
-	margin-bottom: 20px; 
-	padding-bottom: 56.25%; 
-	height: 0; 
-	overflow: hidden; 
-	max-width: 100%; 
-	height: auto; 
-} 
-
-.embed-container iframe, .embed-container object, .embed-container embed { 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 100%; 
-	height: 100%; 
-}
-
-// UserCamaraStudy margins arround video
-
-
-
 
 // Masonry
 
@@ -207,7 +135,6 @@ img {
 
   	#photoPiece {
 		height: 80%;
-		overflow: hidden;
 		margin-top: 24px;
 
 		img {
@@ -237,10 +164,6 @@ img {
 	}
 }
 
-
-
-// Literature
-
 .literature {
 	word-wrap: break-word;
 	ul {
@@ -253,8 +176,6 @@ img {
 		margin-bottom: 5px;
 	}
 }
-
-// About
 
 .people {
 	.person {
@@ -276,14 +197,13 @@ img {
 	}
 }
 
-// Footer
+
 footer {
 	color: lighten($brand-primary, 60%);
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-size: 0.9em;
 	background: $brand-primary;
-	// color: white;
 	
 	a {
 		color: lighten($brand-primary, 60%);
