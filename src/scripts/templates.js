@@ -384,33 +384,33 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
 
 angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/displayorder.html",
-    "<section ui-view=\"header\" class=\"row block maintro\"></section>\n" +
+    "<section id=\"understand\" ui-view=\"header\" class=\"row block maintro\"></section>\n" +
     "<!-- <section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
     "<section class=\"row block intermezzo understand\">\n" +
     "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
     "</section> -->\n" +
     "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
     "<section ui-view=\"usercamerastudy\" class=\"row block userCameraStudy\"></section>\n" +
-    "<section class=\"row block intermezzo analyse\">\n" +
-    "	<h1 id=\"analyse\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
+    "<section id=\"analyse\" class=\"row block intermezzo analyse\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
     "</section>\n" +
     "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
     "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
-    "<section class=\"row block intermezzo proto\">\n" +
-    "	<h1 id=\"prototype\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Prototype</span> and <span>Test</span></h1>\n" +
+    "<section id=\"prototype\" class=\"row block intermezzo proto\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Prototype</span> and <span>Test</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
-    "<section class=\"row block intermezzo evaluate\">\n" +
-    "	<h1 id=\"evaluate\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
+    "<section id=\"evaluate\" class=\"row block intermezzo evaluate\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
-    "<section class=\"row block intermezzo theory\">\n" +
-    "	<h1 id=\"theory\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Theory</span> and <span>Methods</span></h1>\n" +
+    "<section id=\"theory\" class=\"row block intermezzo theory\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Theory</span> and <span>Methods</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
     "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
-    "<section class=\"row block intermezzo about\">\n" +
-    "	<h1 id=\"about\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>About</span></h1>\n" +
+    "<section id=\"about\" class=\"row block intermezzo about\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>About</span></h1>\n" +
     "</section>\n" +
     "<section ui-view=\"about\" class=\"row block people\"></section>");
 }]);
