@@ -30,12 +30,28 @@
 
     console.log($stateParams.scrollTo);
 
-    // $scope.$on('$stateChangeSuccess', function (event, toState) {
-    //   if($stateParams.scrollTo){
-    //       $location.hash($stateParams.scrollTo);
-    //       $anchorScroll();  
+    $scope.$on('$stateChangeSuccess', function (event, toState) {
+      if($stateParams.scrollTo){
+          $location.hash($stateParams.scrollTo);
+          $anchorScroll.yOffset = 50;
+          $anchorScroll();  
+      }
+    });
+
+    // $scope.gotoAnchor = function(x) {
+    //   var newHash = 'anchor' + x;
+    //   if ($location.hash() !== newHash) {
+    //     // set the $location.hash to `newHash` and
+    //     // $anchorScroll will automatically scroll to it
+    //     $location.hash('anchor' + x);
+    //   } else {
+    //     // call $anchorScroll() explicitly,
+    //     // since $location.hash hasn't changed
+    //     $anchorScroll();
     //   }
-    // });
+    // };
+
+
 
     // this.gotoHash = function() {
     //   $location.hash('about');
