@@ -77,7 +77,7 @@
 				});
 	    }
 
-	    console.log($stateParams.scrollTo);
+	    // console.log($stateParams.scrollTo);
 
 	    // this.hello = "bye";
 
