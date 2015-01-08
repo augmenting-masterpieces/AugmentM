@@ -10,12 +10,12 @@ module.exports =
     "testem:ci:dev"
   ]
 
-  beta: [
+  deploy: [
     "build"
     "gh-pages:beta"
   ]
 
-  betaAWS: [
+  beta: [
     "build"
     "aws_s3:staging"
   ]
