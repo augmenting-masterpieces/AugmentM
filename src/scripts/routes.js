@@ -12,18 +12,18 @@
         views: {
           "nav": { 
             templateUrl: "../templates/functional/nav.html",
-            controller: 'NavCtrl as nav'      
+            controller: "NavCtrl as nav"      
           },
           "main": { 
             templateUrl: "../templates/home.html"
           },
           "footer": { 
             templateUrl: "../templates/functional/footer.html",
-            controller: 'NavCtrl as nav' }
+            controller: "NavCtrl as nav" }
         }
       })
       .state('home.subroutes', {
-        url: "/home/:scrollTo",
+        url: "/home/{scrollTo}",
         views: {
           "header": { 
             templateUrl: "../templates/home/header.html",
@@ -34,7 +34,7 @@
           "survey": { templateUrl: "../templates/home/survey.html" },
           "masonryviewer": { 
             templateUrl: "../templates/home/masonryviewer.html",
-            controller: 'MasonryCtrl as mason'                
+            controller: "MasonryCtrl as mason"                
           },
           "demo": { templateUrl: "../templates/home/demo.html" },
           "evaluation": { templateUrl: "../templates/home/evaluation.html" },

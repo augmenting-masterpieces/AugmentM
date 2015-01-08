@@ -1,9 +1,9 @@
 (function(){
 	'use strict';
 
-	angular.module('augm').controller('MasonryCtrl', [MasonryCtrl]);
+	angular.module('augm').controller('MasonryCtrl', ["$stateParams", MasonryCtrl]);
 
-	function MasonryCtrl(){
+	function MasonryCtrl($stateParams){
 		var vm = this;
 		var data = importData();
 	  
@@ -76,6 +76,8 @@
 					});
 				});
 	    }
+
+	    console.log($stateParams.scrollTo);
 
 	    // this.hello = "bye";
 
