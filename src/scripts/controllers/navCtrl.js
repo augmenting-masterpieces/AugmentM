@@ -33,7 +33,7 @@
     $scope.$on('$stateChangeSuccess', function (event, toState) {
       if($stateParams.scrollTo){
           $location.hash($stateParams.scrollTo);
-          $anchorScroll.yOffset = 50;
+          // $anchorScroll.yOffset = 50;
           $anchorScroll();  
       }
     });
