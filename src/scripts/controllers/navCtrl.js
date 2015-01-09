@@ -54,6 +54,9 @@
     console.log("Current Param: "+ $stateParams.scrollTo);
     console.log("Current State: " + $state.is("home.subroutes"));
 
+    vm.stateBoolean = $state.is("home.subroutes");
+    console.log("Current StateBolean: " + vm.stateBoolean);
+
     // $(function() {
     //   $('a[href*="#"]:not([href=#])').click(function() {
     //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -89,8 +92,6 @@
     //     $anchorScroll();
     //   }
     // };
-
-
 
     // this.gotoHash = function() {
     //   $location.hash('about');
