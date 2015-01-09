@@ -19,7 +19,7 @@
         url: "/home?{scrollTo}",
         views: {
           "nav": { 
-            templateUrl: "../templates/functional/nav.html",
+            templateUrl: "../templates/home/navHome.html",
             controller: "NavCtrl as nav"      
           },
           "header": { 
@@ -39,7 +39,7 @@
           "literature": { templateUrl: "../templates/home/literature.html" },
           "about": { templateUrl: "../templates/home/about.html" },
           "footer": { 
-            templateUrl: "../templates/functional/footer.html"
+            templateUrl: "../templates/home/footerHome.html"
           }
         }
       })

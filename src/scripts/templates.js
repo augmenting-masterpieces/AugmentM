@@ -1,4 +1,4 @@
-angular.module('templates-augm', ['../templates/functional/footer.html', '../templates/functional/nav.html', '../templates/home.html', '../templates/home/about.html', '../templates/home/assumptions.html', '../templates/home/demo.html', '../templates/home/evaluation.html', '../templates/home/header.html', '../templates/home/literature.html', '../templates/home/masonryviewer.html', '../templates/home/processmap.html', '../templates/home/survey.html', '../templates/home/theory.html', '../templates/home/usercamerastudy.html', '../templates/impressum.html']);
+angular.module('templates-augm', ['../templates/functional/footer.html', '../templates/functional/navSiteWide.html', '../templates/home.html', '../templates/home/about.html', '../templates/home/assumptions.html', '../templates/home/demo.html', '../templates/home/evaluation.html', '../templates/home/footerHome.html', '../templates/home/header.html', '../templates/home/literature.html', '../templates/home/masonryviewer.html', '../templates/home/navHome.html', '../templates/home/processmap.html', '../templates/home/survey.html', '../templates/home/theory.html', '../templates/home/usercamerastudy.html', '../templates/impressum.html']);
 
 angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/functional/footer.html",
@@ -76,8 +76,8 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "");
 }]);
 
-angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/functional/nav.html",
+angular.module("../templates/functional/navSiteWide.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/functional/navSiteWide.html",
     "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
     "  <div class=\"container-fluid\">\n" +
     "    <div class=\"navbar-header\">\n" +
@@ -87,18 +87,18 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: 'main'})\" ng-click=\"nav.scroller('#main')\" eat-click-if=\"nav.stateBoolean\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: 'main'})\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\" ng-click=\"nav.scroller('#understand')\" eat-click-if=\"nav.stateBoolean\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\" ng-click=\"nav.scroller('#analyse')\" eat-click-if=\"nav.stateBoolean\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\" ng-click=\"nav.scroller('#prototype')\" eat-click-if=\"nav.stateBoolean\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\" ng-click=\"nav.scroller('#evaluate')\"eat-click-if=\"nav.stateBoolean\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\" ng-click=\"nav.scroller('#theory')\" eat-click-if=\"nav.stateBoolean\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\" ng-click=\"nav.scroller('#about')\" eat-click-if=\"nav.stateBoolean\">About</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\">About</a></li>\n" +
     "      </ul>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -276,6 +276,82 @@ angular.module("../templates/home/evaluation.html", []).run(["$templateCache", f
     "");
 }]);
 
+angular.module("../templates/home/footerHome.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/footerHome.html",
+    "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'main'})\"> Home </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\"> Understand and Observe</a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\"> Analyse and Ideate </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\"> About </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"impressum.subroutes\"> Impressum </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "");
+}]);
+
 angular.module("../templates/home/header.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/header.html",
     "<div class=\"col-lg-10 col-lg-offset-7 col-md-12 col-md-offset-6 col-sm-16 col-sm-offset-4 col-xs-24 col-xs-offset-0\">\n" +
@@ -384,6 +460,35 @@ angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache"
     "</div>\n" +
     "\n" +
     "");
+}]);
+
+angular.module("../templates/home/navHome.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/navHome.html",
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle\" bs-collapse-toggle>\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"({ scrollTo: 'main'})\">Augmenting Masterpieces</a>\n" +
+    "    </div>\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"({ scrollTo: 'understand'})\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"({ scrollTo: 'analyse'})\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"({ scrollTo: 'prototype'})\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"({ scrollTo: 'evaluate'})\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"({ scrollTo: 'theory'})\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
+    "      </ul>\n" +
+    "      <ul class=\"nav navbar-nav navbar-right\">\n" +
+    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"({ scrollTo: 'about'})\">About</a></li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</nav>");
 }]);
 
 angular.module("../templates/home/processmap.html", []).run(["$templateCache", function($templateCache) {
