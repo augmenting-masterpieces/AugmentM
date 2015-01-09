@@ -14,7 +14,6 @@
     function($parse, $rootScope) {
       return {
         // this ensure eatClickIf be compiled before ngClick
-        priority: 100,
         restrict: 'A',
         compile: function($element, attr) {
           var fn = $parse(attr.eatClickIf);
@@ -53,17 +52,22 @@
     vm.stateBoolean = $state.is("home.subroutes");
 
     // Navscrollerfunction
-    vm.scroller = function(whatgetsin) {
-      console.log(whatgetsin);
-      // elem = 
-      // var target = $(this.hash);
-      // if (target.length) {
-      //   $('html,body').animate({
-      //     scrollTop: (target.offset().top - 50)
-      //   }, 1000);
-      //   return false;
-      // }
-    }
+    vm.scroller = function(hash) {
+      console.log("Im fed to the scrolller!");
+      console.log(hash);
+
+
+      // console.log("Location.hash");
+      // console.log($location);
+
+      var target = $(hash);
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: (target.offset().top - 50)
+        }, 1000);
+        return false;
+      }
+    };
 
 
 
