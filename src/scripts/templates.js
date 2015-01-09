@@ -1,36 +1,17 @@
-angular.module('templates-augm', ['../templates/functional/footer.html', '../templates/functional/navSiteWide.html', '../templates/home.html', '../templates/home/about.html', '../templates/home/assumptions.html', '../templates/home/demo.html', '../templates/home/evaluation.html', '../templates/home/footerHome.html', '../templates/home/header.html', '../templates/home/literature.html', '../templates/home/masonryviewer.html', '../templates/home/navHome.html', '../templates/home/processmap.html', '../templates/home/survey.html', '../templates/home/theory.html', '../templates/home/usercamerastudy.html', '../templates/impressum.html']);
+angular.module('templates-augm', ['../templates/functional/footerSiteWide.html', '../templates/functional/navSiteWide.html', '../templates/home.html', '../templates/home/about.html', '../templates/home/assumptions.html', '../templates/home/demo.html', '../templates/home/evaluation.html', '../templates/home/footerHome.html', '../templates/home/header.html', '../templates/home/literature.html', '../templates/home/masonryviewer.html', '../templates/home/navHome.html', '../templates/home/processmap.html', '../templates/home/survey.html', '../templates/home/theory.html', '../templates/home/usercamerastudy.html', '../templates/impressum.html']);
 
-angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/functional/footer.html",
+angular.module("../templates/functional/footerSiteWide.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/functional/footerSiteWide.html",
     "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'main'})\"> Home </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Home </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\"> Understand and Observe</a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\"> Prototype and Test </a></h4></li>\n" +
+    "				<li><h4><a> Understand and Observe</a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
@@ -38,15 +19,7 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\"> Evaluate and Outlook </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\"> Theory and Methods </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Analyse and Ideate </a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "			</ul>\n" +
@@ -57,7 +30,34 @@ angular.module("../templates/functional/footer.html", []).run(["$templateCache",
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\"> About </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> About </a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
@@ -87,18 +87,11 @@ angular.module("../templates/functional/navSiteWide.html", []).run(["$templateCa
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: 'main'})\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
-    "      </ul>\n" +
-    "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\">About</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes\">Home</a></li>\n" +
     "      </ul>\n" +
     "    </div>\n" +
     "  </div>\n" +
@@ -282,31 +275,12 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'main'})\"> Home </a></h4></li>\n" +
+    "				<li><h4><a ui-sref=\"#main\"> Home </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\"> Understand and Observe</a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\"> Prototype and Test </a></h4></li>\n" +
+    "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
@@ -314,15 +288,7 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\"> Evaluate and Outlook </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\"> Theory and Methods </a></h4></li>\n" +
+    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "			</ul>\n" +
@@ -333,7 +299,34 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\"> About </a></h4></li>\n" +
+    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
     "				<li>Something</li>\n" +
@@ -473,18 +466,18 @@ angular.module("../templates/home/navHome.html", []).run(["$templateCache", func
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"({ scrollTo: 'main'})\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"({ scrollTo: 'understand'})\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"({ scrollTo: 'analyse'})\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"({ scrollTo: 'prototype'})\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"({ scrollTo: 'evaluate'})\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"({ scrollTo: 'theory'})\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a href=\"#analyse\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a href=\"#prototype\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\" ><a href=\"#evaluate\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a href=\"#theory\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"({ scrollTo: 'about'})\">About</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#about\"><a href=\"#about\">About</a></li>\n" +
     "      </ul>\n" +
     "    </div>\n" +
     "  </div>\n" +

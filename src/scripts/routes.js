@@ -54,19 +54,19 @@
         url: "/impressum",
         views: {
           "nav": { 
-            templateUrl: "../templates/functional/nav.html",
+            templateUrl: "../templates/functional/navSiteWide.html",
             controller: 'NavCtrl as nav'      
           },
           "main": { 
             templateUrl: "../templates/impressum.html"
           },
           "footer": { 
-            templateUrl: "../templates/functional/footer.html"
+            templateUrl: "../templates/functional/footerSiteWide.html"
           }
         }
       });
 
-    $urlRouterProvider.when('/', '/home/');
+    $urlRouterProvider.when('/', '/home');
     // $urlRouterProvider.otherwise('/home');
   }
 })();
