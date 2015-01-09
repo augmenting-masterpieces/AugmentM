@@ -39,7 +39,8 @@
           "literature": { templateUrl: "../templates/home/literature.html" },
           "about": { templateUrl: "../templates/home/about.html" },
           "footer": { 
-            templateUrl: "../templates/home/footerHome.html"
+            templateUrl: "../templates/home/footerHome.html",
+            controller: "NavCtrl as nav",
           }
         }
       })

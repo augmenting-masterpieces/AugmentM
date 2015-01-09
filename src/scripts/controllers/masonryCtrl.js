@@ -3,7 +3,7 @@
 
 	angular.module('augm').controller('MasonryCtrl', [MasonryCtrl]);
 
-	function MasonryCtrl($stateParams){
+	function MasonryCtrl(){
 		var vm = this;
 		var data = importData();
 	  
