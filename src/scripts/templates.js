@@ -87,11 +87,12 @@ angular.module("../templates/functional/navSiteWide.html", []).run(["$templateCa
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes\">Home</a></li>\n" +
+    "        <li ><a ui-sref=\"home.subroutes\">Home</a></li>\n" +
+    "        <li ><a ui-sref=\"impressum.subroutes\" ui-sref-active=\"active\">Impressum</a></li>\n" +
     "      </ul>\n" +
     "    </div>\n" +
     "  </div>\n" +
