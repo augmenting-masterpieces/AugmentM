@@ -10,6 +10,42 @@
       });
     });
 
+  angular.module('augm').directive('eatClickIf', ['$parse', '$rootScope',
+    function($parse, $rootScope) {
+      console.log('Im soooo hungry');
+      return {
+        // this ensure eatClickIf be compiled before ngClick
+        priority: 100,
+        restrict: 'A',
+        compile: function($element, attr) {
+          var fn = $parse(attr.eatClickIf);
+          return {
+            pre: function link(scope, element) {
+              var eventName = 'click';
+              element.on(eventName, function(event) {
+                var callback = function() {
+                  if (fn(scope, {$event: event})) {
+                    // prevents ng-click to be executed
+                    event.stopImmediatePropagation();
+                    // prevents href 
+                    event.preventDefault();
+                    return false;
+                  }
+                };
+                if ($rootScope.$$phase) {
+                  scope.$evalAsync(callback);
+                } else {
+                  scope.$apply(callback);
+                }
+              });
+            },
+            post: function() {}
+          };
+        }
+      };
+    }
+  ]);
+
   function NavCtrl($window, $rootScope, $state, $stateParams, $location, $scope, $anchorScroll, $uiViewScroll, $timeout){
     var vm = this;
 
@@ -30,13 +66,13 @@
 
     console.log($stateParams.scrollTo);
 
-    $scope.$on('$stateChangeSuccess', function (event, toState) {
-      if($stateParams.scrollTo){
-          $location.hash($stateParams.scrollTo);
-          // $anchorScroll.yOffset = 50;
-          $anchorScroll();  
-      }
-    });
+    // $scope.$on('$stateChangeSuccess', function (event, toState) {
+    //   if($stateParams.scrollTo){
+    //       $location.hash($stateParams.scrollTo);
+    //       // $anchorScroll.yOffset = 50;
+    //       $anchorScroll();  
+    //   }
+    // });
 
     // $scope.gotoAnchor = function(x) {
     //   var newHash = 'anchor' + x;
