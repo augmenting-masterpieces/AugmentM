@@ -87,18 +87,18 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: '#main'})\" eat-click-if=\"nav.stateBoolean\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: 'main'})\" ng-click=\"nav.scroller()\" eat-click-if=\"nav.stateBoolean\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes({ scrollTo: '#understand'})\" eat-click-if=\"nav.stateBoolean\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"home.subroutes({ scrollTo: '#analyse'})\" eat-click-if=\"nav.stateBoolean\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"home.subroutes({ scrollTo: '#prototype'})\" eat-click-if=\"nav.stateBoolean\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"home.subroutes({ scrollTo: '#evaluate'})\" eat-click-if=\"nav.stateBoolean\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"home.subroutes({ scrollTo: '#theory'})\" eat-click-if=\"nav.stateBoolean\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a ui-sref=\"home.subroutes({ scrollTo: 'understand'})\" eat-click-if=\"nav.stateBoolean\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a ui-sref=\"home.subroutes({ scrollTo: 'analyse'})\" eat-click-if=\"nav.stateBoolean\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a ui-sref=\"home.subroutes({ scrollTo: 'prototype'})\" eat-click-if=\"nav.stateBoolean\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\" ><a ui-sref=\"home.subroutes({ scrollTo: 'evaluate'})\" eat-click-if=\"nav.stateBoolean\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a ui-sref=\"home.subroutes({ scrollTo: 'theory'})\" eat-click-if=\"nav.stateBoolean\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
     "      </ul>\n" +
     "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"home.subroutes({ scrollTo: '#about'})\" eat-click-if=\"nav.stateBoolean\">About</a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#about\"><a ui-sref=\"home.subroutes({ scrollTo: 'about'})\" eat-click-if=\"nav.stateBoolean\">About</a></li>\n" +
     "      </ul>\n" +
     "    </div>\n" +
     "  </div>\n" +

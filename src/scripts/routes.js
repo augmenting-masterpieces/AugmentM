@@ -16,7 +16,7 @@
         }
       })
       .state('home.subroutes', {
-        url: "/home/#{scrollTo}",
+        url: "/home/{scrollTo}",
         views: {
           "nav": { 
             templateUrl: "../templates/functional/nav.html",
@@ -66,7 +66,7 @@
         }
       });
 
-    $urlRouterProvider.when('/', '/home/#');
+    $urlRouterProvider.when('/', '/home/');
     // $urlRouterProvider.otherwise('/home');
   }
 })();

@@ -20,8 +20,6 @@
           var fn = $parse(attr.eatClickIf);
           return {
             pre: function link(scope, element) {
-              console.log("Am I Hungry?");
-              console.log(fn(scope, {$event: event}));
               var eventName = 'click';
               element.on(eventName, function(event) {
                 var callback = function() {
@@ -51,11 +49,23 @@
   function NavCtrl($window, $rootScope, $state, $stateParams, $location, $scope, $anchorScroll, $uiViewScroll, $timeout){
     var vm = this;
 
-    console.log("Current Param: "+ $stateParams.scrollTo);
-    console.log("Current State: " + $state.is("home.subroutes"));
-
+    // Make sure the eater know which state we're in! 
     vm.stateBoolean = $state.is("home.subroutes");
-    console.log("Current StateBolean: " + vm.stateBoolean);
+
+    // Navscrollerfunction
+    vm.scroller = function(whatgetsin) {
+      console.log(whatgetsin);
+      // elem = 
+      // var target = $(this.hash);
+      // if (target.length) {
+      //   $('html,body').animate({
+      //     scrollTop: (target.offset().top - 50)
+      //   }, 1000);
+      //   return false;
+      // }
+    }
+
+
 
     // $(function() {
     //   $('a[href*="#"]:not([href=#])').click(function() {
@@ -77,6 +87,8 @@
     //       $location.hash($stateParams.scrollTo);
     //       // $anchorScroll.yOffset = 50;
     //       $anchorScroll();  
+
+    //       console.log("Scrooooooling");
     //   }
     // });
 
