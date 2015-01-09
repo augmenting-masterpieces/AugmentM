@@ -87,7 +87,7 @@ angular.module("../templates/functional/nav.html", []).run(["$templateCache", fu
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: 'main'})\" eat-click-if=\"!model.isValid()\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy ui-sref=\"home.subroutes({ scrollTo: 'main'})\" eat-click-if=\"'true'\">Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +

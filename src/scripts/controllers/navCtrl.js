@@ -12,7 +12,6 @@
 
   angular.module('augm').directive('eatClickIf', ['$parse', '$rootScope',
     function($parse, $rootScope) {
-      console.log('Im soooo hungry');
       return {
         // this ensure eatClickIf be compiled before ngClick
         priority: 100,
@@ -21,10 +20,13 @@
           var fn = $parse(attr.eatClickIf);
           return {
             pre: function link(scope, element) {
+              console.log("Am I Hungry?");
+              console.log(fn(scope, {$event: event}));
               var eventName = 'click';
               element.on(eventName, function(event) {
                 var callback = function() {
                   if (fn(scope, {$event: event})) {
+                    console.log('yumyum');
                     // prevents ng-click to be executed
                     event.stopImmediatePropagation();
                     // prevents href 
@@ -49,22 +51,23 @@
   function NavCtrl($window, $rootScope, $state, $stateParams, $location, $scope, $anchorScroll, $uiViewScroll, $timeout){
     var vm = this;
 
-    $(function() {
-      $('a[href*="#"]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: (target.offset().top - 50)
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
+    console.log("Current Param: "+ $stateParams.scrollTo);
+    console.log("Current State: " + $state.is("home.subroutes"));
 
-    console.log($stateParams.scrollTo);
+    // $(function() {
+    //   $('a[href*="#"]:not([href=#])').click(function() {
+    //     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+    //       var target = $(this.hash);
+    //       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    //       if (target.length) {
+    //         $('html,body').animate({
+    //           scrollTop: (target.offset().top - 50)
+    //         }, 1000);
+    //         return false;
+    //       }
+    //     }
+    //   });
+    // });
 
     // $scope.$on('$stateChangeSuccess', function (event, toState) {
     //   if($stateParams.scrollTo){
