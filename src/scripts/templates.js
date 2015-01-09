@@ -1,7 +1,142 @@
-angular.module('templates-augm', ['../templates/content/about.html', '../templates/content/assumptions.html', '../templates/content/demo.html', '../templates/content/evaluation.html', '../templates/content/header.html', '../templates/content/literature.html', '../templates/content/masonryviewer.html', '../templates/content/processmap.html', '../templates/content/survey.html', '../templates/content/theory.html', '../templates/content/usercamerastudy.html', '../templates/displayorder.html', '../templates/functional/footer.html', '../templates/functional/nav.html']);
+angular.module('templates-augm', ['../templates/functional/footerSiteWide.html', '../templates/functional/navSiteWide.html', '../templates/home.html', '../templates/home/about.html', '../templates/home/assumptions.html', '../templates/home/demo.html', '../templates/home/evaluation.html', '../templates/home/footerHome.html', '../templates/home/header.html', '../templates/home/literature.html', '../templates/home/masonryviewer.html', '../templates/home/navHome.html', '../templates/home/processmap.html', '../templates/home/survey.html', '../templates/home/theory.html', '../templates/home/usercamerastudy.html', '../templates/impressum.html']);
 
-angular.module("../templates/content/about.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/about.html",
+angular.module("../templates/functional/footerSiteWide.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/functional/footerSiteWide.html",
+    "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Home </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a> Understand and Observe</a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Analyse and Ideate </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> About </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"impressum.subroutes\"> Impressum </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("../templates/functional/navSiteWide.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/functional/navSiteWide.html",
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle\" bs-collapse-toggle>\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <a class=\"navbar-brand\">Augmenting Masterpieces</a>\n" +
+    "    </div>\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li ><a ui-sref=\"home.subroutes\">Home</a></li>\n" +
+    "        <li ><a ui-sref=\"impressum.subroutes\" ui-sref-active=\"active\">Impressum</a></li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</nav>");
+}]);
+
+angular.module("../templates/home.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home.html",
+    "<div ui-view=\"nav\"></div>  \n" +
+    "<section id=\"understand\" ui-view=\"header\" class=\"row block maintro\"></section>\n" +
+    "<!-- <section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
+    "<section class=\"row block intermezzo understand\">\n" +
+    "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
+    "</section> -->\n" +
+    "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
+    "<section ui-view=\"usercamerastudy\" class=\"row block userCameraStudy\"></section>\n" +
+    "<section id=\"analyse\" class=\"row block intermezzo analyse\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
+    "</section>\n" +
+    "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
+    "<section id=\"prototype\" class=\"row block intermezzo proto\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Prototype</span> and <span>Test</span></h1>\n" +
+    "</section>\n" +
+    "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
+    "<section id=\"evaluate\" class=\"row block intermezzo evaluate\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
+    "</section>\n" +
+    "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
+    "<section id=\"theory\" class=\"row block intermezzo theory\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Theory</span> and <span>Methods</span></h1>\n" +
+    "</section>\n" +
+    "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
+    "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
+    "<section id=\"about\" class=\"row block intermezzo about\">\n" +
+    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>About</span></h1>\n" +
+    "</section>\n" +
+    "<section ui-view=\"about\" class=\"row block people\"></section>\n" +
+    "<footer ui-view=\"footer\" class=\"clearfix row\"></footer>\n" +
+    "");
+}]);
+
+angular.module("../templates/home/about.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/about.html",
     "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>People</h1>\n" +
     "	<div class=\"person clearfix\">\n" +
@@ -65,8 +200,8 @@ angular.module("../templates/content/about.html", []).run(["$templateCache", fun
     "");
 }]);
 
-angular.module("../templates/content/assumptions.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/assumptions.html",
+angular.module("../templates/home/assumptions.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/assumptions.html",
     "<div class=\"overflow-container\">\n" +
     "	<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "		<h2> Assumptions...</h2>\n" +
@@ -84,8 +219,8 @@ angular.module("../templates/content/assumptions.html", []).run(["$templateCache
     "");
 }]);
 
-angular.module("../templates/content/demo.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/demo.html",
+angular.module("../templates/home/demo.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/demo.html",
     "<div class=\"col-lg-20 col-lg-offset-2 col-md-20 col-md-offset-1 col-sm-20 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>It doesn't matter how much 'cultural capital' you bring.</h2>\n" +
     "	<h3>Social features for visitor's engagement</h3>\n" +
@@ -110,8 +245,8 @@ angular.module("../templates/content/demo.html", []).run(["$templateCache", func
     "");
 }]);
 
-angular.module("../templates/content/evaluation.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/evaluation.html",
+angular.module("../templates/home/evaluation.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/evaluation.html",
     "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Process Evaluation</h2>\n" +
     "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”</p>\n" +
@@ -135,8 +270,84 @@ angular.module("../templates/content/evaluation.html", []).run(["$templateCache"
     "");
 }]);
 
-angular.module("../templates/content/header.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/header.html",
+angular.module("../templates/home/footerHome.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/footerHome.html",
+    "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"#main\"> Home </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "				<li>Something</li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a ui-sref=\"impressum.subroutes\"> Impressum </a></h4></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "");
+}]);
+
+angular.module("../templates/home/header.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/header.html",
     "<div class=\"col-lg-10 col-lg-offset-7 col-md-12 col-md-offset-6 col-sm-16 col-sm-offset-4 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"title\">\n" +
     "		<img src=\"images/logos/augmlogo.png\" alt=\"\">\n" +
@@ -153,8 +364,8 @@ angular.module("../templates/content/header.html", []).run(["$templateCache", fu
     "</div>");
 }]);
 
-angular.module("../templates/content/literature.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/literature.html",
+angular.module("../templates/home/literature.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/literature.html",
     "<div class=\"col-lg-22 col-lg-offset-1 col-md-22 col-md-offset-0 col-sm-22 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
     "	<h1>Literature</h1>\n" +
     "</div>\n" +
@@ -230,8 +441,8 @@ angular.module("../templates/content/literature.html", []).run(["$templateCache"
     "");
 }]);
 
-angular.module("../templates/content/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/masonryviewer.html",
+angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/masonryviewer.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
     "</div>\n" +
     "\n" +
@@ -245,8 +456,37 @@ angular.module("../templates/content/masonryviewer.html", []).run(["$templateCac
     "");
 }]);
 
-angular.module("../templates/content/processmap.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/processmap.html",
+angular.module("../templates/home/navHome.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/navHome.html",
+    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
+    "  <div class=\"container-fluid\">\n" +
+    "    <div class=\"navbar-header\">\n" +
+    "      <button type=\"button\" class=\"navbar-toggle\" bs-collapse-toggle>\n" +
+    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "        <span class=\"icon-bar\"></span>\n" +
+    "      </button>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
+    "    </div>\n" +
+    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
+    "      <ul class=\"nav navbar-nav\">\n" +
+    "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#analyse\"><a href=\"#analyse\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#prototype\"><a href=\"#prototype\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#evaluate\" ><a href=\"#evaluate\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
+    "        <li bs-scrollspy data-target=\"#theory\"><a href=\"#theory\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
+    "      </ul>\n" +
+    "      <ul class=\"nav navbar-nav navbar-right\">\n" +
+    "        <li bs-scrollspy data-target=\"#about\"><a href=\"#about\">About</a></li>\n" +
+    "      </ul>\n" +
+    "    </div>\n" +
+    "  </div>\n" +
+    "</nav>");
+}]);
+
+angular.module("../templates/home/processmap.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/processmap.html",
     "<div>\n" +
     "	<div class=\"col-lg-6 col-lg-offset-2 col-md-22 col-md-offset-1 col-sm-20 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "		<a href=\"#understand\"><h1>Understand and Observe</h1></a>\n" +
@@ -319,8 +559,8 @@ angular.module("../templates/content/processmap.html", []).run(["$templateCache"
     "");
 }]);
 
-angular.module("../templates/content/survey.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/survey.html",
+angular.module("../templates/home/survey.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/survey.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>No comment on the Masterpieces.</h2>\n" +
     "	<h3>“I know they are important.”</h3>\n" +
@@ -344,8 +584,8 @@ angular.module("../templates/content/survey.html", []).run(["$templateCache", fu
     "");
 }]);
 
-angular.module("../templates/content/theory.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/theory.html",
+angular.module("../templates/home/theory.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/theory.html",
     "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<h2>Social augmentation vs. technological masterpieces?</h2>\n" +
     "	<h3>Project objectives</h3>\n" +
@@ -363,8 +603,8 @@ angular.module("../templates/content/theory.html", []).run(["$templateCache", fu
     "");
 }]);
 
-angular.module("../templates/content/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/content/usercamerastudy.html",
+angular.module("../templates/home/usercamerastudy.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/home/usercamerastudy.html",
     "<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"videos embed-responsive embed-responsive-16by9\">\n" +
     "		<iframe src=\"http://player.vimeo.com/video/112510250\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
@@ -382,140 +622,10 @@ angular.module("../templates/content/usercamerastudy.html", []).run(["$templateC
     "</div>");
 }]);
 
-angular.module("../templates/displayorder.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/displayorder.html",
-    "<section id=\"understand\" ui-view=\"header\" class=\"row block maintro\"></section>\n" +
-    "<!-- <section ui-view=\"processmap\" class=\"row block processmap\"></section>\n" +
-    "<section class=\"row block intermezzo understand\">\n" +
-    "	<h1 id=\"understand\" class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Understand</span> and <span>Observe</span> </h1>\n" +
-    "</section> -->\n" +
-    "<section ui-view=\"assumptions\" class=\"row block assumptions\"></section>\n" +
-    "<section ui-view=\"usercamerastudy\" class=\"row block userCameraStudy\"></section>\n" +
-    "<section id=\"analyse\" class=\"row block intermezzo analyse\">\n" +
-    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Analyse</span> and <span>Ideate</span> </h1>\n" +
-    "</section>\n" +
-    "<section ui-view=\"survey\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"masonryviewer\" class=\"row block masonry\"></section>\n" +
-    "<section id=\"prototype\" class=\"row block intermezzo proto\">\n" +
-    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Prototype</span> and <span>Test</span></h1>\n" +
-    "</section>\n" +
-    "<section ui-view=\"demo\" class=\"row block\"></section>\n" +
-    "<section id=\"evaluate\" class=\"row block intermezzo evaluate\">\n" +
-    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Evaluate</span> and <span>Outlook</span></h1>\n" +
-    "</section>\n" +
-    "<section ui-view=\"evaluation\" class=\"row block\"></section>\n" +
-    "<section id=\"theory\" class=\"row block intermezzo theory\">\n" +
-    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>Theory</span> and <span>Methods</span></h1>\n" +
-    "</section>\n" +
-    "<section ui-view=\"theory\" class=\"row block\"></section>\n" +
-    "<section ui-view=\"literature\" class=\"row block literature\"></section>\n" +
-    "<section id=\"about\" class=\"row block intermezzo about\">\n" +
-    "	<h1 class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\"><span>About</span></h1>\n" +
-    "</section>\n" +
-    "<section ui-view=\"about\" class=\"row block people\"></section>");
-}]);
-
-angular.module("../templates/functional/footer.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/functional/footer.html",
-    "<div class=\"col-lg-6 col-lg-offset-2 col-md-6 col-md-offset-2 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#main\"> Home </a></h4></li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a href=\"#about\"> Impressum </a></h4></li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
+angular.module("../templates/impressum.html", []).run(["$templateCache", function($templateCache) {
+  $templateCache.put("../templates/impressum.html",
+    "<div ui-view=\"nav\"></div>  \n" +
+    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quis aut cum enim architecto nisi beatae doloribus sint, saepe ex voluptatem assumenda veritatis placeat rerum omnis tempora. Ratione id quod accusantium officiis! Harum, iusto dicta. Nobis eligendi aliquid reprehenderit consectetur ipsum quidem molestias rerum, repellendus, hic, totam quisquam earum. Adipisci neque odio ipsa non praesentium sunt mollitia, quisquam corporis! Nostrum veritatis cum similique, laborum corrupti repudiandae autem blanditiis nam, ad, nihil aspernatur consectetur quibusdam laudantium minus recusandae harum quis officia aperiam voluptatibus facilis asperiores eos. Perferendis hic laboriosam ullam, sed libero sit, vel, natus mollitia fugiat provident dignissimos delectus consequatur ea facilis ducimus voluptate fuga cumque? Possimus, ipsa cupiditate cumque, vitae maiores voluptates inventore. Commodi nobis dicta dolorem modi maxime quos dolores laboriosam quod ducimus accusantium, quaerat adipisci placeat. Dolor eos voluptates quam unde quis dicta obcaecati harum repudiandae, saepe numquam inventore odit maxime fugiat reprehenderit, eligendi nesciunt delectus dignissimos eum dolorum libero! Nostrum voluptate harum labore, laboriosam incidunt ratione, nam eos delectus saepe magni iure est, aut debitis ipsam porro nemo, consectetur officiis! Tempora laboriosam iste enim distinctio eos perspiciatis dicta. Eligendi facere libero repudiandae sit maiores voluptate ea excepturi aut labore, nulla minus deleniti? Illum, vero voluptatem culpa itaque quibusdam totam qui omnis iusto sapiente illo autem porro, minima ratione suscipit in necessitatibus voluptatibus ipsam alias repellendus doloribus fugiat veritatis perspiciatis nulla. Officia amet commodi vitae eius, est hic. Autem necessitatibus quidem voluptatibus cum beatae enim eum, ipsam. Sunt velit consequuntur doloribus at, ad consectetur vero placeat omnis error facere! Placeat autem voluptas laboriosam provident officia quas inventore, maiores ad facere dolor explicabo, aperiam eaque eos praesentium alias, quisquam. Repellat temporibus commodi obcaecati unde architecto facere totam, quibusdam deleniti. Vel placeat quos unde exercitationem accusamus, veritatis quo. Ab veniam hic, explicabo, alias reprehenderit ipsa aut nihil incidunt, magnam ratione omnis repudiandae soluta porro voluptatem asperiores veritatis. Fugiat obcaecati magnam impedit iusto, hic totam accusantium eum quibusdam consectetur consequatur porro sunt earum tenetur ipsum optio cumque rem illo molestias. Quo soluta, aspernatur animi, dolore laborum corrupti illo et laudantium debitis quia vitae dolorem similique a quod officiis unde accusantium porro natus quisquam repudiandae fugiat reiciendis amet, id dolorum esse. Recusandae numquam illum iure nihil rerum, dolorem mollitia vero quae ducimus ullam doloribus molestias, suscipit, laudantium repellendus earum in perspiciatis enim quidem voluptatibus quo qui ipsam ad id omnis eaque! In consequuntur fuga saepe, necessitatibus ipsam eveniet delectus dignissimos cumque dolor quaerat temporibus quis recusandae dolorum expedita facere, nulla pariatur voluptate reiciendis et tempore? Porro sunt quidem minus officiis tempore architecto totam non saepe, consequatur fuga, temporibus ea, earum veniam dignissimos error molestiae esse. Veniam a, accusantium ipsa quam quaerat odio nemo fuga recusandae corporis, aliquam quasi eaque quo temporibus quidem omnis laudantium facilis, officia dolore reiciendis tempora debitis reprehenderit tenetur sed. Quas voluptate nostrum facere repudiandae, quibusdam modi quis saepe blanditiis voluptates illum. Dolorum perferendis maiores mollitia voluptatem voluptates, corporis magnam consequatur. Illum ullam ex doloremque, obcaecati quas debitis placeat officiis ducimus. Eum deleniti neque tempore ab maiores, facere quia eaque eveniet explicabo rerum consectetur, fuga sit sapiente possimus tenetur, adipisci eos quae temporibus molestiae! Qui sequi enim aliquid labore consequatur, beatae ducimus repellendus similique earum vero id repudiandae corrupti eligendi, optio, in maiores veritatis harum odit nam distinctio adipisci. Rem quia iste mollitia modi, architecto omnis eligendi quibusdam minima repellat dolores ea, voluptatum et, tenetur ipsa error. Dignissimos facere veniam blanditiis odio a expedita, mollitia quibusdam sequi dicta molestias omnis in harum praesentium temporibus nisi itaque eaque, ipsam ullam aliquam ea molestiae unde consectetur nam illum. Molestiae et sapiente iure voluptatum quaerat tempore, asperiores est eius saepe, quibusdam illum harum quae mollitia vitae blanditiis sit in doloremque exercitationem ipsum amet. Distinctio nostrum cumque voluptatem alias ut voluptatibus eum quis molestias eaque! Perferendis, dignissimos ipsum harum adipisci quibusdam pariatur iusto temporibus laudantium quam fugit necessitatibus, nulla ducimus mollitia quos. Nisi voluptatibus debitis vel officiis quod, recusandae eos maiores aperiam blanditiis. Magni aliquam provident dolore velit eveniet officiis quia atque explicabo itaque possimus perferendis, excepturi cumque? Impedit modi, quidem recusandae iste sint rerum distinctio, voluptate dolores laboriosam perspiciatis, sunt mollitia eius totam aperiam, nihil quis dicta veniam laudantium! Modi impedit voluptas eveniet, dolorem perferendis reprehenderit, accusamus odit? Voluptate debitis quisquam, saepe at impedit corporis repellendus facilis quibusdam, totam molestiae amet earum tenetur harum cupiditate eius cumque ad, a sed iusto aperiam, dolores vero sequi similique. Nostrum atque nemo excepturi natus, veritatis iure, magnam eligendi odio suscipit, dignissimos a ipsa maiores sit blanditiis animi beatae omnis cupiditate aliquid. Tempore sed sequi obcaecati cum, doloremque similique nisi laudantium soluta qui velit, iste quia tempora dolorem praesentium numquam laboriosam eos nostrum impedit sapiente quis. Commodi laboriosam tempora eos quis, tempore libero possimus! Accusantium magnam exercitationem sunt sequi debitis ipsa consequatur reiciendis officiis quia pariatur nostrum cum fuga voluptates, officia doloribus, hic quis tempore minus rerum velit vel quidem dolorem. Aperiam reiciendis optio nulla ab possimus distinctio consectetur necessitatibus, rerum veniam, ipsum. Quaerat rerum commodi saepe ducimus minima ab debitis blanditiis provident, quas dicta perspiciatis obcaecati voluptatem, minus, soluta esse quibusdam neque adipisci. Soluta, voluptates quas! Unde quae enim consequatur hic ea esse dicta soluta minima, ab eligendi doloremque architecto dignissimos at! Quod et magnam deleniti facere omnis reiciendis repellendus! Iure dolorum, cupiditate dolores labore iusto animi minima. Asperiores quas, consequuntur iste enim vitae itaque tempore? Sapiente, incidunt sequi repellat, unde quia aspernatur temporibus saepe omnis rerum facere, quae enim. Accusantium quae, aspernatur consectetur fugiat consequuntur inventore necessitatibus ipsum, vitae excepturi architecto odit tenetur. Perspiciatis aut accusantium ipsam, ullam, est exercitationem facere quos delectus, quibusdam eveniet neque laboriosam alias eaque reprehenderit id ad numquam amet quidem. Corrupti perferendis recusandae voluptatum maiores nobis similique illo eius, eaque in quibusdam consequuntur libero ipsum vel itaque quidem repellat ipsam a ex vero dicta dolorem laboriosam, quasi quo? Maxime quo incidunt animi distinctio quisquam, quam sint deleniti quod assumenda sunt iste nam, alias nostrum fugit sed, vitae est sit! Atque incidunt aut ex quia esse illo distinctio sapiente, temporibus laboriosam, saepe aspernatur, nihil error nisi facere quas quibusdam.</p>\n" +
+    "<footer ui-view=\"footer\" class=\"clearfix row\"></footer>\n" +
     "");
-}]);
-
-angular.module("../templates/functional/nav.html", []).run(["$templateCache", function($templateCache) {
-  $templateCache.put("../templates/functional/nav.html",
-    "<nav class=\"navbar navbar-default navbar-fixed-top\" bs-collapse bs-scrollspy-list role=\"navigation\">\n" +
-    "  <div class=\"container-fluid\">\n" +
-    "    <div class=\"navbar-header\">\n" +
-    "      <button type=\"button\" class=\"navbar-toggle\" bs-collapse-toggle>\n" +
-    "        <span class=\"sr-only\">Toggle navigation</span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "        <span class=\"icon-bar\"></span>\n" +
-    "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
-    "    </div>\n" +
-    "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
-    "      <ul class=\"nav navbar-nav\">\n" +
-    "        <li bs-scrollspy data-target=\"#understand\"><a href=\"#understand\">Understand <span class=\"hidden-sm hidden-md\">and Observe</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#analyse\"><a href=\"#analyse\">Analyse <span class=\"hidden-sm hidden-md\">and Ideate</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#prototype\"><a href=\"#prototype\">Prototype <span class=\"hidden-sm hidden-md\">and Test</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#evaluate\"><a href=\"#evaluate\">Evaluate <span class=\"hidden-sm hidden-md\">and Outlook</span></a></li>\n" +
-    "        <li bs-scrollspy data-target=\"#theory\"><a href=\"#theory\">Theory <span class=\"hidden-sm hidden-md\">and Methods</span></a></li>\n" +
-    "      </ul>\n" +
-    "      <ul class=\"nav navbar-nav navbar-right\">\n" +
-    "        <li bs-scrollspy data-target=\"#about\"><a href=\"#about\">About</a></li>\n" +
-    "      </ul>\n" +
-    "    </div>\n" +
-    "  </div>\n" +
-    "</nav>");
 }]);

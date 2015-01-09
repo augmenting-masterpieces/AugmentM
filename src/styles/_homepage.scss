@@ -5,10 +5,6 @@
    	min-height: 100%;
 }
 
-main {
-	min-height: 100%;
-}
-
 img {
 	width: 100%;
 }
@@ -104,6 +100,7 @@ img {
 }
 
 .assumptions {
+	// Created a box to hide the legs underneath. 
 	.overflow-container {
 		overflow: hidden;
 	}

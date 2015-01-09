@@ -8,42 +8,65 @@
     $locationProvider.html5Mode(true);
     
     $stateProvider
-      .state('displayorderHome', {
+      .state("home", {
         views: {
-          "nav": { 
-            templateUrl: "../templates/functional/nav.html",
-            controller: 'NavCtrl as nav',      
-          },
-          "displayorder": { 
-            templateUrl: "../templates/displayorder.html",
-            controller: "DisplayCtrl as disp"
-          },
-          "footer": { templateUrl: "../templates/functional/footer.html" }
+          "main": { 
+            templateUrl: "../templates/home.html"
+          }
         }
       })
-      .state('displayorderHome.withSubroutes', {
-        url: '/',
+      .state('home.subroutes', {
+        url: "/",
         views: {
+          "nav": { 
+            templateUrl: "../templates/home/navHome.html",
+            controller: "NavCtrl as nav"      
+          },
           "header": { 
-            templateUrl: "../templates/content/header.html",
+            templateUrl: "../templates/home/header.html",
             controller: 'HeaderCtrl as head'                
           },
-          "assumptions": { templateUrl: "../templates/content/assumptions.html" },
-          "usercamerastudy": { templateUrl: "../templates/content/usercamerastudy.html" },
-          "survey": { templateUrl: "../templates/content/survey.html" },
+          "assumptions": { templateUrl: "../templates/home/assumptions.html" },
+          "usercamerastudy": { templateUrl: "../templates/home/usercamerastudy.html" },
+          "survey": { templateUrl: "../templates/home/survey.html" },
           "masonryviewer": { 
-            templateUrl: "../templates/content/masonryviewer.html",
-            controller: 'MasonryCtrl as mason'                
+            templateUrl: "../templates/home/masonryviewer.html",
+            controller: "MasonryCtrl as mason"                
           },
-          "demo": { templateUrl: "../templates/content/demo.html" },
-          "evaluation": { templateUrl: "../templates/content/evaluation.html" },
-          "theory": { templateUrl: "../templates/content/theory.html" },
-          "literature": { templateUrl: "../templates/content/literature.html" },
-          "about": { templateUrl: "../templates/content/about.html" }
+          "demo": { templateUrl: "../templates/home/demo.html" },
+          "evaluation": { templateUrl: "../templates/home/evaluation.html" },
+          "theory": { templateUrl: "../templates/home/theory.html" },
+          "literature": { templateUrl: "../templates/home/literature.html" },
+          "about": { templateUrl: "../templates/home/about.html" },
+          "footer": { 
+            templateUrl: "../templates/home/footerHome.html"
+          }
+        }
+      })
+      .state('impressum', {
+        views: {
+          "main": { 
+            templateUrl: "../templates/impressum.html"
+          }
+        }
+      })
+      .state('impressum.subroutes', {
+        url: "/impressum",
+        views: {
+          "nav": { 
+            templateUrl: "../templates/functional/navSiteWide.html",
+            controller: 'NavCtrl as nav'      
+          },
+          "main": { 
+            templateUrl: "../templates/impressum.html"
+          },
+          "footer": { 
+            templateUrl: "../templates/functional/footerSiteWide.html"
+          }
         }
       });
 
-    $urlRouterProvider.when('', '/');
-    $urlRouterProvider.otherwise('/');
+    $urlRouterProvider.when('/', '/');
+    // $urlRouterProvider.otherwise('/home');
   }
 })();

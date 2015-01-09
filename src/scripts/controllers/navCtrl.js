@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('augm').controller('NavCtrl', ['$scope', '$location', NavCtrl]);
+  angular.module('augm').controller('NavCtrl', ['$window', '$rootScope', '$state', '$stateParams', '$location', '$scope', '$anchorScroll', '$uiViewScroll', '$timeout',  NavCtrl]);
 
   angular.module('augm')
     .config(function($collapseProvider) {
@@ -10,9 +10,8 @@
       });
     });
 
-  function NavCtrl($scope, $location, $anchorScroll){
+  function NavCtrl($window, $rootScope, $state, $stateParams, $location, $scope, $anchorScroll, $uiViewScroll, $timeout){
     var vm = this;
-
 
     $(function() {
       $('a[href*="#"]:not([href=#])').click(function() {
@@ -28,7 +27,7 @@
         }
       });
     });
-
+    
     return vm;
   }
 })();

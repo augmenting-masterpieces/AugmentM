@@ -3,7 +3,7 @@
 
 	angular.module('augm').controller('MasonryCtrl', [MasonryCtrl]);
 
-	function MasonryCtrl(){
+	function MasonryCtrl($stateParams){
 		var vm = this;
 		var data = importData();
 	  
@@ -76,9 +76,6 @@
 					});
 				});
 	    }
-
-	    // this.hello = "bye";
-
     return vm;
 	}
 })();
