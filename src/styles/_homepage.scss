@@ -135,8 +135,34 @@ img {
 
 	.legend {
 		max-height: 800%;
-   		// transition: height 1s ease-out;
-  	}
+ 	}
+	
+	// Animations
+	.change-add {
+	  background-color: white;
+	  transition: all 1s;
+	  -webkit-transition: all 1s ease-in-out;
+	}
+	
+	.change-add-active {
+	  background-color: red;
+	}
+
+	.change {
+	  background-color: red;
+	}
+
+	.change-remove {
+		background-color: red;
+	  transition: all 1s;
+	  -webkit-transition: all 1s ease-in-out;
+	}
+	  
+	.change-remove-active {
+	  background-color: white;
+	}
+	
+	// End Animations
 
   	#photoPiece {
 		height: 80%;
