@@ -444,6 +444,12 @@ angular.module("../templates/home/literature.html", []).run(["$templateCache", f
 angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/masonryviewer.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
+    "	<h1>{{mason.header}}</h1>\n" +
+    "	<p>{{mason.quote}}</p>\n" +
+    "	<p>{{mason.snippet}}</p>\n" +
+    "	<img ng-src=\"{{mason.src}}\" alt=\"\">\n" +
+    "\n" +
+    "\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +

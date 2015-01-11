@@ -1,9 +1,11 @@
 (function(){
   'use strict';
 
-  angular.module('augm').config(['$stateProvider', '$locationProvider', '$urlRouterProvider', routes]); 
+  angular.module("augm").config(["$stateProvider", "$locationProvider", "$urlRouterProvider", routes]); 
     
   function routes($stateProvider, $locationProvider, $urlRouterProvider) {
+
+    console.log("Im on top of routes");
 
     $locationProvider.html5Mode(true);
     
@@ -31,7 +33,18 @@
           "survey": { templateUrl: "../templates/home/survey.html" },
           "masonryviewer": { 
             templateUrl: "../templates/home/masonryviewer.html",
-            controller: "MasonryCtrl as mason"                
+            controller: "MasonryCtrl as mason",
+            resolve: {
+              jsonData: ["$http", function($http){
+                return $http({
+                  method: "GET",
+                  url: "/api/fotoData.json",
+                  responseType: "json"
+                }).then(function(response){
+                  return response.data;
+                }); 
+              }]
+            }             
           },
           "demo": { templateUrl: "../templates/home/demo.html" },
           "evaluation": { templateUrl: "../templates/home/evaluation.html" },

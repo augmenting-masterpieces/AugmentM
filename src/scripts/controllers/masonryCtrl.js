@@ -1,12 +1,18 @@
 (function(){
 	'use strict';
 
-	angular.module('augm').controller('MasonryCtrl', [MasonryCtrl]);
+	angular.module("augm").controller("MasonryCtrl", ["$scope", "jsonData", MasonryCtrl]);
 
-	function MasonryCtrl(){
+	function MasonryCtrl($scope, jsonData){
 		var vm = this;
-		var data = importData();
-	  
+
+		console.log("this is the controller speaking, I bid you welcome data:");
+		console.log(jsonData);
+
+		importData();
+
+		vm.header = "Loading Data";
+
 		function importData() {
 			var data = $.ajax({
 				url: "api/fotoData.json",
@@ -29,40 +35,49 @@
 	    		imgTags += "<div class=\"item\"><img src=\"" +this.src+ "\" alt=\"" +this.name+ "\" " + "data=\""+this.number+ "\" ><hr class=\"itemText\"><p class=\"itemText\">" + this.transcriptSnippet + "<br class=\"itemText\"><br class=\"itemText\"> Title: " + this.name + "<br class=\"itemText\">Tag: " + this.tags[0] + "</p><hr class=\"itemText\"></div>";
 	    	});
 
-	    	// Appending to HTML and event listener.
+	    	// Adding event listener.
 	    	$("#photoPiece").append(imgTags).on("click", "div", data, galleryChange);
-	    	$(".legend").html("<h1>" + data.photos[0].name + "</h1><p>" + data.photos[0].transcriptSnippet + "</p><img src=\"" + data.photos[0].src + "\"></img>").fadeIn();
+
+	    	// Generating first item
+	    	// $(".legend").html("<h1>" + data.photos[0].name + "</h1><p>" + data.photos[0].transcriptSnippet + "</p><img src=\"" + data.photos[0].src + "\"></img>").fadeIn();
+
+	    	vm.header = data.photos[0].name;
+			vm.quotes = data.photos[0].quotes;
+			vm.snippet = data.photos[0].transcriptSnippet;
+			vm.src = data.photos[0].src;
 
 	    	// Running Masonry
 	    	masonryConfig();
 	    }
 
 	    function galleryChange(evt) {
-	    	// galleryChange
+			var photoData = {};
 
-				if ($(evt.target).attr("data")) {
-					var photoData = {};
-					var photoNumber = $(evt.target).attr("data");
-				} else {
+			// Getting the right data element 
+			if ($(evt.target).attr("data")) {
+				var photoNumber = $(evt.target).attr("data");
+			} else {
+				return false;
+			}
+			
+			// Necessary loop because toplevel key is not set
+			$(evt.data.photos).each(function(){
+				if (this.number == photoNumber){
+					photoData = this;
 					return false;
 				}
-				
-				// Necessary loop because toplevel key is not set
-				$(evt.data.photos).each(function(){
-					if (this.number == photoNumber){
-						photoData = this;
-						return false;
-					}
-				});
+			});
 
-				// Angular templating Tryout -> To use ngAnimate (and to learn how to make things easyer)
-				// vm.name = photoData.name;
-				// vm.snippet = photoData.transcriptSnippet;
-				// vm.src = photoData.src;
+			vm.header = photoData.name;
+			vm.quotes = photoData.quotes;
+			vm.snippet = photoData.transcriptSnippet;
+			vm.src = photoData.src;
 
-				$(".legend").fadeOut(function(){
-					$(this).html("<h1>" + photoData.name + "</h1><p>\"" + photoData.quotes + "\"</p><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
-				});
+			console.log(vm);
+
+			// $(".legend").fadeOut(function(){
+			// 	$(this).html("<h1>" + photoData.name + "</h1><p>\"" + photoData.quotes + "\"</p><p>" + photoData.transcriptSnippet + "</p><img src=\"" + photoData.src + "\"></img>").fadeIn();
+			// });
 	    }
 
 	    function masonryConfig() {
