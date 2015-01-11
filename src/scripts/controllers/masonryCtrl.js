@@ -9,23 +9,9 @@
 		console.log("this is the controller speaking, I bid you welcome data:");
 		console.log(jsonData);
 
-		importData();
+		galleryImages(jsonData);
 
 		vm.header = "Loading Data";
-
-		function importData() {
-			var data = $.ajax({
-				url: "api/fotoData.json",
-				dataType: "json",
-				success: function(data){
-					galleryImages(data);
-				},
-				error: function(obj, err, errObj){
-					console.error("Loading the JSON did not go as planned: " + err);
-				}
-			});
-			return data;
-		}
 
 	    function galleryImages(data) {
 	    	// Creating one long string with all images.
