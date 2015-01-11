@@ -1,5 +1,6 @@
 <div class="col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend">
-	<h1>{{mason.currentPhoto.name}}</h1>
+	<h1>Masonry</h1>
+	<h2>{{mason.currentPhoto.name}}</h2>
 	<p>{{mason.currentPhoto.quotes}}</p>
 	<p>{{mason.currentPhoto.transcriptSnippet}}</p>
 	<img ng-src="{{mason.currentPhoto.src}}" alt="">
@@ -10,7 +11,7 @@
 	<div id="photoPiece" images-loaded="imgLoadedEvents">
 		<div class="grid-sizer"></div>
 		<div class="item" ng-repeat="photo in mason.photos">
-			<img ng-src="{{photo.src}}" ng-click="mason.legendChange(photo)" alt="">
+			<img ng-src="{{photo.src}}" ng-click="mason.currentPhoto = photo" alt="">
 		</div>	
 	</div>
 </div>

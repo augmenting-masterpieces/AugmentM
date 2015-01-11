@@ -444,7 +444,8 @@ angular.module("../templates/home/literature.html", []).run(["$templateCache", f
 angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/masonryviewer.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
-    "	<h1>{{mason.currentPhoto.name}}</h1>\n" +
+    "	<h1>Masonry</h1>\n" +
+    "	<h2>{{mason.currentPhoto.name}}</h2>\n" +
     "	<p>{{mason.currentPhoto.quotes}}</p>\n" +
     "	<p>{{mason.currentPhoto.transcriptSnippet}}</p>\n" +
     "	<img ng-src=\"{{mason.currentPhoto.src}}\" alt=\"\">\n" +
@@ -455,7 +456,7 @@ angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache"
     "	<div id=\"photoPiece\" images-loaded=\"imgLoadedEvents\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "		<div class=\"item\" ng-repeat=\"photo in mason.photos\">\n" +
-    "			<img ng-src=\"{{photo.src}}\" ng-click=\"mason.legendChange(photo)\" alt=\"\">\n" +
+    "			<img ng-src=\"{{photo.src}}\" ng-click=\"mason.currentPhoto = photo\" alt=\"\">\n" +
     "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +

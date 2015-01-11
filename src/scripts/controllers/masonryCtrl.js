@@ -1,5 +1,5 @@
 (function(){
-	'use strict';
+	"use strict";
 
 	angular.module("augm").controller("MasonryCtrl", ["$scope", "photos", MasonryCtrl]);
 
@@ -20,12 +20,6 @@
 				});
 	        }
     	};
-
-    	// The event handler
-    	vm.legendChange = function(photo) {
-    		vm.currentPhoto = photo;	
-    	};
-	  
-    return vm;
+    	return vm;
 	}
 })();
