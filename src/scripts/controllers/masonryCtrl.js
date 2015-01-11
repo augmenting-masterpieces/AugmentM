@@ -6,7 +6,7 @@
 	function MasonryCtrl($scope, photos){
 		var vm = this;
 
-		// Setting up the viewmodel with the Jsondata + firstclick
+		// Setting up the viewmodel with the data + first item
 		vm.photos = photos;
 		vm.currentPhoto = photos[0];
 
