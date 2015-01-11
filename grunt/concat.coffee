@@ -25,6 +25,7 @@ module.exports =
       'src/vendor/dimensions.js'
       'src/vendor/masonry.pkgd.js'
       'src/vendor/imagesloaded.pkgd.js'
+      'src/vendor/angular-images-loaded.js'
       'src/vendor/jquery.panelSnap.js'
       'src/vendor/packery.pkgd.js'
     ]

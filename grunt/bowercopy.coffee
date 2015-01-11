@@ -51,6 +51,10 @@ module.exports =
     src: "imagesloaded/imagesloaded.pkgd.js"
     dest: "src/vendor/imagesloaded.pkgd.js"
 
+  angularImagesLoaded:
+    src: "angular-images-loaded/angular-images-loaded.js"
+    dest: "src/vendor/angular-images-loaded.js"  
+
   panelSnap:
     src: "panelsnap/jquery.panelSnap.js"
     dest: "src/vendor/jquery.panelSnap.js" 

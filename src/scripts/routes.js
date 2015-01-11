@@ -5,8 +5,6 @@
     
   function routes($stateProvider, $locationProvider, $urlRouterProvider) {
 
-    console.log("Im on top of routes");
-
     $locationProvider.html5Mode(true);
     
     $stateProvider
@@ -35,13 +33,13 @@
             templateUrl: "../templates/home/masonryviewer.html",
             controller: "MasonryCtrl as mason",
             resolve: {
-              jsonData: ["$http", function($http){
+              photos: ["$http", function($http){
                 return $http({
                   method: "GET",
                   url: "/api/fotoData.json",
                   responseType: "json"
                 }).then(function(response){
-                  return response.data;
+                  return response.data.photos;
                 }); 
               }]
             }             

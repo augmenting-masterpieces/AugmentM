@@ -444,18 +444,19 @@ angular.module("../templates/home/literature.html", []).run(["$templateCache", f
 angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/masonryviewer.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
-    "	<h1>{{mason.header}}</h1>\n" +
-    "	<p>{{mason.quote}}</p>\n" +
-    "	<p>{{mason.snippet}}</p>\n" +
-    "	<img ng-src=\"{{mason.src}}\" alt=\"\">\n" +
-    "\n" +
-    "\n" +
+    "	<h1>{{mason.currentPhoto.name}}</h1>\n" +
+    "	<p>{{mason.currentPhoto.quotes}}</p>\n" +
+    "	<p>{{mason.currentPhoto.transcriptSnippet}}</p>\n" +
+    "	<img ng-src=\"{{mason.currentPhoto.src}}\" alt=\"\">\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "<!-- 	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote> -->\n" +
-    "	<div id=\"photoPiece\">\n" +
+    "	<div id=\"photoPiece\" images-loaded=\"imgLoadedEvents\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
+    "		<div class=\"item\" ng-repeat=\"photo in mason.photos\">\n" +
+    "			<img ng-src=\"{{photo.src}}\" ng-click=\"mason.legendChange(photo)\" alt=\"\">\n" +
+    "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
