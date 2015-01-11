@@ -444,8 +444,8 @@ angular.module("../templates/home/literature.html", []).run(["$templateCache", f
 angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/masonryviewer.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
-    "	<h1>Masonry</h1>\n" +
-    "	<h2>{{mason.currentPhoto.name}}</h2>\n" +
+    "	<h1>Camera Study</h1>\n" +
+    "	<h3>{{mason.currentPhoto.name}}</h3>\n" +
     "	<p>{{mason.currentPhoto.quotes}}</p>\n" +
     "	<p>{{mason.currentPhoto.transcriptSnippet}}</p>\n" +
     "	<img ng-src=\"{{mason.currentPhoto.src}}\" alt=\"\">\n" +
