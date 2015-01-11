@@ -467,7 +467,7 @@ angular.module("../templates/home/navHome.html", []).run(["$templateCache", func
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\"><img src=\"images/logos/favicon.ico\" alt=\"\"> Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +

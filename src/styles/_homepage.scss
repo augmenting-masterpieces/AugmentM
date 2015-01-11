@@ -17,6 +17,14 @@ img {
 
 // Header module
 
+.navbar {
+	img {
+		width: auto;
+		height: 100%;
+		padding-right: 15px;
+	}
+}
+
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center bottom / cover;
 	color: white;
