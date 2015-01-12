@@ -444,12 +444,21 @@ angular.module("../templates/home/literature.html", []).run(["$templateCache", f
 angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/masonryviewer.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-0 col-xs-24 col-xs-offset-0 legend\">\n" +
+    "	<h1>Camera Study</h1>\n" +
+    "	<h3>{{mason.currentPhoto.name}}</h3>\n" +
+    "	<p>{{mason.currentPhoto.quotes}}</p>\n" +
+    "	<p>{{mason.currentPhoto.transcriptSnippet}}</p>\n" +
+    "	<img ng-src=\"{{mason.currentPhoto.src}}\">\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "<!-- 	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote> -->\n" +
-    "	<div id=\"photoPiece\">\n" +
+    "	<p class=\"centerText\">(click on the images)</p>\n" +
+    "	<div id=\"photoPiece\" images-loaded=\"imgLoadedEvents\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
+    "		<div class=\"item\" ng-repeat=\"photo in mason.photos\">\n" +
+    "			<img ng-src=\"{{::photo.src}}\" ng-click=\"mason.currentPhoto = photo\" alt=\"\">\n" +
+    "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -467,7 +476,7 @@ angular.module("../templates/home/navHome.html", []).run(["$templateCache", func
     "        <span class=\"icon-bar\"></span>\n" +
     "        <span class=\"icon-bar\"></span>\n" +
     "      </button>\n" +
-    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\">Augmenting Masterpieces</a>\n" +
+    "      <a class=\"navbar-brand\" bs-scrollspy href=\"#main\"><img src=\"images/logos/favicon.ico\" alt=\"\"> Augmenting Masterpieces</a>\n" +
     "    </div>\n" +
     "    <div class=\"collapse navbar-collapse\" id=\"navbarcontents\" bs-collapse-target>\n" +
     "      <ul class=\"nav navbar-nav\">\n" +

@@ -15,6 +15,10 @@ module.exports =
     src: "angular-sanitize/angular-sanitize.js"
     dest: "src/vendor/angular-sanitize.js"
 
+  angularAnimate:
+    src: "angular-animate/angular-animate.js"
+    dest: "src/vendor/angular-animate.js"
+
   angularstrap:
     src: "angular-strap/dist/angular-strap.js"
     dest: "src/vendor/angular-strap.js"
@@ -50,6 +54,10 @@ module.exports =
   imagesloaded:
     src: "imagesloaded/imagesloaded.pkgd.js"
     dest: "src/vendor/imagesloaded.pkgd.js"
+
+  angularImagesLoaded:
+    src: "angular-images-loaded/angular-images-loaded.js"
+    dest: "src/vendor/angular-images-loaded.js"  
 
   panelSnap:
     src: "panelsnap/jquery.panelSnap.js"

@@ -17,6 +17,14 @@ img {
 
 // Header module
 
+.navbar {
+	img {
+		width: auto;
+		height: 100%;
+		padding-right: 15px;
+	}
+}
+
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center bottom / cover;
 	color: white;
@@ -127,15 +135,17 @@ img {
 
 	.legend {
 		max-height: 800%;
-   		// transition: height 1s ease-out;
-  	}
+ 	}
+
+	.centerText {
+		text-align: center;
+		margin-bottom: 0;	
+	}
 
   	#photoPiece {
 		height: 80%;
-		margin-top: 24px;
 
 		img {
-			margin-top: 0;
 			width: auto;
 		}
 
@@ -153,10 +163,6 @@ img {
 					cursor: pointer;
 				}
 			}
-		}
-
-		.itemText {
-			display: none;
 		}
 	}
 }

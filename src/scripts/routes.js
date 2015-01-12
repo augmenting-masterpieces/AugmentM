@@ -1,7 +1,7 @@
 (function(){
   'use strict';
 
-  angular.module('augm').config(['$stateProvider', '$locationProvider', '$urlRouterProvider', routes]); 
+  angular.module("augm").config(["$stateProvider", "$locationProvider", "$urlRouterProvider", routes]); 
     
   function routes($stateProvider, $locationProvider, $urlRouterProvider) {
 
@@ -31,7 +31,18 @@
           "survey": { templateUrl: "../templates/home/survey.html" },
           "masonryviewer": { 
             templateUrl: "../templates/home/masonryviewer.html",
-            controller: "MasonryCtrl as mason"                
+            controller: "MasonryCtrl as mason",
+            resolve: {
+              photos: ["$http", function($http){
+                return $http({
+                  method: "GET",
+                  url: "/api/fotoData.json",
+                  responseType: "json"
+                }).then(function(response){
+                  return response.data.photos;
+                }); 
+              }]
+            }             
           },
           "demo": { templateUrl: "../templates/home/demo.html" },
           "evaluation": { templateUrl: "../templates/home/evaluation.html" },
@@ -39,7 +50,8 @@
           "literature": { templateUrl: "../templates/home/literature.html" },
           "about": { templateUrl: "../templates/home/about.html" },
           "footer": { 
-            templateUrl: "../templates/home/footerHome.html"
+            templateUrl: "../templates/home/footerHome.html",
+            controller: "NavCtrl as nav",
           }
         }
       })

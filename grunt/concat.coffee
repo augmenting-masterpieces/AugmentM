@@ -20,11 +20,13 @@ module.exports =
       'src/vendor/angular.js'
       'src/vendor/angular-ui-router.js'
       'src/vendor/angular-sanitize.js'
+      'src/vendor/angular-animate.js'
       'src/vendor/angular-strap.js'
       'src/vendor/angular-strap.tpl.js'
       'src/vendor/dimensions.js'
       'src/vendor/masonry.pkgd.js'
       'src/vendor/imagesloaded.pkgd.js'
+      'src/vendor/angular-images-loaded.js'
       'src/vendor/jquery.panelSnap.js'
       'src/vendor/packery.pkgd.js'
     ]
