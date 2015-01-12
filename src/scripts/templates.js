@@ -298,7 +298,7 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"#main\"> Home </a></h4></li>\n" +
+    "				<li><h4><a href=\"#main\"> Home </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
