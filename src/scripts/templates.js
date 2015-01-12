@@ -620,6 +620,8 @@ angular.module("../templates/home/usercamerastudy.html", []).run(["$templateCach
     "	<div class=\"videos embed-responsive embed-responsive-16by9\">\n" +
     "		<iframe src=\"http://player.vimeo.com/video/112510250\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "		<h4>We asked children to wear a camera during their museum visit. As their perspective is not only physically different, due to their height, we were interested in what they looked at since they are culturally less trained for a museum visit yet compared to adults.</h4>\n" +
+    "		<p>Language: Dutch. For English subtitles click 'CC' in the player</p>\n" +
+    "\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
