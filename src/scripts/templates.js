@@ -144,7 +144,7 @@ angular.module("../templates/home/about.html", []).run(["$templateCache", functi
     "			<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
     "		</div>\n" +
     "		<div class=\"col-lg-18 col-lg-offset-0 col-md-18 col-md-offset-0 col-sm-18 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "			<h4>Johanna Barnbeck</h4>\n" +
+    "			<p>Johanna Barnbeck</p>\n" +
     "			<p>Johanna Barnbeck designed the research process and carries out the different phases of research and creation. She is a Berlin-based artist, researcher and creative professional with an expertise in multidisciplinary projects combining Artistic Research, Design Thinking and Cultural Analysis.</p>\n" +
     "		</div>\n" +
     "	</div>\n" +
@@ -153,7 +153,7 @@ angular.module("../templates/home/about.html", []).run(["$templateCache", functi
     "			<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analysis\">\n" +
     "		</div>\n" +
     "		<div class=\"col-lg-18 col-lg-offset-0 col-md-18 col-md-offset-0 col-sm-18 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "			<h4>Jan Hein Hoogstad</h4>\n" +
+    "			<p>Jan Hein Hoogstad</p>\n" +
     "			<p>As assistant professor at the University of Amsterdam, Jan Hein Hoogstad teaches a course on the API of the Rijksmuseum within his initiative “Coding the Humanities”. He introduces tools and practices - such as automation, collaboration, and testing - from open-source and commercial software development into humanities research and teaching.</p>\n" +
     "		</div>\n" +
     "	</div>\n" +
