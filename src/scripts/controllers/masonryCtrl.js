@@ -9,7 +9,6 @@
 		// Setting up the viewmodel with the data + first item
 		vm.photos = photos;
 		vm.currentPhoto = photos[0];
-		vm.futurePhoto = {};
 
 		// Starting up packery after images are loaded
 		$scope.imgLoadedEvents = {
