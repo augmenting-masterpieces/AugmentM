@@ -136,40 +136,16 @@ img {
 	.legend {
 		max-height: 800%;
  	}
-	
-	// Animations
-	.change-add {
-	  background-color: white;
-	  transition: all 1s;
-	  -webkit-transition: all 1s ease-in-out;
-	}
-	
-	.change-add-active {
-	  background-color: red;
-	}
 
-	.change {
-	  background-color: red;
+	.centerText {
+		text-align: center;
+		margin-bottom: 0;	
 	}
-
-	.change-remove {
-		background-color: red;
-	  transition: all 1s;
-	  -webkit-transition: all 1s ease-in-out;
-	}
-	  
-	.change-remove-active {
-	  background-color: white;
-	}
-	
-	// End Animations
 
   	#photoPiece {
 		height: 80%;
-		margin-top: 24px;
 
 		img {
-			margin-top: 0;
 			width: auto;
 		}
 
@@ -187,10 +163,6 @@ img {
 					cursor: pointer;
 				}
 			}
-		}
-
-		.itemText {
-			display: none;
 		}
 	}
 }

@@ -453,6 +453,7 @@ angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache"
     "\n" +
     "<div class=\"col-lg-11 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "<!-- 	<blockquote>A detailed profile and script from a participating Cultural Tourist illustrating collected input from museum visitors.</blockquote> -->\n" +
+    "	<p class=\"centerText\">(click on the images)</p>\n" +
     "	<div id=\"photoPiece\" images-loaded=\"imgLoadedEvents\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "		<div class=\"item\" ng-repeat=\"photo in mason.photos\">\n" +
