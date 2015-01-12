@@ -659,32 +659,37 @@ angular.module("../templates/home/usercamerastudy.html", []).run(["$templateCach
 angular.module("../templates/impressum.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/impressum.html",
     "<div ui-view=\"nav\"></div>  \n" +
+    "<div class=\"impressum block row\">\n" +
+    "	<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h3>Contributor's (in Alphabetical Order)</h3>\n" +
+    "		<ul>\n" +
+    "			<li>App animation: Wim Dijksterhuis, <a href=\"http://www.screenturner.nl\">Screenturner</a></li>\n" +
+    "			<li>App development: <a href=\"http://www.uncinc.nl\">UncInc</a> in collaboration with Johanna Barnbeck</li>\n" +
+    "			<li>Conceptural Sparring for the Prototypes: Jan Hein Hoogstad, Roel van der Wal, Floris de Langen</li>\n" +
+    "			<li>Infographics User Camera Study: Patty Jansen</li>\n" +
+    "			<li>Logo Design: <a href=\"http://www.resultat.nl\">Creatief Bureau Resultåt</a></li>\n" +
+    "			<li>Research Design, articles, videos and photographs (unless stated otherwise): Johanna Barnbeck</li>\n" +
+    "			<li>Website: Robert-Jan Korteschiel and Patty Jansen</li>\n" +
+    "			<li>Trailer testing prototype at the Rijksmuseum: <a href=\"http://www.screenturner.nl\">Screenturner</a> in collaboration with Johanna Barnbeck</li> \n" +
+    "		</ul>\n" +
+    "	</div>\n" +
     "\n" +
-    "Contributor´s (in Alphabetical Order)\n" +
-    "App animation: Wim Dijksterhuis, <a href=\"http://www.screenturner.nl\">Screenturner</a>\n" +
-    "App development: <a href=\"http://www.uncinc.nl\">UncInc</a> in collaboration with Johanna Barnbeck\n" +
-    "Conceptural Sparring for the Prototypes: Jan Hein Hoogstad, Roel van der Wal, Floris de Langen\n" +
-    "Infographics User Camera Study: Patty Jansen\n" +
-    "Logo Design: <a href=\"http://www.resultat.nl\">Creatief Bureau Resultåt</a>\n" +
-    "Research Design, articles, videos and photographs (unless stated otherwise): Johanna Barnbeck \n" +
-    "Website: Robert-Jan Korteschiel and Patty Jansen\n" +
-    "Trailer testing prototype at the Rijksmuseum: <a href=\"http://www.screenturner.nl\">Screenturner</a> in collaboration with Johanna Barnbeck \n" +
-    "\n" +
-    "\n" +
-    "<h4>Disclaimer</h4>\n" +
-    "<p><strong>Limitation of liability for internal content</strong></p>\n" +
-    "<p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>\n" +
-    "<p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz –  Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us.</p>\n" +
-    "<p><strong>Limitation of liability for external links</strong></p>\n" +
-    "<p>Our website contains links to the websites of third parties (“external links”). As the content of these websites is not under our control, we cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognisable to us. As soon as an infringement of the law becomes known to us, we will immediately remove the link in question.</p>\n" +
-    "<p><strong>Copyright</strong></p>\n" +
-    "<p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.</p>\n" +
-    "<p><strong>Data protection</strong></p>\n" +
-    "<p>A visit to our website can result in the storage on our server of information about the access (date, time, page accessed). This does not represent any analysis of personal data (e.g., name, address or e-mail address). If personal data are collected, this only occurs – to the extent possible – with the prior consent of the user of the website. Any forwarding of the data to third parties without the express consent of the user shall not take place.</p>\n" +
-    "<p>We would like to expressly point out that the transmission of data via the Internet (e.g., by e-mail) can offer security vulnerabilities. It is therefore impossible to safeguard the data completely against access by third parties. We cannot assume any liability for damages arising as a result of such security vulnerabilities.</p>\n" +
-    "<p>The use by third parties of all published contact details for the purpose of advertising is expressly excluded. We reserve the right to take legal steps in the case of the unsolicited sending of advertising information; e.g., by means of spam mail.</p>\n" +
-    "<p>Source: <a href=\"http://www.mustervorlage.net/disclaimer-muster#Englisch\">English Disclaimer on Mustervorlage.net</a></p>\n" +
-    "<p></p>\n" +
+    "	<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
+    "		<h3>Disclaimer</h3>\n" +
+    "		<p><strong>Limitation of liability for internal content</strong></p>\n" +
+    "		<p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>\n" +
+    "		<p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz –  Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us.</p>\n" +
+    "		<p><strong>Limitation of liability for external links</strong></p>\n" +
+    "		<p>Our website contains links to the websites of third parties (“external links”). As the content of these websites is not under our control, we cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognisable to us. As soon as an infringement of the law becomes known to us, we will immediately remove the link in question.</p>\n" +
+    "		<p><strong>Copyright</strong></p>\n" +
+    "		<p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.</p>\n" +
+    "		<p><strong>Data protection</strong></p>\n" +
+    "		<p>A visit to our website can result in the storage on our server of information about the access (date, time, page accessed). This does not represent any analysis of personal data (e.g., name, address or e-mail address). If personal data are collected, this only occurs – to the extent possible – with the prior consent of the user of the website. Any forwarding of the data to third parties without the express consent of the user shall not take place.</p>\n" +
+    "		<p>We would like to expressly point out that the transmission of data via the Internet (e.g., by e-mail) can offer security vulnerabilities. It is therefore impossible to safeguard the data completely against access by third parties. We cannot assume any liability for damages arising as a result of such security vulnerabilities.</p>\n" +
+    "		<p>The use by third parties of all published contact details for the purpose of advertising is expressly excluded. We reserve the right to take legal steps in the case of the unsolicited sending of advertising information; e.g., by means of spam mail.</p>\n" +
+    "		<p>Source: <a href=\"http://www.mustervorlage.net/disclaimer-muster#Englisch\">English Disclaimer on Mustervorlage.net</a></p>\n" +
+    "	</div>\n" +
+    "</div>\n" +
     "<footer ui-view=\"footer\" class=\"clearfix row\"></footer>\n" +
     "");
 }]);
