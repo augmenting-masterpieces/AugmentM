@@ -141,40 +141,42 @@ angular.module("../templates/home/about.html", []).run(["$templateCache", functi
     "	<h1>People</h1>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
-    "		<p>Johanna Barnbeck</p>\n" +
+    "		<p>Johanna Barnbeck</p> \n" +
+    "		<p>Johanna Barnbeck designed the research process and carries out the different phases of research and creation. She is a Berlin-based artist, researcher and creative professional with an expertise in multidisciplinary projects combining Artistic Research, Design Thinking and Cultural Analysis.</p>\n" +
     "	</div>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analysis\">\n" +
     "		<p>Jan Hein Hoogstad</p>\n" +
-    "		<p>Assistant Professor Cultural Analysis</p>\n" +
+    "		<p>As assistant professor at the University of Amsterdam, Jan Hein Hoogstad teaches a course on the API of the Rijksmuseum within his initiative “Coding the Humanities”. He introduces tools and practices - such as automation, collaboration, and testing - from open-source and commercial software development into humanities research and teaching.</p>\n" +
     "	</div>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
-    "		<p>Shailoh Phillips</p>\n" +
+    "		<p>The MediaLab of the Rijksmuseum operates at the intersection between art, technology and education. The Lab functions as a space for experimentation. Shailoh Philips formerly managed the MediaLab and initiated the project together with Jan Hein Hoogstad.</p>\n" +
     "	</div>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/patty.jpg\" alt=\"Intern and Thesis\">\n" +
-    "		<p>Patty Jansen</p>\n" +
+    "		<p>Patty Jansen interns at the project, foremost concerned with the front- and back end of this website, and also takes an active part in Jan Hein Hoogstad's Coding the Humanities project. Patty is completing her master's in Artistic Research at the University of Amsterdam.</p>\n" +
     "	</div>\n" +
     "	<div class=\"person clearfix\">\n" +
     "		<img src=\"./images/persons/robert.jpg\" alt=\"Intern\">\n" +
-    "		<p>Robert-Jan Korteschiel</p>\n" +
+    "		<p>Robert-Jan Korteschiel is interning at Augmenting Masterpieces, together with Patty he built this website and is also an active contributor for Coding the Humanities. He is studying Art History at the University of Amsterdam.</p>\n" +
     "	</div>\n" +
     "</div>\n" +
     "<div class=\"col-lg-10 col-lg-offset-2 col-md-11 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
     "	<h1>Contact</h1>\n" +
-    "	<p>Johanna Barnbeck</p>\n" +
-    "	<p>Locatie 13</p>\n" +
-    "	<p>7346HD Amsterdam</p>\n" +
-    "	<p>contact@augmenting-masterpieces.nl</p>\n" +
-    "	<p>telefoonnr: 103-929476296</p>\n" +
+    "	<p>University of Amsterdam</p>\n" +
+    "	<p>Centre for Digital Humanities</p>\n" +
+    "	<p>Vendelstraat 8</p>\n" +
+    "	<p>1012XX Amsterdam</p>\n" +
+    "	\n" +
+    "	<p>barnbeck@uva.nl</p>\n" +
     "	<br>\n" +
     "	<h1>Mailing list</h1>\n" +
     "	<!-- Begin MailChimp Signup Form -->\n" +
     "	<div id=\"mc_embed_signup\">\n" +
     "		<form action=\"//wix.us3.list-manage.com/subscribe/post?u=441ffe1b780f94da8bfedb43c&amp;id=ec4ca8f48f\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n" +
     "		    <div id=\"mc_embed_signup_scroll\">\n" +
-    "				<h4>Subscribe to our mailing list</h4>\n" +
+    "				<h4>Subscribe to our low-traffic mailing list</h4>\n" +
     "				<div class=\"mc-field-group\">\n" +
     "					<label for=\"mce-EMAIL\">Email Address</label>\n" +
     "					<input type=\"email\" value=\"\" name=\"EMAIL\" class=\"required email\" id=\"mce-EMAIL\">\n" +
@@ -282,16 +284,16 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#understand\"> Understand and Observe</a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><a href=\"#assumptions\">Assumptions... - \"That's What We Think They Want\"</a></li>\n" +
+    "				<li><a href=\"#usercamerastudy\">...And How To Get Rid Of Them - Visual Feedback Methods</a></li>\n" +
+    "				<li><a href=\"#usercamerastudy\">Video: User Video Study of Jakob (7)</a></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><a href=\"#survey\">No comment on the Masterpieces - \"I know they are important\"</a></li>\n" +
+    "				<li><a href=\"#masonryviewer\">Detailed Case Study: User Camera Study of a Museum Visitor</a></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "	</ul>\n" +
@@ -301,24 +303,25 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><a href=\"#demo\">It Doesn't Matter How much Cultural Capital You Bring</a></li>\n" +
+    "				<li><a href=\"#demo\">Research Trailer: Testing New App Features in the Museum</a></li>\n" +
+    "				<li></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><a href=\"#evaluation\">Process Evaluation</a></li>\n" +
+    "				<li><a href=\"#evaluation\">Concluding Remarks and Outlook</a></li>\n" +
+    "				<li></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><a href=\"#theory\">Social Augmentation vs. Technological Masterpieces?</a></li>\n" +
+    "				<li><a href=\"#theory\">About the Interdisciplinary Approach</a></li>\n" +
+    "				<li><a href=\"#literature\">Literature</a></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "	</ul>\n" +
@@ -328,9 +331,7 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><h4><a href=\"#about\"> Contact </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
@@ -339,7 +340,8 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
-    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "			<p class=\"copyright\">&#169; 2015 Augmenting Masterpieces</p>\n" +
+    "			<li><a href=\"https://github.com/augmenting-masterpieces/AugmentM\">See project on GitHub</a></li>\n" +
     "		</li>\n" +
     "	</ul>\n" +
     "</div>\n" +
@@ -617,6 +619,7 @@ angular.module("../templates/home/usercamerastudy.html", []).run(["$templateCach
     "<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-22 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "	<div class=\"videos embed-responsive embed-responsive-16by9\">\n" +
     "		<iframe src=\"http://player.vimeo.com/video/112510250\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
+    "		<h4>We asked children to wear a camera during their museum visit. As their perspective is not only physically different, due to their height, we were interested in what they looked at since they are culturally less trained for a museum visit yet compared to adults.</h4>\n" +
     "	</div>\n" +
     "</div>\n" +
     "\n" +
@@ -628,13 +631,39 @@ angular.module("../templates/home/usercamerastudy.html", []).run(["$templateCach
     "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
     "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
     "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
-    "</div>");
+    "</div>\n" +
+    "");
 }]);
 
 angular.module("../templates/impressum.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/impressum.html",
     "<div ui-view=\"nav\"></div>  \n" +
-    "<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius quis aut cum enim architecto nisi beatae doloribus sint, saepe ex voluptatem assumenda veritatis placeat rerum omnis tempora. Ratione id quod accusantium officiis! Harum, iusto dicta. Nobis eligendi aliquid reprehenderit consectetur ipsum quidem molestias rerum, repellendus, hic, totam quisquam earum. Adipisci neque odio ipsa non praesentium sunt mollitia, quisquam corporis! Nostrum veritatis cum similique, laborum corrupti repudiandae autem blanditiis nam, ad, nihil aspernatur consectetur quibusdam laudantium minus recusandae harum quis officia aperiam voluptatibus facilis asperiores eos. Perferendis hic laboriosam ullam, sed libero sit, vel, natus mollitia fugiat provident dignissimos delectus consequatur ea facilis ducimus voluptate fuga cumque? Possimus, ipsa cupiditate cumque, vitae maiores voluptates inventore. Commodi nobis dicta dolorem modi maxime quos dolores laboriosam quod ducimus accusantium, quaerat adipisci placeat. Dolor eos voluptates quam unde quis dicta obcaecati harum repudiandae, saepe numquam inventore odit maxime fugiat reprehenderit, eligendi nesciunt delectus dignissimos eum dolorum libero! Nostrum voluptate harum labore, laboriosam incidunt ratione, nam eos delectus saepe magni iure est, aut debitis ipsam porro nemo, consectetur officiis! Tempora laboriosam iste enim distinctio eos perspiciatis dicta. Eligendi facere libero repudiandae sit maiores voluptate ea excepturi aut labore, nulla minus deleniti? Illum, vero voluptatem culpa itaque quibusdam totam qui omnis iusto sapiente illo autem porro, minima ratione suscipit in necessitatibus voluptatibus ipsam alias repellendus doloribus fugiat veritatis perspiciatis nulla. Officia amet commodi vitae eius, est hic. Autem necessitatibus quidem voluptatibus cum beatae enim eum, ipsam. Sunt velit consequuntur doloribus at, ad consectetur vero placeat omnis error facere! Placeat autem voluptas laboriosam provident officia quas inventore, maiores ad facere dolor explicabo, aperiam eaque eos praesentium alias, quisquam. Repellat temporibus commodi obcaecati unde architecto facere totam, quibusdam deleniti. Vel placeat quos unde exercitationem accusamus, veritatis quo. Ab veniam hic, explicabo, alias reprehenderit ipsa aut nihil incidunt, magnam ratione omnis repudiandae soluta porro voluptatem asperiores veritatis. Fugiat obcaecati magnam impedit iusto, hic totam accusantium eum quibusdam consectetur consequatur porro sunt earum tenetur ipsum optio cumque rem illo molestias. Quo soluta, aspernatur animi, dolore laborum corrupti illo et laudantium debitis quia vitae dolorem similique a quod officiis unde accusantium porro natus quisquam repudiandae fugiat reiciendis amet, id dolorum esse. Recusandae numquam illum iure nihil rerum, dolorem mollitia vero quae ducimus ullam doloribus molestias, suscipit, laudantium repellendus earum in perspiciatis enim quidem voluptatibus quo qui ipsam ad id omnis eaque! In consequuntur fuga saepe, necessitatibus ipsam eveniet delectus dignissimos cumque dolor quaerat temporibus quis recusandae dolorum expedita facere, nulla pariatur voluptate reiciendis et tempore? Porro sunt quidem minus officiis tempore architecto totam non saepe, consequatur fuga, temporibus ea, earum veniam dignissimos error molestiae esse. Veniam a, accusantium ipsa quam quaerat odio nemo fuga recusandae corporis, aliquam quasi eaque quo temporibus quidem omnis laudantium facilis, officia dolore reiciendis tempora debitis reprehenderit tenetur sed. Quas voluptate nostrum facere repudiandae, quibusdam modi quis saepe blanditiis voluptates illum. Dolorum perferendis maiores mollitia voluptatem voluptates, corporis magnam consequatur. Illum ullam ex doloremque, obcaecati quas debitis placeat officiis ducimus. Eum deleniti neque tempore ab maiores, facere quia eaque eveniet explicabo rerum consectetur, fuga sit sapiente possimus tenetur, adipisci eos quae temporibus molestiae! Qui sequi enim aliquid labore consequatur, beatae ducimus repellendus similique earum vero id repudiandae corrupti eligendi, optio, in maiores veritatis harum odit nam distinctio adipisci. Rem quia iste mollitia modi, architecto omnis eligendi quibusdam minima repellat dolores ea, voluptatum et, tenetur ipsa error. Dignissimos facere veniam blanditiis odio a expedita, mollitia quibusdam sequi dicta molestias omnis in harum praesentium temporibus nisi itaque eaque, ipsam ullam aliquam ea molestiae unde consectetur nam illum. Molestiae et sapiente iure voluptatum quaerat tempore, asperiores est eius saepe, quibusdam illum harum quae mollitia vitae blanditiis sit in doloremque exercitationem ipsum amet. Distinctio nostrum cumque voluptatem alias ut voluptatibus eum quis molestias eaque! Perferendis, dignissimos ipsum harum adipisci quibusdam pariatur iusto temporibus laudantium quam fugit necessitatibus, nulla ducimus mollitia quos. Nisi voluptatibus debitis vel officiis quod, recusandae eos maiores aperiam blanditiis. Magni aliquam provident dolore velit eveniet officiis quia atque explicabo itaque possimus perferendis, excepturi cumque? Impedit modi, quidem recusandae iste sint rerum distinctio, voluptate dolores laboriosam perspiciatis, sunt mollitia eius totam aperiam, nihil quis dicta veniam laudantium! Modi impedit voluptas eveniet, dolorem perferendis reprehenderit, accusamus odit? Voluptate debitis quisquam, saepe at impedit corporis repellendus facilis quibusdam, totam molestiae amet earum tenetur harum cupiditate eius cumque ad, a sed iusto aperiam, dolores vero sequi similique. Nostrum atque nemo excepturi natus, veritatis iure, magnam eligendi odio suscipit, dignissimos a ipsa maiores sit blanditiis animi beatae omnis cupiditate aliquid. Tempore sed sequi obcaecati cum, doloremque similique nisi laudantium soluta qui velit, iste quia tempora dolorem praesentium numquam laboriosam eos nostrum impedit sapiente quis. Commodi laboriosam tempora eos quis, tempore libero possimus! Accusantium magnam exercitationem sunt sequi debitis ipsa consequatur reiciendis officiis quia pariatur nostrum cum fuga voluptates, officia doloribus, hic quis tempore minus rerum velit vel quidem dolorem. Aperiam reiciendis optio nulla ab possimus distinctio consectetur necessitatibus, rerum veniam, ipsum. Quaerat rerum commodi saepe ducimus minima ab debitis blanditiis provident, quas dicta perspiciatis obcaecati voluptatem, minus, soluta esse quibusdam neque adipisci. Soluta, voluptates quas! Unde quae enim consequatur hic ea esse dicta soluta minima, ab eligendi doloremque architecto dignissimos at! Quod et magnam deleniti facere omnis reiciendis repellendus! Iure dolorum, cupiditate dolores labore iusto animi minima. Asperiores quas, consequuntur iste enim vitae itaque tempore? Sapiente, incidunt sequi repellat, unde quia aspernatur temporibus saepe omnis rerum facere, quae enim. Accusantium quae, aspernatur consectetur fugiat consequuntur inventore necessitatibus ipsum, vitae excepturi architecto odit tenetur. Perspiciatis aut accusantium ipsam, ullam, est exercitationem facere quos delectus, quibusdam eveniet neque laboriosam alias eaque reprehenderit id ad numquam amet quidem. Corrupti perferendis recusandae voluptatum maiores nobis similique illo eius, eaque in quibusdam consequuntur libero ipsum vel itaque quidem repellat ipsam a ex vero dicta dolorem laboriosam, quasi quo? Maxime quo incidunt animi distinctio quisquam, quam sint deleniti quod assumenda sunt iste nam, alias nostrum fugit sed, vitae est sit! Atque incidunt aut ex quia esse illo distinctio sapiente, temporibus laboriosam, saepe aspernatur, nihil error nisi facere quas quibusdam.</p>\n" +
+    "\n" +
+    "Contributor´s (in Alphabetical Order)\n" +
+    "App animation: Wim Dijksterhuis, <a href=\"http://www.screenturner.nl\">Screenturner</a>\n" +
+    "App development: <a href=\"http://www.uncinc.nl\">UncInc</a> in collaboration with Johanna Barnbeck\n" +
+    "Conceptural Sparring for the Prototypes: Jan Hein Hoogstad, Roel van der Wal, Floris de Langen\n" +
+    "Infographics User Camera Study: Patty Jansen\n" +
+    "Logo Design: <a href=\"http://www.resultat.nl\">Creatief Bureau Resultåt</a>\n" +
+    "Research Design, articles, videos and photographs (unless stated otherwise): Johanna Barnbeck \n" +
+    "Website: Robert-Jan Korteschiel and Patty Jansen\n" +
+    "Trailer testing prototype at the Rijksmuseum: <a href=\"http://www.screenturner.nl\">Screenturner</a> in collaboration with Johanna Barnbeck \n" +
+    "\n" +
+    "\n" +
+    "<h4>Disclaimer</h4>\n" +
+    "<p><strong>Limitation of liability for internal content</strong></p>\n" +
+    "<p>The content of our website has been compiled with meticulous care and to the best of our knowledge. However, we cannot assume any liability for the up-to-dateness, completeness or accuracy of any of the pages.</p>\n" +
+    "<p>Pursuant to section 7, para. 1 of the TMG (Telemediengesetz –  Tele Media Act by German law), we as service providers are liable for our own content on these pages in accordance with general laws. However, pursuant to sections 8 to 10 of the TMG, we as service providers are not under obligation to monitor external information provided or stored on our website. Once we have become aware of a specific infringement of the law, we will immediately remove the content in question. Any liability concerning this matter can only be assumed from the point in time at which the infringement becomes known to us.</p>\n" +
+    "<p><strong>Limitation of liability for external links</strong></p>\n" +
+    "<p>Our website contains links to the websites of third parties (“external links”). As the content of these websites is not under our control, we cannot assume any liability for such external content. In all cases, the provider of information of the linked websites is liable for the content and accuracy of the information provided. At the point in time when the links were placed, no infringements of the law were recognisable to us. As soon as an infringement of the law becomes known to us, we will immediately remove the link in question.</p>\n" +
+    "<p><strong>Copyright</strong></p>\n" +
+    "<p>The content and works published on this website are governed by the copyright laws of Germany. Any duplication, processing, distribution or any form of utilisation beyond the scope of copyright law shall require the prior written consent of the author or authors in question.</p>\n" +
+    "<p><strong>Data protection</strong></p>\n" +
+    "<p>A visit to our website can result in the storage on our server of information about the access (date, time, page accessed). This does not represent any analysis of personal data (e.g., name, address or e-mail address). If personal data are collected, this only occurs – to the extent possible – with the prior consent of the user of the website. Any forwarding of the data to third parties without the express consent of the user shall not take place.</p>\n" +
+    "<p>We would like to expressly point out that the transmission of data via the Internet (e.g., by e-mail) can offer security vulnerabilities. It is therefore impossible to safeguard the data completely against access by third parties. We cannot assume any liability for damages arising as a result of such security vulnerabilities.</p>\n" +
+    "<p>The use by third parties of all published contact details for the purpose of advertising is expressly excluded. We reserve the right to take legal steps in the case of the unsolicited sending of advertising information; e.g., by means of spam mail.</p>\n" +
+    "<p>Source: <a href=\"http://www.mustervorlage.net/disclaimer-muster#Englisch\">English Disclaimer on Mustervorlage.net</a></p>\n" +
+    "<p></p>\n" +
     "<footer ui-view=\"footer\" class=\"clearfix row\"></footer>\n" +
     "");
 }]);
