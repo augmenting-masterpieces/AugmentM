@@ -2,7 +2,6 @@
 
 .block {
 	padding: 25px 0 50px 0;
-   	min-height: 100%;
 }
 
 img {
@@ -28,6 +27,7 @@ img {
 .maintro {
 	background: url(./images/webimages/1_landingpage.jpg) no-repeat center bottom / cover;
 	color: white;
+	min-height: 100%;
 	
 	.title {		
 		@media only screen 
@@ -47,6 +47,7 @@ img {
 .intermezzo {
 	color: white;
 	position: relative;
+	min-height: 100%;
 
 	h1 {
 		position: absolute;
