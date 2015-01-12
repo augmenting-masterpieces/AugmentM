@@ -456,7 +456,7 @@ angular.module("../templates/home/masonryviewer.html", []).run(["$templateCache"
     "	<div id=\"photoPiece\" images-loaded=\"imgLoadedEvents\">\n" +
     "		<div class=\"grid-sizer\"></div>\n" +
     "		<div class=\"item\" ng-repeat=\"photo in mason.photos\">\n" +
-    "			<img ng-src=\"{{photo.src}}\" ng-click=\"mason.currentPhoto = photo\" alt=\"\">\n" +
+    "			<img ng-src=\"{{::photo.src}}\" ng-click=\"mason.currentPhoto = photo\" alt=\"\">\n" +
     "		</div>	\n" +
     "	</div>\n" +
     "</div>\n" +

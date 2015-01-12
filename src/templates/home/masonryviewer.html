@@ -11,7 +11,7 @@
 	<div id="photoPiece" images-loaded="imgLoadedEvents">
 		<div class="grid-sizer"></div>
 		<div class="item" ng-repeat="photo in mason.photos">
-			<img ng-src="{{photo.src}}" ng-click="mason.currentPhoto = photo" alt="">
+			<img ng-src="{{::photo.src}}" ng-click="mason.currentPhoto = photo" alt="">
 		</div>	
 	</div>
 </div>
