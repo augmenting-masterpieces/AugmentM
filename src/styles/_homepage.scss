@@ -181,22 +181,19 @@ img {
 }
 
 .people {
+	.removePadding {
+		padding-right: 0;
+	}
+
 	.person {
-		width: 100%;
 		margin-bottom: 5px;
-		p {
-			float: left;
-			padding-left: 10px;
-		}
 	}
 
 	img {
 		display: block;
-		width: 25%;
-		margin: 0 auto;
-		border-left: solid 5px $brand-primary;
 		padding-left: 10px;
-		float: left;
+		margin-top: 7px;
+		border-left: solid 5px $brand-primary;
 	}
 }
 
