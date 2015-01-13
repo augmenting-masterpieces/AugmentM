@@ -1,13 +1,7 @@
 // CHANGED AND ADDED VARIABLES
 $list-group-border-radius: 0;
 
-//Grid Changes
-$grid-gutter-width: 50px;
-$grid-float-breakpoint: 768px;
-$grid-columns: 24 !default;
-
 // Rijkskleuren sRGB
-
 $rijkswitgrijs: rgba(239, 236, 229, 1);
 $rijkswarmgrijs: rgba(125, 122, 117, 1);
 $rijksmiddengrijs: rgba(151, 154, 158, 1);
@@ -18,19 +12,23 @@ $rijksdonkergrijs: rgba(85, 83, 84, 1);
 $rijkszwartgrijs: rgba(54, 55, 59, 1);
 $rijksrood: rgba(152, 96, 82, 1);
 
-
-//typography 
-$font-size-base: 		15px;
-$text-color:            $rijkszwartgrijs;
-$font-family-sans-serif:  deliciousroman, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$headings-font-family:    misoregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$line-height-base: 1.6 !default;
-
-
-// Main variables
+// Colors
 $body-bg:               white;
 $brand-primary: 		$rijkszwartgrijs;
 $brand-succes:			$rijksrood;
+
+// Typography 
+$font-family-sans-serif:  deliciousroman, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$headings-font-family:    misoregular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// Typography sizes
+$font-size-base: 		15px;
+$line-height-base: 1.6 !default;
+
+// Typography Colors
+$text-color:            $rijkszwartgrijs;
+$link-color:            $brand-primary !default;
+$link-hover-color:      darken($link-color, 15%) !default;
 
 // Nav Variables
 $navbar-default-color:             $brand-primary;
@@ -48,11 +46,10 @@ $navbar-default-brand-color:               $brand-primary; //rijksrood niet besc
 $navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 10%) !default;
 $navbar-default-brand-hover-bg:            transparent !default;
 
-// Footer
-$sitemap-default-brand-color:   			$rijksrood;
-
-					
-
+//Grid Changes
+$grid-gutter-width: 50px;
+$grid-float-breakpoint: 768px;
+$grid-columns: 24 !default;
 
 
 
