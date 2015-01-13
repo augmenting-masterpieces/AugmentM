@@ -228,11 +228,10 @@ angular.module("../templates/home/assumptions.html", []).run(["$templateCache", 
     "	<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
     "		<h2> Assumptions...</h2>\n" +
     "		<h3>“That's what we think they want.”</h3>\n" +
-    "		<p>An initial interdisciplinary expert meeting, with all parties involved, included a discussion and brainstorm about what kind of digital interfaces the museum uses already, what is in the planning and what people from the different departments might want in the future in order to cater to the visitor's needs and to match their goals of engaging visitors with the exhibition.</p>\n" +
-    "\n" +
-    "		<p>Soon we found ourselves in the middle of a discussion about what the visitors of the museum actually wanted, seen from different academic and professional perspectives. The discussion culminated in someone provocatively asking: “Do visitors actually want a different experience? Everything that we have discussed is just what we think they want.”</p>\n" +
-    "\n" +
-    "		<p>This sentence beautifully sums up what kind of reflection one first needs to get out there and subsequently rid off: assumptions about user experiences. Accordingly, I designed my research process with a strong focus on input from the museum visitors, based on how the employees run the Rijksmuseum on a daily basis and on the digital engagement methods they set up for their visitors.</p>\n" +
+    "		<p>During an initial expert's meeting at the Rijksmuseum the discussion evolved around digital interfaces the museum already uses, what the different departments wished for in the future in order to cater to the visitor's needs, and how they pursue their goals of engaging museum visitors with the exhibition.</p>\n" +
+    "		<p>Soon the discussion focused on what everybody thought the museum visitors actually want - seen from different academic and professional perspectives. The discussion culminated in someone asking: “Do visitors actually want a different experience? Everything that we discuss is just <i>what we think they want<i/>.”</p>\n" +
+    "		<p>To reflect on made assumptions can serve as the basis for research. When being aware of them, it is a necessary challenge to get subsequently rid off of them, in order to identify insights for the design thinking process. Thus, to built new interfaces would first of all mean to get valuable input from all the employees running the Rijksmuseum on a daily basis and to engage with the diverse experiences from the museum visitors.</p>\n" +
+    "		\n" +
     "	</div>\n" +
     "	<div class=\"col-lg-13 col-lg-offset-1 col-md-12 col-md-offset-1 col-sm-12 col-sm-offset-0 col-xs-24 col-xs-offset-0 hidden-xs image-container\">\n" +
     "		<img class=\"child\" src=\"images/webimages/visitors_aussumptions.jpg\">\n" +
@@ -270,7 +269,7 @@ angular.module("../templates/home/demo.html", []).run(["$templateCache", functio
 angular.module("../templates/home/evaluation.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/evaluation.html",
     "<div class=\"col-lg-9 col-lg-offset-2 col-md-10 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<h2>Process Evaluation</h2>\n" +
+    "	<h1>Process Evaluation</h1>\n" +
     "	<p>We prototyped and tested three features, which tried to provide answers to the human-centered design question: “How we might engage museum visitors more with their surrounding without indicating a distinction by putting value into the aspect they choose to engage with?”</p>\n" +
     "\n" +
     "	Even stronger, by letting them emphasizing their own aspects in order to find their own approach to the exhibition.</p>\n" +
@@ -312,7 +311,7 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li><a href=\"#survey\">No comment on the Masterpieces - \"I know they are important\"</a></li>\n" +
+    "				<li><a href=\"#survey\">So, what do visitors relate to? - <i>No comment</i> on the Masterpieces</a></li>\n" +
     "				<li><a href=\"#masonryviewer\">Detailed Case Study: User Camera Study of a Museum Visitor</a></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
@@ -323,7 +322,7 @@ angular.module("../templates/home/footerHome.html", []).run(["$templateCache", f
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
     "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
-    "				<li><a href=\"#demo\">It Doesn't Matter How much Cultural Capital You Bring</a></li>\n" +
+    "				<li><a href=\"#demo\">Social Features For Visitors Engagement</a></li>\n" +
     "				<li><a href=\"#demo\">Research Trailer: Testing New App Features in the Museum</a></li>\n" +
     "				<li></li>\n" +
     "			</ul>\n" +
@@ -593,19 +592,12 @@ angular.module("../templates/home/processmap.html", []).run(["$templateCache", f
 angular.module("../templates/home/survey.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/survey.html",
     "<div class=\"col-lg-8 col-lg-offset-2 col-md-9 col-md-offset-1 col-sm-10 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<h2>No comment on the Masterpieces.</h2>\n" +
-    "	<h3>“I know they are important.”</h3>\n" +
-    "	<p>The qualitative survey had twelve participants who belong to four of the five  visitors' categories the Rijksmuseum works with on a daily basis in education and marketing. The focus lies on the unaccompanied visitors: Three Cultural Tourists, three Art Lover's, two Cultural Professionals and one Family (with three children, who each participated as well) participated in the survey.</p> \n" +
-    "\n" +
-    "	<p>As an example the photographs show one profile of a 'cultural tourist'. About 70% of the museum visitors belong to the group of cultural tourists, as the Rijksmuseum calls people who don't visit museums more than three times a year and is probably found in the Rijksmuseum, because it is part of what you do when you visit Amsterdam.</p>\n" +
-    "\n" +
-    "	<p>In the example, the participant Chris gave 'no comment' on seven out of the 42 pictures. From those seven, five were photographs of paintings, one of an object and one photograph of the building. When being asked later on, why he took those pictures, he said: “I know they are important, so I took a picture of them.”</p>\n" +
-    "\n" +
-    "	<p>However, Chris described in detail the other pictures that he took, the observed situations and he told stories that he overheard from other visitors. He seemed more relaxed and engaged with his surrounding.</p>\n" +
-    "\n" +
-    "	<p>Whereas the amount of time spent on looking at art works and written information varied largely between different visitors, all participants carefully observed other visitors, listened into their conversations or were wondering about their own – proper - behaviour at times. So people don't leave their social consciousness in the wardrobe with their bags, but on the contrary move silently and with a high level of awareness for social interaction, through the museum.</p>\n" +
-    "\n" +
-    "	<p>Thus, social dimensions are highly important for all types of visitors, and are often accompanied by a feeling of social awkwardness. The degree of feeling engaged or addressed by the museum surrounding seems to be connected to the degree of how much visitors can relate to other situations in their daily life. Listening into other people's conversations and re-telling those stories, often served as a bridge to connect with the museum setting in general.</p>\n" +
+    "	<h2>So, what do visitors relate to?</h2>\n" +
+    "	<h3><i>No comment</i> on the Masterpieces.</h3>\n" +
+    "	<p>Whereas the amount of time spent in the museum looking at artworks varied largely between the different participants, all of them carefully observed other visitors, listened into their conversations or were reflecting on their own (proper) behaviour. Most of them also described a feeling of awkwardness at times, that was connected to a felt lack of knowledge.</p> \n" +
+    "	<p>The gallery below shows interview snippets and photographs by Chris, a participating 'cultural tourist'. The infographic depicts how long he stayed and what he took pictures of. Chris gave 'no comment' on seven out of his 42 pictures. Five of them, were photographs of famous paintings. When being asked, why he took those pictures, he said: “I know they [the artworks] are important, so I took a picture of them.”</p>\n" +
+    "	<p>Though he referenced the pictures as important, their cultural status did not make him retrieve information about them. All his descriptions were based on (coincidental) experiences and social encounters.</p>\n" +
+    "	<p>Thus, the <i>social dimensions<i/> of a museum visit are highly important for museum visitors. All of them share a high level of interest in indirect social interaction and in being able to share narratives in an unbiased way.</p>	\n" +
     "</div>\n" +
     "\n" +
     "</div>\n" +
@@ -640,18 +632,18 @@ angular.module("../templates/home/usercamerastudy.html", []).run(["$templateCach
     "	<div class=\"videos embed-responsive embed-responsive-16by9\">\n" +
     "		<iframe src=\"http://player.vimeo.com/video/112510250\" frameborder=\"0\" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>\n" +
     "	</div>\n" +
-    "	<h4>We asked children to wear a camera during their museum visit. As their perspective is not only physically different, due to their height, we were interested in what they looked at since they are culturally less trained for a museum visit yet compared to adults.</h4>\n" +
+    "	<h4>We asked children to wear a video camera during their museum visit. Their perspective differs due to their height and we were interested in what they looked at since they are not as culturally trained to visit a museum yet.</h4>\n" +
     "	<p>Language: Dutch. For English subtitles click 'CC' in the player</p>\n" +
     "</div>\n" +
     "\n" +
     "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<h2>...and how to get rid of them.</h2>\n" +
+    "	<h2>...And How To Get Rid Of Them.</h2>\n" +
     "	<h3>Visual Feedback Methods</h3>\n" +
-    "	<p>I use Visual User Feedback methods to understand different perspectives and gain insights from the museum visitors. Those methods not only give room to individual oral feedback, but also to visual stories and experiences. Therefore the oral and visual feedback from the user, reveals different kinds of information than a thematically focused survey. </p>\n" +
+    "	<p>When being interviewed, survey participants can put their experiences and opinions into words. They describe what they see, feel and thought during their visit. With the User Camera Study we carried out, they are given a digital compact camera as an additional medium to capture details and to express themselves. For the User Video Study we supplied visitors with a wearable camera to collect footage from a first person perspective.</p>\n" +
     "</div>\n" +
     "<div class=\"col-lg-8 col-lg-offset-1 col-md-9 col-md-offset-1 col-sm-11 col-sm-offset-0 col-xs-24 col-xs-offset-0\">	\n" +
     "	<p>The Photographic User Camera Study consists of two phases. First, the participants are given a camera with which they walk through the museum and take pictures of anything drawing their attention. They can choose themselves what they capture, for how long they want to stay in the exhibition and how many pictures they take.</p>\n" +
-    "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences (what did you hear, smell, touch?) and digital devices (which devices did you use during your visit and to do what?) are asked.</p>\n" +
+    "	<p>The collecting phase is followed by a qualitative interview in which the participant first gets to talk about the photographs in a way that is comparable to someone showing their vacation pictures: descriptive and as detailed as they prefer. Later on specific questions concerning sensual experiences <i>(What did you hear, smell, touch?)</i> and digital devices <i>(Which device(s) did you use during your visit and what did you do with it?)</i> are asked.</p>\n" +
     "</div>\n" +
     "");
 }]);
