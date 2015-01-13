@@ -11,44 +11,17 @@ angular.module("../templates/functional/footerSiteWide.html", []).run(["$templat
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a> Understand and Observe</a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><h4><a ui-sref=\"home.subroutes\"> Understand and Observe</a></h4></li>\n" +
+    "				<li><a href=\"#assumptions\">Assumptions... - \"That's What We Think They Want\"</a></li>\n" +
+    "				<li><a href=\"#usercamerastudy\">...And How To Get Rid Of Them - Visual Feedback Methods</a></li>\n" +
+    "				<li><a href=\"#usercamerastudy\">Video: User Video Study of Jakob (7)</a></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes\"> Analyse and Ideate </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "	</ul>\n" +
-    "</div>\n" +
-    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
-    "	<ul class=\"list-unstyled\">\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes\"> Prototype and Test </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes\"> Evaluate and Outlook </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "			</ul>\n" +
-    "		</li>\n" +
-    "		<li>\n" +
-    "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes\"> Theory and Methods </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><h4><a href=\"#analyse\"> Analyse and Ideate </a></h4></li>\n" +
+    "				<li><a href=\"#survey\">So, what do visitors relate to? - <i>No comment</i> on the Masterpieces</a></li>\n" +
+    "				<li><a href=\"#masonryviewer\">Detailed Case Study: User Camera Study of a Museum Visitor</a></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "	</ul>\n" +
@@ -57,10 +30,36 @@ angular.module("../templates/functional/footerSiteWide.html", []).run(["$templat
     "	<ul class=\"list-unstyled\">\n" +
     "		<li>\n" +
     "			<ul class=\"list-unstyled\">\n" +
-    "				<li><h4><a ui-sref=\"home.subroutes\"> About </a></h4></li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
-    "				<li>Something</li>\n" +
+    "				<li><h4><a href=\"#prototype\"> Prototype and Test </a></h4></li>\n" +
+    "				<li><a href=\"#demo\">Social Features For Visitors Engagement</a></li>\n" +
+    "				<li><a href=\"#demo\">Research Trailer: Testing New App Features in the Museum</a></li>\n" +
+    "				<li></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#evaluate\"> Evaluate and Outlook </a></h4></li>\n" +
+    "				<li><a href=\"#evaluation\">Process Evaluation</a></li>\n" +
+    "				<li><a href=\"#evaluation\">Concluding Remarks and Outlook</a></li>\n" +
+    "				<li></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#theory\"> Theory and Methods </a></h4></li>\n" +
+    "				<li><a href=\"#theory\">Social Augmentation vs. Technological Masterpieces?</a></li>\n" +
+    "				<li><a href=\"#theory\">About the Interdisciplinary Approach</a></li>\n" +
+    "				<li><a href=\"#literature\">Literature</a></li>\n" +
+    "			</ul>\n" +
+    "		</li>\n" +
+    "	</ul>\n" +
+    "</div>\n" +
+    "<div class=\"col-lg-6 col-lg-offset-1 col-md-6 col-md-offset-1 col-sm-8 col-sm-offset-0 col-xs-20 col-xs-offset-2\">\n" +
+    "	<ul class=\"list-unstyled\">\n" +
+    "		<li>\n" +
+    "			<ul class=\"list-unstyled\">\n" +
+    "				<li><h4><a href=\"#about\"> About </a></h4></li>\n" +
+    "				<li><h4><a href=\"#about\"> Contact </a></h4></li>\n" +
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
@@ -69,7 +68,8 @@ angular.module("../templates/functional/footerSiteWide.html", []).run(["$templat
     "			</ul>\n" +
     "		</li>\n" +
     "		<li>\n" +
-    "			<p class=\"copyright\">2015 &#169; Augmenting Masterpieces - No babies were harmed in the making of this site.</p>\n" +
+    "			<p class=\"copyright\">&#169; 2015 Augmenting Masterpieces</p>\n" +
+    "			<li><a href=\"https://github.com/augmenting-masterpieces/AugmentM\">See project on GitHub</a></li>\n" +
     "		</li>\n" +
     "	</ul>\n" +
     "</div>\n" +
