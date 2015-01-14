@@ -181,21 +181,37 @@ img {
 	}
 }
 
-.people {
-	.removePadding {
-		padding-right: 0;
-	}
-
+.about {
 	.person {
 		margin-bottom: 5px;
+		
+		.removePadding {
+			padding-right: 0;
+		}
+
+		img {
+			display: block;
+			margin-top: 7px;
+			padding-left: 10px;
+			border-left: solid 5px $brand-primary;
+		}
+	}
+	.partners {
+		height: auto;
+		width: 80%;
+		margin-bottom: 12px;
 	}
 
-	img {
+	.privatePartners {
 		display: block;
-		margin-top: 7px;
+		height: auto;
+		width: 50%;
+		margin-bottom: 12px;
 		padding-left: 10px;
 		border-left: solid 5px $brand-primary;
 	}
+
+	
 }
 
 
