@@ -138,14 +138,21 @@ angular.module("../templates/home.html", []).run(["$templateCache", function($te
 angular.module("../templates/home/about.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("../templates/home/about.html",
     "<div class=\"col-lg-11 col-lg-offset-2 col-md-12 col-md-offset-1 col-sm-13 col-sm-offset-1 col-xs-24 col-xs-offset-0\">\n" +
-    "	<h1>People</h1>\n" +
+    "	<h2>About</h2>\n" +
+    "	<div class=\"person row\">\n" +
+    "		<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 removePadding\">\n" +
+    "			<img src=\"./images/logos/augmlogosmall.png\" alt=\"Contributors UvA -> Rijksmuseum\">\n" +
+    "		</div>\n" +
+    "		<div class=\"col-lg-18 col-lg-offset-0 col-md-18 col-md-offset-0 col-sm-18 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
+    "			<p>Augmenting Masterpieces is a collaboration between the University of Amsterdam and the Rijksmuseum Amsterdam. For building and testing the app features Floris de Langen and Roel van der Wal functioned as tech partner from the creative industries.</p>\n" +
+    "		</div>\n" +
+    "	</div>\n" +
     "	<div class=\"person row\">\n" +
     "		<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 removePadding\">\n" +
     "			<img src=\"./images/persons/johanna2.jpg\" alt=\"Embedded Researcher UvA -> Rijksmuseum\">\n" +
     "		</div>\n" +
     "		<div class=\"col-lg-18 col-lg-offset-0 col-md-18 col-md-offset-0 col-sm-18 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "			<p>Johanna Barnbeck</p>\n" +
-    "			<p>Johanna Barnbeck designed the research process and carries out the different phases of research and creation. She is a Berlin-based artist, researcher and creative professional with an expertise in multidisciplinary projects combining Artistic Research, Design Thinking and Cultural Analysis.</p>\n" +
+    "			<p><b>Johanna Barnbeck</b> designs the research process and carries out the different phases of creation and experimentation. She is an artist, researcher and creative professional with an expertise in multidisciplinary projects combining Artistic Research, Design Thinking and Cultural Analysis.</p>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "	<div class=\"person row\">\n" +
@@ -153,16 +160,8 @@ angular.module("../templates/home/about.html", []).run(["$templateCache", functi
     "			<img src=\"./images/persons/janHein.jpg\" alt=\"Jan Hein Hoogstad - Assistant Professor Cultural Analysis\">\n" +
     "		</div>\n" +
     "		<div class=\"col-lg-18 col-lg-offset-0 col-md-18 col-md-offset-0 col-sm-18 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "			<p>Jan Hein Hoogstad</p>\n" +
-    "			<p>As assistant professor at the University of Amsterdam, Jan Hein Hoogstad teaches a course on the API of the Rijksmuseum within his initiative “Coding the Humanities”. He introduces tools and practices - such as automation, collaboration, and testing - from open-source and commercial software development into humanities research and teaching.</p>\n" +
-    "		</div>\n" +
-    "	</div>\n" +
-    "	<div class=\"person row\">\n" +
-    "		<div class=\"col-lg-6 col-lg-offset-0 col-md-6 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-12 col-xs-offset-0 removePadding\">\n" +
-    "			<img src=\"./images/persons/shailoh.jpg\" alt=\"\" class=\"none\">\n" +
-    "		</div>\n" +
-    "		<div class=\"col-lg-18 col-lg-offset-0 col-md-18 col-md-offset-0 col-sm-18 col-sm-offset-0 col-xs-24 col-xs-offset-0\">\n" +
-    "			<p>The MediaLab of the Rijksmuseum operates at the intersection between art, technology and education. The Lab functions as a space for experimentation. Shailoh Philips formerly managed the MediaLab and initiated the project together with Jan Hein Hoogstad.</p>\n" +
+    "			\n" +
+    "			<p>Assistant professor <b>Jan Hein Hoogstad</b> teaches a course on the API of the Rijksmuseum at the University of Amsterdam. With his initiative “Coding the Humanities”, he introduces tools and practices - such as automation, collaboration, and testing - from open-source and commercial software development into humanities research and teaching.</p>\n" +
     "		</div>\n" +
     "	</div>\n" +
     "	<div class=\"person row\">\n" +
@@ -183,15 +182,11 @@ angular.module("../templates/home/about.html", []).run(["$templateCache", functi
     "	</div>\n" +
     "</div>\n" +
     "<div class=\"col-lg-7 col-lg-offset-2 col-md-8 col-md-offset-1 col-sm-9 col-sm-offset-1 col-xs-24 col-xs-offset-0\" >\n" +
-    "	<h1>Contact</h1>\n" +
-    "	<p>University of Amsterdam</p>\n" +
-    "	<p>Centre for Digital Humanities</p>\n" +
-    "	<p>Vendelstraat 8</p>\n" +
-    "	<p>1012XX Amsterdam</p>\n" +
-    "	\n" +
+    "	<h2>Contact</h2>\n" +
+    "	<p>University of Amsterdam <br>Centre for Digital Humanities<br>Vendelstraat 8<br>1012XX Amsterdam<br>\n" +
     "	<p>barnbeck@uva.nl</p>\n" +
     "	<br>\n" +
-    "	<h1>Mailing list</h1>\n" +
+    "	<h2>Mailing list</h2>\n" +
     "	<!-- Begin MailChimp Signup Form -->\n" +
     "	<div id=\"mc_embed_signup\">\n" +
     "		<form action=\"//wix.us3.list-manage.com/subscribe/post?u=441ffe1b780f94da8bfedb43c&amp;id=ec4ca8f48f\" method=\"post\" id=\"mc-embedded-subscribe-form\" name=\"mc-embedded-subscribe-form\" class=\"validate\" target=\"_blank\" novalidate>\n" +
