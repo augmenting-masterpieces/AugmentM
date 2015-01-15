@@ -198,11 +198,21 @@ img {
 			border-left: solid 5px $brand-primary;
 		}
 	}
-	.partners {
-		height: auto;
-		width: 80%;
-		margin-bottom: 12px;
+	
+	.partnerscontainer {
+		padding-top: 71px;
+		padding-bottom: 71px;
+		.partners {
+			height: auto;
+			width: 80%;
+			margin-bottom: 30px;
+		}
 	}
+	
+	.mailcontainer {
+		padding-bottom: 71px;
+	}
+	
 
 	.privatePartners {
 		display: block;
