@@ -9,4 +9,5 @@ module.exports =
 	  options:
 	    base: 'dist'
 	    branch: 'gh-pages'
+	    repo: 'git@github.com:augmenting-masterpieces/AugmentM.git'
 	  src: '**'
