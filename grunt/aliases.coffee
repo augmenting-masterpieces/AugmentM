@@ -12,12 +12,12 @@ module.exports =
 
   deploy: [
     "build"
-    "gh-pages:beta"
+    "gh-pages:deploy"
   ]
 
   beta: [
     "build"
-    "aws_s3:staging"
+    "gh-pages:beta"
   ]
 
   quick: [
