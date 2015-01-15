@@ -200,19 +200,25 @@ img {
 	}
 	
 	.partnerscontainer {
-		padding-top: 71px;
-		padding-bottom: 71px;
+		padding-top: 41px;
 		.partners {
 			height: auto;
 			width: 80%;
-			margin-bottom: 30px;
+			margin-top: 30px;
 		}
 	}
-	
-	.mailcontainer {
-		padding-bottom: 71px;
+
+	.contactheader {
+		margin-top: 45px;
 	}
 	
+	.mailheader {
+		// margin-top: 30px;
+	}
+	
+	.partnerHeader {
+		margin-top: 45px
+	}
 
 	.privatePartners {
 		display: block;
